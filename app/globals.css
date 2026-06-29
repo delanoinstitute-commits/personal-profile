@@ -16,8 +16,8 @@
 
 html {
   scroll-behavior: smooth;
-  /* Offset anchor jumps so headings clear the sticky header. */
-  scroll-padding-top: 5rem;
+  /* Offset anchor jumps so headings clear the sticky header + section bar. */
+  scroll-padding-top: 7rem;
 }
 
 body {
@@ -192,6 +192,18 @@ a.wikilink.red {
 .wiki-keytable th {
   background: #f8f9fa;
   font-weight: 700;
+}
+
+/* ---- Section nav (horizontal in-page tabs) -------------------------- */
+
+.wiki-article .section-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wiki-article .section-nav li {
+  margin: 0;
 }
 
 /* ---- Timeline (biography) ------------------------------------------- */
