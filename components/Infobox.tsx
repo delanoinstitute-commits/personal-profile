@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { INFOBOX, PROFILE } from "@/content/profile";
 import Tooltip from "./Tooltip";
 import WikiLink from "./WikiLink";
@@ -8,11 +9,6 @@ import WikiLink from "./WikiLink";
  * card, just like the biography box on a real Wikipedia article.
  */
 export default function Infobox() {
-  const monogram = PROFILE.name
-    .split(" ")
-    .map((w) => w[0])
-    .join("");
-
   return (
     <aside className="w-full text-[0.84rem] leading-snug" aria-label="Profile summary">
       <div className="border border-infoboxborder bg-infobox">
@@ -20,9 +16,16 @@ export default function Infobox() {
           {PROFILE.name}
         </div>
 
-        {/* Portrait — falls back to a monogram tile if no image present. */}
-        <div className="flex flex-col items-center border-b border-infoboxborder px-2 py-3">
-          <PortraitOrMonogram monogram={monogram} />
+        {/* Portrait */}
+        <div className="border-b border-infoboxborder p-2">
+          <Image
+            src={PROFILE.image}
+            alt={`Portrait of ${PROFILE.name}`}
+            width={700}
+            height={933}
+            priority
+            className="h-auto w-full"
+          />
           <div className="mt-1 text-center text-[0.78rem] text-[#54595d]">
             {PROFILE.imageCaption}
           </div>
@@ -104,15 +107,5 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
       <th className="w-[34%] px-2 py-1.5 text-left font-bold text-[#202122]">{label}</th>
       <td className="px-2 py-1.5">{children}</td>
     </tr>
-  );
-}
-
-function PortraitOrMonogram({ monogram }: { monogram: string }) {
-  // Pure-CSS monogram tile. Drop a real photo at public/portrait.jpg and swap
-  // this for an <Image>; kept dependency-free for the initial structure.
-  return (
-    <div className="flex h-40 w-32 items-center justify-center border border-infoboxborder bg-gradient-to-b from-[#e7efed] to-[#d4e3e0]">
-      <span className="font-serif text-4xl text-accent">{monogram}</span>
-    </div>
   );
 }
