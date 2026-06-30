@@ -12,7 +12,7 @@ export default function SiteHeader() {
       className="sticky top-0 z-30 border-b border-rule bg-paper/95 backdrop-blur"
       style={{ height: "var(--header-h)" }}
     >
-      <div className="mx-auto flex h-full max-w-[88rem] items-center gap-2 px-3 sm:px-4">
+      <div className="mx-auto flex h-full max-w-[81.5rem] items-center gap-2 px-3 sm:px-4">
         <MobileNav />
 
         <Link href="/" className="flex items-center gap-2 no-underline">

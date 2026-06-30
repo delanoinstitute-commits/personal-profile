@@ -45,7 +45,7 @@ export default function Infobox({
               width={700}
               height={933}
               priority={priority}
-              sizes="(min-width: 1024px) 320px, 192px"
+              sizes="(min-width: 1024px) 336px, 192px"
               className="h-auto w-full"
             />
           </div>

@@ -38,7 +38,7 @@ export default function RootLayout({
 
         <SiteHeader />
 
-        <div className="mx-auto grid max-w-[88rem] grid-cols-1 gap-0 px-0 sm:px-4 lg:grid-cols-[11rem_minmax(0,1fr)_20rem] lg:gap-6">
+        <div className="mx-auto grid max-w-[81.5rem] grid-cols-1 gap-0 px-0 sm:px-4 lg:grid-cols-[11rem_minmax(0,1fr)_21rem] lg:gap-6">
           {/* Left rail: global Pages navigation (desktop only) */}
           <div className="hidden border-r border-rule px-3 py-5 lg:block">
             <div className="sticky-rail sticky top-[calc(var(--header-h)+0.5rem)] max-h-[calc(100dvh-var(--header-h)-1.5rem)] overflow-y-auto overscroll-contain">
@@ -63,7 +63,7 @@ export default function RootLayout({
           </div>
         </div>
 
-        <footer className="mx-auto max-w-[88rem] px-5 py-8 text-xs text-muted sm:px-7">
+        <footer className="mx-auto max-w-[81.5rem] px-5 py-8 text-xs text-muted sm:px-7">
           <div className="border-t border-rule pt-4">
             <p>
               A personal encyclopedia — a structured, honest record of one life,
@@ -79,7 +79,7 @@ export default function RootLayout({
 
         {/* No-JS fallback navigation */}
         <noscript>
-          <nav aria-label="Pages" className="mx-auto max-w-[88rem] px-5 pb-8 text-sm">
+          <nav aria-label="Pages" className="mx-auto max-w-[81.5rem] px-5 pb-8 text-sm">
             <ul className="flex flex-wrap gap-x-4 gap-y-1">
               {NAV.map((p) => (
                 <li key={p.href}>
