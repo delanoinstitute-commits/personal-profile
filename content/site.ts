@@ -32,16 +32,6 @@ export const NAV: NavPage[] = [
     ],
   },
   {
-    label: "Inherited profile",
-    href: "/inherited-profile",
-    gloss: "What I am",
-    sections: [
-      { label: "Legal", anchor: "legal" },
-      { label: "Cultural", anchor: "cultural" },
-      { label: "Biological", anchor: "biological" },
-    ],
-  },
-  {
     label: "Current status",
     href: "/current-status",
     gloss: "Who I am now",

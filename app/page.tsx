@@ -121,8 +121,8 @@ export default function HomePage() {
         impressive aesthetics and conditioned social proof. An accurate, contextual
         timeline shows true causality — how a person actually came to think and do what
         they do. I&rsquo;m building this as a living database of myself: what I am, what
-        I&rsquo;ve done, and where I&rsquo;m going. Start with the{" "}
-        <WikiLink href="/inherited-profile">inherited profile</WikiLink>, the{" "}
+        I&rsquo;ve done, and where I&rsquo;m going. The profile box to the right summarises
+        what I am; from there, see the{" "}
         <WikiLink href="/current-status">current status</WikiLink>, the{" "}
         <WikiLink href="/historical-context">historical context</WikiLink>, or the{" "}
         <WikiLink href="/future-trajectory">future trajectory</WikiLink>.

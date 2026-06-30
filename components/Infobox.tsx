@@ -5,8 +5,8 @@ import WikiLink from "./WikiLink";
 
 /**
  * The right-rail infobox — the visual heart of the "Wikipedia about me" idea.
- * Renders the inherited profile (Legal / Cultural / Biological) as a summary
- * card, just like the biography box on a real Wikipedia article.
+ * Renders the profile across four lenses (Personal / Cultural / Biological /
+ * Legal) as a summary card, like the biography box on a real Wikipedia article.
  */
 export default function Infobox() {
   return (
@@ -38,10 +38,6 @@ export default function Infobox() {
             ))}
           </tbody>
         </table>
-
-        <div className="border-t border-infoboxborder px-2 py-2 text-center text-[0.76rem] text-[#54595d]">
-          <WikiLink href="/inherited-profile">Full inherited profile →</WikiLink>
-        </div>
       </div>
     </aside>
   );
