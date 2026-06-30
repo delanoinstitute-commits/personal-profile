@@ -32,9 +32,6 @@ export default function LeftNav() {
                     }`}
                   >
                     {p.label}
-                    <span className="block text-xs font-normal italic text-muted-2">
-                      {p.gloss}
-                    </span>
                   </Link>
                 </li>
               );

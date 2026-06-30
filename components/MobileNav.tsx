@@ -146,14 +146,13 @@ export default function MobileNav() {
                         href={p.href}
                         onClick={close}
                         aria-current={active ? "page" : undefined}
-                        className={`flex min-h-11 flex-col justify-center rounded px-2 py-1 ${
+                        className={`flex min-h-11 items-center rounded px-2 py-1 ${
                           active
                             ? "bg-surface-band font-semibold text-text"
                             : "text-link"
                         }`}
                       >
-                        <span>{p.label}</span>
-                        <span className="text-xs italic text-muted-2">{p.gloss}</span>
+                        {p.label}
                       </Link>
                     </li>
                   );

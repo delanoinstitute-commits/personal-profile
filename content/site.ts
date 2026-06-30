@@ -24,19 +24,17 @@ export type NavSection = { label: string; anchor: string };
 export type NavPage = {
   label: string;
   href: string;
-  gloss: string;
   sections: NavSection[];
 };
 export type NavGroup = { title: string; pages: NavPage[] };
 
 export const NAV_GROUPS: NavGroup[] = [
   {
-    title: "The overview",
+    title: "Overview (home)",
     pages: [
       {
         label: "Start here",
         href: "/",
-        gloss: "About this site",
         sections: [
           { label: "About", anchor: "about" },
           { label: "Contact", anchor: "contact" },
@@ -45,12 +43,11 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    title: "The future",
+    title: "Future (vision)",
     pages: [
       {
         label: "Purpose",
         href: "/purpose",
-        gloss: "Problems he cares about",
         sections: [
           { label: "Individual", anchor: "individual" },
           { label: "Social", anchor: "social" },
@@ -59,12 +56,11 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    title: "The present",
+    title: "Present (state)",
     pages: [
       {
         label: "Constituents",
         href: "/constituents",
-        gloss: "What makes him up",
         sections: [
           { label: "Psychological", anchor: "psychological" },
           { label: "Physical", anchor: "physical" },
@@ -75,13 +71,11 @@ export const NAV_GROUPS: NavGroup[] = [
       {
         label: "Lifestyle",
         href: "/lifestyle",
-        gloss: "How he lives",
         sections: [{ label: "Behavioural", anchor: "behavioural" }],
       },
       {
         label: "Skills",
         href: "/skills",
-        gloss: "What he does",
         sections: [
           { label: "Architectural", anchor: "architectural" },
           { label: "Production", anchor: "production" },
@@ -91,12 +85,11 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    title: "The past",
+    title: "Past (records)",
     pages: [
       {
         label: "Biography",
         href: "/biography",
-        gloss: "His story",
         sections: [
           { label: "Biography", anchor: "biography" },
           { label: "Timeline", anchor: "timeline" },
@@ -105,13 +98,11 @@ export const NAV_GROUPS: NavGroup[] = [
       {
         label: "Education",
         href: "/education",
-        gloss: "What he studied",
         sections: [{ label: "Academics", anchor: "academics" }],
       },
       {
         label: "Experience",
         href: "/experience",
-        gloss: "What he has done",
         sections: [
           { label: "Employment", anchor: "employment" },
           { label: "Self-employment", anchor: "self-employment" },
