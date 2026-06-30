@@ -33,16 +33,6 @@ export default function Infobox() {
 
         <table className="w-full border-collapse">
           <tbody>
-            {/* Quick header rows */}
-            <Row label="Born">
-              {PROFILE.born}
-              <br />
-              <span className="text-[#54595d]">{PROFILE.bornPlace}</span>
-            </Row>
-            <Row label="Occupations">
-              {PROFILE.occupations.join(" · ")}
-            </Row>
-
             {INFOBOX.map((group) => (
               <GroupBlock key={group.heading} heading={group.heading} rows={group.rows} />
             ))}
