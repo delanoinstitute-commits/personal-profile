@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { NAV } from "@/content/site";
+import { NAV, NAV_GROUPS } from "@/content/site";
 
 /**
  * Mobile primary navigation (< lg): a 44×44 hamburger that opens a left
@@ -132,28 +132,37 @@ export default function MobileNav() {
         </div>
 
         <nav aria-label="Pages" className="px-2 py-3">
-          <ul className="list-none">
-            {NAV.map((p) => {
-              const active = p.href === pathname;
-              return (
-                <li key={p.href}>
-                  <Link
-                    href={p.href}
-                    onClick={close}
-                    aria-current={active ? "page" : undefined}
-                    className={`flex min-h-11 flex-col justify-center rounded px-2 py-1 ${
-                      active ? "bg-surface-band font-semibold text-text" : "text-link"
-                    }`}
-                  >
-                    <span>{p.label}</span>
-                    <span className="text-xs italic text-muted-2">{p.gloss}</span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+          {NAV_GROUPS.map((group) => (
+            <div key={group.title} className="mb-3">
+              <div className="px-2 pb-1 text-xs font-semibold uppercase tracking-[0.04em] text-muted">
+                {group.title}
+              </div>
+              <ul className="list-none">
+                {group.pages.map((p) => {
+                  const active = p.href === pathname;
+                  return (
+                    <li key={p.href}>
+                      <Link
+                        href={p.href}
+                        onClick={close}
+                        aria-current={active ? "page" : undefined}
+                        className={`flex min-h-11 flex-col justify-center rounded px-2 py-1 ${
+                          active
+                            ? "bg-surface-band font-semibold text-text"
+                            : "text-link"
+                        }`}
+                      >
+                        <span>{p.label}</span>
+                        <span className="text-xs italic text-muted-2">{p.gloss}</span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
 
-          {current && current.sections.length > 0 && (
+          {current && current.sections.length > 1 && (
             <div className="mt-3 border-t border-rule-soft pt-3">
               <div className="px-2 pb-1 text-xs font-semibold uppercase tracking-[0.04em] text-muted">
                 On this page

@@ -1,6 +1,7 @@
 // Global site metadata and navigation structure.
-// The navigation mirrors the "table of contents" of the wiki: each top-level
-// entry is its own page, and each child is an in-page section (anchor).
+// Navigation is grouped into four sections (overview → future → present → past).
+// Each group holds one or more pages; each page's children are in-page sections
+// (anchors) rendered as the horizontal SectionNav.
 //
 // CANONICAL NOMENCLATURE (house style — see DESIGN_SPEC.md §8). One spelling each:
 //   learning-systems designer · 10X · single-set-to-failure · self-mastery ·
@@ -14,7 +15,7 @@ export const SITE = {
   name: "Lorenzo Delano",
   tagline: "Designer · Practitioner · Teacher of self-mastery",
   description:
-    "A living, Wikipedia-style profile of Lorenzo Delano — learning-systems designer, health coach, and taxonomist. What I am, what I've done, where I'm going.",
+    "A living, Wikipedia-style profile of Lorenzo Delano — learning-systems designer, health coach, and taxonomist. What he is, what he has done, where he is going.",
   url: "https://lorenzodelano.com",
   email: "lorenzo@lorenzodelano.com",
 };
@@ -26,51 +27,101 @@ export type NavPage = {
   gloss: string;
   sections: NavSection[];
 };
+export type NavGroup = { title: string; pages: NavPage[] };
 
-export const NAV: NavPage[] = [
+export const NAV_GROUPS: NavGroup[] = [
   {
-    label: "Introduction",
-    href: "/",
-    gloss: "Home",
-    sections: [
-      { label: "About", anchor: "about" },
-      { label: "Roles", anchor: "roles" },
-      { label: "How he can help", anchor: "contact" },
-      { label: "Why this site", anchor: "why" },
+    title: "The overview",
+    pages: [
+      {
+        label: "Start here",
+        href: "/",
+        gloss: "About this site",
+        sections: [
+          { label: "About", anchor: "about" },
+          { label: "Contact", anchor: "contact" },
+        ],
+      },
     ],
   },
   {
-    label: "Current status",
-    href: "/current-status",
-    gloss: "Who he is now",
-    sections: [
-      { label: "Psychological", anchor: "psychological" },
-      { label: "Physical", anchor: "physical" },
-      { label: "Behavioural", anchor: "behavioural" },
-      { label: "Creative", anchor: "creative" },
-      { label: "Personal", anchor: "personal" },
+    title: "The future",
+    pages: [
+      {
+        label: "Purpose",
+        href: "/purpose",
+        gloss: "Problems he cares about",
+        sections: [
+          { label: "Individual", anchor: "individual" },
+          { label: "Social", anchor: "social" },
+        ],
+      },
     ],
   },
   {
-    label: "Historical context",
-    href: "/historical-context",
-    gloss: "What he has done",
-    sections: [
-      { label: "Biography", anchor: "biography" },
-      { label: "Education", anchor: "education" },
-      { label: "Employment", anchor: "employment" },
-      { label: "Self-employment", anchor: "self-employment" },
-      { label: "Business", anchor: "business" },
-      { label: "Creative works", anchor: "creative-works" },
+    title: "The present",
+    pages: [
+      {
+        label: "Constituents",
+        href: "/constituents",
+        gloss: "What makes him up",
+        sections: [
+          { label: "Psychological", anchor: "psychological" },
+          { label: "Physical", anchor: "physical" },
+          { label: "Socioeconomic", anchor: "socioeconomic" },
+          { label: "Personal", anchor: "personal" },
+        ],
+      },
+      {
+        label: "Lifestyle",
+        href: "/lifestyle",
+        gloss: "How he lives",
+        sections: [{ label: "Behavioural", anchor: "behavioural" }],
+      },
+      {
+        label: "Skills",
+        href: "/skills",
+        gloss: "What he does",
+        sections: [
+          { label: "Architectural", anchor: "architectural" },
+          { label: "Production", anchor: "production" },
+          { label: "Coaching", anchor: "coaching" },
+        ],
+      },
     ],
   },
   {
-    label: "Future trajectory",
-    href: "/future-trajectory",
-    gloss: "Where to next",
-    sections: [
-      { label: "Personal (growth)", anchor: "personal" },
-      { label: "Social (impact)", anchor: "social" },
+    title: "The past",
+    pages: [
+      {
+        label: "Biography",
+        href: "/biography",
+        gloss: "His story",
+        sections: [
+          { label: "Biography", anchor: "biography" },
+          { label: "Timeline", anchor: "timeline" },
+        ],
+      },
+      {
+        label: "Education",
+        href: "/education",
+        gloss: "What he studied",
+        sections: [{ label: "Academics", anchor: "academics" }],
+      },
+      {
+        label: "Experience",
+        href: "/experience",
+        gloss: "What he has done",
+        sections: [
+          { label: "Employment", anchor: "employment" },
+          { label: "Self-employment", anchor: "self-employment" },
+          { label: "Business", anchor: "business" },
+          { label: "Creative", anchor: "creative" },
+        ],
+      },
     ],
   },
 ];
+
+// Flattened list for per-page section lookup (SectionNav) and the no-JS fallback.
+export const NAV: NavPage[] = NAV_GROUPS.flatMap((g) => g.pages);

@@ -60,7 +60,8 @@ export default function SectionNav() {
     });
   }, [active]);
 
-  if (sections.length === 0) return null;
+  // A single-section page needs no in-page nav bar.
+  if (sections.length < 2) return null;
 
   return (
     <nav

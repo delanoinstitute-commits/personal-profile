@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 
-export const metadata: Metadata = { title: "Future trajectory" };
+export const metadata: Metadata = { title: "Purpose" };
 
-export default function FutureTrajectoryPage() {
+export default function PurposePage() {
   return (
     <>
       <PageHeading
-        title="Future trajectory"
-        hatnote={<>Where to next — growth and intended impact</>}
+        title="Purpose"
+        hatnote={<>The future — the problems he cares about</>}
       />
 
       <p className="lead">
         Delano is immigrating to the United States and looking for the next company,
         partner, or investor who can make the most of what he does. This page states where
-        he is headed — personally, and in terms of the impact he wants to have.
+        he is headed — individually, and in terms of the social impact he wants to have.
       </p>
 
-      <h2 id="personal">Personal (growth)</h2>
+      <h2 id="individual">Individual</h2>
       <h4>Vision</h4>
       <p>
         To become one of the most knowledgeable people in the world — and to use that to
@@ -44,7 +44,7 @@ export default function FutureTrajectoryPage() {
         </li>
       </ul>
 
-      <h2 id="social">Social (impact)</h2>
+      <h2 id="social">Social</h2>
       <p>
         Delano wants to help expand consciousness — directly, or by helping people do it
         for themselves. It is a tragedy for a high-potential individual to be held back by
@@ -52,8 +52,8 @@ export default function FutureTrajectoryPage() {
       </p>
       <p>
         More concretely: to be part of solving the <strong>meaning crisis</strong> by
-        offering the best personal-development education and experiences — rigorous,
-        honest, and genuinely useful rather than aesthetic and performative.
+        offering the best personal-development education and experiences — rigorous, honest,
+        and genuinely useful rather than aesthetic and performative.
       </p>
     </>
   );

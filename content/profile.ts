@@ -61,9 +61,12 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "Known for",
         values: [
-          { text: "Learning design — for organisations" },
           {
-            text: "10X — for individuals",
+            text: "The RBG Method",
+            note: "Rapid Benchmark Graduate — Delano's method for rapidly mastering a discipline to a benchmark standard.",
+          },
+          {
+            text: "The 10X Method",
             href: "https://www.mindvalley.com/10x/quest",
             note: "10X Fitness — the single-set-to-failure training method and Mindvalley Quest co-created by Delano, completed by 90,000+ people.",
           },

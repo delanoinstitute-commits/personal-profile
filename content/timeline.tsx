@@ -1,11 +1,9 @@
-import type { Metadata } from "next";
-import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
-import Timeline, { TimelineEra } from "@/components/Timeline";
+import { TimelineEra } from "@/components/Timeline";
 
-export const metadata: Metadata = { title: "Historical context" };
-
-const eras: TimelineEra[] = [
+// The year-by-year biography, grouped into life eras. Rendered by the Biography
+// page via the <Timeline> component.
+export const eras: TimelineEra[] = [
   {
     title: "Spring — childhood (1987–2000)",
     subtitle: "Krugersdorp, farm life, and the West Rand of Gauteng",
@@ -166,96 +164,3 @@ const eras: TimelineEra[] = [
     ],
   },
 ];
-
-export default function HistoricalContextPage() {
-  return (
-    <>
-      <PageHeading
-        title="Historical context"
-        hatnote={<>What he has done — places, people, and events over time</>}
-      />
-
-      <p className="lead">
-        A contextual timeline of one life. The premise of this site is that an accurate
-        chronology shows true causality — how a person actually came to think and work the
-        way they do. Below: the biography, followed by the qualifications, work, and
-        ventures that came out of it.
-      </p>
-
-      <h2 id="biography">Biography</h2>
-      <Timeline eras={eras} />
-
-      <h2 id="education">Education &amp; qualifications</h2>
-      <p>
-        Left formal schooling at 13 and is largely self-taught, with a long list of formal
-        certifications acquired as needed:
-      </p>
-      <ul>
-        <li>TEFL — English teaching (Language Link, 2006)</li>
-        <li>Personal fitness trainer &amp; spinning instructor (ETA College, 2008)</li>
-        <li>Massage therapist, multiple modalities (2009)</li>
-        <li>1st place, 8th &ldquo;Chinese Bridge&rdquo; international competition (2009)</li>
-        <li>NLP / life-coaching practitioner (Evolved Coaching, 2010)</li>
-        <li>Critical thinking (University of Auckland, 2018)</li>
-        <li>Nutritional biochemistry (Dr Bryan Walsh, 2021)</li>
-        <li>Functional blood-chemistry analyst (ODX Academy, 2021)</li>
-        <li>Peter Attia&rsquo;s &ldquo;Early&rdquo; longevity program (2023)</li>
-        <li>15 courses, Corporate Finance Institute (2024)</li>
-      </ul>
-
-      <h2 id="employment">Employment</h2>
-      <p>
-        Early jobs ranged from mall magician and skate-shop assistant to DVD-store manager
-        and English teacher in China. He waited tables and later managed Java café in
-        Pretoria, instructed spinning at Virgin Active, and coached at Ballistix CrossFit,
-        while lecturing part-time at ETA College. His one conventional salaried role was as
-        a <strong>marketing specialist at Mindvalley</strong> (2016–17) before he moved to
-        contract work.
-      </p>
-
-      <h2 id="self-employment">Self-employment &amp; contracts</h2>
-      <p>
-        Since 2017 he has worked primarily on contract as a learning-systems designer and
-        production director — most extensively with Mindvalley. Notable work includes
-        designing and directing online courses for <strong>Ken Wilber, Alan Watts
-        (estate), Neale Donald Walsch, Steven Kotler, Ben Greenfield, and John
-        Demartini</strong>; running 10X fitness experiments and events across Malaysia,
-        Italy, Estonia, and Croatia; and private live-in interventions for Gerard Butler,
-        Naveen Jain, and others.
-      </p>
-
-      <h2 id="business">Business &amp; ventures</h2>
-      <ul>
-        <li>
-          <strong>Quantum Physiques / Wi-move</strong> — Pretoria gym, co-founded 2011.
-        </li>
-        <li>
-          <strong><WikiLink href="https://artrepreneurs.co.za/">Artrepreneurs</WikiLink></strong>{" "}
-          — digital marketing agency, 2015.
-        </li>
-        <li>
-          <strong>Eudaemonia, Inc.</strong> — US C-Corp, registered 1 August 2019.
-        </li>
-        <li>
-          <strong>Erfaring (Pty) Ltd</strong> — real-estate venture, registered 24 October
-          2024.
-        </li>
-        <li>
-          <strong>Products co-created:</strong>{" "}
-          <WikiLink href="https://www.mindvalley.com/10x/quest">10X Quest</WikiLink>,{" "}
-          <WikiLink href="https://www.mindvalley.com/certs/10x">10X Coach Certification</WikiLink>,{" "}
-          <WikiLink href="https://www.mindvalley.com/body-first">BodyFirst Quest</WikiLink>, and the SuperStudents and Mastery frameworks.
-        </li>
-      </ul>
-
-      <h2 id="creative-works">Creative works</h2>
-      <p>
-        Short kung-fu films (2006); the free YouTube{" "}
-        <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X method series</WikiLink>{" "}
-        (2020); a recurring practice of building original taxonomies and frameworks (the
-        RBG method, the LX-design model, a philosophy of health); and the 2026 series of
-        five taxonomical video courses on training and life management.
-      </p>
-    </>
-  );
-}
