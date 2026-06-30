@@ -85,7 +85,7 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    title: "Past (records)",
+    title: "Past (record)",
     pages: [
       {
         label: "Biography",
