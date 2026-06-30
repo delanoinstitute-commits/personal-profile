@@ -368,3 +368,23 @@ a.wikilink.red,
 .section-nav .section-scroll::-webkit-scrollbar {
   display: none;
 }
+
+/* Sticky sidebars (left nav + infobox): when taller than the viewport they
+   scroll internally so their full content is always reachable. Subtle gutter. */
+.sticky-rail {
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+}
+
+.sticky-rail::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sticky-rail::-webkit-scrollbar-thumb {
+  background: var(--rule);
+  border-radius: 4px;
+}
+
+.sticky-rail::-webkit-scrollbar-track {
+  background: transparent;
+}

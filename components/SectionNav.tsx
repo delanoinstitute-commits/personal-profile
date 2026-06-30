@@ -47,17 +47,24 @@ export default function SectionNav() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
-  // Keep the active chip in view on the mobile strip.
+  // Keep the active chip centred on the mobile strip — scrolling ONLY the strip
+  // horizontally (never scrollIntoView, which also scrolls the page vertically
+  // and causes a jitter loop at the bottom of the page).
   useEffect(() => {
     if (!active || !navRef.current) return;
+    const strip = navRef.current.querySelector<HTMLElement>(".section-scroll");
     const chip = navRef.current.querySelector<HTMLElement>(`[data-anchor="${active}"]`);
-    if (!chip) return;
+    if (!strip || !chip) return;
+    if (strip.scrollWidth <= strip.clientWidth) return; // not scrollable (desktop wrap)
+
+    const stripRect = strip.getBoundingClientRect();
+    const chipRect = chip.getBoundingClientRect();
+    const target =
+      strip.scrollLeft +
+      (chipRect.left - stripRect.left) -
+      (stripRect.width - chipRect.width) / 2;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    chip.scrollIntoView({
-      inline: "center",
-      block: "nearest",
-      behavior: reduce ? "auto" : "smooth",
-    });
+    strip.scrollTo({ left: Math.max(0, target), behavior: reduce ? "auto" : "smooth" });
   }, [active]);
 
   // A single-section page needs no in-page nav bar.

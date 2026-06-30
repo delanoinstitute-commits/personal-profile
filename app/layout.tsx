@@ -41,7 +41,7 @@ export default function RootLayout({
         <div className="mx-auto grid max-w-[88rem] grid-cols-1 gap-0 px-0 sm:px-4 lg:grid-cols-[11rem_minmax(0,1fr)_20rem] lg:gap-6">
           {/* Left rail: global Pages navigation (desktop only) */}
           <div className="hidden border-r border-rule px-3 py-5 lg:block">
-            <div className="sticky top-[calc(var(--header-h)+0.5rem)]">
+            <div className="sticky-rail sticky top-[calc(var(--header-h)+0.5rem)] max-h-[calc(100dvh-var(--header-h)-1.5rem)] overflow-y-auto overscroll-contain">
               <LeftNav />
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function RootLayout({
 
           {/* Right rail: the infobox (desktop only; mobile copy is inline) */}
           <div className="hidden py-5 lg:block">
-            <div className="sticky top-[calc(var(--header-h)+0.5rem)]">
+            <div className="sticky-rail sticky top-[calc(var(--header-h)+0.5rem)] max-h-[calc(100dvh-var(--header-h)-1.5rem)] overflow-y-auto overscroll-contain">
               <Infobox priority />
             </div>
           </div>
