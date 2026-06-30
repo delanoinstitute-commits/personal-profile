@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import SectionNav from "./SectionNav";
+import MobileInfobox from "./MobileInfobox";
 
 /**
  * The article title block: the big serif H1 with a rule under it and an
@@ -24,6 +25,7 @@ export default function PageHeading({
           {hatnote ?? <>From the personal wiki of Lorenzo Delano</>}
         </div>
       </div>
+      <MobileInfobox />
       <SectionNav />
     </>
   );

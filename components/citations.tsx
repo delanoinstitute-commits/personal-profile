@@ -24,6 +24,7 @@ export function makeCitations(refs: Citation[]) {
     return (
       <sup className="ref-mark" id={`cite-ref-${id}`}>
         <Tooltip
+          interactive
           content={
             <span>
               {ref.text}
@@ -43,7 +44,9 @@ export function makeCitations(refs: Citation[]) {
             </span>
           }
         >
-          <a href={`#cite-note-${id}`}>[{n}]</a>
+          <a href={`#cite-note-${id}`} aria-label={`Reference ${n}`}>
+            [{n}]
+          </a>
         </Tooltip>
       </sup>
     );

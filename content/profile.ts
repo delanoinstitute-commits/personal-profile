@@ -82,9 +82,9 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "Born",
         values: [
-          {
-            text: `Lorenzo Roos · 7 Dec 1987 (age ${AGE}) · Krugersdorp, South Africa`,
-          },
+          { text: "Lorenzo Roos" },
+          { text: `7 December 1987 (age ${AGE})` },
+          { text: "Krugersdorp, South Africa" },
         ],
       },
     ],
@@ -109,19 +109,15 @@ export const INFOBOX: InfoboxGroup[] = [
       },
       { label: "Generation", values: [{ text: "Y (Millennial)" }] },
       { label: "Religion", values: [{ text: "None (secular humanist)" }] },
-      { label: "Politics", values: [{ text: "Independent" }] },
     ],
   },
   {
-    // The "put-together" gestalt (coach-relevant) first; zero-signal protected
-    // attributes buried at the tail.
+    // Coach-relevant physical descriptors.
     heading: "Biological",
     rows: [
       { label: "Traits", values: [{ text: "Blue eyes · brown hair · medium build" }] },
-      { label: "Height", values: [{ text: "1.76 m (5′9″)" }] },
-      { label: "Weight", values: [{ text: "72 kg (158 lb)" }] },
-      { label: "Sex", values: [{ text: "Male" }] },
-      { label: "Race", values: [{ text: "Caucasian" }] },
+      { label: "Height", values: [{ text: "1.76 m (5′9″)" }] },
+      { label: "Weight", values: [{ text: "72 kg (158 lb)" }] },
     ],
   },
   {
@@ -140,8 +136,8 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Rizel van den Berg (mother)" },
           { text: "Cornelius Roos (father)" },
           {
-            text: "Jean Piere Maritz (brother, d. 2004)",
-            note: "Brother. Deceased 10 March 2004.",
+            text: "Jean Piere Maritz (brother)",
+            note: "Deceased 10 March 2004.",
           },
         ],
       },

@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+// Colour tokens mirror the CSS custom properties in app/globals.css (the single
+// source of truth). Reference them by name in JSX; never write a raw hex inline.
 const config: Config = {
   content: [
     "./app/**/*.{ts,tsx}",
@@ -9,33 +11,37 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Lightly-branded accent: deep teal used sparingly for chrome.
+        text: "var(--text)",
+        muted: "var(--muted)",
+        "muted-2": "var(--muted-2)",
+        link: "var(--link)",
+        "link-hover": "var(--link-hover)",
+        "link-visited": "var(--link-visited)",
+        "link-red": "var(--link-red)",
         accent: {
-          DEFAULT: "#0f6e66",
-          dark: "#0a534d",
+          DEFAULT: "var(--accent)",
+          light: "var(--accent-light)",
         },
-        wikilink: "#3366cc",
-        wikilinkvisited: "#795cb2",
-        wikired: "#ba0000",
-        paper: "#ffffff",
-        infobox: "#f8f9fa",
-        infoboxborder: "#a2a9b1",
-        rule: "#c8ccd1",
+        focus: "var(--focus)",
+        paper: "var(--surface-paper)",
+        "surface-app": "var(--surface-app)",
+        "surface-subtle": "var(--surface-subtle)",
+        "surface-band": "var(--surface-band)",
+        "border-strong": "var(--border-strong)",
+        rule: "var(--rule)",
+        "rule-soft": "var(--rule-soft)",
+        mark: "var(--mark)",
       },
       fontFamily: {
-        serif: ["Georgia", "'Times New Roman'", "serif"],
-        sans: [
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "'Segoe UI'",
-          "Roboto",
-          "Helvetica",
-          "Arial",
-          "sans-serif",
-        ],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+      },
+      boxShadow: {
+        overlay: "var(--shadow-overlay)",
       },
       maxWidth: {
-        article: "62rem",
+        article: "68ch",
       },
     },
   },

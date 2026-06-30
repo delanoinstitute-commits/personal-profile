@@ -15,14 +15,14 @@ export default function Timeline({ eras }: { eras: TimelineEra[] }) {
         <div key={era.title} className="mt-5">
           <h3 className="!mt-3">{era.title}</h3>
           {era.subtitle && (
-            <p className="-mt-1 text-[0.86rem] italic text-[#54595d]">{era.subtitle}</p>
+            <p className="-mt-1 text-sm italic text-muted">{era.subtitle}</p>
           )}
-          <dl className="border-l-2 border-rule pl-4">
+          <dl className="border-l-2 border-rule pl-3 sm:pl-4">
             {era.entries.map((e) => (
               <div key={e.year} className="mb-3">
                 <dt className="timeline-year">
                   {e.year}{" "}
-                  <span className="font-sans text-[0.78rem] font-normal text-[#72777d]">
+                  <span className="font-sans text-xs font-normal text-muted-2">
                     (age {e.age})
                   </span>
                 </dt>

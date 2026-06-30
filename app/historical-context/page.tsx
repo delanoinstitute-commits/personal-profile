@@ -172,14 +172,14 @@ export default function HistoricalContextPage() {
     <>
       <PageHeading
         title="Historical context"
-        hatnote={<>What I&rsquo;ve done — places, people, and events over time</>}
+        hatnote={<>What he has done — places, people, and events over time</>}
       />
 
-      <p>
-        A contextual timeline of one life. The premise of this whole site is that an
-        accurate chronology shows true causality — how a person actually came to think and
-        work the way they do. Below: the biography, followed by the qualifications, work,
-        and ventures that came out of it.
+      <p className="lead">
+        A contextual timeline of one life. The premise of this site is that an accurate
+        chronology shows true causality — how a person actually came to think and work the
+        way they do. Below: the biography, followed by the qualifications, work, and
+        ventures that came out of it.
       </p>
 
       <h2 id="biography">Biography</h2>

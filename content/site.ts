@@ -1,6 +1,14 @@
 // Global site metadata and navigation structure.
 // The navigation mirrors the "table of contents" of the wiki: each top-level
 // entry is its own page, and each child is an in-page section (anchor).
+//
+// CANONICAL NOMENCLATURE (house style — see DESIGN_SPEC.md §8). One spelling each:
+//   learning-systems designer · 10X · single-set-to-failure · self-mastery ·
+//   Mindvalley · CrossFit · taxonomical · the six domains, in fixed order:
+//   train, eat, finance, learn, mind, plan.
+// Voice: body is third person ("Delano", "he"); CTA is second person; first
+// person "I" only inside attributed quotations. British spelling, except
+// "program" (US) for named products. Sentence case; Oxford comma; D Month YYYY.
 
 export const SITE = {
   name: "Lorenzo Delano",
@@ -27,14 +35,14 @@ export const NAV: NavPage[] = [
     sections: [
       { label: "About", anchor: "about" },
       { label: "Roles", anchor: "roles" },
-      { label: "How I can help", anchor: "contact" },
+      { label: "How he can help", anchor: "contact" },
       { label: "Why this site", anchor: "why" },
     ],
   },
   {
     label: "Current status",
     href: "/current-status",
-    gloss: "Who I am now",
+    gloss: "Who he is now",
     sections: [
       { label: "Psychological", anchor: "psychological" },
       { label: "Physical", anchor: "physical" },
@@ -46,7 +54,7 @@ export const NAV: NavPage[] = [
   {
     label: "Historical context",
     href: "/historical-context",
-    gloss: "What I've done",
+    gloss: "What he has done",
     sections: [
       { label: "Biography", anchor: "biography" },
       { label: "Education", anchor: "education" },

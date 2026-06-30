@@ -11,17 +11,17 @@ export default function FutureTrajectoryPage() {
         hatnote={<>Where to next — growth and intended impact</>}
       />
 
-      <p>
-        I&rsquo;m currently immigrating to the United States and looking for the next
-        company, partner, or investor who can make the most of what I do. This page states
-        where I&rsquo;m headed — personally and in terms of the impact I want to have.
+      <p className="lead">
+        Delano is immigrating to the United States and looking for the next company,
+        partner, or investor who can make the most of what he does. This page states where
+        he is headed — personally, and in terms of the impact he wants to have.
       </p>
 
       <h2 id="personal">Personal (growth)</h2>
       <h4>Vision</h4>
       <p>
-        Become one of the most knowledgeable people in the world — and use that to build
-        the ultimate, universal curriculum: the minimum, most comprehensive body of
+        To become one of the most knowledgeable people in the world — and to use that to
+        build the ultimate, universal curriculum: the minimum, most comprehensive body of
         knowledge every human should study and know.
       </p>
       <h4>Active threads</h4>
@@ -31,23 +31,23 @@ export default function FutureTrajectoryPage() {
           body of knowledge into something teachable.
         </li>
         <li>
-          Completing an integrated <strong>exercise/fitness taxonomy</strong> and a
+          Completing an integrated <strong>exercise and fitness taxonomy</strong> and a
           complete bodyweight physical-development program.
         </li>
         <li>
-          Going deep into <strong>chemistry</strong> (organic chemistry) to round out a
-          scientific foundation built up over several years.
+          Going deep into <strong>organic chemistry</strong> to round out a scientific
+          foundation built up over several years.
         </li>
         <li>
-          The six domains of self-mastery — <strong>train, eat, finance, learn, mind,
+          The six domains of self-mastery — <strong>train, eat, finance, learn, mind, and
           plan</strong> — as a single, coherent operating system for a life.
         </li>
       </ul>
 
       <h2 id="social">Social (impact)</h2>
       <p>
-        I want to help expand consciousness — directly, or by helping people do it for
-        themselves. It&rsquo;s a tragedy for a high-potential individual to be held back by
+        Delano wants to help expand consciousness — directly, or by helping people do it
+        for themselves. It is a tragedy for a high-potential individual to be held back by
         the drudgery of maintenance; good systems should free people for higher work.
       </p>
       <p>

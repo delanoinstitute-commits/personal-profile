@@ -1,37 +1,61 @@
 import Image from "next/image";
-import { INFOBOX, PROFILE } from "@/content/profile";
+import { INFOBOX, PROFILE, InfoboxRow, InfoboxValue } from "@/content/profile";
 import Tooltip from "./Tooltip";
 import WikiLink from "./WikiLink";
 
+type InfoboxProps = {
+  /** Eager-load the portrait (use for the visible desktop rail instance only). */
+  priority?: boolean;
+  /** Cap the portrait width — used for the inline mobile copy. */
+  compact?: boolean;
+  /** Inside the mobile <details> wrapper: drop the outer frame + landmark. */
+  embedded?: boolean;
+};
+
 /**
- * The right-rail infobox — the visual heart of the "Wikipedia about me" idea.
- * Renders the profile across four lenses (Personal / Cultural / Biological /
- * Legal) as a summary card, like the biography box on a real Wikipedia article.
+ * The infobox — the profile across four lenses (Personal / Cultural /
+ * Biological / Legal) as an encyclopedia data panel. Rendered twice (desktop
+ * rail + inline mobile copy), each shown at a single breakpoint; only the rail
+ * copy is priority-loaded. See DESIGN_SPEC.md §4.3.
  */
-export default function Infobox() {
+export default function Infobox({
+  priority = false,
+  compact = false,
+  embedded = false,
+}: InfoboxProps) {
+  const Frame = embedded ? "div" : "aside";
+
   return (
-    <aside className="w-full text-[0.84rem] leading-snug" aria-label="Profile summary">
-      <div className="border border-infoboxborder bg-infobox">
-        <div className="border-b border-infoboxborder bg-[#eaecf0] px-2 py-2 text-center font-serif text-[1.05rem] font-bold">
+    <Frame
+      {...(embedded ? {} : { "aria-label": "Profile summary" })}
+      className="w-full text-sm leading-snug"
+    >
+      <div className={embedded ? "" : "border border-border-strong bg-surface-subtle"}>
+        {/* Title bar */}
+        <div className="border-b border-border-strong bg-surface-band px-2 py-2 text-center font-serif text-[1.1875rem] font-semibold text-text">
           {PROFILE.name}
         </div>
 
         {/* Portrait */}
-        <div className="border-b border-infoboxborder p-2">
-          <Image
-            src={PROFILE.image}
-            alt={`Portrait of ${PROFILE.name}`}
-            width={700}
-            height={933}
-            priority
-            className="h-auto w-full"
-          />
-          <div className="mt-1 text-center text-[0.78rem] text-[#54595d]">
+        <div className="border-b border-border-strong p-2">
+          <div className={compact ? "mx-auto max-w-[12rem]" : ""}>
+            <Image
+              src={PROFILE.image}
+              alt={`Portrait of ${PROFILE.name}, ${PROFILE.imageCaption}`}
+              width={700}
+              height={933}
+              priority={priority}
+              sizes="(min-width: 1024px) 320px, 192px"
+              className="h-auto w-full"
+            />
+          </div>
+          <div className="mt-1 text-center text-xs text-muted">
             {PROFILE.imageCaption}
           </div>
         </div>
 
         <table className="w-full border-collapse">
+          <caption className="sr-only">Profile summary of {PROFILE.name}</caption>
           <tbody>
             {INFOBOX.map((group) => (
               <GroupBlock key={group.heading} heading={group.heading} rows={group.rows} />
@@ -39,32 +63,31 @@ export default function Infobox() {
           </tbody>
         </table>
       </div>
-    </aside>
+    </Frame>
   );
 }
 
-function GroupBlock({
-  heading,
-  rows,
-}: {
-  heading: string;
-  rows: { label: string; values: { text: string; href?: string; note?: string }[] }[];
-}) {
+function GroupBlock({ heading, rows }: { heading: string; rows: InfoboxRow[] }) {
+  // Omit any row whose values are all empty — no placeholder.
+  const visible = rows.filter((r) => r.values.some((v) => v.text.trim() !== ""));
+  if (visible.length === 0) return null;
+
   return (
     <>
       <tr>
         <th
           colSpan={2}
-          className="border-y border-infoboxborder bg-[#eaecf0] px-2 py-1 text-center font-bold"
+          scope="colgroup"
+          className="border-y border-border-strong bg-surface-band px-2 py-1 text-center text-[0.8125rem] font-semibold uppercase tracking-[0.04em] text-text"
         >
           {heading}
         </th>
       </tr>
-      {rows.map((row) => (
+      {visible.map((row) => (
         <Row key={row.label} label={row.label}>
           {row.values.map((v, i) => (
             <span key={i} className="block">
-              <ValueCell text={v.text} href={v.href} note={v.note} />
+              <ValueCell value={v} />
             </span>
           ))}
         </Row>
@@ -73,25 +96,35 @@ function GroupBlock({
   );
 }
 
-function ValueCell({ text, href, note }: { text: string; href?: string; note?: string }) {
-  const body = href ? <WikiLink href={href}>{text}</WikiLink> : <>{text}</>;
-  if (note) {
+function ValueCell({ value }: { value: InfoboxValue }) {
+  if (value.href && value.note) {
     return (
-      <Tooltip content={note}>
-        <span className="cursor-help border-b border-dotted border-[#72777d]">
-          {body}
-        </span>
+      <Tooltip content={value.note} interactive>
+        <WikiLink href={value.href}>{value.text}</WikiLink>
       </Tooltip>
     );
   }
-  return body;
+  if (value.href) {
+    return <WikiLink href={value.href}>{value.text}</WikiLink>;
+  }
+  if (value.note) {
+    return <Tooltip content={value.note}>{value.text}</Tooltip>;
+  }
+  return <>{value.text}</>;
 }
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <tr className="border-b border-[#eaecf0] align-top">
-      <th className="w-[34%] px-2 py-1.5 text-left font-bold text-[#202122]">{label}</th>
-      <td className="px-2 py-1.5">{children}</td>
+    <tr className="border-b border-rule-soft align-top">
+      <th
+        scope="row"
+        className="w-[34%] px-2 py-1.5 text-left font-semibold text-text"
+      >
+        {label}
+      </th>
+      <td className="px-2 py-1.5 tabular-nums [overflow-wrap:anywhere]">
+        {children}
+      </td>
     </tr>
   );
 }
