@@ -90,7 +90,7 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Self-education (since 2009)" },
         ],
       },
-      { label: "Worldview", values: [{ text: "Rational optimist" }] },
+      { label: "Worldview", values: [{ text: "Integral (rational) optimist" }] },
       {
         label: "Appearance",
         values: [
@@ -147,7 +147,7 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Rizel van den Berg (mother)" },
           { text: "Cornelius Roos (father)" },
           {
-            text: "Jean Piere Maritz (brother)",
+            text: "Jean Pierre Maritz (brother)",
             note: "Deceased 10 March 2004.",
           },
         ],
