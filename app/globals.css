@@ -419,10 +419,11 @@ a.wikilink.red,
 
 .infobox-details > summary .chevron {
   position: absolute;
-  right: 0.6rem;
+  right: 0.55rem;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 0.7rem;
+  font-size: 1.05rem;
+  line-height: 1;
   color: var(--muted);
   transition: transform 150ms ease;
 }
