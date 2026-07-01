@@ -69,7 +69,7 @@ export const INFOBOX: InfoboxGroup[] = [
         ],
       },
       {
-        label: "Known for",
+        label: "Methods",
         values: [
           {
             text: "The RBG Method",
@@ -92,7 +92,7 @@ export const INFOBOX: InfoboxGroup[] = [
       },
       { label: "Worldview", values: [{ text: "Rational optimist" }] },
       {
-        label: "Phenotype",
+        label: "Appearance",
         values: [
           { text: "Blue eyes · brown hair" },
           { text: "1.76 m (5′9″) tall" },
@@ -117,12 +117,12 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "Languages",
         values: [
-          { text: "English (1st)" },
-          { text: "Afrikaans (native)" },
+          { text: "English (primary)" },
+          { text: "Afrikaans (mother tongue)" },
           { text: "Mandarin Chinese" },
         ],
       },
-      { label: "Ethnicity", values: [{ text: "Afrikaans" }] },
+      { label: "Ethnicity", values: [{ text: "Afrikaner" }] },
       {
         label: "Ancestry",
         values: [{ text: "Western European (Belgian, Dutch, German)" }],
@@ -137,7 +137,7 @@ export const INFOBOX: InfoboxGroup[] = [
     heading: "Legal",
     rows: [
       { label: "Residency", values: [{ text: "United States (since 2026)" }] },
-      { label: "Citizenship", values: [{ text: "South African (since 1987)" }] },
+      { label: "Citizenship", values: [{ text: "South African" }] },
       { label: "Full name", values: [{ text: "Lorenzo Delano (since 2009)" }] },
       { label: "Partner", values: [{ text: "Jelena Warren (since 2012)" }] },
       { label: "Children", values: [{ text: "None" }] },
