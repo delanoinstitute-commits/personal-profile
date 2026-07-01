@@ -149,8 +149,7 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "Appearance",
         values: [
-          { text: "Blue eyes · brown hair" },
-          { text: "1.76 m (5′9″) tall" },
+          { text: "Blue eyes · brown hair · average height (176 cm)" },
         ],
       },
       {
