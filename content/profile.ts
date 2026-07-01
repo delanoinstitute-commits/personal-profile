@@ -82,7 +82,6 @@ export const INFOBOX: InfoboxGroup[] = [
           },
         ],
       },
-      { label: "Worldview", values: [{ text: "Rational optimist" }] },
       {
         label: "Education",
         values: [
@@ -91,6 +90,7 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Self-education (since 2009)" },
         ],
       },
+      { label: "Worldview", values: [{ text: "Rational optimist" }] },
       {
         label: "Quote",
         values: [
