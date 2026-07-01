@@ -52,6 +52,31 @@ export default function IdentityPage() {
         <li>&ldquo;Success is consistent, high-integrity effort — not a destination.&rdquo;</li>
         <li>&ldquo;Make the most with where you are, who you know, and what you have.&rdquo;</li>
       </ul>
+
+      <h2 id="interests">Interests</h2>
+      <h4>Activities</h4>
+      <p>
+        Coffee and healthy-food experiences; walking, hiking, and exploring new places on
+        foot; wellness experiences involving saunas; wildlife; and music and cinema.
+      </p>
+      <h4>Tendencies</h4>
+      <p>
+        Organising (concepts and objects) and cleaning — a constant drive to find the
+        underlying structure of things and to arrange life for more effective living.
+      </p>
+      <h4>Subjects</h4>
+      <p>
+        Science, philosophy, finance, and self-mastery — the non-outsourceable activities:
+        time, food, movement, hygiene, education, and stillness. Delano translates almost
+        everything into practical frameworks for daily living.
+      </p>
+      <h4>Influences</h4>
+      <p>
+        Intellectual and spiritual: John Demartini, Alan Watts, Neale Donald Walsch, Ken
+        Wilber, Peter Attia, Jordan Peterson, Naval Ravikant, Dave Snowden, and David
+        Deutsch. Success and craft: Bruce Lee, Tony Robbins, and Elon Musk. Fictional
+        touchstones: Liu Kang, Goku, the Last Samurai&rsquo;s Nathan Algren, and Tony Stark.
+      </p>
     </>
   );
 }

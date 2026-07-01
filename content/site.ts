@@ -70,7 +70,10 @@ export const NAV_GROUPS: NavGroup[] = [
       {
         label: "Identity",
         href: "/identity",
-        sections: [{ label: "Psychological", anchor: "psychological" }],
+        sections: [
+          { label: "Psychological", anchor: "psychological" },
+          { label: "Interests", anchor: "interests" },
+        ],
       },
       {
         label: "Health",
