@@ -12,9 +12,9 @@ type InfoboxProps = {
   embedded?: boolean;
 };
 
-// Groups other than Personal are collapsible (native <details>, default
-// collapsed). Personal stays always-visible — it's the hook.
-const COLLAPSIBLE = new Set(["Cultural", "Legal"]);
+// All groups collapse (native <details>). Personal defaults open (it's the
+// hook); Cultural and Legal default collapsed.
+const DEFAULT_OPEN = new Set(["Personal"]);
 
 /**
  * The infobox — the profile across three lenses (Personal / Cultural / Legal)
@@ -63,7 +63,7 @@ export default function Infobox({
           <Group
             key={group.heading}
             group={group}
-            collapsible={COLLAPSIBLE.has(group.heading)}
+            defaultOpen={DEFAULT_OPEN.has(group.heading)}
           />
         ))}
       </div>
@@ -71,47 +71,34 @@ export default function Infobox({
   );
 }
 
-function Group({ group, collapsible }: { group: InfoboxGroup; collapsible: boolean }) {
+function Group({ group, defaultOpen }: { group: InfoboxGroup; defaultOpen: boolean }) {
   // Omit any row whose values are all empty — no placeholder.
   const visible = group.rows.filter((r) => r.values.some((v) => v.text.trim() !== ""));
   if (visible.length === 0) return null;
 
-  const rows = (
-    <dl className="infobox-dl">
-      {visible.map((row) => (
-        <div className="infobox-row" key={row.label}>
-          <dt>{row.label}</dt>
-          <dd>
-            {row.values.map((v, i) => (
-              <span key={i} className="block">
-                <ValueCell value={v} />
-              </span>
-            ))}
-          </dd>
-        </div>
-      ))}
-    </dl>
-  );
-
-  if (collapsible) {
-    return (
-      <details className="infobox-details">
-        <summary className="infobox-heading">
-          {group.heading}
-          <span className="chevron" aria-hidden="true">
-            ▾
-          </span>
-        </summary>
-        {rows}
-      </details>
-    );
-  }
-
   return (
-    <div>
-      <div className="infobox-heading">{group.heading}</div>
-      {rows}
-    </div>
+    <details className="infobox-details" open={defaultOpen}>
+      <summary className="infobox-heading">
+        {group.heading}
+        <span className="chevron" aria-hidden="true">
+          ▾
+        </span>
+      </summary>
+      <dl className="infobox-dl">
+        {visible.map((row) => (
+          <div className="infobox-row" key={row.label}>
+            <dt>{row.label}</dt>
+            <dd>
+              {row.values.map((v, i) => (
+                <span key={i} className="block">
+                  <ValueCell value={v} />
+                </span>
+              ))}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </details>
   );
 }
 
