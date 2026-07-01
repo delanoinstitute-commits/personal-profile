@@ -90,7 +90,8 @@ export default function PortraitCarousel({ priority = false }: { priority?: bool
       <div className="mt-1 flex items-start justify-between gap-2 px-0.5">
         <div className="min-w-0" aria-live="polite">
           <div className="text-xs text-muted">
-            {CAROUSEL[index].context} · {CAROUSEL[index].year}
+            {CAROUSEL[index].context} ({CAROUSEL[index].location},{" "}
+            {CAROUSEL[index].year})
           </div>
           {CAROUSEL[index].photographer && (
             <div className="text-[0.7rem] leading-tight text-muted-2">
@@ -109,7 +110,7 @@ export default function PortraitCarousel({ priority = false }: { priority?: bool
               type="button"
               role="tab"
               aria-selected={i === index}
-              aria-label={`${img.context}, ${img.year} (photo ${i + 1} of ${n})`}
+              aria-label={`${img.context} (${img.location}, ${img.year}) — photo ${i + 1} of ${n}`}
               onClick={() => go(i)}
               className={`h-2 w-2 rounded-full transition-colors ${
                 i === index ? "bg-accent" : "bg-rule hover:bg-muted-2"

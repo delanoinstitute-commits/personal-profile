@@ -48,6 +48,7 @@ export type CarouselImage = {
   src: string;
   alt: string;
   context: string; // what the photo shows, e.g. "Speaking"
+  location: string;
   year: string;
   photographer?: string; // credit line, when known
   objectPosition?: string;
@@ -58,13 +59,15 @@ export const CAROUSEL: CarouselImage[] = [
     src: "/carousel/portrait.jpg",
     alt: "Studio portrait of Lorenzo Delano, arms crossed",
     context: "Portrait",
+    location: "Joburg",
     year: "2020",
-    objectPosition: "50% 22%",
+    objectPosition: "50% 32%",
   },
   {
     src: "/carousel/speaking.jpg",
     alt: "Delano presenting on stage with a headset microphone",
     context: "Speaking",
+    location: "Estonia",
     year: "2022",
     photographer: "Kersti Niglas",
     objectPosition: "58% 50%",
@@ -72,32 +75,28 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/production.jpg",
     alt: "Delano directing a MasterClass film shoot, holding a clapperboard",
-    context: "Production",
+    context: "Producing",
+    location: "Colorado",
     year: "2019",
     objectPosition: "64% 38%",
   },
   {
-    src: "/carousel/teaching.jpg",
-    alt: "Delano leading a learning workshop around a table",
-    context: "Teaching",
+    src: "/carousel/training.jpg",
+    alt: "Delano leading a training workshop around a table",
+    context: "Training",
+    location: "Barcelona",
     year: "2017",
     photographer: "Paulius Staniunas",
-    objectPosition: "50% 42%",
+    objectPosition: "50% 45%",
   },
   {
     src: "/carousel/coaching.jpg",
-    alt: "Delano coaching a client in a gym",
+    alt: "Delano coaching a group in a gym",
     context: "Coaching",
+    location: "Italy",
     year: "2018",
     photographer: "Mardo Männimägi",
-    objectPosition: "66% 32%",
-  },
-  {
-    src: "/carousel/physique.jpg",
-    alt: "Delano showing his lean, muscular physical condition",
-    context: "Body portrait",
-    year: "2020",
-    objectPosition: "50% 16%",
+    objectPosition: "72% 48%",
   },
 ];
 
