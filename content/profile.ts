@@ -47,7 +47,9 @@ export const PROFILE = {
 export type CarouselImage = {
   src: string;
   alt: string;
-  caption: string;
+  context: string; // what the photo shows, e.g. "Speaking"
+  year: string;
+  photographer?: string; // credit line, when known
   objectPosition?: string;
 };
 
@@ -55,31 +57,46 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/portrait.jpg",
     alt: "Studio portrait of Lorenzo Delano, arms crossed",
-    caption: "Portrait",
+    context: "Portrait",
+    year: "2020",
     objectPosition: "50% 22%",
   },
   {
     src: "/carousel/speaking.jpg",
     alt: "Delano presenting on stage with a headset microphone",
-    caption: "Speaking",
+    context: "Speaking",
+    year: "2022",
+    photographer: "Kersti Niglas",
     objectPosition: "58% 50%",
+  },
+  {
+    src: "/carousel/production.jpg",
+    alt: "Delano directing a MasterClass film shoot, holding a clapperboard",
+    context: "Production",
+    year: "2019",
+    objectPosition: "64% 38%",
   },
   {
     src: "/carousel/teaching.jpg",
     alt: "Delano leading a learning workshop around a table",
-    caption: "Teaching",
+    context: "Teaching",
+    year: "2017",
+    photographer: "Paulius Staniunas",
     objectPosition: "50% 42%",
   },
   {
-    src: "/carousel/directing.jpg",
-    alt: "Delano directing on a film set beside a lighting rig",
-    caption: "Directing",
-    objectPosition: "50% 16%",
+    src: "/carousel/coaching.jpg",
+    alt: "Delano coaching a client in a gym",
+    context: "Coaching",
+    year: "2018",
+    photographer: "Mardo Männimägi",
+    objectPosition: "66% 32%",
   },
   {
-    src: "/carousel/fitness.jpg",
+    src: "/carousel/physique.jpg",
     alt: "Delano showing his lean, muscular physical condition",
-    caption: "Fitness",
+    context: "Body portrait",
+    year: "2020",
     objectPosition: "50% 16%",
   },
 ];
