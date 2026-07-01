@@ -110,6 +110,9 @@ function ValueCell({ value }: { value: InfoboxValue }) {
   if (value.note) {
     return <Tooltip content={value.note}>{value.text}</Tooltip>;
   }
+  if (value.italic) {
+    return <em className="font-serif text-text">{value.text}</em>;
+  }
   return <>{value.text}</>;
 }
 

@@ -9,6 +9,7 @@ export type InfoboxValue = {
   text: string;
   href?: string; // optional external link or internal route
   note?: string; // optional tooltip/reference text
+  italic?: boolean; // render as an elegant serif-italic quote
 };
 
 export type InfoboxRow = {
@@ -46,10 +47,26 @@ export const PROFILE = {
 
 export const INFOBOX: InfoboxGroup[] = [
   {
-    // Who he is and what he does — the hook. Capability first, identity-colour
-    // next, birth facts as a quiet footer.
+    // Birth facts first, then how he was formed, then what he does and stands
+    // for, closing on the motto he lives by.
     heading: "Personal",
     rows: [
+      {
+        label: "Born",
+        values: [
+          { text: "Lorenzo Roos" },
+          { text: `7 December 1987 (age ${AGE})` },
+          { text: "Krugersdorp, South Africa" },
+        ],
+      },
+      {
+        label: "Education",
+        values: [
+          { text: "Pretoria Chinese High" },
+          { text: "ETA College (2008)" },
+          { text: "Self-education (since 2009)" },
+        ],
+      },
       {
         label: "Occupation",
         values: [
@@ -58,6 +75,7 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Performance coach" },
         ],
       },
+      { label: "Archetype", values: [{ text: "Rick Rubin meets Tim Ferriss" }] },
       {
         label: "Known for",
         values: [
@@ -72,22 +90,14 @@ export const INFOBOX: InfoboxGroup[] = [
           },
         ],
       },
-      { label: "Archetype", values: [{ text: "Rick Rubin meets Tim Ferriss" }] },
       { label: "Worldview", values: [{ text: "Rational optimist" }] },
       {
-        label: "Influences",
-        values: [{ text: "Bruce Lee · Ken Wilber · David Deutsch" }],
-      },
-      {
-        label: "Education",
-        values: [{ text: "High-school dropout (age 13) · self-taught" }],
-      },
-      {
-        label: "Born",
+        label: "Quote",
         values: [
-          { text: "Lorenzo Roos" },
-          { text: `7 December 1987 (age ${AGE})` },
-          { text: "Krugersdorp, South Africa" },
+          {
+            text: "“How you do anything is how you do everything.”",
+            italic: true,
+          },
         ],
       },
     ],
