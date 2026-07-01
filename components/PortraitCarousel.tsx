@@ -44,7 +44,7 @@ export default function PortraitCarousel({ priority = false }: { priority?: bool
       onKeyDown={onKeyDown}
     >
       <div
-        className="relative aspect-[4/3] w-full overflow-hidden border border-border-strong bg-surface-band"
+        className="relative aspect-square w-full overflow-hidden border border-border-strong bg-surface-band"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
       >
