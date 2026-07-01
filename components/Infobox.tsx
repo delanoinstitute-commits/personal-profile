@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { INFOBOX, PROFILE, InfoboxGroup, InfoboxValue } from "@/content/profile";
+import PortraitCarousel from "./PortraitCarousel";
 import Tooltip from "./Tooltip";
 import WikiLink from "./WikiLink";
 
@@ -41,21 +41,10 @@ export default function Infobox({
           {PROFILE.name}
         </div>
 
-        {/* Portrait */}
+        {/* Portrait carousel */}
         <div className="border-b border-border-strong p-2">
-          <div className={compact ? "mx-auto max-w-[12rem]" : ""}>
-            <Image
-              src={PROFILE.image}
-              alt={`Portrait of ${PROFILE.name}, ${PROFILE.imageCaption}`}
-              width={700}
-              height={933}
-              priority={priority}
-              sizes="(min-width: 1024px) 336px, 192px"
-              className="h-auto w-full"
-            />
-          </div>
-          <div className="mt-1 text-center text-xs text-muted">
-            {PROFILE.imageCaption}
+          <div className={compact ? "mx-auto max-w-[16rem]" : ""}>
+            <PortraitCarousel priority={priority} />
           </div>
         </div>
 

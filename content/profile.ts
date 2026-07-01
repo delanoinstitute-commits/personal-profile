@@ -39,11 +39,50 @@ const AGE = ageFrom(DOB);
 
 export const PROFILE = {
   name: "Lorenzo Delano",
-  // Place an image at /public/portrait.jpg to show a photo.
-  image: "/portrait.jpg",
-  imageCaption: "Delano in 2020",
   dob: DOB,
 };
+
+// Portrait carousel — Delano across contexts. Each shown in a fixed 4:3 box
+// (object-cover); objectPosition frames the crop per image.
+export type CarouselImage = {
+  src: string;
+  alt: string;
+  caption: string;
+  objectPosition?: string;
+};
+
+export const CAROUSEL: CarouselImage[] = [
+  {
+    src: "/carousel/portrait.jpg",
+    alt: "Studio portrait of Lorenzo Delano, arms crossed",
+    caption: "Portrait",
+    objectPosition: "50% 22%",
+  },
+  {
+    src: "/carousel/speaking.jpg",
+    alt: "Delano presenting on stage with a headset microphone",
+    caption: "Speaking",
+    objectPosition: "58% 50%",
+  },
+  {
+    src: "/carousel/teaching.jpg",
+    alt: "Delano leading a learning workshop around a table",
+    caption: "Teaching",
+    objectPosition: "50% 42%",
+  },
+  {
+    src: "/carousel/directing.jpg",
+    alt: "Delano directing on a film set beside a lighting rig",
+    caption: "Directing",
+    objectPosition: "50% 16%",
+  },
+  {
+    src: "/carousel/fitness.jpg",
+    alt: "Delano showing his lean, muscular physical condition",
+    caption: "Fitness",
+    objectPosition: "50% 16%",
+  },
+];
 
 export const INFOBOX: InfoboxGroup[] = [
   {
