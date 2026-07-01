@@ -1,7 +1,7 @@
 // The infobox data — the right-column profile that sits beside the article,
-// like the summary box on a Wikipedia biography. Organised into four lenses,
+// like the summary box on a Wikipedia biography. Organised into three lenses,
 // ordered for a first-time visitor scanning "who is this, and should I engage
-// them?": Personal → Cultural → Biological → Legal. Within each group, entries
+// them?": Personal → Cultural → Legal. Within each group, entries
 // are ordered by descending engagement-signal. Financial/economic data is
 // intentionally excluded from the public site.
 
@@ -92,6 +92,13 @@ export const INFOBOX: InfoboxGroup[] = [
       },
       { label: "Worldview", values: [{ text: "Rational optimist" }] },
       {
+        label: "Phenotype",
+        values: [
+          { text: "Blue eyes · brown hair" },
+          { text: "1.76 m (5′9″) tall" },
+        ],
+      },
+      {
         label: "Quote",
         values: [
           {
@@ -122,15 +129,6 @@ export const INFOBOX: InfoboxGroup[] = [
       },
       { label: "Generation", values: [{ text: "Y (Millennial)" }] },
       { label: "Religion", values: [{ text: "None (secular humanist)" }] },
-    ],
-  },
-  {
-    // Coach-relevant physical descriptors.
-    heading: "Biological",
-    rows: [
-      { label: "Traits", values: [{ text: "Blue eyes · brown hair · medium build" }] },
-      { label: "Height", values: [{ text: "1.76 m (5′9″)" }] },
-      { label: "Weight", values: [{ text: "72 kg (158 lb)" }] },
     ],
   },
   {
