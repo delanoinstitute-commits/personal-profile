@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 
-export const metadata: Metadata = { title: "Lifestyle" };
+export const metadata: Metadata = { title: "Time" };
 
-export default function LifestylePage() {
+export default function TimePage() {
   return (
     <>
-      <PageHeading title="Lifestyle" hatnote={<>The present — how he lives</>} />
+      <PageHeading title="Time" hatnote={<>The present — how he lives</>} />
 
       <h2 id="behavioural">Behavioural</h2>
       <p className="lead">

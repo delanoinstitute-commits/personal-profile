@@ -59,8 +59,9 @@ export default function StartHerePage() {
         shows true causality — how a person actually came to think and act. This site is a
         living database of Delano, organised into four lenses: the{" "}
         <WikiLink href="/purpose">future</WikiLink> (where he is going), the{" "}
-        <WikiLink href="/constituents">present</WikiLink> (what makes him up, how he lives,
-        and what he does), and the <WikiLink href="/biography">past</WikiLink> (his story,
+        <WikiLink href="/skills">present</WikiLink> (what he does, who he is, how he
+        functions, what he has, and how he lives), and the{" "}
+        <WikiLink href="/biography">past</WikiLink> (his story,
         education, and experience). The profile box summarises what he is.
       </p>
 

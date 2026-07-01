@@ -56,23 +56,8 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    title: "Present (state)",
+    title: "Present (resources)",
     pages: [
-      {
-        label: "Constituents",
-        href: "/constituents",
-        sections: [
-          { label: "Psychological", anchor: "psychological" },
-          { label: "Physical", anchor: "physical" },
-          { label: "Socioeconomic", anchor: "socioeconomic" },
-          { label: "Personal", anchor: "personal" },
-        ],
-      },
-      {
-        label: "Lifestyle",
-        href: "/lifestyle",
-        sections: [{ label: "Behavioural", anchor: "behavioural" }],
-      },
       {
         label: "Skills",
         href: "/skills",
@@ -82,10 +67,30 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Coaching", anchor: "coaching" },
         ],
       },
+      {
+        label: "Identity",
+        href: "/identity",
+        sections: [{ label: "Psychological", anchor: "psychological" }],
+      },
+      {
+        label: "Health",
+        href: "/health",
+        sections: [{ label: "Physical", anchor: "physical" }],
+      },
+      {
+        label: "Assets",
+        href: "/assets",
+        sections: [{ label: "Socioeconomic", anchor: "socioeconomic" }],
+      },
+      {
+        label: "Time",
+        href: "/time",
+        sections: [{ label: "Behavioural", anchor: "behavioural" }],
+      },
     ],
   },
   {
-    title: "Past (record)",
+    title: "Past (experience)",
     pages: [
       {
         label: "Biography",
