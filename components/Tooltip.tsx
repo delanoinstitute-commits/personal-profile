@@ -21,12 +21,20 @@ export default function Tooltip({
   interactive?: boolean;
 }) {
   const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState<"top" | "bottom">("bottom");
   const id = useId();
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const wrapRef = useRef<HTMLSpanElement>(null);
 
   const show = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
+    // Flip above the trigger when there isn't room below (e.g. a bottom row of
+    // the infobox, where opening downward would be clipped by the scroll rail).
+    const rect = wrapRef.current?.getBoundingClientRect();
+    if (rect) {
+      const spaceBelow = window.innerHeight - rect.bottom;
+      setPlacement(spaceBelow < 150 && rect.top > 120 ? "top" : "bottom");
+    }
     setOpen(true);
   };
   const scheduleHide = () => {
@@ -59,7 +67,9 @@ export default function Tooltip({
       id={id}
       onMouseEnter={show}
       onMouseLeave={scheduleHide}
-      className="absolute left-1/2 top-full z-50 mt-1 w-64 max-w-[80vw] -translate-x-1/2 rounded border border-border-strong bg-paper px-3 py-2 text-[0.82rem] font-normal leading-snug text-text shadow-overlay"
+      className={`absolute left-1/2 z-50 w-64 max-w-[80vw] -translate-x-1/2 rounded border border-border-strong bg-paper px-3 py-2 text-[0.82rem] font-normal leading-snug text-text shadow-overlay ${
+        placement === "top" ? "bottom-full mb-1" : "top-full mt-1"
+      }`}
     >
       {content}
     </span>
@@ -92,7 +102,7 @@ export default function Tooltip({
         onMouseLeave={scheduleHide}
         onFocus={show}
         onBlur={scheduleHide}
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => (open ? setOpen(false) : show())}
         className="cursor-help border-b border-dotted border-muted-2 text-left"
       >
         {children}

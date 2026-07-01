@@ -139,7 +139,6 @@ export const INFOBOX: InfoboxGroup[] = [
       { label: "Residency", values: [{ text: "United States (since 2026)" }] },
       { label: "Citizenship", values: [{ text: "South African" }] },
       { label: "Full name", values: [{ text: "Lorenzo Delano (since 2009)" }] },
-      { label: "Partner", values: [{ text: "Jelena Warren (since 2012)" }] },
       { label: "Children", values: [{ text: "None" }] },
       {
         label: "Family",
@@ -147,7 +146,7 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Rizel van den Berg (mother)" },
           { text: "Cornelius Roos (father)" },
           {
-            text: "Jean Pierre Maritz (brother)",
+            text: "Jean Pierre (brother)",
             note: "Deceased 10 March 2004.",
           },
         ],
