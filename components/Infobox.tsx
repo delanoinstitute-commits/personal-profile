@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { INFOBOX, PROFILE, InfoboxRow, InfoboxValue } from "@/content/profile";
+import { INFOBOX, PROFILE, InfoboxGroup, InfoboxValue } from "@/content/profile";
 import Tooltip from "./Tooltip";
 import WikiLink from "./WikiLink";
 
@@ -12,10 +12,15 @@ type InfoboxProps = {
   embedded?: boolean;
 };
 
+// Groups other than Personal are collapsible (native <details>, default
+// collapsed). Personal stays always-visible — it's the hook.
+const COLLAPSIBLE = new Set(["Cultural", "Legal"]);
+
 /**
- * The infobox — the profile across four lenses (Personal / Cultural /
- * Biological / Legal) as an encyclopedia data panel. Rendered twice (desktop
- * rail + inline mobile copy), each shown at a single breakpoint; only the rail
+ * The infobox — the profile across three lenses (Personal / Cultural / Legal)
+ * as an encyclopedia data panel. Rows are a semantic description list; Cultural
+ * and Legal are native <details> collapsibles (zero-JS, keyboard/AT friendly,
+ * no CLS). Rendered twice (desktop rail + inline mobile copy); only the rail
  * copy is priority-loaded. See DESIGN_SPEC.md §4.3.
  */
 export default function Infobox({
@@ -54,45 +59,59 @@ export default function Infobox({
           </div>
         </div>
 
-        <table className="w-full border-collapse">
-          <caption className="sr-only">Profile summary of {PROFILE.name}</caption>
-          <tbody>
-            {INFOBOX.map((group) => (
-              <GroupBlock key={group.heading} heading={group.heading} rows={group.rows} />
-            ))}
-          </tbody>
-        </table>
+        {INFOBOX.map((group) => (
+          <Group
+            key={group.heading}
+            group={group}
+            collapsible={COLLAPSIBLE.has(group.heading)}
+          />
+        ))}
       </div>
     </Frame>
   );
 }
 
-function GroupBlock({ heading, rows }: { heading: string; rows: InfoboxRow[] }) {
+function Group({ group, collapsible }: { group: InfoboxGroup; collapsible: boolean }) {
   // Omit any row whose values are all empty — no placeholder.
-  const visible = rows.filter((r) => r.values.some((v) => v.text.trim() !== ""));
+  const visible = group.rows.filter((r) => r.values.some((v) => v.text.trim() !== ""));
   if (visible.length === 0) return null;
 
-  return (
-    <>
-      <tr>
-        <th
-          colSpan={2}
-          scope="colgroup"
-          className="border-y border-border-strong bg-surface-band px-2 py-1 text-center text-[0.8125rem] font-semibold uppercase tracking-[0.04em] text-text"
-        >
-          {heading}
-        </th>
-      </tr>
+  const rows = (
+    <dl className="infobox-dl">
       {visible.map((row) => (
-        <Row key={row.label} label={row.label}>
-          {row.values.map((v, i) => (
-            <span key={i} className="block">
-              <ValueCell value={v} />
-            </span>
-          ))}
-        </Row>
+        <div className="infobox-row" key={row.label}>
+          <dt>{row.label}</dt>
+          <dd>
+            {row.values.map((v, i) => (
+              <span key={i} className="block">
+                <ValueCell value={v} />
+              </span>
+            ))}
+          </dd>
+        </div>
       ))}
-    </>
+    </dl>
+  );
+
+  if (collapsible) {
+    return (
+      <details className="infobox-details">
+        <summary className="infobox-heading">
+          {group.heading}
+          <span className="chevron" aria-hidden="true">
+            ▾
+          </span>
+        </summary>
+        {rows}
+      </details>
+    );
+  }
+
+  return (
+    <div>
+      <div className="infobox-heading">{group.heading}</div>
+      {rows}
+    </div>
   );
 }
 
@@ -114,20 +133,4 @@ function ValueCell({ value }: { value: InfoboxValue }) {
     return <em className="font-serif text-text">{value.text}</em>;
   }
   return <>{value.text}</>;
-}
-
-function Row({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <tr className="border-b border-rule-soft align-top">
-      <th
-        scope="row"
-        className="w-[34%] px-2 py-1.5 text-left font-semibold text-text"
-      >
-        {label}
-      </th>
-      <td className="px-2 py-1.5 tabular-nums [overflow-wrap:anywhere]">
-        {children}
-      </td>
-    </tr>
-  );
 }
