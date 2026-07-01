@@ -47,24 +47,17 @@ export const PROFILE = {
 
 export const INFOBOX: InfoboxGroup[] = [
   {
-    // Birth facts first, then how he was formed, then what he does and stands
-    // for, closing on the motto he lives by.
+    // Positioning first (archetype), then origin, then what he does and stands
+    // for, closing on formation and the motto he lives by.
     heading: "Personal",
     rows: [
+      { label: "Archetype", values: [{ text: "Rick Rubin meets Tim Ferriss" }] },
       {
         label: "Born",
         values: [
           { text: "Lorenzo Roos" },
           { text: `7 December 1987 (age ${AGE})` },
           { text: "Krugersdorp, South Africa" },
-        ],
-      },
-      {
-        label: "Education",
-        values: [
-          { text: "Pretoria Chinese High" },
-          { text: "ETA College (2008)" },
-          { text: "Self-education (since 2009)" },
         ],
       },
       {
@@ -75,7 +68,6 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Performance coach" },
         ],
       },
-      { label: "Archetype", values: [{ text: "Rick Rubin meets Tim Ferriss" }] },
       {
         label: "Known for",
         values: [
@@ -91,6 +83,14 @@ export const INFOBOX: InfoboxGroup[] = [
         ],
       },
       { label: "Worldview", values: [{ text: "Rational optimist" }] },
+      {
+        label: "Education",
+        values: [
+          { text: "Pretoria Chinese High (2006)" },
+          { text: "ETA College (2008)" },
+          { text: "Self-education (since 2009)" },
+        ],
+      },
       {
         label: "Quote",
         values: [
