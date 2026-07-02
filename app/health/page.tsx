@@ -228,10 +228,9 @@ export default function HealthPage() {
       <PageHeading title="Health" hatnote={<>The present — how he functions</>} />
 
       <p className="lead">
-        Health and fitness are one phenomenon — functional integrity, the body&rsquo;s
-        adaptive capacity — read across a single stress&ndash;recovery continuum: at rest as
-        homeostasis and integrity, in action as capacity, with fitness the reserve between
-        them.
+        Health and fitness are one — functional integrity, the body&rsquo;s adaptive
+        capacity across a stress&ndash;recovery continuum: at rest (homeostasis and integrity)
+        and in action (capacity), with fitness the reserve.
       </p>
       <p>
         At 1.76 m and 72 kg, Delano sits high on that continuum: metabolically efficient at
