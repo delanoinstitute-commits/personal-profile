@@ -229,9 +229,10 @@ export default function HealthPage() {
       <PageHeading title="Health" hatnote={<>The present — how he functions</>} />
 
       <p className="lead">
-        Delano&rsquo;s physiology, measured both at rest and in action — the output of the
-        way he <WikiLink href="/time">lives</WikiLink>. At 1.76 m and 72 kg, he is very lean
-        (7.9% body fat) and muscular, metabolically flexible, with a broad base of capacity.
+        Delano&rsquo;s physiology, measured both at rest (homeostasis and integrity) and in
+        action (capacity) — the output of the way he <WikiLink href="/time">lives</WikiLink>.
+        At 1.76 m and 72 kg, he is very lean and muscular, metabolically efficient, with a
+        broad base of capacity.
       </p>
 
       <h2 id="homeostasis">Homeostasis</h2>
