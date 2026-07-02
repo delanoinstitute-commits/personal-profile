@@ -18,7 +18,7 @@
   --link-red: #ba0000;
   --accent: #0b5e57;
   --accent-light: #0f6e66;
-  --accent-soft: #2f7d73; /* lighter teal band — keeps white text at AA (4.9:1) */
+  --accent-soft: #d5e7e2; /* pale teal band — a touch more intense than the neutral gray */
   --focus: #0b57d0;
   --surface-paper: #ffffff;
   --surface-app: #f4f5f6;
@@ -366,9 +366,19 @@ a.wikilink.red,
 /* Grouped sub-header row: domain | metric group — accent band */
 .stat-table tr.stat-group th {
   background: var(--accent-soft);
-  color: #fff;
+  color: var(--text);
   font-weight: 600;
   letter-spacing: 0.01em;
+}
+
+/* Parentheticals ride along un-bolded inside bold cells */
+.stat-table .stat-paren {
+  font-weight: 400;
+}
+
+/* Supportive biomarkers (components of a composite primary) — italicised */
+.stat-table .stat-supportive {
+  font-style: italic;
 }
 
 /* Category (row-label) cell */
