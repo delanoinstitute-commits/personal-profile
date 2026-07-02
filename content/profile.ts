@@ -64,9 +64,17 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "50% 32%",
   },
   {
+    src: "/carousel/promotion.jpg",
+    alt: "Delano speaking on a panel stage in Dubai, mid-gesture",
+    context: "Promotion",
+    location: "Dubai",
+    year: "2025",
+    objectPosition: "44% 50%",
+  },
+  {
     src: "/carousel/speaking.jpg",
     alt: "Delano presenting on stage with a headset microphone",
-    context: "Edu Conference",
+    context: "Conference",
     location: "Estonia",
     year: "2022",
     photographer: "Kersti Niglas",
@@ -75,7 +83,7 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/production.jpg",
     alt: "Delano directing a MasterClass film shoot, holding a clapperboard",
-    context: "Mindvalley Production",
+    context: "Production",
     location: "Colorado",
     year: "2019",
     objectPosition: "64% 38%",
@@ -83,7 +91,7 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/training.jpg",
     alt: "Delano leading a training workshop around a table",
-    context: "Analytics Workshop",
+    context: "Workshop",
     location: "Barcelona",
     year: "2017",
     photographer: "Paulius Staniunas",
@@ -92,7 +100,7 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/coaching.jpg",
     alt: "Delano coaching a group in a gym",
-    context: "10X Workshop",
+    context: "Workshop",
     location: "Italy",
     year: "2018",
     photographer: "Mardo Männimägi",
