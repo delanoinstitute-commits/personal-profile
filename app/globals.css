@@ -336,6 +336,61 @@ a.wikilink.red,
   font-variant-numeric: tabular-nums;
 }
 
+/* Stat table — two fixed, aligned columns (category | metrics); grouped
+   sub-header rows in the accent colour (matching the active nav pill).
+   Every .stat-table shares the same 40/60 split so columns line up across
+   the separate tables on a page. */
+.stat-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  font-size: var(--fs-sm);
+  margin: 0.6rem 0 1.1rem;
+  min-width: 34rem;
+}
+
+.stat-table col.stat-cat {
+  width: 40%;
+}
+
+.stat-table th,
+.stat-table td {
+  border: 1px solid var(--rule);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+/* Grouped sub-header row: domain | metric group — accent band */
+.stat-table tr.stat-group th {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* Category (row-label) cell */
+.stat-table tbody th[scope="row"] {
+  background: var(--surface-subtle);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.stat-table td {
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-table td > div + div {
+  margin-top: 0.2rem;
+}
+
+/* Underlined metric terms, as marked in the source */
+.stat-table td u {
+  text-decoration-color: var(--muted-2);
+  text-underline-offset: 2px;
+}
+
 /* ===================================================================
    Timeline (biography) — §4.5
    =================================================================== */

@@ -1,8 +1,212 @@
+import { Fragment } from "react";
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
 
 export const metadata: Metadata = { title: "Health" };
+
+// ── Data (pages 1–2 of the health-status source) ─────────────────────────────
+// Each table holds grouped sub-sections; each group is one accent header row
+// (domain | metric group) followed by category rows (category | metrics).
+// A metric is [term, value]; the term is underlined, as marked in the source.
+
+type Metric = [term: string, value: string];
+type Row = { category: string; metrics: Metric[] };
+type Group = { domain: string; label: string; rows: Row[] };
+type StatTableData = { title: string; groups: Group[] };
+
+const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
+  title: "Functional homeostasis",
+  groups: [
+    {
+      domain: "Biomolecular",
+      label: "Labs (top 8)",
+      rows: [
+        {
+          category: "Cardiovascular (blood; heart)",
+          metrics: [
+            ["Apolipoprotein B", "0.6 g/L"],
+            ["Haemoglobin", "14.1 g/dL"],
+            ["Ferritin", "166 µg/L"],
+          ],
+        },
+        {
+          category: "Endometabolic (pancreas; muscle)",
+          metrics: [
+            ["HbA1c", "5.1%"],
+            ["Fasting insulin", "4.1 IU/L"],
+          ],
+        },
+        {
+          category: "Hepatorenal (liver; kidney)",
+          metrics: [
+            ["eGFR-CysC", "101"],
+            ["ALT", "26 IU/L"],
+            ["Uric acid", "0.28 mmol/L"],
+          ],
+        },
+      ],
+    },
+    {
+      domain: "Circulatory",
+      label: "Haemodynamics (top 1)",
+      rows: [
+        {
+          category: "Workload (heart)",
+          metrics: [
+            ["RPP", "5,500 mmHg"],
+            ["Blood pressure", "110/65 mmHg"],
+            ["Resting HR", "50 bpm"],
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const STRUCTURAL_INTEGRITY: StatTableData = {
+  title: "Structural integrity",
+  groups: [
+    {
+      domain: "Compositional",
+      label: "DEXA (top 4)",
+      rows: [
+        {
+          category: "Muscularity (muscle)",
+          metrics: [
+            ["ALMI", "9.4 kg/m² (>80th centile)"],
+            ["Height", "1.76 m squared (3.09)"],
+            ["ALM", "29.1 kg"],
+          ],
+        },
+        {
+          category: "Leanness (fat)",
+          metrics: [
+            ["VAT", "114 g"],
+            ["Body fat", "7.9% (<5th centile)"],
+          ],
+        },
+        {
+          category: "Density (bone)",
+          metrics: [
+            ["Z-score", "−0.3 (37th centile)"],
+            ["BMD", "1.212 g/cm²"],
+          ],
+        },
+      ],
+    },
+    {
+      domain: "Geometric",
+      label: "Anthropometrics (top 1)",
+      rows: [
+        {
+          category: "Adiposity (central)",
+          metrics: [
+            ["W-H ratio", "0.45"],
+            ["Height", "176 cm"],
+            ["Waist", "80 cm"],
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const FUNCTIONAL_CAPACITY: StatTableData = {
+  title: "Functional capacity",
+  groups: [
+    {
+      domain: "Mechanical",
+      label: "Movement (top 12)",
+      rows: [
+        {
+          category: "Hip (power)",
+          metrics: [
+            ["Ext (squat-UL)", "6 pistol squats per leg"],
+            ["Ext (hinge)", "Deadlift 2× BW"],
+            ["Flexion (curl)", "1 nordic curl"],
+          ],
+        },
+        {
+          category: "Core (stability)",
+          metrics: [
+            ["Compression (raise)", "15-sec V-sit"],
+            ["Tensegrity (press)", "15-sec back lever"],
+            ["Tensegrity (pull)", "5-sec front lever"],
+          ],
+        },
+        {
+          category: "Shoulder (strength)",
+          metrics: [
+            ["Ext (pull)", "20 pull-ups"],
+            ["Flexion (dip)", "25 chest dips"],
+            ["Flexion (press)", "OH press 0.9× BW"],
+          ],
+        },
+        {
+          category: "Global (power)",
+          metrics: [
+            ["Flexion (squat)", "Overhead squat 1× BW"],
+            ["Ext (gait)", "30-sec 200 m sprint; 12-min 3 km run; 3 W/kg FTP"],
+            ["Ext (jump)", "2.4 m broad"],
+          ],
+        },
+      ],
+    },
+    {
+      domain: "Bioenergetic",
+      label: "CTEP (top 1)",
+      rows: [
+        {
+          category: "Global (efficiency)",
+          metrics: [
+            ["VO₂max (uptake)", "53 ml/kg/min"],
+            ["Lactate (threshold)", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)"],
+            ["MFO (rate)", "0.45 g/min @ 60% VO₂max"],
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+function StatTable({ title, groups }: StatTableData) {
+  return (
+    <>
+      <h4>{title}</h4>
+      <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+        <table className="stat-table">
+          <colgroup>
+            <col className="stat-cat" />
+            <col />
+          </colgroup>
+          <tbody>
+            {groups.map((group) => (
+              <Fragment key={group.domain}>
+                <tr className="stat-group">
+                  <th scope="col">{group.domain}</th>
+                  <th scope="col">{group.label}</th>
+                </tr>
+                {group.rows.map((row) => (
+                  <tr key={row.category}>
+                    <th scope="row">{row.category}</th>
+                    <td>
+                      {row.metrics.map(([term, value]) => (
+                        <div key={term}>
+                          <u>{term}</u>: {value}
+                        </div>
+                      ))}
+                    </td>
+                  </tr>
+                ))}
+              </Fragment>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  );
+}
 
 export default function HealthPage() {
   return (
@@ -18,139 +222,11 @@ export default function HealthPage() {
       </p>
 
       <h3>At rest</h3>
-
-      <h4>Functional homeostasis</h4>
-      <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-        <table className="wiki-keytable">
-          <tbody>
-            <tr><th colSpan={2}>Biomolecular · labs</th></tr>
-            <tr>
-              <th scope="row">Cardiovascular (blood, heart)</th>
-              <td>
-                <div>Apolipoprotein B: 0.6 g/L</div>
-                <div>Haemoglobin: 14.1 g/dL</div>
-                <div>Ferritin: 166 µg/L</div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Endometabolic (pancreas, muscle)</th>
-              <td>
-                <div>HbA1c: 5.1%</div>
-                <div>Fasting insulin: 4.1 IU/L</div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Hepatorenal (liver, kidney)</th>
-              <td>
-                <div>eGFR (cystatin C): 101</div>
-                <div>ALT: 26 IU/L</div>
-                <div>Uric acid: 0.28 mmol/L</div>
-              </td>
-            </tr>
-            <tr><th colSpan={2}>Circulatory · haemodynamics</th></tr>
-            <tr>
-              <th scope="row">Workload (heart)</th>
-              <td>
-                <div>Rate-pressure product: 5,500 mmHg</div>
-                <div>Blood pressure: 110/65 mmHg</div>
-                <div>Resting HR: 50 bpm</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h4>Structural integrity</h4>
-      <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-        <table className="wiki-keytable">
-          <tbody>
-            <tr><th colSpan={2}>Compositional · DEXA</th></tr>
-            <tr>
-              <th scope="row">Muscularity (muscle)</th>
-              <td>
-                <div>ALMI: 9.4 kg/m² (&gt;80th centile)</div>
-                <div>Appendicular lean mass: 29.1 kg</div>
-                <div>Height²: 3.09 m²</div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Leanness (fat)</th>
-              <td>
-                <div>Body fat: 7.9% (&lt;5th centile)</div>
-                <div>Visceral fat: 114 g</div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Density (bone)</th>
-              <td>
-                <div>Z-score: −0.3 (37th centile)</div>
-                <div>BMD: 1.212 g/cm²</div>
-              </td>
-            </tr>
-            <tr><th colSpan={2}>Geometric · anthropometrics</th></tr>
-            <tr>
-              <th scope="row">Adiposity (central)</th>
-              <td>
-                <div>Waist-to-height ratio: 0.45</div>
-                <div>Height: 176 cm</div>
-                <div>Waist: 80 cm</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <StatTable {...FUNCTIONAL_HOMEOSTASIS} />
+      <StatTable {...STRUCTURAL_INTEGRITY} />
 
       <h3>In action</h3>
-
-      <h4>Functional capacity</h4>
-      <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-        <table className="wiki-keytable">
-          <tbody>
-            <tr><th colSpan={2}>Mechanical · movement</th></tr>
-            <tr>
-              <th scope="row">Hip (power)</th>
-              <td>
-                <div>6 pistol squats per leg</div>
-                <div>Deadlift 2× bodyweight</div>
-                <div>1 nordic curl</div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Core (stability)</th>
-              <td>
-                <div>15-second V-sit</div>
-                <div>15-second back lever</div>
-                <div>5-second front lever</div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Shoulder (strength)</th>
-              <td>
-                <div>20 pull-ups</div>
-                <div>25 chest dips</div>
-                <div>Overhead press 0.9× bodyweight</div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Global (power)</th>
-              <td>
-                <div>Overhead squat 1× bodyweight</div>
-                <div>200 m sprint in 30 s; 3 km run in 12 min; 3 W/kg FTP</div>
-                <div>2.4 m broad jump</div>
-              </td>
-            </tr>
-            <tr><th colSpan={2}>Bioenergetic · efficiency</th></tr>
-            <tr>
-              <th scope="row">Global (efficiency)</th>
-              <td>
-                <div>VO₂max: 53 ml/kg/min</div>
-                <div>Lactate threshold: 1.8 mmol/L @ 70% VO₂max (2.5 W/kg)</div>
-                <div>Max fat oxidation: 0.45 g/min @ 60% VO₂max</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <StatTable {...FUNCTIONAL_CAPACITY} />
     </>
   );
 }
