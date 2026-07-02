@@ -188,11 +188,9 @@ function labelParts(text: string) {
     );
 }
 
-function StatTable({ title, groups }: StatTableData) {
+function StatTable({ groups }: StatTableData) {
   return (
-    <>
-      <h3>{title}</h3>
-      <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+    <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
         <table className="stat-table">
           <colgroup>
             <col className="stat-cat" />
@@ -221,8 +219,7 @@ function StatTable({ title, groups }: StatTableData) {
             ))}
           </tbody>
         </table>
-      </div>
-    </>
+    </div>
   );
 }
 
@@ -231,19 +228,22 @@ export default function HealthPage() {
     <>
       <PageHeading title="Health" hatnote={<>The present — how he functions</>} />
 
-      <h2 id="health">Health</h2>
       <p className="lead">
-        Delano&rsquo;s physiology at rest — the body&rsquo;s homeostatic baseline and
-        structure, and the output of the way he <WikiLink href="/time">lives</WikiLink>. At
-        1.76 m and 72 kg, he is lean (7.9% body fat), efficient, and insulin-sensitive.
+        Delano&rsquo;s physiology, measured both at rest and in action — the output of the
+        way he <WikiLink href="/time">lives</WikiLink>. At 1.76 m and 72 kg, he is lean
+        (7.9% body fat), efficient, and insulin-sensitive, with a broad base of capacity.
       </p>
+
+      <h2 id="homeostasis">Homeostasis</h2>
+      <p>Internal balance at rest — blood chemistry and circulatory load.</p>
       <StatTable {...FUNCTIONAL_HOMEOSTASIS} />
+
+      <h2 id="integrity">Integrity</h2>
+      <p>Composition and proportion — muscle, fat, and bone, by DEXA and anthropometrics.</p>
       <StatTable {...STRUCTURAL_INTEGRITY} />
 
-      <h2 id="fitness">Fitness</h2>
-      <p className="lead">
-        The same body in action — what it produces across strength, power, and endurance.
-      </p>
+      <h2 id="capacity">Capacity</h2>
+      <p>Output in action — movement strength and bioenergetic efficiency.</p>
       <StatTable {...FUNCTIONAL_CAPACITY} />
     </>
   );

@@ -79,8 +79,9 @@ export const NAV_GROUPS: NavGroup[] = [
         label: "Health",
         href: "/health",
         sections: [
-          { label: "Health", anchor: "health" },
-          { label: "Fitness", anchor: "fitness" },
+          { label: "Homeostasis", anchor: "homeostasis" },
+          { label: "Integrity", anchor: "integrity" },
+          { label: "Capacity", anchor: "capacity" },
         ],
       },
       {
