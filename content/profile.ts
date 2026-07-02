@@ -106,7 +106,6 @@ export const INFOBOX: InfoboxGroup[] = [
     // for, closing on formation and the motto he lives by.
     heading: "Personal",
     rows: [
-      { label: "Archetype", values: [{ text: "Rick Rubin meets Tim Ferriss" }] },
       {
         label: "Born",
         values: [

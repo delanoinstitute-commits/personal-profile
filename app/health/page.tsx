@@ -22,7 +22,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
   groups: [
     {
       domain: "Biomolecular",
-      label: "Labs (top 8)",
+      label: "Labs (Top 8)",
       rows: [
         {
           category: "Cardiovascular (blood; heart)",
@@ -51,7 +51,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
     },
     {
       domain: "Circulatory",
-      label: "Haemodynamics (top 1)",
+      label: "Haemodynamics (Top 1)",
       rows: [
         {
           category: "Workload (heart)",
@@ -71,7 +71,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
   groups: [
     {
       domain: "Compositional",
-      label: "DEXA (top 4)",
+      label: "DEXA (Top 4)",
       rows: [
         {
           category: "Muscularity (muscle)",
@@ -99,7 +99,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
     },
     {
       domain: "Geometric",
-      label: "Anthropometrics (top 1)",
+      label: "Anthropometrics (Top 1)",
       rows: [
         {
           category: "Adiposity (central)",
@@ -119,7 +119,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   groups: [
     {
       domain: "Mechanical",
-      label: "Movement (top 12)",
+      label: "Movement (Top 12)",
       rows: [
         {
           category: "Hip (power)",
@@ -157,7 +157,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
     },
     {
       domain: "Bioenergetic",
-      label: "CTEP (top 1)",
+      label: "CTEP (Top 1)",
       rows: [
         {
           category: "Global (efficiency)",
@@ -201,7 +201,7 @@ function StatTable({ groups }: StatTableData) {
               <Fragment key={group.domain}>
                 <tr className="stat-group">
                   <th scope="col">{group.domain}</th>
-                  <th scope="col">{labelParts(group.label)}</th>
+                  <th scope="col">{group.label}</th>
                 </tr>
                 {group.rows.map((row) => (
                   <tr key={row.category}>
@@ -230,8 +230,9 @@ export default function HealthPage() {
 
       <p className="lead">
         Delano&rsquo;s physiology, measured both at rest and in action — the output of the
-        way he <WikiLink href="/time">lives</WikiLink>. At 1.76 m and 72 kg, he is lean
-        (7.9% body fat), efficient, and insulin-sensitive, with a broad base of capacity.
+        way he <WikiLink href="/time">lives</WikiLink>. At 1.76 m and 72 kg, he is very lean
+        (7.9% body fat) and muscular, metabolically flexible, with a broad liquid-steel work
+        capacity.
       </p>
 
       <h2 id="homeostasis">Homeostasis</h2>
