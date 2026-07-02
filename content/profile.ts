@@ -66,7 +66,7 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/speaking.jpg",
     alt: "Delano presenting on stage with a headset microphone",
-    context: "Speaking",
+    context: "Edu Conference",
     location: "Estonia",
     year: "2022",
     photographer: "Kersti Niglas",
@@ -75,7 +75,7 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/production.jpg",
     alt: "Delano directing a MasterClass film shoot, holding a clapperboard",
-    context: "Producing",
+    context: "Mindvalley Production",
     location: "Colorado",
     year: "2019",
     objectPosition: "64% 38%",
@@ -83,7 +83,7 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/training.jpg",
     alt: "Delano leading a training workshop around a table",
-    context: "Training",
+    context: "Analytics Workshop",
     location: "Barcelona",
     year: "2017",
     photographer: "Paulius Staniunas",
@@ -92,7 +92,7 @@ export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/coaching.jpg",
     alt: "Delano coaching a group in a gym",
-    context: "Coaching",
+    context: "10X Workshop",
     location: "Italy",
     year: "2018",
     photographer: "Mardo Männimägi",
@@ -121,20 +121,6 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Learning-systems architect" },
           { text: "Education producer" },
           { text: "Performance coach" },
-        ],
-      },
-      {
-        label: "Methods",
-        values: [
-          {
-            text: "The RBG Method",
-            note: "Rapid Benchmark Graduate — Delano's method for rapidly mastering a discipline to a benchmark standard.",
-          },
-          {
-            text: "The 10X Method",
-            href: "https://www.mindvalley.com/10x/quest",
-            note: "10X Fitness — the single-set-to-failure training method and Mindvalley Quest co-created by Delano, completed by 90,000+ people.",
-          },
         ],
       },
       {
