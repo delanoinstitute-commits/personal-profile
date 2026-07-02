@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
-import WikiLink from "@/components/WikiLink";
 
 export const metadata: Metadata = { title: "Health" };
 
@@ -229,10 +228,12 @@ export default function HealthPage() {
       <PageHeading title="Health" hatnote={<>The present — how he functions</>} />
 
       <p className="lead">
-        Delano&rsquo;s physiology, measured both at rest (homeostasis and integrity) and in
-        action (capacity) — the output of the way he <WikiLink href="/time">lives</WikiLink>.
-        At 1.76 m and 72 kg, he is very lean and muscular, metabolically efficient, with a
-        broad base of capacity.
+        Health and fitness are one phenomenon — functional integrity, the body&rsquo;s
+        adaptive capacity — read across a single stress&ndash;recovery continuum: at rest as
+        homeostasis and integrity, in action as capacity, with fitness the reserve between
+        them. At 1.76 m and 72 kg, Delano sits high on that continuum: metabolically
+        efficient at rest, very lean and muscular in build, with a broad base of capacity in
+        action.
       </p>
 
       <h2 id="homeostasis">Homeostasis</h2>
