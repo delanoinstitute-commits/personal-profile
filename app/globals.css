@@ -18,6 +18,7 @@
   --link-red: #ba0000;
   --accent: #0b5e57;
   --accent-light: #0f6e66;
+  --accent-soft: #2f7d73; /* lighter teal band — keeps white text at AA (4.9:1) */
   --focus: #0b57d0;
   --surface-paper: #ffffff;
   --surface-app: #f4f5f6;
@@ -350,7 +351,7 @@ a.wikilink.red,
 }
 
 .stat-table col.stat-cat {
-  width: 40%;
+  width: 11rem;
 }
 
 .stat-table th,
@@ -364,7 +365,7 @@ a.wikilink.red,
 
 /* Grouped sub-header row: domain | metric group — accent band */
 .stat-table tr.stat-group th {
-  background: var(--accent);
+  background: var(--accent-soft);
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.01em;

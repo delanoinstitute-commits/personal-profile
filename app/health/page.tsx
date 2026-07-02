@@ -173,7 +173,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
 function StatTable({ title, groups }: StatTableData) {
   return (
     <>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
         <table className="stat-table">
           <colgroup>
@@ -213,19 +213,19 @@ export default function HealthPage() {
     <>
       <PageHeading title="Health" hatnote={<>The present — how he functions</>} />
 
-      <h2 id="physical">Physical</h2>
+      <h2 id="health">Health</h2>
       <p className="lead">
-        Delano&rsquo;s current physiology, measured both at rest and in action — the output
-        of the way he <WikiLink href="/time">lives</WikiLink>. At 1.76 m and 72 kg, he is
-        lean (7.9% body fat), efficient, and insulin-sensitive, with a broad base of
-        physical capacity.
+        Delano&rsquo;s physiology at rest — the body&rsquo;s homeostatic baseline and
+        structure, and the output of the way he <WikiLink href="/time">lives</WikiLink>. At
+        1.76 m and 72 kg, he is lean (7.9% body fat), efficient, and insulin-sensitive.
       </p>
-
-      <h3>At rest</h3>
       <StatTable {...FUNCTIONAL_HOMEOSTASIS} />
       <StatTable {...STRUCTURAL_INTEGRITY} />
 
-      <h3>In action</h3>
+      <h2 id="fitness">Fitness</h2>
+      <p className="lead">
+        The same body in action — what it produces across strength, power, and endurance.
+      </p>
       <StatTable {...FUNCTIONAL_CAPACITY} />
     </>
   );
