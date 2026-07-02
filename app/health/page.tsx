@@ -228,13 +228,12 @@ export default function HealthPage() {
       <PageHeading title="Health" hatnote={<>The present — how he functions</>} />
 
       <p className="lead">
-        Health and fitness are one — how well the body holds together and works (functional
-        integrity), from fully rested to all-out effort. Fitness is just the reserve you build
-        on top.
+        Health and fitness are one — how well the body works and holds together (functional
+        integrity), from fully rested to all-out effort, tracked over time.
       </p>
       <p>
-        At 1.76 m and 72 kg, Delano sits high on that continuum: very lean and muscular
-        (integrity), metabolically flexible (balance), with a broad movement reserve
+        At 1.76 m and 72 kg, Delano sits high on that continuum: metabolically flexible
+        (balance), lean and muscular (integrity), with a broad performance reserve
         (capacity). Below is a summary of his health status for 2026.
       </p>
 
