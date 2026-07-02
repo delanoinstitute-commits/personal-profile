@@ -228,14 +228,14 @@ export default function HealthPage() {
       <PageHeading title="Health" hatnote={<>The present — how he functions</>} />
 
       <p className="lead">
-        Health and fitness are one — functional integrity, the body&rsquo;s adaptive
-        capacity across a stress&ndash;recovery continuum: at rest (homeostasis and integrity)
-        and in action (capacity), with fitness the reserve.
+        Health and fitness are one — how well the body holds together and works (functional
+        integrity), from fully rested to all-out effort. Fitness is just the reserve you build
+        on top.
       </p>
       <p>
-        At 1.76 m and 72 kg, Delano sits high on that continuum: metabolically efficient at
-        rest, very lean and muscular in build, with a broad base of capacity in action. Below
-        is a summary of his health status for 2026.
+        At 1.76 m and 72 kg, Delano sits high on that continuum: very lean and muscular
+        (integrity), metabolically flexible (homeostasis), with a broad movement reserve
+        (capacity). Below is a summary of his health status for 2026.
       </p>
 
       <h2 id="homeostasis">Homeostasis</h2>
