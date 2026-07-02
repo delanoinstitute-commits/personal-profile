@@ -234,12 +234,12 @@ export default function HealthPage() {
       </p>
       <p>
         At 1.76 m and 72 kg, Delano sits high on that continuum: very lean and muscular
-        (integrity), metabolically flexible (homeostasis), with a broad movement reserve
+        (integrity), metabolically flexible (balance), with a broad movement reserve
         (capacity). Below is a summary of his health status for 2026.
       </p>
 
-      <h2 id="homeostasis">Homeostasis</h2>
-      <p>Internal balance at rest — blood chemistry and circulatory load.</p>
+      <h2 id="balance">Balance</h2>
+      <p>Homeostasis at rest — blood chemistry and circulatory load.</p>
       <StatTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="integrity">Integrity</h2>
