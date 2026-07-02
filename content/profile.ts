@@ -99,6 +99,14 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "72% 48%",
   },
   {
+    src: "/carousel/kotler.jpg",
+    alt: "Delano crouching with a laptop beside Steven Kotler at a shoot",
+    context: "Production",
+    location: "Estonia",
+    year: "2018",
+    objectPosition: "50% 50%",
+  },
+  {
     src: "/carousel/training.jpg",
     alt: "Delano leading a training workshop around a table",
     context: "Workshop",
