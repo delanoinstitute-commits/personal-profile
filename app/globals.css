@@ -371,6 +371,12 @@ a.wikilink.red,
   letter-spacing: 0.01em;
 }
 
+/* Methodological (domain) label — all caps */
+.stat-table tr.stat-group th:first-child {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Parentheticals ride along un-bolded inside bold cells */
 .stat-table .stat-paren {
   font-weight: 400;

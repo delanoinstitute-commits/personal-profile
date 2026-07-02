@@ -160,7 +160,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
       label: "CTEP (Top 1)",
       rows: [
         {
-          category: "Global (efficiency)",
+          category: "Global (endurance)",
           metrics: [
             ["VO₂max (uptake)", "53 ml/kg/min"],
             ["Lactate (threshold)", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", true],
@@ -231,8 +231,7 @@ export default function HealthPage() {
       <p className="lead">
         Delano&rsquo;s physiology, measured both at rest and in action — the output of the
         way he <WikiLink href="/time">lives</WikiLink>. At 1.76 m and 72 kg, he is very lean
-        (7.9% body fat) and muscular, metabolically flexible, with a broad liquid-steel work
-        capacity.
+        (7.9% body fat) and muscular, metabolically flexible, with a broad base of capacity.
       </p>
 
       <h2 id="homeostasis">Homeostasis</h2>
