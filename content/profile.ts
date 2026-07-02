@@ -73,15 +73,6 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "46% 50%",
   },
   {
-    src: "/carousel/speaking.jpg",
-    alt: "Delano presenting on stage with a headset microphone",
-    context: "Conference",
-    location: "Estonia",
-    year: "2022",
-    photographer: "Kersti Niglas",
-    objectPosition: "58% 50%",
-  },
-  {
     src: "/carousel/production.jpg",
     alt: "Delano directing a MasterClass film shoot, holding a clapperboard",
     context: "Production",
