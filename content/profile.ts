@@ -65,11 +65,12 @@ export const CAROUSEL: CarouselImage[] = [
   },
   {
     src: "/carousel/promotion.jpg",
-    alt: "Delano speaking on a panel stage in Dubai, mid-gesture",
+    alt: "Delano gesturing while speaking on a panel stage in Dubai",
     context: "Promotion",
     location: "Dubai",
     year: "2025",
-    objectPosition: "44% 50%",
+    photographer: "Mardo Männimägi",
+    objectPosition: "46% 50%",
   },
   {
     src: "/carousel/speaking.jpg",
@@ -89,15 +90,6 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "64% 38%",
   },
   {
-    src: "/carousel/training.jpg",
-    alt: "Delano leading a training workshop around a table",
-    context: "Workshop",
-    location: "Barcelona",
-    year: "2017",
-    photographer: "Paulius Staniunas",
-    objectPosition: "50% 45%",
-  },
-  {
     src: "/carousel/coaching.jpg",
     alt: "Delano coaching a group in a gym",
     context: "Workshop",
@@ -105,6 +97,15 @@ export const CAROUSEL: CarouselImage[] = [
     year: "2018",
     photographer: "Mardo Männimägi",
     objectPosition: "72% 48%",
+  },
+  {
+    src: "/carousel/training.jpg",
+    alt: "Delano leading a training workshop around a table",
+    context: "Workshop",
+    location: "Barcelona",
+    year: "2017",
+    photographer: "Paulius Staniunas",
+    objectPosition: "50% 45%",
   },
 ];
 
