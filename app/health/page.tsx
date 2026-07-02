@@ -231,9 +231,12 @@ export default function HealthPage() {
         Health and fitness are one phenomenon — functional integrity, the body&rsquo;s
         adaptive capacity — read across a single stress&ndash;recovery continuum: at rest as
         homeostasis and integrity, in action as capacity, with fitness the reserve between
-        them. At 1.76 m and 72 kg, Delano sits high on that continuum: metabolically
-        efficient at rest, very lean and muscular in build, with a broad base of capacity in
-        action.
+        them.
+      </p>
+      <p>
+        At 1.76 m and 72 kg, Delano sits high on that continuum: metabolically efficient at
+        rest, very lean and muscular in build, with a broad base of capacity in action. Below
+        is a summary of his health status for 2026.
       </p>
 
       <h2 id="homeostasis">Homeostasis</h2>
