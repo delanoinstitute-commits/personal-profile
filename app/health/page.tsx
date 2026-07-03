@@ -26,7 +26,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
         {
           category: "Cardiovascular (low-risk transport)",
           metrics: [
-            ["Apolipoprotein B", "0.6 g/L (60 mg/dL)"],
+            ["ApoB", "0.6 g/L (60 mg/dL)"],
             ["Hemoglobin", "14.1 g/dL"],
             ["Ferritin", "166 µg/L"],
           ],
@@ -43,7 +43,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
           metrics: [
             ["eGFR-CysC", "101 mL/min/1.73m²"],
             ["ALT", "26 IU/L"],
-            ["Uric acid", "0.28 mmol/L"],
+            ["Uric acid", "0.28 mmol/L (4.7 mg/dL)"],
           ],
         },
       ],
@@ -76,7 +76,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           category: "Muscularity (muscle)",
           metrics: [
             ["ALMI", "9.4 kg/m² (>80th percentile)"],
-            ["Height", "1.76 m squared (3.09)", true],
+            ["Height²", "3.09 m²", true],
             ["ALM", "29.1 kg", true],
           ],
         },
