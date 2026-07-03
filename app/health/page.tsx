@@ -53,7 +53,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
       label: "Hemodynamics (Top 1)",
       rows: [
         {
-          category: "Cardiovascular (workload)",
+          category: "Cardiovascular (low-effort circulation)",
           metrics: [
             ["RPP", "5,500 mmHg"],
             ["Blood pressure", "110/65 mmHg", true],
@@ -123,7 +123,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
         {
           category: "Hip (power)",
           metrics: [
-            ["Extension (squat-UL)", "6 pistol squats per leg"],
+            ["Extension (balance)", "6 pistol squats per leg"],
             ["Extension (hinge)", "Deadlift 2× BW"],
             ["Flexion (curl)", "1 nordic curl"],
           ],
