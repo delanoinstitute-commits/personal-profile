@@ -7,9 +7,10 @@
 //   learning-systems designer · 10X · single-set-to-failure · self-mastery ·
 //   Mindvalley · CrossFit · taxonomical · the six domains, in fixed order:
 //   train, eat, finance, learn, mind, plan.
-// Voice: body is FIRST person ("I", "my"); CTA addresses the reader ("you").
-// (Migrating from third person as each page is finalized.) US spelling (color,
-// behavior, organize, center). Sentence case; Oxford comma; D Month YYYY.
+// Voice: principled HYBRID. Third person is the default backbone (the record:
+// infobox, home lead, bio, timeline, education, experience). First person for
+// the personal layer (identity, health self-assessment, purpose, CTA). Switch
+// by section, never mid-paragraph. US spelling; sentence case; Oxford comma.
 
 export const SITE = {
   name: "Lorenzo Delano",

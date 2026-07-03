@@ -202,11 +202,14 @@ Test at **360, 390, 768, 1024, 1280px**. On each: (a) nav reachable, (b) infobox
 
 ### 8.1 Voice & person — the headline decision
 
-**Body & biography: first person ("I", "my"). Call-to-action: address the reader directly ("reach out — you can hire me").** The site is written as Delano in his own voice, so the reader connects with the person rather than reading a dossier *about* him. (This reverses an earlier third-person standard; pages are converted to first person as each is finalized — mixed voice during the migration is expected and temporary.)
+**The site runs a principled hybrid, split by content function.** Third person is the **default backbone** (the credibility spine); first person is the **high-value exception** for the personal, interpretive layer. The switch is **structural — by section/element, never an accidental "I" mid-paragraph** (like a magazine profile: third-person article, first-person pull-quotes). When a piece of content is ambiguous, default to third person.
 
-- **Subject reference:** "I", "me", "my". The name is established by the wordmark and infobox; prose need not reintroduce "Lorenzo Delano".
+- **Third person = the record (credibility):** the infobox, the home/"Start here" lead, Biography, Timeline, Education, Experience — the verifiable *what's been done / who he is on paper*. Preserves the encyclopedia conceit and reads as objective.
+- **First person = my voice (connection):** Identity (psychology, values, worldview, drive), Health self-assessment, Purpose/vision, the offering + Contact CTA, and pull-quotes / "words I live by".
+- **Subject reference:** in third-person sections, first mention is bolded **Lorenzo Delano**, thereafter **Delano** or **he** (never bare "Lorenzo" / "Mr Delano"). First-person sections use "I", "me", "my".
 - **Tense:** present for standing facts/current state; past for completed events and the timeline; present/future for stated intent (Future trajectory).
 - **Imperative** only in nav/UI microcopy ("Contact", "Skip to content") and the CTA ask ("How I can help you").
+- **Data & definitions stay impersonal** in either register (metric tables, universal statements) — voice attaches to interpretation, not to numbers.
 
 ### 8.2 Spelling, capitalization, punctuation
 
