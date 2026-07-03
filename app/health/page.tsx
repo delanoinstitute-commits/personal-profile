@@ -26,7 +26,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
         {
           category: "Cardiovascular (low-risk transport)",
           metrics: [
-            ["Apolipoprotein B", "0.6 g/L"],
+            ["Apolipoprotein B", "0.6 g/L (60 mg/dL)"],
             ["Hemoglobin", "14.1 g/dL"],
             ["Ferritin", "166 µg/L"],
           ],
@@ -41,7 +41,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
         {
           category: "Hepatorenal (low-stress clearance)",
           metrics: [
-            ["eGFR-CysC", "101"],
+            ["eGFR-CysC", "101 mL/min/1.73m²"],
             ["ALT", "26 IU/L"],
             ["Uric acid", "0.28 mmol/L"],
           ],
@@ -75,7 +75,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
         {
           category: "Muscularity (muscle)",
           metrics: [
-            ["ALMI", "9.4 kg/m² (>80th centile)"],
+            ["ALMI", "9.4 kg/m² (>80th percentile)"],
             ["Height", "1.76 m squared (3.09)", true],
             ["ALM", "29.1 kg", true],
           ],
@@ -84,13 +84,13 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           category: "Leanness (fat)",
           metrics: [
             ["VAT", "114 g"],
-            ["Body fat", "7.9% (<5th centile)"],
+            ["Body fat", "7.9% (<5th percentile)"],
           ],
         },
         {
           category: "Density (bone)",
           metrics: [
-            ["Z-score", "−0.3 (37th centile)"],
+            ["Z-score", "−0.3 (37th percentile)"],
             ["BMD", "1.212 g/cm²", true],
           ],
         },
@@ -103,7 +103,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
         {
           category: "Adiposity (central)",
           metrics: [
-            ["W-H ratio", "0.45"],
+            ["Waist-to-height ratio", "0.45"],
             ["Height", "176 cm", true],
             ["Waist", "80 cm", true],
           ],
