@@ -148,7 +148,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           category: "Global (power)",
           metrics: [
             ["Flexion (squat)", "Overhead squat 1× BW"],
-            ["Extension (gait)", "30-sec 200 m sprint; 12-min 3 km run; 3 W/kg FTP"],
+            ["Extension (gait)", "30-sec 200 m sprint; 3 W/kg FTP"],
             ["Extension (jump)", "2.4 m broad"],
           ],
         },
