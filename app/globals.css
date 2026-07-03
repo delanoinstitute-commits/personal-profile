@@ -398,7 +398,18 @@ a.wikilink.red,
   font-variant-numeric: tabular-nums;
 }
 
-.stat-table td > div + div {
+/* Bulleted metric list inside the value cell */
+.stat-table td ul.stat-metrics {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.stat-table td ul.stat-metrics li {
+  margin: 0;
+}
+
+.stat-table td ul.stat-metrics li + li {
   margin-top: 0.2rem;
 }
 

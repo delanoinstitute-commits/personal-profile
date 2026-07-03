@@ -206,11 +206,13 @@ function StatTable({ groups }: StatTableData) {
                   <tr key={row.category}>
                     <th scope="row">{labelParts(row.category)}</th>
                     <td>
-                      {row.metrics.map(([term, value, supportive]) => (
-                        <div key={term} className={supportive ? "stat-supportive" : undefined}>
-                          <u>{term}</u>: {value}
-                        </div>
-                      ))}
+                      <ul className="stat-metrics">
+                        {row.metrics.map(([term, value, supportive]) => (
+                          <li key={term} className={supportive ? "stat-supportive" : undefined}>
+                            <u>{term}</u>: {value}
+                          </li>
+                        ))}
+                      </ul>
                     </td>
                   </tr>
                 ))}
