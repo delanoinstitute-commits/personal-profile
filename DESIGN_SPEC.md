@@ -202,11 +202,11 @@ Test at **360, 390, 768, 1024, 1280px**. On each: (a) nav reachable, (b) infobox
 
 ### 8.1 Voice & person — the headline decision
 
-**Body & biography: third person ("Delano", "he"). Call-to-action: second person ("reach out", "you can employ… him"). First person "I" is banned** from body and timeline, surviving only inside attributed direct quotations. A profile that opens *"Lorenzo Delano (born 7 December 1987) is a…"* and then drifts to *"I design taxonomies…"* reads as two stitched documents and quietly undercuts the trust the site exists to earn.
+**Body & biography: first person ("I", "my"). Call-to-action: address the reader directly ("reach out — you can hire me").** The site is written as Delano in his own voice, so the reader connects with the person rather than reading a dossier *about* him. (This reverses an earlier third-person standard; pages are converted to first person as each is finalized — mixed voice during the migration is expected and temporary.)
 
-- **Subject reference:** first mention per page is bolded **Lorenzo Delano**; thereafter **Delano** or **he**. Never bare "Lorenzo", never "Mr Delano".
+- **Subject reference:** "I", "me", "my". The name is established by the wordmark and infobox; prose need not reintroduce "Lorenzo Delano".
 - **Tense:** present for standing facts/current state; past for completed events and the timeline; present/future for stated intent (Future trajectory).
-- **Imperative** only in nav/UI microcopy ("Contact", "Skip to content") and the CTA ask. Rename "How I can help (you)" → **"How Delano can help you"** (keep the CTA verbs second-person).
+- **Imperative** only in nav/UI microcopy ("Contact", "Skip to content") and the CTA ask ("How I can help you").
 
 ### 8.2 Spelling, capitalization, punctuation
 
