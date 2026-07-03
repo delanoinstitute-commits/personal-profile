@@ -70,7 +70,7 @@ export const CAROUSEL: CarouselImage[] = [
     location: "Dubai",
     year: "2025",
     photographer: "Mardo Männimägi",
-    objectPosition: "46% 50%",
+    objectPosition: "35% 50%",
   },
   {
     src: "/carousel/production.jpg",
