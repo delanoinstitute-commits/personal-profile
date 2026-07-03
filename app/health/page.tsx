@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "Health" };
 // (domain | metric group) followed by category rows (category | metrics).
 // A metric is [term, value, supportive?]; the term is underlined. "supportive"
 // marks a component of a composite primary (e.g. blood pressure feeds RPP) —
-// these are italicised, which is why a group of three can read "(top 1)".
+// these are italicized, which is why a group of three can read "(top 1)".
 
 type Metric = [term: string, value: string, supportive?: boolean];
 type Row = { category: string; metrics: Metric[] };
@@ -24,22 +24,22 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
       label: "Labs (Top 8)",
       rows: [
         {
-          category: "Cardiovascular (blood; heart)",
+          category: "Cardiovascular (oxygen delivery)",
           metrics: [
             ["Apolipoprotein B", "0.6 g/L"],
-            ["Haemoglobin", "14.1 g/dL"],
+            ["Hemoglobin", "14.1 g/dL"],
             ["Ferritin", "166 µg/L"],
           ],
         },
         {
-          category: "Endometabolic (pancreas; muscle)",
+          category: "Endometabolic (fuel partitioning)",
           metrics: [
             ["HbA1c", "5.1%"],
             ["Fasting insulin", "4.1 IU/L"],
           ],
         },
         {
-          category: "Hepatorenal (liver; kidney)",
+          category: "Hepatorenal (filtered clearance)",
           metrics: [
             ["eGFR-CysC", "101"],
             ["ALT", "26 IU/L"],
@@ -50,10 +50,10 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
     },
     {
       domain: "Circulatory",
-      label: "Haemodynamics (Top 1)",
+      label: "Hemodynamics (Top 1)",
       rows: [
         {
-          category: "Workload (heart)",
+          category: "Cardiovascular (workload)",
           metrics: [
             ["RPP", "5,500 mmHg"],
             ["Blood pressure", "110/65 mmHg", true],

@@ -1,5 +1,5 @@
 // The infobox data — the right-column profile that sits beside the article,
-// like the summary box on a Wikipedia biography. Organised into three lenses,
+// like the summary box on a Wikipedia biography. Organized into three lenses,
 // ordered for a first-time visitor scanning "who is this, and should I engage
 // them?": Personal → Cultural → Legal. Within each group, entries
 // are ordered by descending engagement-signal. Financial/economic data is

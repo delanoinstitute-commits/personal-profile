@@ -9,7 +9,7 @@ export const eras: TimelineEra[] = [
     subtitle: "Krugersdorp, farm life, and the West Rand of Gauteng",
     entries: [
       { year: "1987", age: "0", body: "Born in Krugersdorp to a 21-year-old mother and 19-year-old father; older brother JP was 2. The family lived in Sunward Park." },
-      { year: "1989", age: "2", body: "Moved to the grandparents' farm amid financial hardship. Developed a lifelong rocking habit; behaviours at kindergarten were misreported as abuse." },
+      { year: "1989", age: "2", body: "Moved to the grandparents' farm amid financial hardship. Developed a lifelong rocking habit; behaviors at kindergarten were misreported as abuse." },
       { year: "1990–91", age: "3–4", body: "A run of moves around Little Falls, Kenmare, and Witpoortjie; parents divorced (1990). Mother started a construction business." },
       { year: "1993–94", age: "6–7", body: "Bitten by the farm dog and broke an arm in a fall. Got a Super Nintendo (Mortal Kombat) and started school at Muldersdrift Primary." },
       { year: "1995", age: "8", body: "South Africa won the Rugby World Cup; grandmother died. Became obsessed with the Mortal Kombat film and its soundtrack — still a workout staple decades later." },
@@ -34,7 +34,7 @@ export const eras: TimelineEra[] = [
             Joined the{" "}
             <WikiLink href="https://xwmkungfu.com/">Tang Lang Cuan Wushu school</WikiLink>{" "}
             under Shi Fu Yang Long Fei — his first real mentor — and became obsessed with
-            physical training. Brother JP died on 10 March. Travelled to Shijiazhuang,
+            physical training. Brother JP died on 10 March. Traveled to Shijiazhuang,
             China, to teach English for three months.
           </>
         ),
@@ -66,8 +66,8 @@ export const eras: TimelineEra[] = [
       { year: "2010", age: "23", body: "Certified as an NLP / life-coaching practitioner. Left the church — a difficult but defining shift. Began running small CrossFit-style classes with Brad." },
       { year: "2011", age: "24", body: "Co-founded the pop-up gym Quantum Physiques (QP) with Brad. Met Jelena, who would become his closest friend and partner; they began dating by year's end." },
       { year: "2012", age: "25", body: "QP grew to ~50 clients. Discovered Squarespace and design; became a father figure to Jelena's two children." },
-      { year: "2013", age: "26", body: "QP evolved into Wi-move; interest shifted toward education and curriculum design. Travelled to China (Shaolin, the Great Wall) to source gym equipment." },
-      { year: "2014", age: "27", body: "Discovered Ken Wilber, Tim Ferriss, and the SaaS world; transitioned to minimal-effective-dose strength training (Body by Science). Began organising knowledge into life-mastery categories." },
+      { year: "2013", age: "26", body: "QP evolved into Wi-move; interest shifted toward education and curriculum design. Traveled to China (Shaolin, the Great Wall) to source gym equipment." },
+      { year: "2014", age: "27", body: "Discovered Ken Wilber, Tim Ferriss, and the SaaS world; transitioned to minimal-effective-dose strength training (Body by Science). Began organizing knowledge into life-mastery categories." },
       {
         year: "2015",
         age: "28",

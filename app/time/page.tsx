@@ -8,7 +8,7 @@ export default function TimePage() {
     <>
       <PageHeading title="Time" hatnote={<>The present — how he lives</>} />
 
-      <h2 id="behavioural">Behavioural</h2>
+      <h2 id="behavioral">Behavioral</h2>
       <p className="lead">
         How Delano actually spends a day: a tightly structured schedule built around deep
         work, training, and study, with a clean diet and no stimulants beyond coffee.

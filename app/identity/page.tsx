@@ -61,7 +61,7 @@ export default function IdentityPage() {
       </p>
       <h4>Tendencies</h4>
       <p>
-        Organising (concepts and objects) and cleaning — a constant drive to find the
+        Organizing (concepts and objects) and cleaning — a constant drive to find the
         underlying structure of things and to arrange life for more effective living.
       </p>
       <h4>Subjects</h4>

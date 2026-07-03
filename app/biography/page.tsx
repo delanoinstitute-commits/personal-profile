@@ -39,9 +39,9 @@ export default function BiographyPage() {
           than run one product for years.
         </li>
         <li>
-          He compulsively organises everything — physical, digital, and conceptual — as if
+          He compulsively organizes everything — physical, digital, and conceptual — as if
           searching for the underlying structure of reality, and uses every move as a chance
-          to reorganise his life.
+          to reorganize his life.
         </li>
         <li>
           He has been philosophically inclined his whole life, moving through distinct

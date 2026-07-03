@@ -46,7 +46,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          {/* Centre: the article */}
+          {/* Center: the article */}
           <main
             id="main"
             tabIndex={-1}

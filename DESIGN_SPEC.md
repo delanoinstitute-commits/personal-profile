@@ -6,7 +6,7 @@ The brief in one line: a Wikipedia-style personal profile that wins the trust of
 
 **Hard constraints:** Next.js App Router + Tailwind, statically rendered on Vercel, mobile-first, fast (no layout shift), fonts via `next/font`, accessibility **WCAG 2.2 AA minimum** (verified with axe-core zero-violations + one keyboard/VoiceOver pass per page).
 
-**Conventions in this doc:** all colours are CSS custom properties (`--token`) mirrored into `tailwind.config.ts`; **never write a raw hex inline.** All spacing is on a 4px grid named in rem. All type sizes are tokens.
+**Conventions in this doc:** all colors are CSS custom properties (`--token`) mirrored into `tailwind.config.ts`; **never write a raw hex inline.** All spacing is on a 4px grid named in rem. All type sizes are tokens.
 
 ---
 
@@ -54,7 +54,7 @@ Apply `font-variant-numeric: tabular-nums` to **every aligning/tabulating number
 
 ---
 
-## 2. Colour
+## 2. Color
 
 Near-monochrome; a single teal accent does structural work only. All ratios are measured against the named background; the requirement is the WCAG AA threshold met.
 
@@ -81,9 +81,9 @@ Near-monochrome; a single teal accent does structural work only. All ratios are 
 **Resolved conflicts:**
 - **Accent promoted `#0F6E66` → `#0B5E57`.** White-on-accent active pills now clear AA *and* AAA at no visual cost. (Keep `#0F6E66` only as an optional `--accent-light` for decorative fills > 24px, never for text.)
 - **Link stays `#3366CC`** (Wikipedia idiom, already AA at 5.4:1; the whole link taxonomy is built on it). Hover/active darkens to `#2A4B8D` and **adds an underline** — the underline is the *interaction* cue, not the resting cue, and keyboard users get it via `:focus-visible`.
-- **Focus ring is `#0B57D0`** (8:1, deliberately distinct from link blue), not the link colour.
+- **Focus ring is `#0B57D0`** (8:1, deliberately distinct from link blue), not the link color.
 - **`#72777d` is removed everywhere** — it fails AA at 4.28:1 on the infobox surface. Its three uses (LeftNav gloss, Timeline "(age N)", infobox dotted underline) move to `--muted-2 #5B6168`. **No `#72777d` may remain in the tree** (acceptance gate).
-- Borders are **decorative** (carry no information colour-coded), so sub-3:1 ratios are compliant. Any bordered control whose *state* must be perceivable (focus, active) uses `--focus` / `--accent`, which clear 3:1.
+- Borders are **decorative** (carry no information color-coded), so sub-3:1 ratios are compliant. Any bordered control whose *state* must be perceivable (focus, active) uses `--focus` / `--accent`, which clear 3:1.
 
 ---
 
@@ -129,7 +129,7 @@ lg (≥1024):     Pages rail (176px) | article | infobox (320px)
 | **SiteHeader** (sticky, `z-30`, 52px desktop / 48px mobile) | Identity + escape hatch | wordmark left, Contact right | hamburger + wordmark + Contact |
 | **Primary "Pages" nav** | Move between the 4 pages | left rail 176px, sticky | **slide-in drawer** from hamburger |
 | **SectionNav** | Jump within the page | sticky horizontal strip under H1 | **horizontal scroll-snap strip** |
-| **Infobox** | Summarise the person | right rail 320px, sticky | **inline after the lead**, `<details>` |
+| **Infobox** | Summarize the person | right rail 320px, sticky | **inline after the lead**, `<details>` |
 
 Header is **always visible** (no hide-on-scroll — reappearing chrome is disorienting on a reference read) and carries a **skip-to-content link** as the first focusable element. Raise header to `z-30` so it wins over SectionNav (`z-20`); tooltips/drawer sit above both.
 
@@ -142,7 +142,7 @@ Left slide-in dialog: `width min(80vw, 320px)`, `z-50`, opaque `--surface-paper`
 Looks like an encyclopedia data panel, not a profile widget.
 
 - **Frame:** 1px `--border-strong`, **square**, `--surface-subtle` body, no shadow.
-- **Title bar:** `--surface-band`, centred, Newsreader 600 / 19px, `--text`.
+- **Title bar:** `--surface-band`, centered, Newsreader 600 / 19px, `--text`.
 - **Portrait:** full-width (`next/image`, explicit `width=700 height=933` → no CLS, `sizes="(min-width:1024px) 320px, 12rem"`); caption beneath in `--fs-xs` `--muted`. On mobile cap at `max-w-[12rem] mx-auto`. If the asset 404s, show a neutral `--surface-band` initials placeholder, never a broken-image icon.
 - **Group headings** (Personal / Cultural / Biological / Legal): `--surface-band`; **the system's only all-caps** — Inter 13px / 600 / `+0.04em` / `uppercase`. `scope="colgroup"`.
 - **Rows:** label `th` 34% width, Inter 600, sentence case ("Known for"), `scope="row"`; value `td` Inter 400, `tabular-nums` on numbers, `overflow-wrap:anywhere`. Separators `--rule-soft`. **Omit any empty row entirely** — no em-dash/"N/A" placeholder.
@@ -151,8 +151,8 @@ Looks like an encyclopedia data panel, not a profile widget.
 
 ### 4.4 SectionNav
 
-- **Desktop:** sticky under the header (`top` = header height), `border-y:1px var(--rule)`, `bg-white/95 backdrop-blur`, no shadow. Pills: default `--link` text; hover light tint; **active `bg-accent` white text + `font-medium` + `aria-current="true"`** (state never by colour alone).
-- **Mobile:** single-row `flex flex-nowrap overflow-x-auto snap-x snap-mandatory` with a right-edge mask fade; `sm:flex-wrap sm:overflow-visible` restores wrapping. On active/route change, `activeEl.scrollIntoView({inline:"center", block:"nearest"})` (honouring reduced-motion) so the active pill is never off-screen.
+- **Desktop:** sticky under the header (`top` = header height), `border-y:1px var(--rule)`, `bg-white/95 backdrop-blur`, no shadow. Pills: default `--link` text; hover light tint; **active `bg-accent` white text + `font-medium` + `aria-current="true"`** (state never by color alone).
+- **Mobile:** single-row `flex flex-nowrap overflow-x-auto snap-x snap-mandatory` with a right-edge mask fade; `sm:flex-wrap sm:overflow-visible` restores wrapping. On active/route change, `activeEl.scrollIntoView({inline:"center", block:"nearest"})` (honoring reduced-motion) so the active pill is never off-screen.
 - **Scroll-spy:** exactly one active item — the last section whose heading top has crossed the sticky chrome. Render nothing when a page has 0 sections.
 
 ### 4.5 Timeline & tables
@@ -173,7 +173,7 @@ Looks like an encyclopedia data panel, not a profile widget.
 - **Sticky-offset chain — derive from ONE source.** Header height, SectionNav `top`, the scroll-spy offset constant, and `scroll-padding-top` must all agree. Desktop stack ≈ 52 + 40 + buffer; mobile stack ≈ 48 + 40 + buffer. Drive SectionNav `top` off a `--header-h` var; set `scroll-padding-top: 6rem` base with `@media (min-width:1024px){ html{ scroll-padding-top:7rem } }`; **drop the magic `7rem`-only and `140` constants.** This satisfies 2.4.11 (focus not obscured) and prevents the "anchor jump hides the heading" bug.
 - **Tooltips & citations (WCAG 1.4.13):** open on hover **and** focus; **dismissable with `Esc`** without moving the pointer; **persistent** via a hover bridge (pointer can move onto the tooltip) — the current `onMouseLeave`-only close fails this. The infobox gloss trigger must become a focusable `<button>`/`tabindex=0 role=button` with `aria-describedby` on the focusable element. Under `@media (hover:none)`, triggers are **tap-to-toggle**. Every `[n]` is *also* a real anchor to `#cite-note-{id}` — the tooltip is enhancement, the anchor is the contract; `:target` rows flash `--mark`.
 - **Self-link anchors** on every H2/H3 (a `#` revealed on hover/focus, `--muted` → `--link`, padded to a 24px target) so any section is citable/deep-linkable.
-- **Motion:** transitions ≤ 150ms `ease-out`, colour/background only; honour `@media (prefers-reduced-motion: reduce)` by disabling `scroll-behavior:smooth`, the drawer slide, and pill transitions.
+- **Motion:** transitions ≤ 150ms `ease-out`, color/background only; honor `@media (prefers-reduced-motion: reduce)` by disabling `scroll-behavior:smooth`, the drawer slide, and pill transitions.
 - **Edge/empty states degrade honestly:** empty infobox row → omit (no placeholder); 0 sections → no SectionNav; missing portrait → initials placeholder; long URLs wrap (`overflow-wrap:anywhere`); a redlink-styled `404`; with JS off, anchors/nav/infobox still work and the `<noscript>` Pages list shows.
 
 ---
@@ -186,7 +186,7 @@ Looks like an encyclopedia data panel, not a profile widget.
 4. **Focus:** every focusable element shows the ≥2px / ≥3:1 ring (§5); tabbing to an in-page anchor lands fully below the sticky chrome.
 5. **Targets:** ≥24×24px everywhere; **≥44×44px** on coarse pointers for the hamburger, drawer items, SectionNav pills, and the header Contact action (inline prose links use the 2.5.8 inline exception).
 6. **Keyboard:** full traversal with no trap — skip link → header → drawer (open/trap/`Esc`/restore) → nav → SectionNav → article links → tooltips (open via Tab, close via `Esc`) → footer.
-7. **Colour never sole cue:** active nav = bold + `aria-current`; active pill = fill + weight + `aria-current`; links = colour + hover/focus underline.
+7. **Color never sole cue:** active nav = bold + `aria-current`; active pill = fill + weight + `aria-current`; links = color + hover/focus underline.
 8. **State via `aria-current`** (not `aria-selected`); ARIA only where native semantics fall short.
 9. **Verify:** axe-core / Lighthouse a11y = 100 with zero violations on all four routes + one manual keyboard/VoiceOver pass, in CI, before merge.
 
@@ -208,9 +208,9 @@ Test at **360, 390, 768, 1024, 1280px**. On each: (a) nav reachable, (b) infobox
 - **Tense:** present for standing facts/current state; past for completed events and the timeline; present/future for stated intent (Future trajectory).
 - **Imperative** only in nav/UI microcopy ("Contact", "Skip to content") and the CTA ask. Rename "How I can help (you)" → **"How Delano can help you"** (keep the CTA verbs second-person).
 
-### 8.2 Spelling, capitalisation, punctuation
+### 8.2 Spelling, capitalization, punctuation
 
-- **British/Commonwealth spelling** (`-ise`, `-our`, `-re`), one site-wide exception: **`program`** (US) for every named product/program.
+- **US spelling** (`-ize`, `-or`, `-er`) throughout — e.g. color, behavior, organize, center, hemoglobin; never British forms. "program" for every named product/program (never "programme").
 - **Sentence case everywhere** except proper nouns and the wordmark — H1–H4, infobox group headings and labels, SectionNav chips, buttons. "Known for", never "Known For". Brand casing exact: Mindvalley, CrossFit, YouTube, SaaS, NLP, 10X, 10X Quest.
 - **Oxford comma always.** Dashes: hyphen for compounds; **en dash `–`** (unspaced) for numeric/date ranges; **em dash `—`** (spaced) for prose breaks. "South African" takes **no** hyphen.
 - **Middot `·`** is restricted to **one job**: an inline series separator inside infobox values / compact metadata ("Bruce Lee · Ken Wilber · David Deutsch", one space each side). Banned in running prose (use Oxford commas), as a bullet, as a label→value separator, and for joining distinct *facts* (the Born row must split into rows or a sentence). Schedule lists use semicolons.
@@ -221,7 +221,7 @@ Test at **360, 390, 768, 1024, 1280px**. On each: (a) nav reachable, (b) infobox
 - **Dates:** one rendered format **`D Month YYYY`** ("7 December 1987") — no ordinals, no abbreviation, no comma. Abolish "7 Dec 1987". ISO is for data attributes only.
 - **Times:** lowercase, no periods, closed ("11pm", "4:30pm"); en-dash ranges ("11pm–7am").
 - **Numbers:** spell out zero–nine in prose, numerals 10+; numerals always with units/ages/percent/money; comma thousands ("90,000+"); `×` multiplier ("10X", "5×/week"); `~` or "roughly" (not both).
-- **Units:** metric primary, imperial in parentheses; **space between number and unit** ("1.76 m", "72 kg"), **no space before `%`**, real sub/superscripts (`VO₂max`, `kg/m²`). **Standardise height to `1.76 m` in both the infobox and the Physical table** (fix bare "176 cm"). Wrap unit pairs with `&nbsp;` so they never break.
+- **Units:** metric primary, imperial in parentheses; **space between number and unit** ("1.76 m", "72 kg"), **no space before `%`**, real sub/superscripts (`VO₂max`, `kg/m²`). **Standardize height to `1.76 m` in both the infobox and the Physical table** (fix bare "176 cm"). Wrap unit pairs with `&nbsp;` so they never break.
 - **Acronyms:** spell out on first use then acronym alone; full caps, no periods; "US" not "U.S.". Company forms exact: "Eudaemonia, Inc.", "Erfaring (Pty) Ltd".
 - **Canonical nomenclature** (one spelling each): learning-systems designer, 10X, single-set-to-failure, self-mastery, Mindvalley, CrossFit, taxonomical; the six domains in fixed order — *train, eat, finance, learn, mind, plan*.
 

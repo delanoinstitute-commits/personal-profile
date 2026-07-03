@@ -47,7 +47,7 @@ export default function SectionNav() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
-  // Keep the active chip centred on the mobile strip — scrolling ONLY the strip
+  // Keep the active chip centered on the mobile strip — scrolling ONLY the strip
   // horizontally (never scrollIntoView, which also scrolls the page vertically
   // and causes a jitter loop at the bottom of the page).
   useEffect(() => {

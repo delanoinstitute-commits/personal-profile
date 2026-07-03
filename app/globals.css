@@ -4,11 +4,11 @@
 
 /* ===================================================================
    Design tokens — single source of truth (mirrored in tailwind.config)
-   See DESIGN_SPEC.md §2 (colour), §1 (type), §3 (spacing/elevation).
+   See DESIGN_SPEC.md §2 (color), §1 (type), §3 (spacing/elevation).
    =================================================================== */
 
 :root {
-  /* Colour */
+  /* Color */
   --text: #1b1c1d;
   --muted: #5a5f66;
   --muted-2: #5b6168;
@@ -338,7 +338,7 @@ a.wikilink.red,
 }
 
 /* Stat table — two fixed, aligned columns (category | metrics); grouped
-   sub-header rows in the accent colour (matching the active nav pill).
+   sub-header rows in the accent color (matching the active nav pill).
    Every .stat-table shares the same 40/60 split so columns line up across
    the separate tables on a page. */
 .stat-table {
@@ -382,16 +382,17 @@ a.wikilink.red,
   font-weight: 400;
 }
 
-/* Supportive biomarkers (components of a composite primary) — italicised */
+/* Supportive biomarkers (components of a composite primary) — italicized */
 .stat-table .stat-supportive {
   font-style: italic;
 }
 
-/* Category (row-label) cell */
+/* Category (row-label) cell — vertically centered against its metric list */
 .stat-table tbody th[scope="row"] {
   background: var(--surface-subtle);
   color: var(--text);
   font-weight: 600;
+  vertical-align: middle;
 }
 
 .stat-table td {
@@ -411,6 +412,11 @@ a.wikilink.red,
 
 .stat-table td ul.stat-metrics li + li {
   margin-top: 0.2rem;
+}
+
+/* Supportive markers sit indented under the primary */
+.stat-table td ul.stat-metrics li.stat-supportive {
+  margin-left: 1.15rem;
 }
 
 /* Underlined metric terms, as marked in the source */

@@ -27,7 +27,7 @@ export default function PurposePage() {
       <h4>Active threads</h4>
       <ul>
         <li>
-          Codifying a system for <strong>taxonomical design</strong> — how to organise any
+          Codifying a system for <strong>taxonomical design</strong> — how to organize any
           body of knowledge into something teachable.
         </li>
         <li>

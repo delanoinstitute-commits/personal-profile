@@ -23,7 +23,7 @@ export default function SkillsPage() {
       </p>
       <ul>
         <li>
-          <strong>Taxonomies</strong> — knowledge maps that organise a field (fitness,
+          <strong>Taxonomies</strong> — knowledge maps that organize a field (fitness,
           learning design, content classification, life management).
         </li>
         <li>
@@ -57,7 +57,7 @@ export default function SkillsPage() {
       <p>
         Delano transmits performance directly — as a coach, instructor, and facilitator —
         across athletics, health, and life. Formats range from private and group classes to
-        live-in lifestyle interventions and organisational workshops. He co-created the{" "}
+        live-in lifestyle interventions and organizational workshops. He co-created the{" "}
         <WikiLink href="https://www.mindvalley.com/10x/quest">10X method</WikiLink> and has
         coached individuals from entrepreneurs and actors to billionaires and their
         families.

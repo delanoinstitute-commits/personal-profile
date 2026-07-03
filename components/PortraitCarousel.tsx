@@ -8,7 +8,7 @@ import { CAROUSEL } from "@/content/profile";
  * Portrait carousel — Delano across contexts, in a fixed 4:3 box (shorter than
  * a full portrait, so the infobox data sits closer to the fold). Manual only
  * (no auto-advance): prev/next arrows, dot indicators, keyboard arrows, and
- * touch swipe. Crossfade honours prefers-reduced-motion via global CSS.
+ * touch swipe. Crossfade honors prefers-reduced-motion via global CSS.
  */
 export default function PortraitCarousel({ priority = false }: { priority?: boolean }) {
   const [index, setIndex] = useState(0);

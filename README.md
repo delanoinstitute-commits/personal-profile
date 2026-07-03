@@ -10,11 +10,11 @@ what I am, what I've done, where I'm going. Built with [Next.js](https://nextjs.
 | --- | --- |
 | `/` | Introduction (about, roles, how I can help, why this site) |
 | `/inherited-profile` | What I am — legal, cultural, biological |
-| `/current-status` | Who I am now — psychological, physical, behavioural, creative, personal |
+| `/current-status` | Who I am now — psychological, physical, behavioral, creative, personal |
 | `/historical-context` | What I've done — biography timeline, education, employment, business |
 | `/future-trajectory` | Where to next — personal growth and social impact |
 
-The right-rail **infobox** (`components/Infobox.tsx`) summarises the inherited profile,
+The right-rail **infobox** (`components/Infobox.tsx`) summarizes the inherited profile,
 mirroring the biography box on a real Wikipedia article. Content lives in `content/`
 (`site.ts` for navigation, `profile.ts` for the infobox); pages live in `app/`.
 

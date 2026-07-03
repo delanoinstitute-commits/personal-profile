@@ -10,7 +10,7 @@ import { NAV, NAV_GROUPS } from "@/content/site";
  * Mobile primary navigation (< lg): a 44×44 hamburger that opens a left
  * slide-in drawer (focus-trapped dialog). Contents = the Pages list with
  * glosses PLUS the current page's section anchors. Esc / scrim-tap closes and
- * restores focus to the trigger; body scroll is locked; honours reduced motion.
+ * restores focus to the trigger; body scroll is locked; honors reduced motion.
  */
 export default function MobileNav() {
   const pathname = usePathname();

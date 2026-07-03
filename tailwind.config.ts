@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-// Colour tokens mirror the CSS custom properties in app/globals.css (the single
+// Color tokens mirror the CSS custom properties in app/globals.css (the single
 // source of truth). Reference them by name in JSX; never write a raw hex inline.
 const config: Config = {
   content: [
