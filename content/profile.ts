@@ -104,7 +104,7 @@ export const CAROUSEL: CarouselImage[] = [
     context: "Production",
     location: "Estonia",
     year: "2018",
-    objectPosition: "50% 50%",
+    objectPosition: "25% 50%",
   },
   {
     src: "/carousel/training.jpg",
