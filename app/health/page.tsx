@@ -24,7 +24,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
       label: "Labs (Top 8)",
       rows: [
         {
-          category: "Cardiovascular (oxygen delivery)",
+          category: "Cardiovascular (low-risk transport)",
           metrics: [
             ["Apolipoprotein B", "0.6 g/L"],
             ["Hemoglobin", "14.1 g/dL"],
@@ -39,7 +39,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
           ],
         },
         {
-          category: "Hepatorenal (filtered clearance)",
+          category: "Hepatorenal (stress-free clearance)",
           metrics: [
             ["eGFR-CysC", "101"],
             ["ALT", "26 IU/L"],
