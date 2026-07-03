@@ -32,14 +32,14 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
           ],
         },
         {
-          category: "Endometabolic (fuel partitioning)",
+          category: "Endometabolic (sensitive disposal)",
           metrics: [
             ["HbA1c", "5.1%"],
             ["Fasting insulin", "4.1 IU/L"],
           ],
         },
         {
-          category: "Hepatorenal (stress-free clearance)",
+          category: "Hepatorenal (low-stress clearance)",
           metrics: [
             ["eGFR-CysC", "101"],
             ["ALT", "26 IU/L"],
