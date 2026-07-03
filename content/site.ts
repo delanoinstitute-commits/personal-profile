@@ -60,6 +60,15 @@ export const NAV_GROUPS: NavGroup[] = [
     title: "Present (resources)",
     pages: [
       {
+        label: "Works",
+        href: "/works",
+        sections: [
+          { label: "Methods", anchor: "methods" },
+          { label: "Models", anchor: "models" },
+          { label: "Writing", anchor: "writing" },
+        ],
+      },
+      {
         label: "Skills",
         href: "/skills",
         sections: [
@@ -87,8 +96,8 @@ export const NAV_GROUPS: NavGroup[] = [
         ],
       },
       {
-        label: "Assets",
-        href: "/assets",
+        label: "Wealth",
+        href: "/wealth",
         sections: [{ label: "Socioeconomic", anchor: "socioeconomic" }],
       },
       {

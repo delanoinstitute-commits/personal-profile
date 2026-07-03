@@ -9,6 +9,7 @@ const nextConfig = {
       { source: "/lifestyle", destination: "/time", permanent: true },
       { source: "/historical-context", destination: "/biography", permanent: true },
       { source: "/future-trajectory", destination: "/purpose", permanent: true },
+      { source: "/assets", destination: "/wealth", permanent: true },
     ];
   },
 };
