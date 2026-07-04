@@ -1,20 +1,12 @@
-import { Fragment } from "react";
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
+import { StatTable, type StatTableData } from "@/components/StatTable";
 
 export const metadata: Metadata = { title: "Health" };
 
-// ── Data (pages 1–2 of the health-status source) ─────────────────────────────
-// Each table holds grouped sub-sections; each group is one accent header row
-// (domain | metric group) followed by category rows (category | metrics).
-// A metric is [term, value, supportive?]; the term is underlined. "supportive"
-// marks a component of a composite primary (e.g. blood pressure feeds RPP) —
-// these are italicized, which is why a group of three can read "(top 1)".
-
-type Metric = [term: string, value: string, supportive?: boolean];
-type Row = { category: string; metrics: Metric[] };
-type Group = { domain: string; label: string; rows: Row[] };
-type StatTableData = { title: string; groups: Group[] };
+// Data (pages 1–2 of the health-status source). Each table holds grouped
+// sub-sections; a group is one accent header row (domain | instrument) with
+// category rows underneath. supportive metrics render italic + indented.
 
 const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
   title: "Functional homeostasis",
@@ -170,59 +162,6 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
     },
   ],
 };
-
-/** Render a label with any parenthetical portions dropped to normal weight. */
-function labelParts(text: string) {
-  return text
-    .split(/(\([^)]*\))/g)
-    .filter(Boolean)
-    .map((part, i) =>
-      part.startsWith("(") ? (
-        <span key={i} className="stat-paren">
-          {part}
-        </span>
-      ) : (
-        <Fragment key={i}>{part}</Fragment>
-      ),
-    );
-}
-
-function StatTable({ groups }: StatTableData) {
-  return (
-    <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-        <table className="stat-table">
-          <colgroup>
-            <col className="stat-cat" />
-            <col />
-          </colgroup>
-          <tbody>
-            {groups.map((group) => (
-              <Fragment key={group.domain}>
-                <tr className="stat-group">
-                  <th scope="col">{group.domain}</th>
-                  <th scope="col">{group.label}</th>
-                </tr>
-                {group.rows.map((row) => (
-                  <tr key={row.category}>
-                    <th scope="row">{labelParts(row.category)}</th>
-                    <td>
-                      <ul className="stat-metrics">
-                        {row.metrics.map(([term, value, supportive]) => (
-                          <li key={term} className={supportive ? "stat-supportive" : undefined}>
-                            <u>{term}</u>: {value}
-                          </li>
-                        ))}
-                      </ul>
-                    </td>
-                  </tr>
-                ))}
-              </Fragment>
-            ))}
-          </tbody>
-        </table>
-    </div>
-  );
-}
 
 export default function HealthPage() {
   return (
