@@ -109,16 +109,27 @@ const DRIVE: StatTableData = {
   groups: [
     {
       domain: "Motivation",
-      label: "Demartini VDP",
+      label: "PVQ · VDP",
       rows: [
         {
           category: "Values (valuing)",
           metrics: [
-            ["Design", "1st", false],
-            ["Wellness", "2nd", false],
-            ["Education", "3rd", false],
-            ["Resource allocation", "4th", false],
-            ["Music", "5th", false],
+            ["Self-direction", "6.0", false],
+            ["Achievement", "4.5", false],
+            ["Security", "4.2", false],
+            ["Benevolence", "4.0", false],
+            ["Universalism", "3.3", true],
+            ["Power", "3.3", true],
+            ["Tradition", "2.8", true],
+            ["Stimulation", "2.7", true],
+            ["Conformity", "2.5", true],
+            ["Hedonism", "2.3", true],
+          ],
+        },
+        {
+          category: "Values (revealing)",
+          metrics: [
+            ["", "1) design, 2) wellness, 3) education, 4) resource allocation, 5) music"],
           ],
         },
       ],

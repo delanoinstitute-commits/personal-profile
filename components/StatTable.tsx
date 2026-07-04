@@ -49,10 +49,16 @@ export function StatTable({ groups }: StatTableData) {
                     <ul className="stat-metrics">
                       {row.metrics.map(([term, value, supportive]) => (
                         <li
-                          key={term}
+                          key={term || value}
                           className={supportive ? "stat-supportive" : undefined}
                         >
-                          <u>{term}</u>: {value}
+                          {term ? (
+                            <>
+                              <u>{term}</u>: {value}
+                            </>
+                          ) : (
+                            value
+                          )}
                         </li>
                       ))}
                     </ul>
