@@ -39,13 +39,13 @@ const INTELLECT: StatTableData = {
           category: "Worldview (sense-making)",
           metrics: [
             ["PROFILE", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
-            ["Epistemology", "Explanatory fallibilist", true, "How we know — the nature and sources of knowledge."],
-            ["Metaphysics", "Physical idealist", true, "What is ultimately real — the fundamental nature of reality."],
-            ["Cosmology", "Evolutionary emergentist", true, "The origin and nature of the universe and of life."],
-            ["Teleology", "Self-authored", true, "Whether existence has an inherent purpose or direction."],
-            ["Theology", "Agnostic atheist", true, "The existence and nature of God or the divine."],
-            ["Anthropology", "Universalist", true, "The nature and purpose of human beings."],
-            ["Axiology", "Amoral realist", true, "The nature of value — what is good, bad, right, and wrong."],
+            ["Knowing", "Explanatory fallibilist", true, "Epistemology — the nature and sources of knowledge; how we know."],
+            ["Being", "Physical idealist", true, "Metaphysics — what is ultimately real; the fundamental nature of reality."],
+            ["Origins", "Evolutionary emergentist", true, "Cosmology — the origin and nature of the universe and of life."],
+            ["Purpose", "Self-authored", true, "Teleology — whether existence has an inherent purpose or direction."],
+            ["Divinity", "Agnostic atheist", true, "Theology — the existence and nature of God or the divine."],
+            ["Humanity", "Universalist", true, "Anthropology — the nature and purpose of human beings."],
+            ["Value", "Amoral realist", true, "Axiology — the nature of value; what is good, bad, right, and wrong."],
           ],
         },
       ],
@@ -100,7 +100,7 @@ const DRIVE: StatTableData = {
       label: "PVQ-40",
       rows: [
         {
-          category: "Values (stated priorities)",
+          category: "Values (guiding priorities)",
           metrics: [
             ["PROFILE", "Openness over conservation, tilted individually", false, "Autonomy and achievement, kept stable and caring — with little need for novelty, pleasure, tradition, or conformity."],
             ["Self-direction", "6.0 (openness)", true, "Independent thought and action — choosing, creating, exploring."],
@@ -112,7 +112,7 @@ const DRIVE: StatTableData = {
             ["Tradition", "2.8 (conservation)", true, "Respect for and commitment to cultural or religious customs."],
             ["Stimulation", "2.7 (openness)", true, "Novelty, excitement, and challenge in life."],
             ["Conformity", "2.5 (conservation)", true, "Restraint of actions likely to upset others or violate norms."],
-            ["Hedonism", "2.3 (openness and self-enhancement)", true, "Pleasure and sensuous gratification for oneself."],
+            ["Hedonism", "2.3 (openness / self-enhancement)", true, "Pleasure and sensuous gratification for oneself."],
           ],
         },
       ],
