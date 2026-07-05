@@ -20,7 +20,7 @@ const INTELLECT: StatTableData = {
         {
           category: "Intelligence (processing power)",
           metrics: [
-            ["Profile", "pending", false, "Full-Scale IQ — overall general cognitive ability, the g-loaded composite of the six abilities below."],
+            ["PROFILE", "pending", false, "Full-Scale IQ — overall general cognitive ability, the g-loaded composite of the six abilities below."],
             ["Working memory", "—", true, "Holding and manipulating information in mind."],
             ["Processing speed", "—", true, "How quickly you take in and respond to information."],
             ["Fluid reasoning", "—", true, "Solving novel problems without relying on prior knowledge."],
@@ -38,8 +38,8 @@ const INTELLECT: StatTableData = {
         {
           category: "Worldview (sense-making)",
           metrics: [
-            ["Profile", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
-            ["Epistemology", "Critical rationalist", true, "How we know — the nature and sources of knowledge."],
+            ["PROFILE", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
+            ["Epistemology", "Critical fallibilist", true, "How we know — the nature and sources of knowledge."],
             ["Metaphysics", "Physical idealist", true, "What is ultimately real — the fundamental nature of reality."],
             ["Cosmology", "Evolutionary emergentist", true, "The origin and nature of the universe and of life."],
             ["Teleology", "Self-authored", true, "Whether existence has an inherent purpose or direction."],
@@ -63,7 +63,7 @@ const CHARACTER: StatTableData = {
         {
           category: "Personality (behavioral wiring)",
           metrics: [
-            ["Profile", "Disciplined, unflappable, and independent", false, "Exceptionally conscientious and reliable, hard to rattle emotionally, and self-reliant — reserved rather than outgoing, and tough-minded enough to question consensus rather than smooth it over."],
+            ["PROFILE", "Disciplined, unflappable, and independent", false, "Exceptionally conscientious and reliable, hard to rattle emotionally, and self-reliant — reserved rather than outgoing, and tough-minded enough to question consensus rather than smooth it over."],
             ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn't measure."],
             ["Emotionality", "1st (very low)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent."],
             ["eXtraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
@@ -81,7 +81,7 @@ const CHARACTER: StatTableData = {
         {
           category: "Beliefs (felt outlook)",
           metrics: [
-            ["Profile", "pending — the world is Good", false, "Your overall Primal — how Good the world fundamentally seems — over the three beliefs below."],
+            ["PROFILE", "pending — the world is Good", false, "Your overall Primal — how Good the world fundamentally seems — over the three beliefs below."],
             ["Safe", "—", true, "Whether the world feels safe or dangerous."],
             ["Enticing", "—", true, "Whether the world feels enticing and abundant or dull and barren."],
             ["Alive", "—", true, "Whether the world feels alive and intentional or mechanistic."],
@@ -102,17 +102,17 @@ const DRIVE: StatTableData = {
         {
           category: "Values (stated priorities)",
           metrics: [
-            ["Profile", "Openness over conservation, tilted individually", false, "Autonomy and achievement, kept stable and caring — with little need for novelty, pleasure, tradition, or conformity."],
-            ["Self-direction", "6.0", true, "Independent thought and action — choosing, creating, exploring."],
-            ["Achievement", "4.5", true, "Personal success through demonstrating competence."],
-            ["Security", "4.2", true, "Safety, harmony, and stability of self and society."],
-            ["Benevolence", "4.0", true, "Preserving and enhancing the welfare of those close to you."],
-            ["Universalism", "3.3", true, "Understanding, tolerance, and protection for all people and nature."],
-            ["Power", "3.3", true, "Social status, prestige, and control over people and resources."],
-            ["Tradition", "2.8", true, "Respect for and commitment to cultural or religious customs."],
-            ["Stimulation", "2.7", true, "Novelty, excitement, and challenge in life."],
-            ["Conformity", "2.5", true, "Restraint of actions likely to upset others or violate norms."],
-            ["Hedonism", "2.3", true, "Pleasure and sensuous gratification for oneself."],
+            ["PROFILE", "Openness over conservation, tilted individually", false, "Autonomy and achievement, kept stable and caring — with little need for novelty, pleasure, tradition, or conformity."],
+            ["Self-direction", "6.0 (openness)", true, "Independent thought and action — choosing, creating, exploring."],
+            ["Achievement", "4.5 (self-enhancement)", true, "Personal success through demonstrating competence."],
+            ["Security", "4.2 (conservation)", true, "Safety, harmony, and stability of self and society."],
+            ["Benevolence", "4.0 (self-transcendence)", true, "Preserving and enhancing the welfare of those close to you."],
+            ["Universalism", "3.3 (self-transcendence)", true, "Understanding, tolerance, and protection for all people and nature."],
+            ["Power", "3.3 (self-enhancement)", true, "Social status, prestige, and control over people and resources."],
+            ["Tradition", "2.8 (conservation)", true, "Respect for and commitment to cultural or religious customs."],
+            ["Stimulation", "2.7 (openness)", true, "Novelty, excitement, and challenge in life."],
+            ["Conformity", "2.5 (conservation)", true, "Restraint of actions likely to upset others or violate norms."],
+            ["Hedonism", "2.3 (openness)", true, "Pleasure and sensuous gratification for oneself."],
           ],
         },
       ],
@@ -124,7 +124,7 @@ const DRIVE: StatTableData = {
         {
           category: "Interests (engagement patterns)",
           metrics: [
-            ["Profile", "IAS (inquiry, artistry, service)", false, "Drawn to ideas and to making things, in the service of people — the pattern of a designer-educator (Investigative, Artistic, Social)."],
+            ["PROFILE", "IAS (inquiry, artistry, service)", false, "Drawn to ideas and to making things, in the service of people — the pattern of a designer-educator (Investigative, Artistic, Social)."],
             ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
             ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work."],
             ["Social", "3rd", true, "Drawn to helping, teaching, and working with people."],
