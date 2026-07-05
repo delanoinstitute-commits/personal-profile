@@ -43,7 +43,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
     },
     {
       domain: "Circulatory",
-      label: "Resting vitals (Top 1)",
+      label: "Vitals (Top 1)",
       rows: [
         {
           category: "Cardiovascular (low-effort circulation)",
