@@ -103,6 +103,7 @@ const DRIVE: StatTableData = {
           category: "Values (stated priorities)",
           metrics: [
             ["Profile", "Autonomy, achievement, security, and care", false, "A one-line read of the ten values below, led by the top four."],
+            ["Orientation", "Openness over conservation; individually focused", false, "The higher-order lean of Schwartz's model — the openness–conservation axis, and a personal (vs. social) focus."],
             ["Self-direction", "6.0", true, "Independent thought and action — choosing, creating, exploring."],
             ["Achievement", "4.5", true, "Personal success through demonstrating competence."],
             ["Security", "4.2", true, "Safety, harmony, and stability of self and society."],
