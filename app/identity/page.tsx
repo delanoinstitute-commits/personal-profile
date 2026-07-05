@@ -39,7 +39,7 @@ const INTELLECT: StatTableData = {
           category: "Worldview (sense-making)",
           metrics: [
             ["PROFILE", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
-            ["Epistemology", "Critical fallibilist", true, "How we know — the nature and sources of knowledge."],
+            ["Epistemology", "Explanatory fallibilist", true, "How we know — the nature and sources of knowledge."],
             ["Metaphysics", "Physical idealist", true, "What is ultimately real — the fundamental nature of reality."],
             ["Cosmology", "Evolutionary emergentist", true, "The origin and nature of the universe and of life."],
             ["Teleology", "Self-authored", true, "Whether existence has an inherent purpose or direction."],
@@ -112,7 +112,7 @@ const DRIVE: StatTableData = {
             ["Tradition", "2.8 (conservation)", true, "Respect for and commitment to cultural or religious customs."],
             ["Stimulation", "2.7 (openness)", true, "Novelty, excitement, and challenge in life."],
             ["Conformity", "2.5 (conservation)", true, "Restraint of actions likely to upset others or violate norms."],
-            ["Hedonism", "2.3 (openness)", true, "Pleasure and sensuous gratification for oneself."],
+            ["Hedonism", "2.3 (openness and self-enhancement)", true, "Pleasure and sensuous gratification for oneself."],
           ],
         },
       ],
