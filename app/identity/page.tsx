@@ -38,7 +38,7 @@ const INTELLECT: StatTableData = {
         {
           category: "Worldview (reasoning)",
           metrics: [
-            ["Composite stance", "Integral rational optimist", false],
+            ["Composite stance", "Integral (naturalistic) humanist", false],
             ["Epistemology", "Critical rationalist", true, "How we know — the nature and sources of knowledge."],
             ["Metaphysics", "Physical idealist", true, "What is ultimately real — the fundamental nature of reality."],
             ["Cosmology", "Evolutionary emergentist", true, "The origin and nature of the universe and of life."],
