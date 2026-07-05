@@ -33,7 +33,7 @@ const INTELLECT: StatTableData = {
     },
     {
       domain: "Perspective",
-      label: "Funk's 7 Perspectives (positions)",
+      label: "Funk's 7 Perspectives (categorical)",
       rows: [
         {
           category: "Worldview (interpretive lens)",
