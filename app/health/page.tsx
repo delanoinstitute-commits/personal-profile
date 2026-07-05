@@ -7,6 +7,7 @@ export const metadata: Metadata = { title: "Health" };
 // Data (pages 1–2 of the health-status source). Each table holds grouped
 // sub-sections; a group is one accent header row (domain | instrument) with
 // category rows underneath. supportive metrics render italic + indented.
+// The 4th element on a metric is a hover definition (dotted underline).
 
 const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
   title: "Functional homeostasis",
@@ -18,24 +19,24 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
         {
           category: "Cardiovascular (low-risk transport)",
           metrics: [
-            ["ApoB", "0.6 g/L (60 mg/dL)"],
-            ["Hemoglobin", "14.1 g/dL"],
-            ["Ferritin", "166 µg/L"],
+            ["ApoB", "0.6 g/L (60 mg/dL)", false, "Apolipoprotein B — the particle count of artery-clogging cholesterol; the strongest single lipid predictor of heart disease."],
+            ["Hemoglobin", "14.1 g/dL", false, "The oxygen-carrying protein in red blood cells."],
+            ["Ferritin", "166 µg/L", false, "Stored iron — the body's reserve for making hemoglobin."],
           ],
         },
         {
           category: "Endometabolic (sensitive disposal)",
           metrics: [
-            ["HbA1c", "5.1%"],
-            ["Fasting insulin", "4.1 IU/L"],
+            ["HbA1c", "5.1%", false, "Average blood sugar over the past ~3 months (glycated hemoglobin)."],
+            ["Fasting insulin", "4.1 IU/L", false, "Insulin at rest — a marker of insulin sensitivity and metabolic health."],
           ],
         },
         {
           category: "Hepatorenal (low-stress clearance)",
           metrics: [
-            ["eGFR-CysC", "101 mL/min/1.73m²"],
-            ["ALT", "26 IU/L"],
-            ["Uric acid", "0.28 mmol/L (4.7 mg/dL)"],
+            ["eGFR-CysC", "101 mL/min/1.73m²", false, "Estimated kidney filtration rate, derived from cystatin C (not muscle-biased)."],
+            ["ALT", "26 IU/L", false, "A liver enzyme; elevated levels signal liver stress or injury."],
+            ["Uric acid", "0.28 mmol/L (4.7 mg/dL)", false, "A metabolic waste product cleared by the kidneys; high levels strain them."],
           ],
         },
       ],
@@ -47,9 +48,9 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
         {
           category: "Cardiovascular (low-effort circulation)",
           metrics: [
-            ["RPP", "5,500 mmHg"],
-            ["Blood pressure", "110/65 mmHg", true],
-            ["Resting HR", "50 bpm", true],
+            ["RPP", "5,500 mmHg", false, "Rate-pressure product (heart rate × systolic BP) — the heart's workload and oxygen demand."],
+            ["Blood pressure", "110/65 mmHg", true, "The pressure of blood against the artery walls (systolic / diastolic)."],
+            ["Resting HR", "50 bpm", true, "Heartbeats per minute at rest; lower reflects a more efficient heart."],
           ],
         },
       ],
@@ -67,23 +68,23 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
         {
           category: "Muscle mass (force reserve)",
           metrics: [
-            ["ALMI", "9.4 kg/m² (>80th percentile)"],
-            ["Height²", "3.09 m²", true],
-            ["ALM", "29.1 kg", true],
+            ["ALMI", "9.4 kg/m² (>80th percentile)", false, "Appendicular lean mass index — arm and leg muscle relative to height; the key muscularity metric."],
+            ["Height²", "3.09 m²", true, "Height squared — the denominator that normalizes lean mass for body size."],
+            ["ALM", "29.1 kg", true, "Appendicular lean mass — total muscle in the arms and legs."],
           ],
         },
         {
           category: "Fat mass (metabolic protection)",
           metrics: [
-            ["VAT", "114 g"],
-            ["Body fat", "7.9% (<5th percentile)"],
+            ["VAT", "114 g", false, "Visceral adipose tissue — fat stored around the internal organs, the most metabolically harmful kind."],
+            ["Body fat", "7.9% (<5th percentile)", false, "The percentage of total body weight that is fat."],
           ],
         },
         {
           category: "Bone density (skeletal strength)",
           metrics: [
-            ["Z-score", "−0.3 (37th percentile)"],
-            ["BMD", "1.212 g/cm²", true],
+            ["Z-score", "−0.3 (37th percentile)", false, "Bone density compared with an age- and sex-matched average."],
+            ["BMD", "1.212 g/cm²", true, "Bone mineral density — the mineral content and strength of bone."],
           ],
         },
       ],
@@ -95,9 +96,9 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
         {
           category: "Waistline (central adiposity)",
           metrics: [
-            ["Waist-to-height ratio", "0.45"],
-            ["Height", "176 cm", true],
-            ["Waist", "80 cm", true],
+            ["Waist-to-height ratio", "0.45", false, "Waist circumference ÷ height — the best simple predictor of central-fat risk."],
+            ["Height", "176 cm", true, "Standing height."],
+            ["Waist", "80 cm", true, "Waist circumference."],
           ],
         },
       ],
@@ -115,33 +116,33 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
         {
           category: "Hip (locomotive power)",
           metrics: [
-            ["Extension (balance)", "6 pistol squats per leg"],
-            ["Extension (hinge)", "Deadlift 2× BW"],
-            ["Flexion (curl)", "1 nordic curl"],
+            ["Extension (balance)", "6 pistol squats per leg", false, "Single-leg squatting strength — knee extension under balance."],
+            ["Extension (hinge)", "Deadlift 2× BW", false, "Hip-hinge pulling strength (the deadlift)."],
+            ["Flexion (curl)", "1 nordic curl", false, "Hamstring and knee-flexion strength (the nordic curl)."],
           ],
         },
         {
           category: "Core (force transfer)",
           metrics: [
-            ["Compression (raise)", "15-sec V-sit"],
-            ["Tensegrity (press)", "15-sec back lever"],
-            ["Tensegrity (pull)", "5-sec front lever"],
+            ["Compression (raise)", "15-sec V-sit", false, "Trunk-flexion / anterior-chain compression hold (the V-sit)."],
+            ["Tensegrity (press)", "15-sec back lever", false, "Straight-arm pressing tension through the trunk (the back lever)."],
+            ["Tensegrity (pull)", "5-sec front lever", false, "Straight-arm pulling tension through the trunk (the front lever)."],
           ],
         },
         {
           category: "Shoulder (upper-body strength)",
           metrics: [
-            ["Extension (pull)", "20 pull-ups"],
-            ["Flexion (dip)", "25 chest dips"],
-            ["Flexion (press)", "OH press 0.9× BW"],
+            ["Extension (pull)", "20 pull-ups", false, "Vertical pulling strength (pull-ups)."],
+            ["Flexion (dip)", "25 chest dips", false, "Pressing strength at the shoulder and chest (dips)."],
+            ["Flexion (press)", "OH press 0.9× BW", false, "Overhead pressing strength."],
           ],
         },
         {
           category: "Global (work capacity)",
           metrics: [
-            ["Flexion (squat)", "Overhead squat 1× BW"],
-            ["Extension (gait)", "30-sec 200 m sprint; 3 W/kg FTP (20 min)"],
-            ["Extension (jump)", "2.4 m broad jump"],
+            ["Flexion (squat)", "Overhead squat 1× BW", false, "Full-depth overhead squat — whole-body mobility and strength."],
+            ["Extension (gait)", "30-sec 200 m sprint; 3 W/kg FTP (20 min)", false, "Locomotive power output — sprinting and sustained cycling."],
+            ["Extension (jump)", "2.4 m broad jump", false, "Explosive lower-body power (the broad jump)."],
           ],
         },
       ],
@@ -153,9 +154,9 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
         {
           category: "Global (energy efficiency)",
           metrics: [
-            ["VO₂max (uptake)", "53 ml/kg/min"],
-            ["Lactate (threshold)", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", true],
-            ["MFO (rate)", "0.45 g/min @ 60% VO₂max", true],
+            ["VO₂max (uptake)", "53 ml/kg/min", false, "Maximum rate of oxygen use during exercise — the headline aerobic-fitness metric."],
+            ["Lactate (threshold)", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", true, "The intensity at which lactate begins to accumulate — a measure of endurance efficiency."],
+            ["MFO (rate)", "0.45 g/min @ 60% VO₂max", true, "Maximal fat oxidation — the peak rate of burning fat for fuel."],
           ],
         },
       ],

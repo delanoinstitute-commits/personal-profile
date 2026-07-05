@@ -7,8 +7,8 @@ export const metadata: Metadata = { title: "Identity" };
 
 // The mind in the trilogy: Intellect (cognition), Character (affect), Drive
 // (conation). Six sub-branches, one gold-standard instrument each; every leaf
-// is a composite (roman) over its components (italic). "pending" = not yet
-// taken; a few readings are placeholders until the tests are done.
+// is a composite (roman) over its components (italic). The 4th element on a
+// metric is a hover definition. "pending" / "—" = not yet taken.
 
 const INTELLECT: StatTableData = {
   title: "Intellect",
@@ -20,13 +20,13 @@ const INTELLECT: StatTableData = {
         {
           category: "Intelligence (processing power)",
           metrics: [
-            ["Full-scale IQ", "pending", false],
-            ["Working memory", "—", true],
-            ["Processing speed", "—", true],
-            ["Fluid reasoning", "—", true],
-            ["Spatial ability", "—", true],
-            ["Verbal reasoning", "—", true],
-            ["Reaction time", "—", true],
+            ["Full-scale IQ", "pending", false, "Overall general cognitive ability — the composite of the six subtests below."],
+            ["Working memory", "—", true, "Holding and manipulating information in mind."],
+            ["Processing speed", "—", true, "How quickly you take in and respond to information."],
+            ["Fluid reasoning", "—", true, "Solving novel problems without relying on prior knowledge."],
+            ["Spatial ability", "—", true, "Reasoning about shapes, space, and visual relationships."],
+            ["Verbal reasoning", "—", true, "Reasoning with words, language, and meaning."],
+            ["Reaction time", "—", true, "Speed of response to a stimulus."],
           ],
         },
       ],
@@ -38,7 +38,7 @@ const INTELLECT: StatTableData = {
         {
           category: "Worldview (sense-making)",
           metrics: [
-            ["Composite stance", "Integral (naturalistic) humanist", false],
+            ["Composite stance", "Integral (naturalistic) humanist", false, "The overall worldview synthesized from the seven positions below."],
             ["Epistemology", "Critical rationalist", true, "How we know — the nature and sources of knowledge."],
             ["Metaphysics", "Physical idealist", true, "What is ultimately real — the fundamental nature of reality."],
             ["Cosmology", "Evolutionary emergentist", true, "The origin and nature of the universe and of life."],
@@ -63,13 +63,13 @@ const CHARACTER: StatTableData = {
         {
           category: "Personality (behavioral wiring)",
           metrics: [
-            ["Profile", "highly conscientious and steady, introverted, independent-minded", false],
-            ["Conscientiousness", "96th", true],
-            ["Neuroticism", "1st (very stable)", true],
-            ["Openness", "49th", true],
-            ["Extraversion", "29th", true],
-            ["Agreeableness", "30th", true],
-            ["Honesty-Humility", "pending (HEXACO)", true],
+            ["Profile", "highly conscientious and steady, introverted, independent-minded", false, "A one-line read of the five-factor scores below."],
+            ["Conscientiousness", "96th", true, "Diligence, organization, self-discipline, and reliability."],
+            ["Neuroticism", "1st (very stable)", true, "Tendency toward negative emotion; low means emotional stability."],
+            ["Openness", "49th", true, "Curiosity, imagination, and openness to new experience."],
+            ["Extraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
+            ["Agreeableness", "30th", true, "Warmth, cooperation, and trust versus skepticism."],
+            ["Honesty-Humility", "pending (HEXACO)", true, "Sincerity, fairness, and modesty — the integrity factor."],
           ],
         },
       ],
@@ -81,22 +81,22 @@ const CHARACTER: StatTableData = {
         {
           category: "Primal beliefs (felt outlook)",
           metrics: [
-            ["Primal", "pending — the world is Good? (PWB)", false],
-            ["Safe", "—", true],
-            ["Enticing", "—", true],
-            ["Alive", "—", true],
+            ["Primal", "pending — the world is Good? (PWB)", false, "Your most basic belief about the world's overall character."],
+            ["Safe", "—", true, "Whether the world feels safe or dangerous."],
+            ["Enticing", "—", true, "Whether the world feels enticing and abundant or dull and barren."],
+            ["Alive", "—", true, "Whether the world feels alive and intentional or mechanistic."],
           ],
         },
         {
           category: "Moral foundations (moral compass)",
           metrics: [
-            ["Moral profile", "pending (MFQ)", false],
-            ["Care", "—", true],
-            ["Equality", "—", true],
-            ["Proportionality", "—", true],
-            ["Loyalty", "—", true],
-            ["Authority", "—", true],
-            ["Purity", "—", true],
+            ["Moral profile", "pending (MFQ)", false, "Your pattern across the six moral foundations below."],
+            ["Care", "—", true, "Sensitivity to harm and compassion for suffering."],
+            ["Equality", "—", true, "Concern for equal treatment and equal outcomes."],
+            ["Proportionality", "—", true, "The belief that people should get what they earn."],
+            ["Loyalty", "—", true, "Valuing group loyalty and self-sacrifice."],
+            ["Authority", "—", true, "Respect for hierarchy, tradition, and legitimate authority."],
+            ["Purity", "—", true, "Sensitivity to sanctity, disgust, and degradation."],
           ],
         },
       ],
@@ -114,16 +114,16 @@ const DRIVE: StatTableData = {
         {
           category: "Values (stated priorities)",
           metrics: [
-            ["Self-direction", "6.0", false],
-            ["Achievement", "4.5", false],
-            ["Security", "4.2", false],
-            ["Benevolence", "4.0", false],
-            ["Universalism", "3.3", true],
-            ["Power", "3.3", true],
-            ["Tradition", "2.8", true],
-            ["Stimulation", "2.7", true],
-            ["Conformity", "2.5", true],
-            ["Hedonism", "2.3", true],
+            ["Self-direction", "6.0", false, "Independent thought and action — choosing, creating, exploring."],
+            ["Achievement", "4.5", false, "Personal success through demonstrating competence."],
+            ["Security", "4.2", false, "Safety, harmony, and stability of self and society."],
+            ["Benevolence", "4.0", false, "Preserving and enhancing the welfare of those close to you."],
+            ["Universalism", "3.3", true, "Understanding, tolerance, and protection for all people and nature."],
+            ["Power", "3.3", true, "Social status, prestige, and control over people and resources."],
+            ["Tradition", "2.8", true, "Respect for and commitment to cultural or religious customs."],
+            ["Stimulation", "2.7", true, "Novelty, excitement, and challenge in life."],
+            ["Conformity", "2.5", true, "Restraint of actions likely to upset others or violate norms."],
+            ["Hedonism", "2.3", true, "Pleasure and sensuous gratification for oneself."],
           ],
         },
         {
@@ -141,13 +141,13 @@ const DRIVE: StatTableData = {
         {
           category: "Interests (engagement patterns)",
           metrics: [
-            ["Holland code", "IAS", false],
-            ["Investigative", "1st", true],
-            ["Artistic", "2nd", true],
-            ["Social", "3rd", true],
-            ["Enterprising", "4th", true],
-            ["Conventional", "5th", true],
-            ["Realistic", "6th", true],
+            ["Holland code", "IAS", false, "The top three interest types, in order (Investigative, Artistic, Social)."],
+            ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
+            ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work."],
+            ["Social", "3rd", true, "Drawn to helping, teaching, and working with people."],
+            ["Enterprising", "4th", true, "Drawn to leading, persuading, and enterprise."],
+            ["Conventional", "5th", true, "Drawn to order, data, and structured tasks."],
+            ["Realistic", "6th", true, "Drawn to hands-on, physical, and mechanical work."],
           ],
         },
       ],
