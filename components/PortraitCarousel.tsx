@@ -93,7 +93,7 @@ export default function PortraitCarousel({ priority = false }: { priority?: bool
             Delano in {CAROUSEL[index].year} ({CAROUSEL[index].location})
           </div>
           {CAROUSEL[index].photographer && (
-            <div className="text-[0.7rem] leading-tight text-muted-2">
+            <div className="text-[0.7rem] italic leading-tight text-muted-2">
               Photograph by {CAROUSEL[index].photographer}
             </div>
           )}
