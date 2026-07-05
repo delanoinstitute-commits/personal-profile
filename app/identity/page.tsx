@@ -58,30 +58,30 @@ const CHARACTER: StatTableData = {
   groups: [
     {
       domain: "Temperament",
-      label: "HEXACO",
+      label: "HEXACO (PI-R 100)",
       rows: [
         {
           category: "Personality (behavioral wiring)",
           metrics: [
-            ["Profile", "highly conscientious and steady, introverted, independent-minded", false, "A one-line read of the six factor scores below."],
-            ["Conscientiousness", "96th", true, "Diligence, organization, self-discipline, and reliability."],
-            ["Emotionality", "1st (very low)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent."],
-            ["Openness", "49th", true, "Curiosity, imagination, and openness to new experience."],
-            ["Extraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
-            ["Agreeableness", "30th", true, "Patience, forgiveness, and cooperation versus temper and criticism."],
+            ["Profile", "High conscientiousness, integrity, and independence", false, "A one-line read of the six factor scores below."],
             ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn't measure."],
+            ["Emotionality", "1st (very low)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent."],
+            ["eXtraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
+            ["Agreeableness", "30th", true, "Patience, forgiveness, and cooperation versus temper and criticism."],
+            ["Conscientiousness", "96th", true, "Diligence, organization, self-discipline, and reliability."],
+            ["Openness", "49th", true, "Curiosity, imagination, and openness to new experience."],
           ],
         },
       ],
     },
     {
       domain: "Sentiment",
-      label: "Primal World Beliefs",
+      label: "Primal World Beliefs (PI-99)",
       rows: [
         {
           category: "Beliefs (felt outlook)",
           metrics: [
-            ["Primal", "pending — the world is Good? (PWB)", false, "Your most basic belief about the world's overall character."],
+            ["Profile", "pending — the world is Good", false, "Your overall Primal — how Good the world fundamentally seems — over the three beliefs below."],
             ["Safe", "—", true, "Whether the world feels safe or dangerous."],
             ["Enticing", "—", true, "Whether the world feels enticing and abundant or dull and barren."],
             ["Alive", "—", true, "Whether the world feels alive and intentional or mechanistic."],
@@ -97,15 +97,16 @@ const DRIVE: StatTableData = {
   groups: [
     {
       domain: "Motivation",
-      label: "PVQ · VDP",
+      label: "PVQ-40",
       rows: [
         {
           category: "Values (stated priorities)",
           metrics: [
-            ["Self-direction", "6.0", false, "Independent thought and action — choosing, creating, exploring."],
-            ["Achievement", "4.5", false, "Personal success through demonstrating competence."],
-            ["Security", "4.2", false, "Safety, harmony, and stability of self and society."],
-            ["Benevolence", "4.0", false, "Preserving and enhancing the welfare of those close to you."],
+            ["Profile", "Autonomy, achievement, security, and care", false, "A one-line read of the ten values below, led by the top four."],
+            ["Self-direction", "6.0", true, "Independent thought and action — choosing, creating, exploring."],
+            ["Achievement", "4.5", true, "Personal success through demonstrating competence."],
+            ["Security", "4.2", true, "Safety, harmony, and stability of self and society."],
+            ["Benevolence", "4.0", true, "Preserving and enhancing the welfare of those close to you."],
             ["Universalism", "3.3", true, "Understanding, tolerance, and protection for all people and nature."],
             ["Power", "3.3", true, "Social status, prestige, and control over people and resources."],
             ["Tradition", "2.8", true, "Respect for and commitment to cultural or religious customs."],
@@ -114,22 +115,16 @@ const DRIVE: StatTableData = {
             ["Hedonism", "2.3", true, "Pleasure and sensuous gratification for oneself."],
           ],
         },
-        {
-          category: "Values (revealed priorities)",
-          metrics: [
-            ["", "1) design, 2) wellness, 3) education, 4) resource allocation, 5) music"],
-          ],
-        },
       ],
     },
     {
       domain: "Vocation",
-      label: "Holland RIASEC",
+      label: "Holland RIASEC-18",
       rows: [
         {
           category: "Interests (engagement patterns)",
           metrics: [
-            ["Holland code", "IAS", false, "The top three interest types, in order (Investigative, Artistic, Social)."],
+            ["Holland hierarchy", "IAS (inquiry, artistry, service)", false, "The top three interest types, in order (Investigative, Artistic, Social)."],
             ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
             ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work."],
             ["Social", "3rd", true, "Drawn to helping, teaching, and working with people."],
