@@ -102,7 +102,7 @@ const DRIVE: StatTableData = {
         {
           category: "Values (guiding priorities)",
           metrics: [
-            ["PROFILE", "Openness over conservation, tilted individually", false, "Autonomy and achievement, kept stable and caring — with little need for novelty, pleasure, tradition, or conformity."],
+            ["PROFILE", "Openness over conservation, self-other balanced", false, "Autonomy and achievement, kept stable and caring — with little need for novelty, pleasure, tradition, or conformity."],
             ["Self-direction", "6.0 (openness)", true, "Independent thought and action — choosing, creating, exploring."],
             ["Achievement", "4.5 (self-enhancement)", true, "Personal success through demonstrating competence."],
             ["Security", "4.2 (conservation)", true, "Safety, harmony, and stability of self and society."],
@@ -122,7 +122,7 @@ const DRIVE: StatTableData = {
       label: "Holland RIASEC-18",
       rows: [
         {
-          category: "Interests (engagement patterns)",
+          category: "Interests (engagement fit)",
           metrics: [
             ["PROFILE", "IAS (inquiry, artistry, service)", false, "Drawn to ideas and to making things, in the service of people — the pattern of a designer-educator (Investigative, Artistic, Social)."],
             ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
