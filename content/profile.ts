@@ -90,6 +90,15 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "50% 45%",
   },
   {
+    src: "/carousel/washington.jpg",
+    alt: "Camera-monitor view of Delano directing a kitchen scene, reviewing a laptop with an actor",
+    context: "Production",
+    location: "Washington",
+    year: "2022",
+    photographer: "Bruno Cortes",
+    objectPosition: "48% 42%",
+  },
+  {
     src: "/carousel/coaching.jpg",
     alt: "Delano coaching a group in a gym",
     context: "Workshop",
@@ -105,6 +114,14 @@ export const CAROUSEL: CarouselImage[] = [
     location: "Estonia",
     year: "2018",
     objectPosition: "0% 50%",
+  },
+  {
+    src: "/carousel/calgary.jpg",
+    alt: "Delano coaching a family seated around a living-room table",
+    context: "Coaching",
+    location: "Calgary",
+    year: "2020",
+    objectPosition: "50% 40%",
   },
   {
     src: "/carousel/training.jpg",
@@ -147,7 +164,6 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Self-education (since 2009)" },
         ],
       },
-      { label: "Worldview", values: [{ text: "Integral (rational) optimist" }] },
       {
         label: "Appearance",
         values: [
