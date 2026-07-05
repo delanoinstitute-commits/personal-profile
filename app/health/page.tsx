@@ -93,7 +93,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
       label: "Anthropometrics (Top 1)",
       rows: [
         {
-          category: "Proportion (central adiposity)",
+          category: "Shape (central adiposity)",
           metrics: [
             ["Waist-to-height ratio", "0.45"],
             ["Height", "176 cm", true],
