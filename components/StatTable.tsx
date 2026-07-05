@@ -1,12 +1,19 @@
 import { Fragment } from "react";
+import Tooltip from "./Tooltip";
 
 // A tabled standard shared across data pages (Health, Identity, …).
 // Each table holds grouped sub-sections; a group is one accent header row
 // (DOMAIN | instrument) followed by category rows (category | metrics).
-// A metric is [term, value, supportive?]; the term is underlined. "supportive"
-// marks a component of a composite primary (italic + indented under it).
+// A metric is [term, value, supportive?, tooltip?]; the term is underlined.
+// "supportive" marks a component of a composite primary (italic + indented).
+// "tooltip" gives the term a dotted-underline hover definition.
 
-export type Metric = [term: string, value: string, supportive?: boolean];
+export type Metric = [
+  term: string,
+  value: string,
+  supportive?: boolean,
+  tooltip?: string,
+];
 export type Row = { category: string; metrics: Metric[] };
 export type Group = { domain: string; label: string; rows: Row[] };
 export type StatTableData = { title: string; groups: Group[] };
@@ -47,14 +54,20 @@ export function StatTable({ groups }: StatTableData) {
                   <th scope="row">{labelParts(row.category)}</th>
                   <td>
                     <ul className="stat-metrics">
-                      {row.metrics.map(([term, value, supportive]) => (
+                      {row.metrics.map(([term, value, supportive, tooltip]) => (
                         <li
                           key={term || value}
                           className={supportive ? "stat-supportive" : undefined}
                         >
                           {term ? (
                             <>
-                              <u>{term}</u>: {value}
+                              {tooltip ? (
+                                <Tooltip content={tooltip}>{term}</Tooltip>
+                              ) : (
+                                <u>{term}</u>
+                              )}
+                              {": "}
+                              {value}
                             </>
                           ) : (
                             value
