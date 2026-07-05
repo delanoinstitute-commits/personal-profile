@@ -33,7 +33,7 @@ const INTELLECT: StatTableData = {
     },
     {
       domain: "Perspective",
-      label: "Funk's seven",
+      label: "Funk's 7 Perspectives",
       rows: [
         {
           category: "Worldview (sense-making)",
@@ -76,27 +76,15 @@ const CHARACTER: StatTableData = {
     },
     {
       domain: "Sentiment",
-      label: "Belief surveys",
+      label: "Primal World Beliefs",
       rows: [
         {
-          category: "Primal beliefs (felt outlook)",
+          category: "Beliefs (felt outlook)",
           metrics: [
             ["Primal", "pending — the world is Good? (PWB)", false, "Your most basic belief about the world's overall character."],
             ["Safe", "—", true, "Whether the world feels safe or dangerous."],
             ["Enticing", "—", true, "Whether the world feels enticing and abundant or dull and barren."],
             ["Alive", "—", true, "Whether the world feels alive and intentional or mechanistic."],
-          ],
-        },
-        {
-          category: "Moral foundations (moral compass)",
-          metrics: [
-            ["Moral profile", "pending (MFQ)", false, "Your pattern across the six moral foundations below."],
-            ["Care", "—", true, "Sensitivity to harm and compassion for suffering."],
-            ["Equality", "—", true, "Concern for equal treatment and equal outcomes."],
-            ["Proportionality", "—", true, "The belief that people should get what they earn."],
-            ["Loyalty", "—", true, "Valuing group loyalty and self-sacrifice."],
-            ["Authority", "—", true, "Respect for hierarchy, tradition, and legitimate authority."],
-            ["Purity", "—", true, "Sensitivity to sanctity, disgust, and degradation."],
           ],
         },
       ],

@@ -425,6 +425,13 @@ a.wikilink.red,
   text-underline-offset: 2px;
 }
 
+/* Tooltip-trigger terms are <button>s; Tailwind preflight doesn't inherit
+   font-style, so force it — supportive rows italicize the term, not just the
+   value. */
+.stat-table .stat-metrics button {
+  font-style: inherit;
+}
+
 /* ===================================================================
    Timeline (biography) — §4.5
    =================================================================== */
