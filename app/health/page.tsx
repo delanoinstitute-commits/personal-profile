@@ -65,7 +65,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
       label: "DEXA (Top 4)",
       rows: [
         {
-          category: "Muscularity (force reserve)",
+          category: "Muscle mass (force reserve)",
           metrics: [
             ["ALMI", "9.4 kg/m² (>80th percentile)"],
             ["Height²", "3.09 m²", true],
@@ -73,14 +73,14 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           ],
         },
         {
-          category: "Leanness (metabolic protection)",
+          category: "Fat mass (metabolic protection)",
           metrics: [
             ["VAT", "114 g"],
             ["Body fat", "7.9% (<5th percentile)"],
           ],
         },
         {
-          category: "Density (skeletal strength)",
+          category: "Bone density (skeletal strength)",
           metrics: [
             ["Z-score", "−0.3 (37th percentile)"],
             ["BMD", "1.212 g/cm²", true],
@@ -93,7 +93,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
       label: "Anthropometrics (Top 1)",
       rows: [
         {
-          category: "Adiposity (central-fat risk)",
+          category: "Proportion (central adiposity)",
           metrics: [
             ["Waist-to-height ratio", "0.45"],
             ["Height", "176 cm", true],
@@ -129,7 +129,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           ],
         },
         {
-          category: "Shoulder (upper-body power)",
+          category: "Shoulder (upper-body strength)",
           metrics: [
             ["Extension (pull)", "20 pull-ups"],
             ["Flexion (dip)", "25 chest dips"],
