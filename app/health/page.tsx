@@ -65,7 +65,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
       label: "DEXA (Top 4)",
       rows: [
         {
-          category: "Muscularity (muscle)",
+          category: "Muscularity (force reserve)",
           metrics: [
             ["ALMI", "9.4 kg/m² (>80th percentile)"],
             ["Height²", "3.09 m²", true],
@@ -73,14 +73,14 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           ],
         },
         {
-          category: "Leanness (fat)",
+          category: "Leanness (metabolic protection)",
           metrics: [
             ["VAT", "114 g"],
             ["Body fat", "7.9% (<5th percentile)"],
           ],
         },
         {
-          category: "Density (bone)",
+          category: "Density (skeletal strength)",
           metrics: [
             ["Z-score", "−0.3 (37th percentile)"],
             ["BMD", "1.212 g/cm²", true],
@@ -93,7 +93,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
       label: "Anthropometrics (Top 1)",
       rows: [
         {
-          category: "Adiposity (central)",
+          category: "Adiposity (central-fat risk)",
           metrics: [
             ["Waist-to-height ratio", "0.45"],
             ["Height", "176 cm", true],
@@ -113,7 +113,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
       label: "Movement (Top 12)",
       rows: [
         {
-          category: "Hip (power)",
+          category: "Hip (locomotive power)",
           metrics: [
             ["Extension (balance)", "6 pistol squats per leg"],
             ["Extension (hinge)", "Deadlift 2× BW"],
@@ -121,7 +121,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           ],
         },
         {
-          category: "Core (stability)",
+          category: "Core (force transfer)",
           metrics: [
             ["Compression (raise)", "15-sec V-sit"],
             ["Tensegrity (press)", "15-sec back lever"],
@@ -129,7 +129,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           ],
         },
         {
-          category: "Shoulder (strength)",
+          category: "Shoulder (upper-body power)",
           metrics: [
             ["Extension (pull)", "20 pull-ups"],
             ["Flexion (dip)", "25 chest dips"],
@@ -137,7 +137,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           ],
         },
         {
-          category: "Global (power)",
+          category: "Global (work capacity)",
           metrics: [
             ["Flexion (squat)", "Overhead squat 1× BW"],
             ["Extension (gait)", "30-sec 200 m sprint; 3 W/kg FTP (20 min)"],
@@ -151,7 +151,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
       label: "CTEP (Top 1)",
       rows: [
         {
-          category: "Global (endurance)",
+          category: "Global (energy efficiency)",
           metrics: [
             ["VO₂max (uptake)", "53 ml/kg/min"],
             ["Lactate (threshold)", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", true],

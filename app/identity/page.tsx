@@ -18,7 +18,7 @@ const INTELLECT: StatTableData = {
       label: "Full RIOT IQ",
       rows: [
         {
-          category: "Intelligence (processing)",
+          category: "Intelligence (processing power)",
           metrics: [
             ["Full-scale IQ", "pending", false],
             ["Working memory", "—", true],
@@ -36,7 +36,7 @@ const INTELLECT: StatTableData = {
       label: "Funk's seven",
       rows: [
         {
-          category: "Worldview (reasoning)",
+          category: "Worldview (sense-making)",
           metrics: [
             ["Composite stance", "Integral (naturalistic) humanist", false],
             ["Epistemology", "Critical rationalist", true, "How we know — the nature and sources of knowledge."],
@@ -61,7 +61,7 @@ const CHARACTER: StatTableData = {
       label: "Big Five (2018)",
       rows: [
         {
-          category: "Personality (reacting)",
+          category: "Personality (behavioral wiring)",
           metrics: [
             ["Profile", "highly conscientious and steady, introverted, independent-minded", false],
             ["Conscientiousness", "96th", true],
@@ -79,7 +79,7 @@ const CHARACTER: StatTableData = {
       label: "Belief surveys",
       rows: [
         {
-          category: "Primal beliefs (feeling)",
+          category: "Primal beliefs (felt outlook)",
           metrics: [
             ["Primal", "pending — the world is Good? (PWB)", false],
             ["Safe", "—", true],
@@ -88,7 +88,7 @@ const CHARACTER: StatTableData = {
           ],
         },
         {
-          category: "Moral foundations (judging)",
+          category: "Moral foundations (moral compass)",
           metrics: [
             ["Moral profile", "pending (MFQ)", false],
             ["Care", "—", true],
@@ -112,7 +112,7 @@ const DRIVE: StatTableData = {
       label: "PVQ · VDP",
       rows: [
         {
-          category: "Values (valuing)",
+          category: "Values (stated priorities)",
           metrics: [
             ["Self-direction", "6.0", false],
             ["Achievement", "4.5", false],
@@ -127,7 +127,7 @@ const DRIVE: StatTableData = {
           ],
         },
         {
-          category: "Values (revealing)",
+          category: "Values (revealed priorities)",
           metrics: [
             ["", "1) design, 2) wellness, 3) education, 4) resource allocation, 5) music"],
           ],
@@ -139,7 +139,7 @@ const DRIVE: StatTableData = {
       label: "Holland RIASEC",
       rows: [
         {
-          category: "Interests (gravitating)",
+          category: "Interests (engagement patterns)",
           metrics: [
             ["Holland code", "IAS", false],
             ["Investigative", "1st", true],
