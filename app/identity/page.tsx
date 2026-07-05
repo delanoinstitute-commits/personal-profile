@@ -36,7 +36,7 @@ const INTELLECT: StatTableData = {
       label: "Funk's 7 Perspectives",
       rows: [
         {
-          category: "Worldview (sense-making)",
+          category: "Worldview (interpretive lens)",
           metrics: [
             ["PROFILE", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
             ["Knowing", "Explanatory fallibilist", true, "Epistemology — the nature and sources of knowledge; how we know."],
