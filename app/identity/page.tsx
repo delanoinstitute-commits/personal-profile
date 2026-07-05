@@ -58,7 +58,7 @@ const CHARACTER: StatTableData = {
   groups: [
     {
       domain: "Temperament",
-      label: "Big Five (2018)",
+      label: "HEXACO",
       rows: [
         {
           category: "Personality (behavioral wiring)",

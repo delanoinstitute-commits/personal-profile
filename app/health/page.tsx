@@ -14,7 +14,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
   groups: [
     {
       domain: "Biomolecular",
-      label: "Labs (Top 8)",
+      label: "Blood (Top 8)",
       rows: [
         {
           category: "Cardiovascular (low-risk transport)",
@@ -110,7 +110,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   title: "Functional capacity",
   groups: [
     {
-      domain: "Mechanical",
+      domain: "Biomechanical",
       label: "Movement (Top 12)",
       rows: [
         {
