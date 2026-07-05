@@ -20,7 +20,7 @@ const INTELLECT: StatTableData = {
         {
           category: "Intelligence (processing power)",
           metrics: [
-            ["Full-scale IQ", "pending", false, "Overall general cognitive ability — the composite of the six subtests below."],
+            ["Profile", "pending", false, "Full-Scale IQ — overall general cognitive ability, the g-loaded composite of the six abilities below."],
             ["Working memory", "—", true, "Holding and manipulating information in mind."],
             ["Processing speed", "—", true, "How quickly you take in and respond to information."],
             ["Fluid reasoning", "—", true, "Solving novel problems without relying on prior knowledge."],
@@ -38,7 +38,7 @@ const INTELLECT: StatTableData = {
         {
           category: "Worldview (sense-making)",
           metrics: [
-            ["Composite stance", "Integral (naturalistic) humanist", false, "The overall worldview synthesized from the seven positions below."],
+            ["Profile", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
             ["Epistemology", "Critical rationalist", true, "How we know — the nature and sources of knowledge."],
             ["Metaphysics", "Physical idealist", true, "What is ultimately real — the fundamental nature of reality."],
             ["Cosmology", "Evolutionary emergentist", true, "The origin and nature of the universe and of life."],
@@ -63,7 +63,7 @@ const CHARACTER: StatTableData = {
         {
           category: "Personality (behavioral wiring)",
           metrics: [
-            ["Profile", "High conscientiousness, integrity, and independence", false, "A one-line read of the six factor scores below."],
+            ["Profile", "Disciplined, unflappable, and independent", false, "Exceptionally conscientious and reliable, hard to rattle emotionally, and self-reliant — reserved rather than outgoing, and tough-minded enough to question consensus rather than smooth it over."],
             ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn't measure."],
             ["Emotionality", "1st (very low)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent."],
             ["eXtraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
@@ -124,7 +124,7 @@ const DRIVE: StatTableData = {
         {
           category: "Interests (engagement patterns)",
           metrics: [
-            ["Holland hierarchy", "IAS (inquiry, artistry, service)", false, "The top three interest types, in order (Investigative, Artistic, Social)."],
+            ["Profile", "IAS (inquiry, artistry, service)", false, "Drawn to ideas and to making things, in the service of people — the pattern of a designer-educator (Investigative, Artistic, Social)."],
             ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
             ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work."],
             ["Social", "3rd", true, "Drawn to helping, teaching, and working with people."],
