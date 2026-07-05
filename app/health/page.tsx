@@ -43,7 +43,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
     },
     {
       domain: "Circulatory",
-      label: "Hemodynamics (Top 1)",
+      label: "Resting vitals (Top 1)",
       rows: [
         {
           category: "Cardiovascular (low-effort circulation)",
@@ -111,7 +111,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   groups: [
     {
       domain: "Biomechanical",
-      label: "Movement (Top 12)",
+      label: "Performance (Top 12)",
       rows: [
         {
           category: "Hip (locomotive power)",

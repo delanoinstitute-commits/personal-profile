@@ -63,13 +63,13 @@ const CHARACTER: StatTableData = {
         {
           category: "Personality (behavioral wiring)",
           metrics: [
-            ["Profile", "highly conscientious and steady, introverted, independent-minded", false, "A one-line read of the five-factor scores below."],
+            ["Profile", "highly conscientious and steady, introverted, independent-minded", false, "A one-line read of the six factor scores below."],
             ["Conscientiousness", "96th", true, "Diligence, organization, self-discipline, and reliability."],
-            ["Neuroticism", "1st (very stable)", true, "Tendency toward negative emotion; low means emotional stability."],
+            ["Emotionality", "1st (very low)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent."],
             ["Openness", "49th", true, "Curiosity, imagination, and openness to new experience."],
             ["Extraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
-            ["Agreeableness", "30th", true, "Warmth, cooperation, and trust versus skepticism."],
-            ["Honesty-Humility", "pending (HEXACO)", true, "Sincerity, fairness, and modesty — the integrity factor."],
+            ["Agreeableness", "30th", true, "Patience, forgiveness, and cooperation versus temper and criticism."],
+            ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn't measure."],
           ],
         },
       ],
