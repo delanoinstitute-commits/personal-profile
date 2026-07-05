@@ -81,10 +81,10 @@ const CHARACTER: StatTableData = {
         {
           category: "Beliefs (felt outlook)",
           metrics: [
-            ["PROFILE", "pending — the world is Good", false, "Your overall Primal — how Good the world fundamentally seems — over the three beliefs below."],
-            ["Safe", "—", true, "Whether the world feels safe or dangerous."],
-            ["Enticing", "—", true, "Whether the world feels enticing and abundant or dull and barren."],
-            ["Alive", "—", true, "Whether the world feels alive and intentional or mechanistic."],
+            ["PROFILE", "Good and improving, but impersonal", false, "Fundamentally good (3.66) — safe, abundant, and improving — but not alive: impersonal and non-agentic, with no cosmic intention. A secular optimist's world."],
+            ["Safe", "3.69", true, "Whether the world is safe and nurturing, or dangerous and threatening."],
+            ["Enticing", "3.86", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren."],
+            ["Alive", "2.21", true, "Whether the world is a conscious, intentional agent aware of you — or impersonal and mechanistic."],
           ],
         },
       ],
