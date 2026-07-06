@@ -182,6 +182,41 @@ const HEALTH_REFERENCES: Reference[] = [
         Sniderman, A. D., et al. (2019). Apolipoprotein B particles and cardiovascular disease: a narrative review. <em>JAMA Cardiology</em>, 4(12).
       </>
     ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/31642874/",
+    urlLabel: "PubMed",
+    tag: "Balance",
+  },
+  {
+    id: "hba1c",
+    cite: (
+      <>
+        Khaw, K. T., et al. (2001). Glycated haemoglobin, diabetes, and mortality in men in Norfolk cohort of the European Prospective Investigation of Cancer and Nutrition (EPIC-Norfolk). <em>BMJ</em>, 322(7277).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/11141143/",
+    urlLabel: "PubMed",
+    tag: "Balance",
+  },
+  {
+    id: "cystatinc",
+    cite: (
+      <>
+        Shlipak, M. G., et al. (2013). Cystatin C versus creatinine in determining risk based on kidney function. <em>New England Journal of Medicine</em>, 369(10).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/24004120/",
+    urlLabel: "PubMed",
+    tag: "Balance",
+  },
+  {
+    id: "restinghr",
+    cite: (
+      <>
+        Zhang, D., Shen, X., and Qi, X. (2016). Resting heart rate and all-cause and cardiovascular mortality in the general population: a meta-analysis. <em>CMAJ</em>, 188(3).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/26598376/",
+    urlLabel: "PubMed",
     tag: "Balance",
   },
   {
@@ -191,24 +226,41 @@ const HEALTH_REFERENCES: Reference[] = [
         Cruz-Jentoft, A. J., et al. (2019). Sarcopenia: revised European consensus on definition and diagnosis (EWGSOP2). <em>Age and Ageing</em>, 48(1).
       </>
     ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/30312372/",
+    urlLabel: "PubMed",
+    tag: "Integrity",
+  },
+  {
+    id: "bmd",
+    cite: (
+      <>
+        Marshall, D., Johnell, O., and Wedel, H. (1996). Meta-analysis of how well measures of bone mineral density predict occurrence of osteoporotic fractures. <em>BMJ</em>, 312(7041).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/8634613/",
+    urlLabel: "PubMed",
     tag: "Integrity",
   },
   {
     id: "whtr",
     cite: (
       <>
-        Ashwell, M., Gunn, P., and Gibson, S. (2012). Waist-to-height ratio is a better screening tool than waist circumference and BMI for adult cardiometabolic risk factors: a meta-analysis. <em>Obesity Reviews</em>, 13(3).
+        Ashwell, M., Gunn, P., and Gibson, S. (2012). Waist-to-height ratio is a better screening tool than waist circumference and BMI for adult cardiometabolic risk factors: systematic review and meta-analysis. <em>Obesity Reviews</em>, 13(3).
       </>
     ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/22106927/",
+    urlLabel: "PubMed",
     tag: "Integrity",
   },
   {
     id: "vo2max",
     cite: (
       <>
-        Kaminsky, L. A., et al. (2015). Reference standards for cardiorespiratory fitness measured with cardiopulmonary exercise testing (the FRIEND Registry). <em>Mayo Clinic Proceedings</em>, 90(11).
+        Kaminsky, L. A., et al. (2022). Updated reference standards for cardiorespiratory fitness measured with cardiopulmonary exercise testing (the FRIEND Registry). <em>Mayo Clinic Proceedings</em>, 97(2).
       </>
     ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/34809986/",
+    urlLabel: "PubMed",
     tag: "Capacity",
   },
 ];
