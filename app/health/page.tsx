@@ -15,7 +15,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
   groups: [
     {
       domain: "Biomolecular",
-      label: "Blood (Top 8)",
+      label: "Biochemistry (Blood)",
       rows: [
         {
           category: "Cardiovascular (low-risk transport)",
@@ -44,7 +44,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
     },
     {
       domain: "Circulatory",
-      label: "Vitals (Top 1)",
+      label: "Hemodynamics (Vitals)",
       rows: [
         {
           category: "Cardiovascular (low-effort circulation)",
@@ -64,7 +64,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
   groups: [
     {
       domain: "Compositional",
-      label: "DEXA (Top 4)",
+      label: "Densitometry (DEXA)",
       rows: [
         {
           category: "Muscle mass (force reserve)",
@@ -92,7 +92,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
     },
     {
       domain: "Geometric",
-      label: "Anthropometrics (Top 1)",
+      label: "Anthropometry (Tape)",
       rows: [
         {
           category: "Waistline (central adiposity)",
@@ -112,7 +112,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   groups: [
     {
       domain: "Biomechanical",
-      label: "Performance (Top 12)",
+      label: "Mixed battery (Performance)",
       rows: [
         {
           category: "Hip (locomotive power)",
@@ -150,7 +150,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
     },
     {
       domain: "Bioenergetic",
-      label: "CTEP (Top 1)",
+      label: "Calorimetry (CTEP)",
       rows: [
         {
           category: "Global (energy efficiency)",

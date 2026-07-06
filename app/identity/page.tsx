@@ -16,7 +16,7 @@ const INTELLECT: StatTableData = {
   groups: [
     {
       domain: "Aptitude",
-      label: "Full RIOT IQ (percentile)",
+      label: "Ability (Full RIOT IQ · percentile)",
       rows: [
         {
           category: "Intelligence (processing power)",
@@ -34,7 +34,7 @@ const INTELLECT: StatTableData = {
     },
     {
       domain: "Perspective",
-      label: "Funk's 7 Perspectives (categorical)",
+      label: "Typology (Funk's 7 Perspectives · categorical)",
       rows: [
         {
           category: "Worldview (interpretive lens)",
@@ -59,7 +59,7 @@ const CHARACTER: StatTableData = {
   groups: [
     {
       domain: "Temperament",
-      label: "HEXACO (PI-R 100 · percentile)",
+      label: "Inventory (HEXACO-PI-R 100 · percentile)",
       rows: [
         {
           category: "Personality (behavioral wiring)",
@@ -77,7 +77,7 @@ const CHARACTER: StatTableData = {
     },
     {
       domain: "Sentiment",
-      label: "Primal World Beliefs (PI-99 · 0–5)",
+      label: "Inventory (Primal World Beliefs · PI-99 · 0–5)",
       rows: [
         {
           category: "Beliefs (felt outlook)",
@@ -99,7 +99,7 @@ const DRIVE: StatTableData = {
   groups: [
     {
       domain: "Motivation",
-      label: "PVQ-40 (1–6)",
+      label: "Inventory (PVQ-40 · 1–6)",
       rows: [
         {
           category: "Values (guiding priorities)",
@@ -121,7 +121,7 @@ const DRIVE: StatTableData = {
     },
     {
       domain: "Vocation",
-      label: "Holland RIASEC-18 (rank)",
+      label: "Inventory (Holland RIASEC-18 · rank)",
       rows: [
         {
           category: "Interests (engagement fit)",
