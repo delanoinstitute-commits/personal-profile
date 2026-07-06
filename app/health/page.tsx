@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import { StatTable, type StatTableData } from "@/components/StatTable";
+import { References, type Reference } from "@/components/References";
 
 export const metadata: Metadata = { title: "Health" };
 
@@ -164,6 +165,54 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   ],
 };
 
+const HEALTH_REFERENCES: Reference[] = [
+  {
+    id: "framework",
+    cite: (
+      <>
+        Delano, L. Balance, integrity, and capacity: a functional framework for health status. (Forthcoming.)
+      </>
+    ),
+    tag: "Framework",
+  },
+  {
+    id: "apob",
+    cite: (
+      <>
+        Sniderman, A. D., et al. (2019). Apolipoprotein B particles and cardiovascular disease: a narrative review. <em>JAMA Cardiology</em>, 4(12).
+      </>
+    ),
+    tag: "Balance",
+  },
+  {
+    id: "sarcopenia",
+    cite: (
+      <>
+        Cruz-Jentoft, A. J., et al. (2019). Sarcopenia: revised European consensus on definition and diagnosis (EWGSOP2). <em>Age and Ageing</em>, 48(1).
+      </>
+    ),
+    tag: "Integrity",
+  },
+  {
+    id: "whtr",
+    cite: (
+      <>
+        Ashwell, M., Gunn, P., and Gibson, S. (2012). Waist-to-height ratio is a better screening tool than waist circumference and BMI for adult cardiometabolic risk factors: a meta-analysis. <em>Obesity Reviews</em>, 13(3).
+      </>
+    ),
+    tag: "Integrity",
+  },
+  {
+    id: "vo2max",
+    cite: (
+      <>
+        Kaminsky, L. A., et al. (2015). Reference standards for cardiorespiratory fitness measured with cardiopulmonary exercise testing (the FRIEND Registry). <em>Mayo Clinic Proceedings</em>, 90(11).
+      </>
+    ),
+    tag: "Capacity",
+  },
+];
+
 export default function HealthPage() {
   return (
     <>
@@ -190,6 +239,11 @@ export default function HealthPage() {
       <h2 id="capacity">Capacity</h2>
       <p>Output in action — movement strength and bioenergetic efficiency.</p>
       <StatTable {...FUNCTIONAL_CAPACITY} />
+
+      <References
+        items={HEALTH_REFERENCES}
+        intro="The framework and evidence behind these readings."
+      />
     </>
   );
 }

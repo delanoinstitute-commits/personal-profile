@@ -165,6 +165,8 @@ const IDENTITY_REFERENCES: Reference[] = [
         Funk, K. What Is a Worldview? <em>Oregon State University</em>.
       </>
     ),
+    url: "https://web.engr.oregonstate.edu/~funkk/Personal/worldview.html",
+    urlLabel: "oregonstate.edu",
     tag: "Perspective",
   },
   {
