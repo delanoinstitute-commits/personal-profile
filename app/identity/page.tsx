@@ -164,7 +164,12 @@ export default function IdentityPage() {
       <StatTable {...CHARACTER} />
 
       <h2 id="drive">Drive</h2>
-      <p>Conation — what moves me. The gut.</p>
+      <p>
+        Conation — the will that moves me to act, apart from how I think or feel. Mine runs
+        on autonomy and mastery: self-directed achievement in a stable, caring frame,
+        indifferent to status, tradition, or thrill — expressed as an investigator and maker
+        serving people through ideas and craft.
+      </p>
       <StatTable {...DRIVE} />
     </>
   );
