@@ -82,9 +82,10 @@ const CHARACTER: StatTableData = {
           category: "Beliefs (felt outlook)",
           metrics: [
             ["PROFILE", "Good and improving, but impersonal", false, "Fundamentally good (3.66) — safe, abundant, and improving — but not alive: impersonal and non-agentic, with no cosmic intention. A secular optimist's world."],
-            ["Safe", "3.69", true, "Whether the world is safe and nurturing, or dangerous and threatening."],
-            ["Enticing", "3.86", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren."],
-            ["Alive", "2.21", true, "Whether the world is a conscious, intentional agent aware of you — or impersonal and mechanistic."],
+            ["Safe", "3.69 (Progressing 4.75)", true, "Whether the world is safe and nurturing, or dangerous and threatening — top facet in parentheses."],
+            ["Enticing", "3.86 (Abundant 4.5)", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren — top facet in parentheses."],
+            ["Alive", "2.21 (Needs Me 2.75)", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic — top facet in parentheses."],
+            ["Neutral", "Hierarchical 3.8", true, "Primals outside the Good hierarchy — orthogonal descriptors of the world; my highest of the five is Hierarchical: it has real rankings and structure."],
           ],
         },
       ],
@@ -160,7 +161,12 @@ export default function IdentityPage() {
       <StatTable {...INTELLECT} />
 
       <h2 id="character">Character</h2>
-      <p>Affect — how I&rsquo;m wired. The heart.</p>
+      <p>
+        Affect — how I&rsquo;m wired to feel and react, apart from what I think or pursue. I&rsquo;m
+        disciplined and hard to rattle, reserved, self-reliant, and tough-minded rather than
+        accommodating — and I meet a world I find fundamentally good, safe, and improving, yet
+        impersonal: wonderful, but not watching.
+      </p>
       <StatTable {...CHARACTER} />
 
       <h2 id="drive">Drive</h2>
