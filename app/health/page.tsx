@@ -282,25 +282,40 @@ export default function HealthPage() {
       <PageHeading title="Health" hatnote={<>The present — how I function</>} />
 
       <p className="lead">
-        Health and fitness are one — how well the body works and holds together (functional
-        integrity), from fully rested to all-out effort, tracked over time.
+        Health is one body read at three levels: how steadily it holds at rest (balance),
+        how soundly it&rsquo;s built (integrity), and what it can do under load (capacity) —
+        from full rest to all-out effort.
       </p>
       <p>
-        At 1.76 m and 72 kg, I sit high on that continuum: metabolically flexible
-        (balance), lean and muscular (integrity), with a broad performance reserve
-        (capacity). Below is a summary of my health status for 2026.
+        At 1.76 m and 72 kg I sit high on all three: clean blood and an unhurried
+        circulation, a lean and muscular frame over sound bone, and broad strength with deep
+        aerobic reserve. Below is my health status for 2026.
       </p>
 
       <h2 id="balance">Balance</h2>
-      <p>Homeostasis at rest — blood chemistry and circulatory load.</p>
+      <p>
+        Balance — how steadily my body holds a resting state, in two readings of one system:
+        its blood chemistry (biomolecular) and its circulation (hemodynamic). Mine holds well
+        — low-risk lipids, flexible glucose and insulin, and a calm, low-rate, low-pressure
+        flow.
+      </p>
       <StatTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="integrity">Integrity</h2>
-      <p>Composition and proportion — muscle, fat, and bone, by DEXA and anthropometrics.</p>
+      <p>
+        Integrity — how my body is built and holds together, in two readings of one frame:
+        its make-up of muscle, fat, and bone (compositional) and its proportion (geometric).
+        Mine is lean and muscular over sound bone, carrying little central fat.
+      </p>
       <StatTable {...STRUCTURAL_INTEGRITY} />
 
       <h2 id="capacity">Capacity</h2>
-      <p>Output in action — movement strength and bioenergetic efficiency.</p>
+      <p>
+        Capacity — what my body can do under load, in two readings of one output: the force
+        and movement it produces (biomechanical) and the energy that fuels it (bioenergetic).
+        Mine is broad — strength and power head to toe, high aerobic capacity, and efficient
+        fuel use.
+      </p>
       <StatTable {...FUNCTIONAL_CAPACITY} />
 
       <References
