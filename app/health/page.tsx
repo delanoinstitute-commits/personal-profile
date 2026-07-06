@@ -112,7 +112,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   groups: [
     {
       domain: "Biomechanical",
-      label: "Integrated battery (Performance)",
+      label: "Integrated Battery (Performance)",
       rows: [
         {
           category: "Hip (locomotive power)",
