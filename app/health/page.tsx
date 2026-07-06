@@ -220,6 +220,17 @@ const HEALTH_REFERENCES: Reference[] = [
     tag: "Balance",
   },
   {
+    id: "bloodpressure",
+    cite: (
+      <>
+        Lewington, S., et al. (2002). Age-specific relevance of usual blood pressure to vascular mortality: a meta-analysis of individual data for one million adults in 61 prospective studies. <em>Lancet</em>, 360(9349).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/12493255/",
+    urlLabel: "PubMed",
+    tag: "Balance",
+  },
+  {
     id: "sarcopenia",
     cite: (
       <>

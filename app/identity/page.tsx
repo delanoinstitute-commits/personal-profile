@@ -149,6 +149,8 @@ const IDENTITY_REFERENCES: Reference[] = [
         <em>Journal of the History of the Behavioral Sciences</em>, 16(2).
       </>
     ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/11608381/",
+    urlLabel: "PubMed",
     tag: "Trilogy of mind",
   },
   {
@@ -193,8 +195,8 @@ const IDENTITY_REFERENCES: Reference[] = [
         <em>Psychological Assessment</em>, 31(1).
       </>
     ),
-    url: "https://myprimals.com",
-    urlLabel: "myprimals.com",
+    url: "https://pubmed.ncbi.nlm.nih.gov/30299119/",
+    urlLabel: "PubMed",
     tag: "Sentiment",
   },
   {
@@ -205,6 +207,8 @@ const IDENTITY_REFERENCES: Reference[] = [
         <em>Online Readings in Psychology and Culture</em>, 2(1).
       </>
     ),
+    url: "https://doi.org/10.9707/2307-0919.1116",
+    urlLabel: "DOI",
     tag: "Motivation",
   },
   {
