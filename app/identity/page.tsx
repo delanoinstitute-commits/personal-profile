@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
 import { StatTable, type StatTableData } from "@/components/StatTable";
+import { References, type Reference } from "@/components/References";
 
 export const metadata: Metadata = { title: "Identity" };
 
@@ -81,11 +82,11 @@ const CHARACTER: StatTableData = {
         {
           category: "Beliefs (felt outlook)",
           metrics: [
-            ["PROFILE", "Good and improving, but impersonal", false, "Fundamentally good (3.66) — safe, abundant, and improving — but not alive: impersonal and non-agentic, with no cosmic intention. A secular optimist's world."],
-            ["Safe", "3.69 (Progressing 4.75)", true, "Whether the world is safe and nurturing, or dangerous and threatening — top facet in parentheses."],
-            ["Enticing", "3.86 (Abundant 4.5)", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren — top facet in parentheses."],
-            ["Alive", "2.21 (Needs Me 2.75)", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic — top facet in parentheses."],
-            ["Neutral", "Hierarchical 3.8", true, "Primals outside the Good hierarchy — orthogonal descriptors of the world; my highest of the five is Hierarchical: it has real rankings and structure."],
+            ["PROFILE", "Good and improving, but impersonal", false, "Fundamentally good (3.66) — safe, abundant, and improving — but not alive: impersonal and non-agentic, with no cosmic intention. Hierarchical yet interconnected — a secular optimist's world."],
+            ["Safe", "3.69 with 'progressing' at 4.75", true, "Whether the world is safe and nurturing, or dangerous and threatening."],
+            ["Enticing", "3.86 with 'abundant' at 4.5", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren."],
+            ["Alive", "2.21 with 'needs me' at 2.75", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic."],
+            ["Neutral", "hierarchical (3.8) and interconnected (3.5)", true, "Primals outside the Good hierarchy — orthogonal descriptors; these are my top two of the five."],
           ],
         },
       ],
@@ -139,6 +140,85 @@ const DRIVE: StatTableData = {
   ],
 };
 
+const IDENTITY_REFERENCES: Reference[] = [
+  {
+    id: "hilgard",
+    cite: (
+      <>
+        Hilgard, E. R. (1980). The trilogy of mind: cognition, affection, and conation.{" "}
+        <em>Journal of the History of the Behavioral Sciences</em>, 16(2).
+      </>
+    ),
+    tag: "Trilogy of mind",
+  },
+  {
+    id: "riot",
+    cite: <>RIOT — an open, adaptive online IQ test.</>,
+    url: "https://www.riotiq.com",
+    urlLabel: "riotiq.com",
+    tag: "Aptitude",
+  },
+  {
+    id: "funk",
+    cite: (
+      <>
+        Funk, K. What Is a Worldview? <em>Oregon State University</em>.
+      </>
+    ),
+    tag: "Perspective",
+  },
+  {
+    id: "deutsch",
+    cite: (
+      <>
+        Deutsch, D. (2011). <em>The Beginning of Infinity: Explanations That Transform the World</em>. Allen Lane.
+      </>
+    ),
+    tag: "Perspective",
+  },
+  {
+    id: "hexaco",
+    cite: <>Lee, K. and Ashton, M. C. The HEXACO Personality Inventory–Revised (HEXACO-PI-R).</>,
+    url: "https://hexaco.org",
+    urlLabel: "hexaco.org",
+    tag: "Temperament",
+  },
+  {
+    id: "primals",
+    cite: (
+      <>
+        Clifton, J. D. W., et al. (2019). Primal world beliefs.{" "}
+        <em>Psychological Assessment</em>, 31(1).
+      </>
+    ),
+    url: "https://myprimals.com",
+    urlLabel: "myprimals.com",
+    tag: "Sentiment",
+  },
+  {
+    id: "schwartz",
+    cite: (
+      <>
+        Schwartz, S. H. (2012). An overview of the Schwartz theory of basic values.{" "}
+        <em>Online Readings in Psychology and Culture</em>, 2(1).
+      </>
+    ),
+    tag: "Motivation",
+  },
+  {
+    id: "holland",
+    cite: (
+      <>
+        Holland, J. L. (1997). <em>Making Vocational Choices</em> (3rd ed.). Assessed via the
+        O*NET Interest Profiler.
+      </>
+    ),
+    url: "https://www.onetonline.org",
+    urlLabel: "onetonline.org",
+    tag: "Vocation",
+  },
+];
+
 export default function IdentityPage() {
   return (
     <>
@@ -177,6 +257,11 @@ export default function IdentityPage() {
         serving people through ideas and craft.
       </p>
       <StatTable {...DRIVE} />
+
+      <References
+        items={IDENTITY_REFERENCES}
+        intro="The instruments and frameworks behind these readings."
+      />
     </>
   );
 }
