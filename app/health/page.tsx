@@ -54,7 +54,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
             ["HR reserve", "126 bpm", false, "Max minus resting heart rate — the range the heart can call on; a wide reserve reflects cardiac fitness and autonomic range."],
             ["Max HR", "176 bpm (measured)", true, "Highest heart rate reached, measured directly during CTEP with a chest strap — not age-estimated."],
             ["Resting HR", "50 bpm", true, "Heartbeats per minute at rest; lower reflects a more efficient heart."],
-            ["HR recovery", "pending", false, "The fall in heart rate one minute after peak effort; ~30–40 bpm (about a beat every 2 seconds) signals strong parasympathetic rebound."],
+            ["HR recovery", "36 bpm @ 1 min", false, "The fall in heart rate one minute after peak effort; ~30–40 bpm (about a beat every 2 seconds) signals strong parasympathetic rebound."],
           ],
         },
       ],
@@ -115,7 +115,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   groups: [
     {
       domain: "Biomechanical",
-      label: "Integrated Battery (Performance)",
+      label: "Battery (Performance)",
       rows: [
         {
           category: "Hip (locomotive power)",
@@ -207,17 +207,6 @@ const HEALTH_REFERENCES: Reference[] = [
       </>
     ),
     url: "https://pubmed.ncbi.nlm.nih.gov/24004120/",
-    urlLabel: "PubMed",
-    tag: "Balance",
-  },
-  {
-    id: "restinghr",
-    cite: (
-      <>
-        Zhang, D., Shen, X., and Qi, X. (2016). Resting heart rate and all-cause and cardiovascular mortality in the general population: a meta-analysis. <em>CMAJ</em>, 188(3).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/26598376/",
     urlLabel: "PubMed",
     tag: "Balance",
   },
