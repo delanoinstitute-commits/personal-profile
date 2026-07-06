@@ -10,8 +10,8 @@ export default function ExperiencePage() {
       <PageHeading title="Experience" hatnote={<>The past — what he has done</>} />
 
       <p className="lead">
-        A record of paid work, contracts, ventures, and creative output — the raw capacity
-        behind the <WikiLink href="/skills">skills</WikiLink>.
+        A record of paid work, contracts, and ventures — the raw capacity behind the{" "}
+        <WikiLink href="/knowledge#skills">skills</WikiLink>.
       </p>
 
       <h2 id="employment">Employment</h2>
@@ -59,32 +59,6 @@ export default function ExperiencePage() {
         </li>
       </ul>
 
-      <h2 id="creative">Creative</h2>
-      <p>
-        Short kung-fu films (2006); the free YouTube{" "}
-        <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X method series</WikiLink>{" "}
-        (2020); a recurring practice of building original taxonomies and frameworks (the RBG
-        method, the LX-design model, a philosophy of health); and the 2026 series of five
-        taxonomical video courses on training and life management.
-      </p>
-      <h4>Testimonials and artefacts</h4>
-      <ul>
-        <li>
-          <WikiLink href="https://stories.mindvalley.com/product/mindvalley-certified-10x-coach">10X Coach stories</WikiLink>
-        </li>
-        <li>
-          <WikiLink href="https://stories.mindvalley.com/product/10x-fitness">10X Quest stories</WikiLink>
-        </li>
-        <li>
-          <WikiLink href="https://stories.mindvalley.com/product/body-first">BodyFirst stories</WikiLink>
-        </li>
-        <li>
-          <WikiLink href="https://youtu.be/8p5pAPpmy1o">Norton family testimonial</WikiLink>
-        </li>
-        <li>
-          <WikiLink href="https://youtu.be/WBfb7Trl3JY">Zenas &amp; Sandra video testimonial</WikiLink>
-        </li>
-      </ul>
     </>
   );
 }

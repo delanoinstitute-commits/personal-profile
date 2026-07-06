@@ -60,21 +60,12 @@ export const NAV_GROUPS: NavGroup[] = [
     title: "Present (resources)",
     pages: [
       {
-        label: "Works",
-        href: "/works",
+        label: "Knowledge",
+        href: "/knowledge",
         sections: [
-          { label: "Methods", anchor: "methods" },
-          { label: "Models", anchor: "models" },
-          { label: "Writing", anchor: "writing" },
-        ],
-      },
-      {
-        label: "Skills",
-        href: "/skills",
-        sections: [
-          { label: "Architectural", anchor: "architectural" },
-          { label: "Production", anchor: "production" },
-          { label: "Coaching", anchor: "coaching" },
+          { label: "Education", anchor: "education" },
+          { label: "Skills", anchor: "skills" },
+          { label: "Works", anchor: "works" },
         ],
       },
       {
@@ -119,18 +110,12 @@ export const NAV_GROUPS: NavGroup[] = [
         ],
       },
       {
-        label: "Education",
-        href: "/education",
-        sections: [{ label: "Academics", anchor: "academics" }],
-      },
-      {
         label: "Experience",
         href: "/experience",
         sections: [
           { label: "Employment", anchor: "employment" },
           { label: "Self-employment", anchor: "self-employment" },
           { label: "Business", anchor: "business" },
-          { label: "Creative", anchor: "creative" },
         ],
       },
     ],

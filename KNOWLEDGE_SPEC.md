@@ -170,18 +170,21 @@ The framework's polemical payload, kept implicit on the page:
    credentialed) — one cell of six. This page weights all six, and orders
    evidence artifacts-first.
 
-## 4. Open decisions (as of spec writing)
+## 4. Decisions (resolved July 2026)
 
-1. Branch surface names: Knowing/Doing/Making (recommended) vs
-   Theory/Practice/Production vs Greek.
-2. Sub-branch surface names, esp. Doing: Technical/Interpersonal vs
-   Somatic/Social vs Craft/Rapport.
-3. Whether current Works categories (Methods, Models, Writing) survive as
-   entry groupings inside Making, split authored/produced.
-4. Whether entries carry facet tags (domain, period) inline, like the
-   Schwartz quadrant tags on Identity values.
-5. Navigation: /knowledge replaces or absorbs /education, /skills, /works —
-   redirects needed.
+1. Branch surface names: **Education (theory), Skills (practice), Works
+   (production)** — mapping directly onto the pre-existing pages; the
+   knowing/doing/making triad and Greek terms live in intros and tooltips.
+2. Doing sub-branches: **Technical / Interpersonal**.
+3. Methods, Models, and Writing survive as entry groupings inside
+   **Authored** (all solo artifacts); course-production credits go under
+   **Produced** (collaborative artifacts). Tables start sparse — filled as
+   cataloged.
+4. Entries carry inline **period tags** (years/decades), Schwartz-tag style.
+5. **/knowledge replaces** /education, /skills, /works (301 redirects; nav
+   entries removed; Experience page's Creative section absorbed). The
+   site-level past/present/future grouping will need revision afterward —
+   deferred until the individual pages settle.
 
 ## 5. Reference candidates for the page
 

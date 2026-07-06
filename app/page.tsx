@@ -25,7 +25,7 @@ export default function StartHerePage() {
       <h2 id="about">About</h2>
       <p className="lead">
         <strong>Lorenzo Delano</strong> (born 7 December 1987) is a South African{" "}
-        <WikiLink href="/skills">learning-systems designer</WikiLink>, health and
+        <WikiLink href="/knowledge#skills">learning-systems designer</WikiLink>, health and
         behavioral coach, and taxonomist. He works at the intersection of three recurring
         roles — <em>designer</em>, <em>practitioner</em>, and <em>teacher</em> — designing
         systems to solve his own problems, testing them in practice, and then sharing them
@@ -59,7 +59,7 @@ export default function StartHerePage() {
         shows true causality — how a person actually came to think and act. This site is a
         living database of Delano, organized into four lenses: the{" "}
         <WikiLink href="/purpose">future</WikiLink> (where he is going), the{" "}
-        <WikiLink href="/skills">present</WikiLink> (what he does, who he is, how he
+        <WikiLink href="/knowledge">present</WikiLink> (what he does, who he is, how he
         functions, what he has, and how he lives), and the{" "}
         <WikiLink href="/biography">past</WikiLink> (his story,
         education, and experience). The profile box summarizes what he is.
