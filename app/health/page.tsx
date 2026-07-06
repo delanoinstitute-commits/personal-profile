@@ -123,7 +123,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           ],
         },
         {
-          category: "Core (force transfer)",
+          category: "Core (midline stability)",
           metrics: [
             ["Compression (raise)", "15-sec V-sit", false, "Trunk-flexion / anterior-chain compression hold (the V-sit)."],
             ["Tensegrity (press)", "15-sec back lever", false, "Straight-arm pressing tension through the trunk (the back lever)."],
