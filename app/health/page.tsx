@@ -30,6 +30,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
           metrics: [
             ["HbA1c", "5.1%", false, "Average blood sugar over the past ~3 months (glycated hemoglobin)."],
             ["Fasting insulin", "4.1 IU/L", false, "Insulin at rest — a marker of insulin sensitivity and metabolic health."],
+            ["Lactate threshold", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", false, "The intensity at which lactate begins to accumulate — metabolic efficiency under load; the one exertional reading among otherwise resting, fasted markers."],
           ],
         },
         {
@@ -47,11 +48,13 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
       label: "Hemodynamics (Vitals)",
       rows: [
         {
-          category: "Cardiovascular (low-effort circulation)",
+          category: "Cardiovascular (autonomic resilience)",
           metrics: [
-            ["RPP", "5,500 mmHg", false, "Rate-pressure product (heart rate × systolic BP) — the heart's workload and oxygen demand."],
-            ["Blood pressure", "110/65 mmHg", true, "The pressure of blood against the artery walls (systolic / diastolic)."],
+            ["Blood pressure", "110/65 mmHg", false, "Resting pressure of blood against the artery walls (systolic / diastolic)."],
+            ["HR reserve", "126 bpm", false, "Max minus resting heart rate — the range the heart can call on; a wide reserve reflects cardiac fitness and autonomic range."],
+            ["Max HR", "176 bpm (measured)", true, "Highest heart rate reached, measured directly during CTEP with a chest strap — not age-estimated."],
             ["Resting HR", "50 bpm", true, "Heartbeats per minute at rest; lower reflects a more efficient heart."],
+            ["HR recovery", "pending", false, "The fall in heart rate one minute after peak effort; ~30–40 bpm (about a beat every 2 seconds) signals strong parasympathetic rebound."],
           ],
         },
       ],
@@ -156,7 +159,6 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           category: "Global (energy efficiency)",
           metrics: [
             ["VO₂max (uptake)", "53 ml/kg/min", false, "Maximum rate of oxygen use during exercise — the headline aerobic-fitness metric."],
-            ["Lactate (threshold)", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", true, "The intensity at which lactate begins to accumulate — a measure of endurance efficiency."],
             ["MFO (rate)", "0.45 g/min @ 60% VO₂max", true, "Maximal fat oxidation — the peak rate of burning fat for fuel."],
           ],
         },
@@ -231,6 +233,28 @@ const HEALTH_REFERENCES: Reference[] = [
     tag: "Balance",
   },
   {
+    id: "hrreserve",
+    cite: (
+      <>
+        Lauer, M. S., et al. (1999). Impaired chronotropic response to exercise stress testing as a predictor of mortality. <em>JAMA</em>, 281(6).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/10022108/",
+    urlLabel: "PubMed",
+    tag: "Balance",
+  },
+  {
+    id: "hrrecovery",
+    cite: (
+      <>
+        Cole, C. R., et al. (1999). Heart-rate recovery immediately after exercise as a predictor of mortality. <em>New England Journal of Medicine</em>, 341(18).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/10536127/",
+    urlLabel: "PubMed",
+    tag: "Balance",
+  },
+  {
     id: "sarcopenia",
     cite: (
       <>
@@ -282,24 +306,15 @@ export default function HealthPage() {
       <PageHeading title="Health" hatnote={<>The present — how I function</>} />
 
       <p className="lead">
-        Health is one body read at three levels: how steadily it holds at rest (balance),
-        how soundly it&rsquo;s built (integrity), and what it can do under load (capacity) —
-        from full rest to all-out effort.
+        Health is one body read at three levels: how soundly it&rsquo;s built (integrity),
+        how steadily it holds — and returns to — rest (balance), and what it can do under
+        load (capacity) — from full rest to all-out effort.
       </p>
       <p>
-        At 1.76 m and 72 kg I sit high on all three: clean blood and an unhurried
-        circulation, a lean and muscular frame over sound bone, and broad strength with deep
-        aerobic reserve. Below is my health status for 2026.
+        At 1.76 m and 72 kg I sit high on all three: a lean and muscular frame over sound
+        bone, clean blood and a heart that idles low yet opens a wide reserve, and broad
+        strength with deep aerobic capacity. Below is my health status for 2026.
       </p>
-
-      <h2 id="balance">Balance</h2>
-      <p>
-        Balance — how steadily my body holds a resting state, in two readings of one system:
-        its blood chemistry (biomolecular) and its circulation (hemodynamic). Mine holds well
-        — low-risk lipids, flexible glucose and insulin, and a calm, low-rate, low-pressure
-        flow.
-      </p>
-      <StatTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="integrity">Integrity</h2>
       <p>
@@ -308,6 +323,15 @@ export default function HealthPage() {
         Mine is lean and muscular over sound bone, carrying little central fat.
       </p>
       <StatTable {...STRUCTURAL_INTEGRITY} />
+
+      <h2 id="balance">Balance</h2>
+      <p>
+        Balance — how steadily my body holds a resting state, and how well it returns to one
+        after load, in two readings of one system: its blood chemistry (biomolecular) and its
+        circulation (hemodynamic). Mine sits low and calm at rest yet opens a wide cardiac
+        reserve under effort, on low-risk lipids and a metabolism efficient even when stressed.
+      </p>
+      <StatTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="capacity">Capacity</h2>
       <p>
