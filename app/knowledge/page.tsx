@@ -23,8 +23,9 @@ const EDUCATION: StatTableData = {
         {
           category: "Schooling (foundational instruction)",
           metrics: [
-            ["Matriculation", "Pretoria Chinese High (2006)", false, "Secondary-school completion — reached by an unconventional route after leaving mainstream schooling at 13."],
-            ["Distinction", "1st place, 8th Chinese Bridge (2009)", true, "The international Mandarin-proficiency competition for non-native speakers."],
+            ["Homeschooling", "INTEC College (2001)", false, "Correspondence homeschooling — the last of his formal schooling before he left it entirely by 15."],
+            ["Mandarin", "Pretoria Chinese School (2005)", false, "Weekly group, then self-funded private, Mandarin classes."],
+            ["Distinction", "1st place, 8th Chinese Bridge (2009)", true, "The international Mandarin-proficiency competition for non-native speakers — entered by exception, without matric."],
           ],
         },
         {
@@ -56,11 +57,12 @@ const EDUCATION: StatTableData = {
         {
           category: "Domains (propositional breadth)",
           metrics: [
-            ["Learning science", "instructional & experience design (2010s–)", false, "How people learn, and how to design for it."],
+            ["Learning science", "instructional & experience design (2013–)", false, "How people learn, and how to design for it."],
             ["Health science", "exercise physiology, nutrition, longevity (2010s–)", false, "The science base behind the health practice."],
-            ["Philosophy", "epistemology, integral theory (2010s–)", false, "How we know, and how knowledge integrates."],
-            ["Finance", "valuation & markets — Damodaran (2020s)", false, "Company valuation and capital allocation."],
-            ["Mandarin Chinese", "spoken fluency (2000s)", false, "Self-driven immersion; certified by competition, not classroom."],
+            ["Philosophy", "integral theory to fallibilism — Wilber, Deutsch (2014–)", false, "How we know, and how knowledge integrates."],
+            ["Chemistry", "foundations to organic chemistry (2022–2026)", false, "Built from a general foundation toward organic chemistry."],
+            ["Finance", "valuation & markets — Damodaran (2016–)", false, "Company valuation, markets, and capital allocation."],
+            ["Complexity", "systems thinking, Cynefin — Snowden (2025)", false, "Sense-making in complex systems."],
           ],
         },
       ],
@@ -138,14 +140,16 @@ const WORKS: StatTableData = {
         {
           category: "Methods (procedures)",
           metrics: [
-            ["RBG method", "Rapid Benchmark Graduate — rapid mastery (2010s)", false, "A system for mastering a discipline quickly by benchmarking its graduates."],
+            ["RBG method", "Rapid Benchmark Graduate — rapid mastery (2017–)", false, "A system for mastering a discipline quickly by benchmarking its graduates."],
+            ["Taxonomy design", "a system for designing taxonomies (2026)", false, "His method for building knowledge taxonomies, informed by Lambe's Organising Knowledge."],
           ],
         },
         {
           category: "Models (frameworks)",
           metrics: [
-            ["Health model", "balance · integrity · capacity (2020s)", false, "Health as functional integrity across a stress–recovery continuum — the framework behind the Health page."],
+            ["Health model", "balance · integrity · capacity (2020–)", false, "Health as functional integrity across a stress–recovery continuum — the framework behind the Health page."],
             ["LX-design model", "learning-experience design (2018–)", false, "An evolving model for designing learning experiences."],
+            ["Self-mastery map", "train · eat · finance · learn · mind · plan (2026)", false, "The six domains of self-mastery his 2026 course series is built around."],
             ["Knowledge model", "knowing · doing · making (2026)", false, "The tripartite framework this page demonstrates — theory, practice, production, each individual and social."],
           ],
         },
@@ -164,9 +168,10 @@ const WORKS: StatTableData = {
         {
           category: "Courses (education products)",
           metrics: [
-            ["Author courses", "Wilber, Watts (estate), Walsch, Kotler, Greenfield, Demartini (2017–2025)", false, "Online courses designed and directed with named authors."],
-            ["Quests", "Values Factor, 10X, BodyFirst — Mindvalley (2017–)", false, "Co-created flagship programs."],
-            ["Certification", "10X Coach Certification (2020s)", false, "Training and certifying coaches in the 10X method."],
+            ["Author courses", "Walsch, Wilber, Kotler, Watts (estate), Greenfield, Demartini (2017–2024)", false, "Online courses designed and directed with named authors."],
+            ["Quests", "10X (2021), Values Factor & BodyFirst (2024) — Mindvalley", false, "Co-created flagship programs; the 10X Quest has been completed by 90,000+ people."],
+            ["Certification", "10X Coach Certification — 500 coaches (2022)", false, "Training and certifying coaches in the 10X method."],
+            ["Micro-degree", "Mastery framework — Mindvalley (2023)", true, "A six-month live, online micro-degree framework."],
           ],
         },
         {
@@ -180,7 +185,7 @@ const WORKS: StatTableData = {
         {
           category: "Events (live programs)",
           metrics: [
-            ["10X programs", "experiments & events — Malaysia, Italy, Estonia, Croatia (2010s)", false, "Live fitness experiments and events run across four countries."],
+            ["10X programs", "experiments & events — Barcelona, Italy, Estonia, Croatia, Malaysia (2017–2020)", false, "Live fitness experiments and multi-day events, including one that trained 200+ people in Sardinia."],
           ],
         },
       ],
