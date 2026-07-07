@@ -141,14 +141,6 @@ export const INFOBOX: InfoboxGroup[] = [
     heading: "Personal",
     rows: [
       {
-        label: "Born",
-        values: [
-          { text: "Lorenzo Roos" },
-          { text: `7 December 1987 (age ${AGE})` },
-          { text: "Krugersdorp, South Africa" },
-        ],
-      },
-      {
         label: "Occupation",
         values: [
           { text: "Learning-systems architect" },
@@ -157,11 +149,11 @@ export const INFOBOX: InfoboxGroup[] = [
         ],
       },
       {
-        label: "Education",
+        label: "Born",
         values: [
-          { text: "Pretoria Chinese High (2006)" },
-          { text: "ETA College (2008)" },
-          { text: "Self-education (since 2009)" },
+          { text: "Lorenzo Roos" },
+          { text: `7 December 1987 (age ${AGE})` },
+          { text: "Krugersdorp, South Africa" },
         ],
       },
       {
