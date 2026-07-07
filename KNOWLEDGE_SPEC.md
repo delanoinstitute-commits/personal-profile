@@ -186,7 +186,43 @@ The framework's polemical payload, kept implicit on the page:
    site-level past/present/future grouping will need revision afterward —
    deferred until the individual pages settle.
 
-## 5. Reference candidates for the page
+## 5. Activity facets (locked July 2026)
+
+Each cluster's left-column category reads **Facet (dominant function)** —
+the structural what, then the functional output — e.g. "Creative
+(socialized literacy)" for formal schooling.
+
+Six facets, a derived vocabulary anchored in Holland's RIASEC (credited in
+the references; RIASEC itself classifies interests and stays on the
+Identity page — this is an activity vocabulary built from it):
+
+| Facet | RIASEC anchor | Scope |
+|---|---|---|
+| Mechanical | R | manual/tool tasks — working with things |
+| Physical | (body) | psychomotor mastery — gross (athletic) and fine (instrumental, expressive) |
+| Creative | I + A (mental) | mind-work — analysis, design, symbolic expression |
+| Social | S | direct service and transmission to persons |
+| Organisational | E | leading groups, projects, businesses |
+| Administrative | C | information upkeep and routine task management |
+
+Rules: one facet per cluster (file by dominant faculty — piano → Physical
+(fine), composing → Creative); the same activity carries the same facet
+everywhere; embodied artistry belongs to Physical, ideational artistry to
+Creative (this split resolves RIASEC's Artistic ambiguity); unpopulated
+facets (Mechanical, Administrative) are signal, not error.
+
+SECI was considered as a per-cell category and **rejected** (a process
+model, not a bucket scheme; several assignments were forced; it duplicated
+the locus axis and re-jargoned the page). Its correct use is narrative —
+education internalizes into skills, skills externalize into works.
+
+Current function words: socialized literacy / exploratory literacy
+(Education — both end in the branch's function-noun, literacy; Pasteur
+tooltip on exploratory); structural design, movement mastery (Skills —
+Technical); live transmission, project orchestration (Skills —
+Interpersonal); codified originals, collaborative artifacts (Works).
+
+## 6. Reference candidates for the page
 
 - Aristotle, Nicomachean Ethics VI (episteme/techne/phronesis;
   theoria/praxis/poiesis)

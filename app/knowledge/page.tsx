@@ -18,51 +18,29 @@ const EDUCATION: StatTableData = {
   groups: [
     {
       domain: "Transmitted",
-      label: "Credentials (Transcript)",
+      label: "Instruction (Transcript)",
       rows: [
         {
-          category: "Schooling (foundational instruction)",
+          category: "Creative (socialized literacy)",
           metrics: [
-            ["Homeschooling", "INTEC College (2001)", false, "Correspondence homeschooling — the last of his formal schooling before he left it entirely by 15."],
-            ["Mandarin", "Pretoria Chinese School (2005)", false, "Weekly group, then self-funded private, Mandarin classes."],
+            ["Schooling", "grades 1–7 (1994–2000)", false, "Primary schooling — Muldersdrift and Laerskool Hoëveld; the classroom ended for good at 13."],
+            ["Tutoring", "private Mandarin — Pretoria Chinese School (2005–2008)", false, "Weekly group, then self-funded private, Mandarin classes."],
             ["Distinction", "1st place, 8th Chinese Bridge (2009)", true, "The international Mandarin-proficiency competition for non-native speakers — entered by exception, without matric."],
-          ],
-        },
-        {
-          category: "Certification (licensed practice)",
-          metrics: [
-            ["TEFL", "English teaching, Language Link (2006)", false, "Teaching English as a Foreign Language."],
-            ["Fitness", "Trainer & spinning instructor, ETA College (2008)", false, "Personal-training and group-cycling certification."],
-            ["Bodywork", "Massage therapist, multiple modalities (2009)", false, "Hands-on soft-tissue therapy."],
-            ["Coaching", "NLP / life-coaching practitioner (2010)", false, "Neuro-linguistic programming and life-coaching certification."],
-            ["Blood chemistry", "Functional analyst, ODX Academy (2021)", false, "Interpreting blood panels for function, not just disease."],
-          ],
-        },
-        {
-          category: "Coursework (guided study)",
-          metrics: [
-            ["Critical thinking", "University of Auckland (2018)", false, "Formal reasoning and argument evaluation."],
-            ["Exercise & philosophy", "Coursera (2019)", false, "Science of Exercise; Introduction to Philosophy."],
-            ["Nutritional biochemistry", "Dr Bryan Walsh (2021)", false, "Metabolic pathways behind nutrition."],
-            ["Longevity", "Peter Attia's Early program (2023)", false, "Evidence-based longevity medicine."],
-            ["Finance", "15 courses, Corporate Finance Institute (2024)", false, "Accounting, modeling, and corporate finance."],
           ],
         },
       ],
     },
     {
-      domain: "Self-directed",
+      domain: "Self-guided",
       label: "Curricula (Library)",
       rows: [
         {
-          category: "Domains (propositional breadth)",
+          category: "Creative (exploratory literacy)",
           metrics: [
-            ["Learning science", "instructional & experience design (2013–)", false, "How people learn, and how to design for it."],
-            ["Health science", "exercise physiology, nutrition, longevity (2010s–)", false, "The science base behind the health practice."],
-            ["Philosophy", "integral theory to fallibilism — Wilber, Deutsch (2014–)", false, "How we know, and how knowledge integrates."],
-            ["Chemistry", "foundations to organic chemistry (2022–2026)", false, "Built from a general foundation toward organic chemistry."],
-            ["Finance", "valuation & markets — Damodaran (2016–)", false, "Company valuation, markets, and capital allocation."],
-            ["Complexity", "systems thinking, Cynefin — Snowden (2025)", false, "Sense-making in complex systems."],
+            ["Homeschooling", "INTEC College — grade 10 (2001)", false, "Correspondence homeschooling — the last formal enrolment; all schooling ended by 15."],
+            ["Certifications", "TEFL (2006) · fitness (2008) · bodywork (2009) · NLP coaching (2010) · blood chemistry (2021)", false, "Credentials sought as each discipline demanded one — practice-driven, not institutional."],
+            ["Coursework", "critical thinking (2018) · exercise & philosophy (2019) · nutritional biochemistry (2021) · longevity (2023) · finance ×15 (2024)", false, "Guided study chosen and completed on his own initiative — Auckland, Coursera, Walsh, Attia, CFI."],
+            ["Ad hoc", "learning science · health science · philosophy · chemistry · finance · complexity (2010s–)", false, "Open-ended domain study — use-inspired understanding, Pasteur-quadrant style; Wilber to Deutsch, Damodaran to Snowden."],
           ],
         },
       ],
@@ -78,7 +56,7 @@ const SKILLS: StatTableData = {
       label: "Demonstrations (Performance)",
       rows: [
         {
-          category: "Design (learning systems)",
+          category: "Creative (structural design)",
           metrics: [
             ["Taxonomy", "knowledge maps — fitness, learning, life (2010s–)", false, "Distilling a domain into its underlying structure."],
             ["Learning experience", "curricula, courses, apprenticeships (2018–)", false, "Designing the path from novice to practitioner."],
@@ -86,16 +64,9 @@ const SKILLS: StatTableData = {
           ],
         },
         {
-          category: "Production (media direction)",
+          category: "Physical (movement mastery)",
           metrics: [
-            ["Directing", "on-set course direction (2017–2025)", false, "Running the set: talent, story, and take."],
-            ["Producing", "crews, budgets, post-production (2017–2025)", false, "Hiring and running the machinery around the shoot."],
-          ],
-        },
-        {
-          category: "Language (spoken Mandarin)",
-          metrics: [
-            ["Fluency", "Chinese Bridge champion (2009)", false, "Demonstrated live — the skill behind the education entry."],
+            ["Gymnastics", "strength training — rings, levers, handstands (2016–)", false, "Bodyweight strength practice, lately deconstructed into a complete physical-development program."],
           ],
         },
       ],
@@ -105,24 +76,19 @@ const SKILLS: StatTableData = {
       label: "Testimony (Reputation)",
       rows: [
         {
-          category: "Coaching (behavior change)",
+          category: "Social (live transmission)",
           metrics: [
-            ["Private", "entrepreneurs, actors, billionaires (2010s–)", false, "One-on-one performance and lifestyle coaching."],
-            ["Live-in", "family lifestyle interventions (2019–2020)", false, "Embedded, whole-household behavior change."],
-          ],
-        },
-        {
-          category: "Facilitation (group instruction)",
-          metrics: [
-            ["Classes", "athletics & fitness instruction (2008–)", false, "From spinning studios to CrossFit floors."],
-            ["Workshops", "organizational & retreat facilitation (2017–)", false, "Multi-day group programs and corporate sessions."],
-          ],
-        },
-        {
-          category: "Instruction (transmission at scale)",
-          metrics: [
-            ["Lecturing", "ETA College, part-time (2010s)", false, "Teaching trainers — instruction one level up."],
+            ["Coaching", "private & live-in — entrepreneurs, actors, billionaires (2010s–)", false, "One-on-one and embedded whole-household behavior change."],
+            ["Instruction", "classes & lecturing — spinning, CrossFit, ETA College (2008–)", false, "Teaching practice directly, and teaching trainers one level up."],
+            ["Facilitation", "workshops & retreats (2017–)", false, "Multi-day group programs and corporate sessions."],
             ["Speaking", "conferences & events (2017–)", false, "Stage teaching at industry events."],
+          ],
+        },
+        {
+          category: "Organisational (project orchestration)",
+          metrics: [
+            ["Production", "crews, budgets, post-production (2017–2025)", false, "Hiring and running the machinery around a shoot — directing on set when the project demands it."],
+            ["Events", "10X programs — Barcelona, Italy, Estonia, Croatia, Malaysia (2017–2020)", false, "Live fitness experiments and multi-day events, including one that trained 200+ people in Sardinia."],
           ],
         },
       ],
@@ -134,58 +100,30 @@ const WORKS: StatTableData = {
   title: "Works",
   groups: [
     {
-      domain: "Authored",
+      domain: "Authoring",
       label: "Portfolio (Artifacts)",
       rows: [
         {
-          category: "Methods (procedures)",
+          category: "Creative (codified originals)",
           metrics: [
-            ["RBG method", "Rapid Benchmark Graduate — rapid mastery (2017–)", false, "A system for mastering a discipline quickly by benchmarking its graduates."],
-            ["Taxonomy design", "a system for designing taxonomies (2026)", false, "His method for building knowledge taxonomies, informed by Lambe's Organising Knowledge."],
-          ],
-        },
-        {
-          category: "Models (frameworks)",
-          metrics: [
-            ["Health model", "balance · integrity · capacity (2020–)", false, "Health as functional integrity across a stress–recovery continuum — the framework behind the Health page."],
-            ["LX-design model", "learning-experience design (2018–)", false, "An evolving model for designing learning experiences."],
-            ["Self-mastery map", "train · eat · finance · learn · mind · plan (2026)", false, "The six domains of self-mastery his 2026 course series is built around."],
-            ["Knowledge model", "knowing · doing · making (2026)", false, "The tripartite framework this page demonstrates — theory, practice, production, each individual and social."],
-          ],
-        },
-        {
-          category: "Writing (long-form)",
-          metrics: [
-            ["Health Development", "book-length framework (forthcoming)", false, "Defining health as functional integrity."],
+            ["Methods", "RBG — rapid mastery (2017–) · taxonomy design (2026)", false, "Repeatable procedures: benchmarking a discipline's graduates; a system for designing taxonomies, informed by Lambe's Organising Knowledge."],
+            ["Models", "health (2020–) · LX design (2018–) · self-mastery (2026) · knowledge (2026)", false, "Frameworks that structure a domain — balance/integrity/capacity; learning-experience design; train/eat/finance/learn/mind/plan; and the knowing/doing/making framework this page demonstrates."],
+            ["Books", "Health Development (forthcoming)", false, "A book-length framework defining health as functional integrity."],
+            ["Media", "kung-fu shorts (2006) · 10X series, YouTube (2020) · five taxonomical courses (2026)", false, "Self-authored productions — from first films to open-published course series."],
           ],
         },
       ],
     },
     {
-      domain: "Produced",
+      domain: "Production",
       label: "Credits (Productions)",
       rows: [
         {
-          category: "Courses (education products)",
+          category: "Organisational (collaborative artifacts)",
           metrics: [
             ["Author courses", "Walsch, Wilber, Kotler, Watts (estate), Greenfield, Demartini (2017–2024)", false, "Online courses designed and directed with named authors."],
-            ["Quests", "10X (2021), Values Factor & BodyFirst (2024) — Mindvalley", false, "Co-created flagship programs; the 10X Quest has been completed by 90,000+ people."],
-            ["Certification", "10X Coach Certification — 500 coaches (2022)", false, "Training and certifying coaches in the 10X method."],
-            ["Micro-degree", "Mastery framework — Mindvalley (2023)", true, "A six-month live, online micro-degree framework."],
-          ],
-        },
-        {
-          category: "Media (film & video)",
-          metrics: [
-            ["Shorts", "kung-fu films (2006)", true, "Early self-produced short films."],
-            ["Series", "10X method, free YouTube series (2020)", false, "The 10X method taught in the open."],
-            ["Courses", "five taxonomical video courses (2026)", false, "Training and life management, taxonomically organized."],
-          ],
-        },
-        {
-          category: "Events (live programs)",
-          metrics: [
-            ["10X programs", "experiments & events — Barcelona, Italy, Estonia, Croatia, Malaysia (2017–2020)", false, "Live fitness experiments and multi-day events, including one that trained 200+ people in Sardinia."],
+            ["Quests", "10X (2021) · Values Factor & BodyFirst (2024) — Mindvalley", false, "Co-created flagship programs; the 10X Quest has been completed by 90,000+ people."],
+            ["Curricula", "10X Coach Certification — 500 coaches (2022) · Mastery micro-degree (2023)", false, "Certification and micro-degree frameworks built with and for institutions."],
           ],
         },
       ],
@@ -260,6 +198,15 @@ const KNOWLEDGE_REFERENCES: Reference[] = [
     tag: "Framework",
   },
   {
+    id: "holland",
+    cite: (
+      <>
+        Holland, J. L. (1997). <em>Making Vocational Choices</em> (3rd ed.) — the RIASEC types the activity facets derive from.
+      </>
+    ),
+    tag: "Facets",
+  },
+  {
     id: "ranganathan",
     cite: (
       <>
@@ -290,18 +237,20 @@ export default function KnowledgePage() {
         production).
       </p>
       <p>
-        Each activity is read in two loci, individual and social: study self-directed or
-        transmitted, skill technical or interpersonal, works authored or produced. Largely
-        self-taught since 13, my strongest evidence sits rightward — in the works. Below is
-        my knowledge status for 2026.
+        Each activity is read in two loci, individual and social: study self-guided or
+        transmitted, skill technical or interpersonal, works authored or produced — and each
+        cluster carries an activity facet (creative, physical, social, organisational)
+        adapted from Holland&rsquo;s RIASEC types. Largely self-taught since 13, my strongest
+        evidence sits rightward — in the works. Below is my knowledge status for 2026.
       </p>
 
       <h2 id="education">Education</h2>
       <p>
         Theory — what I know, in two readings of one understanding: instruction transmitted
-        by institutions and mentors (credentialed) and study I direct myself (curricular). I
-        left conventional schooling at 13; most of my education is autodidactic, certified
-        where practice demanded it.
+        to me (socialized literacy) and study I guide myself (exploratory literacy). The
+        classroom ended at 13; nearly everything since — certifications, coursework, and
+        open-ended domain study — has been self-guided, credentialed where practice demanded
+        it.
       </p>
       <StatTable {...EDUCATION} />
 
