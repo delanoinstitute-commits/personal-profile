@@ -143,8 +143,8 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "Occupation",
         values: [
-          { text: "Learning-systems architect" },
-          { text: "Education producer" },
+          { text: "Learning designer" },
+          { text: "Education director" },
           { text: "Performance coach" },
         ],
       },
