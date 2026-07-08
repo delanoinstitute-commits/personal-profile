@@ -44,8 +44,17 @@ const EDUCATION: StatTableData = {
           category: "Non-formal (certified training)",
           metrics: [
             ["Private college", "Tertiary vocational education", false, "Career-qualifying certifications from private vocational providers — taught in person, role by role."],
-            ["Tutor", "TEFL, Language Link (2006)", true, "Teaching English as a Foreign Language."],
-            ["Instructor", "Personal fitness trainer, ETA (2008)", true, "Personal-training and group-cycling certification."],
+            ["Tutor", "TEFL, Language Link (2006)", true, {
+              image: "/credentials/tefl.jpg",
+              alt: "Preliminary Certificate in Teaching English as a Foreign Language, Southern African TEFL Training Institute, 2006",
+              portrait: true,
+              text: "Preliminary Certificate in Teaching English as a Foreign Language — Southern African TEFL Training Institute, Pretoria (June 2006).",
+            }],
+            ["Instructor", "Personal fitness trainer, ETA (2008)", true, {
+              image: "/credentials/fitness.jpg",
+              alt: "National Certificate in Fitness, Level 5, Exercise Teachers Academy, 2008",
+              text: "National Certificate: Fitness (Level 5) — Personal Fitness Trainer and Spinning, Exercise Teachers Academy, Pretoria (2008).",
+            }],
             ["Coach", "NLP and life coaching, COMENSA (2010)", true, "Neuro-linguistic-programming and life-coaching practitioner certification."],
           ],
         },
@@ -61,8 +70,17 @@ const EDUCATION: StatTableData = {
             ["Home school", "Secondary education", false, "Correspondence homeschooling — the last formal enrolment; schooling ended by 15."],
             ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling."],
             ["Institutional platforms", "Accredited courses", false, "Courses from accredited institutions, self-elected."],
-            ["Philosophy", "Critical thinking, U. of Auckland (2018)", true, "Formal reasoning and argument evaluation."],
-            ["Exercise", "Science of exercise, U. of Colorado (2019)", true, "Exercise physiology, via Coursera."],
+            ["Philosophy", "Critical thinking, U. of Auckland (2018)", true, {
+              image: "/credentials/philosophy.jpg",
+              alt: "Certificate of Achievement in Logical and Critical Thinking, University of Auckland, 2018",
+              portrait: true,
+              text: "Certificate of Achievement — Logical and Critical Thinking, University of Auckland (FutureLearn, 2018).",
+            }],
+            ["Exercise", "Science of exercise, U. of Colorado (2019)", true, {
+              image: "/credentials/exercise.jpg",
+              alt: "Course Certificate in Science of Exercise, University of Colorado Boulder, 2019",
+              text: "Course Certificate — Science of Exercise, University of Colorado Boulder (Coursera, 2019).",
+            }],
             ["Finance", "Analysis and valuation, CFI (2024)", true, "Accounting, modeling, and corporate finance — fifteen courses."],
           ],
         },
@@ -70,8 +88,16 @@ const EDUCATION: StatTableData = {
           category: "Informal (open inquiry)",
           metrics: [
             ["Independent platforms", "Practitioner courses", false, "Courses certified by individual specialists rather than accredited bodies."],
-            ["Nutrition", "Nutrition biochemistry, Dr Bryan Walsh (2021)", true, "The metabolic pathways behind nutrition."],
-            ["Blood chemistry", "Functional analysis, ODX Academy (2021)", true, "Interpreting blood panels for function, not just disease."],
+            ["Nutrition", "Nutrition biochemistry, Dr Bryan Walsh (2021)", true, {
+              image: "/credentials/nutrition.jpg",
+              alt: "Certificate of Training in Nutritional Biochemistry, Metabolic Fitness, 2021",
+              text: "Certificate of Training — 25 hours in Nutritional Biochemistry, Metabolic Fitness (Dr Bryan Walsh, 2021).",
+            }],
+            ["Blood chemistry", "Functional analysis, ODX Academy (2021)", true, {
+              image: "/credentials/blood-chemistry.jpg",
+              alt: "Certification of Excellence in Functional Blood Chemistry Analysis Mastery, ODX Academy, 2021",
+              text: "Certification of Excellence — Functional Blood Chemistry Analysis Mastery (FBCA), ODX Academy (2021).",
+            }],
             ["Longevity", "Early medical, Dr Peter Attia (2023)", true, "Evidence-based longevity medicine."],
             ["Public platforms", "Special-interest studies", false, "Free, open study — validated when the problem yields, not by an examiner."],
             ["Science", "AP/College, Khan Academy (2022–present)", true, "Self-paced study — foundation to organic chemistry."],
