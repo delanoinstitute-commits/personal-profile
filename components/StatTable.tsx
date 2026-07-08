@@ -11,7 +11,7 @@ import Tooltip from "./Tooltip";
 // A tooltip is either a plain gloss or a rich card (credential image + caption).
 export type MetricTooltip =
   | string
-  | { text?: string; image?: string; alt?: string };
+  | { text?: string; image?: string; alt?: string; portrait?: boolean };
 export type Metric = [
   term: string,
   value: string,
@@ -73,7 +73,11 @@ export function StatTable({ groups }: StatTableData) {
                                     content={tooltip.text}
                                     media={
                                       tooltip.image
-                                        ? { src: tooltip.image, alt: tooltip.alt ?? term }
+                                        ? {
+                                            src: tooltip.image,
+                                            alt: tooltip.alt ?? term,
+                                            portrait: tooltip.portrait,
+                                          }
                                         : undefined
                                     }
                                   >

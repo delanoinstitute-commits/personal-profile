@@ -30,7 +30,8 @@ const EDUCATION: StatTableData = {
             ["Mandarin", "Pretoria Chinese School (2005–2008)", true, {
               image: "/credentials/mandarin.jpg",
               alt: "Pretoria Chinese School certificate of participation in adult Mandarin classes, 2005",
-              text: "Certificate of participation — adult Mandarin classes, Pretoria Chinese School (Feb–Aug 2005). Certified under Lorenzo Maritz, his name before 2009.",
+              portrait: true,
+              text: "Adult Mandarin classes, Pretoria Chinese School (Feb–Aug 2005). Certified as Lorenzo Maritz, his name before 2009.",
             }],
             ["Awards", "1st place, 8th Chinese Bridge (2009)", true, {
               image: "/credentials/chinese-bridge.jpg",

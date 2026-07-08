@@ -27,7 +27,7 @@ export default function Tooltip({
   children: ReactNode;
   content: ReactNode;
   interactive?: boolean;
-  media?: { src: string; alt: string };
+  media?: { src: string; alt: string; portrait?: boolean };
 }) {
   const [open, setOpen] = useState(false);
   const [pos, setPos] = useState<Pos>({ left: 0, top: 0 });
@@ -44,7 +44,8 @@ export default function Tooltip({
       // so the bubble (w-64, max 80vw) never overhangs the viewport edge.
       const spaceBelow = window.innerHeight - rect.bottom;
       const placement = spaceBelow < 150 && rect.top > 120 ? "top" : "bottom";
-      const half = Math.min(128, window.innerWidth * 0.4);
+      const halfBase = media ? (media.portrait ? 160 : 144) : 128;
+      const half = Math.min(halfBase, window.innerWidth * 0.45);
       const left = Math.min(
         Math.max(rect.left + rect.width / 2, half + 8),
         window.innerWidth - half - 8,
@@ -102,20 +103,32 @@ export default function Tooltip({
           style={{ left: pos.left, top: pos.top, bottom: pos.bottom }}
           className={
             media
-              ? "fixed z-50 w-72 max-w-[85vw] -translate-x-1/2 overflow-hidden rounded border border-border-strong bg-paper text-[0.82rem] font-normal not-italic leading-snug text-text shadow-overlay"
+              ? `fixed z-50 ${media.portrait ? "w-80 max-w-[90vw]" : "w-72 max-w-[85vw]"} -translate-x-1/2 overflow-hidden rounded border border-border-strong bg-paper text-[0.82rem] font-normal not-italic leading-snug text-text shadow-overlay`
               : "fixed z-50 w-64 max-w-[80vw] -translate-x-1/2 rounded border border-border-strong bg-paper px-3 py-2 text-[0.82rem] font-normal not-italic leading-snug text-text shadow-overlay"
           }
         >
           {media ? (
-            <>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={media.src}
-                alt={media.alt}
-                className="block h-44 w-full border-b border-rule bg-surface-band object-contain"
-              />
-              {content ? <span className="block px-3 py-2">{content}</span> : null}
-            </>
+            media.portrait ? (
+              <span className="flex items-center">
+                {content ? <span className="block flex-1 px-3 py-2">{content}</span> : null}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={media.src}
+                  alt={media.alt}
+                  className="block h-48 w-36 shrink-0 border-l border-rule bg-surface-band object-cover"
+                />
+              </span>
+            ) : (
+              <>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={media.src}
+                  alt={media.alt}
+                  className="block h-40 w-full border-b border-rule bg-surface-band object-cover"
+                />
+                {content ? <span className="block px-3 py-2">{content}</span> : null}
+              </>
+            )
           ) : (
             content
           )}
