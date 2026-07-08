@@ -260,6 +260,18 @@ a.wikilink.red,
   color: var(--link-red);
 }
 
+/* Card links — blue terms that preview an artifact on hover and open it
+   (lightbox) on click. Same trust signal as wikilinks: blue = navigable. */
+button.cardlink {
+  color: var(--link);
+  cursor: pointer;
+}
+button.cardlink:hover,
+button.cardlink:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* ===================================================================
    Reference superscripts & list
    =================================================================== */

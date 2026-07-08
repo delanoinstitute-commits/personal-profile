@@ -33,6 +33,7 @@ export default function Tooltip({
   variant?: "dotted" | "bold";
 }) {
   const [open, setOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const [pos, setPos] = useState<Pos>({ left: 0, top: 0 });
   const id = useId();
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -93,6 +94,53 @@ export default function Tooltip({
       window.removeEventListener("scroll", onScroll, true);
     };
   }, [open]);
+
+  // Lightbox: Esc closes; opening it dismisses the hover bubble.
+  useEffect(() => {
+    if (!expanded) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setExpanded(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [expanded]);
+
+  const lightbox =
+    expanded && media
+      ? createPortal(
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label={media.alt}
+            className="fixed inset-0 z-[70] flex items-center justify-center bg-[rgba(15,16,17,0.72)] p-4"
+            onClick={() => setExpanded(false)}
+          >
+            <figure
+              className="max-h-full max-w-3xl overflow-auto rounded border border-border-strong bg-paper shadow-overlay"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={media.src}
+                alt={media.alt}
+                className="block max-h-[80vh] w-auto max-w-full bg-surface-band"
+              />
+              <figcaption className="flex items-start justify-between gap-3 px-4 py-3 text-[0.85rem] font-normal not-italic leading-snug text-text">
+                <span>{content}</span>
+                <button
+                  type="button"
+                  aria-label="Close"
+                  onClick={() => setExpanded(false)}
+                  className="shrink-0 text-muted-2 hover:text-text"
+                >
+                  ✕
+                </button>
+              </figcaption>
+            </figure>
+          </div>,
+          document.body,
+        )
+      : null;
 
   // Only rendered after a client interaction, so document is always defined.
   const bubble = open
@@ -162,21 +210,32 @@ export default function Tooltip({
       <button
         type="button"
         aria-describedby={open ? id : undefined}
-        aria-expanded={open}
+        aria-expanded={media ? expanded : open}
+        aria-haspopup={media ? "dialog" : undefined}
         onMouseEnter={show}
         onMouseLeave={scheduleHide}
         onFocus={show}
         onBlur={scheduleHide}
-        onClick={() => (open ? setOpen(false) : show())}
+        onClick={() => {
+          if (media) {
+            setOpen(false);
+            setExpanded(true);
+          } else {
+            open ? setOpen(false) : show();
+          }
+        }}
         className={
-          variant === "bold"
-            ? "cursor-help text-left font-semibold"
-            : "cursor-help border-b border-dotted border-muted-2 text-left"
+          media
+            ? "cardlink text-left"
+            : variant === "bold"
+              ? "cursor-help border-b border-dotted border-muted-2 text-left font-semibold"
+              : "cursor-help border-b border-dotted border-muted-2 text-left"
         }
       >
         {children}
       </button>
       {bubble}
+      {lightbox}
     </span>
   );
 }

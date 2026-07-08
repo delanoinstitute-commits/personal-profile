@@ -165,6 +165,26 @@ Looks like an encyclopedia data panel, not a profile widget.
 - **Internal:** Next `<Link>`, same tab, prefetched, no glyph. **External:** new tab, `rel="noopener noreferrer"`, persistent decorative `↗` (`::after`, `aria-hidden`) + an `sr-only` "(opens in a new tab)" hint — the visible trust boundary between "inside the record" and "leaving to a third party". Never open internal nav in a new tab. `mailto:` is chrome (no glyph, no new tab).
 - **States:** default `--link` no underline; **hover/focus underline** + `text-underline-offset:2px`; `:focus-visible` ring; `:active` `--link-hover`; **`:visited` `--link-visited` enabled globally** (a real orientation cue for returning visitors). Link text always names the destination — never "click here".
 
+### 4.7 Visual signaling standard (binding)
+
+One contract across every page: **color says whether it navigates; underline
+style says what hover reveals; the arrow says it leaves the site.** Signal the
+behavior, never the artifact type.
+
+| Signal | Meaning | Hover | Click |
+|---|---|---|---|
+| **Bold**, text color | Structural heading / primary term | nothing | nothing |
+| Dotted underline + help cursor | Definition available | text tooltip | nothing |
+| **Bold + dotted underline** | Primary term carrying a description (e.g. Profile) | text tooltip | nothing |
+| Blue text (`--link` / `.cardlink`) | Navigable — page or artifact | **preview card** (image + caption) where an artifact exists | opens it (internal page, or artifact **lightbox**) |
+| Blue + `↗` | External URL | (card optional) | new tab, off-site |
+| Superscript `[n]` | Citation | gloss (enhancement) | jumps to References |
+
+Rules: never a blue solid underline on a non-navigating element (false-link);
+dotted always means "hover for text"; supportive terms stay italic regardless
+of signal; credential/artifact terms use `.cardlink` (hover = preview card,
+click = lightbox with caption, `Esc`/backdrop closes, `role=dialog`).
+
 ---
 
 ## 5. Interaction & UX
