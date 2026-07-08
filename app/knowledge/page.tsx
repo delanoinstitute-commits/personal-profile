@@ -23,10 +23,9 @@ const EDUCATION: StatTableData = {
         {
           category: "Formal (examined instruction)",
           metrics: [
-            ["Public school", "Primary education", false],
+            ["Profile", "Primary education with tertiary language distinctions", false, "The composite of my transmitted schooling — seven primary grades in public school, then privately tutored Mandarin to international distinction."],
             ["Grades (1–3)", "Laerskool Muldersdrif (1994–1996)", true, "Lower primary."],
             ["Grades (4–7)", "Laerskool Hoeveld, Evander (1997–2000)", true, "Upper primary — the last of continuous schooling."],
-            ["Private tutor", "Tertiary language education", false],
             ["Mandarin", "Pretoria Chinese School (2005–2008)", true, {
               image: "/credentials/mandarin.jpg",
               alt: "Pretoria Chinese School certificate of participation in adult Mandarin classes, 2005",
@@ -43,7 +42,7 @@ const EDUCATION: StatTableData = {
         {
           category: "Non-formal (certified training)",
           metrics: [
-            ["Private college", "Tertiary vocational education", false],
+            ["Profile", "Teacher-centric tertiary vocational education", false, "All three qualifications are teaching roles — tutor, instructor, coach — the transmission thread running through everything since."],
             ["Tutor", "TEFL, Language Link (2006)", true, {
               image: "/credentials/tefl.jpg",
               alt: "Preliminary Certificate in Teaching English as a Foreign Language, Southern African TEFL Training Institute, 2006",
@@ -67,9 +66,8 @@ const EDUCATION: StatTableData = {
         {
           category: "Non-formal (certified study)",
           metrics: [
-            ["Home school", "Secondary education", false],
-            ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling."],
-            ["Institutional platforms", "Accredited courses", false],
+            ["Profile", "Secondary education with accredited specialist electives", false, "Self-elected, accredited study — correspondence secondary schooling, then university and institute coursework as each domain demanded."],
+            ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling — the last formal enrolment."],
             ["Philosophy", "Critical thinking, U. of Auckland (2018)", true, {
               image: "/credentials/philosophy.jpg",
               alt: "Certificate of Achievement in Logical and Critical Thinking, University of Auckland, 2018",
@@ -87,7 +85,7 @@ const EDUCATION: StatTableData = {
         {
           category: "Informal (open inquiry)",
           metrics: [
-            ["Independent platforms", "Practitioner courses", false],
+            ["Profile", "Practitioner health courses and open-platform science", false, "Uncredentialed by design — specialist courses under named practitioners, and open science study validated when the problem yields."],
             ["Nutrition", "Nutrition biochemistry, Dr Bryan Walsh (2021)", true, {
               image: "/credentials/nutrition.jpg",
               alt: "Certificate of Training in Nutritional Biochemistry, Metabolic Fitness, 2021",
@@ -99,7 +97,6 @@ const EDUCATION: StatTableData = {
               text: "Certification of Excellence — Functional Blood Chemistry Analysis Mastery (FBCA), ODX Academy (2021).",
             }],
             ["Longevity", "Early medical, Dr Peter Attia (2023)", true, "Evidence-based longevity medicine."],
-            ["Public platforms", "Special-interest studies", false],
             ["Science", "AP/College, Khan Academy (2022–present)", true, "Self-paced study — foundation to organic chemistry."],
           ],
         },
