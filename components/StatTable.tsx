@@ -8,11 +8,15 @@ import Tooltip from "./Tooltip";
 // "supportive" marks a component of a composite primary (italic + indented).
 // "tooltip" gives the term a dotted-underline hover definition.
 
+// A tooltip is either a plain gloss or a rich card (credential image + caption).
+export type MetricTooltip =
+  | string
+  | { text?: string; image?: string; alt?: string };
 export type Metric = [
   term: string,
   value: string,
   supportive?: boolean,
-  tooltip?: string,
+  tooltip?: MetricTooltip,
 ];
 export type Row = { category: string; metrics: Metric[] };
 export type Group = { domain: string; label: string; rows: Row[] };
@@ -62,7 +66,20 @@ export function StatTable({ groups }: StatTableData) {
                           {term ? (
                             <>
                               {tooltip ? (
-                                <Tooltip content={tooltip}>{term}</Tooltip>
+                                typeof tooltip === "string" ? (
+                                  <Tooltip content={tooltip}>{term}</Tooltip>
+                                ) : (
+                                  <Tooltip
+                                    content={tooltip.text}
+                                    media={
+                                      tooltip.image
+                                        ? { src: tooltip.image, alt: tooltip.alt ?? term }
+                                        : undefined
+                                    }
+                                  >
+                                    {term}
+                                  </Tooltip>
+                                )
                               ) : (
                                 <u>{term}</u>
                               )}

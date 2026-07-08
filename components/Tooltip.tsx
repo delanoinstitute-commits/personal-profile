@@ -22,10 +22,12 @@ export default function Tooltip({
   children,
   content,
   interactive = false,
+  media,
 }: {
   children: ReactNode;
   content: ReactNode;
   interactive?: boolean;
+  media?: { src: string; alt: string };
 }) {
   const [open, setOpen] = useState(false);
   const [pos, setPos] = useState<Pos>({ left: 0, top: 0 });
@@ -98,9 +100,25 @@ export default function Tooltip({
           onMouseEnter={show}
           onMouseLeave={scheduleHide}
           style={{ left: pos.left, top: pos.top, bottom: pos.bottom }}
-          className="fixed z-50 w-64 max-w-[80vw] -translate-x-1/2 rounded border border-border-strong bg-paper px-3 py-2 text-[0.82rem] font-normal not-italic leading-snug text-text shadow-overlay"
+          className={
+            media
+              ? "fixed z-50 w-72 max-w-[85vw] -translate-x-1/2 overflow-hidden rounded border border-border-strong bg-paper text-[0.82rem] font-normal not-italic leading-snug text-text shadow-overlay"
+              : "fixed z-50 w-64 max-w-[80vw] -translate-x-1/2 rounded border border-border-strong bg-paper px-3 py-2 text-[0.82rem] font-normal not-italic leading-snug text-text shadow-overlay"
+          }
         >
-          {content}
+          {media ? (
+            <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={media.src}
+                alt={media.alt}
+                className="block h-44 w-full border-b border-rule bg-surface-band object-contain"
+              />
+              {content ? <span className="block px-3 py-2">{content}</span> : null}
+            </>
+          ) : (
+            content
+          )}
         </span>,
         document.body,
       )

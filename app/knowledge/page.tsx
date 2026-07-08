@@ -27,8 +27,16 @@ const EDUCATION: StatTableData = {
             ["Grades (1–3)", "Laerskool Muldersdrif (1994–1996)", true, "Lower primary."],
             ["Grades (4–7)", "Laerskool Hoeveld, Evander (1997–2000)", true, "Upper primary — the last of continuous schooling."],
             ["Private tutor", "Tertiary language education", false, "Self-funded Mandarin tuition toward international proficiency."],
-            ["Mandarin", "Pretoria Chinese High (2005–2008)", true, "Weekly group, then private, lessons."],
-            ["Awards", "1st place, 8th Chinese Bridge (2009)", true, "The international Mandarin-proficiency competition for non-native speakers — entered by exception, without matric."],
+            ["Mandarin", "Pretoria Chinese School (2005–2008)", true, {
+              image: "/credentials/mandarin.jpg",
+              alt: "Pretoria Chinese School certificate of participation in adult Mandarin classes, 2005",
+              text: "Certificate of participation — adult Mandarin classes, Pretoria Chinese School (Feb–Aug 2005). Certified under Lorenzo Maritz, his name before 2009.",
+            }],
+            ["Awards", "1st place, 8th Chinese Bridge (2009)", true, {
+              image: "/credentials/chinese-bridge.jpg",
+              alt: "8th Chinese Bridge award certificate from Hanban, 2009",
+              text: "1st in the South African round; then, among 130+ countries at the Beijing finals, awarded the Prize of Outstanding — 8th Chinese Bridge, Hanban (2009).",
+            }],
           ],
         },
         {
