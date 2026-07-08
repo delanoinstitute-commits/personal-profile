@@ -51,7 +51,7 @@ const EDUCATION: StatTableData = {
           metrics: [
             ["Home school", "Secondary education", false, "Correspondence homeschooling — the last formal enrolment; schooling ended by 15."],
             ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling."],
-            ["Institutional platforms", "University courses", false, "Courses from accredited institutions, self-elected."],
+            ["Institutional platforms", "Accredited courses", false, "Courses from accredited institutions, self-elected."],
             ["Philosophy", "Critical thinking, U. of Auckland (2018)", true, "Formal reasoning and argument evaluation."],
             ["Exercise", "Science of exercise, U. of Colorado (2019)", true, "Exercise physiology, via Coursera."],
             ["Finance", "Analysis and valuation, CFI (2024)", true, "Accounting, modeling, and corporate finance — fifteen courses."],
