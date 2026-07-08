@@ -359,11 +359,11 @@ button.cardlink:focus-visible {
   table-layout: fixed;
   font-size: var(--fs-sm);
   margin: 0.6rem 0 1.1rem;
-  min-width: 32rem;
+  min-width: 33rem;
 }
 
 .stat-table col.stat-cat {
-  width: 8.5rem;
+  width: 10rem;
 }
 
 .stat-table th,
@@ -401,15 +401,14 @@ button.cardlink:focus-visible {
 }
 
 /* Category (row-label) cell — vertically centered against its metric list.
-   Uppercased (parentheticals exempt) so the scan order runs band → category
-   → bold term → value; the accent band stays senior via its background. */
+   Italicized for contrast, so the scan order runs band → category → bold
+   term → value; the accent band stays senior via its background. */
 .stat-table tbody th[scope="row"] {
   background: var(--surface-subtle);
   color: var(--text);
   font-weight: 600;
+  font-style: italic;
   vertical-align: middle;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
 }
 
 .stat-table td {
