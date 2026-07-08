@@ -52,7 +52,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
           metrics: [
             ["Blood pressure", "110/65 mmHg", false, "Resting pressure of blood against the artery walls (systolic / diastolic)."],
             ["HR reserve", "126 bpm", false, "Max minus resting heart rate — the range the heart can call on; a wide reserve reflects cardiac fitness and autonomic range."],
-            ["Max HR", "176 bpm (measured)", true, "Highest heart rate reached, measured directly during CTEP with a chest strap — not age-estimated."],
+            ["Max HR", "176 bpm (measured)", true, "Highest heart rate reached, measured directly during CPET with a chest strap — not age-estimated."],
             ["Resting HR", "50 bpm", true, "Heartbeats per minute at rest; lower reflects a more efficient heart."],
             ["HR recovery", "36 bpm @ 1 min", false, "The fall in heart rate one minute after peak effort; ~30–40 bpm (about a beat every 2 seconds) signals strong parasympathetic rebound."],
           ],
@@ -153,7 +153,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
     },
     {
       domain: "Bioenergetic",
-      label: "Calorimetry (CTEP)",
+      label: "Calorimetry (CPET)",
       rows: [
         {
           category: "Global (energy efficiency)",
