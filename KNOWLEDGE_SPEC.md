@@ -186,7 +186,35 @@ The framework's polemical payload, kept implicit on the page:
    site-level past/present/future grouping will need revision afterward —
    deferred until the individual pages settle.
 
-## 5. Activity facets (locked July 2026)
+## 5a. Per-branch validation taxonomies (supersedes 5, July 2026)
+
+The uniform facet vocabulary was demoted after one page-iteration: forcing
+one grid across theory, practice, and production made the categories
+abstract (Education degenerated to "Creative" twice). The uniformity now
+lives one level up — every category answers the same question, "how do I
+know that I know?", with a branch-appropriate answer. Category format
+stays **Kind (validated how)**:
+
+- **Education** — the Coombs/UNESCO registers: Formal (examined
+  instruction) → standardized tests; Non-formal (certified study) →
+  certificates, self-sought; Informal (open inquiry) → the problem
+  yields (Dewey's warranted assertibility; Pasteur quadrant).
+- **Skills** — by the medium the skill acts on: Symbolic (structural
+  design), Somatic (movement mastery), Relational (live transmission),
+  Organisational (project orchestration). Enactment lives in the bands:
+  Demonstrations (performance assessment), Testimony (social
+  epistemology's knowledge source + client acceptance).
+- **Works** — engineering's validation/verification split: Originals
+  (proven in use — efficacy, it works or it doesn't) vs Commissions
+  (delivered to standard — acceptance).
+
+The page-wide evidence ladder still ascends: tests → certificates →
+solved problems → demonstrations → testimony → working artifacts →
+accepted deliveries. Reference added: Coombs & Ahmed (1974). Holland
+moved back to Identity only (RIASEC no longer drives surface categories;
+the facet table below is retained as background vocabulary/tags).
+
+## 5b. Activity facets (background vocabulary; superseded as row structure)
 
 Each cluster's left-column category reads **Facet (dominant function)** —
 the structural what, then the functional output — e.g. "Creative

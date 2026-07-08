@@ -21,9 +21,9 @@ const EDUCATION: StatTableData = {
       label: "Instruction (Transcript)",
       rows: [
         {
-          category: "Creative (socialized literacy)",
+          category: "Formal (examined instruction)",
           metrics: [
-            ["Schooling", "grades 1–7 (1994–2000)", false, "Primary schooling — Muldersdrift and Laerskool Hoëveld; the classroom ended for good at 13."],
+            ["Schooling", "grades 1–7 (1994–2000)", false, "Primary schooling — Muldersdrift and Laerskool Hoëveld; the classroom ended for good at 13. Validated by standardized tests."],
             ["Tutoring", "private Mandarin — Pretoria Chinese School (2005–2008)", false, "Weekly group, then self-funded private, Mandarin classes."],
             ["Distinction", "1st place, 8th Chinese Bridge (2009)", true, "The international Mandarin-proficiency competition for non-native speakers — entered by exception, without matric."],
           ],
@@ -35,12 +35,17 @@ const EDUCATION: StatTableData = {
       label: "Curricula (Library)",
       rows: [
         {
-          category: "Creative (exploratory literacy)",
+          category: "Non-formal (certified study)",
           metrics: [
             ["Homeschooling", "INTEC College — grade 10 (2001)", false, "Correspondence homeschooling — the last formal enrolment; all schooling ended by 15."],
-            ["Certifications", "TEFL (2006) · fitness (2008) · bodywork (2009) · NLP coaching (2010) · blood chemistry (2021)", false, "Credentials sought as each discipline demanded one — practice-driven, not institutional."],
+            ["Certifications", "TEFL (2006) · fitness (2008) · bodywork (2009) · NLP coaching (2010) · blood chemistry (2021)", false, "Credentials sought as each discipline demanded one — practice-driven, not institutional; still exam-validated."],
             ["Coursework", "critical thinking (2018) · exercise & philosophy (2019) · nutritional biochemistry (2021) · longevity (2023) · finance ×15 (2024)", false, "Guided study chosen and completed on his own initiative — Auckland, Coursera, Walsh, Attia, CFI."],
-            ["Ad hoc", "learning science · health science · philosophy · chemistry · finance · complexity (2010s–)", false, "Open-ended domain study — use-inspired understanding, Pasteur-quadrant style; Wilber to Deutsch, Damodaran to Snowden."],
+          ],
+        },
+        {
+          category: "Informal (open inquiry)",
+          metrics: [
+            ["Ad hoc", "learning science · health science · philosophy · chemistry · finance · complexity (2010s–)", false, "Open-ended domain study, validated when the problem yields rather than by an examiner — use-inspired, Pasteur-quadrant style; Wilber to Deutsch, Damodaran to Snowden."],
           ],
         },
       ],
@@ -56,7 +61,7 @@ const SKILLS: StatTableData = {
       label: "Demonstrations (Performance)",
       rows: [
         {
-          category: "Creative (structural design)",
+          category: "Symbolic (structural design)",
           metrics: [
             ["Taxonomy", "knowledge maps — fitness, learning, life (2010s–)", false, "Distilling a domain into its underlying structure."],
             ["Learning experience", "curricula, courses, apprenticeships (2018–)", false, "Designing the path from novice to practitioner."],
@@ -64,7 +69,7 @@ const SKILLS: StatTableData = {
           ],
         },
         {
-          category: "Physical (movement mastery)",
+          category: "Somatic (movement mastery)",
           metrics: [
             ["Gymnastics", "strength training — rings, levers, handstands (2016–)", false, "Bodyweight strength practice, lately deconstructed into a complete physical-development program."],
           ],
@@ -76,7 +81,7 @@ const SKILLS: StatTableData = {
       label: "Testimony (Reputation)",
       rows: [
         {
-          category: "Social (live transmission)",
+          category: "Relational (live transmission)",
           metrics: [
             ["Coaching", "private & live-in — entrepreneurs, actors, billionaires (2010s–)", false, "One-on-one and embedded whole-household behavior change."],
             ["Instruction", "classes & lecturing — spinning, CrossFit, ETA College (2008–)", false, "Teaching practice directly, and teaching trainers one level up."],
@@ -104,7 +109,7 @@ const WORKS: StatTableData = {
       label: "Portfolio (Artifacts)",
       rows: [
         {
-          category: "Creative (codified originals)",
+          category: "Originals (proven in use)",
           metrics: [
             ["Methods", "RBG — rapid mastery (2017–) · taxonomy design (2026)", false, "Repeatable procedures: benchmarking a discipline's graduates; a system for designing taxonomies, informed by Lambe's Organising Knowledge."],
             ["Models", "health (2020–) · LX design (2018–) · self-mastery (2026) · knowledge (2026)", false, "Frameworks that structure a domain — balance/integrity/capacity; learning-experience design; train/eat/finance/learn/mind/plan; and the knowing/doing/making framework this page demonstrates."],
@@ -119,7 +124,7 @@ const WORKS: StatTableData = {
       label: "Credits (Productions)",
       rows: [
         {
-          category: "Organisational (collaborative artifacts)",
+          category: "Commissions (delivered to standard)",
           metrics: [
             ["Author courses", "Walsch, Wilber, Kotler, Watts (estate), Greenfield, Demartini (2017–2024)", false, "Online courses designed and directed with named authors."],
             ["Quests", "10X (2021) · Values Factor & BodyFirst (2024) — Mindvalley", false, "Co-created flagship programs; the 10X Quest has been completed by 90,000+ people."],
@@ -198,13 +203,13 @@ const KNOWLEDGE_REFERENCES: Reference[] = [
     tag: "Framework",
   },
   {
-    id: "holland",
+    id: "coombs",
     cite: (
       <>
-        Holland, J. L. (1997). <em>Making Vocational Choices</em> (3rd ed.) — the RIASEC types the activity facets derive from.
+        Coombs, P. H. and Ahmed, M. (1974). <em>Attacking Rural Poverty: How Nonformal Education Can Help</em>. Johns Hopkins University Press — the formal / non-formal / informal registers of education.
       </>
     ),
-    tag: "Facets",
+    tag: "Education",
   },
   {
     id: "ranganathan",
@@ -238,19 +243,20 @@ export default function KnowledgePage() {
       </p>
       <p>
         Each activity is read in two loci, individual and social: study self-guided or
-        transmitted, skill technical or interpersonal, works authored or produced — and each
-        cluster carries an activity facet (creative, physical, social, organisational)
-        adapted from Holland&rsquo;s RIASEC types. Largely self-taught since 13, my strongest
-        evidence sits rightward — in the works. Below is my knowledge status for 2026.
+        transmitted, skill technical or interpersonal, works authored or produced. And each
+        cluster is named by its kind and by how it is validated — tests and certificates for
+        theory, demonstration and testimony for practice, working artifacts and accepted
+        deliveries for production. Largely self-taught since 13, my strongest evidence sits
+        rightward — in the works. Below is my knowledge status for 2026.
       </p>
 
       <h2 id="education">Education</h2>
       <p>
         Theory — what I know, in two readings of one understanding: instruction transmitted
-        to me (socialized literacy) and study I guide myself (exploratory literacy). The
-        classroom ended at 13; nearly everything since — certifications, coursework, and
-        open-ended domain study — has been self-guided, credentialed where practice demanded
-        it.
+        to me and study I guide myself. Its clusters follow the formal, non-formal, and
+        informal registers of education, each validated its own way — the exam, the
+        certificate, the problem that yields. The classroom ended at 13; nearly everything
+        since has been self-guided.
       </p>
       <StatTable {...EDUCATION} />
 
