@@ -18,34 +18,53 @@ const EDUCATION: StatTableData = {
   groups: [
     {
       domain: "Transmitted",
-      label: "Instruction (Transcript)",
+      label: "Standardized (Tests)",
       rows: [
         {
           category: "Formal (examined instruction)",
           metrics: [
-            ["Schooling", "grades 1–7 (1994–2000)", false, "Primary schooling — Muldersdrift and Laerskool Hoëveld; the classroom ended for good at 13. Validated by standardized tests."],
-            ["Tutoring", "private Mandarin — Pretoria Chinese School (2005–2008)", false, "Weekly group, then self-funded private, Mandarin classes."],
+            ["Public school", "primary education (1994–2000)", false, "State primary schooling — the graded classroom system, left for good at 13."],
+            ["Grades 1–3", "Laerskool Muldersdrif (1994–1996)", true, "Lower primary."],
+            ["Grades 4–7", "Laerskool Hoëveld, Evander (1997–2000)", true, "Upper primary — the last of continuous schooling."],
+            ["Private tutor", "Mandarin — Pretoria Chinese School (2005–2008)", false, "Weekly group, then self-funded private, Mandarin lessons."],
             ["Distinction", "1st place, 8th Chinese Bridge (2009)", true, "The international Mandarin-proficiency competition for non-native speakers — entered by exception, without matric."],
+          ],
+        },
+        {
+          category: "Non-formal (certified training)",
+          metrics: [
+            ["Vocational college", "tertiary vocational training (2006–2010)", false, "Career-qualifying certifications from vocational providers — taught in person, role by role."],
+            ["Tutor", "TEFL — Language Link (2006)", true, "Teaching English as a Foreign Language."],
+            ["Instructor", "personal fitness trainer — ETA College (2008)", true, "Personal-training and group-cycling certification."],
+            ["Coach", "NLP & life coaching — COMENSA (2010)", true, "Neuro-linguistic-programming and life-coaching practitioner certification."],
           ],
         },
       ],
     },
     {
       domain: "Self-guided",
-      label: "Curricula (Library)",
+      label: "Elective (Tests)",
       rows: [
         {
           category: "Non-formal (certified study)",
           metrics: [
-            ["Homeschooling", "INTEC College — grade 10 (2001)", false, "Correspondence homeschooling — the last formal enrolment; all schooling ended by 15."],
-            ["Certifications", "TEFL (2006) · fitness (2008) · bodywork (2009) · NLP coaching (2010) · blood chemistry (2021)", false, "Credentials sought as each discipline demanded one — practice-driven, not institutional; still exam-validated."],
-            ["Coursework", "critical thinking (2018) · exercise & philosophy (2019) · nutritional biochemistry (2021) · longevity (2023) · finance ×15 (2024)", false, "Guided study chosen and completed on his own initiative — Auckland, Coursera, Walsh, Attia, CFI."],
+            ["Home school", "secondary education (2001–2002)", false, "Correspondence homeschooling — the last formal enrolment; schooling ended by 15."],
+            ["Grades 8–10", "INTEC College (2001–2002)", true, "Distance secondary schooling."],
+            ["Institutional MOOCs", "university courses (2018–2019)", false, "University-run open online courses, self-elected."],
+            ["Philosophy", "critical thinking — U. of Auckland (2018)", true, "Formal reasoning and argument evaluation."],
+            ["Exercise", "science of exercise — U. of Colorado (2019)", true, "Exercise physiology, via Coursera."],
+            ["Independent platforms", "practitioner courses (2021–2024)", false, "Specialist courses from independent educators and companies."],
+            ["Nutrition", "nutritional biochemistry — Dr Bryan Walsh (2021)", true, "The metabolic pathways behind nutrition."],
+            ["Blood chemistry", "functional analysis — ODX Academy (2021)", true, "Interpreting blood panels for function, not just disease."],
+            ["Longevity", "Early program — Dr Peter Attia (2023)", true, "Evidence-based longevity medicine."],
+            ["Finance", "analysis & valuation — CFI, ×15 (2024)", true, "Accounting, modeling, and corporate finance."],
           ],
         },
         {
           category: "Informal (open inquiry)",
           metrics: [
-            ["Ad hoc", "learning science · health science · philosophy · chemistry · finance · complexity (2010s–)", false, "Open-ended domain study, validated when the problem yields rather than by an examiner — use-inspired, Pasteur-quadrant style; Wilber to Deutsch, Damodaran to Snowden."],
+            ["Public platforms", "special-interest study (2022–present)", false, "Free, open study — validated when the problem yields, not by an examiner."],
+            ["Chemistry", "general to organic — Khan Academy (2022–)", true, "Self-paced chemistry, foundation toward organic."],
           ],
         },
       ],
