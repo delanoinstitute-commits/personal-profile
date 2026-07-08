@@ -67,10 +67,16 @@ export function StatTable({ groups }: StatTableData) {
                             <>
                               {tooltip ? (
                                 typeof tooltip === "string" ? (
-                                  <Tooltip content={tooltip}>{term}</Tooltip>
+                                  <Tooltip
+                                    content={tooltip}
+                                    variant={supportive ? "dotted" : "bold"}
+                                  >
+                                    {term}
+                                  </Tooltip>
                                 ) : (
                                   <Tooltip
                                     content={tooltip.text}
+                                    variant={supportive ? "dotted" : "bold"}
                                     media={
                                       tooltip.image
                                         ? {
@@ -84,8 +90,10 @@ export function StatTable({ groups }: StatTableData) {
                                     {term}
                                   </Tooltip>
                                 )
-                              ) : (
+                              ) : supportive ? (
                                 <u>{term}</u>
+                              ) : (
+                                <strong>{term}</strong>
                               )}
                               {": "}
                               {value}

@@ -23,11 +23,14 @@ export default function Tooltip({
   content,
   interactive = false,
   media,
+  variant = "dotted",
 }: {
   children: ReactNode;
   content: ReactNode;
   interactive?: boolean;
   media?: { src: string; alt: string; portrait?: boolean };
+  /** "dotted" = definition affordance (dotted underline); "bold" = primary term (bold, no underline). */
+  variant?: "dotted" | "bold";
 }) {
   const [open, setOpen] = useState(false);
   const [pos, setPos] = useState<Pos>({ left: 0, top: 0 });
@@ -109,13 +112,13 @@ export default function Tooltip({
         >
           {media ? (
             media.portrait ? (
-              <span className="flex items-center">
-                {content ? <span className="block flex-1 px-3 py-2">{content}</span> : null}
+              <span className="flex items-stretch">
+                {content ? <span className="block flex-1 self-center px-3 py-2">{content}</span> : null}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={media.src}
                   alt={media.alt}
-                  className="block h-48 w-36 shrink-0 border-l border-rule bg-surface-band object-cover"
+                  className="block h-52 w-auto shrink-0 border-l border-rule bg-surface-band"
                 />
               </span>
             ) : (
@@ -124,7 +127,7 @@ export default function Tooltip({
                 <img
                   src={media.src}
                   alt={media.alt}
-                  className="block h-40 w-full border-b border-rule bg-surface-band object-cover"
+                  className="block h-auto w-full border-b border-rule bg-surface-band"
                 />
                 {content ? <span className="block px-3 py-2">{content}</span> : null}
               </>
@@ -165,7 +168,11 @@ export default function Tooltip({
         onFocus={show}
         onBlur={scheduleHide}
         onClick={() => (open ? setOpen(false) : show())}
-        className="cursor-help border-b border-dotted border-muted-2 text-left"
+        className={
+          variant === "bold"
+            ? "cursor-help text-left font-semibold"
+            : "cursor-help border-b border-dotted border-muted-2 text-left"
+        }
       >
         {children}
       </button>

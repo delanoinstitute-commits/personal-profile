@@ -21,7 +21,7 @@ const INTELLECT: StatTableData = {
         {
           category: "Intelligence (processing power)",
           metrics: [
-            ["PROFILE", "pending", false, "Full-Scale IQ — overall general cognitive ability, the g-loaded composite of the six abilities below."],
+            ["Profile", "pending", false, "Full-Scale IQ — overall general cognitive ability, the g-loaded composite of the six abilities below."],
             ["Working memory", "—", true, "Holding and manipulating information in mind."],
             ["Processing speed", "—", true, "How quickly you take in and respond to information."],
             ["Fluid reasoning", "—", true, "Solving novel problems without relying on prior knowledge."],
@@ -39,7 +39,7 @@ const INTELLECT: StatTableData = {
         {
           category: "Worldview (interpretive lens)",
           metrics: [
-            ["PROFILE", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
+            ["Profile", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
             ["Knowing", "Explanatory fallibilist", true, "Epistemology — the nature and sources of knowledge; how we know."],
             ["Being", "Physical idealist", true, "Metaphysics — what is ultimately real; the fundamental nature of reality."],
             ["Origins", "Evolutionary emergentist", true, "Cosmology — the origin and nature of the universe and of life."],
@@ -64,7 +64,7 @@ const CHARACTER: StatTableData = {
         {
           category: "Personality (behavioral wiring)",
           metrics: [
-            ["PROFILE", "Disciplined, unflappable, and independent", false, "Exceptionally conscientious and reliable, hard to rattle emotionally, and self-reliant — reserved rather than outgoing, and tough-minded enough to question consensus rather than smooth it over."],
+            ["Profile", "Disciplined, unflappable, and independent", false, "Exceptionally conscientious and reliable, hard to rattle emotionally, and self-reliant — reserved rather than outgoing, and tough-minded enough to question consensus rather than smooth it over."],
             ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn't measure."],
             ["Emotionality", "1st (very low)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent."],
             ["eXtraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
@@ -82,7 +82,7 @@ const CHARACTER: StatTableData = {
         {
           category: "Beliefs (felt outlook)",
           metrics: [
-            ["PROFILE", "Good and improving, but impersonal", false, "Fundamentally good (3.66) — safe, abundant, and improving — but not alive: impersonal and non-agentic, with no cosmic intention. Hierarchical yet interconnected — a secular optimist's world."],
+            ["Profile", "Good and improving, but impersonal", false, "Fundamentally good (3.66) — safe, abundant, and improving — but not alive: impersonal and non-agentic, with no cosmic intention. Hierarchical yet interconnected — a secular optimist's world."],
             ["Safe", "3.69 with 'progressing' at 4.75", true, "Whether the world is safe and nurturing, or dangerous and threatening."],
             ["Enticing", "3.86 with 'abundant' at 4.5", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren."],
             ["Alive", "2.21 with 'needs me' at 2.75", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic."],
@@ -104,7 +104,7 @@ const DRIVE: StatTableData = {
         {
           category: "Values (guiding priorities)",
           metrics: [
-            ["PROFILE", "Openness over conservation, self-other balanced", false, "Autonomy and achievement, kept stable and caring — with little need for novelty, pleasure, tradition, or conformity."],
+            ["Profile", "Openness over conservation, self-other balanced", false, "Autonomy and achievement, kept stable and caring — with little need for novelty, pleasure, tradition, or conformity."],
             ["Self-direction", "6.0 (openness)", true, "Independent thought and action — choosing, creating, exploring."],
             ["Achievement", "4.5 (self-enhancement)", true, "Personal success through demonstrating competence."],
             ["Security", "4.2 (conservation)", true, "Safety, harmony, and stability of self and society."],
@@ -126,7 +126,7 @@ const DRIVE: StatTableData = {
         {
           category: "Interests (engagement fit)",
           metrics: [
-            ["PROFILE", "IAS (inquiry, artistry, service)", false, "Drawn to ideas and to making things, in the service of people — the pattern of a designer-educator (Investigative, Artistic, Social)."],
+            ["Profile", "IAS (inquiry, artistry, service)", false, "Drawn to ideas and to making things, in the service of people — the pattern of a designer-educator (Investigative, Artistic, Social)."],
             ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
             ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work."],
             ["Social", "3rd", true, "Drawn to helping, teaching, and working with people."],
