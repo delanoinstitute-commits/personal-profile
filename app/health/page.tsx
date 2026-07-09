@@ -305,7 +305,7 @@ export default function HealthPage() {
         strength with deep aerobic capacity. Below is my health status for 2026.
       </p>
 
-      <h2 id="integrity">Integrity</h2>
+      <h2 id="integrity">Integrity <span className="heading-paren">(Structure)</span></h2>
       <p>
         Integrity — how my body is built and holds together, in two readings of one frame:
         its make-up of muscle, fat, and bone (compositional) and its proportion (geometric).
@@ -313,7 +313,7 @@ export default function HealthPage() {
       </p>
       <StatTable {...STRUCTURAL_INTEGRITY} hint="Click a row below to explore my integrity status in more detail." />
 
-      <h2 id="balance">Balance</h2>
+      <h2 id="balance">Balance <span className="heading-paren">(Homeostasis)</span></h2>
       <p>
         Balance — how steadily my body holds a resting state, and how well it returns to one
         after load, in two readings of one system: its blood chemistry (biomolecular) and its
@@ -322,7 +322,7 @@ export default function HealthPage() {
       </p>
       <StatTable {...FUNCTIONAL_HOMEOSTASIS} hint="Click a row below to explore my balance status in more detail." />
 
-      <h2 id="capacity">Capacity</h2>
+      <h2 id="capacity">Capacity <span className="heading-paren">(Performance)</span></h2>
       <p>
         Capacity — what my body can do under load, in two readings of one output: the force
         and movement it produces (biomechanical) and the energy that fuels it (bioenergetic).
