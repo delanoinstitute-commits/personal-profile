@@ -316,7 +316,7 @@ export default function KnowledgePage() {
         certificate, the problem that yields. The classroom ended at 13; nearly everything
         since has been self-guided.
       </p>
-      <StatTable {...EDUCATION} />
+      <StatTable {...EDUCATION} hint="Click a row below to explore my education in detail." />
 
       <h2 id="skills">Skills</h2>
       <p>
@@ -324,7 +324,7 @@ export default function KnowledgePage() {
         tools and symbols, and interpersonal skill with people. I design learning systems,
         direct productions, and coach — and each is demonstrable on demand.
       </p>
-      <StatTable {...SKILLS} />
+      <StatTable {...SKILLS} hint="Click a row below to explore my skills in detail." />
       <p>
         Testimony:{" "}
         <WikiLink href="https://stories.mindvalley.com/product/mindvalley-certified-10x-coach">10X Coach stories</WikiLink>,{" "}
@@ -340,7 +340,7 @@ export default function KnowledgePage() {
         and works produced with others. The artifact is the strongest evidence of knowledge;
         this catalog is the proof layer of the two sections above.
       </p>
-      <StatTable {...WORKS} />
+      <StatTable {...WORKS} hint="Click a row below to explore my works in detail." />
 
       <References
         items={KNOWLEDGE_REFERENCES}

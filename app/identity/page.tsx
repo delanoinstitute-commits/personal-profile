@@ -244,7 +244,7 @@ export default function IdentityPage() {
 
       <h2 id="intellect">Intellect</h2>
       <p>Cognition — how I think. The head.</p>
-      <StatTable {...INTELLECT} />
+      <StatTable {...INTELLECT} hint="Click a row below to explore my intellect in detail." />
 
       <h2 id="character">Character</h2>
       <p>
@@ -253,7 +253,7 @@ export default function IdentityPage() {
         accommodating — and I meet a world I find fundamentally good, safe, and improving, yet
         impersonal: wonderful, but not watching.
       </p>
-      <StatTable {...CHARACTER} />
+      <StatTable {...CHARACTER} hint="Click a row below to explore my character in detail." />
 
       <h2 id="drive">Drive</h2>
       <p>
@@ -262,7 +262,7 @@ export default function IdentityPage() {
         indifferent to status, tradition, or thrill — expressed as an investigator and maker
         serving people through ideas and craft.
       </p>
-      <StatTable {...DRIVE} />
+      <StatTable {...DRIVE} hint="Click a row below to explore my drive in detail." />
 
       <References
         items={IDENTITY_REFERENCES}

@@ -46,7 +46,11 @@ function labelParts(text: string) {
 
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
-export function StatTable({ title, groups }: StatTableData) {
+export function StatTable({
+  title,
+  groups,
+  hint = "Click a row below for the info.",
+}: StatTableData & { hint?: string }) {
   // Default collapsed: the section intro carries the summary; the table is
   // the expandable record beneath it.
   const [collapsed, setCollapsed] = useState<Set<string>>(
@@ -61,7 +65,7 @@ export function StatTable({ title, groups }: StatTableData) {
 
   return (
     <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-      <p className="stat-hint">Click a row below for the info.</p>
+      <p className="stat-hint">{hint}</p>
       <table className="stat-table">
         <colgroup>
           <col className="stat-cat" />
