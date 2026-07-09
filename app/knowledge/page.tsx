@@ -42,7 +42,7 @@ const EDUCATION: StatTableData = {
         {
           category: "Non-formal (certified training)",
           metrics: [
-            ["Profile", "Teacher-centric tertiary vocational education", false, "All three qualifications are teaching roles — tutor, instructor, coach — the transmission thread running through everything since."],
+            ["Profile", "Teacher-centric tertiary vocational education", false, "All four qualifications are transmission roles — tutor, instructor, coach, learning designer — the teaching thread running through everything since."],
             ["Tutor", "TEFL, Language Link (2006)", true, {
               image: "/credentials/tefl.jpg",
               alt: "Preliminary Certificate in Teaching English as a Foreign Language, Southern African TEFL Training Institute, 2006",
@@ -55,6 +55,12 @@ const EDUCATION: StatTableData = {
               text: "National Certificate: Fitness (Level 5) — Personal Fitness Trainer and Spinning, Exercise Teachers Academy, Pretoria (2008).",
             }],
             ["Coach", "NLP and life coaching, COMENSA (2010)", true, "Neuro-linguistic-programming and life-coaching practitioner certification."],
+            ["Designer", "Learning experience design, Shapers (2018)", true, {
+              image: "/credentials/lx-design.jpg",
+              alt: "Shapers certificate of participation for the learning experience design masterclass, photographed at the training, 2018",
+              portrait: true,
+              text: "Certificate of participation — learning-experience-design masterclass, Shapers, Netherlands (March 2018). Photographed at the two-day training; shapers.nl.",
+            }],
           ],
         },
       ],
