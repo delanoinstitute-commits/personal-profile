@@ -17,13 +17,13 @@ const EDUCATION: StatTableData = {
   title: "Education",
   groups: [
     {
-      domain: "Transmitted",
+      domain: "Guided",
       label: "Standardized (Tests)",
       rows: [
         {
           category: "Formal (in-person schooling)",
           metrics: [
-            ["Profile", "Primary education with tertiary language distinctions", false, "The composite of my transmitted schooling — seven primary grades in public school, then privately tutored Mandarin to international distinction."],
+            ["Profile", "Primary education with tertiary language distinctions", false, "The composite of my guided schooling — seven primary grades in public school, then privately tutored Mandarin to international distinction."],
             ["Grades (1–3)", "Laerskool Muldersdrif (1994–1996)", true, "Lower primary."],
             ["Grades (4–7)", "Laerskool Hoeveld, Evander (1997–2000)", true, "Upper primary — the last of continuous schooling."],
             ["Mandarin", "Pretoria Chinese School (2005–2008)", true, {
@@ -66,7 +66,7 @@ const EDUCATION: StatTableData = {
       ],
     },
     {
-      domain: "Self-guided",
+      domain: "Independent",
       label: "Elective (Tests)",
       rows: [
         {
@@ -300,8 +300,8 @@ export default function KnowledgePage() {
         production).
       </p>
       <p>
-        Each activity is read in two loci, individual and social: study self-guided or
-        transmitted, skill technical or interpersonal, works authored or produced. And each
+        Each activity is read in two loci, individual and social: study independent or
+        guided, skill technical or interpersonal, works authored or produced. And each
         cluster is named by its kind and by how it is validated — tests and certificates for
         theory, demonstration and testimony for practice, working artifacts and accepted
         deliveries for production. Largely self-taught since 13, my strongest evidence sits
@@ -310,11 +310,11 @@ export default function KnowledgePage() {
 
       <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
       <p>
-        What I know, in two readings of one understanding: instruction transmitted
-        to me and study I guide myself. Its clusters follow the formal, non-formal, and
+        What I know, in two readings of one understanding: instruction guided by
+        others and study I pursue independently. Its clusters follow the formal, non-formal, and
         informal registers of education, each validated its own way — the exam, the
         certificate, the problem that yields. The classroom ended at 13; nearly everything
-        since has been self-guided.
+        since has been independent.
       </p>
       <StatTable {...EDUCATION} hint="Click a row below to explore my education profile in more detail." />
 
