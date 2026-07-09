@@ -47,7 +47,11 @@ function labelParts(text: string) {
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
 export function StatTable({ title, groups }: StatTableData) {
-  const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+  // Default collapsed: the section intro carries the summary; the table is
+  // the expandable record beneath it.
+  const [collapsed, setCollapsed] = useState<Set<string>>(
+    () => new Set(groups.map((g) => g.domain)),
+  );
   const toggle = (domain: string) =>
     setCollapsed((prev) => {
       const next = new Set(prev);
@@ -57,6 +61,9 @@ export function StatTable({ title, groups }: StatTableData) {
 
   return (
     <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+      <p className="stat-hint">
+        Beyond the summary — click a band below to expand its records.
+      </p>
       <table className="stat-table">
         <colgroup>
           <col className="stat-cat" />

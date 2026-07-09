@@ -366,6 +366,14 @@ button.cardlink:focus-visible {
   width: 10rem;
 }
 
+/* Hint line above each table — the tables start collapsed to their bands */
+.stat-hint {
+  margin: 0.6rem 0 0;
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
 .stat-table th,
 .stat-table td {
   border: 1px solid var(--rule);
