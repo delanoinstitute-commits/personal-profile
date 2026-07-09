@@ -61,9 +61,7 @@ export function StatTable({ title, groups }: StatTableData) {
 
   return (
     <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-      <p className="stat-hint">
-        Beyond the summary — click a band below to expand its records.
-      </p>
+      <p className="stat-hint">Click a row below for the info.</p>
       <table className="stat-table">
         <colgroup>
           <col className="stat-cat" />
