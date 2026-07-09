@@ -311,7 +311,7 @@ export default function HealthPage() {
         its make-up of muscle, fat, and bone (compositional) and its proportion (geometric).
         Mine is lean and muscular over sound bone, carrying little central fat.
       </p>
-      <StatTable {...STRUCTURAL_INTEGRITY} hint="Click a row below to explore my integrity in detail." />
+      <StatTable {...STRUCTURAL_INTEGRITY} hint="Click a row below to explore my integrity status in detail." />
 
       <h2 id="balance">Balance</h2>
       <p>
@@ -320,7 +320,7 @@ export default function HealthPage() {
         circulation (hemodynamic). Mine sits low and calm at rest yet opens a wide cardiac
         reserve under effort, on low-risk lipids and a metabolism efficient even when stressed.
       </p>
-      <StatTable {...FUNCTIONAL_HOMEOSTASIS} hint="Click a row below to explore my balance in detail." />
+      <StatTable {...FUNCTIONAL_HOMEOSTASIS} hint="Click a row below to explore my balance status in detail." />
 
       <h2 id="capacity">Capacity</h2>
       <p>
@@ -329,7 +329,7 @@ export default function HealthPage() {
         Mine is broad — strength and power head to toe, high aerobic capacity, and efficient
         fuel use.
       </p>
-      <StatTable {...FUNCTIONAL_CAPACITY} hint="Click a row below to explore my capacity in detail." />
+      <StatTable {...FUNCTIONAL_CAPACITY} hint="Click a row below to explore my capacity status in detail." />
 
       <References
         items={HEALTH_REFERENCES}
