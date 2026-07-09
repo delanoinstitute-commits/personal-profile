@@ -308,7 +308,7 @@ export default function KnowledgePage() {
         rightward — in the works. Below is my knowledge status for 2026.
       </p>
 
-      <h2 id="education">Education</h2>
+      <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
       <p>
         Theory — what I know, in two readings of one understanding: instruction transmitted
         to me and study I guide myself. Its clusters follow the formal, non-formal, and
@@ -318,7 +318,7 @@ export default function KnowledgePage() {
       </p>
       <StatTable {...EDUCATION} hint="Click a row below to explore my education profile in more detail." />
 
-      <h2 id="skills">Skills</h2>
+      <h2 id="skills">Skills <span className="heading-paren">(Practice)</span></h2>
       <p>
         Practice — what I can do, in two readings of one competence: technical skill with
         tools and symbols, and interpersonal skill with people. I design learning systems,
@@ -334,7 +334,7 @@ export default function KnowledgePage() {
         <WikiLink href="https://youtu.be/WBfb7Trl3JY">Zenas &amp; Sandra</WikiLink>.
       </p>
 
-      <h2 id="works">Works</h2>
+      <h2 id="works">Works <span className="heading-paren">(Production)</span></h2>
       <p>
         Production — what I have made, in two readings of one output: works authored alone
         and works produced with others. The artifact is the strongest evidence of knowledge;

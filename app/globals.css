@@ -366,6 +366,15 @@ button.cardlink:focus-visible {
   width: 10rem;
 }
 
+/* Section-heading parenthetical — the theoretical register behind the plain
+   word: Education (Theory), Intellect (Cognition). Muted and unbolded, the
+   same logic as .stat-paren in the tables. */
+h2 .heading-paren {
+  font-size: 0.72em;
+  font-weight: 400;
+  color: var(--muted);
+}
+
 /* Hint line above each table — the tables start collapsed to their bands */
 .stat-hint {
   margin: 0.6rem 0 0;
