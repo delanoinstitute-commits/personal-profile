@@ -243,12 +243,12 @@ export default function IdentityPage() {
       </p>
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>
-      <p>Cognition — how I think. The head.</p>
+      <p>How I think. The head.</p>
       <StatTable {...INTELLECT} hint="Click a row below to explore my intellect profile in more detail." />
 
       <h2 id="character">Character <span className="heading-paren">(Affect)</span></h2>
       <p>
-        Affect — how I&rsquo;m wired to feel and react, apart from what I think or pursue. I&rsquo;m
+        How I&rsquo;m wired to feel and react, apart from what I think or pursue. I&rsquo;m
         disciplined and hard to rattle, reserved, self-reliant, and tough-minded rather than
         accommodating — and I meet a world I find fundamentally good, safe, and improving, yet
         impersonal: wonderful, but not watching.
@@ -257,7 +257,7 @@ export default function IdentityPage() {
 
       <h2 id="drive">Drive <span className="heading-paren">(Conation)</span></h2>
       <p>
-        Conation — the will that moves me to act, apart from how I think or feel. Mine runs
+        The will that moves me to act, apart from how I think or feel. Mine runs
         on autonomy and mastery: self-directed achievement in a stable, caring frame,
         indifferent to status, tradition, or thrill — expressed as an investigator and maker
         serving people through ideas and craft.

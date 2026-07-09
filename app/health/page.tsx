@@ -307,7 +307,7 @@ export default function HealthPage() {
 
       <h2 id="integrity">Integrity <span className="heading-paren">(Structure)</span></h2>
       <p>
-        Integrity — how my body is built and holds together, in two readings of one frame:
+        How my body is built and holds together, in two readings of one frame:
         its make-up of muscle, fat, and bone (compositional) and its proportion (geometric).
         Mine is lean and muscular over sound bone, carrying little central fat.
       </p>
@@ -315,7 +315,7 @@ export default function HealthPage() {
 
       <h2 id="balance">Balance <span className="heading-paren">(Homeostasis)</span></h2>
       <p>
-        Balance — how steadily my body holds a resting state, and how well it returns to one
+        How steadily my body holds a resting state, and how well it returns to one
         after load, in two readings of one system: its blood chemistry (biomolecular) and its
         circulation (hemodynamic). Mine sits low and calm at rest yet opens a wide cardiac
         reserve under effort, on low-risk lipids and a metabolism efficient even when stressed.
@@ -324,7 +324,7 @@ export default function HealthPage() {
 
       <h2 id="capacity">Capacity <span className="heading-paren">(Performance)</span></h2>
       <p>
-        Capacity — what my body can do under load, in two readings of one output: the force
+        What my body can do under load, in two readings of one output: the force
         and movement it produces (biomechanical) and the energy that fuels it (bioenergetic).
         Mine is broad — strength and power head to toe, high aerobic capacity, and efficient
         fuel use.

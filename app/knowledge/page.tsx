@@ -310,7 +310,7 @@ export default function KnowledgePage() {
 
       <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
       <p>
-        Theory — what I know, in two readings of one understanding: instruction transmitted
+        What I know, in two readings of one understanding: instruction transmitted
         to me and study I guide myself. Its clusters follow the formal, non-formal, and
         informal registers of education, each validated its own way — the exam, the
         certificate, the problem that yields. The classroom ended at 13; nearly everything
@@ -320,7 +320,7 @@ export default function KnowledgePage() {
 
       <h2 id="skills">Skills <span className="heading-paren">(Practice)</span></h2>
       <p>
-        Practice — what I can do, in two readings of one competence: technical skill with
+        What I can do, in two readings of one competence: technical skill with
         tools and symbols, and interpersonal skill with people. I design learning systems,
         direct productions, and coach — and each is demonstrable on demand.
       </p>
@@ -336,7 +336,7 @@ export default function KnowledgePage() {
 
       <h2 id="works">Works <span className="heading-paren">(Production)</span></h2>
       <p>
-        Production — what I have made, in two readings of one output: works authored alone
+        What I have made, in two readings of one output: works authored alone
         and works produced with others. The artifact is the strongest evidence of knowledge;
         this catalog is the proof layer of the two sections above.
       </p>
