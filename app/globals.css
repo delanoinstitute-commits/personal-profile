@@ -376,8 +376,8 @@ h2 .heading-paren {
 }
 
 /* Hint line above each table — the tables start collapsed to their bands */
-.stat-hint {
-  margin: 0.6rem 0 0;
+p.stat-hint {
+  margin: 0.25rem 0 0;
   font-size: 0.8125rem;
   font-style: italic;
   color: var(--muted);
