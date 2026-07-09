@@ -1,4 +1,5 @@
 import { INFOBOX, PROFILE, InfoboxGroup, InfoboxValue } from "@/content/profile";
+import Chevron from "./Chevron";
 import PortraitCarousel from "./PortraitCarousel";
 import Tooltip from "./Tooltip";
 import WikiLink from "./WikiLink";
@@ -69,9 +70,7 @@ function Group({ group, defaultOpen }: { group: InfoboxGroup; defaultOpen: boole
     <details className="infobox-details" open={defaultOpen}>
       <summary className="infobox-heading">
         {group.heading}
-        <span className="chevron" aria-hidden="true">
-          ▾
-        </span>
+        <Chevron className="chevron" />
       </summary>
       <dl className="infobox-dl">
         {visible.map((row) => (

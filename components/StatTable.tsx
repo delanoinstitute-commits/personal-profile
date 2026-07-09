@@ -1,6 +1,7 @@
 "use client";
 
 import { Fragment, useState } from "react";
+import Chevron from "./Chevron";
 import Tooltip from "./Tooltip";
 
 // A tabled standard shared across data pages (Health, Identity, …).
@@ -93,12 +94,9 @@ export function StatTable({
                     }}
                   >
                     <span>{group.label}</span>
-                    <span
+                    <Chevron
                       className={`stat-chevron${isCollapsed ? "" : " is-open"}`}
-                      aria-hidden="true"
-                    >
-                      ▾
-                    </span>
+                    />
                   </button>
                 </th>
               </tr>

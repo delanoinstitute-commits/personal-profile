@@ -422,8 +422,9 @@ h2 .heading-paren {
 }
 
 .stat-table .stat-chevron {
-  font-size: 1.05rem;
-  line-height: 1;
+  width: 1.35rem;
+  height: 1.35rem;
+  flex-shrink: 0;
   color: var(--muted);
   transition: transform 150ms ease;
 }
@@ -588,9 +589,9 @@ h2 .heading-paren {
   position: absolute;
   right: 0.55rem;
   top: 50%;
+  width: 1.15rem;
+  height: 1.15rem;
   transform: translateY(-50%);
-  font-size: 1.05rem;
-  line-height: 1;
   color: var(--muted);
   transition: transform 150ms ease;
 }

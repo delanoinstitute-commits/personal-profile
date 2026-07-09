@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Chevron from "./Chevron";
 import Infobox from "./Infobox";
 
 /**
@@ -19,9 +20,7 @@ export default function MobileInfobox() {
     >
       <summary className="flex cursor-pointer list-none items-center justify-between bg-surface-band px-3 py-2 text-sm font-semibold">
         <span>Quick facts</span>
-        <span aria-hidden="true" className="text-muted transition-transform group-open:rotate-180">
-          ▾
-        </span>
+        <Chevron className="h-[1.15rem] w-[1.15rem] text-muted transition-transform group-open:rotate-180" />
       </summary>
       <div className="p-2">
         <Infobox priority={false} compact embedded />
