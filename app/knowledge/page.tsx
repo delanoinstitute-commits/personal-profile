@@ -21,7 +21,7 @@ const EDUCATION: StatTableData = {
       label: "Standardized (Tests)",
       rows: [
         {
-          category: "Formal (examined instruction)",
+          category: "Formal (in-person schooling)",
           metrics: [
             ["Profile", "Primary education with tertiary language distinctions", false, "The composite of my transmitted schooling — seven primary grades in public school, then privately tutored Mandarin to international distinction."],
             ["Grades (1–3)", "Laerskool Muldersdrif (1994–1996)", true, "Lower primary."],
@@ -40,7 +40,7 @@ const EDUCATION: StatTableData = {
           ],
         },
         {
-          category: "Non-formal (certified training)",
+          category: "Non-formal (in-person training)",
           metrics: [
             ["Profile", "Teacher-centric tertiary vocational education", false, "All four qualifications are transmission roles — tutor, instructor, coach, learning designer — the teaching thread running through everything since."],
             ["Tutor", "TEFL, Language Link (2006)", true, {
@@ -70,7 +70,7 @@ const EDUCATION: StatTableData = {
       label: "Elective (Tests)",
       rows: [
         {
-          category: "Non-formal (certified study)",
+          category: "Non-formal (online schooling)",
           metrics: [
             ["Profile", "Secondary education with accredited specialist electives", false, "Self-elected, accredited study — correspondence secondary schooling, then university and institute coursework as each domain demanded."],
             ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling — the last formal enrolment."],
@@ -89,7 +89,7 @@ const EDUCATION: StatTableData = {
           ],
         },
         {
-          category: "Informal (open inquiry)",
+          category: "Informal (online training)",
           metrics: [
             ["Profile", "Practitioner health courses and open-platform science", false, "Uncredentialed by design — specialist courses under named practitioners, and open science study validated when the problem yields."],
             ["Nutrition", "Nutrition biochemistry, Dr Bryan Walsh (2021)", true, {
