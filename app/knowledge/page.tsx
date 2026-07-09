@@ -70,9 +70,9 @@ const EDUCATION: StatTableData = {
       label: "Elective (Tests)",
       rows: [
         {
-          category: "Non-formal (online schooling)",
+          category: "Non-formal (remote schooling)",
           metrics: [
-            ["Profile", "Secondary education with accredited specialist electives", false, "Self-elected, accredited study — correspondence secondary schooling, then university and institute coursework as each domain demanded."],
+            ["Profile", "Secondary education with specialist electives", false, "Self-elected remote study — correspondence secondary schooling, then university, institute, and open-platform coursework as each domain demanded."],
             ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling — the last formal enrolment."],
             ["Philosophy", "Critical thinking, U. of Auckland (2018)", true, {
               image: "/credentials/philosophy.jpg",
@@ -86,12 +86,13 @@ const EDUCATION: StatTableData = {
               text: "Course Certificate — Science of Exercise, University of Colorado Boulder (Coursera, 2019).",
             }],
             ["Finance", "Analysis and valuation, CFI (2024)", true, "Accounting, modeling, and corporate finance — fifteen courses."],
+            ["Science", "AP/College, Khan Academy (2022–present)", true, "Self-paced study, mastery-tested — foundation to organic chemistry; structured but uncredentialed."],
           ],
         },
         {
-          category: "Informal (online training)",
+          category: "Informal (remote training)",
           metrics: [
-            ["Profile", "Practitioner health courses and open-platform science", false, "Uncredentialed by design — specialist courses under named practitioners, and open science study validated when the problem yields."],
+            ["Profile", "Practitioner-led health training", false, "Uncredentialed by design — specialist courses under named practitioners, validated in practice rather than by accreditation."],
             ["Nutrition", "Nutrition biochemistry, Dr Bryan Walsh (2021)", true, {
               image: "/credentials/nutrition.jpg",
               alt: "Certificate of Training in Nutritional Biochemistry, Metabolic Fitness, 2021",
@@ -103,7 +104,6 @@ const EDUCATION: StatTableData = {
               text: "Certification of Excellence — Functional Blood Chemistry Analysis Mastery (FBCA), ODX Academy (2021).",
             }],
             ["Longevity", "Early medical, Dr Peter Attia (2023)", true, "Evidence-based longevity medicine."],
-            ["Science", "AP/College, Khan Academy (2022–present)", true, "Self-paced study — foundation to organic chemistry."],
           ],
         },
       ],
