@@ -10,7 +10,8 @@ import Tooltip from "./Tooltip";
 // A metric is [term, value, supportive?, tooltip?].
 // "supportive" marks a component of a composite primary (italic + indented).
 // Term signaling follows DESIGN_SPEC §4.7: primary = bold (dotted when it
-// carries a description); supportive = dotted definition; artifact = cardlink.
+// carries a description); supportive = dotted definition, or unmarked when its
+// value is self-describing; artifact = cardlink.
 // Group bands are disclosure buttons (ARIA pattern — <details> is invalid
 // inside tables): click collapses/expands the group, chevron mirrors the
 // infobox. Default expanded — collapsing is the reader's optimization.
@@ -138,7 +139,7 @@ export function StatTable({
                                   </Tooltip>
                                 )
                               ) : supportive ? (
-                                <u>{term}</u>
+                                term
                               ) : (
                                 <strong>{term}</strong>
                               )}

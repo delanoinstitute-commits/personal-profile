@@ -116,20 +116,29 @@ const SKILLS: StatTableData = {
   groups: [
     {
       domain: "Technical",
-      label: "Demonstrations (Performance)",
+      label: "Demonstration (Performance)",
       rows: [
         {
-          category: "Symbolic (structural design)",
+          category: "Artifactual (structural design)",
           metrics: [
-            ["Taxonomy", "knowledge maps — fitness, learning, life (2010s–)", false, "Distilling a domain into its underlying structure."],
-            ["Learning experience", "curricula, courses, apprenticeships (2018–)", false, "Designing the path from novice to practitioner."],
-            ["Environment", "gyms, studios, daily routines (2010s–)", false, "Designing the spaces and schedules that carry practice."],
+            ["Profile", "Applied taxonomist, designer, and strategist", false, "The composite of my structural design skill — mapping domains into taxonomies, architecting products and systems from them, and analyzing performance against them."],
+            ["Classification", "Knowledge domain mapping, distillation, and standardization", true],
+            ["Architecture", "Product, protocol, content, and systems design", true],
+            ["Analysis", "Performance tracking, benchmarking, planning, and programming", true],
           ],
         },
         {
-          category: "Somatic (movement mastery)",
+          category: "Digital (multi-modal publishing)",
           metrics: [
-            ["Gymnastics", "strength training — rings, levers, handstands (2016–)", false, "Bodyweight strength practice, lately deconstructed into a complete physical-development program."],
+            ["Profile", "On-demand educational content creator", false, "The composite of my publishing skill — designing, producing, editing, and shipping educational content across media."],
+            ["Production", "Content design, delivery, editing, and publishing", true],
+          ],
+        },
+        {
+          category: "Spatial (functional design)",
+          metrics: [
+            ["Profile", "Behavior-led spatial designer", false, "The composite of my spatial skill — laying out homes and service facilities so the environment itself steers behavior."],
+            ["Planning", "Interior (home) and industrial (services) layout design and user-flow optimization", true],
           ],
         },
       ],
@@ -141,17 +150,18 @@ const SKILLS: StatTableData = {
         {
           category: "Relational (live transmission)",
           metrics: [
-            ["Coaching", "private & live-in — entrepreneurs, actors, billionaires (2010s–)", false, "One-on-one and embedded whole-household behavior change."],
-            ["Instruction", "classes & lecturing — spinning, CrossFit, ETA College (2008–)", false, "Teaching practice directly, and teaching trainers one level up."],
-            ["Facilitation", "workshops & retreats (2017–)", false, "Multi-day group programs and corporate sessions."],
-            ["Speaking", "conferences & events (2017–)", false, "Stage teaching at industry events."],
+            ["Profile", "Situational teacher, instructor, facilitator, and trainer", false, "The composite of my live transmission skill — teaching theory and instructing practice, one-on-one to many, and raising students into teachers and instructors."],
+            ["Teaching", "Theoretical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
+            ["Instruction", "Practical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
+            ["Facilitation", "Teaching students/clients to become teachers", true],
+            ["Training", "Instructing students/clients to become instructors", true],
           ],
         },
         {
-          category: "Organisational (project orchestration)",
+          category: "Organizational (project orchestration)",
           metrics: [
-            ["Production", "crews, budgets, post-production (2017–2025)", false, "Hiring and running the machinery around a shoot — directing on set when the project demands it."],
-            ["Events", "10X programs — Barcelona, Italy, Estonia, Croatia, Malaysia (2017–2020)", false, "Live fitness experiments and multi-day events, including one that trained 200+ people in Sardinia."],
+            ["Profile", "Project-based events director", false, "The composite of my orchestration skill — planning, staffing, and running large-scale productions, experiments, and interventions from brief to report."],
+            ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true],
           ],
         },
       ],
