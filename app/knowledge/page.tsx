@@ -148,13 +148,20 @@ const SKILLS: StatTableData = {
       label: "Testimony (Reputation)",
       rows: [
         {
-          category: "Relational (live transmission)",
+          category: "Pedagogical (live transmission)",
           metrics: [
             ["Profile", "Situational teacher, instructor, facilitator, and trainer", false, "The composite of my live transmission skill — teaching theory and instructing practice, one-on-one to many, and raising students into teachers and instructors."],
             ["Teaching", "Theoretical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
             ["Instruction", "Practical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
             ["Facilitation", "Teaching students/clients to become teachers", true],
             ["Training", "Instructing students/clients to become instructors", true],
+          ],
+        },
+        {
+          category: "Editorial (educational profiling)",
+          metrics: [
+            ["Profile", "Expert profiler and method producer", false, "The composite of my profiling skill — sitting with living experts, or reading printed bodies of knowledge, to surface the knowledge unique to them and produce it into methods they can teach."],
+            ["Elicitation", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true],
           ],
         },
         {
