@@ -198,12 +198,12 @@ const WORKS: StatTableData = {
             [
               "10X",
               [
-                "A systematic upgrade to Body by Science’s Big-5 protocol, available as a ",
+                "A short, low-frequency muscle-centric total fitness exercise protocol, available as a free ",
                 <WikiLink key="yt" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">YouTube course</WikiLink>,
                 ", ",
                 <WikiLink key="quest" href="https://www.mindvalley.com/10x/quest">Mindvalley quest</WikiLink>,
                 ", and ",
-                <WikiLink key="cert" href="https://www.mindvalley.com/certs/10x">certification</WikiLink>,
+                <WikiLink key="cert" href="https://www.mindvalley.com/certs/10x">coaching certification</WikiLink>,
               ],
               true,
             ],
