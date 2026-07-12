@@ -186,19 +186,63 @@ const WORKS: StatTableData = {
         {
           category: "Methodologies (design principles)",
           metrics: [
-            ["Profile", "Creator of the IID and RBG design methodologies", false, "The generative layer beneath everything else I make: IID structures knowledge, RBG transforms people into self-sufficient users. Every design below descends from these two."],
-            ["Taxonomy", "A universal information-integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
-            ["RBG", "A universal design framework that turns prospects into educated, self-sufficient users of any value proposition", true],
+            ["Profile", "Creator of knowledge and learning design methodologies", false, "The generative layer beneath everything else I make: IID structures knowledge, RBG transforms people into self-sufficient users. Every design below descends from these two."],
+            ["IID", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
+            ["RBG", "A universal design framework that transforms prospects into educated, self-sufficient users of any value proposition", true],
           ],
         },
         {
           category: "Designs (published artifacts)",
           metrics: [
-            ["Profile", "Creator of 10X, BodyFirst, MSP, and Profiler, among others", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
-            ["10X", "A systematic upgrade to Body by Science's Big-5 protocol, available as a free YouTube course, Mindvalley quest, and certification", true],
-            ["BodyFirst", "A universal basic-fitness program taught using my RBG framework, available as a Mindvalley quest", true],
-            ["MSP", "A universal exercise-mastery system taught using my IID (taxonomy) design process, available as free online video courses and PDFs", true],
-            ["Profiler", "A universal personal-profiling framework built on IID principles, available as a website and app", true],
+            ["Profile", "Creator of 10X, BodyFirst, MSP, and Profiler", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
+            [
+              "10X",
+              [
+                "A systematic upgrade to Body by Science’s Big-5 protocol, available as a ",
+                <WikiLink key="yt" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">YouTube course</WikiLink>,
+                ", ",
+                <WikiLink key="quest" href="https://www.mindvalley.com/10x/quest">Mindvalley quest</WikiLink>,
+                ", and ",
+                <WikiLink key="cert" href="https://www.mindvalley.com/certs/10x">certification</WikiLink>,
+              ],
+              true,
+            ],
+            [
+              "BodyFirst",
+              [
+                "A universal basic-fitness program taught using my RBG framework, available as a ",
+                <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
+              ],
+              true,
+            ],
+            [
+              "TVF",
+              [
+                "The Values Factor program co-authored with Dr. John Demartini using my RBG framework, available on ",
+                <WikiLink key="mv" href="https://www.mindvalley.com/values">Mindvalley</WikiLink>,
+              ],
+              true,
+              undefined,
+              "https://youtube.com/shorts/li3cYZKc9zw",
+            ],
+            [
+              "MSP",
+              [
+                "A universal exercise-mastery system taught using my IID design process, available as ",
+                <WikiLink key="yt" href="https://www.youtube.com/@LorenzoDelano">YouTube courses</WikiLink>,
+                " and PDFs",
+              ],
+              true,
+            ],
+            [
+              "Profiler",
+              [
+                "A universal personal-profiling framework built using IID principles, available as a website (",
+                <WikiLink key="site" href="/">like this one</WikiLink>,
+                ") or PDF",
+              ],
+              true,
+            ],
           ],
         },
       ],

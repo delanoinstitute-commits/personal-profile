@@ -1,17 +1,18 @@
 "use client";
 
-import { Fragment, useState } from "react";
+import { Fragment, ReactNode, useState } from "react";
 import Chevron from "./Chevron";
 import Tooltip from "./Tooltip";
+import WikiLink from "./WikiLink";
 
 // A tabled standard shared across data pages (Health, Identity, …).
 // Each table holds grouped sub-sections; a group is one accent header row
 // (DOMAIN | instrument) followed by category rows (category | metrics).
-// A metric is [term, value, supportive?, tooltip?].
+// A metric is [term, value, supportive?, tooltip?, href?].
 // "supportive" marks a component of a composite primary (italic + indented).
-// Term signaling follows DESIGN_SPEC §4.7: primary = bold (dotted when it
-// carries a description); supportive = dotted definition, or unmarked when its
-// value is self-describing; artifact = cardlink.
+// Term signaling follows DESIGN_SPEC §4.7: every term is bold for legibility;
+// a tooltip adds a dotted underline (hover for a definition); an href makes the
+// term a blue link. The value may be a string or a rich node (inline links).
 // Group bands are disclosure buttons (ARIA pattern — <details> is invalid
 // inside tables): click collapses/expands the group, chevron mirrors the
 // infobox. Default expanded — collapsing is the reader's optimization.
@@ -20,11 +21,16 @@ import Tooltip from "./Tooltip";
 export type MetricTooltip =
   | string
   | { text?: string; image?: string; alt?: string; portrait?: boolean };
+// A value is a string or rich node. For inline links, pass an array of nodes
+// with an explicit key on each element (strings are exempt) — a bare multi-child
+// fragment would trip React's key validation once serialized across the RSC
+// boundary, which strips the compiler's "validated" flag.
 export type Metric = [
   term: string,
-  value: string,
+  value: ReactNode,
   supportive?: boolean,
   tooltip?: MetricTooltip,
+  href?: string,
 ];
 export type Row = { category: string; metrics: Metric[] };
 export type Group = { domain: string; label: string; rows: Row[] };
@@ -106,9 +112,9 @@ export function StatTable({
                   <th scope="row">{labelParts(row.category)}</th>
                   <td>
                     <ul className="stat-metrics">
-                      {row.metrics.map(([term, value, supportive, tooltip]) => (
+                      {row.metrics.map(([term, value, supportive, tooltip, href], i) => (
                         <li
-                          key={term || value}
+                          key={term || i}
                           className={supportive ? "stat-supportive" : undefined}
                         >
                           {term ? (
@@ -138,8 +144,10 @@ export function StatTable({
                                     {term}
                                   </Tooltip>
                                 )
-                              ) : supportive ? (
-                                term
+                              ) : href ? (
+                                <strong>
+                                  <WikiLink href={href}>{term}</WikiLink>
+                                </strong>
                               ) : (
                                 <strong>{term}</strong>
                               )}
