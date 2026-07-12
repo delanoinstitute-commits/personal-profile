@@ -186,17 +186,19 @@ const WORKS: StatTableData = {
         {
           category: "Methodologies (design principles)",
           metrics: [
-            ["Profile", "Design principles for measured transformation and knowledge structure", false, "The generative layer beneath everything else I make — the principles that produce every method, system, and product downstream. RBG engineers rapid, measured transformation; taxonomical design gives any domain its structure."],
-            ["RBG", "Rapid Benchmark Graduates — treats teaching as applied science: benchmark the outcome, calculate the learner's gap, and close it in a countable number of feedback cycles until they graduate self-sufficient", true],
-            ["Taxonomical design", "Principles for giving any domain its structure — mapping a field's concepts, distilling them to essentials, and standardizing them into a navigable system", true],
+            ["Profile", "Creator of the IID and RBG design methodologies", false, "The generative layer beneath everything else I make: IID structures knowledge, RBG transforms people into self-sufficient users. Every design below descends from these two."],
+            ["Taxonomy", "A universal information-integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
+            ["RBG", "A universal design framework that turns prospects into educated, self-sufficient users of any value proposition", true],
           ],
         },
         {
-          category: "Originals (proven in use)",
+          category: "Designs (published artifacts)",
           metrics: [
-            ["Models", "health (2020–) · LX design (2018–) · self-mastery (2026) · knowledge (2026)", false, "Frameworks that structure a domain — balance/integrity/capacity; learning-experience design; train/eat/finance/learn/mind/plan; and the knowing/doing/making framework this page demonstrates."],
-            ["Books", "Health Development (forthcoming)", false, "A book-length framework defining health as functional integrity."],
-            ["Media", "kung-fu shorts (2006) · 10X series, YouTube (2020) · five taxonomical courses (2026)", false, "Self-authored productions — from first films to open-published course series."],
+            ["Profile", "Creator of 10X, BodyFirst, MSP, and Profiler, among others", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
+            ["10X", "A systematic upgrade to Body by Science's Big-5 protocol, available as a free YouTube course, Mindvalley quest, and certification", true],
+            ["BodyFirst", "A universal basic-fitness program taught using my RBG framework, available as a Mindvalley quest", true],
+            ["MSP", "A universal exercise-mastery system taught using my IID (taxonomy) design process, available as free online video courses and PDFs", true],
+            ["Profiler", "A universal personal-profiling framework built on IID principles, available as a website and app", true],
           ],
         },
       ],
