@@ -184,9 +184,16 @@ const WORKS: StatTableData = {
       label: "Portfolio (Artifacts)",
       rows: [
         {
+          category: "Methodologies (design principles)",
+          metrics: [
+            ["Profile", "Design principles for measured transformation and knowledge structure", false, "The generative layer beneath everything else I make — the principles that produce every method, system, and product downstream. RBG engineers rapid, measured transformation; taxonomical design gives any domain its structure."],
+            ["RBG", "Rapid Benchmark Graduates — treats teaching as applied science: benchmark the outcome, calculate the learner's gap, and close it in a countable number of feedback cycles until they graduate self-sufficient", true],
+            ["Taxonomical design", "Principles for giving any domain its structure — mapping a field's concepts, distilling them to essentials, and standardizing them into a navigable system", true],
+          ],
+        },
+        {
           category: "Originals (proven in use)",
           metrics: [
-            ["Methods", "RBG — rapid mastery (2017–) · taxonomy design (2026)", false, "Repeatable procedures: benchmarking a discipline's graduates; a system for designing taxonomies, informed by Lambe's Organising Knowledge."],
             ["Models", "health (2020–) · LX design (2018–) · self-mastery (2026) · knowledge (2026)", false, "Frameworks that structure a domain — balance/integrity/capacity; learning-experience design; train/eat/finance/learn/mind/plan; and the knowing/doing/making framework this page demonstrates."],
             ["Books", "Health Development (forthcoming)", false, "A book-length framework defining health as functional integrity."],
             ["Media", "kung-fu shorts (2006) · 10X series, YouTube (2020) · five taxonomical courses (2026)", false, "Self-authored productions — from first films to open-published course series."],
