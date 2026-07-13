@@ -547,7 +547,7 @@ p.stat-hint {
 }
 
 .nested-band-toggle .nested-gloss {
-  color: var(--muted);
+  color: inherit;
 }
 
 /* Category row: gray, italic label, chevron on the right. */
