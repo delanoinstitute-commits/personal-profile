@@ -88,6 +88,7 @@ export function StatOutline({ groups }: StatTableData) {
             <span className="outline-domain">{group.domain}</span>{" "}
             <span className="heading-paren">· {group.label}</span>
           </h3>
+          <div className="outline-body">
           {group.rows.map((row, i) => {
             // The composite lead is the one non-supportive metric; its term is
             // the section label (Student / Practitioner / Creator / Roles).
@@ -114,6 +115,7 @@ export function StatOutline({ groups }: StatTableData) {
               </div>
             );
           })}
+          </div>
         </section>
       ))}
     </div>

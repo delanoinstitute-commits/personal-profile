@@ -512,7 +512,15 @@ p.stat-hint {
 }
 
 .stat-outline .outline-group {
-  margin-top: 1.4rem;
+  margin-top: 1.75rem;
+}
+
+/* Band content is indented under its teal H3 and carries a hairline rail, so
+   nesting is spatial (not only typographic) and each band reads as one chunk. */
+.stat-outline .outline-body {
+  padding-left: 0.95rem;
+  border-left: 2px solid var(--accent-soft);
+  margin-top: 0.2rem;
 }
 
 /* Band heading (H3): bold italic in the accent — a color ladder (black H2 →

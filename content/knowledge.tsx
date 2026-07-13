@@ -250,7 +250,7 @@ export const WORKS: StatTableData = {
         {
           category: "Gigs (part-time temp)",
           metrics: [
-            ["Roles", "Sales, operations, management, and coaching", false],
+            ["Roles", "Sales, operations, management, and coaching", false, "Part-time and temporary work through my teens — retail, store operations, and my first coaching."],
             ["Magician vendor", "The Magic Store, 6 months, 2003 (age 15)", true],
             ["Sales assistant", "Sidewalk Surfer, 6 months, 2003 (age 15)", true],
             ["Store operator", "DVD World, 6 months, 2005 (age 17)", true],
@@ -261,7 +261,7 @@ export const WORKS: StatTableData = {
         {
           category: "Employment (full-time employee)",
           metrics: [
-            ["Roles", "Teaching, management, instruction, and marketing", false],
+            ["Roles", "Teaching, management, instruction, and marketing", false, "Full-time employed roles — language teaching, hospitality management, personal training, and product marketing."],
             ["English tutor", "St. John’s FLS, China, 6 months, 2004 (age 17)", true],
             ["Cafe manager", "Java Cafe, 2 years, 2007–2008 (age 20)", true],
             ["Personal trainer", "Ballistix CrossFit, 2 years, 2009–2010 (age 21)", true],
@@ -271,7 +271,7 @@ export const WORKS: StatTableData = {
         {
           category: "Partnerships (full-time co-operator)",
           metrics: [
-            ["Roles", "Co-founding and operating ventures", false],
+            ["Roles", "Co-founding and operating ventures", false, "Co-owned ventures I helped build and run — a gym studio, an events company, and a coaching company."],
             ["Gym studio", "Quantum Physiques, 3 years, 2011–2013 (age 22)", true],
             ["Events company", "TPBR, 1 year, 2014 (age 26)", true],
             ["Coaching company", "10X Fitness, 5 years, 2020–2025 (age 32)", true],
@@ -280,7 +280,7 @@ export const WORKS: StatTableData = {
         {
           category: "Solopreneurships (full-time operator)",
           metrics: [
-            ["Roles", "Founding and running agencies", false],
+            ["Roles", "Founding and running agencies", false, "Solely-owned agencies I founded and operated — a marketing agency, then a design agency."],
             ["Marketing agency", "ARTrepreneurs, 2 years, 2015–2016 (age 27)", true],
             ["Design agency", "Benchmark, 7 years, 2018–2024 (age 36)", true],
           ],
@@ -288,7 +288,7 @@ export const WORKS: StatTableData = {
         {
           category: "Self-employment (project-based contractor)",
           metrics: [
-            ["Roles", "Independent consulting and interventions", false],
+            ["Roles", "Independent consulting and interventions", false, "Project-based contracting under my own name — lifestyle interventions and design consulting."],
             ["Lifestyle interventions", "Lorenzo Delano, 6 years, 2019– (age 31)", true],
             ["Design consulting", "Lorenzo Delano, 2 years, 2024– (age 37)", true],
           ],
