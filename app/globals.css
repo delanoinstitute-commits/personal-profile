@@ -601,6 +601,15 @@ p.stat-hint {
   margin-top: 0.25rem;
 }
 
+/* Structured tooltip card: stacked labelled lines (see TipLine). */
+.tip-line {
+  display: block;
+}
+
+.tip-line + .tip-line {
+  margin-top: 0.4rem;
+}
+
 /* ===================================================================
    Timeline (biography) — §4.5
    =================================================================== */

@@ -19,7 +19,7 @@ import MetricList from "./MetricList";
 // A tooltip is either a plain gloss or a rich card (credential image + caption).
 export type MetricTooltip =
   | string
-  | { text?: string; image?: string; alt?: string; portrait?: boolean };
+  | { text?: ReactNode; image?: string; alt?: string; portrait?: boolean };
 // A value is a string or rich node. For inline links, pass an array of nodes
 // with an explicit key on each element (strings are exempt) — a bare multi-child
 // fragment would trip React's key validation once serialized across the RSC

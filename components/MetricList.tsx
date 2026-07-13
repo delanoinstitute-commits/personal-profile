@@ -10,20 +10,29 @@ import type { Metric } from "./StatTable";
 //    accordion). Term signaling (DESIGN_SPEC §4.7): every term is bold; a
 //    tooltip adds a dotted underline; an href makes it a blue link.
 
-function MetricInline({ metric }: { metric: Metric }): ReactNode {
+function MetricInline({
+  metric,
+  boldTooltip = false,
+}: {
+  metric: Metric;
+  boldTooltip?: boolean;
+}): ReactNode {
   const [term, value, supportive, tooltip, href] = metric;
   if (!term) return value;
+  // A tooltipped term is bold+dotted when not supportive, or when boldTooltip
+  // is set (the accordion, where every entry term is bold); otherwise dotted.
+  const variant = !supportive || boldTooltip ? "bold" : "dotted";
   return (
     <>
       {tooltip ? (
         typeof tooltip === "string" ? (
-          <Tooltip content={tooltip} variant={supportive ? "dotted" : "bold"}>
+          <Tooltip content={tooltip} variant={variant}>
             {term}
           </Tooltip>
         ) : (
           <Tooltip
             content={tooltip.text}
-            variant={supportive ? "dotted" : "bold"}
+            variant={variant}
             media={
               tooltip.image
                 ? { src: tooltip.image, alt: tooltip.alt ?? term, portrait: tooltip.portrait }
@@ -60,14 +69,14 @@ export default function MetricList({
       <div className="metric-rail">
         {lead && (
           <div className="metric-lead">
-            <MetricInline metric={lead} />
+            <MetricInline metric={lead} boldTooltip />
           </div>
         )}
         {components.length > 0 && (
           <ul className="metric-components">
             {components.map((m, i) => (
               <li key={m[0] || i} className="stat-supportive">
-                <MetricInline metric={m} />
+                <MetricInline metric={m} boldTooltip />
               </li>
             ))}
           </ul>

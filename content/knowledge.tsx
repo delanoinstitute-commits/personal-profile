@@ -1,4 +1,5 @@
 import WikiLink from "@/components/WikiLink";
+import TipLine from "@/components/TipLine";
 import type { StatTableData } from "@/components/StatTable";
 import type { Reference } from "@/components/References";
 
@@ -320,6 +321,22 @@ export const WORKS: StatTableData = {
                 "), US, 5 years, 2020–2025 (age 32)",
               ],
               true,
+              {
+                text: [
+                  <TipLine key="structure" label="Structure —">
+                    25% co-founder with Vishen Lakhiani; he brought the clients and platforms, I ran everything else.
+                  </TipLine>,
+                  <TipLine key="ran" label="Ran —">
+                    the 10X research experiments (Malaysia, 6 weeks–3 months), the three-week workshops at Mindvalley University (Barcelona, Italy, Estonia), and coaching for entrepreneurs and celebrities.
+                  </TipLine>,
+                  <TipLine key="revenue" label="Revenue —">
+                    10X Quest royalties (7% via Mindvalley), coach certification, coaching, and online products.
+                  </TipLine>,
+                  <TipLine key="exit" label="Exit —">
+                    sold my stake in 2025 over diverging visions for the company.
+                  </TipLine>,
+                ],
+              },
             ],
           ],
         },
