@@ -251,7 +251,7 @@ export const WORKS: StatTableData = {
         {
           category: "First jobs (part-time employee)",
           metrics: [
-            ["", "Earned early independence through varied retail, sales, and coaching work", false],
+            ["", "I earned my independence young through retail, sales, and coaching work", false],
             ["Magician vendor", "The Magic Store, Pretoria, 6 months, 2003 (age 15)", true],
             ["Sales assistant", "Sidewalk Surfer, Pretoria, 6 months, 2003 (age 15)", true],
             ["Store operator", "DVD World, Pretoria, 6 months, 2005 (age 17)", true],
@@ -262,7 +262,7 @@ export const WORKS: StatTableData = {
         {
           category: "Employment (full-time employee)",
           metrics: [
-            ["", "Holds diverse roles capably, but outgrows them and moves up or out", false],
+            ["", "I master any role, then outgrow it and move up or out", false],
             [
               "English tutor",
               [
@@ -293,7 +293,7 @@ export const WORKS: StatTableData = {
         {
           category: "Partnerships (full-time co-operator)",
           metrics: [
-            ["", "Co-founds and co-runs ventures, sharing ownership with trusted partners", false],
+            ["", "I build ventures alongside partners I trust, sharing the ownership", false],
             ["Gym studio", "Quantum Physiques (w/ Brad Openshaw), Pretoria, 3 years, 2011–2013 (age 23)", true],
             ["Events company", "The Physical Breakthrough Retreat (w/ Jelena Lakic), South Africa (nationwide), 1 year, 2014 (age 26)", true],
             ["Coaching company", "10X Fitness (w/ Vishen Lakhiani), global, 5 years, 2020–2025 (age 32)", true],
@@ -302,7 +302,7 @@ export const WORKS: StatTableData = {
         {
           category: "Sole ventures (full-time operator)",
           metrics: [
-            ["", "Builds and single-handedly runs his own marketing and design agencies", false],
+            ["", "I build and run my own agencies single-handedly, owning every part", false],
             [
               "Marketing agency",
               [
@@ -324,7 +324,7 @@ export const WORKS: StatTableData = {
         {
           category: "Self-employment (project-based contractor)",
           metrics: [
-            ["", "Contracts independently under his own name on self-chosen projects", false],
+            ["", "I contract independently under my own name, on projects I choose", false],
             [
               "Lifestyle interventions",
               [
