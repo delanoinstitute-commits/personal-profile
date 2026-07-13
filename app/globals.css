@@ -601,6 +601,12 @@ p.stat-hint {
   margin-top: 0.25rem;
 }
 
+/* Tooltip-trigger terms are <button>s; inherit slant so a tooltipped entry
+   label stays italic like its siblings (Tailwind preflight resets it). */
+.nested-content button {
+  font-style: inherit;
+}
+
 /* ===================================================================
    Timeline (biography) — §4.5
    =================================================================== */
