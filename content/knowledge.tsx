@@ -183,8 +183,8 @@ export const WORKS: StatTableData = {
           category: "Methodologies (design principles)",
           metrics: [
             ["", "Invents the design methods that everything he builds runs on", false],
-            ["IID", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
-            ["RBG", "A universal design framework that transforms prospects into educated, self-sufficient users of any value proposition", true],
+            ["Taxonomy", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
+            ["RBG", "A universal (marketing, product, and learning) design framework that transforms prospects into educated, self-sufficient users of any value proposition", true],
           ],
         },
         {
