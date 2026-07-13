@@ -212,7 +212,7 @@ export const WORKS: StatTableData = {
               true,
             ],
             [
-              "TVF",
+              "ValuesFactor",
               [
                 "The Values Factor program co-authored with Dr. John Demartini using my RBG framework, available on ",
                 <WikiLink key="mv" href="https://www.mindvalley.com/values">Mindvalley</WikiLink>,
@@ -224,9 +224,10 @@ export const WORKS: StatTableData = {
             [
               "MSP",
               [
-                "A universal exercise-mastery system taught using my IID design process, available as ",
+                "A universal exercise-mastery (mobility, stability, and power) system taught using my IID design process, available as ",
                 <WikiLink key="yt" href="https://www.youtube.com/@LorenzoDelano">YouTube courses</WikiLink>,
-                " and PDFs",
+                " and ",
+                <WikiLink key="pdf" href="https://drive.google.com/file/d/1DlHZfG5Nv2TS2Y4dMQwufA_5hnMGFqGC/view">PDFs</WikiLink>,
               ],
               true,
             ],
@@ -248,7 +249,7 @@ export const WORKS: StatTableData = {
       label: "Work Roles",
       rows: [
         {
-          category: "Gigs (part-time temp)",
+          category: "Gigs (part-time employee)",
           metrics: [
             ["", "Earned early independence through varied retail, sales, and coaching work", false],
             ["Magician vendor", "The Magic Store, Pretoria, 6 months, 2003 (age 15)", true],
@@ -293,9 +294,9 @@ export const WORKS: StatTableData = {
           category: "Partnerships (full-time co-operator)",
           metrics: [
             ["", "Co-founds and co-runs ventures, sharing ownership with trusted partners", false],
-            ["Gym studio", "Quantum Physiques, Pretoria, 3 years, 2011–2013 (age 22)", true],
-            ["Events company", "The Physical Breakthrough Retreat, South Africa (nationwide), 1 year, 2014 (age 26)", true],
-            ["Coaching company", "10X Fitness, global, 5 years, 2020–2025 (age 32)", true],
+            ["Gym studio", "Quantum Physiques (w/ Brad Openshaw), Pretoria, 3 years, 2011–2013 (age 22)", true],
+            ["Events company", "The Physical Breakthrough Retreat (w/ Jelena Lakic), South Africa (nationwide), 1 year, 2014 (age 26)", true],
+            ["Coaching company", "10X Fitness (w/ Vishen Lakhiani), global, 5 years, 2020–2025 (age 32)", true],
           ],
         },
         {
