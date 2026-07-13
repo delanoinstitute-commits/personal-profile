@@ -214,12 +214,12 @@ export const WORKS: StatTableData = {
             [
               "ValuesFactor",
               [
-                "The Values Factor program co-authored with Dr. John Demartini using my RBG framework, available on ",
+                "The Values Factor program ",
+                <WikiLink key="test" href="https://youtube.com/shorts/li3cYZKc9zw">co-authored</WikiLink>,
+                " with Dr. John Demartini using my RBG framework, available on ",
                 <WikiLink key="mv" href="https://www.mindvalley.com/values">Mindvalley</WikiLink>,
               ],
               true,
-              undefined,
-              "https://youtube.com/shorts/li3cYZKc9zw",
             ],
             [
               "MSP",
@@ -267,11 +267,11 @@ export const WORKS: StatTableData = {
               "English tutor",
               [
                 <WikiLink key="sjz" href="https://www.sjzfls.com/">St. John&rsquo;s FLS</WikiLink>,
-                ", Shijiazhuang, China, 6 months, 2004 (age 17)",
+                ", Shijiazhuang, China, 6 months, 2004 (age 16)",
               ],
               true,
             ],
-            ["Cafe manager", "Java Cafe, Pretoria, 2 years, 2007–2008 (age 20)", true],
+            ["Cafe manager", "Java Cafe, Pretoria, 2 years, 2007–2008 (age 19)", true],
             [
               "Personal trainer",
               [
@@ -294,7 +294,7 @@ export const WORKS: StatTableData = {
           category: "Partnerships (full-time co-operator)",
           metrics: [
             ["", "Co-founds and co-runs ventures, sharing ownership with trusted partners", false],
-            ["Gym studio", "Quantum Physiques (w/ Brad Openshaw), Pretoria, 3 years, 2011–2013 (age 22)", true],
+            ["Gym studio", "Quantum Physiques (w/ Brad Openshaw), Pretoria, 3 years, 2011–2013 (age 23)", true],
             ["Events company", "The Physical Breakthrough Retreat (w/ Jelena Lakic), South Africa (nationwide), 1 year, 2014 (age 26)", true],
             ["Coaching company", "10X Fitness (w/ Vishen Lakhiani), global, 5 years, 2020–2025 (age 32)", true],
           ],
@@ -315,7 +315,7 @@ export const WORKS: StatTableData = {
               "Design agency",
               [
                 <WikiLink key="bd" href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Benchmark Designs</WikiLink>,
-                ", US (mostly), 7 years, 2018–2024 (age 36)",
+                ", US (mostly), 7 years, 2018–2024 (age 30)",
               ],
               true,
             ],
@@ -337,7 +337,7 @@ export const WORKS: StatTableData = {
               "Design consulting",
               [
                 <WikiLink key="ld" href="/">Lorenzo Delano</WikiLink>,
-                ", global (mostly US), 2 years, 2024– (age 37)",
+                ", global (mostly US), 2 years, 2024– (age 36)",
               ],
               true,
             ],
