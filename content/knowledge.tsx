@@ -294,9 +294,33 @@ export const WORKS: StatTableData = {
           category: "Partnerships (full-time co-operator)",
           metrics: [
             ["", "I build ventures alongside partners I trust, sharing the ownership", false],
-            ["Gym studio", "Quantum Physiques (w/ Brad Openshaw), PTA, 3 years, 2011–2013 (age 23)", true],
-            ["Events company", "The PB Retreat (w/ Jelena Lakic), SA (nationwide), 1 year, 2014 (age 26)", true],
-            ["Coaching company", "10X Fitness (w/ Vishen Lakhiani), US, 5 years, 2020–2025 (age 32)", true],
+            [
+              "Gym studio",
+              [
+                "Quantum Physiques (w/ ",
+                <WikiLink key="brad" href="https://movefreely.co.za/">Brad Openshaw</WikiLink>,
+                "), PTA, 3 years, 2011–2013 (age 23)",
+              ],
+              true,
+            ],
+            [
+              "Events company",
+              [
+                "The PB Retreat (w/ ",
+                <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
+                "), SA (nationwide), 1 year, 2014 (age 26)",
+              ],
+              true,
+            ],
+            [
+              "Coaching company",
+              [
+                "10X Fitness (w/ ",
+                <WikiLink key="vishen" href="https://en.wikipedia.org/wiki/Vishen_Lakhiani">Vishen Lakhiani</WikiLink>,
+                "), US, 5 years, 2020–2025 (age 32)",
+              ],
+              true,
+            ],
           ],
         },
         {
