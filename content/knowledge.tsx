@@ -6,7 +6,8 @@ import type { Reference } from "@/components/References";
 // outline experiment (/knowledge-alt), so the two stay verbatim in sync.
 // See KNOWLEDGE_SPEC.md: Education (theory — knowing), Skills (practice —
 // doing), Works (production — making), each split by the individual/social
-// locus axis. "—" = to be cataloged.
+// locus axis. The composite lead of each cluster is labelled per section —
+// Student / Practitioner / Creator / Roles. "—" = to be cataloged.
 
 export const EDUCATION: StatTableData = {
   title: "Education",
@@ -18,7 +19,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Formal (in-person schooling)",
           metrics: [
-            ["Profile", "Primary education with tertiary language distinctions", false, "The composite of my guided schooling — seven primary grades in public school, then privately tutored Mandarin to international distinction."],
+            ["Student", "Primary education with tertiary language distinctions", false, "The composite of my guided schooling — seven primary grades in public school, then privately tutored Mandarin to international distinction."],
             ["Grades (1–3)", "Laerskool Muldersdrif (1994–1996)", true, "Lower primary."],
             ["Grades (4–7)", "Laerskool Hoeveld, Evander (1997–2000)", true, "Upper primary — the last of continuous schooling."],
             ["Mandarin", "Pretoria Chinese School (2005–2008)", true, {
@@ -37,7 +38,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Non-formal (in-person training)",
           metrics: [
-            ["Profile", "Teacher-centric tertiary vocational education", false, "All four qualifications are transmission roles — tutor, instructor, coach, learning designer — the teaching thread running through everything since."],
+            ["Student", "Teacher-centric tertiary vocational education", false, "All four qualifications are transmission roles — tutor, instructor, coach, learning designer — the teaching thread running through everything since."],
             ["Tutor", "TEFL, Language Link (2006)", true, {
               image: "/credentials/tefl.jpg",
               alt: "Preliminary Certificate in Teaching English as a Foreign Language, Southern African TEFL Training Institute, 2006",
@@ -67,7 +68,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Non-formal (remote schooling)",
           metrics: [
-            ["Profile", "Secondary education with specialist electives", false, "Self-elected remote study — correspondence secondary schooling, then university, institute, and open-platform coursework as each domain demanded."],
+            ["Student", "Secondary education with specialist electives", false, "Self-elected remote study — correspondence secondary schooling, then university, institute, and open-platform coursework as each domain demanded."],
             ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling — the last formal enrolment."],
             ["Philosophy", "Critical thinking, U. of Auckland (2018)", true, {
               image: "/credentials/philosophy.jpg",
@@ -87,7 +88,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Informal (remote training)",
           metrics: [
-            ["Profile", "Practitioner-led health training", false, "Uncredentialed by design — specialist courses under named practitioners, validated in practice rather than by accreditation."],
+            ["Student", "Practitioner-led health training", false, "Uncredentialed by design — specialist courses under named practitioners, validated in practice rather than by accreditation."],
             ["Nutrition", "Nutrition biochemistry, Dr Bryan Walsh (2021)", true, {
               image: "/credentials/nutrition.jpg",
               alt: "Certificate of Training in Nutritional Biochemistry, Metabolic Fitness, 2021",
@@ -116,7 +117,7 @@ export const SKILLS: StatTableData = {
         {
           category: "Artifactual (structural design)",
           metrics: [
-            ["Profile", "Applied taxonomist, designer, and strategist", false, "The composite of my structural design skill — mapping domains into taxonomies, architecting products and systems from them, and analyzing performance against them."],
+            ["Practitioner", "Applied taxonomist, designer, and strategist", false, "The composite of my structural design skill — mapping domains into taxonomies, architecting products and systems from them, and analyzing performance against them."],
             ["Classification", "Knowledge domain mapping, distillation, and standardization", true],
             ["Architecture", "Product, protocol, content, and systems design", true],
             ["Analysis", "Performance tracking, benchmarking, planning, and programming", true],
@@ -125,14 +126,14 @@ export const SKILLS: StatTableData = {
         {
           category: "Digital (multi-modal publishing)",
           metrics: [
-            ["Profile", "On-demand educational content creator", false, "The composite of my publishing skill — designing, producing, editing, and shipping educational content across media."],
+            ["Practitioner", "On-demand educational content creator", false, "The composite of my publishing skill — designing, producing, editing, and shipping educational content across media."],
             ["Production", "Content design, delivery, editing, and publishing", true],
           ],
         },
         {
           category: "Spatial (functional design)",
           metrics: [
-            ["Profile", "Behavior-led spatial designer", false, "The composite of my spatial skill — laying out homes and service facilities so the environment itself steers behavior."],
+            ["Practitioner", "Behavior-led spatial designer", false, "The composite of my spatial skill — laying out homes and service facilities so the environment itself steers behavior."],
             ["Planning", "Interior (home) and industrial (services) layout design and user-flow optimization", true],
           ],
         },
@@ -145,7 +146,7 @@ export const SKILLS: StatTableData = {
         {
           category: "Pedagogical (live transmission)",
           metrics: [
-            ["Profile", "Situational teacher, instructor, facilitator, and trainer", false, "The composite of my live transmission skill — teaching theory and instructing practice, one-on-one to many, and raising students into teachers and instructors."],
+            ["Practitioner", "Situational teacher, instructor, facilitator, and trainer", false, "The composite of my live transmission skill — teaching theory and instructing practice, one-on-one to many, and raising students into teachers and instructors."],
             ["Teaching", "Theoretical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
             ["Instruction", "Practical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
             ["Facilitation", "Teaching students/clients to become teachers", true],
@@ -155,14 +156,14 @@ export const SKILLS: StatTableData = {
         {
           category: "Editorial (educational profiling)",
           metrics: [
-            ["Profile", "Expert profiler and method producer", false, "The composite of my profiling skill — sitting with living experts, or reading printed bodies of knowledge, to surface the knowledge unique to them and produce it into methods they can teach."],
+            ["Practitioner", "Expert profiler and method producer", false, "The composite of my profiling skill — sitting with living experts, or reading printed bodies of knowledge, to surface the knowledge unique to them and produce it into methods they can teach."],
             ["Elicitation", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true],
           ],
         },
         {
           category: "Organizational (project orchestration)",
           metrics: [
-            ["Profile", "Project-based events director", false, "The composite of my orchestration skill — planning, staffing, and running large-scale productions, experiments, and interventions from brief to report."],
+            ["Practitioner", "Project-based events director", false, "The composite of my orchestration skill — planning, staffing, and running large-scale productions, experiments, and interventions from brief to report."],
             ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true],
           ],
         },
@@ -175,13 +176,13 @@ export const WORKS: StatTableData = {
   title: "Works",
   groups: [
     {
-      domain: "Authoring",
-      label: "Portfolio (Artifacts)",
+      domain: "Personal",
+      label: "Creative Works",
       rows: [
         {
           category: "Methodologies (design principles)",
           metrics: [
-            ["Profile", "Creator of knowledge and learning design methodologies", false, "The generative layer beneath everything else I make: IID structures knowledge, RBG transforms people into self-sufficient users. Every design below descends from these two."],
+            ["Creator", "Knowledge and learning design methodologies", false, "The generative layer beneath everything else I make: IID structures knowledge, RBG transforms people into self-sufficient users. Every design below descends from these two."],
             ["IID", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
             ["RBG", "A universal design framework that transforms prospects into educated, self-sufficient users of any value proposition", true],
           ],
@@ -189,7 +190,7 @@ export const WORKS: StatTableData = {
         {
           category: "Designs (published artifacts)",
           metrics: [
-            ["Profile", "Creator of 10X, BodyFirst, MSP, and Profiler", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
+            ["Creator", "10X, BodyFirst, MSP, and Profiler", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
             [
               "10X",
               [
@@ -243,15 +244,53 @@ export const WORKS: StatTableData = {
       ],
     },
     {
-      domain: "Production",
-      label: "Credits (Productions)",
+      domain: "Professional",
+      label: "Work Roles",
       rows: [
         {
-          category: "Commissions (delivered to standard)",
+          category: "Gigs (part-time temp)",
           metrics: [
-            ["Author courses", "Walsch, Wilber, Kotler, Watts (estate), Greenfield, Demartini (2017–2024)", false, "Online courses designed and directed with named authors."],
-            ["Quests", "10X (2021) · Values Factor & BodyFirst (2024) — Mindvalley", false, "Co-created flagship programs; the 10X Quest has been completed by 90,000+ people."],
-            ["Curricula", "10X Coach Certification — 500 coaches (2022) · Mastery micro-degree (2023)", false, "Certification and micro-degree frameworks built with and for institutions."],
+            ["Roles", "Sales, operations, management, and coaching", false],
+            ["Magician vendor", "The Magic Store, 6 months, 2003 (age 15)", true],
+            ["Sales assistant", "Sidewalk Surfer, 6 months, 2003 (age 15)", true],
+            ["Store operator", "DVD World, 6 months, 2005 (age 17)", true],
+            ["Sales associate", "Adidas Outlet Store, 1 year, 2006 (age 18)", true],
+            ["Athletics coach", "Brooklyn primary, 1 year, 2007 (age 19)", true],
+          ],
+        },
+        {
+          category: "Employment (full-time employee)",
+          metrics: [
+            ["Roles", "Teaching, management, instruction, and marketing", false],
+            ["English tutor", "St. John’s FLS, China, 6 months, 2004 (age 17)", true],
+            ["Cafe manager", "Java Cafe, 2 years, 2007–2008 (age 20)", true],
+            ["Personal trainer", "Ballistix CrossFit, 2 years, 2009–2010 (age 21)", true],
+            ["Product specialist", "Mindvalley, 1 year, 2016–2017 (age 28)", true],
+          ],
+        },
+        {
+          category: "Partnerships (full-time co-operator)",
+          metrics: [
+            ["Roles", "Co-founding and operating ventures", false],
+            ["Gym studio", "Quantum Physiques, 3 years, 2011–2013 (age 22)", true],
+            ["Events company", "TPBR, 1 year, 2014 (age 26)", true],
+            ["Coaching company", "10X Fitness, 5 years, 2020–2025 (age 32)", true],
+          ],
+        },
+        {
+          category: "Solopreneurships (full-time operator)",
+          metrics: [
+            ["Roles", "Founding and running agencies", false],
+            ["Marketing agency", "ARTrepreneurs, 2 years, 2015–2016 (age 27)", true],
+            ["Design agency", "Benchmark, 7 years, 2018–2024 (age 36)", true],
+          ],
+        },
+        {
+          category: "Self-employment (project-based contractor)",
+          metrics: [
+            ["Roles", "Independent consulting and interventions", false],
+            ["Lifestyle interventions", "Lorenzo Delano, 6 years, 2019– (age 31)", true],
+            ["Design consulting", "Lorenzo Delano, 2 years, 2024– (age 37)", true],
           ],
         },
       ],

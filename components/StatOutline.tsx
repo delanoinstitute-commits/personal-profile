@@ -85,11 +85,14 @@ export function StatOutline({ groups }: StatTableData) {
       {groups.map((group) => (
         <section key={group.domain} className="outline-group">
           <h3>
-            {group.domain} <span className="heading-paren">· {group.label}</span>
+            <span className="outline-domain">{group.domain}</span>{" "}
+            <span className="heading-paren">· {group.label}</span>
           </h3>
           {group.rows.map((row, i) => {
-            const lead = row.metrics.find((m) => m[0] === "Profile");
-            const items = row.metrics.filter((m) => m[0] !== "Profile");
+            // The composite lead is the one non-supportive metric; its term is
+            // the section label (Student / Practitioner / Creator / Roles).
+            const lead = row.metrics.find((m) => !m[2]);
+            const items = row.metrics.filter((m) => m[2]);
             return (
               <div key={row.category} className="outline-row">
                 <h4>

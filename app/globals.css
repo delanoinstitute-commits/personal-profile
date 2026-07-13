@@ -515,14 +515,19 @@ p.stat-hint {
   margin-top: 1.4rem;
 }
 
-/* Band heading (H3): bold italic + muted — clearly below the black H2 and
-   distinct from the upright, smaller H4 beneath it. */
+/* Band heading (H3): bold italic in the accent — a color ladder (black H2 →
+   teal H3 → gray H4) plus slant/size differentiates the three levels. */
 .stat-outline h3 {
   font-style: italic;
   font-weight: 600;
-  color: var(--muted);
-  margin-top: 1.4rem;
+  color: var(--accent);
+  margin-top: 1.5rem;
   margin-bottom: 0.15rem;
+}
+
+.stat-outline .outline-domain {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .stat-outline h3 .heading-paren {
@@ -552,9 +557,10 @@ p.stat-hint {
   color: var(--muted);
 }
 
-/* Composite lead: bold, upright — the summary line under each H4. */
+/* Composite lead: bold, upright — the summary line under each H4, with a bit
+   of breathing room between it and the category heading above. */
 .stat-outline .outline-lead {
-  margin: 0.1rem 0 0.15rem;
+  margin: 0.4rem 0 0.15rem;
   font-weight: 600;
 }
 
