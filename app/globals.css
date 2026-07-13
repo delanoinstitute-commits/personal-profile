@@ -584,6 +584,7 @@ p.stat-hint {
 
 .nested-content .metric-lead {
   margin-bottom: 0.15rem;
+  font-weight: 600;
 }
 
 .nested-content .metric-components {
