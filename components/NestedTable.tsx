@@ -31,8 +31,13 @@ export function NestedTable({
   groups,
   hint = "Click a band to expand, then a section within it.",
 }: StatTableData & { hint?: string }) {
-  const [openBands, setOpenBands] = useState<Set<string>>(() => new Set());
-  const [closedCats, setClosedCats] = useState<Set<string>>(() => new Set());
+  // Default: bands open (their sections visible), sections collapsed.
+  const [openBands, setOpenBands] = useState<Set<string>>(
+    () => new Set(groups.map((g) => g.domain)),
+  );
+  const [closedCats, setClosedCats] = useState<Set<string>>(
+    () => new Set(groups.flatMap((g) => g.rows.map((r) => `${g.domain}:${r.category}`))),
+  );
 
   const toggleBand = (key: string) =>
     setOpenBands((prev) => {
@@ -101,7 +106,7 @@ export function NestedTable({
                       {catOpen && (
                         <tr className="nested-content">
                           <td>
-                            <MetricList metrics={row.metrics} />
+                            <MetricList metrics={row.metrics} rail />
                           </td>
                         </tr>
                       )}

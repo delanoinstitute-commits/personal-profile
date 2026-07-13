@@ -68,7 +68,7 @@ export default function KnowledgePage() {
         and works produced with others. The artifact is the strongest evidence of knowledge;
         this catalog is the proof layer of the two sections above.
       </p>
-      <NestedTable {...WORKS} hint="Click a band to expand, then a section within it." />
+      <NestedTable {...WORKS} hint="Click a section to expand it." />
 
       <References
         items={KNOWLEDGE_REFERENCES}

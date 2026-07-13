@@ -575,20 +575,29 @@ p.stat-hint {
   cursor: pointer;
 }
 
-/* Content row: entries tracked by a teal vertical rail instead of bullets. */
+/* Content row: the composite lead sits flush; its components hang under a teal
+   vertical rail aligned to the lead's left edge (indented, no bullets). */
 .nested-table .nested-content td {
   background: var(--paper);
 }
 
-.nested-table .nested-content ul.stat-metrics {
+.nested-content .metric-lead {
+  margin-bottom: 0.15rem;
+}
+
+.nested-content .metric-components {
   list-style: none;
-  margin: 0.15rem 0 0.2rem 0.15rem;
+  margin: 0;
   padding-left: 0.85rem;
   border-left: 3px solid var(--accent);
 }
 
-.nested-table .nested-content ul.stat-metrics li.stat-supportive {
-  margin-left: 0.85rem;
+.nested-content .metric-components li {
+  margin: 0;
+}
+
+.nested-content .metric-components li + li {
+  margin-top: 0.25rem;
 }
 
 /* ===================================================================

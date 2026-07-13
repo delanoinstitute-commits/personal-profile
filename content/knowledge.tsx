@@ -190,7 +190,7 @@ export const WORKS: StatTableData = {
         {
           category: "Designs (published artifacts)",
           metrics: [
-            ["Creator", "10X, BodyFirst, MSP, and Profiler", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
+            ["Creator", "Co-published programs, systems, and models", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
             [
               "10X",
               [
