@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
 import { StatTable } from "@/components/StatTable";
+import { NestedTable } from "@/components/NestedTable";
 import { References } from "@/components/References";
 import {
   EDUCATION,
@@ -67,7 +68,7 @@ export default function KnowledgePage() {
         and works produced with others. The artifact is the strongest evidence of knowledge;
         this catalog is the proof layer of the two sections above.
       </p>
-      <StatTable {...WORKS} hint="Click a row below to explore my works profile in more detail." />
+      <NestedTable {...WORKS} hint="Click a band to expand, then a section within it." />
 
       <References
         items={KNOWLEDGE_REFERENCES}

@@ -11,10 +11,7 @@ import { NAV } from "@/content/site";
  */
 export default function SectionNav() {
   const pathname = usePathname();
-  // Experimental "-alt" variants borrow their base page's section list.
-  const page =
-    NAV.find((p) => p.href === pathname) ??
-    NAV.find((p) => p.href === pathname.replace(/-alt$/, ""));
+  const page = NAV.find((p) => p.href === pathname);
   const sections = page?.sections ?? [];
   const [active, setActive] = useState<string>("");
   const navRef = useRef<HTMLElement>(null);

@@ -505,89 +505,88 @@ p.stat-hint {
 }
 
 /* ===================================================================
-   Stat outline — list variant of the tables (/knowledge-alt experiment)
+   Nested table — two-level row accordion for the Works branch
    =================================================================== */
-.stat-outline {
-  margin: 0.4rem 0 1rem;
+/* Reuses .stat-table borders / font / metric list but drops the left column:
+   every row is one full-width cell. Band (teal, centered) → category (gray) →
+   content, each independently collapsible. */
+.nested-table {
+  min-width: 0;
+  table-layout: auto;
 }
 
-.stat-outline .outline-group {
-  margin-top: 1.75rem;
+/* Band row: pale-teal, centered heading, chevron pinned to the right edge. */
+.nested-table .nested-band {
+  cursor: pointer;
+  user-select: none;
 }
 
-/* Band content is indented under its teal H3 and carries a hairline rail, so
-   nesting is spatial (not only typographic) and each band reads as one chunk. */
-.stat-outline .outline-body {
-  padding-left: 0.95rem;
-  border-left: 2px solid var(--accent-soft);
-  margin-top: 0.2rem;
+.nested-table .nested-band th {
+  background: var(--accent-soft);
+  padding: 0;
+  text-align: center;
 }
 
-/* Band heading (H3): bold italic in the accent — a color ladder (black H2 →
-   teal H3 → gray H4) plus slant/size differentiates the three levels. */
-.stat-outline h3 {
-  font-style: italic;
+.nested-band-toggle {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.55rem 2.2rem;
+  font: inherit;
   font-weight: 600;
-  color: var(--accent);
-  margin-top: 1.5rem;
-  margin-bottom: 0.15rem;
+  text-align: center;
+  color: var(--text);
+  cursor: pointer;
 }
 
-.stat-outline .outline-domain {
+.nested-band-toggle .nested-domain {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
 
-.stat-outline h3 .heading-paren {
-  font-size: 0.82em;
-  font-style: italic;
-  font-weight: 400;
+.nested-band-toggle .nested-gloss {
   color: var(--muted);
 }
 
-/* Category heading (H4): bold, muted, smaller, upright sans, roman-numeraled.
-   Differs from H3 in weight, size, slant, and family. */
-.stat-outline h4 {
-  font-weight: 700;
-  color: var(--muted);
-  margin-top: 0.95rem;
-  margin-bottom: 0.1rem;
+.nested-band-toggle .stat-chevron {
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.stat-outline h4 .heading-paren {
-  font-size: 0.9em;
-  font-weight: 400;
-  color: var(--muted);
+.nested-band-toggle .stat-chevron.is-open {
+  transform: translateY(-50%) rotate(180deg);
 }
 
-.stat-outline .outline-numeral {
-  font-weight: 400;
-  color: var(--muted);
+/* Category row: gray, left-aligned label, chevron on the right. */
+.nested-table .nested-cat {
+  cursor: pointer;
+  user-select: none;
 }
 
-/* Composite lead: bold, upright — the summary line under each H4, with a bit
-   of breathing room between it and the category heading above. */
-.stat-outline .outline-lead {
-  margin: 0.4rem 0 0.15rem;
+.nested-table .nested-cat th {
+  background: var(--surface-subtle);
+  padding: 0;
+}
+
+.nested-cat-toggle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.4rem 0.65rem;
+  font: inherit;
   font-weight: 600;
+  color: var(--muted);
+  text-align: left;
+  cursor: pointer;
 }
 
-/* Component bullets: italic, with a bold term. */
-.stat-outline .outline-items {
-  list-style: disc;
-  margin: 0.15rem 0 0;
-  padding-left: 1.2rem;
-}
-
-.stat-outline .outline-items li {
-  margin-top: 0.2rem;
-  font-style: italic;
-}
-
-/* Tooltip-trigger terms are <button>s; inherit slant so italic bullets keep
-   their term italic and the upright lead keeps its term upright. */
-.stat-outline button {
-  font-style: inherit;
+/* Content row: the metric list, full width. */
+.nested-table .nested-content td {
+  background: var(--paper);
 }
 
 /* ===================================================================
