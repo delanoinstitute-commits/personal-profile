@@ -182,7 +182,7 @@ export const WORKS: StatTableData = {
         {
           category: "Methodologies (design principles)",
           metrics: [
-            ["", "The generative principles from which all his work descends", false],
+            ["", "I am the creator of two design methodologies, my secret sauce", false],
             ["Taxonomy", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
             ["RBG", "A universal (marketing, product, and learning) design framework that transforms prospects into educated, self-sufficient users of any value proposition", true],
           ],
@@ -190,7 +190,7 @@ export const WORKS: StatTableData = {
         {
           category: "Designs (published artifacts)",
           metrics: [
-            ["", "Those principles rendered concrete as universal, published artifacts", false],
+            ["", "I am the creator of the below published programs, systems, and models", false],
             [
               "10X",
               [
