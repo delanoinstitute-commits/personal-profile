@@ -505,6 +505,56 @@ p.stat-hint {
 }
 
 /* ===================================================================
+   Stat outline — list variant of the tables (/knowledge-alt experiment)
+   =================================================================== */
+.stat-outline {
+  margin: 0.4rem 0 1rem;
+}
+
+.stat-outline .outline-group {
+  margin-top: 1.1rem;
+}
+
+/* Band heading (H3) with its validation-register gloss */
+.stat-outline h3 .heading-paren {
+  font-size: 0.78em;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* Category heading (H4): roman numeral + name; parenthetical muted */
+.stat-outline h4 {
+  margin-top: 0.85rem;
+  margin-bottom: 0.1rem;
+}
+
+.stat-outline h4 .heading-paren {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.stat-outline .outline-numeral {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+/* Composite lead line, then component bullets */
+.stat-outline .outline-lead {
+  margin: 0.1rem 0 0.1rem;
+}
+
+.stat-outline .outline-items {
+  list-style: disc;
+  margin: 0.1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.stat-outline .outline-items li {
+  margin-top: 0.15rem;
+}
+
+/* ===================================================================
    Timeline (biography) — §4.5
    =================================================================== */
 

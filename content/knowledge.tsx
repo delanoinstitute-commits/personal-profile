@@ -1,0 +1,355 @@
+import WikiLink from "@/components/WikiLink";
+import type { StatTableData } from "@/components/StatTable";
+import type { Reference } from "@/components/References";
+
+// Shared knowledge data — consumed by both the tabled page (/knowledge) and the
+// outline experiment (/knowledge-alt), so the two stay verbatim in sync.
+// See KNOWLEDGE_SPEC.md: Education (theory — knowing), Skills (practice —
+// doing), Works (production — making), each split by the individual/social
+// locus axis. "—" = to be cataloged.
+
+export const EDUCATION: StatTableData = {
+  title: "Education",
+  groups: [
+    {
+      domain: "Guided",
+      label: "Standardized (Tests)",
+      rows: [
+        {
+          category: "Formal (in-person schooling)",
+          metrics: [
+            ["Profile", "Primary education with tertiary language distinctions", false, "The composite of my guided schooling — seven primary grades in public school, then privately tutored Mandarin to international distinction."],
+            ["Grades (1–3)", "Laerskool Muldersdrif (1994–1996)", true, "Lower primary."],
+            ["Grades (4–7)", "Laerskool Hoeveld, Evander (1997–2000)", true, "Upper primary — the last of continuous schooling."],
+            ["Mandarin", "Pretoria Chinese School (2005–2008)", true, {
+              image: "/credentials/mandarin.jpg",
+              alt: "Pretoria Chinese School certificate of participation in adult Mandarin classes, 2005",
+              portrait: true,
+              text: "Adult Mandarin classes, Pretoria Chinese School (Feb–Aug 2005). Certified as Lorenzo Maritz, his name before 2009.",
+            }],
+            ["Awards", "1st place, 8th Chinese Bridge (2009)", true, {
+              image: "/credentials/chinese-bridge.jpg",
+              alt: "8th Chinese Bridge award certificate from Hanban, 2009",
+              text: "1st in the South African round; then, among 130+ countries at the Beijing finals, awarded the Prize of Outstanding — 8th Chinese Bridge, Hanban (2009).",
+            }],
+          ],
+        },
+        {
+          category: "Non-formal (in-person training)",
+          metrics: [
+            ["Profile", "Teacher-centric tertiary vocational education", false, "All four qualifications are transmission roles — tutor, instructor, coach, learning designer — the teaching thread running through everything since."],
+            ["Tutor", "TEFL, Language Link (2006)", true, {
+              image: "/credentials/tefl.jpg",
+              alt: "Preliminary Certificate in Teaching English as a Foreign Language, Southern African TEFL Training Institute, 2006",
+              portrait: true,
+              text: "Preliminary Certificate in Teaching English as a Foreign Language — Southern African TEFL Training Institute, Pretoria (June 2006).",
+            }],
+            ["Instructor", "Personal fitness trainer, ETA (2008)", true, {
+              image: "/credentials/fitness.jpg",
+              alt: "National Certificate in Fitness, Level 5, Exercise Teachers Academy, 2008",
+              text: "National Certificate: Fitness (Level 5) — Personal Fitness Trainer and Spinning, Exercise Teachers Academy, Pretoria (2008).",
+            }],
+            ["Coach", "NLP and life coaching, COMENSA (2010)", true, "Neuro-linguistic-programming and life-coaching practitioner certification."],
+            ["Designer", "Learning experience design, Shapers (2018)", true, {
+              image: "/credentials/lx-design.jpg",
+              alt: "Shapers certificate of participation for the learning experience design masterclass, photographed at the training, 2018",
+              portrait: true,
+              text: "Certificate of participation — learning-experience-design masterclass, Shapers, Netherlands (March 2018). Photographed at the two-day training; shapers.nl.",
+            }],
+          ],
+        },
+      ],
+    },
+    {
+      domain: "Independent",
+      label: "Elective (Tests)",
+      rows: [
+        {
+          category: "Non-formal (remote schooling)",
+          metrics: [
+            ["Profile", "Secondary education with specialist electives", false, "Self-elected remote study — correspondence secondary schooling, then university, institute, and open-platform coursework as each domain demanded."],
+            ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling — the last formal enrolment."],
+            ["Philosophy", "Critical thinking, U. of Auckland (2018)", true, {
+              image: "/credentials/philosophy.jpg",
+              alt: "Certificate of Achievement in Logical and Critical Thinking, University of Auckland, 2018",
+              portrait: true,
+              text: "Certificate of Achievement — Logical and Critical Thinking, University of Auckland (FutureLearn, 2018).",
+            }],
+            ["Exercise", "Science of exercise, U. of Colorado (2019)", true, {
+              image: "/credentials/exercise.jpg",
+              alt: "Course Certificate in Science of Exercise, University of Colorado Boulder, 2019",
+              text: "Course Certificate — Science of Exercise, University of Colorado Boulder (Coursera, 2019).",
+            }],
+            ["Finance", "Analysis and valuation, CFI (2024)", true, "Accounting, modeling, and corporate finance — fifteen courses."],
+            ["Science", "AP/College, Khan Academy (2022–present)", true, "Self-paced study, mastery-tested — foundation to organic chemistry; structured but uncredentialed."],
+          ],
+        },
+        {
+          category: "Informal (remote training)",
+          metrics: [
+            ["Profile", "Practitioner-led health training", false, "Uncredentialed by design — specialist courses under named practitioners, validated in practice rather than by accreditation."],
+            ["Nutrition", "Nutrition biochemistry, Dr Bryan Walsh (2021)", true, {
+              image: "/credentials/nutrition.jpg",
+              alt: "Certificate of Training in Nutritional Biochemistry, Metabolic Fitness, 2021",
+              text: "Certificate of Training — 25 hours in Nutritional Biochemistry, Metabolic Fitness (Dr Bryan Walsh, 2021).",
+            }],
+            ["Blood chemistry", "Functional analysis, ODX Academy (2021)", true, {
+              image: "/credentials/blood-chemistry.jpg",
+              alt: "Certification of Excellence in Functional Blood Chemistry Analysis Mastery, ODX Academy, 2021",
+              text: "Certification of Excellence — Functional Blood Chemistry Analysis Mastery (FBCA), ODX Academy (2021).",
+            }],
+            ["Longevity", "Early medical, Dr Peter Attia (2023)", true, "Evidence-based longevity medicine."],
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+export const SKILLS: StatTableData = {
+  title: "Skills",
+  groups: [
+    {
+      domain: "Technical",
+      label: "Demonstration (Performance)",
+      rows: [
+        {
+          category: "Artifactual (structural design)",
+          metrics: [
+            ["Profile", "Applied taxonomist, designer, and strategist", false, "The composite of my structural design skill — mapping domains into taxonomies, architecting products and systems from them, and analyzing performance against them."],
+            ["Classification", "Knowledge domain mapping, distillation, and standardization", true],
+            ["Architecture", "Product, protocol, content, and systems design", true],
+            ["Analysis", "Performance tracking, benchmarking, planning, and programming", true],
+          ],
+        },
+        {
+          category: "Digital (multi-modal publishing)",
+          metrics: [
+            ["Profile", "On-demand educational content creator", false, "The composite of my publishing skill — designing, producing, editing, and shipping educational content across media."],
+            ["Production", "Content design, delivery, editing, and publishing", true],
+          ],
+        },
+        {
+          category: "Spatial (functional design)",
+          metrics: [
+            ["Profile", "Behavior-led spatial designer", false, "The composite of my spatial skill — laying out homes and service facilities so the environment itself steers behavior."],
+            ["Planning", "Interior (home) and industrial (services) layout design and user-flow optimization", true],
+          ],
+        },
+      ],
+    },
+    {
+      domain: "Interpersonal",
+      label: "Testimony (Reputation)",
+      rows: [
+        {
+          category: "Pedagogical (live transmission)",
+          metrics: [
+            ["Profile", "Situational teacher, instructor, facilitator, and trainer", false, "The composite of my live transmission skill — teaching theory and instructing practice, one-on-one to many, and raising students into teachers and instructors."],
+            ["Teaching", "Theoretical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
+            ["Instruction", "Practical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
+            ["Facilitation", "Teaching students/clients to become teachers", true],
+            ["Training", "Instructing students/clients to become instructors", true],
+          ],
+        },
+        {
+          category: "Editorial (educational profiling)",
+          metrics: [
+            ["Profile", "Expert profiler and method producer", false, "The composite of my profiling skill — sitting with living experts, or reading printed bodies of knowledge, to surface the knowledge unique to them and produce it into methods they can teach."],
+            ["Elicitation", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true],
+          ],
+        },
+        {
+          category: "Organizational (project orchestration)",
+          metrics: [
+            ["Profile", "Project-based events director", false, "The composite of my orchestration skill — planning, staffing, and running large-scale productions, experiments, and interventions from brief to report."],
+            ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true],
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+export const WORKS: StatTableData = {
+  title: "Works",
+  groups: [
+    {
+      domain: "Authoring",
+      label: "Portfolio (Artifacts)",
+      rows: [
+        {
+          category: "Methodologies (design principles)",
+          metrics: [
+            ["Profile", "Creator of knowledge and learning design methodologies", false, "The generative layer beneath everything else I make: IID structures knowledge, RBG transforms people into self-sufficient users. Every design below descends from these two."],
+            ["IID", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
+            ["RBG", "A universal design framework that transforms prospects into educated, self-sufficient users of any value proposition", true],
+          ],
+        },
+        {
+          category: "Designs (published artifacts)",
+          metrics: [
+            ["Profile", "Creator of 10X, BodyFirst, MSP, and Profiler", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
+            [
+              "10X",
+              [
+                "A short, low-frequency muscle-centric total fitness exercise protocol, available as a free ",
+                <WikiLink key="yt" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">YouTube course</WikiLink>,
+                ", ",
+                <WikiLink key="quest" href="https://www.mindvalley.com/10x/quest">Mindvalley quest</WikiLink>,
+                ", and ",
+                <WikiLink key="cert" href="https://www.mindvalley.com/certs/10x">coaching certification</WikiLink>,
+              ],
+              true,
+            ],
+            [
+              "BodyFirst",
+              [
+                "A universal basic-fitness program taught using my RBG framework, available as a ",
+                <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
+              ],
+              true,
+            ],
+            [
+              "TVF",
+              [
+                "The Values Factor program co-authored with Dr. John Demartini using my RBG framework, available on ",
+                <WikiLink key="mv" href="https://www.mindvalley.com/values">Mindvalley</WikiLink>,
+              ],
+              true,
+              undefined,
+              "https://youtube.com/shorts/li3cYZKc9zw",
+            ],
+            [
+              "MSP",
+              [
+                "A universal exercise-mastery system taught using my IID design process, available as ",
+                <WikiLink key="yt" href="https://www.youtube.com/@LorenzoDelano">YouTube courses</WikiLink>,
+                " and PDFs",
+              ],
+              true,
+            ],
+            [
+              "Profiler",
+              [
+                "A universal personal-profiling framework built using IID principles, available as a website (",
+                <WikiLink key="site" href="/">like this one</WikiLink>,
+                ") or PDF",
+              ],
+              true,
+            ],
+          ],
+        },
+      ],
+    },
+    {
+      domain: "Production",
+      label: "Credits (Productions)",
+      rows: [
+        {
+          category: "Commissions (delivered to standard)",
+          metrics: [
+            ["Author courses", "Walsch, Wilber, Kotler, Watts (estate), Greenfield, Demartini (2017–2024)", false, "Online courses designed and directed with named authors."],
+            ["Quests", "10X (2021) · Values Factor & BodyFirst (2024) — Mindvalley", false, "Co-created flagship programs; the 10X Quest has been completed by 90,000+ people."],
+            ["Curricula", "10X Coach Certification — 500 coaches (2022) · Mastery micro-degree (2023)", false, "Certification and micro-degree frameworks built with and for institutions."],
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+export const KNOWLEDGE_REFERENCES: Reference[] = [
+  {
+    id: "framework",
+    cite: (
+      <>
+        Delano, L. Knowing, doing, making: a tripartite framework for knowledge. (Forthcoming.)
+      </>
+    ),
+    tag: "Framework",
+  },
+  {
+    id: "aristotle",
+    cite: (
+      <>
+        Aristotle. <em>Nicomachean Ethics</em>, Book VI — episteme, techne, and phronesis; theoria, praxis, and poiesis.
+      </>
+    ),
+    tag: "Framework",
+  },
+  {
+    id: "sep",
+    cite: (
+      <>
+        Parry, R. Episteme and Techne. <em>Stanford Encyclopedia of Philosophy</em>.
+      </>
+    ),
+    url: "https://plato.stanford.edu/entries/episteme-techne/",
+    urlLabel: "plato.stanford.edu",
+    tag: "Framework",
+  },
+  {
+    id: "ryle",
+    cite: (
+      <>
+        Ryle, G. (1949). <em>The Concept of Mind</em>. Hutchinson — knowing-that versus knowing-how.
+      </>
+    ),
+    tag: "Skills",
+  },
+  {
+    id: "bloom",
+    cite: (
+      <>
+        Anderson, L. W. and Krathwohl, D. R., eds. (2001). <em>A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom&rsquo;s Taxonomy of Educational Objectives</em>. Longman.
+      </>
+    ),
+    tag: "Education",
+  },
+  {
+    id: "polanyi",
+    cite: (
+      <>
+        Polanyi, M. (1966). <em>The Tacit Dimension</em>. Doubleday — tacit versus explicit knowledge.
+      </>
+    ),
+    tag: "Skills",
+  },
+  {
+    id: "vervaeke",
+    cite: (
+      <>
+        Vervaeke, J. (2019). <em>Awakening from the Meaning Crisis</em> (lecture series). University of Toronto — the four kinds of knowing.
+      </>
+    ),
+    tag: "Framework",
+  },
+  {
+    id: "coombs",
+    cite: (
+      <>
+        Coombs, P. H. and Ahmed, M. (1974). <em>Attacking Rural Poverty: How Nonformal Education Can Help</em>. Johns Hopkins University Press — the formal / non-formal / informal registers of education.
+      </>
+    ),
+    tag: "Education",
+  },
+  {
+    id: "ranganathan",
+    cite: (
+      <>
+        Ranganathan, S. R. (1933). <em>Colon Classification</em>. Madras Library Association — faceted classification.
+      </>
+    ),
+    tag: "Framework",
+  },
+  {
+    id: "stokes",
+    cite: (
+      <>
+        Stokes, D. E. (1997). <em>Pasteur&rsquo;s Quadrant: Basic Science and Technological Innovation</em>. Brookings Institution Press — dissolving the pure/applied divide.
+      </>
+    ),
+    tag: "Framework",
+  },
+];
