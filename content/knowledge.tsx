@@ -182,7 +182,7 @@ export const WORKS: StatTableData = {
         {
           category: "Methodologies (design principles)",
           metrics: [
-            ["Creator", "Knowledge and learning design methodologies", false, "The generative layer beneath everything else I make: IID structures knowledge, RBG transforms people into self-sufficient users. Every design below descends from these two."],
+            ["", "Invents the design methods that everything he builds runs on", false],
             ["IID", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
             ["RBG", "A universal design framework that transforms prospects into educated, self-sufficient users of any value proposition", true],
           ],
@@ -190,7 +190,7 @@ export const WORKS: StatTableData = {
         {
           category: "Designs (published artifacts)",
           metrics: [
-            ["Creator", "Co-published programs, systems, and models", false, "The named frameworks these methodologies produce — each a universal design, each published for open use. Three build on IID or RBG; 10X upgrades Body by Science's Big-5."],
+            ["", "Publishes universal programs and systems built on his own methods", false],
             [
               "10X",
               [
@@ -250,7 +250,7 @@ export const WORKS: StatTableData = {
         {
           category: "Gigs (part-time temp)",
           metrics: [
-            ["Roles", "Sales, operations, management, and coaching", false, "Part-time and temporary work through my teens — retail, store operations, and my first coaching."],
+            ["", "Earned early independence through varied retail, sales, and coaching work", false],
             ["Magician vendor", "The Magic Store, 6 months, 2003 (age 15)", true],
             ["Sales assistant", "Sidewalk Surfer, 6 months, 2003 (age 15)", true],
             ["Store operator", "DVD World, 6 months, 2005 (age 17)", true],
@@ -261,17 +261,17 @@ export const WORKS: StatTableData = {
         {
           category: "Employment (full-time employee)",
           metrics: [
-            ["Roles", "Teaching, management, instruction, and marketing", false, "Full-time employed roles — language teaching, hospitality management, personal training, and product marketing."],
+            ["", "Holds diverse roles capably, but outgrows them and moves up or out", false],
             ["English tutor", "St. John’s FLS, China, 6 months, 2004 (age 17)", true],
-            ["Cafe manager", "Java Cafe, 2 years, 2007–2008 (age 20)", true],
+            ["Cafe manager", "Java Cafe, Pretoria, 2 years, 2007–2008 (age 20)", true],
             ["Personal trainer", "Ballistix CrossFit, 2 years, 2009–2010 (age 21)", true],
-            ["Product specialist", "Mindvalley, 1 year, 2016–2017 (age 28)", true],
+            ["Product specialist", "Mindvalley, Kuala Lumpur, 1 year, 2016–2017 (age 28)", true],
           ],
         },
         {
           category: "Partnerships (full-time co-operator)",
           metrics: [
-            ["Roles", "Co-founding and operating ventures", false, "Co-owned ventures I helped build and run — a gym studio, an events company, and a coaching company."],
+            ["", "Co-founds and co-runs ventures, sharing ownership with trusted partners", false],
             ["Gym studio", "Quantum Physiques, 3 years, 2011–2013 (age 22)", true],
             ["Events company", "TPBR, 1 year, 2014 (age 26)", true],
             ["Coaching company", "10X Fitness, 5 years, 2020–2025 (age 32)", true],
@@ -280,7 +280,7 @@ export const WORKS: StatTableData = {
         {
           category: "Solopreneurships (full-time operator)",
           metrics: [
-            ["Roles", "Founding and running agencies", false, "Solely-owned agencies I founded and operated — a marketing agency, then a design agency."],
+            ["", "Builds and single-handedly runs his own marketing and design agencies", false],
             ["Marketing agency", "ARTrepreneurs, 2 years, 2015–2016 (age 27)", true],
             ["Design agency", "Benchmark, 7 years, 2018–2024 (age 36)", true],
           ],
@@ -288,7 +288,7 @@ export const WORKS: StatTableData = {
         {
           category: "Self-employment (project-based contractor)",
           metrics: [
-            ["Roles", "Independent consulting and interventions", false, "Project-based contracting under my own name — lifestyle interventions and design consulting."],
+            ["", "Contracts independently under his own name on self-chosen projects", false],
             ["Lifestyle interventions", "Lorenzo Delano, 6 years, 2019– (age 31)", true],
             ["Design consulting", "Lorenzo Delano, 2 years, 2024– (age 37)", true],
           ],
