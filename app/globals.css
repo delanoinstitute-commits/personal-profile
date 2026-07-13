@@ -515,7 +515,7 @@ p.stat-hint {
   table-layout: auto;
 }
 
-/* Band row: pale-teal, centered heading, chevron pinned to the right edge. */
+/* Band row: pale-teal, left-aligned heading, chevron on the right. */
 .nested-table .nested-band {
   cursor: pointer;
   user-select: none;
@@ -524,17 +524,18 @@ p.stat-hint {
 .nested-table .nested-band th {
   background: var(--accent-soft);
   padding: 0;
-  text-align: center;
 }
 
 .nested-band-toggle {
-  position: relative;
-  display: block;
+  display: flex;
   width: 100%;
-  padding: 0.55rem 2.2rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
   font: inherit;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   color: var(--text);
   cursor: pointer;
 }
@@ -548,18 +549,7 @@ p.stat-hint {
   color: var(--muted);
 }
 
-.nested-band-toggle .stat-chevron {
-  position: absolute;
-  right: 0.6rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.nested-band-toggle .stat-chevron.is-open {
-  transform: translateY(-50%) rotate(180deg);
-}
-
-/* Category row: gray, left-aligned label, chevron on the right. */
+/* Category row: gray, italic label, chevron on the right. */
 .nested-table .nested-cat {
   cursor: pointer;
   user-select: none;
@@ -579,14 +569,26 @@ p.stat-hint {
   padding: 0.4rem 0.65rem;
   font: inherit;
   font-weight: 600;
+  font-style: italic;
   color: var(--muted);
   text-align: left;
   cursor: pointer;
 }
 
-/* Content row: the metric list, full width. */
+/* Content row: entries tracked by a teal vertical rail instead of bullets. */
 .nested-table .nested-content td {
   background: var(--paper);
+}
+
+.nested-table .nested-content ul.stat-metrics {
+  list-style: none;
+  margin: 0.15rem 0 0.2rem 0.15rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--accent);
+}
+
+.nested-table .nested-content ul.stat-metrics li.stat-supportive {
+  margin-left: 0.85rem;
 }
 
 /* ===================================================================
