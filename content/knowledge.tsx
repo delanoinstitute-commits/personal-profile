@@ -295,8 +295,8 @@ export const WORKS: StatTableData = {
           metrics: [
             ["", "I build ventures alongside partners I trust, sharing the ownership", false],
             ["Gym studio", "Quantum Physiques (w/ Brad Openshaw), PTA, 3 years, 2011–2013 (age 23)", true],
-            ["Events company", "The Physical Breakthrough Retreat (w/ Jelena Lakic), South Africa (nationwide), 1 year, 2014 (age 26)", true],
-            ["Coaching company", "10X Fitness (w/ Vishen Lakhiani), global, 5 years, 2020–2025 (age 32)", true],
+            ["Events company", "The BP Retreat (w/ Jelena Lakic), SA (nationwide), 1 year, 2014 (age 26)", true],
+            ["Coaching company", "10X Fitness (w/ Vishen Lakhiani), US, 5 years, 2020–2025 (age 32)", true],
           ],
         },
         {
