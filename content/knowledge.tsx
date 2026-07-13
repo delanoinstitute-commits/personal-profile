@@ -249,7 +249,7 @@ export const WORKS: StatTableData = {
       label: "Work Roles",
       rows: [
         {
-          category: "Gigs (part-time employee)",
+          category: "First jobs (part-time employee)",
           metrics: [
             ["", "Earned early independence through varied retail, sales, and coaching work", false],
             ["Magician vendor", "The Magic Store, Pretoria, 6 months, 2003 (age 15)", true],
@@ -300,7 +300,7 @@ export const WORKS: StatTableData = {
           ],
         },
         {
-          category: "Solopreneurships (full-time operator)",
+          category: "Sole ventures (full-time operator)",
           metrics: [
             ["", "Builds and single-handedly runs his own marketing and design agencies", false],
             [
