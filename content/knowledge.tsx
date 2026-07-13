@@ -251,46 +251,95 @@ export const WORKS: StatTableData = {
           category: "Gigs (part-time temp)",
           metrics: [
             ["", "Earned early independence through varied retail, sales, and coaching work", false],
-            ["Magician vendor", "The Magic Store, 6 months, 2003 (age 15)", true],
-            ["Sales assistant", "Sidewalk Surfer, 6 months, 2003 (age 15)", true],
-            ["Store operator", "DVD World, 6 months, 2005 (age 17)", true],
-            ["Sales associate", "Adidas Outlet Store, 1 year, 2006 (age 18)", true],
-            ["Athletics coach", "Brooklyn primary, 1 year, 2007 (age 19)", true],
+            ["Magician vendor", "The Magic Store, Pretoria, 6 months, 2003 (age 15)", true],
+            ["Sales assistant", "Sidewalk Surfer, Pretoria, 6 months, 2003 (age 15)", true],
+            ["Store operator", "DVD World, Pretoria, 6 months, 2005 (age 17)", true],
+            ["Sales associate", "Adidas Outlet Store, Pretoria, 1 year, 2006 (age 18)", true],
+            ["Athletics coach", "Brooklyn primary, Pretoria, 1 year, 2007 (age 19)", true],
           ],
         },
         {
           category: "Employment (full-time employee)",
           metrics: [
             ["", "Holds diverse roles capably, but outgrows them and moves up or out", false],
-            ["English tutor", "St. John’s FLS, China, 6 months, 2004 (age 17)", true],
+            [
+              "English tutor",
+              [
+                <WikiLink key="sjz" href="https://www.sjzfls.com/">St. John&rsquo;s FLS</WikiLink>,
+                ", Shijiazhuang, China, 6 months, 2004 (age 17)",
+              ],
+              true,
+            ],
             ["Cafe manager", "Java Cafe, Pretoria, 2 years, 2007–2008 (age 20)", true],
-            ["Personal trainer", "Ballistix CrossFit, 2 years, 2009–2010 (age 21)", true],
-            ["Product specialist", "Mindvalley, Kuala Lumpur, 1 year, 2016–2017 (age 28)", true],
+            [
+              "Personal trainer",
+              [
+                <WikiLink key="bx" href="https://www.ballistixfitness.co.za/">Ballistix CrossFit</WikiLink>,
+                ", Pretoria, 2 years, 2009–2010 (age 21)",
+              ],
+              true,
+            ],
+            [
+              "Product specialist",
+              [
+                <WikiLink key="mv" href="https://www.mindvalley.com/">Mindvalley</WikiLink>,
+                ", Kuala Lumpur, 1 year, 2016–2017 (age 28)",
+              ],
+              true,
+            ],
           ],
         },
         {
           category: "Partnerships (full-time co-operator)",
           metrics: [
             ["", "Co-founds and co-runs ventures, sharing ownership with trusted partners", false],
-            ["Gym studio", "Quantum Physiques, 3 years, 2011–2013 (age 22)", true],
-            ["Events company", "TPBR, 1 year, 2014 (age 26)", true],
-            ["Coaching company", "10X Fitness, 5 years, 2020–2025 (age 32)", true],
+            ["Gym studio", "Quantum Physiques, Pretoria, 3 years, 2011–2013 (age 22)", true],
+            ["Events company", "The Physical Breakthrough Retreat, South Africa (nationwide), 1 year, 2014 (age 26)", true],
+            ["Coaching company", "10X Fitness, global, 5 years, 2020–2025 (age 32)", true],
           ],
         },
         {
           category: "Solopreneurships (full-time operator)",
           metrics: [
             ["", "Builds and single-handedly runs his own marketing and design agencies", false],
-            ["Marketing agency", "ARTrepreneurs, 2 years, 2015–2016 (age 27)", true],
-            ["Design agency", "Benchmark, 7 years, 2018–2024 (age 36)", true],
+            [
+              "Marketing agency",
+              [
+                <WikiLink key="art" href="https://artrepreneurs.co.za/">ARTrepreneurs</WikiLink>,
+                ", Pretoria, 2 years, 2015–2016 (age 27)",
+              ],
+              true,
+            ],
+            [
+              "Design agency",
+              [
+                <WikiLink key="bd" href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Benchmark Designs</WikiLink>,
+                ", US (mostly), 7 years, 2018–2024 (age 36)",
+              ],
+              true,
+            ],
           ],
         },
         {
           category: "Self-employment (project-based contractor)",
           metrics: [
             ["", "Contracts independently under his own name on self-chosen projects", false],
-            ["Lifestyle interventions", "Lorenzo Delano, 6 years, 2019– (age 31)", true],
-            ["Design consulting", "Lorenzo Delano, 2 years, 2024– (age 37)", true],
+            [
+              "Lifestyle interventions",
+              [
+                <WikiLink key="ld" href="/">Lorenzo Delano</WikiLink>,
+                ", global (mostly US), 6 years, 2019– (age 31)",
+              ],
+              true,
+            ],
+            [
+              "Design consulting",
+              [
+                <WikiLink key="ld" href="/">Lorenzo Delano</WikiLink>,
+                ", global (mostly US), 2 years, 2024– (age 37)",
+              ],
+              true,
+            ],
           ],
         },
       ],
