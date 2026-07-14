@@ -106,7 +106,11 @@ export function NestedTable({
                       {catOpen && (
                         <tr className="nested-content">
                           <td>
-                            <MetricList metrics={row.metrics} rail />
+                            {/* Employment renders as bullets (no rail) for comparison. */}
+                            <MetricList
+                              metrics={row.metrics}
+                              rail={!row.category.startsWith("Employment")}
+                            />
                           </td>
                         </tr>
                       )}
