@@ -14,11 +14,9 @@
   --muted-2: #5b6168;
   --link: #3366cc;
   --link-hover: #2a4b8d;
-  --link-visited: #795cb2;
   --link-red: #ba0000;
   --accent: #0b5e57;
   --accent-light: #0f6e66;
-  --accent-mid: #3e9c90; /* lighter teal — accordion rails */
   --accent-soft: #d5e7e2; /* pale teal band — a touch more intense than the neutral gray */
   --focus: #0b57d0;
   --surface-paper: #ffffff;
@@ -240,11 +238,6 @@ a.wikilink:focus-visible,
 a.wikilink:active,
 .wiki-article a:not(.no-wiki):active {
   color: var(--link-hover);
-}
-
-a.wikilink:visited,
-.wiki-article a:not(.no-wiki):visited {
-  color: var(--link-visited);
 }
 
 a.wikilink.external::after,
@@ -570,36 +563,20 @@ p.stat-hint {
   padding: 0.4rem 0.65rem;
   font: inherit;
   font-weight: 600;
-  font-style: italic;
   color: var(--muted);
   text-align: left;
   cursor: pointer;
 }
 
-/* Content row: the composite lead sits flush; its components hang under a teal
-   vertical rail aligned to the lead's left edge (indented, no bullets). */
+/* Content row: the italic "Profile:" lead sits flush over a References-style
+   muted numbered list of the section's entries. */
 .nested-table .nested-content td {
   background: var(--paper);
 }
 
 .nested-content .metric-lead {
   margin-bottom: 0.15rem;
-  font-weight: 600;
-}
-
-.nested-content .metric-components {
-  list-style: none;
-  margin: 0 0 0 4px;
-  padding-left: 9px;
-  border-left: 3px solid var(--accent-mid);
-}
-
-.nested-content .metric-components li {
-  margin: 0;
-}
-
-.nested-content .metric-components li + li {
-  margin-top: 0.25rem;
+  font-style: italic;
 }
 
 /* Tooltip-trigger terms are <button>s; inherit slant so a tooltipped entry
@@ -608,20 +585,18 @@ p.stat-hint {
   font-style: inherit;
 }
 
-/* When a band renders as bullets (rail off): flush bold bullet-less lead, and
-   the component discs pulled in to align under the lead's first word. */
-.nested-table .nested-content ul.stat-metrics {
-  padding-left: 0;
+.nested-content ol.metric-numbered {
+  margin: 0.15rem 0 0;
+  /* Nudge entry text right of the References default (25.6px) … */
+  padding-left: 27px;
 }
 
-.nested-table .nested-content ul.stat-metrics > li:not(.stat-supportive) {
-  font-weight: 600;
-  list-style: none;
-}
-
-.nested-table .nested-content ul.stat-metrics li.stat-supportive {
-  list-style-position: inside;
-  margin-left: 0.4rem;
+/* … and hold the number in place by widening the marker's built-in ". "
+   suffix (space → no-break space + thin space ≈ +2px). Engines without
+   ::marker content support fall back to the same wider gap, with the
+   number riding 2px right alongside the text. */
+.nested-content ol.metric-numbered li::marker {
+  content: counter(list-item) ".\00a0\2009";
 }
 
 /* ===================================================================

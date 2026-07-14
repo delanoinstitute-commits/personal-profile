@@ -5,10 +5,10 @@ import type { Metric } from "./StatTable";
 
 // Shared metric rendering. Two shapes:
 //  - default: a flat bulleted list (the stat tables).
-//  - rail: the composite lead sits flush, and its components hang under a
-//    colored vertical rail indented to the lead's left edge (the Works
-//    accordion). Term signaling (DESIGN_SPEC §4.7): every term is bold; a
-//    tooltip adds a dotted underline; an href makes it a blue link.
+//  - numbered: the composite lead sits flush (italic "Profile:" line) over a
+//    muted numbered list of its components, styled like the References list
+//    (the Works accordion). Term signaling (DESIGN_SPEC §4.7): every term is
+//    bold; a tooltip adds a dotted underline; an href makes it a blue link.
 
 function MetricInline({
   metric,
@@ -57,29 +57,29 @@ function MetricInline({
 
 export default function MetricList({
   metrics,
-  rail = false,
+  numbered = false,
 }: {
   metrics: Metric[];
-  rail?: boolean;
+  numbered?: boolean;
 }) {
-  if (rail) {
+  if (numbered) {
     const lead = metrics.find((m) => !m[2]);
     const components = metrics.filter((m) => m[2]);
     return (
-      <div className="metric-rail">
+      <div>
         {lead && (
           <div className="metric-lead">
             <MetricInline metric={lead} boldTooltip />
           </div>
         )}
         {components.length > 0 && (
-          <ul className="metric-components">
+          <ol className="references-list metric-numbered">
             {components.map((m, i) => (
-              <li key={m[0] || i} className="stat-supportive">
+              <li key={m[0] || i}>
                 <MetricInline metric={m} boldTooltip />
               </li>
             ))}
-          </ul>
+          </ol>
         )}
       </div>
     );

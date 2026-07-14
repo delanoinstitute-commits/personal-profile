@@ -176,15 +176,15 @@ export const WORKS: StatTableData = {
   title: "Works",
   groups: [
     {
-      domain: "Personal",
-      label: "Creative Works",
+      domain: "Personal works",
+      label: "",
       rows: [
         {
           category: "Methodologies (design principles)",
           metrics: [
-            ["", "I am the creator of two design methodologies, my secret sauce", false],
-            ["Taxonomy", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
-            ["RBG", "A universal (marketing, product, and learning) design framework that transforms prospects into educated, self-sufficient users of any value proposition", true],
+            ["", "I am the creator of two design methodologies, the philosophy behind all my designs", false],
+            ["IID", "A universal information integration design process for efficient knowledge classification, retrieval, and referencing", true, "Information Integration Design"],
+            ["RBG", "A universal marketing, product, and instructional design framework that (rapidly) takes prospects to the industry (benchmark) as self-sufficient (graduates) of any value proposition", true, "Rapid Benchmark Graduate"],
           ],
         },
         {
@@ -224,7 +224,7 @@ export const WORKS: StatTableData = {
             [
               "MSP",
               [
-                "A universal exercise-mastery (mobility, stability, and power) system taught using my IID design process, available as ",
+                "A universal exercise-mastery (mobility, stability, and power) system taught using my IID design process, available as free ",
                 <WikiLink key="yt" href="https://www.youtube.com/@LorenzoDelano">YouTube courses</WikiLink>,
                 " and ",
                 <WikiLink key="pdf" href="https://drive.google.com/file/d/1DlHZfG5Nv2TS2Y4dMQwufA_5hnMGFqGC/view">PDFs</WikiLink>,
@@ -245,8 +245,8 @@ export const WORKS: StatTableData = {
       ],
     },
     {
-      domain: "Professional",
-      label: "Work Roles",
+      domain: "Professional experience",
+      label: "",
       rows: [
         {
           category: "First jobs (part-time employee)",

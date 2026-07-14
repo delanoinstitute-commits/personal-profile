@@ -30,13 +30,22 @@ function labelParts(text: string) {
 export function NestedTable({
   groups,
   hint = "Click a band to expand, then a section within it.",
-}: StatTableData & { hint?: string }) {
-  // Default: bands open (their sections visible), sections collapsed.
+  defaultOpenCats = [],
+}: StatTableData & { hint?: string; defaultOpenCats?: string[] }) {
+  // Default: bands open (their sections visible), sections collapsed —
+  // except any listed in defaultOpenCats (the page's showcase sections).
   const [openBands, setOpenBands] = useState<Set<string>>(
     () => new Set(groups.map((g) => g.domain)),
   );
   const [closedCats, setClosedCats] = useState<Set<string>>(
-    () => new Set(groups.flatMap((g) => g.rows.map((r) => `${g.domain}:${r.category}`))),
+    () =>
+      new Set(
+        groups.flatMap((g) =>
+          g.rows
+            .filter((r) => !defaultOpenCats.includes(r.category))
+            .map((r) => `${g.domain}:${r.category}`),
+        ),
+      ),
   );
 
   const toggleBand = (key: string) =>
@@ -72,20 +81,30 @@ export function NestedTable({
                     }}
                   >
                     <span>
-                      <span className="nested-domain">{group.domain}</span>{" "}
-                      <span className="nested-gloss">({group.label})</span>
+                      <span className="nested-domain">{group.domain}</span>
+                      {group.label && (
+                        <>
+                          {" "}
+                          <span className="nested-gloss">({group.label})</span>
+                        </>
+                      )}
                     </span>
                     <Chevron className={`stat-chevron${bandOpen ? " is-open" : ""}`} />
                   </button>
                 </th>
               </tr>
-              {bandOpen &&
-                group.rows.map((row) => {
+              {group.rows.map((row) => {
                   const catKey = `${group.domain}:${row.category}`;
                   const catOpen = !closedCats.has(catKey);
+                  // Collapsed rows stay in the DOM (hidden) so find-in-page
+                  // and crawlers still see the content.
                   return (
                     <Fragment key={catKey}>
-                      <tr className="nested-cat" onClick={() => toggleCat(catKey)}>
+                      <tr
+                        className="nested-cat"
+                        hidden={!bandOpen}
+                        onClick={() => toggleCat(catKey)}
+                      >
                         <th>
                           <button
                             type="button"
@@ -103,17 +122,11 @@ export function NestedTable({
                           </button>
                         </th>
                       </tr>
-                      {catOpen && (
-                        <tr className="nested-content">
-                          <td>
-                            {/* Employment renders as bullets (no rail) for comparison. */}
-                            <MetricList
-                              metrics={row.metrics}
-                              rail={!row.category.startsWith("Employment")}
-                            />
-                          </td>
-                        </tr>
-                      )}
+                      <tr className="nested-content" hidden={!bandOpen || !catOpen}>
+                        <td>
+                          <MetricList metrics={row.metrics} numbered />
+                        </td>
+                      </tr>
                     </Fragment>
                   );
                 })}
