@@ -375,7 +375,7 @@ export const WORKS: StatTableData = {
               "Design consulting",
               [
                 <em key="n">Eudaemonia Inc</em>,
-                ", worldwide (mostly US), since 2024 (age 36)",
+                ", worldwide (mostly US), since 2019 (age 31)",
               ],
               true,
               "Design contracts under my own name, spanning B2C educators (certifications and curriculum systems), B2C tech companies (educational content), and wellness centers (functional space design). Ongoing — I choose projects where my IID and RBG methods bite hardest.",
