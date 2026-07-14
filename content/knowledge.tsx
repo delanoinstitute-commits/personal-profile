@@ -268,7 +268,7 @@ export const WORKS: StatTableData = {
             [
               "English tutor",
               [
-                <em key="n"><WikiLink href="https://www.sjzfls.com/">St. John&rsquo;s Foreign Language School</WikiLink></em>,
+                <em key="n"><WikiLink href="https://www.sjzfls.com/">St. John&rsquo;s FLS</WikiLink></em>,
                 ", Shijiazhuang, China, 6 months, 2004 (age 16)",
               ],
               true,
@@ -291,7 +291,7 @@ export const WORKS: StatTableData = {
                 ", Kuala Lumpur, 1 year, 2016–2017 (age 28)",
               ],
               true,
-              "Hired off a video cover letter as a marketing specialist — campaigns and funnels, plus internal financial workshops I ran for colleagues. Promoted out of the org chart: no single title covered everything I could do, so I moved to a contractor role working directly with CEO Vishen Lakhiani.",
+              "Hired off a video cover letter as a marketing specialist — campaigns and funnels, plus internal financial workshops I ran for colleagues. Promoted out of the org chart to a contractor role, working directly with the CEO, Vishen Lakhiani.",
             ],
           ],
         },
@@ -308,7 +308,7 @@ export const WORKS: StatTableData = {
                 "), PTA, 3 years, 2011–2013 (age 23)",
               ],
               true,
-              "A pop-up CrossFit-style gym Brad and I ran out of a wrestling hall — 5 a.m. classes daily, growing to ~50 clients, two hires, and a rebrand to Wi-move’s open-gym model. I bought out Brad’s shares, then sold the gym back to him when my interests shifted to education — it lives on as Move Freely.",
+              "A pop-up CrossFit-style gym Brad and I ran from a wrestling hall — 5 a.m. classes, ~50 clients, a rebrand to Wi-move. I bought Brad out, then sold it back to him when my interests shifted to education; it lives on as Move Freely.",
             ],
             [
               "Events company",
@@ -319,7 +319,7 @@ export const WORKS: StatTableData = {
                 "), SA (nationwide), 1 year, 2014 (age 26)",
               ],
               true,
-              "A fitness-education retreat company built on Primal Blueprint principles — we designed the curriculum, scouted venues nationwide, and ran our first retreat in February 2014. Demand never materialized; we folded after one event, and the failure pushed me into a serious marketing student role — which became ARTrepreneurs.",
+              "A fitness-education retreat company built on Primal Blueprint principles — we ran our first and only retreat in February 2014. Demand never materialized, and the failure pushed me into a serious marketing student role — which became ARTrepreneurs.",
             ],
             [
               "Coaching company",
@@ -330,7 +330,7 @@ export const WORKS: StatTableData = {
                 "), US, 5 years, 2020–2025 (age 32)",
               ],
               true,
-              "A venture I co-founded with Vishen Lakhiani (25% stake): he brought the clients and platforms, I ran everything else — 10X research experiments, Mindvalley University workshops, and coaching. The 10X Quest built from it has 90,000+ graduates. I sold my stake in 2025 over diverging visions.",
+              "Co-founded with Vishen Lakhiani (25% stake): he brought the clients and platforms, I ran everything else — experiments, workshops, and coaching. The 10X Quest has 90,000+ graduates. I sold my stake in 2025 over diverging visions.",
             ],
           ],
         },
@@ -345,7 +345,7 @@ export const WORKS: StatTableData = {
                 ", Pretoria, 2 years, 2015–2016 (age 27)",
               ],
               true,
-              "A digital agency with two contractors — funnels, PPC, SEO, sites, and video for clients who started as friends, carried by one anchor client. I’d hit a wall in South Africa; when demand plateaued I wound it down, flew to the US to test bigger markets, and took the Mindvalley job.",
+              "A digital agency with two contractors — funnels, SEO, sites, and video — carried by one anchor client. When demand plateaued I wound it down, flew to the US to test bigger markets, and took the Mindvalley job.",
             ],
             [
               "Design agency",
@@ -354,7 +354,7 @@ export const WORKS: StatTableData = {
                 ", US (mostly), 7 years, 2018–2024 (age 30)",
               ],
               true,
-              "My US design consultancy (Eudaemonia, Inc.): end-to-end course design, direction, and production for best-selling authors and educators, plus certifications, micro-degree frameworks, and content-classification systems for the platforms behind them. When AI advanced, demand ran out — so I moved on.",
+              "My US design consultancy (Eudaemonia, Inc.): course design, direction, and production for best-selling authors and educators, plus certifications and content-classification systems for the platforms behind them. When AI advanced, demand ran out — so I moved on.",
             ],
           ],
         },
@@ -369,7 +369,7 @@ export const WORKS: StatTableData = {
                 ", global (mostly US), 6 years, 2019– (age 31)",
               ],
               true,
-              "Health interventions under my own name, in two forms: B2B employee apprenticeships (training corporate teams to train themselves on the 10X method) and B2C live-in interventions (preparing Gerard Butler for Greenland; training billionaire Naveen Jain’s family). Ongoing — I take the interventions I find interesting.",
+              "Health interventions under my own name, in two forms: B2B employee apprenticeships (training corporate teams to train themselves) and B2C live-in interventions (preparing Gerard Butler for Greenland; training billionaire Naveen Jain’s family). Ongoing — I take the interventions I find interesting.",
             ],
             [
               "Design consulting",
