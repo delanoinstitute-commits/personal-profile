@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
-import WikiLink from "@/components/WikiLink";
 import { NestedTable } from "@/components/NestedTable";
 import { References } from "@/components/References";
 import {
@@ -43,7 +42,7 @@ export default function KnowledgePage() {
         certificate, the problem that yields. The classroom ended at 13; nearly everything
         since has been independent.
       </p>
-      <NestedTable {...EDUCATION} hint="Click a section to expand it." />
+      <NestedTable {...EDUCATION} />
 
       <h2 id="skills">Skills <span className="heading-paren">(Practice)</span></h2>
       <p>
@@ -51,27 +50,16 @@ export default function KnowledgePage() {
         tools and symbols, and interpersonal skill with people. I design learning systems,
         direct productions, and coach — and each is demonstrable on demand.
       </p>
-      <NestedTable {...SKILLS} hint="Click a section to expand it." />
-      <p>
-        Testimony:{" "}
-        <WikiLink href="https://stories.mindvalley.com/product/mindvalley-certified-10x-coach">10X Coach stories</WikiLink>,{" "}
-        <WikiLink href="https://stories.mindvalley.com/product/10x-fitness">10X Quest stories</WikiLink>,{" "}
-        <WikiLink href="https://stories.mindvalley.com/product/body-first">BodyFirst stories</WikiLink>,{" "}
-        <WikiLink href="https://youtu.be/8p5pAPpmy1o">the Norton family</WikiLink>, and{" "}
-        <WikiLink href="https://youtu.be/WBfb7Trl3JY">Zenas &amp; Sandra</WikiLink>.
-      </p>
+      <NestedTable {...SKILLS} />
 
       <h2 id="works">Works <span className="heading-paren">(Production)</span></h2>
       <p>
-        What I have made, in two readings of one output: works authored alone
-        and works produced with others. The artifact is the strongest evidence of knowledge;
-        this catalog is the proof layer of the two sections above.
+        Every work below began as a problem I solved for myself. I document,
+        share, and productize only when demand begs
+        or opportunity presents. Two decades of attempted self-mastery and the
+        pursuit of excellence, shipped with and for others.
       </p>
-      <NestedTable
-        {...WORKS}
-        hint="Click a section to expand it."
-        defaultOpenCats={["Designs (published artifacts)"]}
-      />
+      <NestedTable {...WORKS} defaultOpenCats={["Designs (published artifacts)"]} />
 
       <References
         items={KNOWLEDGE_REFERENCES}

@@ -29,7 +29,7 @@ function labelParts(text: string) {
 
 export function NestedTable({
   groups,
-  hint = "Click a band to expand, then a section within it.",
+  hint,
   defaultOpenCats = [],
 }: StatTableData & { hint?: string; defaultOpenCats?: string[] }) {
   // Default: bands open (their sections visible), sections collapsed —
@@ -63,7 +63,7 @@ export function NestedTable({
 
   return (
     <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-      <p className="stat-hint">{hint}</p>
+      {hint && <p className="stat-hint">{hint}</p>}
       <table className="stat-table nested-table">
         {groups.map((group) => {
           const bandOpen = openBands.has(group.domain);

@@ -298,7 +298,7 @@ export const WORKS: StatTableData = {
         {
           category: "Partnerships (full-time co-operator)",
           metrics: [
-            ["", "I build ventures alongside partners I trust, and move on when visions diverge", false],
+            ["", "I build ventures alongside partners I trust, and move on when (outgrown) visions diverge", false],
             [
               "Gym studio",
               [
@@ -335,9 +335,9 @@ export const WORKS: StatTableData = {
           ],
         },
         {
-          category: "Sole ventures (full-time operator)",
+          category: "Self-employment (independent operator)",
           metrics: [
-            ["", "I build and operate agencies only where demand runs high, and move on when it runs out", false],
+            ["", "I help build brands and take contracts where demand runs high, and move on when it runs out", false],
             [
               "Marketing agency",
               [
@@ -348,37 +348,28 @@ export const WORKS: StatTableData = {
               "A digital agency with two contractors — funnels, SEO, sites, and video — carried by one anchor client. When demand plateaued I wound it down, flew to the US to test bigger markets, and took the Mindvalley job.",
             ],
             [
-              "Design agency",
-              [
-                <em key="n"><WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Benchmark Designs</WikiLink></em>,
-                ", US (mostly), 7 years, 2018–2024 (age 30)",
-              ],
-              true,
-              "Course design, direction, and production for best-selling authors and educators, plus certifications and content-classification systems for the platforms behind them. When AI advanced, demand ran out — so I moved on.",
-            ],
-          ],
-        },
-        {
-          category: "Self-employment (project-based contractor)",
-          metrics: [
-            ["", "I contract independently under my own name, on projects I choose", false],
-            [
-              "Lifestyle interventions",
-              [
-                <em key="n">Eudaemonia Inc</em>,
-                ", worldwide (mostly US), since 2019 (age 31)",
-              ],
-              true,
-              "Health interventions under my own name, in two forms: 1) corporate employee apprenticeships (training corporate teams to train themselves) and 2) private live-in interventions (lifestyle redesign for celebrities and entrepreneurs). Ongoing — I take the interventions I find interesting.",
-            ],
-            [
               "Design consulting",
               [
+                <em key="n"><WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Eudaemonia Inc</WikiLink></em>,
+                ", worldwide (mostly US), since 2018 (age 30)",
+              ],
+              true,
+              "Education (product) design, directing, and production for best-selling authors and educators; plus functional space design for wellness centers. Ongoing — I choose the projects where my IID and RBG methodologies bite hardest.",
+            ],
+            [
+              "Health interventions",
+              [
                 <em key="n">Eudaemonia Inc</em>,
                 ", worldwide (mostly US), since 2019 (age 31)",
               ],
               true,
-              "Design contracts under my own name, spanning B2C educators (certifications and curriculum systems), B2C tech companies (educational content), and wellness centers (functional space design). Ongoing — I choose projects where my IID and RBG methods bite hardest.",
+              {
+                text: [
+                  "Health interventions under my own name, in two forms: 1) corporate employee ",
+                  <WikiLink key="appr" href="https://youtu.be/BYUzGC72SnQ">apprenticeships</WikiLink>,
+                  " (training corporate teams to train themselves) and 2) private live-in interventions (lifestyle redesign for celebrities and entrepreneurs). Ongoing — I take the interventions I find interesting.",
+                ],
+              },
             ],
           ],
         },

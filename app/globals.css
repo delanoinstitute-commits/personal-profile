@@ -563,7 +563,7 @@ p.stat-hint {
   padding: 0.4rem 0.65rem;
   font: inherit;
   font-weight: 600;
-  color: var(--muted);
+  color: var(--text);
   text-align: left;
   cursor: pointer;
 }
