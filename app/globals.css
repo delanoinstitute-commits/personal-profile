@@ -608,10 +608,12 @@ p.stat-hint {
   font-style: inherit;
 }
 
-/* When a band renders as bullets (rail off), bold its lead line to match the
-   bold summary of the rail bands. */
+/* When a band renders as bullets (rail off), the lead line is a flush, bold,
+   bullet-less summary (matching the rail bands); only the components bullet. */
 .nested-content ul.stat-metrics > li:not(.stat-supportive) {
   font-weight: 600;
+  list-style: none;
+  margin-left: -1.1rem;
 }
 
 /* ===================================================================
