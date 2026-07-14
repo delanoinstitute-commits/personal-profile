@@ -183,7 +183,7 @@ export const WORKS: StatTableData = {
           category: "Methodologies (design principles)",
           metrics: [
             ["", "I am the creator of two design methodologies, the philosophy behind all my designs", false],
-            ["IID", "A universal information integration design process for efficient knowledge classification, retrieval, and referencing", true, "Information Integration Design"],
+            ["IID", "A universal information integration (taxonomical) design process for efficient knowledge classification, retrieval, and referencing", true, "Information Integration Design"],
             ["RBG", "A universal marketing, product, and instructional design framework that (rapidly) takes prospects to the industry (benchmark) as self-sufficient (graduates) of any value proposition", true, "Rapid Benchmark Graduate"],
           ],
         },
@@ -206,7 +206,9 @@ export const WORKS: StatTableData = {
             [
               "BodyFirst",
               [
-                "A universal basic-fitness program taught using my RBG framework, available as a ",
+                "A universal basic-fitness program co-authored with ",
+                <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
+                " using my RBG framework, available as a ",
                 <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
               ],
               true,
@@ -252,11 +254,11 @@ export const WORKS: StatTableData = {
           category: "First jobs (part-time employee)",
           metrics: [
             ["", "I earned my independence young through retail, sales, and coaching work", false],
-            ["Magician vendor", "The Magic Store, Pretoria, 6 months, 2003 (age 15)", true],
-            ["Sales assistant", "Sidewalk Surfer, Pretoria, 6 months, 2003 (age 15)", true],
-            ["Store operator", "DVD World, Pretoria, 6 months, 2005 (age 17)", true],
-            ["Sales associate", "Adidas Outlet Store, Pretoria, 1 year, 2006 (age 18)", true],
-            ["Athletics coach", "Brooklyn primary, Pretoria, 1 year, 2007 (age 19)", true],
+            ["Magician vendor", [<em key="n">The Magic Store</em>, ", Pretoria, 6 months, 2003 (age 15)"], true, "My first job, at 15: performing and selling magic tricks at a kiosk in Menlyn Park Mall. I left when my brother got me a steadier retail job at Sidewalk Surfer."],
+            ["Sales assistant", [<em key="n">Sidewalk Surfer</em>, ", Pretoria, 1 year, 2003 (age 15)"], true, "Floor sales, front-desk service, and stock control at a skate shop in Menlyn under area manager Peter — a natural fit, since I skated myself. The wage paid my kung-fu tuition. I left to teach English in China."],
+            ["Store operator", [<em key="n">DVD World</em>, ", Pretoria, 6 months, 2005 (age 17)"], true, "I ran the store single-handedly at 17 — rentals, returns, stock, and till, open to close. I left when I relocated, and moved on to waitering at Java Cafe."],
+            ["Sales associate", [<em key="n">Adidas Outlet Store</em>, ", Pretoria, 1 year, 2006 (age 18)"], true, "Floor sales, customer service, and stock control of sportswear at Atterbury Value Mart under store manager Keith. I left for my second teaching stint in China."],
+            ["Athletics coach", [<em key="n">Brooklyn Primary School</em>, ", Pretoria, 1 year, 2007 (age 19)"], true, "Coached track athletics at the school while sprinting competitively myself, training under a TUKS coach for the 200 m event. I stopped when studies, work, and my own training filled the calendar."],
           ],
         },
         {
@@ -266,83 +268,93 @@ export const WORKS: StatTableData = {
             [
               "English tutor",
               [
-                <WikiLink key="sjz" href="https://www.sjzfls.com/">St. John&rsquo;s FLS</WikiLink>,
+                <em key="n"><WikiLink href="https://www.sjzfls.com/">St. John&rsquo;s Foreign Language School</WikiLink></em>,
                 ", Shijiazhuang, China, 6 months, 2004 (age 16)",
               ],
               true,
+              "Taught English from kindergarten to adult level — lesson planning, assignments, workshops, and evaluations — under manager Hilton, living alone in China at 16.",
             ],
-            ["Cafe manager", "Java Cafe, Pretoria, 2 years, 2007–2008 (age 19)", true],
+            ["Cafe manager", [<em key="n">Java Cafe</em>, ", Pretoria, 2 years, 2007–2008 (age 19)"], true, "Started as a waiter and was promoted to manager by owner Memos — hiring, training, and running the floor, stock takes, and promotions (I gave my best friend Brad his first job there). I left to go full-time into fitness after earning my ETA certification."],
             [
               "Personal trainer",
               [
-                <WikiLink key="bx" href="https://www.ballistixfitness.co.za/">Ballistix CrossFit</WikiLink>,
+                <em key="n"><WikiLink href="https://www.ballistixfitness.co.za/">Ballistix CrossFit</WikiLink></em>,
                 ", Pretoria, 2 years, 2009–2010 (age 21)",
               ],
               true,
+              "Recruited personally by owner Neil Scholtz off the Virgin Active floor to coach at his new CrossFit box — programming, 1-on-1 and group instruction, and nutrition workshops.",
             ],
             [
               "Product specialist",
               [
-                <WikiLink key="mv" href="https://www.mindvalley.com/">Mindvalley</WikiLink>,
+                <em key="n"><WikiLink href="https://www.mindvalley.com/">Mindvalley</WikiLink></em>,
                 ", Kuala Lumpur, 1 year, 2016–2017 (age 28)",
               ],
               true,
+              "Hired off a video cover letter as a marketing specialist — campaigns and funnels, plus internal financial workshops I ran for colleagues. Promoted out of the org chart: no single title covered everything I could do, so I moved to a contractor role working directly with CEO Vishen Lakhiani.",
             ],
           ],
         },
         {
           category: "Partnerships (full-time co-operator)",
           metrics: [
-            ["", "I build ventures alongside partners I trust, sharing the ownership", false],
+            ["", "I build ventures alongside partners I trust, and move on when visions diverge", false],
             [
               "Gym studio",
               [
-                "Quantum Physiques (w/ ",
+                <em key="n">Quantum Physiques</em>,
+                " (w/ ",
                 <WikiLink key="brad" href="https://movefreely.co.za/">Brad Openshaw</WikiLink>,
                 "), PTA, 3 years, 2011–2013 (age 23)",
               ],
               true,
+              "A pop-up CrossFit-style gym Brad and I ran out of a wrestling hall — 5 a.m. classes daily, growing to ~50 clients, two hires, and a rebrand to Wi-move’s open-gym model. I bought out Brad’s shares, then sold the gym back to him when my interests shifted to education — it lives on as Move Freely.",
             ],
             [
               "Events company",
               [
-                "The PB Retreat (w/ ",
+                <em key="n">The PB Retreat</em>,
+                " (w/ ",
                 <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
                 "), SA (nationwide), 1 year, 2014 (age 26)",
               ],
               true,
+              "A fitness-education retreat company built on Primal Blueprint principles — we designed the curriculum, scouted venues nationwide, and ran our first retreat in February 2014. Demand never materialized; we folded after one event, and the failure pushed me into a serious marketing student role — which became ARTrepreneurs.",
             ],
             [
               "Coaching company",
               [
-                "10X Fitness (w/ ",
+                <em key="n">10X Fitness</em>,
+                " (w/ ",
                 <WikiLink key="vishen" href="https://en.wikipedia.org/wiki/Vishen_Lakhiani">Vishen Lakhiani</WikiLink>,
                 "), US, 5 years, 2020–2025 (age 32)",
               ],
               true,
-              "A venture I co-founded with Vishen Lakhiani (25% stake): he brought the clients and platforms, I ran everything else — 10X research experiments, Mindvalley University workshops, and coaching — generating $150–200k a year. I sold my stake in 2025 over diverging visions.",
+              "A venture I co-founded with Vishen Lakhiani (25% stake): he brought the clients and platforms, I ran everything else — 10X research experiments, Mindvalley University workshops, and coaching. The 10X Quest built from it has 90,000+ graduates. I sold my stake in 2025 over diverging visions.",
             ],
           ],
         },
         {
           category: "Sole ventures (full-time operator)",
           metrics: [
-            ["", "I build and run my own agencies single-handedly, owning every part", false],
+            ["", "I build and operate agencies only where demand runs high, and move on when it runs out", false],
             [
               "Marketing agency",
               [
-                <WikiLink key="art" href="https://artrepreneurs.co.za/">ARTrepreneurs</WikiLink>,
+                <em key="n"><WikiLink href="https://artrepreneurs.co.za/">ARTrepreneurs</WikiLink></em>,
                 ", Pretoria, 2 years, 2015–2016 (age 27)",
               ],
               true,
+              "A digital agency with two contractors — funnels, PPC, SEO, sites, and video for clients who started as friends, carried by one anchor client. I’d hit a wall in South Africa; when demand plateaued I wound it down, flew to the US to test bigger markets, and took the Mindvalley job.",
             ],
             [
               "Design agency",
               [
-                <WikiLink key="bd" href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Benchmark Designs</WikiLink>,
+                <em key="n"><WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Benchmark Designs</WikiLink></em>,
                 ", US (mostly), 7 years, 2018–2024 (age 30)",
               ],
               true,
+              "My US design consultancy (Eudaemonia, Inc.): end-to-end course design, direction, and production for best-selling authors and educators, plus certifications, micro-degree frameworks, and content-classification systems for the platforms behind them. When AI advanced, demand ran out — so I moved on.",
             ],
           ],
         },
@@ -357,6 +369,7 @@ export const WORKS: StatTableData = {
                 ", global (mostly US), 6 years, 2019– (age 31)",
               ],
               true,
+              "Health interventions under my own name, in two forms: B2B employee apprenticeships (training corporate teams to train themselves on the 10X method) and B2C live-in interventions (preparing Gerard Butler for Greenland; training billionaire Naveen Jain’s family). Ongoing — I take the interventions I find interesting.",
             ],
             [
               "Design consulting",
@@ -365,6 +378,7 @@ export const WORKS: StatTableData = {
                 ", global (mostly US), 2 years, 2024– (age 36)",
               ],
               true,
+              "Design contracts under my own name, spanning B2C educators (certifications and curriculum systems), B2C tech companies (educational content), and wellness centers (functional space design). Ongoing — I choose projects where my IID and RBG methods bite hardest.",
             ],
           ],
         },
