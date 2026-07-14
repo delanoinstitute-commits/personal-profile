@@ -608,12 +608,20 @@ p.stat-hint {
   font-style: inherit;
 }
 
-/* When a band renders as bullets (rail off), the lead line is a flush, bold,
-   bullet-less summary (matching the rail bands); only the components bullet. */
-.nested-content ul.stat-metrics > li:not(.stat-supportive) {
+/* When a band renders as bullets (rail off): flush bold bullet-less lead, and
+   the component discs pulled in to align under the lead's first word. */
+.nested-table .nested-content ul.stat-metrics {
+  padding-left: 0;
+}
+
+.nested-table .nested-content ul.stat-metrics > li:not(.stat-supportive) {
   font-weight: 600;
   list-style: none;
-  margin-left: -1.1rem;
+}
+
+.nested-table .nested-content ul.stat-metrics li.stat-supportive {
+  list-style-position: inside;
+  margin-left: 0.4rem;
 }
 
 /* ===================================================================
