@@ -2,12 +2,11 @@ import WikiLink from "@/components/WikiLink";
 import type { StatTableData } from "@/components/StatTable";
 import type { Reference } from "@/components/References";
 
-// Shared knowledge data — consumed by both the tabled page (/knowledge) and the
-// outline experiment (/knowledge-alt), so the two stay verbatim in sync.
+// Knowledge page data — consumed by /knowledge.
 // See KNOWLEDGE_SPEC.md: Education (theory — knowing), Skills (practice —
 // doing), Works (production — making), each split by the individual/social
-// locus axis. The composite lead of each cluster is labelled per section —
-// Student / Practitioner / Creator / Roles. "—" = to be cataloged.
+// locus axis. Each cluster opens with an unlabelled composite lead (the
+// italic summary line) over its component entries. "—" = to be cataloged.
 
 export const EDUCATION: StatTableData = {
   title: "Education",
@@ -19,7 +18,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Formal (in-person schooling)",
           metrics: [
-            ["Student", "Primary education with tertiary language distinctions", false, "The composite of my guided schooling — seven primary grades in public school, then privately tutored Mandarin to international distinction."],
+            ["", "Primary education with tertiary language distinctions", false],
             ["Grades (1–3)", "Laerskool Muldersdrif (1994–1996)", true, "Lower primary."],
             ["Grades (4–7)", "Laerskool Hoeveld, Evander (1997–2000)", true, "Upper primary — the last of continuous schooling."],
             ["Mandarin", "Pretoria Chinese School (2005–2008)", true, {
@@ -38,7 +37,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Non-formal (in-person training)",
           metrics: [
-            ["Student", "Teacher-centric tertiary vocational education", false, "All four qualifications are transmission roles — tutor, instructor, coach, learning designer — the teaching thread running through everything since."],
+            ["", "Teacher-centric tertiary vocational education", false],
             ["Tutor", "TEFL, Language Link (2006)", true, {
               image: "/credentials/tefl.jpg",
               alt: "Preliminary Certificate in Teaching English as a Foreign Language, Southern African TEFL Training Institute, 2006",
@@ -68,7 +67,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Non-formal (remote schooling)",
           metrics: [
-            ["Student", "Secondary education with specialist electives", false, "Self-elected remote study — correspondence secondary schooling, then university, institute, and open-platform coursework as each domain demanded."],
+            ["", "Secondary education with specialist electives", false],
             ["Grades (8–10)", "INTEC College (2001–2002)", true, "Distance secondary schooling — the last formal enrolment."],
             ["Philosophy", "Critical thinking, U. of Auckland (2018)", true, {
               image: "/credentials/philosophy.jpg",
@@ -88,7 +87,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Informal (remote training)",
           metrics: [
-            ["Student", "Practitioner-led health training", false, "Uncredentialed by design — specialist courses under named practitioners, validated in practice rather than by accreditation."],
+            ["", "Practitioner-led health training", false],
             ["Nutrition", "Nutrition biochemistry, Dr Bryan Walsh (2021)", true, {
               image: "/credentials/nutrition.jpg",
               alt: "Certificate of Training in Nutritional Biochemistry, Metabolic Fitness, 2021",
@@ -111,42 +110,36 @@ export const SKILLS: StatTableData = {
   title: "Skills",
   groups: [
     {
-      domain: "Technical",
-      label: "Demonstration (Performance)",
+      domain: "Technical skills",
+      label: "",
       rows: [
         {
-          category: "Artifactual (structural design)",
+          category: "Structural (knowledge and system design)",
           metrics: [
-            ["Practitioner", "Applied taxonomist, designer, and strategist", false, "The composite of my structural design skill — mapping domains into taxonomies, architecting products and systems from them, and analyzing performance against them."],
+            ["", "Applied taxonomist, designer, and strategist", false],
             ["Classification", "Knowledge domain mapping, distillation, and standardization", true],
             ["Architecture", "Product, protocol, content, and systems design", true],
             ["Analysis", "Performance tracking, benchmarking, planning, and programming", true],
           ],
         },
         {
-          category: "Digital (multi-modal publishing)",
+          category: "Material (content and spatial design)",
           metrics: [
-            ["Practitioner", "On-demand educational content creator", false, "The composite of my publishing skill — designing, producing, editing, and shipping educational content across media."],
+            ["", "On-demand content creator and behavior-led spatial designer", false],
             ["Production", "Content design, delivery, editing, and publishing", true],
-          ],
-        },
-        {
-          category: "Spatial (functional design)",
-          metrics: [
-            ["Practitioner", "Behavior-led spatial designer", false, "The composite of my spatial skill — laying out homes and service facilities so the environment itself steers behavior."],
             ["Planning", "Interior (home) and industrial (services) layout design and user-flow optimization", true],
           ],
         },
       ],
     },
     {
-      domain: "Interpersonal",
-      label: "Testimony (Reputation)",
+      domain: "Interpersonal skills",
+      label: "",
       rows: [
         {
           category: "Pedagogical (live transmission)",
           metrics: [
-            ["Practitioner", "Situational teacher, instructor, facilitator, and trainer", false, "The composite of my live transmission skill — teaching theory and instructing practice, one-on-one to many, and raising students into teachers and instructors."],
+            ["", "Situational teacher, instructor, facilitator, and trainer", false],
             ["Teaching", "Theoretical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
             ["Instruction", "Practical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
             ["Facilitation", "Teaching students/clients to become teachers", true],
@@ -154,16 +147,10 @@ export const SKILLS: StatTableData = {
           ],
         },
         {
-          category: "Editorial (educational profiling)",
+          category: "Directorial (profiling and orchestration)",
           metrics: [
-            ["Practitioner", "Expert profiler and method producer", false, "The composite of my profiling skill — sitting with living experts, or reading printed bodies of knowledge, to surface the knowledge unique to them and produce it into methods they can teach."],
+            ["", "Expert profiler and project-based events director", false],
             ["Elicitation", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true],
-          ],
-        },
-        {
-          category: "Organizational (project orchestration)",
-          metrics: [
-            ["Practitioner", "Project-based events director", false, "The composite of my orchestration skill — planning, staffing, and running large-scale productions, experiments, and interventions from brief to report."],
             ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true],
           ],
         },
@@ -183,8 +170,8 @@ export const WORKS: StatTableData = {
           category: "Methodologies (design principles)",
           metrics: [
             ["", "I am the creator of two design methodologies, the philosophy behind all my designs", false],
-            ["IID", "A universal information integration (taxonomical) design process for efficient knowledge classification, retrieval, and referencing", true, "Information Integration Design"],
-            ["RBG", "A universal marketing, product, and instructional design framework that (rapidly) takes prospects to the industry (benchmark) as self-sufficient (graduates) of any value proposition", true, "Rapid Benchmark Graduate"],
+            ["Taxonomical", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
+            ["Educational", "A universal product and instructional design framework that sequences the fewest behavioral changes a prospect must make to become a lifelong, self-sufficient user of any teaching or product", true],
           ],
         },
         {
@@ -208,7 +195,7 @@ export const WORKS: StatTableData = {
               [
                 "A universal basic-fitness program co-authored with ",
                 <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
-                " using my RBG framework, available as a ",
+                " using my educational design framework, available as a ",
                 <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
               ],
               true,
@@ -218,7 +205,7 @@ export const WORKS: StatTableData = {
               [
                 "The Values Factor program ",
                 <WikiLink key="test" href="https://youtube.com/shorts/li3cYZKc9zw">co-authored</WikiLink>,
-                " with Dr. John Demartini using my RBG framework, available on ",
+                " with Dr. John Demartini using my educational design framework, available on ",
                 <WikiLink key="mv" href="https://www.mindvalley.com/values">Mindvalley</WikiLink>,
               ],
               true,
@@ -354,7 +341,7 @@ export const WORKS: StatTableData = {
                 ", worldwide (mostly US), since 2018 (age 30)",
               ],
               true,
-              "Education (product) design, directing, and production for best-selling authors and educators; plus functional space design for wellness centers. Ongoing — I choose the projects where my IID and RBG methodologies bite hardest.",
+              "Education (product) design, directing, and production for best-selling authors and educators; plus functional space design for wellness centers. Ongoing — I choose the projects where my taxonomical and educational design methodologies bite hardest.",
             ],
             [
               "Health interventions",
