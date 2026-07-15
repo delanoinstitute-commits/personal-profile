@@ -61,7 +61,7 @@ export default function KnowledgePage() {
         or opportunity presents. Two decades of attempted self-mastery and the
         pursuit of excellence, shipped with and for others.
       </p>
-      <NestedTable {...WORKS} defaultOpenCats={["Designs (published artifacts)"]} />
+      <NestedTable {...WORKS} />
 
       <References
         items={KNOWLEDGE_REFERENCES}

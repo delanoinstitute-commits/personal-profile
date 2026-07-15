@@ -30,22 +30,13 @@ function labelParts(text: string) {
 export function NestedTable({
   groups,
   hint,
-  defaultOpenCats = [],
-}: StatTableData & { hint?: string; defaultOpenCats?: string[] }) {
-  // Default: bands open (their sections visible), sections collapsed —
-  // except any listed in defaultOpenCats (the page's showcase sections).
+}: StatTableData & { hint?: string }) {
+  // Default: bands open (their sections visible), sections collapsed.
   const [openBands, setOpenBands] = useState<Set<string>>(
     () => new Set(groups.map((g) => g.domain)),
   );
   const [closedCats, setClosedCats] = useState<Set<string>>(
-    () =>
-      new Set(
-        groups.flatMap((g) =>
-          g.rows
-            .filter((r) => !defaultOpenCats.includes(r.category))
-            .map((r) => `${g.domain}:${r.category}`),
-        ),
-      ),
+    () => new Set(groups.flatMap((g) => g.rows.map((r) => `${g.domain}:${r.category}`))),
   );
 
   const toggleBand = (key: string) =>

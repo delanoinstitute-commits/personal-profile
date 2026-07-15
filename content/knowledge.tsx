@@ -405,7 +405,7 @@ export const WORKS: StatTableData = {
           metrics: [
             ["", "I build ventures alongside partners I trust, and move on when (outgrown) visions diverge", false],
             [
-              "Gym studio",
+              "Fitness studio",
               [
                 <em key="n">Quantum Physiques</em>,
                 " (w/ ",
@@ -413,12 +413,12 @@ export const WORKS: StatTableData = {
                 "), Pretoria, 3 years, 2011–2013 (age 23–25)",
               ],
               true,
-              "A pop-up CrossFit-style gym Brad and I ran from a wrestling hall — 5 a.m. classes, ~50 clients, a rebrand to Wi-move. I bought Brad out, then sold it back to him when my interests shifted to education; it lives on as Move Freely.",
+              "A pop-up CrossFit-style gym run out of a wrestling hall with ~100 clients at its peak. I sold my stake to Brad in January 2014 as my interests shifted toward education; QP lives on as Move Freely.",
             ],
             [
-              "Events company",
+              "Retreat business",
               [
-                <em key="n">The PB Retreat</em>,
+                <em key="n">The Physical Breakthrough Retreat</em>,
                 " (w/ ",
                 <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
                 "), SA (nationwide), 1 year, 2014 (age 26)",
@@ -432,10 +432,10 @@ export const WORKS: StatTableData = {
                 <em key="n">10X Fitness</em>,
                 " (w/ ",
                 <WikiLink key="vishen" href="https://en.wikipedia.org/wiki/Vishen_Lakhiani">Vishen Lakhiani</WikiLink>,
-                "), US, 5 years, 2020–2025 (age 32–37)",
+                "), international (mostly US), 5 years, 2020–2025 (age 32–37)",
               ],
               true,
-              "Co-founded with Vishen Lakhiani (25% stake): he brought the clients and platforms, I ran everything else — experiments, workshops, and coaching. The 10X Quest has 90,000+ graduates. I sold my stake in 2025 over diverging visions.",
+              "Co-founded with Vishen Lakhiani (25% stake): he supplied the clients and platforms, I ran the show — experiments, workshops, courses, and coaching. Average annual revenue of $175k. I sold my stake in 2025 over diverging visions.",
             ],
           ],
         },
@@ -456,7 +456,7 @@ export const WORKS: StatTableData = {
               "Design consulting",
               [
                 <em key="n"><WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Eudaemonia Inc</WikiLink></em>,
-                ", worldwide (mostly US), since 2018 (age 30)",
+                ", international (mostly US), since 2018 (age 30)",
               ],
               true,
               "Education (product) design, directing, and production for best-selling authors and educators; plus functional space design for wellness centers. Ongoing — I choose the projects where my taxonomical and educational design methodologies bite hardest.",
@@ -465,14 +465,14 @@ export const WORKS: StatTableData = {
               "Health interventions",
               [
                 <em key="n">Eudaemonia Inc</em>,
-                ", worldwide (mostly US), since 2019 (age 31)",
+                ", international (mostly US), since 2019 (age 31)",
               ],
               true,
               {
                 text: [
-                  "Health interventions under my own name, in two forms: 1) corporate employee ",
-                  <WikiLink key="appr" href="https://youtu.be/BYUzGC72SnQ">apprenticeships</WikiLink>,
-                  " (training corporate teams to train themselves) and 2) private live-in interventions (lifestyle redesign for celebrities and entrepreneurs). Ongoing — I take the interventions I find interesting.",
+                  "Health interventions under my own name, in two forms: 1) corporate employee apprenticeships (see ",
+                  <WikiLink key="ex" href="https://youtu.be/BYUzGC72SnQ">example</WikiLink>,
+                  " here) and 2) private live-in interventions (lifestyle redesign for celebrities and entrepreneurs). Ongoing — I take the interventions I find interesting.",
                 ],
               },
             ],
