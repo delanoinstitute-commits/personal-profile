@@ -21,26 +21,26 @@ export default function KnowledgePage() {
       <PageHeading title="Knowledge" hatnote={<>The present — what I know, do, and make</>} />
 
       <p className="lead">
-        Knowledge is one competence read at three activities: what I know (education —
-        theory), what I can do (skills — practice), and what I have made (works —
-        production).
+        Knowledge is one competence read three ways: what I know (education),
+        what I can do (skills), and what I have made (works). This page is my
+        full inventory of it — claimed in theory, shown in practice, proven in
+        production.
       </p>
       <p>
-        Each activity is read in two loci, individual and social: study independent or
-        guided, skill technical or interpersonal, works authored or produced. And each
-        cluster is named by its kind and by how it is validated — tests and certificates for
-        theory, demonstration and testimony for practice, working artifacts and accepted
-        deliveries for production. Largely self-taught since 13, my strongest evidence sits
-        rightward — in the works. Below is my knowledge status for 2026.
+        This is a working system, not a trophy case: what I study becomes what
+        I practice, and what I practice becomes what I ship. Trace any entry
+        and you&rsquo;ll find the other two tables in it — the course behind
+        the skill, the skill behind the work. One mind, fully accounted for, as
+        of 2026.
       </p>
 
       <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
       <p>
-        What I know, in two readings of one understanding: instruction guided by
-        others and study I pursue independently. Its clusters follow the formal, non-formal, and
-        informal registers of education, each validated its own way — the exam, the
-        certificate, the problem that yields. The classroom ended at 13; nearly everything
-        since has been independent.
+        The classroom ended at 13; the curriculum never did. Since then I
+        enroll only when a domain demands it — guided when a teacher is the
+        fastest path, independent when I am. Certificates where they count,
+        practice where they don&rsquo;t: the theory behind everything the two
+        sections below demonstrate.
       </p>
       <NestedTable {...EDUCATION} />
 

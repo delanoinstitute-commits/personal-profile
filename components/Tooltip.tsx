@@ -115,8 +115,11 @@ export default function Tooltip({
             className="fixed inset-0 z-[70] flex items-center justify-center bg-[rgba(15,16,17,0.72)] p-4"
             onClick={() => setExpanded(false)}
           >
+            {/* w-fit shrink-wraps the box to the image; the caption's
+                w-0/min-w-full pair stops its text from widening the figure,
+                so it wraps at the image's edge instead. */}
             <figure
-              className="max-h-full max-w-3xl overflow-auto rounded border border-border-strong bg-paper shadow-overlay"
+              className="max-h-full w-fit max-w-[min(48rem,100%)] overflow-auto rounded border border-border-strong bg-paper shadow-overlay"
               onClick={(e) => e.stopPropagation()}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -125,7 +128,7 @@ export default function Tooltip({
                 alt={media.alt}
                 className="block max-h-[80vh] w-auto max-w-full bg-surface-band"
               />
-              <figcaption className="flex items-start justify-between gap-3 px-4 py-3 text-[0.85rem] font-normal not-italic leading-snug text-text">
+              <figcaption className="flex w-0 min-w-full items-start justify-between gap-3 px-4 py-3 text-[0.85rem] font-normal not-italic leading-snug text-text">
                 <span>{content}</span>
                 <button
                   type="button"

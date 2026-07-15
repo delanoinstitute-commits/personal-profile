@@ -75,7 +75,7 @@ export default function MetricList({
         {components.length > 0 && (
           <ol className="references-list metric-numbered">
             {components.map((m, i) => (
-              <li key={m[0] || i}>
+              <li key={`${m[0]}-${i}`}>
                 <MetricInline metric={m} boldTooltip />
               </li>
             ))}
