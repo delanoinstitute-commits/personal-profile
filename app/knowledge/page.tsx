@@ -46,9 +46,11 @@ export default function KnowledgePage() {
 
       <h2 id="skills">Skills <span className="heading-paren">(Practice)</span></h2>
       <p>
-        What I can do, in two readings of one competence: technical skill with
-        tools and symbols, and interpersonal skill with people. I design learning systems,
-        direct productions, and coach — and each is demonstrable on demand.
+        One craft runs beneath every skill below: giving knowledge a working
+        shape. Through tools, I shape it into taxonomies, systems, content, and
+        spaces. Through people, I shape it into teachers, methods, and
+        productions. Each is demonstrable on demand — skill claimed is skill
+        shown.
       </p>
       <NestedTable {...SKILLS} />
 

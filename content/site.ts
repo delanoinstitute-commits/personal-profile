@@ -109,15 +109,6 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Timeline", anchor: "timeline" },
         ],
       },
-      {
-        label: "Experience",
-        href: "/experience",
-        sections: [
-          { label: "Employment", anchor: "employment" },
-          { label: "Self-employment", anchor: "self-employment" },
-          { label: "Business", anchor: "business" },
-        ],
-      },
     ],
   },
 ];

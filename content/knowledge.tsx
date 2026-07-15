@@ -116,7 +116,7 @@ export const SKILLS: StatTableData = {
         {
           category: "Structural (knowledge and system design)",
           metrics: [
-            ["", "Applied taxonomist, designer, and strategist", false],
+            ["", "I organize, design, and strategize transformative outcomes", false],
             ["Classification", "Knowledge domain mapping, distillation, and standardization", true],
             ["Architecture", "Product, protocol, content, and systems design", true],
             ["Analysis", "Performance tracking, benchmarking, planning, and programming", true],
@@ -125,7 +125,7 @@ export const SKILLS: StatTableData = {
         {
           category: "Material (content and spatial design)",
           metrics: [
-            ["", "On-demand content creator and behavior-led spatial designer", false],
+            ["", "I produce educational content and design spaces that steer behavior", false],
             ["Production", "Content design, delivery, editing, and publishing", true],
             ["Planning", "Interior (home) and industrial (services) layout design and user-flow optimization", true],
           ],
@@ -137,19 +137,17 @@ export const SKILLS: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Pedagogical (live transmission)",
+          category: "Pedagogical (teaching and training)",
           metrics: [
-            ["", "Situational teacher, instructor, facilitator, and trainer", false],
-            ["Teaching", "Theoretical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
-            ["Instruction", "Practical knowledge transmission and assessment in 1-on-1/many (virtual and in-person) settings to students/clients", true],
-            ["Facilitation", "Teaching students/clients to become teachers", true],
-            ["Training", "Instructing students/clients to become instructors", true],
+            ["", "I teach any subject, in any setting, and train others to do the same", false],
+            ["Teaching", "Transmitting and assessing theoretical (presentations) and practical (instructions) knowledge, 1-on-1/duo (coaching) or 1-on-many (facilitation), virtual or in-person", true],
+            ["Training", "Teaching students to become presenters, instructors, coaches, or facilitators", true],
           ],
         },
         {
           category: "Directorial (profiling and orchestration)",
           metrics: [
-            ["", "Expert profiler and project-based events director", false],
+            ["", "I turn experts into methods and briefs into productions", false],
             ["Elicitation", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true],
             ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true],
           ],
@@ -171,7 +169,7 @@ export const WORKS: StatTableData = {
           metrics: [
             ["", "I am the creator of two design methodologies, the philosophy behind all my designs", false],
             ["Taxonomical", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
-            ["Educational", "A universal product and instructional design framework that sequences the fewest behavioral changes a prospect must make to become a lifelong, self-sufficient user of any teaching or product", true],
+            ["Educational", "A universal product (instructional) design framework that sequences the fewest behavioral changes a prospect (student) must make to become a lifelong, self-sufficient user (practitioner) of any product (skill)", true],
           ],
         },
         {
@@ -213,10 +211,16 @@ export const WORKS: StatTableData = {
             [
               "MSP",
               [
-                "A universal exercise-mastery (mobility, stability, and power) system taught using my IID design process, available as free ",
-                <WikiLink key="yt" href="https://www.youtube.com/@LorenzoDelano">YouTube courses</WikiLink>,
-                " and ",
-                <WikiLink key="pdf" href="https://drive.google.com/file/d/1DlHZfG5Nv2TS2Y4dMQwufA_5hnMGFqGC/view">PDFs</WikiLink>,
+                "A universal exercise-mastery system taught using my IID methodology, available as free YouTube (",
+                <WikiLink key="map" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9rBcU7Fwl6-eizseHRR50lI">map</WikiLink>,
+                ", ",
+                <WikiLink key="routines" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">routines</WikiLink>,
+                ", ",
+                <WikiLink key="space" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">space</WikiLink>,
+                ", and ",
+                <WikiLink key="design" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">design</WikiLink>,
+                ") courses and ",
+                <WikiLink key="tax" href="https://drive.google.com/file/d/1DlHZfG5Nv2TS2Y4dMQwufA_5hnMGFqGC/view">taxonomies</WikiLink>,
               ],
               true,
             ],
