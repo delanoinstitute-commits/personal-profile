@@ -259,6 +259,14 @@ export const SKILLS: StatTableData = {
           ],
         },
         {
+          category: "Commercial (selling and negotiating)",
+          metrics: [
+            ["", "I sell by teaching from experience, so objections resolve themselves", false],
+            ["Selling", "Demonstration- and education-led selling of goods, services, and programs, from retail floors to online funnels", true],
+            ["Negotiation", "Deal making and brokering — contracts, partnerships, equity stakes, and exits", true],
+          ],
+        },
+        {
           category: "Directorial (profiling and orchestration)",
           metrics: [
             ["", "I turn experts into methods and briefs into productions", false],
@@ -325,12 +333,14 @@ export const WORKS: StatTableData = {
             [
               "MSP",
               [
-                "A universal exercise-mastery system taught using my IID methodology, available as free YouTube (",
+                "A universal exercise-mastery system taught using my IID methodology, available as five free YouTube (",
                 <WikiLink key="map" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9rBcU7Fwl6-eizseHRR50lI">map</WikiLink>,
                 ", ",
                 <WikiLink key="routines" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">routines</WikiLink>,
                 ", ",
                 <WikiLink key="space" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">space</WikiLink>,
+                ", ",
+                <WikiLink key="time" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">time</WikiLink>,
                 ", and ",
                 <WikiLink key="design" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">design</WikiLink>,
                 ") courses and ",
