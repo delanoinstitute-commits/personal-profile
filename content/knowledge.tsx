@@ -1,7 +1,7 @@
 import Tooltip from "@/components/Tooltip";
 import WikiLink from "@/components/WikiLink";
 import type { StatTableData } from "@/components/StatTable";
-import type { Reference } from "@/components/References";
+import type { ReferenceSection } from "@/components/References";
 
 // Knowledge page data — consumed by /knowledge.
 // See KNOWLEDGE_SPEC.md: Education (theory — knowing), Skills (practice —
@@ -283,85 +283,6 @@ export const WORKS: StatTableData = {
   title: "Works",
   groups: [
     {
-      domain: "Personal works",
-      label: "",
-      rows: [
-        {
-          category: "Methodologies (design principles)",
-          metrics: [
-            ["", "I am the creator of two design methodologies, the philosophy behind all my designs", false],
-            ["Taxonomical", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
-            ["Educational", "A universal product (instructional) design framework that sequences the fewest behavioral changes a prospect (student) must make to become a lifelong, self-sufficient user (practitioner) of any product (skill)", true],
-          ],
-        },
-        {
-          category: "Designs (published artifacts)",
-          metrics: [
-            ["", "I am the creator of the below published programs, systems, and models", false],
-            [
-              "10X",
-              [
-                "A short, low-frequency muscle-centric total fitness exercise protocol, available as a free ",
-                <WikiLink key="yt" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">YouTube course</WikiLink>,
-                ", ",
-                <WikiLink key="quest" href="https://www.mindvalley.com/10x/quest">Mindvalley quest</WikiLink>,
-                ", and ",
-                <WikiLink key="cert" href="https://www.mindvalley.com/certs/10x">coaching certification</WikiLink>,
-              ],
-              true,
-            ],
-            [
-              "BodyFirst",
-              [
-                "A universal basic-fitness program co-authored with ",
-                <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
-                " using my educational design framework, available as a ",
-                <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
-              ],
-              true,
-            ],
-            [
-              "ValuesFactor",
-              [
-                "The Values Factor program ",
-                <WikiLink key="test" href="https://youtube.com/shorts/li3cYZKc9zw">co-authored</WikiLink>,
-                " with Dr. John Demartini using my educational design framework, available on ",
-                <WikiLink key="mv" href="https://www.mindvalley.com/values">Mindvalley</WikiLink>,
-              ],
-              true,
-            ],
-            [
-              "MSP",
-              [
-                "A universal exercise-mastery system taught using my IID methodology, available as five free YouTube (",
-                <WikiLink key="map" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9rBcU7Fwl6-eizseHRR50lI">map</WikiLink>,
-                ", ",
-                <WikiLink key="routines" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">routines</WikiLink>,
-                ", ",
-                <WikiLink key="space" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">space</WikiLink>,
-                ", ",
-                <WikiLink key="time" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">time</WikiLink>,
-                ", and ",
-                <WikiLink key="design" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">design</WikiLink>,
-                ") courses and ",
-                <WikiLink key="tax" href="https://drive.google.com/file/d/1DlHZfG5Nv2TS2Y4dMQwufA_5hnMGFqGC/view">taxonomies</WikiLink>,
-              ],
-              true,
-            ],
-            [
-              "Profiler",
-              [
-                "A universal personal-profiling framework built using IID principles, available as a website (",
-                <WikiLink key="site" href="/">like this one</WikiLink>,
-                ") or PDF",
-              ],
-              true,
-            ],
-          ],
-        },
-      ],
-    },
-    {
       domain: "Professional experience",
       label: "",
       rows: [
@@ -490,100 +411,297 @@ export const WORKS: StatTableData = {
         },
       ],
     },
+    {
+      domain: "Personal works",
+      label: "",
+      rows: [
+        {
+          category: "Methodologies (design principles)",
+          metrics: [
+            ["", "I am the creator of two design methodologies, the philosophy behind all my designs", false],
+            ["Taxonomical", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
+            ["Educational", "A universal product (instructional) design framework that sequences the fewest behavioral changes a prospect (student) must make to become a lifelong, self-sufficient user (practitioner) of any product (skill)", true],
+          ],
+        },
+        {
+          category: "Designs (published artifacts)",
+          metrics: [
+            ["", "I am the creator of the below published programs, systems, and models", false],
+            [
+              "10X",
+              [
+                "A short, low-frequency muscle-centric total fitness exercise protocol, available as a free ",
+                <WikiLink key="yt" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">YouTube course</WikiLink>,
+                ", ",
+                <WikiLink key="quest" href="https://www.mindvalley.com/10x/quest">Mindvalley quest</WikiLink>,
+                ", and ",
+                <WikiLink key="cert" href="https://www.mindvalley.com/certs/10x">coaching certification</WikiLink>,
+              ],
+              true,
+            ],
+            [
+              "BodyFirst",
+              [
+                "A universal basic-fitness program co-authored with ",
+                <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
+                " using my educational design framework, available as a ",
+                <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
+              ],
+              true,
+            ],
+            [
+              "ValuesFactor",
+              [
+                "The Values Factor program ",
+                <WikiLink key="test" href="https://youtube.com/shorts/li3cYZKc9zw">co-authored</WikiLink>,
+                " with Dr. John Demartini using my educational design framework, available on ",
+                <WikiLink key="mv" href="https://www.mindvalley.com/values">Mindvalley</WikiLink>,
+              ],
+              true,
+            ],
+            [
+              "MSP",
+              [
+                "A universal exercise-mastery system taught using my IID methodology, available as five free YouTube (",
+                <WikiLink key="map" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9rBcU7Fwl6-eizseHRR50lI">map</WikiLink>,
+                ", ",
+                <WikiLink key="routines" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">routines</WikiLink>,
+                ", ",
+                <WikiLink key="space" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">space</WikiLink>,
+                ", ",
+                <WikiLink key="time" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">time</WikiLink>,
+                ", and ",
+                <WikiLink key="design" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">design</WikiLink>,
+                ") courses and ",
+                <WikiLink key="tax" href="https://drive.google.com/file/d/1DlHZfG5Nv2TS2Y4dMQwufA_5hnMGFqGC/view">taxonomies</WikiLink>,
+              ],
+              true,
+            ],
+            [
+              "Profiler",
+              [
+                "A universal personal-profiling framework built using IID principles, available as a website (",
+                <WikiLink key="site" href="/">like this one</WikiLink>,
+                ") or PDF",
+              ],
+              true,
+            ],
+          ],
+        },
+      ],
+    },
   ],
 };
 
-export const KNOWLEDGE_REFERENCES: Reference[] = [
+export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
   {
-    id: "framework",
-    cite: (
-      <>
-        Delano, L. Knowing, doing, making: a tripartite framework for knowledge. (Forthcoming.)
-      </>
-    ),
-    tag: "Framework",
+    label: "Artifactual",
+    description:
+      "The shipped things themselves — programs, courses, quests, and systems, live where they were published.",
+    items: [
+      {
+        id: "autoprofiling-taxonomy",
+        cite: (
+          <>
+            <WikiLink href="/">Autoprofiling taxonomy</WikiLink> (2026); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of architecture (classification) and works of methodological design (IID)
+          </>
+        ),
+        tag: "page",
+      },
+      {
+        id: "msp-system",
+        cite: (
+          <>
+            <WikiLink href="https://www.youtube.com/@LorenzoDelano">MSP training system</WikiLink> (2026); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of classification, architecture, production, and teaching, and works of the IID methodology and designs
+          </>
+        ),
+        tag: "courses",
+      },
+      {
+        id: "bodyfirst-quest",
+        cite: (
+          <>
+            <WikiLink href="https://www.mindvalley.com/body-first">BodyFirst quest</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of architecture and teaching, and works of the RBG methodology
+          </>
+        ),
+        tag: "quest",
+      },
+      {
+        id: "values-factor-quest",
+        cite: (
+          <>
+            <WikiLink href="https://www.mindvalley.com/values">The Values Factor quest</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of architecture, teaching, and management, and works of the RBG methodology
+          </>
+        ),
+        tag: "quest",
+      },
+      {
+        id: "10x-coach-certification",
+        cite: (
+          <>
+            <WikiLink href="https://www.mindvalley.com/certs/10x">10X coach certification</WikiLink> (2022); <em>Delano, L. (10X Fitness)</em>; skills of architecture, teaching, training, production, and management, and works of the RBG methodology and designs
+          </>
+        ),
+        tag: "multi-modal",
+      },
+      {
+        id: "10x-quest",
+        cite: (
+          <>
+            <WikiLink href="https://www.mindvalley.com/10x/quest">10X quest</WikiLink> (2021); <em>Delano, L. (10X Fitness)</em>; skills of architecture and management, and works of designs
+          </>
+        ),
+        tag: "quest",
+      },
+      {
+        id: "10x-youtube-course",
+        cite: (
+          <>
+            <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X YouTube course</WikiLink> (2020); <em>Delano, L.</em>; skills of architecture (protocol, content, and product design), production, and teaching
+          </>
+        ),
+        tag: "course",
+      },
+    ],
   },
   {
-    id: "aristotle",
-    cite: (
-      <>
-        Aristotle. <em>Nicomachean Ethics</em>, Book VI — episteme, techne, and phronesis; theoria, praxis, and poiesis.
-      </>
-    ),
-    tag: "Framework",
+    label: "Exemplary",
+    description:
+      "Skills caught in action — working sessions, reports, talks, and builds.",
+    items: [
+      {
+        id: "studio-apartment-design",
+        cite: (
+          <>
+            <WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">Studio apartment design</WikiLink> (2025); <em>Delano, L.</em>; skills of planning, and works of the MSP space course applied
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "education-benchmarks-talk",
+        cite: (
+          <>
+            <WikiLink href="https://youtu.be/lMpH6GBV0-M">Education business benchmarks talk</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of teaching and selling, and works of the RBG methodology
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "mastery-curriculum-blueprint",
+        cite: (
+          <>
+            <WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">Mastery curriculum blueprint</WikiLink> (2023); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of product and content design, production, and management
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "crystal-norton-report",
+        cite: (
+          <>
+            <WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Crystal Norton report</WikiLink> (2022); <em>Delano, L. (10X Fitness)</em>; skills of analysis, production, and coaching
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "production-schedule",
+        cite: (
+          <>
+            <WikiLink href="https://www.loom.com/share/2ada01c69cfe4b14af5f087d05068261">Production schedule</WikiLink> (2022); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of management and production
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "superstudents-proposal",
+        cite: (
+          <>
+            <WikiLink href="https://www.loom.com/share/37749cb5453347e5b4692db21ecf3fbb">Learning coach (SuperStudents) proposal</WikiLink> (2021); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of architecture, production, and selling
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "chinook-apprenticeship",
+        cite: (
+          <>
+            <WikiLink href="https://www.youtube.com/watch?v=BYUzGC72SnQ">Chinook apprenticeship</WikiLink> (2020); <em>Delano, L.</em>; skills of teaching and training, and works of lifestyle interventions
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "laura-taylor-painter",
+        cite: (
+          <>
+            <WikiLink href="https://laurataylorpainter.com/about">Laura Taylor painter</WikiLink> (2015); <em>Delano, L. (ARTrepreneurs)</em>; skills of elicitation and production, and architectural website design
+          </>
+        ),
+        tag: "page",
+      },
+    ],
   },
   {
-    id: "sep",
-    cite: (
-      <>
-        Parry, R. Episteme and Techne. <em>Stanford Encyclopedia of Philosophy</em>.
-      </>
-    ),
-    url: "https://plato.stanford.edu/entries/episteme-techne/",
-    urlLabel: "plato.stanford.edu",
-    tag: "Framework",
-  },
-  {
-    id: "ryle",
-    cite: (
-      <>
-        Ryle, G. (1949). <em>The Concept of Mind</em>. Hutchinson — knowing-that versus knowing-how.
-      </>
-    ),
-    tag: "Skills",
-  },
-  {
-    id: "bloom",
-    cite: (
-      <>
-        Anderson, L. W. and Krathwohl, D. R., eds. (2001). <em>A Taxonomy for Learning, Teaching, and Assessing: A Revision of Bloom&rsquo;s Taxonomy of Educational Objectives</em>. Longman.
-      </>
-    ),
-    tag: "Education",
-  },
-  {
-    id: "polanyi",
-    cite: (
-      <>
-        Polanyi, M. (1966). <em>The Tacit Dimension</em>. Doubleday — tacit versus explicit knowledge.
-      </>
-    ),
-    tag: "Skills",
-  },
-  {
-    id: "vervaeke",
-    cite: (
-      <>
-        Vervaeke, J. (2019). <em>Awakening from the Meaning Crisis</em> (lecture series). University of Toronto — the four kinds of knowing.
-      </>
-    ),
-    tag: "Framework",
-  },
-  {
-    id: "coombs",
-    cite: (
-      <>
-        Coombs, P. H. and Ahmed, M. (1974). <em>Attacking Rural Poverty: How Nonformal Education Can Help</em>. Johns Hopkins University Press — the formal / non-formal / informal registers of education.
-      </>
-    ),
-    tag: "Education",
-  },
-  {
-    id: "ranganathan",
-    cite: (
-      <>
-        Ranganathan, S. R. (1933). <em>Colon Classification</em>. Madras Library Association — faceted classification.
-      </>
-    ),
-    tag: "Framework",
-  },
-  {
-    id: "stokes",
-    cite: (
-      <>
-        Stokes, D. E. (1997). <em>Pasteur&rsquo;s Quadrant: Basic Science and Technological Innovation</em>. Brookings Institution Press — dissolving the pure/applied divide.
-      </>
-    ),
-    tag: "Framework",
+    label: "Testimonial",
+    description:
+      "Other people’s words — client and student results in their own voice.",
+    items: [
+      {
+        id: "bodyfirst-stories",
+        cite: (
+          <>
+            <WikiLink href="https://stories.mindvalley.com/product/body-first">BodyFirst stories</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; works of BodyFirst, its content design, and the RBG methodology in action
+          </>
+        ),
+        tag: "page",
+      },
+      {
+        id: "course-design-testimonials",
+        cite: (
+          <>
+            <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9p9Cfge3O-p5z115_yY2Fpp">Course design testimonials</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of elicitation, management, and architecture
+          </>
+        ),
+        tag: "videos",
+      },
+      {
+        id: "10x-coach-stories",
+        cite: (
+          <>
+            <WikiLink href="https://stories.mindvalley.com/product/mindvalley-certified-10x-coach">10X coach stories</WikiLink> (2022); <em>Delano, L. (10X Fitness)</em>; skills of training, and works of 10X and architecture
+          </>
+        ),
+        tag: "page",
+      },
+      {
+        id: "norton-family-testimonial",
+        cite: (
+          <>
+            <WikiLink href="https://youtu.be/8p5pAPpmy1o">Norton family testimonial</WikiLink> (2022); <em>Delano, L. (10X Fitness)</em>; skills of teaching — remote one-on-family coaching
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "zenas-sandra-testimonial",
+        cite: (
+          <>
+            <WikiLink href="https://youtu.be/WBfb7Trl3JY">Zenas &amp; Sandra testimonial</WikiLink> (2021); <em>Delano, L. (10X Fitness)</em>; skills of teaching, and works of 10X
+          </>
+        ),
+        tag: "video",
+      },
+      {
+        id: "10x-quest-stories",
+        cite: (
+          <>
+            <WikiLink href="https://stories.mindvalley.com/product/10x-fitness">10X quest stories</WikiLink> (2021); <em>Delano, L. (10X Fitness)</em>; works of 10X and architecture
+          </>
+        ),
+        tag: "page",
+      },
+    ],
   },
 ];

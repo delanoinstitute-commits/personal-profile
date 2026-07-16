@@ -63,9 +63,9 @@ export const NAV_GROUPS: NavGroup[] = [
         label: "Knowledge",
         href: "/knowledge",
         sections: [
-          { label: "Education", anchor: "education" },
-          { label: "Skills", anchor: "skills" },
           { label: "Works", anchor: "works" },
+          { label: "Skills", anchor: "skills" },
+          { label: "Education", anchor: "education" },
         ],
       },
       {

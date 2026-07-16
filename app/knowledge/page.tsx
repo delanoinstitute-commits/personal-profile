@@ -6,25 +6,26 @@ import {
   EDUCATION,
   SKILLS,
   WORKS,
-  KNOWLEDGE_REFERENCES,
+  KNOWLEDGE_REFERENCE_SECTIONS,
 } from "@/content/knowledge";
 
 export const metadata: Metadata = { title: "Knowledge" };
 
-// The knowledge trilogy (see KNOWLEDGE_SPEC.md): Education (theory —
-// knowing), Skills (practice — doing), Works (production — making), each
-// split by the individual/social locus axis. Data lives in content/knowledge.
+// The knowledge trilogy (see KNOWLEDGE_SPEC.md): Works (production — making),
+// Skills (practice — doing), Education (theory — knowing) — ordered evidence
+// first for the skimming reader; each split by the individual/social locus
+// axis. Data lives in content/knowledge.
 
 export default function KnowledgePage() {
   return (
     <>
-      <PageHeading title="Knowledge" hatnote={<>The present — what I know, do, and make</>} />
+      <PageHeading title="Knowledge" hatnote={<>The present — what I make, do, and know</>} />
 
       <p className="lead">
-        Knowledge is one competence read three ways: what I know (education),
-        what I can do (skills), and what I have made (works). This page is my
-        full inventory of it — claimed in theory, shown in practice, proven in
-        production.
+        Knowledge is one competence read three ways: what I have made (works),
+        what I can do (skills), and what I know (education). This page is my
+        full inventory of it — proven in production, shown in practice,
+        grounded in theory.
       </p>
       <p>
         This is a working system, not a trophy case: what I study becomes what
@@ -34,15 +35,14 @@ export default function KnowledgePage() {
         of 2026.
       </p>
 
-      <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
+      <h2 id="works">Works <span className="heading-paren">(Production)</span></h2>
       <p>
-        The classroom ended at 13; the curriculum never did. Since then I
-        enroll only when a domain demands it — guided when a teacher is the
-        fastest path, independent when I am. Certificates where they count,
-        practice where they don&rsquo;t: the theory behind everything the two
-        sections below demonstrate.
+        Every work below began as a problem I solved for myself. I document,
+        share, and productize only when demand begs
+        or opportunity presents. Two decades of attempted self-mastery and the
+        pursuit of excellence, shipped with and for others.
       </p>
-      <NestedTable {...EDUCATION} />
+      <NestedTable {...WORKS} />
 
       <h2 id="skills">Skills <span className="heading-paren">(Practice)</span></h2>
       <p>
@@ -54,19 +54,16 @@ export default function KnowledgePage() {
       </p>
       <NestedTable {...SKILLS} />
 
-      <h2 id="works">Works <span className="heading-paren">(Production)</span></h2>
+      <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
       <p>
-        Every work below began as a problem I solved for myself. I document,
-        share, and productize only when demand begs
-        or opportunity presents. Two decades of attempted self-mastery and the
-        pursuit of excellence, shipped with and for others.
+        The classroom ended at 13; the curriculum never did. Since then I
+        enroll only when a domain demands it — guided when a teacher is the
+        fastest path, independent when I am. Certificates where they count,
+        practice where they don&rsquo;t: the theory everything above stands on.
       </p>
-      <NestedTable {...WORKS} />
+      <NestedTable {...EDUCATION} />
 
-      <References
-        items={KNOWLEDGE_REFERENCES}
-        intro="The framework behind this page, and the traditions it draws on."
-      />
+      <References sections={KNOWLEDGE_REFERENCE_SECTIONS} />
     </>
   );
 }
