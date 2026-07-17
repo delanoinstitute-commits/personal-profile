@@ -238,17 +238,17 @@ export const SKILLS: StatTableData = {
           category: "Structural (knowledge and system design)",
           metrics: [
             ["", "I organize, design, and strategize transformative outcomes", false],
-            ["Classification", "Knowledge domain mapping, distillation, and standardization", true],
-            ["Architecture", "Product, protocol, content, systems, and software design", true],
-            ["Analysis", "Performance tracking, benchmarking, planning, programming, and reporting", true],
+            ["Classification", "Knowledge domain mapping, distillation, and standardization", true, "My IID methodology in practice: Mindvalley’s content classification system, my exercise and planning taxonomies, and the Autoprofiler. Everything I design starts here."],
+            ["Architecture", "Product, protocol, content, systems, and software design", true, "My IID and RBG principles applied: the 10X protocol, BodyFirst, the Mastery micro-degree framework, courses for four best-selling authors — and this website."],
+            ["Analysis", "Performance tracking, benchmarking, planning, programming, and reporting", true, "One quarter of the complete educator — presenter, analyst, strategist, instructor. Proven in three 10X research experiments and client reporting — see the Client Report below."],
           ],
         },
         {
           category: "Material (content and spatial design)",
           metrics: [
             ["", "I produce educational content and design spaces that steer behavior", false],
-            ["Production", "Content design, delivery, editing, and publishing", true],
-            ["Planning", "Interior (home) and industrial (services) layout design and user-flow optimization", true],
+            ["Production", "Content design, delivery, editing, and publishing", true, "Five MSP course series shot and published solo in three months, plus directed author productions — crew, schedule, post. Samples throughout the references below."],
+            ["Planning", "Interior (home) and industrial (services) layout design and user-flow optimization", true, "Thirty-plus relocations, each a rebuilt kitchen, gym, and workspace, plus commercial builds and wellness-center layouts. See the Studio Apartment video below."],
           ],
         },
       ],
@@ -261,24 +261,24 @@ export const SKILLS: StatTableData = {
           category: "Pedagogical (teaching and training)",
           metrics: [
             ["", "I teach any subject, in any setting, and train others to do the same", false],
-            ["Teaching", "Transmitting and assessing theoretical (presentations) and practical (instructions) knowledge, 1-on-1/duo (coaching) or 1-on-many (facilitation), virtual or in-person", true],
-            ["Training", "Teaching students to become presenters, instructors, coaches, or facilitators", true],
+            ["Teaching", "Transmitting and assessing theoretical (presentations) and practical (instructions) knowledge, 1-on-1/duo (coaching) or 1-on-many (facilitation), virtual or in-person", true, "From English classrooms in China at 16 to Mindvalley University workshops of 200+, plus a decade of coaching. See the Transformative Design talk below."],
+            ["Training", "Teaching students to become presenters, instructors, coaches, or facilitators", true, "The 10X coach certification opened with 500 coaches; Chinook’s team learned to train themselves — see it below. I train people until they no longer need me."],
           ],
         },
         {
           category: "Commercial (selling and negotiating)",
           metrics: [
             ["", "I sell by teaching from experience, so objections resolve themselves", false],
-            ["Selling", "Education-led selling of goods, services, and programs, from retail floors to online funnels", true],
-            ["Negotiation", "Deal making and brokering of contracts, partnerships, equity stakes, and exits", true],
+            ["Selling", "Education-led selling of goods, services, and programs, from retail floors to online funnels", true, "From demonstrating magic tricks at 15 to retail floors, funnels, and product pitches — BodyFirst entered Mindvalley because I sold it. See the SuperStudents pitch below."],
+            ["Negotiation", "Deal making and brokering of contracts, partnerships, equity stakes, and exits", true, "A resignation turned into four contracts at multiples of my salary, the Values Factor collaboration brokered, a 25% co-founder stake — and both exits."],
           ],
         },
         {
           category: "Directorial (profiling and orchestration)",
           metrics: [
             ["", "I turn experts into methods and briefs into productions", false],
-            ["Profiling", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true],
-            ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true],
+            ["Profiling", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true, "Laura Taylor first (2015); then methods drawn from Wilber, Watts, Kotler, Greenfield, and Demartini, each codified into teachable courses. Their testimonials sit in the references below."],
+            ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true, "Author-course productions from brief to delivery, 10X events across four countries, research experiments on cohorts of 20–25. See the Production Schedule video below."],
           ],
         },
       ],
