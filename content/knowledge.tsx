@@ -310,7 +310,7 @@ export const WORKS: StatTableData = {
               true,
               "Taught English from kindergarten to adult level — lesson planning, assignments, workshops, and evaluations — under manager Hilton, living alone in China at 16.",
             ],
-            ["Cafe manager", [<em key="n">Java Cafe</em>, ", Pretoria, 2 years, 2007–2008 (age 19–20)"], true, "Started as a waiter and was promoted to manager by owner Memos — hiring, training, and running the floor, stock takes, and promotions (I gave my best friend Brad his first job there). I left to go full-time into fitness after earning my ETA certification."],
+            ["Cafe manager", [<em key="n">Java Cafe</em>, ", Pretoria, 2 years, 2007–2008 (age 19–20)"], true, "Started as a waiter and was promoted to manager by owner Memos — hiring, training, and running the floor, stock takes, and promotions. I left to go full-time into fitness after earning my ETA certification."],
             [
               "Personal trainer",
               [
@@ -420,13 +420,13 @@ export const WORKS: StatTableData = {
           metrics: [
             ["", "I am the creator of two design methodologies, the philosophy behind all my designs", false],
             ["Taxonomical", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
-            ["Educational", "A universal product (instructional) design framework that sequences the fewest behavioral changes a prospect (student) must make to become a lifelong, self-sufficient user (practitioner) of any product (skill)", true],
+            ["Educational", "A universal product (instructional) design framework that maps the behavioral changes a prospect (student) must make to become a lifelong, self-sufficient user (practitioner) of any product (skill)", true],
           ],
         },
         {
           category: "Designs (published artifacts)",
           metrics: [
-            ["", "I am the creator of the below published programs, systems, and models", false],
+            ["", "I am the creator of the below published protocols, programs, systems, and models", false],
             [
               "10X",
               [
@@ -478,11 +478,11 @@ export const WORKS: StatTableData = {
               true,
             ],
             [
-              "Profiler",
+              "Autoprofiler",
               [
-                "A universal personal-profiling framework built using IID principles, available as a website (",
-                <WikiLink key="site" href="/">like this one</WikiLink>,
-                ") or PDF",
+                "A universal personal-profiling framework built using IID principles, available as a free (but credited) ",
+                <WikiLink key="tax" href="/">taxonomy</WikiLink>,
+                " and design-spec markdown file",
               ],
               true,
             ],
