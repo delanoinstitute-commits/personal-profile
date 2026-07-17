@@ -21,7 +21,7 @@ export type Reference = {
 /** A titled group of references (Artifactual / Exemplary / Testimonial …). */
 export type ReferenceSection = {
   label: string;
-  description: ReactNode;
+  description?: ReactNode;
   items: Reference[];
 };
 
@@ -69,7 +69,8 @@ export function References({
             return (
               <div key={s.label}>
                 <p className="mb-0 mt-4">
-                  <em>{s.label}</em>: {s.description}
+                  <em>{s.label}</em>
+                  {s.description ? <>: {s.description}</> : null}
                 </p>
                 <ReferenceList items={s.items} start={start} />
               </div>

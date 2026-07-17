@@ -495,212 +495,209 @@ export const WORKS: StatTableData = {
 
 export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
   {
-    label: "Artifactual",
-    description:
-      "The shipped things themselves — programs, courses, quests, and systems, live where they were published.",
+    label: "Samples of some of my skills caught in action",
     items: [
       {
-        id: "autoprofiling-taxonomy",
+        id: "laura-taylor",
         cite: (
           <>
-            <WikiLink href="/">Autoprofiling taxonomy</WikiLink> (2026); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of architecture (classification) and works of methodological design (IID)
+            <strong>Artist profiling</strong>: <em><WikiLink href="https://laurataylorpainter.com/about">Laura Taylor</WikiLink> (2015, New York)</em>; ARTrepreneurs (Delano, L.); skills of elicitation, production, and architecture • video (website)
           </>
         ),
-        tag: "page",
       },
       {
-        id: "msp-system",
+        id: "chinook-treaters",
         cite: (
           <>
-            <WikiLink href="https://www.youtube.com/@LorenzoDelano">MSP training system</WikiLink> (2026); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of classification, architecture, production, and teaching, and works of the IID methodology and designs
+            <strong>Corporate training</strong>: <em><WikiLink href="https://www.youtube.com/watch?v=BYUzGC72SnQ">Chinook Treaters</WikiLink> (2020, Calgary)</em>; Eudaemonia, Inc. (Delano, L.); skills of teaching and management • video (YouTube)
           </>
         ),
-        tag: "courses",
       },
       {
-        id: "bodyfirst-quest",
+        id: "superstudents-certification",
         cite: (
           <>
-            <WikiLink href="https://www.mindvalley.com/body-first">BodyFirst quest</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of architecture and teaching, and works of the RBG methodology
+            <strong>Product pitching</strong>: <em><WikiLink href="https://www.loom.com/share/37749cb5453347e5b4692db21ecf3fbb">SuperStudents Certification</WikiLink> (2021, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, production, and selling • video (Loom)
           </>
         ),
-        tag: "quest",
-      },
-      {
-        id: "values-factor-quest",
-        cite: (
-          <>
-            <WikiLink href="https://www.mindvalley.com/values">The Values Factor quest</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of architecture, teaching, and management, and works of the RBG methodology
-          </>
-        ),
-        tag: "quest",
-      },
-      {
-        id: "10x-coach-certification",
-        cite: (
-          <>
-            <WikiLink href="https://www.mindvalley.com/certs/10x">10X coach certification</WikiLink> (2022); <em>Delano, L. (10X Fitness)</em>; skills of architecture, teaching, training, production, and management, and works of the RBG methodology and designs
-          </>
-        ),
-        tag: "multi-modal",
-      },
-      {
-        id: "10x-quest",
-        cite: (
-          <>
-            <WikiLink href="https://www.mindvalley.com/10x/quest">10X quest</WikiLink> (2021); <em>Delano, L. (10X Fitness)</em>; skills of architecture and management, and works of designs
-          </>
-        ),
-        tag: "quest",
-      },
-      {
-        id: "10x-youtube-course",
-        cite: (
-          <>
-            <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X YouTube course</WikiLink> (2020); <em>Delano, L.</em>; skills of architecture (protocol, content, and product design), production, and teaching
-          </>
-        ),
-        tag: "course",
-      },
-    ],
-  },
-  {
-    label: "Exemplary",
-    description:
-      "Skills caught in action — working sessions, reports, talks, and builds.",
-    items: [
-      {
-        id: "studio-apartment-design",
-        cite: (
-          <>
-            <WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">Studio apartment design</WikiLink> (2025); <em>Delano, L.</em>; skills of planning, and works of the MSP space course applied
-          </>
-        ),
-        tag: "video",
-      },
-      {
-        id: "education-benchmarks-talk",
-        cite: (
-          <>
-            <WikiLink href="https://youtu.be/lMpH6GBV0-M">Education business benchmarks talk</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of teaching and selling, and works of the RBG methodology
-          </>
-        ),
-        tag: "video",
-      },
-      {
-        id: "mastery-curriculum-blueprint",
-        cite: (
-          <>
-            <WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">Mastery curriculum blueprint</WikiLink> (2023); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of product and content design, production, and management
-          </>
-        ),
-        tag: "video",
-      },
-      {
-        id: "crystal-norton-report",
-        cite: (
-          <>
-            <WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Crystal Norton report</WikiLink> (2022); <em>Delano, L. (10X Fitness)</em>; skills of analysis, production, and coaching
-          </>
-        ),
-        tag: "video",
       },
       {
         id: "production-schedule",
         cite: (
           <>
-            <WikiLink href="https://www.loom.com/share/2ada01c69cfe4b14af5f087d05068261">Production schedule</WikiLink> (2022); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of management and production
+            <strong>Project management</strong>: <em><WikiLink href="https://www.loom.com/share/2ada01c69cfe4b14af5f087d05068261">Production Schedule</WikiLink> (2022, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of planning, production, and management • video (Loom)
           </>
         ),
-        tag: "video",
       },
       {
-        id: "superstudents-proposal",
+        id: "client-report",
         cite: (
           <>
-            <WikiLink href="https://www.loom.com/share/37749cb5453347e5b4692db21ecf3fbb">Learning coach (SuperStudents) proposal</WikiLink> (2021); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of architecture, production, and selling
+            <strong>Remote coaching</strong>: <em><WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness Inc. (Delano, L.); skills of analysis and production • video (Loom)
           </>
         ),
-        tag: "video",
       },
       {
-        id: "chinook-apprenticeship",
+        id: "education-methodology",
         cite: (
           <>
-            <WikiLink href="https://www.youtube.com/watch?v=BYUzGC72SnQ">Chinook apprenticeship</WikiLink> (2020); <em>Delano, L.</em>; skills of teaching and training, and works of lifestyle interventions
+            <strong>Product design</strong>: <em><WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">Education Methodology</WikiLink> (2023, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, architecture, and production • video (Loom)
           </>
         ),
-        tag: "video",
       },
       {
-        id: "laura-taylor-painter",
+        id: "transformative-design",
         cite: (
           <>
-            <WikiLink href="https://laurataylorpainter.com/about">Laura Taylor painter</WikiLink> (2015); <em>Delano, L. (ARTrepreneurs)</em>; skills of elicitation and production, and architectural website design
+            <strong>Public speaking</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Design</WikiLink> (2024, Estonia)</em>; Eudaemonia, Inc. (Delano, L.); skills of teaching and selling • video (YouTube)
           </>
         ),
-        tag: "page",
+      },
+      {
+        id: "studio-apartment",
+        cite: (
+          <>
+            <strong>Home-gym design</strong>: <em><WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">Studio Apartment</WikiLink> (2025, Val de Vie)</em>; Delano, L.; skills of architecture and planning • video (YouTube)
+          </>
+        ),
       },
     ],
   },
   {
-    label: "Testimonial",
-    description:
-      "Other people’s words — client and student results in their own voice.",
+    label: "Access to my published co-creations",
     items: [
       {
-        id: "bodyfirst-stories",
+        id: "10x-method",
         cite: (
           <>
-            <WikiLink href="https://stories.mindvalley.com/product/body-first">BodyFirst stories</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; works of BodyFirst, its content design, and the RBG methodology in action
+            <strong>Protocol innovation</strong>: <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X Method</WikiLink> (2020, Pretoria)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, architecture, and production • course (YouTube)
           </>
         ),
-        tag: "page",
       },
       {
-        id: "course-design-testimonials",
+        id: "10x-quest",
         cite: (
           <>
-            <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9p9Cfge3O-p5z115_yY2Fpp">Course design testimonials</WikiLink> (2024); <em>Delano, L. (Eudaemonia, Inc.)</em>; skills of elicitation, management, and architecture
+            <strong>Curriculum design</strong>: <em><WikiLink href="https://www.mindvalley.com/10x/quest">10X Quest</WikiLink> (2021, Pretoria)</em>; 10X Fitness Inc. (Delano, L.); skills of architecture and management • course (Mindvalley)
           </>
         ),
-        tag: "videos",
       },
       {
-        id: "10x-coach-stories",
+        id: "10x-coach",
         cite: (
           <>
-            <WikiLink href="https://stories.mindvalley.com/product/mindvalley-certified-10x-coach">10X coach stories</WikiLink> (2022); <em>Delano, L. (10X Fitness)</em>; skills of training, and works of 10X and architecture
+            <strong>Coaching certification</strong>: <em><WikiLink href="https://www.mindvalley.com/certs/10x">10X Coach</WikiLink> (2022, Cape Town)</em>; 10X Fitness Inc. (Delano, L.); skills of architecture, production, and training • course (Mindvalley) • live training (Mindvalley)
           </>
         ),
-        tag: "page",
       },
       {
-        id: "norton-family-testimonial",
+        id: "values-factor",
         cite: (
           <>
-            <WikiLink href="https://youtu.be/8p5pAPpmy1o">Norton family testimonial</WikiLink> (2022); <em>Delano, L. (10X Fitness)</em>; skills of teaching — remote one-on-family coaching
+            <strong>Author collaboration</strong>: <em><WikiLink href="https://www.mindvalley.com/values">Values Factor</WikiLink> (2024, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of negotiation, elicitation, architecture, and management • course (Mindvalley)
           </>
         ),
-        tag: "video",
       },
       {
-        id: "zenas-sandra-testimonial",
+        id: "bodyfirst",
         cite: (
           <>
-            <WikiLink href="https://youtu.be/WBfb7Trl3JY">Zenas &amp; Sandra testimonial</WikiLink> (2021); <em>Delano, L. (10X Fitness)</em>; skills of teaching, and works of 10X
+            <strong>Product design</strong>: <em><WikiLink href="https://www.mindvalley.com/body-first">BodyFirst</WikiLink> (2024, Malaysia)</em>; Eudaemonia, Inc. (Delano, L.); skills of negotiation, classification, architecture, and management • course (Mindvalley)
           </>
         ),
-        tag: "video",
+      },
+      {
+        id: "exercise-mastery",
+        cite: (
+          <>
+            <strong>Systems design</strong>: <em><WikiLink href="https://www.youtube.com/@LorenzoDelano">Exercise Mastery</WikiLink> (2025, Val de Vie)</em>; Delano, L.; skills of classification, architecture, and production • courses (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "personal-wikipedia",
+        cite: (
+          <>
+            <strong>Profile taxonomy</strong>: <em><WikiLink href="/">Personal Wikipedia</WikiLink> (2026, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification and architecture (vibe coding) • website (Vercel)
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    label: "Feedback from some of my clients and students",
+    items: [
+      {
+        id: "ken-wilber-testimonial",
+        cite: (
+          <>
+            <strong>Author collaboration</strong>: <em><WikiLink href="https://youtu.be/M5w-97sML4s">Ken Wilber Testimonial</WikiLink> (2019)</em> • video (YouTube)
+          </>
+        ),
       },
       {
         id: "10x-quest-stories",
         cite: (
           <>
-            <WikiLink href="https://stories.mindvalley.com/product/10x-fitness">10X quest stories</WikiLink> (2021); <em>Delano, L. (10X Fitness)</em>; works of 10X and architecture
+            <strong>Online students</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/10x-fitness">10X Quest Stories</WikiLink> (2021)</em> • website (Mindvalley)
           </>
         ),
-        tag: "page",
+      },
+      {
+        id: "10x-coaching-testimonials",
+        cite: (
+          <>
+            <strong>In-person clients</strong>: <em><WikiLink href="https://youtu.be/WBfb7Trl3JY">10X Coaching Testimonials</WikiLink> (2021)</em> • video (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "10x-coaching-story",
+        cite: (
+          <>
+            <strong>Remote family</strong>: <em><WikiLink href="https://youtu.be/8p5pAPpmy1o">10X Coaching Story</WikiLink> (2022)</em> • video (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "10x-coach-stories",
+        cite: (
+          <>
+            <strong>Online coaches</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/mindvalley-certified-10x-coach">10X Coach Stories</WikiLink> (2022)</em> • website (Mindvalley)
+          </>
+        ),
+      },
+      {
+        id: "ben-greenfield-testimonial",
+        cite: (
+          <>
+            <strong>Author collaboration</strong>: <em><WikiLink href="https://youtu.be/zQ9A5bylhoc">Ben Greenfield Testimonial</WikiLink> (2023)</em> • video (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "john-demartini-testimonial",
+        cite: (
+          <>
+            <strong>Author collaboration</strong>: <em><WikiLink href="https://youtu.be/li3cYZKc9zw">John Demartini Testimonial</WikiLink> (2024)</em> • video (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "bodyfirst-stories",
+        cite: (
+          <>
+            <strong>Online students</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/body-first">BodyFirst Stories</WikiLink> (2024)</em> • website (Mindvalley)
+          </>
+        ),
+      },
+      {
+        id: "values-factor-stories",
+        cite: (
+          <>
+            <strong>Online students</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/the-values-factor">Values Factor Stories</WikiLink> (2024)</em> • website (Mindvalley)
+          </>
+        ),
       },
     ],
   },
