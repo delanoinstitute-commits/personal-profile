@@ -58,6 +58,12 @@ export function NestedTable({
       <table className="stat-table nested-table">
         {groups.map((group) => {
           const bandOpen = openBands.has(group.domain);
+          // Band count = its supportive entries (the numbered items), so the
+          // header advertises how much evidence sits inside.
+          const count = group.rows.reduce(
+            (n, r) => n + r.metrics.filter((m) => m[2]).length,
+            0,
+          );
           return (
             <tbody key={group.domain}>
               <tr className="nested-band" onClick={() => toggleBand(group.domain)}>
@@ -78,7 +84,8 @@ export function NestedTable({
                           {" "}
                           <span className="nested-gloss">({group.label})</span>
                         </>
-                      )}
+                      )}{" "}
+                      <span className="nested-gloss">({count})</span>
                     </span>
                     <Chevron className={`stat-chevron${bandOpen ? " is-open" : ""}`} />
                   </button>

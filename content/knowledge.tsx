@@ -65,7 +65,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Non-formal (in-person training)",
           metrics: [
-            ["", "I certify only in transmission roles — tutor, instructor, coach, and learning designer", false],
+            ["", "I tend to certify in transmission roles — tutor, instructor, coach, and designer", false],
             [
               "Language Link",
               [
@@ -147,7 +147,7 @@ export const EDUCATION: StatTableData = {
                 >
                   Critical thinking
                 </Tooltip>,
-                ", 8 weeks, online, 2018 (age 30)",
+                ", FutureLearn, 8 weeks, online, 2018 (age 30)",
               ],
               true,
               "University of Auckland",
@@ -165,13 +165,13 @@ export const EDUCATION: StatTableData = {
                 >
                   Science of exercise
                 </Tooltip>,
-                ", 4 weeks, online, 2019 (age 31)",
+                ", Coursera, 4 weeks, online, 2019 (age 31)",
               ],
               true,
               "University of Colorado Boulder",
             ],
             ["CFI", "Corporate finance training, 1 year, online, 2024 (age 36)", true, "Corporate Finance Institute"],
-            ["Khan Academy", "AP/College sciences, ongoing, since 2022 (age 34)", true],
+            ["Khan Academy", "AP/College sciences, ongoing, online, since 2022 (age 34)", true],
           ],
         },
         {
@@ -212,7 +212,14 @@ export const EDUCATION: StatTableData = {
               ],
               true,
             ],
-            ["Early Medical", "Longevity medicine (Dr. Peter Attia), 1 year, online, 2023 (age 35)", true],
+            [
+              "Early Medical",
+              [
+                <WikiLink key="em" href="https://earlymedical.com/">Longevity medicine</WikiLink>,
+                " (Dr. Peter Attia), 1 year, online, 2023 (age 35)",
+              ],
+              true,
+            ],
           ],
         },
       ],
@@ -262,15 +269,15 @@ export const SKILLS: StatTableData = {
           category: "Commercial (selling and negotiating)",
           metrics: [
             ["", "I sell by teaching from experience, so objections resolve themselves", false],
-            ["Selling", "Demonstration- and education-led selling of goods, services, and programs, from retail floors to online funnels", true],
-            ["Negotiation", "Deal making and brokering — contracts, partnerships, equity stakes, and exits", true],
+            ["Selling", "Education-led selling of goods, services, and programs, from retail floors to online funnels", true],
+            ["Negotiation", "Deal making and brokering of contracts, partnerships, equity stakes, and exits", true],
           ],
         },
         {
           category: "Directorial (profiling and orchestration)",
           metrics: [
             ["", "I turn experts into methods and briefs into productions", false],
-            ["Elicitation", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true],
+            ["Profiling", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true],
             ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true],
           ],
         },
@@ -424,7 +431,7 @@ export const WORKS: StatTableData = {
           ],
         },
         {
-          category: "Designs (published artifacts)",
+          category: "Designs (original contributions)",
           metrics: [
             ["", "I am the creator of the below published protocols, programs, systems, and models", false],
             [
@@ -446,16 +453,6 @@ export const WORKS: StatTableData = {
                 <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
                 " using my educational design framework, available as a ",
                 <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
-              ],
-              true,
-            ],
-            [
-              "ValuesFactor",
-              [
-                "The Values Factor program ",
-                <WikiLink key="test" href="https://youtube.com/shorts/li3cYZKc9zw">co-authored</WikiLink>,
-                " with Dr. John Demartini using my educational design framework, available on ",
-                <WikiLink key="mv" href="https://www.mindvalley.com/values">Mindvalley</WikiLink>,
               ],
               true,
             ],
@@ -501,7 +498,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "laura-taylor",
         cite: (
           <>
-            <strong>Artist profiling</strong>: <em><WikiLink href="https://laurataylorpainter.com/about">Laura Taylor</WikiLink> (2015, New York)</em>; ARTrepreneurs (Delano, L.); skills of elicitation, production, and architecture • video (website)
+            <strong>Artist profiling</strong>: <em><WikiLink href="https://laurataylorpainter.com/about">Laura Taylor</WikiLink> (2015, New York)</em>; ARTrepreneurs (Delano, L.); skills of profiling, production, and architecture • video (website)
           </>
         ),
       },
@@ -594,7 +591,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "values-factor",
         cite: (
           <>
-            <strong>Author collaboration</strong>: <em><WikiLink href="https://www.mindvalley.com/values">Values Factor</WikiLink> (2024, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of negotiation, elicitation, architecture, and management • course (Mindvalley)
+            <strong>Author collaboration</strong>: <em><WikiLink href="https://www.mindvalley.com/values">Values Factor</WikiLink> (2024, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of negotiation, profiling, architecture, and management • course (Mindvalley)
           </>
         ),
       },
