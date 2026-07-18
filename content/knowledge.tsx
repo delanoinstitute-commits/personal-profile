@@ -623,7 +623,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coaching-story",
         cite: (
           <>
-            <strong>Case study</strong>: <em><WikiLink href="https://youtu.be/8p5pAPpmy1o">Family Intervention</WikiLink> (2022, Utah)</em>; 10X Fitness, Inc. (Delano, L.); skills of selling, training, analysis, and production • video (YouTube)
+            <strong>Family story</strong>: <em><WikiLink href="https://youtu.be/8p5pAPpmy1o">Remote Coaching</WikiLink> (2022, Utah)</em>; 10X Fitness, Inc. (Delano, L.); skills of selling, training, analysis, and production • video (YouTube)
           </>
         ),
       },
