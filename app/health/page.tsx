@@ -96,9 +96,11 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
         {
           category: "Bone density (skeletal strength)",
           metrics: [
-            ["", "My bone sits at the age-matched average — sound, not exceptional", false],
-            ["Z-score", "−0.3 (37th percentile)", true, "Bone density compared with an age- and sex-matched average."],
-            ["BMD", "1.212 g/cm²", true, "Bone mineral density — the mineral content and strength of bone."],
+            ["", "My whole-body bone density is sound and rising year over year", false],
+            ["Whole-body BMD", "1.212 g/cm²", true, "Bone mineral density — the mineral content and strength of bone, measured across the whole body; higher is stronger."],
+            ["2022", "1.197 g/cm²", true, undefined, undefined, true],
+            ["2021", "1.183 g/cm²", true, undefined, undefined, true],
+            ["Hip & spine", "pending", true, "Femoral neck and lumbar-spine T-scores — the clinical gold standard for bone, from a dedicated scan I haven’t yet done."],
           ],
         },
       ],
