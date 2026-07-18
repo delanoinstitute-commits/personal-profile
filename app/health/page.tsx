@@ -75,15 +75,6 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Muscle mass (force reserve)",
-          metrics: [
-            ["", "I carry more muscle than four in five men my age", false],
-            ["ALMI", "9.4 kg/m² (>80th percentile)", true, "Appendicular lean mass index — arm and leg muscle relative to height; the key muscularity metric."],
-            ["Height²", "3.09 m²", true, "Height squared — the denominator that normalizes lean mass for body size.", undefined, true],
-            ["ALM", "29.1 kg", true, "Appendicular lean mass — total muscle in the arms and legs.", undefined, true],
-          ],
-        },
-        {
           category: "Fat mass (metabolic protection)",
           metrics: [
             ["", "I run leaner than 19 in 20 men, with minimal visceral fat", false],
@@ -91,6 +82,15 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
             ["Percent body fat", "7.9% (<5th percentile)", true, "The percentage of total body weight that is fat — fat mass over total weight."],
             ["Total weight", "72 kg", true, "Total body mass on the DEXA scan.", undefined, true],
             ["Fat mass", "5.7 kg", true, "Total fat tissue — this over total weight gives the body-fat percentage.", undefined, true],
+          ],
+        },
+        {
+          category: "Muscle mass (force reserve)",
+          metrics: [
+            ["", "I carry more muscle than four in five men my age", false],
+            ["ALMI", "9.4 kg/m² (>80th percentile)", true, "Appendicular lean mass index — arm and leg muscle relative to height; the key muscularity metric."],
+            ["Height²", "3.09 m²", true, "Height squared — the denominator that normalizes lean mass for body size.", undefined, true],
+            ["ALM", "29.1 kg", true, "Appendicular lean mass — total muscle in the arms and legs.", undefined, true],
           ],
         },
         {
