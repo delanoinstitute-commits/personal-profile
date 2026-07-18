@@ -89,7 +89,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           metrics: [
             ["", "I carry more muscle than four in five men my age", false],
             ["ALMI", "9.4 kg/m² (>80th percentile)", true, "Appendicular lean mass index — arm and leg muscle relative to height. The strongest body-composition marker; low defines sarcopenia."],
-            ["Height²", "3.09 m²", true, undefined, undefined, true],
+            ["Height squared", "3.09 m²", true, undefined, undefined, true],
             ["Appendicular lean mass", "29.1 kg", true, undefined, undefined, true],
           ],
         },
