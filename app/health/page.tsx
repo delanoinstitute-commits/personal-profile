@@ -97,7 +97,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           category: "Bone density (skeletal strength)",
           metrics: [
             ["", "My whole-body bone density is sound, near the age-matched average", false],
-            ["Whole-body BMD", "1.213 g/cm² (37th percentile)", true, "Bone mineral density across the whole body; 37th percentile (Z-score −0.3) for age-matched males."],
+            ["Whole-body BMD", "1.212 g/cm² (37th percentile)", true, "Bone mineral density — the mineral content and strength of bone, measured across the whole body; higher is better."],
           ],
         },
       ],
