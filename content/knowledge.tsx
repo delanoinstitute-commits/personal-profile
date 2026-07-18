@@ -591,7 +591,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "ken-wilber-testimonial",
         cite: (
           <>
-            <strong>Author testimonial</strong>: <em><WikiLink href="https://youtu.be/M5w-97sML4s">Ken Wilber</WikiLink> (2019, Denver)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
+            <strong>Recommendation</strong>: <em><WikiLink href="https://youtu.be/M5w-97sML4s">Ken Wilber</WikiLink> (2019, Denver)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
           </>
         ),
       },
@@ -599,7 +599,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "mark-watts-testimonial",
         cite: (
           <>
-            <strong>Author testimonial</strong>: <em><WikiLink href="https://youtu.be/r4L78CYP99I">Mark Watts</WikiLink> (2019, Los Angeles)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
+            <strong>Recommendation</strong>: <em><WikiLink href="https://youtu.be/r4L78CYP99I">Mark Watts</WikiLink> (2019, Los Angeles)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
           </>
         ),
       },
@@ -615,7 +615,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coaching-testimonials",
         cite: (
           <>
-            <strong>Client stories</strong>: <em><WikiLink href="https://youtu.be/WBfb7Trl3JY">In-person Coaching</WikiLink> (2021, Kuala Lumpur / Pula)</em>; 10X Fitness, Inc. (Delano, L.); skills of teaching and analysis • video (YouTube)
+            <strong>Client case studies</strong>: <em><WikiLink href="https://youtu.be/WBfb7Trl3JY">In-person Coaching</WikiLink> (2021, Kuala Lumpur / Pula)</em>; 10X Fitness, Inc. (Delano, L.); skills of teaching and analysis • video (YouTube)
           </>
         ),
       },
@@ -639,7 +639,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "ben-greenfield-testimonial",
         cite: (
           <>
-            <strong>Author testimonial</strong>: <em><WikiLink href="https://youtu.be/zQ9A5bylhoc">Ben Greenfield</WikiLink> (2023, Spokane)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
+            <strong>Recommendation</strong>: <em><WikiLink href="https://youtu.be/zQ9A5bylhoc">Ben Greenfield</WikiLink> (2023, Spokane)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
           </>
         ),
       },
@@ -647,7 +647,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "john-demartini-testimonial",
         cite: (
           <>
-            <strong>Author testimonial</strong>: <em><WikiLink href="https://youtu.be/li3cYZKc9zw">John Demartini</WikiLink> (2024, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
+            <strong>Author story</strong>: <em><WikiLink href="https://youtu.be/li3cYZKc9zw">John Demartini</WikiLink> (2024, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
           </>
         ),
       },

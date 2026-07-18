@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
-import { StatTable, type StatTableData } from "@/components/StatTable";
-import { References, type Reference } from "@/components/References";
+import { NestedTable } from "@/components/NestedTable";
+import type { StatTableData } from "@/components/StatTable";
+import { References, type ReferenceSection } from "@/components/References";
 
 export const metadata: Metadata = { title: "Health" };
 
@@ -14,47 +15,51 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
   title: "Functional homeostasis",
   groups: [
     {
-      domain: "Biomolecular",
-      label: "Biochemistry (Blood)",
+      domain: "Blood biochemistry",
+      label: "",
       rows: [
         {
           category: "Cardiovascular (low-risk transport)",
           metrics: [
-            ["ApoB", "0.6 g/L (60 mg/dL)", false, "Apolipoprotein B — the particle count of artery-clogging cholesterol; the strongest single lipid predictor of heart disease."],
-            ["Hemoglobin", "14.1 g/dL", false, "The oxygen-carrying protein in red blood cells."],
-            ["Ferritin", "166 µg/L", false, "Stored iron — the body's reserve for making hemoglobin."],
+            ["", "My lipids sit at low-risk levels, with iron and oxygen transport in full supply", false],
+            ["ApoB", "0.6 g/L (60 mg/dL)", true, "Apolipoprotein B — the particle count of artery-clogging cholesterol; the strongest single lipid predictor of heart disease."],
+            ["Hemoglobin", "14.1 g/dL", true, "The oxygen-carrying protein in red blood cells."],
+            ["Ferritin", "166 µg/L", true, "Stored iron — the body's reserve for making hemoglobin."],
           ],
         },
         {
           category: "Endometabolic (sensitive disposal)",
           metrics: [
-            ["HbA1c", "5.1%", false, "Average blood sugar over the past ~3 months (glycated hemoglobin)."],
-            ["Fasting insulin", "4.1 IU/L", false, "Insulin at rest — a marker of insulin sensitivity and metabolic health."],
-            ["Lactate threshold", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", false, "The intensity at which lactate begins to accumulate — metabolic efficiency under load; the one exertional reading among otherwise resting, fasted markers."],
+            ["", "My blood sugar and insulin run low — a metabolism efficient even under load", false],
+            ["HbA1c", "5.1%", true, "Average blood sugar over the past ~3 months (glycated hemoglobin)."],
+            ["Fasting insulin", "4.1 IU/L", true, "Insulin at rest — a marker of insulin sensitivity and metabolic health."],
+            ["Lactate threshold", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", true, "The intensity at which lactate begins to accumulate — metabolic efficiency under load; the one exertional reading among otherwise resting, fasted markers."],
           ],
         },
         {
           category: "Hepatorenal (low-stress clearance)",
           metrics: [
-            ["eGFR-CysC", "101 mL/min/1.73m²", false, "Estimated kidney filtration rate, derived from cystatin C (not muscle-biased)."],
-            ["ALT", "26 IU/L", false, "A liver enzyme; elevated levels signal liver stress or injury."],
-            ["Uric acid", "0.28 mmol/L (4.7 mg/dL)", false, "A metabolic waste product cleared by the kidneys; high levels strain them."],
+            ["", "My liver and kidneys clear at full function, unstressed", false],
+            ["eGFR-CysC", "101 mL/min/1.73m²", true, "Estimated kidney filtration rate, derived from cystatin C (not muscle-biased)."],
+            ["ALT", "26 IU/L", true, "A liver enzyme; elevated levels signal liver stress or injury."],
+            ["Uric acid", "0.28 mmol/L (4.7 mg/dL)", true, "A metabolic waste product cleared by the kidneys; high levels strain them."],
           ],
         },
       ],
     },
     {
-      domain: "Circulatory",
-      label: "Hemodynamics (Vitals)",
+      domain: "Blood circulation",
+      label: "",
       rows: [
         {
           category: "Cardiovascular (autonomic resilience)",
           metrics: [
-            ["Blood pressure", "110/65 mmHg", false, "Resting pressure of blood against the artery walls (systolic / diastolic)."],
-            ["HR reserve", "126 bpm", false, "Max minus resting heart rate — the range the heart can call on; a wide reserve reflects cardiac fitness and autonomic range."],
+            ["", "My heart idles low, opens a wide reserve, and recovers fast", false],
+            ["Blood pressure", "110/65 mmHg", true, "Resting pressure of blood against the artery walls (systolic / diastolic)."],
+            ["HR reserve", "126 bpm", true, "Max minus resting heart rate — the range the heart can call on; a wide reserve reflects cardiac fitness and autonomic range."],
             ["Max HR", "176 bpm (measured)", true, "Highest heart rate reached, measured directly during CPET with a chest strap — not age-estimated."],
             ["Resting HR", "50 bpm", true, "Heartbeats per minute at rest; lower reflects a more efficient heart."],
-            ["HR recovery", "36 bpm @ 1 min", false, "The fall in heart rate one minute after peak effort; ~30–40 bpm (about a beat every 2 seconds) signals strong parasympathetic rebound."],
+            ["HR recovery", "36 bpm @ 1 min", true, "The fall in heart rate one minute after peak effort; ~30–40 bpm (about a beat every 2 seconds) signals strong parasympathetic rebound."],
           ],
         },
       ],
@@ -66,43 +71,49 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
   title: "Structural integrity",
   groups: [
     {
-      domain: "Compositional",
-      label: "Densitometry (DEXA)",
+      domain: "Body composition",
+      label: "",
       rows: [
         {
           category: "Muscle mass (force reserve)",
           metrics: [
-            ["ALMI", "9.4 kg/m² (>80th percentile)", false, "Appendicular lean mass index — arm and leg muscle relative to height; the key muscularity metric."],
-            ["Height²", "3.09 m²", true, "Height squared — the denominator that normalizes lean mass for body size."],
-            ["ALM", "29.1 kg", true, "Appendicular lean mass — total muscle in the arms and legs."],
+            ["", "I carry more muscle than four in five men my age", false],
+            ["ALMI", "9.4 kg/m² (>80th percentile)", true, "Appendicular lean mass index — arm and leg muscle relative to height; the key muscularity metric."],
+            ["Height²", "3.09 m²", true, "Height squared — the denominator that normalizes lean mass for body size.", undefined, true],
+            ["ALM", "29.1 kg", true, "Appendicular lean mass — total muscle in the arms and legs.", undefined, true],
           ],
         },
         {
           category: "Fat mass (metabolic protection)",
           metrics: [
-            ["VAT", "114 g", false, "Visceral adipose tissue — fat stored around the internal organs, the most metabolically harmful kind."],
-            ["Body fat", "7.9% (<5th percentile)", false, "The percentage of total body weight that is fat."],
+            ["", "I run leaner than 19 in 20 men, with minimal visceral fat", false],
+            ["VAT", "114 g", true, "Visceral adipose tissue — fat stored around the internal organs, the most metabolically harmful kind."],
+            ["Percent body fat", "7.9% (<5th percentile)", true, "The percentage of total body weight that is fat — fat mass over total weight."],
+            ["Total weight", "72 kg", true, "Total body mass on the DEXA scan.", undefined, true],
+            ["Fat mass", "5.7 kg", true, "Total fat tissue — this over total weight gives the body-fat percentage.", undefined, true],
           ],
         },
         {
           category: "Bone density (skeletal strength)",
           metrics: [
-            ["Z-score", "−0.3 (37th percentile)", false, "Bone density compared with an age- and sex-matched average."],
+            ["", "My bone sits at the age-matched average — sound, not exceptional", false],
+            ["Z-score", "−0.3 (37th percentile)", true, "Bone density compared with an age- and sex-matched average."],
             ["BMD", "1.212 g/cm²", true, "Bone mineral density — the mineral content and strength of bone."],
           ],
         },
       ],
     },
     {
-      domain: "Geometric",
-      label: "Anthropometry (Tape)",
+      domain: "Body geometry",
+      label: "",
       rows: [
         {
           category: "Waistline (central adiposity)",
           metrics: [
-            ["Waist-to-height ratio", "0.45", false, "Waist circumference ÷ height — the best simple predictor of central-fat risk."],
-            ["Height", "176 cm", true, "Standing height."],
-            ["Waist", "80 cm", true, "Waist circumference."],
+            ["", "My waist is well under half my height — low central-fat risk", false],
+            ["Waist-to-height ratio", "0.45", true, "Waist circumference ÷ height — the best simple predictor of central-fat risk."],
+            ["Height", "176 cm", true, "Standing height.", undefined, true],
+            ["Waist", "80 cm", true, "Waist circumference.", undefined, true],
           ],
         },
       ],
@@ -114,51 +125,56 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   title: "Functional capacity",
   groups: [
     {
-      domain: "Biomechanical",
-      label: "Battery (Performance)",
+      domain: "Muscular biomechanics",
+      label: "",
       rows: [
         {
           category: "Hip (locomotive power)",
           metrics: [
-            ["Extension (balance)", "6 pistol squats per leg", false, "Single-leg squatting strength — knee extension under balance."],
-            ["Extension (hinge)", "Deadlift 2× BW", false, "Hip-hinge pulling strength (the deadlift)."],
-            ["Flexion (curl)", "1 nordic curl", false, "Hamstring and knee-flexion strength (the nordic curl)."],
+            ["", "I squat on one leg, pull double bodyweight, and curl my own hamstrings", false],
+            ["Extension (balance)", "6 pistol squats per leg", true, "Single-leg squatting strength — knee extension under balance."],
+            ["Extension (hinge)", "Deadlift 2× BW", true, "Hip-hinge pulling strength (the deadlift)."],
+            ["Flexion (curl)", "1 nordic curl", true, "Hamstring and knee-flexion strength (the nordic curl)."],
           ],
         },
         {
           category: "Core (midline stability)",
           metrics: [
-            ["Compression (raise)", "15-sec V-sit", false, "Trunk-flexion / anterior-chain compression hold (the V-sit)."],
-            ["Tensegrity (press)", "15-sec back lever", false, "Straight-arm pressing tension through the trunk (the back lever)."],
-            ["Tensegrity (pull)", "5-sec front lever", false, "Straight-arm pulling tension through the trunk (the front lever)."],
+            ["", "I hold my trunk rigid through levers, front and back", false],
+            ["Compression (raise)", "15-sec V-sit", true, "Trunk-flexion / anterior-chain compression hold (the V-sit)."],
+            ["Tensegrity (press)", "15-sec back lever", true, "Straight-arm pressing tension through the trunk (the back lever)."],
+            ["Tensegrity (pull)", "5-sec front lever", true, "Straight-arm pulling tension through the trunk (the front lever)."],
           ],
         },
         {
           category: "Shoulder (upper-body strength)",
           metrics: [
-            ["Extension (pull)", "20 pull-ups", false, "Vertical pulling strength (pull-ups)."],
-            ["Flexion (dip)", "25 chest dips", false, "Pressing strength at the shoulder and chest (dips)."],
-            ["Flexion (press)", "OH press 0.9× BW", false, "Overhead pressing strength."],
+            ["", "I pull 20 reps, dip 25, and press 0.9× bodyweight overhead", false],
+            ["Extension (pull)", "20 pull-ups", true, "Vertical pulling strength (pull-ups)."],
+            ["Flexion (dip)", "25 chest dips", true, "Pressing strength at the shoulder and chest (dips)."],
+            ["Flexion (press)", "OH press 0.9× BW", true, "Overhead pressing strength."],
           ],
         },
         {
           category: "Global (work capacity)",
           metrics: [
-            ["Flexion (squat)", "Overhead squat 1× BW", false, "Full-depth overhead squat — whole-body mobility and strength."],
-            ["Extension (gait)", "30-sec 200 m sprint; 3 W/kg FTP (20 min)", false, "Locomotive power output — sprinting and sustained cycling."],
-            ["Extension (jump)", "2.4 m broad jump", false, "Explosive lower-body power (the broad jump)."],
+            ["", "I move my whole body fast, far, and under load", false],
+            ["Flexion (squat)", "Overhead squat 1× BW", true, "Full-depth overhead squat — whole-body mobility and strength."],
+            ["Extension (gait)", "30-sec 200 m sprint; 3 W/kg FTP (20 min)", true, "Locomotive power output — sprinting and sustained cycling."],
+            ["Extension (jump)", "2.4 m broad jump", true, "Explosive lower-body power (the broad jump)."],
           ],
         },
       ],
     },
     {
-      domain: "Bioenergetic",
-      label: "Calorimetry (CPET)",
+      domain: "Metabolic bioenergetics",
+      label: "",
       rows: [
         {
           category: "Global (energy efficiency)",
           metrics: [
-            ["VO₂max (uptake)", "53 ml/kg/min", false, "Maximum rate of oxygen use during exercise — the headline aerobic-fitness metric."],
+            ["", "I take up oxygen in the top decile for my age, burning fat deep into effort", false],
+            ["VO₂max (uptake)", "53 ml/kg/min", true, "Maximum rate of oxygen use during exercise — the headline aerobic-fitness metric."],
             ["MFO (rate)", "0.45 g/min @ 60% VO₂max", true, "Maximal fat oxidation — the peak rate of burning fat for fuel."],
           ],
         },
@@ -167,125 +183,62 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   ],
 };
 
-const HEALTH_REFERENCES: Reference[] = [
+const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
   {
-    id: "framework",
-    cite: (
-      <>
-        Delano, L. Balance, integrity, and capacity: a functional framework for health status. (Forthcoming.)
-      </>
-    ),
-    tag: "Framework",
+    label: "Biochemistry",
+    description: "blood panels — venous draw, wet chemistry",
+    items: [
+      {
+        id: "blood-2026",
+        cite: (
+          <>
+            <strong>Blood panel</strong>: <em>Biochemistry &amp; hematology (May 2026, fasted)</em>; Pathcare; ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, eGFR, ALT, uric acid • <a className="wikilink external" href="/reports/blood-2026-05.pdf" target="_blank" rel="noopener noreferrer">report<span className="sr-only"> (opens in a new tab)</span></a>
+          </>
+        ),
+      },
+    ],
   },
   {
-    id: "apob",
-    cite: (
-      <>
-        Sniderman, A. D., et al. (2019). Apolipoprotein B particles and cardiovascular disease: a narrative review. <em>JAMA Cardiology</em>, 4(12).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/31642874/",
-    urlLabel: "PubMed",
-    tag: "Balance",
+    label: "Densitometry",
+    description: "DEXA — dual-energy X-ray absorptiometry",
+    items: [
+      {
+        id: "dexa-2026",
+        cite: (
+          <>
+            <strong>DEXA scan</strong>: <em>Whole-body composition (May 2026, rested)</em>; SSR; ALMI, percent body fat, visceral fat, bone density • <a className="wikilink external" href="/reports/dexa-2026-05.pdf" target="_blank" rel="noopener noreferrer">report<span className="sr-only"> (opens in a new tab)</span></a>
+          </>
+        ),
+      },
+    ],
   },
   {
-    id: "hba1c",
-    cite: (
-      <>
-        Khaw, K. T., et al. (2001). Glycated haemoglobin, diabetes, and mortality in men in Norfolk cohort of the European Prospective Investigation of Cancer and Nutrition (EPIC-Norfolk). <em>BMJ</em>, 322(7277).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/11141143/",
-    urlLabel: "PubMed",
-    tag: "Balance",
+    label: "Indirect calorimetry",
+    description: "CPET — graded cycling test with a metabolic cart",
+    items: [
+      {
+        id: "cpet-2024",
+        cite: (
+          <>
+            <strong>CPET</strong>: <em>Cycling VO&#8322;max test (September 2024, maximal effort)</em>; S2S; VO&#8322;max, lactate threshold, maximal fat oxidation, max HR, HR recovery • <a className="wikilink external" href="/reports/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">report<span className="sr-only"> (opens in a new tab)</span></a>
+          </>
+        ),
+      },
+    ],
   },
   {
-    id: "cystatinc",
-    cite: (
-      <>
-        Shlipak, M. G., et al. (2013). Cystatin C versus creatinine in determining risk based on kidney function. <em>New England Journal of Medicine</em>, 369(10).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/24004120/",
-    urlLabel: "PubMed",
-    tag: "Balance",
-  },
-  {
-    id: "bloodpressure",
-    cite: (
-      <>
-        Lewington, S., et al. (2002). Age-specific relevance of usual blood pressure to vascular mortality: a meta-analysis of individual data for one million adults in 61 prospective studies. <em>Lancet</em>, 360(9349).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/12493255/",
-    urlLabel: "PubMed",
-    tag: "Balance",
-  },
-  {
-    id: "hrreserve",
-    cite: (
-      <>
-        Lauer, M. S., et al. (1999). Impaired chronotropic response to exercise stress testing as a predictor of mortality. <em>JAMA</em>, 281(6).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/10022108/",
-    urlLabel: "PubMed",
-    tag: "Balance",
-  },
-  {
-    id: "hrrecovery",
-    cite: (
-      <>
-        Cole, C. R., et al. (1999). Heart-rate recovery immediately after exercise as a predictor of mortality. <em>New England Journal of Medicine</em>, 341(18).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/10536127/",
-    urlLabel: "PubMed",
-    tag: "Balance",
-  },
-  {
-    id: "sarcopenia",
-    cite: (
-      <>
-        Cruz-Jentoft, A. J., et al. (2019). Sarcopenia: revised European consensus on definition and diagnosis (EWGSOP2). <em>Age and Ageing</em>, 48(1).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/30312372/",
-    urlLabel: "PubMed",
-    tag: "Integrity",
-  },
-  {
-    id: "bmd",
-    cite: (
-      <>
-        Marshall, D., Johnell, O., and Wedel, H. (1996). Meta-analysis of how well measures of bone mineral density predict occurrence of osteoporotic fractures. <em>BMJ</em>, 312(7041).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/8634613/",
-    urlLabel: "PubMed",
-    tag: "Integrity",
-  },
-  {
-    id: "whtr",
-    cite: (
-      <>
-        Ashwell, M., Gunn, P., and Gibson, S. (2012). Waist-to-height ratio is a better screening tool than waist circumference and BMI for adult cardiometabolic risk factors: systematic review and meta-analysis. <em>Obesity Reviews</em>, 13(3).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/22106927/",
-    urlLabel: "PubMed",
-    tag: "Integrity",
-  },
-  {
-    id: "vo2max",
-    cite: (
-      <>
-        Kaminsky, L. A., et al. (2022). Updated reference standards for cardiorespiratory fitness measured with cardiopulmonary exercise testing (the FRIEND Registry). <em>Mayo Clinic Proceedings</em>, 97(2).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/34809986/",
-    urlLabel: "PubMed",
-    tag: "Capacity",
+    label: "Dynamometry",
+    description: "performance demonstrations — filmed, strict-form reps",
+    items: [
+      {
+        id: "movement-demos",
+        cite: (
+          <>
+            <strong>Movement battery</strong>: <em>Strength &amp; power demonstrations</em>; self-filmed; hip, core, shoulder, and global tests {/* TODO: link per-movement demonstration videos */}
+          </>
+        ),
+      },
+    ],
   },
 ];
 
@@ -311,7 +264,7 @@ export default function HealthPage() {
         its make-up of muscle, fat, and bone (compositional) and its proportion (geometric).
         Mine is lean and muscular over sound bone, carrying little central fat.
       </p>
-      <StatTable {...STRUCTURAL_INTEGRITY} hint="Click a row below to explore my integrity status in more detail." />
+      <NestedTable {...STRUCTURAL_INTEGRITY} />
 
       <h2 id="balance">Balance <span className="heading-paren">(Homeostasis)</span></h2>
       <p>
@@ -320,7 +273,7 @@ export default function HealthPage() {
         circulation (hemodynamic). Mine sits low and calm at rest yet opens a wide cardiac
         reserve under effort, on low-risk lipids and a metabolism efficient even when stressed.
       </p>
-      <StatTable {...FUNCTIONAL_HOMEOSTASIS} hint="Click a row below to explore my balance status in more detail." />
+      <NestedTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="capacity">Capacity <span className="heading-paren">(Performance)</span></h2>
       <p>
@@ -329,11 +282,11 @@ export default function HealthPage() {
         Mine is broad — strength and power head to toe, high aerobic capacity, and efficient
         fuel use.
       </p>
-      <StatTable {...FUNCTIONAL_CAPACITY} hint="Click a row below to explore my capacity status in more detail." />
+      <NestedTable {...FUNCTIONAL_CAPACITY} />
 
       <References
-        items={HEALTH_REFERENCES}
-        intro="The framework and evidence behind these readings."
+        sections={HEALTH_REFERENCE_SECTIONS}
+        intro="Every reading above comes from one of four instruments — you can verify each against the source report."
       />
     </>
   );

@@ -64,7 +64,14 @@ export default function MetricList({
 }) {
   if (numbered) {
     const lead = metrics.find((m) => !m[2]);
-    const components = metrics.filter((m) => m[2]);
+    // Walk the supportive metrics in order: a metric flagged sub (index 5)
+    // hangs uncounted and italic under the numbered entry above it.
+    const entries: { metric: Metric; subs: Metric[] }[] = [];
+    for (const m of metrics) {
+      if (!m[2]) continue;
+      if (m[5]) entries[entries.length - 1]?.subs.push(m);
+      else entries.push({ metric: m, subs: [] });
+    }
     return (
       <div>
         {lead && (
@@ -72,11 +79,20 @@ export default function MetricList({
             <MetricInline metric={lead} boldTooltip />
           </div>
         )}
-        {components.length > 0 && (
+        {entries.length > 0 && (
           <ol className="references-list metric-numbered">
-            {components.map((m, i) => (
-              <li key={`${m[0]}-${i}`}>
-                <MetricInline metric={m} boldTooltip />
+            {entries.map((e, i) => (
+              <li key={`${e.metric[0]}-${i}`}>
+                <MetricInline metric={e.metric} boldTooltip />
+                {e.subs.length > 0 && (
+                  <ul className="metric-subs">
+                    {e.subs.map((sm, j) => (
+                      <li key={`${sm[0]}-${j}`}>
+                        <MetricInline metric={sm} boldTooltip />
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ol>

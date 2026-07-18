@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
-import { StatTable, type StatTableData } from "@/components/StatTable";
+import { NestedTable } from "@/components/NestedTable";
+import type { StatTableData } from "@/components/StatTable";
 import { References, type Reference } from "@/components/References";
 
 export const metadata: Metadata = { title: "Identity" };
@@ -16,12 +17,12 @@ const INTELLECT: StatTableData = {
   groups: [
     {
       domain: "Aptitude",
-      label: "Ability (Full RIOT IQ · percentile)",
+      label: "",
       rows: [
         {
-          category: "Intelligence (processing power)",
+          category: "Intelligence (RIOT IQ · percentile)",
           metrics: [
-            ["Profile", "pending", false, "Full-Scale IQ — overall general cognitive ability, the g-loaded composite of the six abilities below."],
+            ["", "I measure my general ability with the full RIOT battery — results pending", false],
             ["Working memory", "—", true, "Holding and manipulating information in mind."],
             ["Processing speed", "—", true, "How quickly you take in and respond to information."],
             ["Fluid reasoning", "—", true, "Solving novel problems without relying on prior knowledge."],
@@ -34,12 +35,12 @@ const INTELLECT: StatTableData = {
     },
     {
       domain: "Perspective",
-      label: "Typology (Funk's 7 Perspectives · categorical)",
+      label: "",
       rows: [
         {
-          category: "Worldview (interpretive lens)",
+          category: "Worldview (Funk’s 7 perspectives)",
           metrics: [
-            ["Profile", "Integral (naturalistic) humanist", false, "A naturalist who trusts reason and evidence, sees reality as one emergent process, and grounds purpose and value in humanity rather than the divine."],
+            ["", "I am an integral (naturalistic) humanist — reason-grounded, humanity-centered", false],
             ["Knowing", "Explanatory fallibilist", true, "Epistemology — the nature and sources of knowledge; how we know."],
             ["Being", "Physical idealist", true, "Metaphysics — what is ultimately real; the fundamental nature of reality."],
             ["Origins", "Evolutionary emergentist", true, "Cosmology — the origin and nature of the universe and of life."],
@@ -59,13 +60,13 @@ const CHARACTER: StatTableData = {
   groups: [
     {
       domain: "Temperament",
-      label: "Inventory (HEXACO-PI-R 100 · percentile)",
+      label: "",
       rows: [
         {
-          category: "Personality (behavioral wiring)",
+          category: "Personality (HEXACO-PI-R · percentile)",
           metrics: [
-            ["Profile", "Disciplined, unflappable, and independent", false, "Exceptionally conscientious and reliable, hard to rattle emotionally, and self-reliant — reserved rather than outgoing, and tough-minded enough to question consensus rather than smooth it over."],
-            ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn't measure."],
+            ["", "I am disciplined, unflappable, and independent", false],
+            ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn’t measure."],
             ["Emotionality", "1st (very low)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent."],
             ["eXtraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
             ["Agreeableness", "30th", true, "Patience, forgiveness, and cooperation versus temper and criticism."],
@@ -77,15 +78,15 @@ const CHARACTER: StatTableData = {
     },
     {
       domain: "Sentiment",
-      label: "Inventory (Primal World Beliefs · PI-99 · 0–5)",
+      label: "",
       rows: [
         {
-          category: "Beliefs (felt outlook)",
+          category: "Beliefs (Primal World Beliefs · 0–5)",
           metrics: [
-            ["Profile", "Good and improving, but impersonal", false, "Fundamentally good (3.66) — safe, abundant, and improving — but not alive: impersonal and non-agentic, with no cosmic intention. Hierarchical yet interconnected — a secular optimist's world."],
-            ["Safe", "3.69 with 'progressing' at 4.75", true, "Whether the world is safe and nurturing, or dangerous and threatening."],
-            ["Enticing", "3.86 with 'abundant' at 4.5", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren."],
-            ["Alive", "2.21 with 'needs me' at 2.75", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic."],
+            ["", "I meet a world that is good, safe, and improving — yet impersonal: wonderful, not watching", false],
+            ["Safe", "3.69 with ‘progressing’ at 4.75", true, "Whether the world is safe and nurturing, or dangerous and threatening."],
+            ["Enticing", "3.86 with ‘abundant’ at 4.5", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren."],
+            ["Alive", "2.21 with ‘needs me’ at 2.75", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic."],
             ["Neutral", "hierarchical (3.8) and interconnected (3.5)", true, "Primals outside the Good hierarchy — orthogonal descriptors; these are my top two of the five."],
           ],
         },
@@ -99,12 +100,12 @@ const DRIVE: StatTableData = {
   groups: [
     {
       domain: "Motivation",
-      label: "Inventory (PVQ-40 · 1–6)",
+      label: "",
       rows: [
         {
-          category: "Values (guiding priorities)",
+          category: "Values (PVQ-40 · 1–6)",
           metrics: [
-            ["Profile", "Openness over conservation, self-other balanced", false, "Autonomy and achievement, kept stable and caring — with little need for novelty, pleasure, tradition, or conformity."],
+            ["", "I run on autonomy and achievement, kept stable and caring", false],
             ["Self-direction", "6.0 (openness)", true, "Independent thought and action — choosing, creating, exploring."],
             ["Achievement", "4.5 (self-enhancement)", true, "Personal success through demonstrating competence."],
             ["Security", "4.2 (conservation)", true, "Safety, harmony, and stability of self and society."],
@@ -121,12 +122,12 @@ const DRIVE: StatTableData = {
     },
     {
       domain: "Vocation",
-      label: "Inventory (Holland RIASEC-18 · rank)",
+      label: "",
       rows: [
         {
-          category: "Interests (engagement fit)",
+          category: "Interests (Holland RIASEC · rank)",
           metrics: [
-            ["Profile", "IAS (inquiry, artistry, service)", false, "Drawn to ideas and to making things, in the service of people — the pattern of a designer-educator (Investigative, Artistic, Social)."],
+            ["", "I am drawn to ideas and to making things, in the service of people", false],
             ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
             ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work."],
             ["Social", "3rd", true, "Drawn to helping, teaching, and working with people."],
@@ -235,8 +236,7 @@ export default function IdentityPage() {
         (character), and what moves me (drive). Current readings, not history.
       </p>
       <p>
-        Each lens is read with its gold-standard instrument — a composite over its components,
-        the same tabled form as my health status. In brief, I&rsquo;m intellectually curious and
+        Each lens is read with its gold-standard instrument — a composite profile over its components. In brief, I&rsquo;m intellectually curious and
         highly conscientious, emotionally steady, and independent-minded — a builder who
         questions consensus. For how these formed, see{" "}
         <WikiLink href="/biography">my story</WikiLink>.
@@ -244,7 +244,7 @@ export default function IdentityPage() {
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>
       <p>How I think. The head.</p>
-      <StatTable {...INTELLECT} hint="Click a row below to explore my intellect profile in more detail." />
+      <NestedTable {...INTELLECT} />
 
       <h2 id="character">Character <span className="heading-paren">(Affect)</span></h2>
       <p>
@@ -253,7 +253,7 @@ export default function IdentityPage() {
         accommodating — and I meet a world I find fundamentally good, safe, and improving, yet
         impersonal: wonderful, but not watching.
       </p>
-      <StatTable {...CHARACTER} hint="Click a row below to explore my character profile in more detail." />
+      <NestedTable {...CHARACTER} />
 
       <h2 id="drive">Drive <span className="heading-paren">(Conation)</span></h2>
       <p>
@@ -262,7 +262,7 @@ export default function IdentityPage() {
         indifferent to status, tradition, or thrill — expressed as an investigator and maker
         serving people through ideas and craft.
       </p>
-      <StatTable {...DRIVE} hint="Click a row below to explore my drive profile in more detail." />
+      <NestedTable {...DRIVE} />
 
       <References
         items={IDENTITY_REFERENCES}

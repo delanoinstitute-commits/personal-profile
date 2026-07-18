@@ -19,7 +19,7 @@ export const metadata: Metadata = { title: "Knowledge" };
 export default function KnowledgePage() {
   return (
     <>
-      <PageHeading title="Knowledge" hatnote={<>The present — what I make, do, and know</>} />
+      <PageHeading title="Knowledge" hatnote={<>Resources — what I make, do, and know, with references</>} />
 
       <p className="lead">
         Knowledge is one competence read three ways: what I have made (works),

@@ -61,7 +61,7 @@ export function NestedTable({
           // Band count = its supportive entries (the numbered items), so the
           // header advertises how much evidence sits inside.
           const count = group.rows.reduce(
-            (n, r) => n + r.metrics.filter((m) => m[2]).length,
+            (n, r) => n + r.metrics.filter((m) => m[2] && !m[5]).length,
             0,
           );
           return (

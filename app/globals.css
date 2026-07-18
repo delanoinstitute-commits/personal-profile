@@ -599,6 +599,17 @@ p.stat-hint {
   content: counter(list-item) ".\00a0\2009";
 }
 
+/* Sub-components hang uncounted and italic under their numbered entry. */
+.nested-content ol.metric-numbered .metric-subs {
+  list-style: none;
+  margin: 0.15rem 0 0;
+  padding-left: 0.9rem;
+  font-style: italic;
+}
+.nested-content ol.metric-numbered .metric-subs li {
+  margin: 0.1rem 0;
+}
+
 /* ===================================================================
    Timeline (biography) — §4.5
    =================================================================== */

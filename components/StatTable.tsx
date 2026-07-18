@@ -30,6 +30,9 @@ export type Metric = [
   supportive?: boolean,
   tooltip?: MetricTooltip,
   href?: string,
+  // sub: an uncounted, indented italic component that hangs under the numbered
+  // entry above it (e.g. Height² and ALM under ALMI). Numbered variant only.
+  sub?: boolean,
 ];
 export type Row = { category: string; metrics: Metric[] };
 export type Group = { domain: string; label: string; rows: Row[] };

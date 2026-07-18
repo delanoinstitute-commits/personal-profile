@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Un-redacted medical reports — never commit; redact to images before shipping
+/public/reports/
