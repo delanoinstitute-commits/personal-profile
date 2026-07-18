@@ -32,7 +32,7 @@ export const EDUCATION: StatTableData = {
                     alt: "Pretoria Chinese School certificate of participation in adult Mandarin classes, 2005",
                     portrait: true,
                   }}
-                  content="Adult Mandarin classes, Pretoria Chinese School (Feb–Aug 2005). Certified as Lorenzo Maritz, his name before 2009."
+                  content="Adult Mandarin classes, Pretoria Chinese School (Feb–Aug 2005). Certified as Lorenzo Maritz, my name before 2009."
                 >
                   Mandarin classes
                 </Tooltip>,
@@ -65,7 +65,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Non-formal (in-person training)",
           metrics: [
-            ["", "I tend to certify in transmission roles — tutor, instructor, coach, and designer", false],
+            ["", "I tend to certify in transmission roles — tutor, trainer, coach, and designer", false],
             [
               "Language Link",
               [
@@ -76,7 +76,7 @@ export const EDUCATION: StatTableData = {
                     alt: "Preliminary Certificate in Teaching English as a Foreign Language, Southern African TEFL Training Institute, 2006",
                     portrait: true,
                   }}
-                  content="Preliminary Certificate in Teaching English as a Foreign Language — Southern African TEFL Training Institute, Pretoria (June 2006)."
+                  content="Preliminary Certificate in Teaching English as a Foreign Language — trained at Language Link, certified by the Southern African TEFL Training Institute, Pretoria (June 2006)."
                 >
                   TEFL English tutor
                 </Tooltip>,
@@ -132,46 +132,9 @@ export const EDUCATION: StatTableData = {
           category: "Non-formal (remote schooling)",
           metrics: [
             ["", "I finished school by correspondence, then enroll only when a domain demands it", false],
-            ["INTEC College", "Grades 8–10, 2 years, correspondence, 2001–2002 (age 13–14)", true, "Distance secondary schooling — the last formal enrollment."],
-            [
-              "UoA",
-              [
-                <Tooltip
-                  key="cert"
-                  media={{
-                    src: "/credentials/philosophy.jpg",
-                    alt: "Certificate of Achievement in Logical and Critical Thinking, University of Auckland, 2018",
-                    portrait: true,
-                  }}
-                  content="Certificate of Achievement — Logical and Critical Thinking, University of Auckland (FutureLearn, 2018)."
-                >
-                  Critical thinking
-                </Tooltip>,
-                ", FutureLearn, 8 weeks, online, 2018 (age 30)",
-              ],
-              true,
-              "University of Auckland",
-            ],
-            [
-              "UoC",
-              [
-                <Tooltip
-                  key="cert"
-                  media={{
-                    src: "/credentials/exercise.jpg",
-                    alt: "Course Certificate in Science of Exercise, University of Colorado Boulder, 2019",
-                  }}
-                  content="Course Certificate — Science of Exercise, University of Colorado Boulder (Coursera, 2019)."
-                >
-                  Science of exercise
-                </Tooltip>,
-                ", Coursera, 4 weeks, online, 2019 (age 31)",
-              ],
-              true,
-              "University of Colorado Boulder",
-            ],
-            ["CFI", "Corporate finance training, 1 year, online, 2024 (age 36)", true, "Corporate Finance Institute"],
-            ["Khan Academy", "AP/College sciences, ongoing, online, since 2022 (age 34)", true],
+            ["INTEC College", "Grades 8–10, 2 years, correspondence, 2001–2002 (age 13–14)", true],
+            ["Khan Academy", "AP/College sciences, ongoing, online, since 2016 (age 28)", true],
+            ["Corporate Finance Institute", "Financial analysis, 1 year, online, 2024 (age 36)", true],
           ],
         },
         {
@@ -187,7 +150,7 @@ export const EDUCATION: StatTableData = {
                     src: "/credentials/nutrition.jpg",
                     alt: "Certificate of Training in Nutritional Biochemistry, Metabolic Fitness, 2021",
                   }}
-                  content="Certificate of Training — 25 hours in Nutritional Biochemistry, Metabolic Fitness (Dr Bryan Walsh, 2021)."
+                  content="Certificate of Training — 25 hours in Nutritional Biochemistry, Metabolic Fitness (Dr. Bryan Walsh, 2021)."
                 >
                   Nutrition biochemistry
                 </Tooltip>,
@@ -239,7 +202,7 @@ export const SKILLS: StatTableData = {
           metrics: [
             ["", "I organize, design, and strategize transformative outcomes", false],
             ["Classification", "Knowledge domain mapping, distillation, and standardization", true, "My IID methodology in practice: Mindvalley’s content classification system, my exercise and planning taxonomies, and the Autoprofiler. Everything I design starts here."],
-            ["Architecture", "Product, protocol, content, systems, and software design", true, "My IID and RBG principles applied: the 10X protocol, BodyFirst, the Mastery micro-degree framework, courses for four best-selling authors — and this website."],
+            ["Architecture", "Product, protocol, content, systems, and software design", true, "My IID and educational design principles applied: the 10X protocol, BodyFirst, the Mastery micro-degree framework, courses for best-selling authors — and this website."],
             ["Analysis", "Performance tracking, benchmarking, planning, programming, and reporting", true, "One quarter of the complete educator — presenter, analyst, strategist, instructor. Proven in three 10X research experiments and client reporting — see the Client Report below."],
           ],
         },
@@ -262,7 +225,7 @@ export const SKILLS: StatTableData = {
           metrics: [
             ["", "I teach any subject, in any setting, and train others to do the same", false],
             ["Teaching", "Transmitting and assessing theoretical (presentations) and practical (instructions) knowledge, 1-on-1/duo (coaching) or 1-on-many (facilitation), virtual or in-person", true, "From English classrooms in China at 16 to Mindvalley University workshops of 200+, plus a decade of coaching. See the Transformative Design talk below."],
-            ["Training", "Teaching students to become presenters, instructors, coaches, or facilitators", true, "The 10X coach certification opened with 500 coaches; Chinook’s team learned to train themselves — see it below. I train people until they no longer need me."],
+            ["Training", "Teaching students to become presenters, instructors, coaches, or facilitators", true, "The 10X coach certification opened with 500 coaches; Chinook’s team learned to train themselves — both in the references below. I train people until they no longer need me."],
           ],
         },
         {
@@ -277,7 +240,7 @@ export const SKILLS: StatTableData = {
           category: "Directorial (profiling and orchestration)",
           metrics: [
             ["", "I turn experts into methods and briefs into productions", false],
-            ["Profiling", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true, "Laura Taylor first (2015); then methods drawn from Wilber, Watts, Kotler, Greenfield, and Demartini, each codified into teachable courses. Their testimonials sit in the references below."],
+            ["Profiling", "Identifying the primary algorithm unique to a living expert or printed body of knowledge, and codifying it into a program others can follow and teach", true, "One skill, two ventures: ARTrepreneurs — a profiling company dressed as a marketing agency — then Eudaemonia, turning experts like Wilber, Greenfield, and Demartini into scalable learning experiences. Testimonials in the references below."],
             ["Management", "Planning, recruiting, coordinating, and reporting on large-scale education productions, research experiments, and lifestyle interventions", true, "Author-course productions from brief to delivery, 10X events across four countries, research experiments on cohorts of 20–25. See the Production Schedule video below."],
           ],
         },
@@ -346,9 +309,9 @@ export const WORKS: StatTableData = {
               "Fitness studio",
               [
                 <em key="n">Quantum Physiques</em>,
-                " (w/ ",
+                " with ",
                 <WikiLink key="brad" href="https://movefreely.co.za/">Brad Openshaw</WikiLink>,
-                "), Pretoria, 3 years, 2011–2013 (age 23–25)",
+                ", Pretoria, 3 years, 2011–2013 (age 23–25)",
               ],
               true,
               "A pop-up CrossFit-style gym run out of a wrestling hall with ~100 clients at its peak. I sold my stake to Brad in January 2014 as my interests shifted toward education; QP lives on as Move Freely.",
@@ -357,9 +320,9 @@ export const WORKS: StatTableData = {
               "Retreat business",
               [
                 <em key="n">The Physical Breakthrough Retreat</em>,
-                " (w/ ",
+                " with ",
                 <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
-                "), SA (nationwide), 1 year, 2014 (age 26)",
+                ", SA (nationwide), 1 year, 2014 (age 26)",
               ],
               true,
               "A fitness-education retreat company built on Primal Blueprint principles — we ran our first and only retreat in February 2014. Demand never materialized, and the failure pushed me into a serious marketing student role — which became ARTrepreneurs.",
@@ -368,9 +331,9 @@ export const WORKS: StatTableData = {
               "Coaching company",
               [
                 <em key="n">10X Fitness</em>,
-                " (w/ ",
+                " with ",
                 <WikiLink key="vishen" href="https://en.wikipedia.org/wiki/Vishen_Lakhiani">Vishen Lakhiani</WikiLink>,
-                "), international (mostly US), 5 years, 2020–2025 (age 32–37)",
+                ", international (mostly US), 5 years, 2020–2025 (age 32–37)",
               ],
               true,
               "Co-founded with Vishen Lakhiani (25% stake): he supplied the clients and platforms, I ran the show — experiments, workshops, courses, and coaching. Average annual revenue of $175k. I sold my stake in 2025 over diverging visions.",
@@ -388,12 +351,12 @@ export const WORKS: StatTableData = {
                 ", Pretoria, 2 years, 2015–2016 (age 27–28)",
               ],
               true,
-              "A digital agency with two contractors — funnels, SEO, sites, and video — carried by one anchor client. When demand plateaued I wound it down, flew to the US to test bigger markets, and took the Mindvalley job.",
+              "A digital agency with two contractors — profiles, sites, funnels, and video — carried by one anchor client. When demand plateaued I wound it down, flew to the US to test bigger markets, and took the Mindvalley job.",
             ],
             [
               "Design consulting",
               [
-                <em key="n"><WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Eudaemonia Inc</WikiLink></em>,
+                <em key="n"><WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Eudaemonia, Inc.</WikiLink></em>,
                 ", international (mostly US), since 2018 (age 30)",
               ],
               true,
@@ -402,7 +365,7 @@ export const WORKS: StatTableData = {
             [
               "Health interventions",
               [
-                <em key="n">Eudaemonia Inc</em>,
+                <em key="n">Eudaemonia, Inc.</em>,
                 ", international (mostly US), since 2019 (age 31)",
               ],
               true,
@@ -530,7 +493,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "client-report",
         cite: (
           <>
-            <strong>Remote coaching</strong>: <em><WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness Inc. (Delano, L.); skills of analysis and production • video (Loom)
+            <strong>Remote coaching</strong>: <em><WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness (Delano, L.); skills of analysis and production • video (Loom)
           </>
         ),
       },
@@ -554,7 +517,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "studio-apartment",
         cite: (
           <>
-            <strong>Home-gym design</strong>: <em><WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">Studio Apartment</WikiLink> (2025, Val de Vie)</em>; Delano, L.; skills of architecture and planning • video (YouTube)
+            <strong>Spatial design</strong>: <em><WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">Studio Apartment</WikiLink> (2025, Val de Vie)</em>; Delano, L.; skills of architecture and planning • video (YouTube)
           </>
         ),
       },
@@ -575,7 +538,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-quest",
         cite: (
           <>
-            <strong>Curriculum design</strong>: <em><WikiLink href="https://www.mindvalley.com/10x/quest">10X Quest</WikiLink> (2021, Pretoria)</em>; 10X Fitness Inc. (Delano, L.); skills of architecture and management • course (Mindvalley)
+            <strong>Curriculum design</strong>: <em><WikiLink href="https://www.mindvalley.com/10x/quest">10X Quest</WikiLink> (2021, Pretoria)</em>; 10X Fitness (Delano, L.); skills of architecture and management • course (Mindvalley)
           </>
         ),
       },
@@ -583,7 +546,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coach",
         cite: (
           <>
-            <strong>Coaching certification</strong>: <em><WikiLink href="https://www.mindvalley.com/certs/10x">10X Coach</WikiLink> (2022, Cape Town)</em>; 10X Fitness Inc. (Delano, L.); skills of architecture, production, and training • course (Mindvalley) • live training (Mindvalley)
+            <strong>Coaching certification</strong>: <em><WikiLink href="https://www.mindvalley.com/certs/10x">10X Coach</WikiLink> (2022, Cape Town)</em>; 10X Fitness (Delano, L.); skills of architecture, production, and training • course (Mindvalley) • live training (Mindvalley)
           </>
         ),
       },
