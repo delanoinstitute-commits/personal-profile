@@ -79,8 +79,8 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           metrics: [
             ["", "I run leaner than 19 in 20 men, with minimal visceral fat", false],
             ["Percent body fat", "7.9% (<5th percentile)", true, "The share of total weight that is fat; both too-high and too-low are adverse for health."],
-            ["Total weight", "72 kg", true, "Total body mass on the DEXA scan.", undefined, true],
-            ["Fat mass", "5.7 kg", true, "Total fat tissue — this over total weight gives the body-fat percentage.", undefined, true],
+            ["Total mass", "72 kg", true, undefined, undefined, true],
+            ["Fat mass", "5.7 kg", true, undefined, undefined, true],
             ["Visceral adipose tissue", "114 g", true, "Fat packed around the internal organs — the most metabolically harmful kind, with a strong gradient to cardiometabolic disease."],
           ],
         },
@@ -89,8 +89,8 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           metrics: [
             ["", "I carry more muscle than four in five men my age", false],
             ["ALMI", "9.4 kg/m² (>80th percentile)", true, "Appendicular lean mass index — arm and leg muscle relative to height. The strongest body-composition marker; low defines sarcopenia."],
-            ["Height²", "3.09 m²", true, "Height squared — the denominator that normalizes lean mass for body size.", undefined, true],
-            ["ALM", "29.1 kg", true, "Appendicular lean mass — total muscle in the arms and legs.", undefined, true],
+            ["Height²", "3.09 m²", true, undefined, undefined, true],
+            ["Appendicular lean mass", "29.1 kg", true, undefined, undefined, true],
           ],
         },
         {
@@ -112,8 +112,8 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
           metrics: [
             ["", "My waist is well under half my height — low central-fat risk", false],
             ["Waist-to-height ratio", "0.45", true, "Waist ÷ height — the best simple predictor of central-fat risk, beating BMI; under 0.5 is the target."],
-            ["Height", "176 cm", true, "Standing height.", undefined, true],
-            ["Waist", "80 cm", true, "Waist circumference.", undefined, true],
+            ["Height", "176 cm", true, undefined, undefined, true],
+            ["Waist", "80 cm", true, undefined, undefined, true],
           ],
         },
       ],
