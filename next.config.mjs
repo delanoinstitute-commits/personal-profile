@@ -6,9 +6,10 @@ const nextConfig = {
     return [
       { source: "/current-status", destination: "/identity", permanent: true },
       { source: "/constituents", destination: "/identity", permanent: true },
-      { source: "/lifestyle", destination: "/time", permanent: true },
+      { source: "/time", destination: "/lifestyle", permanent: true },
       { source: "/historical-context", destination: "/biography", permanent: true },
-      { source: "/future-trajectory", destination: "/purpose", permanent: true },
+      { source: "/future-trajectory", destination: "/", permanent: true },
+      { source: "/purpose", destination: "/", permanent: true },
       { source: "/assets", destination: "/wealth", permanent: true },
       // Education, skills, and works merged into the knowledge page (2026).
       { source: "/education", destination: "/knowledge#education", permanent: true },

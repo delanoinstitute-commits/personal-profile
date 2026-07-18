@@ -31,10 +31,10 @@ export type NavGroup = { title: string; pages: NavPage[] };
 
 export const NAV_GROUPS: NavGroup[] = [
   {
-    title: "Overview (home)",
+    title: "Overview",
     pages: [
       {
-        label: "Start here",
+        label: "About",
         href: "/",
         sections: [
           { label: "About", anchor: "about" },
@@ -44,20 +44,29 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    title: "Future (vision)",
+    title: "Self",
     pages: [
       {
-        label: "Purpose",
-        href: "/purpose",
+        label: "Identity",
+        href: "/identity",
         sections: [
-          { label: "Individual", anchor: "individual" },
-          { label: "Social", anchor: "social" },
+          { label: "Intellect", anchor: "intellect" },
+          { label: "Character", anchor: "character" },
+          { label: "Drive", anchor: "drive" },
+        ],
+      },
+      {
+        label: "Biography",
+        href: "/biography",
+        sections: [
+          { label: "Biography", anchor: "biography" },
+          { label: "Timeline", anchor: "timeline" },
         ],
       },
     ],
   },
   {
-    title: "Present (resources)",
+    title: "Resources",
     pages: [
       {
         label: "Knowledge",
@@ -69,14 +78,15 @@ export const NAV_GROUPS: NavGroup[] = [
         ],
       },
       {
-        label: "Identity",
-        href: "/identity",
-        sections: [
-          { label: "Intellect", anchor: "intellect" },
-          { label: "Character", anchor: "character" },
-          { label: "Drive", anchor: "drive" },
-        ],
+        label: "Wealth",
+        href: "/wealth",
+        sections: [{ label: "Socioeconomic", anchor: "socioeconomic" }],
       },
+    ],
+  },
+  {
+    title: "Status",
+    pages: [
       {
         label: "Health",
         href: "/health",
@@ -87,27 +97,9 @@ export const NAV_GROUPS: NavGroup[] = [
         ],
       },
       {
-        label: "Wealth",
-        href: "/wealth",
-        sections: [{ label: "Socioeconomic", anchor: "socioeconomic" }],
-      },
-      {
-        label: "Time",
-        href: "/time",
+        label: "Lifestyle",
+        href: "/lifestyle",
         sections: [{ label: "Behavioral", anchor: "behavioral" }],
-      },
-    ],
-  },
-  {
-    title: "Past (experience)",
-    pages: [
-      {
-        label: "Biography",
-        href: "/biography",
-        sections: [
-          { label: "Biography", anchor: "biography" },
-          { label: "Timeline", anchor: "timeline" },
-        ],
       },
     ],
   },

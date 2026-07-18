@@ -16,9 +16,11 @@ export default function LeftNav() {
     <nav className="text-sm" aria-label="Site navigation">
       {NAV_GROUPS.map((group) => (
         <div key={group.title} className="mb-4">
-          <div className="mb-1 border-b border-rule pb-1 text-xs font-semibold uppercase tracking-[0.04em] text-muted">
-            {group.title}
-          </div>
+          {group.title && (
+            <div className="mb-1 border-b border-rule pb-1 text-xs font-semibold uppercase tracking-[0.04em] text-muted">
+              {group.title}
+            </div>
+          )}
           <ul className="list-none">
             {group.pages.map((p) => {
               const active = p.href === pathname;

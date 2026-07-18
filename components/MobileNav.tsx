@@ -134,9 +134,11 @@ export default function MobileNav() {
         <nav aria-label="Pages" className="px-2 py-3">
           {NAV_GROUPS.map((group) => (
             <div key={group.title} className="mb-3">
-              <div className="px-2 pb-1 text-xs font-semibold uppercase tracking-[0.04em] text-muted">
-                {group.title}
-              </div>
+              {group.title && (
+                <div className="px-2 pb-1 text-xs font-semibold uppercase tracking-[0.04em] text-muted">
+                  {group.title}
+                </div>
+              )}
               <ul className="list-none">
                 {group.pages.map((p) => {
                   const active = p.href === pathname;

@@ -57,10 +57,9 @@ export default function StartHerePage() {
         It is too easy to lie or hide one&rsquo;s true ontology and epistemology behind
         impressive aesthetics and conditioned social proof. An accurate, contextual timeline
         shows true causality — how a person actually came to think and act. This site is a
-        living database of Delano, organized into four lenses: the{" "}
-        <WikiLink href="/purpose">future</WikiLink> (where he is going), the{" "}
+        living database of Delano, organized into two lenses: the{" "}
         <WikiLink href="/knowledge">present</WikiLink> (what he does, who he is, how he
-        functions, what he has, and how he lives), and the{" "}
+        functions, what he has, and how he lives) and the{" "}
         <WikiLink href="/biography">past</WikiLink> (his story,
         education, and experience). The profile box summarizes what he is.
       </p>
