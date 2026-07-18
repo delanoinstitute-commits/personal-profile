@@ -493,7 +493,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "client-report",
         cite: (
           <>
-            <strong>Remote coaching</strong>: <em><WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness (Delano, L.); skills of analysis and production • video (Loom)
+            <strong>Remote coaching</strong>: <em><WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness, Inc. (Delano, L.); skills of analysis and production • video (Loom)
           </>
         ),
       },
@@ -509,7 +509,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "transformative-design",
         cite: (
           <>
-            <strong>Public speaking</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Design</WikiLink> (2024, Estonia)</em>; Eudaemonia, Inc. (Delano, L.); skills of teaching and selling • video (YouTube)
+            <strong>Public speaking</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Design</WikiLink> (2024, Tallinn)</em>; Eudaemonia, Inc. (Delano, L.); skills of teaching and selling • video (YouTube)
           </>
         ),
       },
@@ -517,7 +517,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "studio-apartment",
         cite: (
           <>
-            <strong>Spatial design</strong>: <em><WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">Studio Apartment</WikiLink> (2025, Val de Vie)</em>; Delano, L.; skills of architecture and planning • video (YouTube)
+            <strong>Spatial design</strong>: <em><WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">Studio Apartment</WikiLink> (2025, Paarl)</em>; Delano, L.; skills of architecture and planning • video (YouTube)
           </>
         ),
       },
@@ -538,7 +538,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-quest",
         cite: (
           <>
-            <strong>Curriculum design</strong>: <em><WikiLink href="https://www.mindvalley.com/10x/quest">10X Quest</WikiLink> (2021, Pretoria)</em>; 10X Fitness (Delano, L.); skills of architecture and management • course (Mindvalley)
+            <strong>Curriculum design</strong>: <em><WikiLink href="https://www.mindvalley.com/10x/quest">10X Quest</WikiLink> (2021, Pretoria)</em>; 10X Fitness, Inc. (Delano, L.); skills of architecture and management • course (Mindvalley)
           </>
         ),
       },
@@ -546,7 +546,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coach",
         cite: (
           <>
-            <strong>Coaching certification</strong>: <em><WikiLink href="https://www.mindvalley.com/certs/10x">10X Coach</WikiLink> (2022, Cape Town)</em>; 10X Fitness (Delano, L.); skills of architecture, production, and training • course (Mindvalley) • live training (Mindvalley)
+            <strong>Coaching certification</strong>: <em><WikiLink href="https://www.mindvalley.com/certs/10x">10X Coach</WikiLink> (2022, Cape Town)</em>; 10X Fitness, Inc. (Delano, L.); skills of architecture, production, and training • course (Mindvalley) • live training (Mindvalley)
           </>
         ),
       },
@@ -554,7 +554,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "values-factor",
         cite: (
           <>
-            <strong>Author collaboration</strong>: <em><WikiLink href="https://www.mindvalley.com/values">Values Factor</WikiLink> (2024, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of negotiation, profiling, architecture, and management • course (Mindvalley)
+            <strong>Author collaboration</strong>: <em><WikiLink href="https://www.mindvalley.com/values">ValuesFactor Quest</WikiLink> (2024, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of negotiation, profiling, architecture, and management • course (Mindvalley)
           </>
         ),
       },
@@ -562,7 +562,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "bodyfirst",
         cite: (
           <>
-            <strong>Product design</strong>: <em><WikiLink href="https://www.mindvalley.com/body-first">BodyFirst</WikiLink> (2024, Malaysia)</em>; Eudaemonia, Inc. (Delano, L.); skills of negotiation, classification, architecture, and management • course (Mindvalley)
+            <strong>Product design</strong>: <em><WikiLink href="https://www.mindvalley.com/body-first">BodyFirst Quest</WikiLink> (2024, Kuala Lumpur)</em>; Eudaemonia, Inc. (Delano, L.); skills of negotiation, classification, architecture, and management • course (Mindvalley)
           </>
         ),
       },
@@ -570,7 +570,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "exercise-mastery",
         cite: (
           <>
-            <strong>Systems design</strong>: <em><WikiLink href="https://www.youtube.com/@LorenzoDelano">Exercise Mastery</WikiLink> (2025, Val de Vie)</em>; Delano, L.; skills of classification, architecture, and production • courses (YouTube)
+            <strong>Systems design</strong>: <em><WikiLink href="https://www.youtube.com/@LorenzoDelano">Exercise Mastery</WikiLink> (2025, Paarl)</em>; Delano, L.; skills of classification, architecture, and production • courses (YouTube)
           </>
         ),
       },
@@ -591,7 +591,15 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "ken-wilber-testimonial",
         cite: (
           <>
-            <strong>Author collaboration</strong>: <em><WikiLink href="https://youtu.be/M5w-97sML4s">Ken Wilber Testimonial</WikiLink> (2019)</em> • video (YouTube)
+            <strong>Author testimonial</strong>: <em><WikiLink href="https://youtu.be/M5w-97sML4s">Ken Wilber</WikiLink> (2019, Denver)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "mark-watts-testimonial",
+        cite: (
+          <>
+            <strong>Author testimonial</strong>: <em><WikiLink href="https://youtu.be/r4L78CYP99I">Mark Watts</WikiLink> (2019, Los Angeles)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
           </>
         ),
       },
@@ -599,7 +607,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-quest-stories",
         cite: (
           <>
-            <strong>Online students</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/10x-fitness">10X Quest Stories</WikiLink> (2021)</em> • website (Mindvalley)
+            <strong>Student stories</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/10x-fitness">10X Quest</WikiLink> (2021, worldwide)</em> • website (Mindvalley)
           </>
         ),
       },
@@ -607,7 +615,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coaching-testimonials",
         cite: (
           <>
-            <strong>In-person clients</strong>: <em><WikiLink href="https://youtu.be/WBfb7Trl3JY">10X Coaching Testimonials</WikiLink> (2021)</em> • video (YouTube)
+            <strong>Client stories</strong>: <em><WikiLink href="https://youtu.be/WBfb7Trl3JY">In-person Coaching</WikiLink> (2021, Kuala Lumpur / Pula)</em>; 10X Fitness, Inc. (Delano, L.); skills of teaching and analysis • video (YouTube)
           </>
         ),
       },
@@ -615,7 +623,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coaching-story",
         cite: (
           <>
-            <strong>Remote family</strong>: <em><WikiLink href="https://youtu.be/8p5pAPpmy1o">10X Coaching Story</WikiLink> (2022)</em> • video (YouTube)
+            <strong>Family case study</strong>: <em><WikiLink href="https://youtu.be/8p5pAPpmy1o">Remote Coaching</WikiLink> (2022, Utah)</em>; 10X Fitness, Inc. (Delano, L.); skills of selling, training, analysis, and production • video (YouTube)
           </>
         ),
       },
@@ -623,7 +631,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coach-stories",
         cite: (
           <>
-            <strong>Online coaches</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/mindvalley-certified-10x-coach">10X Coach Stories</WikiLink> (2022)</em> • website (Mindvalley)
+            <strong>Coach stories</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/mindvalley-certified-10x-coach">10X Coach</WikiLink> (2022, worldwide)</em> • website (Mindvalley)
           </>
         ),
       },
@@ -631,7 +639,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "ben-greenfield-testimonial",
         cite: (
           <>
-            <strong>Author collaboration</strong>: <em><WikiLink href="https://youtu.be/zQ9A5bylhoc">Ben Greenfield Testimonial</WikiLink> (2023)</em> • video (YouTube)
+            <strong>Author testimonial</strong>: <em><WikiLink href="https://youtu.be/zQ9A5bylhoc">Ben Greenfield</WikiLink> (2023, Spokane)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
           </>
         ),
       },
@@ -639,7 +647,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "john-demartini-testimonial",
         cite: (
           <>
-            <strong>Author collaboration</strong>: <em><WikiLink href="https://youtu.be/li3cYZKc9zw">John Demartini Testimonial</WikiLink> (2024)</em> • video (YouTube)
+            <strong>Author testimonial</strong>: <em><WikiLink href="https://youtu.be/li3cYZKc9zw">John Demartini</WikiLink> (2024, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of profiling, architecture, and management • video (YouTube)
           </>
         ),
       },
@@ -647,7 +655,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "bodyfirst-stories",
         cite: (
           <>
-            <strong>Online students</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/body-first">BodyFirst Stories</WikiLink> (2024)</em> • website (Mindvalley)
+            <strong>Student stories</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/body-first">BodyFirst Quest</WikiLink> (2024, worldwide)</em> • website (Mindvalley)
           </>
         ),
       },
@@ -655,7 +663,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "values-factor-stories",
         cite: (
           <>
-            <strong>Online students</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/the-values-factor">Values Factor Stories</WikiLink> (2024)</em> • website (Mindvalley)
+            <strong>Student stories</strong>: <em><WikiLink href="https://stories.mindvalley.com/product/the-values-factor">ValuesFactor Quest</WikiLink> (2024, worldwide)</em> • website (Mindvalley)
           </>
         ),
       },
