@@ -615,7 +615,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coaching-testimonials",
         cite: (
           <>
-            <strong>Client case studies</strong>: <em><WikiLink href="https://youtu.be/WBfb7Trl3JY">In-person Coaching</WikiLink> (2021, Kuala Lumpur / Pula)</em>; 10X Fitness, Inc. (Delano, L.); skills of teaching and analysis • video (YouTube)
+            <strong>Client stories</strong>: <em><WikiLink href="https://youtu.be/WBfb7Trl3JY">In-person Coaching</WikiLink> (2021, Kuala Lumpur / Pula)</em>; 10X Fitness, Inc. (Delano, L.); skills of teaching and analysis • video (YouTube)
           </>
         ),
       },
@@ -623,7 +623,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "10x-coaching-story",
         cite: (
           <>
-            <strong>Family case study</strong>: <em><WikiLink href="https://youtu.be/8p5pAPpmy1o">Remote Coaching</WikiLink> (2022, Utah)</em>; 10X Fitness, Inc. (Delano, L.); skills of selling, training, analysis, and production • video (YouTube)
+            <strong>Case study</strong>: <em><WikiLink href="https://youtu.be/8p5pAPpmy1o">Family Intervention</WikiLink> (2022, Utah)</em>; 10X Fitness, Inc. (Delano, L.); skills of selling, training, analysis, and production • video (YouTube)
           </>
         ),
       },
