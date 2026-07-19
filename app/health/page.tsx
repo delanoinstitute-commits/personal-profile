@@ -3,6 +3,7 @@ import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import { References, type Reference, type ReferenceSection } from "@/components/References";
+import MovementLevels from "@/components/MovementLevels";
 
 export const metadata: Metadata = { title: "Health" };
 
@@ -132,36 +133,103 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           category: "Hip (lower-body strength)",
           metrics: [
             ["", "I squat on one leg, pull double bodyweight, and curl my own hamstrings", false],
-            ["Squat control", "6 pistol squats per leg", true, "Single-leg squatting strength — knee extension under balance."],
-            ["Hinge strength", "Deadlift 2× BW", true, "Hip-hinge pulling strength (the deadlift)."],
-            ["Curl strength", "1 nordic curl", true, "Hamstring and knee-flexion strength (the nordic curl)."],
+            ["Balancing strength", "6 pistol squats per leg (L5)", true, { text: (
+              <MovementLevels
+                summary="Unilateral strength, balance, and range: the pistol squat."
+                male={["1 bilateral air-squat (deep)", "1 twisting-squat/side (sit-rise)", "1 side-squat/side (low)", "1 split-squat/side (KOT)", "1 pistol-squat/side (deep)"]}
+              />
+            ) }],
+            ["Hinge strength", "150 kg deadlift (L4)", true, { text: (
+              <MovementLevels
+                summary="Posterior-chain hip-extension pulling strength: the deadlift."
+                male={["60 kg (~0.8× BW)", "90 kg (~1.2× BW)", "120 kg (~1.6× BW)", "150 kg (~2.0× BW)", "180 kg (~2.4× BW)"]}
+                female={["40 kg (~0.65× BW)", "60 kg (~1.0× BW)", "80 kg (~1.35× BW)", "100 kg (~1.65× BW)", "120 kg (~2.0× BW)"]}
+              />
+            ) }],
+            ["Curl strength", "1 hinge nordic-curl (L3)", true, { text: (
+              <MovementLevels
+                summary="Hamstring knee-flexion strength: the Nordic curl."
+                male={["1 unilateral leg-curl/side (supine)", "1 eccentric-hinge nordic curl", "1 hinge nordic-curl", "1 eccentric nordic-curl", "1 nordic-curl"]}
+              />
+            ) }],
           ],
         },
         {
           category: "Core (midline stability)",
           metrics: [
             ["", "I hold my trunk rigid through levers, front and back", false],
-            ["Compression strength", "15-sec V-sit", true, "Trunk-flexion / anterior-chain compression hold (the V-sit)."],
-            ["Press tensegrity", "15-sec back lever", true, "Straight-arm pressing tension through the trunk (the back lever)."],
-            ["Pull tensegrity", "5-sec front lever", true, "Straight-arm pulling tension through the trunk (the front lever)."],
+            ["Compression strength", "0:15 sec V-sit (L5)", true, { text: (
+              <MovementLevels
+                summary="Anterior-chain trunk compression under active hip flexion: the V-sit."
+                male={["1:00 L-tuck", "0:40 low-L or high-tuck", "0:30 L-sit", "0:15 straddle-L", "0:05 V-sit (90°)"]}
+              />
+            ) }],
+            ["Press tensegrity", "0:15 sec back lever (L5)", true, { text: (
+              <MovementLevels
+                summary="Straight-arm pressing tension through the trunk: the back lever."
+                male={["1:00 German hang", "0:40 back-lever tuck", "0:30 flat-tuck or half-straddle", "0:20 half-lay or straddle", "0:10 back lever"]}
+              />
+            ) }],
+            ["Pull tensegrity", "0:05 sec front lever (L5)", true, { text: (
+              <MovementLevels
+                summary="Straight-arm pulling tension through the trunk: the front lever."
+                male={["1:00 hollow-body hang", "0:40 front-lever tuck", "0:30 flat-tuck or half-straddle", "0:15 half-lay or straddle", "0:05 front lever"]}
+              />
+            ) }],
           ],
         },
         {
           category: "Shoulder (upper-body strength)",
           metrics: [
-            ["", "I pull 20 reps, dip 25, and press 0.9× bodyweight overhead", false],
-            ["Climbing strength", "20 pull-ups", true, "Vertical pulling strength (pull-ups)."],
-            ["Pushing strength", "25 chest dips", true, "Pressing strength at the shoulder and chest (dips)."],
-            ["Overhead strength", "OH press 0.9× BW", true, "Overhead pressing strength."],
+            ["", "I pull 20 reps, dip 25, and press 60 kg overhead", false],
+            ["Climbing strength", "20 pull-ups (L4)", true, { text: (
+              <MovementLevels
+                summary="Bent-arm (shoulder-extension) pulling strength: the pull-up."
+                male={["1 parallel row (0.65× BW)", "1 pull-up (1.0× BW)", "10 pull-ups or +20 kg (~1.3× BW)", "18 pull-ups or +40 kg (~1.5× BW)", "24 pull-ups or +55 kg (~1.7× BW)"]}
+                female={["1 incline row", "1 parallel row (0.65× BW)", "1 pull-up (1.0× BW)", "5 pull-ups or +10 kg (~1.15× BW)", "10 pull-ups or +20 kg (~1.35× BW)"]}
+              />
+            ) }],
+            ["Pushing strength", "25 chest dips (L4)", true, { text: (
+              <MovementLevels
+                summary="Bent-arm (shoulder-flexion) pressing strength: the chest dip."
+                male={["1 push-up (0.65× BW)", "1 dip (1.0× BW)", "15 dips or +30 kg (~1.4× BW)", "25 dips or +55 kg (~1.7× BW)", "35 dips or +80 kg (~1.9× BW)"]}
+                female={["1 incline push-up", "1 push-up (0.65× BW)", "1 dip (1.0× BW)", "10 dips or +20 kg (~1.35× BW)", "20 dips or +40 kg (~1.65× BW)"]}
+              />
+            ) }],
+            ["Overhead strength", "60 kg (L3)", true, { text: (
+              <MovementLevels
+                summary="Vertical overhead pressing strength: the barbell shoulder press."
+                male={["bar (20 kg)", "35 kg (~0.4× BW)", "50 kg (~0.6× BW)", "65 kg (~0.8× BW)", "80 kg (~1.0× BW)"]}
+                female={["bar (15 kg)", "20 kg (~0.35× BW)", "30 kg (~0.5× BW)", "40 kg (~0.65× BW)", "45 kg (~0.75× BW)"]}
+              />
+            ) }],
           ],
         },
         {
           category: "Global (work capacity)",
           metrics: [
             ["", "I move my whole body fast, far, and under load", false],
-            ["Global stability", "Overhead squat 1× BW", true, "Full-depth overhead squat — whole-body mobility and strength."],
-            ["Jumping power", "2.4 m broad jump", true, "Explosive lower-body power (the broad jump)."],
-            ["Locomotive power", "30-sec 200 m sprint; 3 W/kg FTP (20 min)", true, "Locomotive power output — sprinting and sustained cycling."],
+            ["Global stability", "Overhead squat 1× BW (L4)", true, { text: (
+              <MovementLevels
+                summary="Whole-body mobility and stability under overhead load: the overhead squat."
+                male={["bar (20 kg)", "40 kg (~0.4× BW)", "60 kg (~0.8× BW)", "80 kg (~1.0× BW)", "100 kg (~1.2× BW)"]}
+                female={["bar (15 kg)", "30 kg (~0.5× BW)", "40 kg (~0.65× BW)", "50 kg (~0.85× BW)", "60 kg (~1.0× BW)"]}
+              />
+            ) }],
+            ["Jumping power", "2.4 m broad jump (L4)", true, { text: (
+              <MovementLevels
+                summary="Explosive lower-body power: the standing broad jump."
+                male={["1.8 m (~1.0× height)", "2.0 m (~1.15× height)", "2.2 m (~1.25× height)", "2.4 m (~1.35× height)", "2.6 m (~1.45× height)"]}
+                female={["1.45 m (~0.9× height)", "1.6 m (~0.95× height)", "1.75 m (~1.05× height)", "1.9 m (~1.15× height)", "2.1 m (~1.25× height)"]}
+              />
+            ) }],
+            ["Locomotive power", "200 m sprint in 30 s (L5)", true, { text: (
+              <MovementLevels
+                summary="Locomotive speed across the speed–duration spectrum: walking to sprinting."
+                male={["5 km walk <55:00", "3 km run <16:30", "1 mile run <6:30", "800 m sprint <2:40", "200 m sprint <0:33"]}
+                female={["5 km walk <55:00", "3 km run <19:30", "1 mile run <7:30", "800 m sprint <3:00", "200 m sprint <0:40"]}
+              />
+            ) }],
           ],
         },
       ],
