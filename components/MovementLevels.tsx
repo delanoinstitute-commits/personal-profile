@@ -24,28 +24,33 @@ function Rungs({ rows }: { rows: Ladder }) {
 export default function MovementLevels({
   summary,
   measure,
+  ageBand,
   male,
   female,
 }: {
   summary: string;
   /** Measure type shown after the sex label, e.g. "1 Rep Max", "Max Skill Hold". */
   measure: string;
+  /** Optional age band inserted before the measure, e.g. "Age 35-39" (for age-relative markers). */
+  ageBand?: string;
   male: Ladder;
   female?: Ladder;
 }) {
+  const label = (sex: string) =>
+    `${ageBand ? `${sex} / ${ageBand}` : sex} (${measure})`;
   return (
     <span className="block leading-snug">
       <span className="block">{summary}</span>
       {female ? (
         <>
-          <span className="mt-1.5 block font-semibold text-text">Male ({measure})</span>
+          <span className="mt-1.5 block font-semibold text-text">{label("Male")}</span>
           <Rungs rows={male} />
-          <span className="mt-1.5 block font-semibold text-text">Female ({measure})</span>
+          <span className="mt-1.5 block font-semibold text-text">{label("Female")}</span>
           <Rungs rows={female} />
         </>
       ) : (
         <>
-          <span className="mt-1.5 block font-semibold text-text">Male / Female ({measure})</span>
+          <span className="mt-1.5 block font-semibold text-text">{label("Male / Female")}</span>
           <Rungs rows={male} />
         </>
       )}

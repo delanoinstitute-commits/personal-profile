@@ -142,7 +142,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
             ) }],
             ["Hinge strength", "150 kg barbell deadlift (L4)", true, { text: (
               <MovementLevels
-                summary="Posterior-chain hip-extension pulling strength: the deadlift ladder."
+                summary="Posterior-chain hip-extension pulling strength: the barbell deadlift ladder."
                 measure="1 Rep Max"
                 male={["60 kg (~0.8× BW)", "90 kg (~1.2× BW)", "120 kg (~1.6× BW)", "150 kg (~2.0× BW)", "180 kg (~2.4× BW)"]}
                 female={["40 kg (~0.65× BW)", "60 kg (~1.0× BW)", "80 kg (~1.35× BW)", "100 kg (~1.65× BW)", "120 kg (~2.0× BW)"]}
@@ -218,9 +218,9 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           category: "Global (work capacity)",
           metrics: [
             ["", "I move my whole body fast, far, and under load", false],
-            ["Global stability", "Overhead squat 1× BW (L4)", true, { text: (
+            ["Global stability", "60 kg barbell overhead squat (L3)", true, { text: (
               <MovementLevels
-                summary="Squat strength with overhead midline stability: the overhead squat ladder."
+                summary="Squat and overhead midline stability: the barbell overhead squat ladder."
                 measure="1 Rep Max"
                 male={["barbell (20 kg)", "40 kg (~0.4× BW)", "60 kg (~0.8× BW)", "80 kg (~1.0× BW)", "100 kg (~1.2× BW)"]}
                 female={["barbell (15 kg)", "30 kg (~0.5× BW)", "40 kg (~0.65× BW)", "50 kg (~0.85× BW)", "60 kg (~1.0× BW)"]}
@@ -234,7 +234,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
                 female={["1.45 m (~0.9× height)", "1.6 m (~0.95× height)", "1.75 m (~1.05× height)", "1.9 m (~1.15× height)", "2.1 m (~1.25× height)"]}
               />
             ) }],
-            ["Locomotive power", "200 m sprint in 30 s (L5)", true, { text: (
+            ["Locomotive power", "200 m sprint in 32 sec (L5)", true, { text: (
               <MovementLevels
                 summary="Locomotive speed across the speed–duration spectrum: the sprinting ladder."
                 measure="Best Time"
@@ -254,8 +254,22 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           category: "Global (energy efficiency)",
           metrics: [
             ["", "I take up oxygen in the top decile for my age, burning fat deep into effort", false],
-            ["Oxygen consumption", "53 ml/kg/min", true, "Maximum rate of oxygen use during exercise — the headline aerobic-fitness metric; low fitness rivals smoking for mortality risk. ≥90th percentile for age is elite."],
-            ["Fat oxidation", "0.45 g/min @ 60% VO₂max", true, "Maximal fat oxidation — the peak rate of burning fat for fuel; a marker of metabolic flexibility. ≥0.75 g/min is elite for men."],
+            ["Maximum VO₂", "53 ml/kg/min (L5)", true, { text: (
+              <MovementLevels
+                summary="Peak rate of oxygen use during exercise: the VO₂max ladder."
+                measure="Peak Rate"
+                ageBand="Age 35-39"
+                male={["30 ml/kg/min (low)", "38 ml/kg/min (fair)", "44 ml/kg/min (average)", "49 ml/kg/min (good)", "53 ml/kg/min (elite)"]}
+                female={["25 ml/kg/min (low)", "32 ml/kg/min (fair)", "38 ml/kg/min (average)", "43 ml/kg/min (good)", "47 ml/kg/min (elite)"]}
+              />
+            ) }],
+            ["FatMax intensity", "60% VO₂max (L4)", true, { text: (
+              <MovementLevels
+                summary="Exercise intensity where fat-burning peaks: the FatMax ladder."
+                measure="Peak Intensity"
+                male={["35% VO₂max (low)", "43% VO₂max (fair)", "50% VO₂max (average)", "58% VO₂max (good)", "65% VO₂max (elite)"]}
+              />
+            ) }],
           ],
         },
       ],
