@@ -51,16 +51,21 @@ export function References({
   items,
   intro,
   sections,
+  title = "References",
+  id = "references",
 }: {
   items?: Reference[];
   intro?: ReactNode;
   /** Sectioned mode: italic label + description over each group; numbering runs continuously. */
   sections?: ReferenceSection[];
+  /** Heading text and anchor id — override to render a second, distinct block (e.g. Evidence). */
+  title?: string;
+  id?: string;
 }) {
   let counter = 1;
   return (
     <>
-      <h2 id="references">References</h2>
+      <h2 id={id}>{title}</h2>
       {intro ? <p>{intro}</p> : null}
       {sections
         ? sections.map((s) => {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
-import { References, type ReferenceSection } from "@/components/References";
+import { References, type Reference, type ReferenceSection } from "@/components/References";
 
 export const metadata: Metadata = { title: "Health" };
 
@@ -129,39 +129,39 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Hip (locomotive power)",
+          category: "Hip (lower-body strength)",
           metrics: [
             ["", "I squat on one leg, pull double bodyweight, and curl my own hamstrings", false],
-            ["Extension (balance)", "6 pistol squats per leg", true, "Single-leg squatting strength — knee extension under balance."],
-            ["Extension (hinge)", "Deadlift 2× BW", true, "Hip-hinge pulling strength (the deadlift)."],
-            ["Flexion (curl)", "1 nordic curl", true, "Hamstring and knee-flexion strength (the nordic curl)."],
+            ["Squat control", "6 pistol squats per leg", true, "Single-leg squatting strength — knee extension under balance."],
+            ["Hinge strength", "Deadlift 2× BW", true, "Hip-hinge pulling strength (the deadlift)."],
+            ["Curl strength", "1 nordic curl", true, "Hamstring and knee-flexion strength (the nordic curl)."],
           ],
         },
         {
           category: "Core (midline stability)",
           metrics: [
             ["", "I hold my trunk rigid through levers, front and back", false],
-            ["Compression (raise)", "15-sec V-sit", true, "Trunk-flexion / anterior-chain compression hold (the V-sit)."],
-            ["Tensegrity (press)", "15-sec back lever", true, "Straight-arm pressing tension through the trunk (the back lever)."],
-            ["Tensegrity (pull)", "5-sec front lever", true, "Straight-arm pulling tension through the trunk (the front lever)."],
+            ["Compression strength", "15-sec V-sit", true, "Trunk-flexion / anterior-chain compression hold (the V-sit)."],
+            ["Press tensegrity", "15-sec back lever", true, "Straight-arm pressing tension through the trunk (the back lever)."],
+            ["Pull tensegrity", "5-sec front lever", true, "Straight-arm pulling tension through the trunk (the front lever)."],
           ],
         },
         {
           category: "Shoulder (upper-body strength)",
           metrics: [
             ["", "I pull 20 reps, dip 25, and press 0.9× bodyweight overhead", false],
-            ["Extension (pull)", "20 pull-ups", true, "Vertical pulling strength (pull-ups)."],
-            ["Flexion (dip)", "25 chest dips", true, "Pressing strength at the shoulder and chest (dips)."],
-            ["Flexion (press)", "OH press 0.9× BW", true, "Overhead pressing strength."],
+            ["Climbing strength", "20 pull-ups", true, "Vertical pulling strength (pull-ups)."],
+            ["Pushing strength", "25 chest dips", true, "Pressing strength at the shoulder and chest (dips)."],
+            ["Overhead strength", "OH press 0.9× BW", true, "Overhead pressing strength."],
           ],
         },
         {
           category: "Global (work capacity)",
           metrics: [
             ["", "I move my whole body fast, far, and under load", false],
-            ["Flexion (squat)", "Overhead squat 1× BW", true, "Full-depth overhead squat — whole-body mobility and strength."],
-            ["Extension (gait)", "30-sec 200 m sprint; 3 W/kg FTP (20 min)", true, "Locomotive power output — sprinting and sustained cycling."],
-            ["Extension (jump)", "2.4 m broad jump", true, "Explosive lower-body power (the broad jump)."],
+            ["Global stability", "Overhead squat 1× BW", true, "Full-depth overhead squat — whole-body mobility and strength."],
+            ["Jumping power", "2.4 m broad jump", true, "Explosive lower-body power (the broad jump)."],
+            ["Locomotive power", "30-sec 200 m sprint; 3 W/kg FTP (20 min)", true, "Locomotive power output — sprinting and sustained cycling."],
           ],
         },
       ],
@@ -174,8 +174,8 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           category: "Global (energy efficiency)",
           metrics: [
             ["", "I take up oxygen in the top decile for my age, burning fat deep into effort", false],
-            ["VO₂max (uptake)", "53 ml/kg/min", true, "Maximum rate of oxygen use during exercise — the headline aerobic-fitness metric; low fitness rivals smoking for mortality risk. ≥90th percentile for age is elite."],
-            ["MFO (rate)", "0.45 g/min @ 60% VO₂max", true, "Maximal fat oxidation — the peak rate of burning fat for fuel; a marker of metabolic flexibility. ≥0.75 g/min is elite for men."],
+            ["Oxygen consumption", "53 ml/kg/min", true, "Maximum rate of oxygen use during exercise — the headline aerobic-fitness metric; low fitness rivals smoking for mortality risk. ≥90th percentile for age is elite."],
+            ["Fat oxidation", "0.45 g/min @ 60% VO₂max", true, "Maximal fat oxidation — the peak rate of burning fat for fuel; a marker of metabolic flexibility. ≥0.75 g/min is elite for men."],
           ],
         },
       ],
@@ -242,6 +242,122 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
   },
 ];
 
+// The evidence and guidelines the reference ranges draw on — guidelines set
+// the cutpoints, landmark cohorts establish the significance. Archived copy in
+// docs/health-methodology-references.md.
+const HEALTH_EVIDENCE: Reference[] = [
+  {
+    id: "apob",
+    cite: (
+      <>
+        Sniderman, A. D., et al. (2019). Apolipoprotein B particles and cardiovascular disease: a narrative review. <em>JAMA Cardiology</em>, 4(12).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/31642874/",
+    urlLabel: "PubMed",
+    tag: "ApoB",
+  },
+  {
+    id: "hba1c",
+    cite: (
+      <>
+        Khaw, K. T., et al. (2001). Glycated haemoglobin, diabetes, and mortality (EPIC-Norfolk). <em>BMJ</em>, 322(7277).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/11141143/",
+    urlLabel: "PubMed",
+    tag: "HbA1c",
+  },
+  {
+    id: "cystatinc",
+    cite: (
+      <>
+        Shlipak, M. G., et al. (2013). Cystatin C versus creatinine in determining risk based on kidney function. <em>New England Journal of Medicine</em>, 369(10).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/24004120/",
+    urlLabel: "PubMed",
+    tag: "eGFR",
+  },
+  {
+    id: "bloodpressure",
+    cite: (
+      <>
+        Lewington, S., et al. (2002). Age-specific relevance of usual blood pressure to vascular mortality. <em>Lancet</em>, 360(9349).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/12493255/",
+    urlLabel: "PubMed",
+    tag: "Blood pressure",
+  },
+  {
+    id: "hrreserve",
+    cite: (
+      <>
+        Lauer, M. S., et al. (1999). Impaired chronotropic response to exercise stress testing as a predictor of mortality. <em>JAMA</em>, 281(6).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/10022108/",
+    urlLabel: "PubMed",
+    tag: "Heart rate reserve",
+  },
+  {
+    id: "hrrecovery",
+    cite: (
+      <>
+        Cole, C. R., et al. (1999). Heart-rate recovery immediately after exercise as a predictor of mortality. <em>New England Journal of Medicine</em>, 341(18).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/10536127/",
+    urlLabel: "PubMed",
+    tag: "Heart rate recovery",
+  },
+  {
+    id: "sarcopenia",
+    cite: (
+      <>
+        Cruz-Jentoft, A. J., et al. (2019). Sarcopenia: revised European consensus on definition and diagnosis (EWGSOP2). <em>Age and Ageing</em>, 48(1).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/30312372/",
+    urlLabel: "PubMed",
+    tag: "ALMI",
+  },
+  {
+    id: "bmd",
+    cite: (
+      <>
+        Marshall, D., Johnell, O., and Wedel, H. (1996). Meta-analysis of how well measures of bone mineral density predict occurrence of osteoporotic fractures. <em>BMJ</em>, 312(7041).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/8634613/",
+    urlLabel: "PubMed",
+    tag: "Bone density",
+  },
+  {
+    id: "whtr",
+    cite: (
+      <>
+        Ashwell, M., Gunn, P., and Gibson, S. (2012). Waist-to-height ratio is a better screening tool than waist circumference and BMI. <em>Obesity Reviews</em>, 13(3).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/22106927/",
+    urlLabel: "PubMed",
+    tag: "Waist-to-height ratio",
+  },
+  {
+    id: "vo2max",
+    cite: (
+      <>
+        Kaminsky, L. A., et al. (2022). Updated reference standards for cardiorespiratory fitness (the FRIEND Registry). <em>Mayo Clinic Proceedings</em>, 97(2).
+      </>
+    ),
+    url: "https://pubmed.ncbi.nlm.nih.gov/34809986/",
+    urlLabel: "PubMed",
+    tag: "VO₂max",
+  },
+];
+
 export default function HealthPage() {
   return (
     <>
@@ -287,6 +403,13 @@ export default function HealthPage() {
       <References
         sections={HEALTH_REFERENCE_SECTIONS}
         intro="Every reading above comes from one of four instruments — you can verify each against the source report."
+      />
+
+      <References
+        id="evidence"
+        title="Evidence"
+        items={HEALTH_EVIDENCE}
+        intro="Where the optimal ranges come from — the guidelines that set the cutpoints and the cohorts that establish why each marker matters."
       />
     </>
   );
