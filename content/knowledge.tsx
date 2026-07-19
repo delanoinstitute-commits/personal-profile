@@ -202,7 +202,7 @@ export const SKILLS: StatTableData = {
           metrics: [
             ["", "I organize, design, and strategize transformative outcomes", false],
             ["Classification", "Knowledge domain mapping, distillation, and standardization", true, "My IID methodology in practice: Mindvalley’s content classification system, my exercise and planning taxonomies, and the Autoprofiler. Everything I design starts here."],
-            ["Architecture", "Product, protocol, content, systems, and software design", true, "My IID and educational design principles applied: the 10X protocol, BodyFirst, the Mastery micro-degree framework, courses for best-selling authors — and this website."],
+            ["Architecture", "Product, protocol, content, assessment, and software design", true, "My IID and educational design principles applied: the 10X protocol, BodyFirst, the Mastery micro-degree framework, courses for best-selling authors — and this website."],
             ["Analysis", "Performance tracking, benchmarking, planning, programming, and reporting", true, "One quarter of the complete educator — presenter, analyst, strategist, instructor. Proven in three 10X research experiments and client reporting — see the Client Report below."],
           ],
         },
