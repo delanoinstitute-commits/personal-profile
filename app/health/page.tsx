@@ -279,56 +279,82 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
 
 const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
   {
-    label: "Biochemistry",
-    description: "blood panels — venous draw, wet chemistry",
+    label: "My data based on tests performed under resting, fasted conditions",
     items: [
       {
-        id: "blood-2026",
+        id: "phlebotomy",
         cite: (
           <>
-            <strong>Blood panel</strong>: <em>Biochemistry &amp; hematology (May 2026, fasted)</em>; Pathcare; ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, eGFR, ALT, uric acid • <a className="wikilink external" href="/reports/blood-2026-05.pdf" target="_blank" rel="noopener noreferrer">report<span className="sr-only"> (opens in a new tab)</span></a>
+            <strong>Phlebotomy</strong>: <em><a className="wikilink external" href="/reports/blood-2026-05.pdf" target="_blank" rel="noopener noreferrer">Blood Test<span className="sr-only"> (opens in a new tab)</span></a></em> (Jan 2026); tests for ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, eGFR, ALT, and uric acid (biochemistry &amp; hematology) • report (Pathcare)
+          </>
+        ),
+      },
+      {
+        id: "densitometry",
+        cite: (
+          <>
+            <strong>Densitometry</strong>: <em><a className="wikilink external" href="/reports/dexa-2026-05.pdf" target="_blank" rel="noopener noreferrer">DEXA Scan<span className="sr-only"> (opens in a new tab)</span></a></em> (May 2026); tests for height, total mass, ALMI, percent body fat, VAT, and bone density (Lunar iDXA) • report (Cape Radiology)
+          </>
+        ),
+      },
+      {
+        id: "anthropometry",
+        cite: (
+          <>
+            <strong>Anthropometry</strong>: <em>Girth Measurements</em> (Jan 2026); tests for waist circumference (Iliac Crest &lsquo;NHANES&rsquo; method) • reading (tape)
+          </>
+        ),
+      },
+      {
+        id: "sphygmomanometry",
+        cite: (
+          <>
+            <strong>Sphygmomanometry</strong>: <em>7-Day Average</em> (Jan 2026); tests for blood pressure and resting heart rate (OMRON) • reading (monitor)
+          </>
+        ),
+      },
+      {
+        id: "photoplethysmography",
+        cite: (
+          <>
+            <strong>Photoplethysmography</strong>: <em>30-Day Average</em> (Jan 2026); tests for resting heart rate (OURA continuous monitoring) • reading (app)
           </>
         ),
       },
     ],
   },
   {
-    label: "Densitometry",
-    description: "DEXA — dual-energy X-ray absorptiometry",
+    label: "My data based on tests performed under load",
     items: [
       {
-        id: "dexa-2026",
+        id: "indirect-calorimetry",
         cite: (
           <>
-            <strong>DEXA scan</strong>: <em>Whole-body composition (May 2026, rested)</em>; SSR; ALMI, percent body fat, visceral fat, bone density • <a className="wikilink external" href="/reports/dexa-2026-05.pdf" target="_blank" rel="noopener noreferrer">report<span className="sr-only"> (opens in a new tab)</span></a>
+            <strong>Indirect calorimetry</strong>: <em><a className="wikilink external" href="/reports/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">CPET<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for VO&#8322;max, peak power output, and maximum heart rate (Cosmed Quark metabolic) • report (Science2Sport)
           </>
         ),
       },
-    ],
-  },
-  {
-    label: "Indirect calorimetry",
-    description: "CPET — graded cycling test with a metabolic cart",
-    items: [
       {
-        id: "cpet-2024",
+        id: "capillary-prick",
         cite: (
           <>
-            <strong>CPET</strong>: <em>Cycling VO&#8322;max test (September 2024, maximal effort)</em>; S2S; VO&#8322;max, lactate threshold, maximal fat oxidation, max HR, HR recovery • <a className="wikilink external" href="/reports/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">report<span className="sr-only"> (opens in a new tab)</span></a>
+            <strong>Capillary prick</strong>: <em><a className="wikilink external" href="/reports/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">Lactate Accumulation<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for blood lactate (Nova biomedical lactate plus) • reading (device)
           </>
         ),
       },
-    ],
-  },
-  {
-    label: "Dynamometry",
-    description: "performance demonstrations — filmed, strict-form reps",
-    items: [
       {
-        id: "movement-demos",
+        id: "electrocardiography",
         cite: (
           <>
-            <strong>Movement battery</strong>: <em>Strength &amp; power demonstrations</em>; self-filmed; hip, core, shoulder, and global tests {/* TODO: link per-movement demonstration videos */}
+            <strong>Electrocardiography</strong>: <em>Norwegian 4x4</em> (Jan 2026); tests for maximum heart rate (Polar H10) • reading (app)
+          </>
+        ),
+      },
+      {
+        id: "fitness-battery",
+        cite: (
+          <>
+            <strong>Fitness battery</strong>: <em>Big-12 Status</em> (Jan 2026); tests for local hip, core, shoulder and global functional capacity (muscular biomechanics) • report (video){/* TODO: link Big-12 Status to the single combined test video once filmed */}
           </>
         ),
       },
@@ -494,10 +520,7 @@ export default function HealthPage() {
       </p>
       <NestedTable {...FUNCTIONAL_CAPACITY} />
 
-      <References
-        sections={HEALTH_REFERENCE_SECTIONS}
-        intro="Every reading above comes from one of four instruments — you can verify each against the source report."
-      />
+      <References sections={HEALTH_REFERENCE_SECTIONS} />
 
       <References
         id="evidence"
