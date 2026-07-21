@@ -8,9 +8,11 @@ import { References, type Reference } from "@/components/References";
 export const metadata: Metadata = { title: "Identity" };
 
 // The mind in the trilogy: Intellect (cognition), Character (affect), Drive
-// (conation). Six sub-branches, one gold-standard instrument each; every leaf
-// is a composite (roman) over its components (italic). The 4th element on a
-// metric is a hover definition. "pending" / "—" = not yet taken.
+// (conation). Six sub-branches; Temperament, Sentiment, and Motivation carry
+// two instruments each. Only irreducible dimensions and composite scores are
+// counted — a component is flagged sub (index 5) and hangs indented and
+// uncounted under the composite it feeds. The 4th element on a metric is a
+// hover definition. "pending" / "—" = not yet taken.
 
 const INTELLECT: StatTableData = {
   title: "Intellect",
@@ -23,12 +25,13 @@ const INTELLECT: StatTableData = {
           category: "Intelligence (processing power)",
           metrics: [
             ["", "I measure my general ability with the full RIOT battery — results pending", false],
-            ["Working memory", "—", true, "Holding and manipulating information in mind."],
-            ["Processing speed", "—", true, "How quickly you take in and respond to information."],
-            ["Fluid reasoning", "—", true, "Solving novel problems without relying on prior knowledge."],
-            ["Spatial ability", "—", true, "Reasoning about shapes, space, and visual relationships."],
-            ["Verbal reasoning", "—", true, "Reasoning with words, language, and meaning."],
-            ["Reaction time", "—", true, "Speed of response to a stimulus."],
+            ["Full-scale IQ", "—", true, "General cognitive ability (g) — the composite the six abilities below load onto."],
+            ["Working memory", "—", true, "Holding and manipulating information in mind.", undefined, true],
+            ["Processing speed", "—", true, "How quickly you take in and respond to information.", undefined, true],
+            ["Fluid reasoning", "—", true, "Solving novel problems without relying on prior knowledge.", undefined, true],
+            ["Spatial ability", "—", true, "Reasoning about shapes, space, and visual relationships.", undefined, true],
+            ["Verbal reasoning", "—", true, "Reasoning with words, language, and meaning.", undefined, true],
+            ["Reaction time", "—", true, "Speed of response to a stimulus.", undefined, true],
           ],
         },
       ],
@@ -41,13 +44,14 @@ const INTELLECT: StatTableData = {
           category: "Worldview (interpretive lens)",
           metrics: [
             ["", "I am an integral (naturalistic) humanist — reason-grounded, humanity-centered", false],
-            ["Knowing", "Explanatory fallibilist", true, "Epistemology — the nature and sources of knowledge; how we know."],
-            ["Being", "Physical idealist", true, "Metaphysics — what is ultimately real; the fundamental nature of reality."],
-            ["Origins", "Evolutionary emergentist", true, "Cosmology — the origin and nature of the universe and of life."],
-            ["Purpose", "Self-authored", true, "Teleology — whether existence has an inherent purpose or direction."],
-            ["Divinity", "Agnostic atheist", true, "Theology — the existence and nature of God or the divine."],
-            ["Humanity", "Universalist", true, "Anthropology — the nature and purpose of human beings."],
-            ["Value", "Amoral realist", true, "Axiology — the nature of value; what is good, bad, right, and wrong."],
+            ["Worldview", "Integral naturalistic humanist", true, "The composite stance the seven perspectives below resolve into."],
+            ["Knowing", "Explanatory fallibilist", true, "Epistemology — the nature and sources of knowledge; how we know.", undefined, true],
+            ["Being", "Physical idealist", true, "Metaphysics — what is ultimately real; the fundamental nature of reality.", undefined, true],
+            ["Origins", "Evolutionary emergentist", true, "Cosmology — the origin and nature of the universe and of life.", undefined, true],
+            ["Purpose", "Self-authored", true, "Teleology — whether existence has an inherent purpose or direction.", undefined, true],
+            ["Divinity", "Agnostic atheist", true, "Theology — the existence and nature of God or the divine.", undefined, true],
+            ["Humanity", "Universalist", true, "Anthropology — the nature and purpose of human beings.", undefined, true],
+            ["Value", "Amoral realist", true, "Axiology — the nature of value; what is good, bad, right, and wrong.", undefined, true],
           ],
         },
       ],
@@ -74,6 +78,16 @@ const CHARACTER: StatTableData = {
             ["Openness", "49th", true, "Curiosity, imagination, and openness to new experience."],
           ],
         },
+        {
+          category: "Risk tolerance (financial nerve)",
+          metrics: [
+            ["", "I take financial risk more readily than 96 in 100 adults — and still over-estimated myself (scored 0–100)", false],
+            ["Risk score", "68 (96th percentile)", true, "Overall financial risk tolerance against a representative adult sample; a very high score."],
+            ["Risk group", "6 of 7", true, "The band my score falls in — group 6 reads risk as opportunity and takes a medium-to-large degree of it.", undefined, true],
+            ["Self-estimate", "80 (actual 68)", true, "What I predicted I would score. Most people under-estimate their tolerance; I over-estimated mine.", undefined, true],
+            ["Loss tolerance", "> 50% fall", true, "How far the total value of my investments would have to drop before I began to feel uncomfortable.", undefined, true],
+          ],
+        },
       ],
     },
     {
@@ -83,11 +97,12 @@ const CHARACTER: StatTableData = {
         {
           category: "Primal beliefs (felt assumptions)",
           metrics: [
-            ["", "I meet a world that is good, safe, and improving — yet impersonal: wonderful, not watching", false],
-            ["Safe", "3.69 with ‘progressing’ at 4.75", true, "Whether the world is safe and nurturing, or dangerous and threatening."],
-            ["Enticing", "3.86 with ‘abundant’ at 4.5", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren."],
-            ["Alive", "2.21 with ‘needs me’ at 2.75", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic."],
-            ["Neutral", "hierarchical (3.8) and interconnected (3.5)", true, "Primals outside the Good hierarchy — orthogonal descriptors; these are my top two of the five."],
+            ["", "I meet a world that is good, safe, and improving — yet impersonal: wonderful, not watching (scored 0–5)", false],
+            ["Good", "3.66", true, "The top-order primal — how good the world is overall; the composite of the three below."],
+            ["Safe", "3.69 with ‘progressing’ at 4.75", true, "Whether the world is safe and nurturing, or dangerous and threatening.", undefined, true],
+            ["Enticing", "3.86 with ‘abundant’ at 4.5", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren.", undefined, true],
+            ["Alive", "2.21 with ‘needs me’ at 2.75", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic.", undefined, true],
+            ["Neutral primals", "‘acceptable’ at 1.25 and ‘hierarchical’ at 3.8", true, "The five primals that sit outside the Good hierarchy — descriptive rather than evaluative, and orthogonal to it: acceptable, changing, hierarchical, interconnected, understandable. These are my two furthest from the midpoint."],
           ],
         },
         {
@@ -116,28 +131,33 @@ const DRIVE: StatTableData = {
         {
           category: "Portrait values (stated drives)",
           metrics: [
-            ["", "I run on autonomy and achievement, kept stable and caring", false],
-            ["Self-direction", "6.0 (openness)", true, "Independent thought and action — choosing, creating, exploring."],
-            ["Achievement", "4.5 (self-enhancement)", true, "Personal success through demonstrating competence."],
-            ["Security", "4.2 (conservation)", true, "Safety, harmony, and stability of self and society."],
-            ["Benevolence", "4.0 (self-transcendence)", true, "Preserving and enhancing the welfare of those close to you."],
-            ["Universalism", "3.3 (self-transcendence)", true, "Understanding, tolerance, and protection for all people and nature."],
-            ["Power", "3.3 (self-enhancement)", true, "Social status, prestige, and control over people and resources."],
-            ["Tradition", "2.8 (conservation)", true, "Respect for and commitment to cultural or religious customs."],
-            ["Stimulation", "2.7 (openness)", true, "Novelty, excitement, and challenge in life."],
-            ["Conformity", "2.5 (conservation)", true, "Restraint of actions likely to upset others or violate norms."],
-            ["Hedonism", "2.3 (openness / self-enhancement)", true, "Pleasure and sensuous gratification for oneself."],
+            ["", "I run on autonomy — self-direction tops the scale at 6.0 — then achievement, kept stable and caring (scored 1–6)", false],
+            ["Self-enhancement", "3.90", true, "Pursuing your own success and standing — the mean of achievement and power."],
+            ["Achievement", "4.5", true, "Personal success through demonstrating competence.", undefined, true],
+            ["Power", "3.3", true, "Social status, prestige, and control over people and resources.", undefined, true],
+            ["Openness to change", "3.67", true, "Readiness for new thought and experience — the mean of self-direction, stimulation, and hedonism."],
+            ["Self-direction", "6.0", true, "Independent thought and action — choosing, creating, exploring.", undefined, true],
+            ["Stimulation", "2.7", true, "Novelty, excitement, and challenge in life.", undefined, true],
+            ["Hedonism", "2.3", true, "Pleasure and sensuous gratification for oneself.", undefined, true],
+            ["Self-transcendence", "3.65", true, "Looking beyond yourself — the mean of benevolence and universalism."],
+            ["Benevolence", "4.0", true, "Preserving and enhancing the welfare of those close to you.", undefined, true],
+            ["Universalism", "3.3", true, "Understanding, tolerance, and protection for all people and nature.", undefined, true],
+            ["Conservation", "3.17", true, "Preserving order and continuity — the mean of security, tradition, and conformity."],
+            ["Security", "4.2", true, "Safety, harmony, and stability of self and society.", undefined, true],
+            ["Tradition", "2.8", true, "Respect for and commitment to cultural or religious customs.", undefined, true],
+            ["Conformity", "2.5", true, "Restraint of actions likely to upset others or violate norms.", undefined, true],
           ],
         },
         {
           category: "Behavioural values (revealed drives)",
           metrics: [
             ["", "My time, energy, and money go to design first — then the body, teaching, resourcing, and music", false],
-            ["Design", "1st", true],
-            ["Wellness", "2nd", true],
-            ["Education", "3rd", true],
-            ["Resource allocation", "4th", true],
-            ["Music", "5th", true],
+            ["Value hierarchy", "Design · Wellness · Education", true, "My top three revealed values; the full ranked five sit below."],
+            ["Design", "1st", true, undefined, undefined, true],
+            ["Wellness", "2nd", true, undefined, undefined, true],
+            ["Education", "3rd", true, undefined, undefined, true],
+            ["Resource allocation", "4th", true, undefined, undefined, true],
+            ["Music", "5th", true, undefined, undefined, true],
           ],
         },
       ],
@@ -150,12 +170,13 @@ const DRIVE: StatTableData = {
           category: "Interests (work attractions)",
           metrics: [
             ["", "I am drawn to ideas and to making things, in the service of people", false],
-            ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
-            ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work."],
-            ["Social", "3rd", true, "Drawn to helping, teaching, and working with people."],
-            ["Enterprising", "4th", true, "Drawn to leading, persuading, and enterprise."],
-            ["Conventional", "5th", true, "Drawn to order, data, and structured tasks."],
-            ["Realistic", "6th", true, "Drawn to hands-on, physical, and mechanical work."],
+            ["Holland code", "IAS (investigative · artistic · social)", true, "The three-letter code from my top three types — the standard summary of a RIASEC profile."],
+            ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems.", undefined, true],
+            ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work.", undefined, true],
+            ["Social", "3rd", true, "Drawn to helping, teaching, and working with people.", undefined, true],
+            ["Enterprising", "4th", true, "Drawn to leading, persuading, and enterprise.", undefined, true],
+            ["Conventional", "5th", true, "Drawn to order, data, and structured tasks.", undefined, true],
+            ["Realistic", "6th", true, "Drawn to hands-on, physical, and mechanical work.", undefined, true],
           ],
         },
       ],
@@ -208,6 +229,16 @@ const IDENTITY_REFERENCES: Reference[] = [
     cite: <>Lee, K. and Ashton, M. C. The HEXACO Personality Inventory–Revised (HEXACO-PI-R).</>,
     url: "https://hexaco.org",
     urlLabel: "hexaco.org",
+    tag: "Temperament",
+  },
+  {
+    id: "finametrica",
+    cite: (
+      <>
+        FinaMetrica. <em>Personal Financial Risk Tolerance Report</em> (June 2022). Assessed via
+        the FinaMetrica Risk Profiling system.
+      </>
+    ),
     tag: "Temperament",
   },
   {
