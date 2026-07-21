@@ -81,8 +81,8 @@ const CHARACTER: StatTableData = {
         {
           category: "Risk tolerance (financial nerve)",
           metrics: [
-            ["", "I take financial risk more readily than 96 in 100 adults — and still over-estimated myself (scored 0–100)", false],
-            ["Risk score", "68 (96th percentile)", true, "Overall financial risk tolerance against a representative adult sample; a very high score."],
+            ["", "I take financial risk more readily than 96 in 100 adults — and still over-estimated myself", false],
+            ["Risk score", "68 (96th percentile)", true, "Overall financial risk tolerance, scored 0–100 against a representative adult sample; 68 is a very high score."],
             ["Risk group", "6 of 7", true, "The band my score falls in — group 6 reads risk as opportunity and takes a medium-to-large degree of it.", undefined, true],
             ["Self-estimate", "80 (actual 68)", true, "What I predicted I would score. Most people under-estimate their tolerance; I over-estimated mine.", undefined, true],
             ["Loss tolerance", "> 50% fall", true, "How far the total value of my investments would have to drop before I began to feel uncomfortable.", undefined, true],
@@ -97,12 +97,12 @@ const CHARACTER: StatTableData = {
         {
           category: "Primal beliefs (felt assumptions)",
           metrics: [
-            ["", "I meet a world that is good, safe, and improving — yet impersonal: wonderful, not watching (scored 0–5)", false],
-            ["Good", "3.66", true, "The top-order primal — how good the world is overall; the composite of the three below."],
-            ["Safe", "3.69 with ‘progressing’ at 4.75", true, "Whether the world is safe and nurturing, or dangerous and threatening.", undefined, true],
-            ["Enticing", "3.86 with ‘abundant’ at 4.5", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren.", undefined, true],
-            ["Alive", "2.21 with ‘needs me’ at 2.75", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic.", undefined, true],
-            ["Neutral primals", "‘acceptable’ at 1.25 and ‘hierarchical’ at 3.8", true, "The five primals that sit outside the Good hierarchy — descriptive rather than evaluative, and orthogonal to it: acceptable, changing, hierarchical, interconnected, understandable. These are my two furthest from the midpoint."],
+            ["", "I meet a world that is good, safe, and improving — yet impersonal: wonderful, not watching", false],
+            ["Good", "3.66", true, "The top-order primal — how good the world is overall, scored 0–5; the composite of the three below."],
+            ["Safe", "3.69 (with ‘progressing’ at 4.75)", true, "Whether the world is safe and nurturing, or dangerous and threatening.", undefined, true],
+            ["Enticing", "3.86 (with ‘abundant’ at 4.5)", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren.", undefined, true],
+            ["Alive", "2.21 (with ‘needs me’ at 2.75)", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic.", undefined, true],
+            ["Neutral primals", "5 outside the Good hierarchy (with ‘acceptable’ at 1.25 and ‘hierarchical’ at 3.8)", true, "The five primals that sit outside the Good hierarchy — descriptive rather than evaluative, and orthogonal to it: acceptable, changing, hierarchical, interconnected, understandable. These are my two furthest from the midpoint."],
           ],
         },
         {
@@ -131,21 +131,11 @@ const DRIVE: StatTableData = {
         {
           category: "Portrait values (stated drives)",
           metrics: [
-            ["", "I run on autonomy — self-direction tops the scale at 6.0 — then achievement, kept stable and caring (scored 1–6)", false],
-            ["Self-enhancement", "3.90", true, "Pursuing your own success and standing — the mean of achievement and power."],
-            ["Achievement", "4.5", true, "Personal success through demonstrating competence.", undefined, true],
-            ["Power", "3.3", true, "Social status, prestige, and control over people and resources.", undefined, true],
-            ["Openness to change", "3.67", true, "Readiness for new thought and experience — the mean of self-direction, stimulation, and hedonism."],
-            ["Self-direction", "6.0", true, "Independent thought and action — choosing, creating, exploring.", undefined, true],
-            ["Stimulation", "2.7", true, "Novelty, excitement, and challenge in life.", undefined, true],
-            ["Hedonism", "2.3", true, "Pleasure and sensuous gratification for oneself.", undefined, true],
-            ["Self-transcendence", "3.65", true, "Looking beyond yourself — the mean of benevolence and universalism."],
-            ["Benevolence", "4.0", true, "Preserving and enhancing the welfare of those close to you.", undefined, true],
-            ["Universalism", "3.3", true, "Understanding, tolerance, and protection for all people and nature.", undefined, true],
-            ["Conservation", "3.17", true, "Preserving order and continuity — the mean of security, tradition, and conformity."],
-            ["Security", "4.2", true, "Safety, harmony, and stability of self and society.", undefined, true],
-            ["Tradition", "2.8", true, "Respect for and commitment to cultural or religious customs.", undefined, true],
-            ["Conformity", "2.5", true, "Restraint of actions likely to upset others or violate norms.", undefined, true],
+            ["", "I run on autonomy and achievement, kept stable and caring (scored 1–6)", false],
+            ["Self-enhancement", "3.90 (with ‘achievement’ at 4.5 and ‘power’ at 3.3)", true, "Pursuing your own success and standing — the mean of achievement (success through demonstrated competence) and power (status, prestige, and control over people and resources)."],
+            ["Openness to change", "3.67 (with ‘self-direction’ at 6.0, ‘stimulation’ at 2.7, and ‘hedonism’ at 2.3)", true, "Readiness for new thought and experience — the mean of self-direction (independent thought and action), stimulation (novelty, excitement, and challenge), and hedonism (pleasure and sensuous gratification)."],
+            ["Self-transcendence", "3.65 (with ‘benevolence’ at 4.0 and ‘universalism’ at 3.3)", true, "Looking beyond yourself — the mean of benevolence (the welfare of those close to you) and universalism (understanding, tolerance, and protection for all people and nature)."],
+            ["Conservation", "3.17 (with ‘security’ at 4.2, ‘tradition’ at 2.8, and ‘conformity’ at 2.5)", true, "Preserving order and continuity — the mean of security (safety, harmony, and stability), tradition (respect for cultural or religious custom), and conformity (restraint of actions likely to upset others)."],
           ],
         },
         {
