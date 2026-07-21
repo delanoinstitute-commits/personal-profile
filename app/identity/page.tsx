@@ -20,7 +20,7 @@ const INTELLECT: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Intelligence (RIOT IQ · percentile)",
+          category: "Intelligence (processing power)",
           metrics: [
             ["", "I measure my general ability with the full RIOT battery — results pending", false],
             ["Working memory", "—", true, "Holding and manipulating information in mind."],
@@ -38,7 +38,7 @@ const INTELLECT: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Worldview (Funk’s 7 perspectives)",
+          category: "Worldview (interpretive lens)",
           metrics: [
             ["", "I am an integral (naturalistic) humanist — reason-grounded, humanity-centered", false],
             ["Knowing", "Explanatory fallibilist", true, "Epistemology — the nature and sources of knowledge; how we know."],
@@ -63,7 +63,7 @@ const CHARACTER: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Personality (HEXACO-PI-R · percentile)",
+          category: "Personality (default dispositions)",
           metrics: [
             ["", "I am disciplined, unflappable, and independent", false],
             ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn’t measure."],
@@ -81,13 +81,24 @@ const CHARACTER: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Beliefs (Primal World Beliefs · 0–5)",
+          category: "Primal beliefs (felt assumptions)",
           metrics: [
             ["", "I meet a world that is good, safe, and improving — yet impersonal: wonderful, not watching", false],
             ["Safe", "3.69 with ‘progressing’ at 4.75", true, "Whether the world is safe and nurturing, or dangerous and threatening."],
             ["Enticing", "3.86 with ‘abundant’ at 4.5", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren."],
             ["Alive", "2.21 with ‘needs me’ at 2.75", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic."],
             ["Neutral", "hierarchical (3.8) and interconnected (3.5)", true, "Primals outside the Good hierarchy — orthogonal descriptors; these are my top two of the five."],
+          ],
+        },
+        {
+          category: "Moral foundations (intuitive ethics)",
+          metrics: [
+            ["", "I map the intuitions under my moral judgments with the MFQ — results pending", false],
+            ["Care", "—", true, "Sensitivity to suffering — kindness, nurturance, and protection from harm."],
+            ["Fairness", "—", true, "Justice, rights, and reciprocity — what is earned and what is cheated."],
+            ["Loyalty", "—", true, "Standing with the group — family, team, nation; self-sacrifice against betrayal."],
+            ["Authority", "—", true, "Deference to legitimate hierarchy, tradition, and duty."],
+            ["Sanctity", "—", true, "Purity and disgust — the sense that some things are elevated and others degrading."],
           ],
         },
       ],
@@ -103,7 +114,7 @@ const DRIVE: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Values (PVQ-40 · 1–6)",
+          category: "Portrait values (stated drives)",
           metrics: [
             ["", "I run on autonomy and achievement, kept stable and caring", false],
             ["Self-direction", "6.0 (openness)", true, "Independent thought and action — choosing, creating, exploring."],
@@ -118,6 +129,17 @@ const DRIVE: StatTableData = {
             ["Hedonism", "2.3 (openness / self-enhancement)", true, "Pleasure and sensuous gratification for oneself."],
           ],
         },
+        {
+          category: "Behavioural values (revealed drives)",
+          metrics: [
+            ["", "My time, energy, and money go to design first — then the body, teaching, resourcing, and music", false],
+            ["Design", "1st", true],
+            ["Wellness", "2nd", true],
+            ["Education", "3rd", true],
+            ["Resource allocation", "4th", true],
+            ["Music", "5th", true],
+          ],
+        },
       ],
     },
     {
@@ -125,7 +147,7 @@ const DRIVE: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Interests (Holland RIASEC · rank)",
+          category: "Interests (work attractions)",
           metrics: [
             ["", "I am drawn to ideas and to making things, in the service of people", false],
             ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems."],
@@ -201,6 +223,19 @@ const IDENTITY_REFERENCES: Reference[] = [
     tag: "Sentiment",
   },
   {
+    id: "moral-foundations",
+    cite: (
+      <>
+        Graham, J., Haidt, J., et al. (2011). Mapping the moral domain.{" "}
+        <em>Journal of Personality and Social Psychology</em>, 101(2). Assessed via the Moral
+        Foundations Questionnaire.
+      </>
+    ),
+    url: "https://www.yourmorals.org/",
+    urlLabel: "yourmorals.org",
+    tag: "Sentiment",
+  },
+  {
     id: "schwartz",
     cite: (
       <>
@@ -210,6 +245,16 @@ const IDENTITY_REFERENCES: Reference[] = [
     ),
     url: "https://doi.org/10.9707/2307-0919.1116",
     urlLabel: "DOI",
+    tag: "Motivation",
+  },
+  {
+    id: "demartini",
+    cite: (
+      <>
+        Demartini, J. F. (2013). <em>The Values Factor</em>. Assessed via the Demartini Value
+        Determination Process.
+      </>
+    ),
     tag: "Motivation",
   },
   {
