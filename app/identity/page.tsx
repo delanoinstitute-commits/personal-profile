@@ -81,8 +81,8 @@ const CHARACTER: StatTableData = {
         {
           category: "Risk tolerance (financial nerve)",
           metrics: [
-            ["", "I take financial risk more readily than 96 in 100 adults — and still over-estimated myself", false],
-            ["Risk score", "68 (96th percentile)", true, "Overall financial risk tolerance, scored 0–100 against a representative adult sample; 68 is a very high score."],
+            ["", "I take financial risk more readily than 96 in 100 adults (scored 0–100)", false],
+            ["Risk score", "68 (96th percentile)", true, "Overall financial risk tolerance against a representative adult sample; 68 is a very high score."],
             ["Risk group", "6 of 7", true, "The band my score falls in — group 6 reads risk as opportunity and takes a medium-to-large degree of it.", undefined, true],
             ["Self-estimate", "80 (actual 68)", true, "What I predicted I would score. Most people under-estimate their tolerance; I over-estimated mine.", undefined, true],
             ["Loss tolerance", "> 50% fall", true, "How far the total value of my investments would have to drop before I began to feel uncomfortable.", undefined, true],
@@ -97,12 +97,11 @@ const CHARACTER: StatTableData = {
         {
           category: "Primal beliefs (felt assumptions)",
           metrics: [
-            ["", "I meet a world that is good, safe, and improving — yet impersonal: wonderful, not watching", false],
-            ["Good", "3.66", true, "The top-order primal — how good the world is overall, scored 0–5; the composite of the three below."],
+            ["", "I meet a world that is good, safe, and improving, with a mechanistic bent (scored 0–5)", false],
+            ["Good", "3.66 (with neutral primals ‘acceptable’ at 1.25 and ‘hierarchical’ at 3.8)", true, "The top-order primal — how good the world is overall, composed of the three below. Five neutral primals sit outside it, orthogonal to Good: acceptable, changing, hierarchical, interconnected, understandable."],
             ["Safe", "3.69 (with ‘progressing’ at 4.75)", true, "Whether the world is safe and nurturing, or dangerous and threatening.", undefined, true],
             ["Enticing", "3.86 (with ‘abundant’ at 4.5)", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren.", undefined, true],
             ["Alive", "2.21 (with ‘needs me’ at 2.75)", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic.", undefined, true],
-            ["Neutral primals", "5 outside the Good hierarchy (with ‘acceptable’ at 1.25 and ‘hierarchical’ at 3.8)", true, "The five primals that sit outside the Good hierarchy — descriptive rather than evaluative, and orthogonal to it: acceptable, changing, hierarchical, interconnected, understandable. These are my two furthest from the midpoint."],
           ],
         },
         {
