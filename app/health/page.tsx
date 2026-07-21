@@ -286,7 +286,7 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "phlebotomy",
         cite: (
           <>
-            <strong>Phlebotomy</strong>: <em><a className="wikilink external" href="/reports/blood-2026-05.pdf" target="_blank" rel="noopener noreferrer">Blood Test<span className="sr-only"> (opens in a new tab)</span></a></em> (Jan 2026); tests for ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, eGFR, ALT, and uric acid (biochemistry &amp; hematology) • report (Pathcare)
+            <strong>Phlebotomy</strong>: <em>Blood Test</em> (Jan 2026); tests for ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, eGFR, ALT, and uric acid (biochemistry &amp; hematology) • report (Pathcare)
           </>
         ),
       },
@@ -294,7 +294,7 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "densitometry",
         cite: (
           <>
-            <strong>Densitometry</strong>: <em><a className="wikilink external" href="/reports/dexa-2026-05.pdf" target="_blank" rel="noopener noreferrer">DEXA Scan<span className="sr-only"> (opens in a new tab)</span></a></em> (May 2026); tests for height, total mass, ALMI, percent body fat, VAT, and bone density (Lunar iDXA) • report (Cape Radiology)
+            <strong>Densitometry</strong>: <em>DEXA Scan</em> (May 2026); tests for height, total mass, ALMI, percent body fat, VAT, and bone density (Lunar iDXA) • report (Cape Radiology)
           </>
         ),
       },
@@ -323,7 +323,7 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "indirect-calorimetry",
         cite: (
           <>
-            <strong>Indirect calorimetry</strong>: <em><a className="wikilink external" href="/reports/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">CPET<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for VO&#8322;max, peak power output, and maximum heart rate (Cosmed Quark metabolic cart) • report (Science2Sport)
+            <strong>Indirect calorimetry</strong>: <em><a className="wikilink external" href="/evidence/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">CPET<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for VO&#8322;max, peak power output, and maximum heart rate (Cosmed Quark metabolic cart) • report (Science2Sport)
           </>
         ),
       },
@@ -331,7 +331,7 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "capillary-prick",
         cite: (
           <>
-            <strong>Capillary prick</strong>: <em><a className="wikilink external" href="/reports/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">Lactate Accumulation<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for blood lactate (Nova biomedical lactate plus) • reading (device)
+            <strong>Capillary prick</strong>: <em><a className="wikilink external" href="/evidence/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">Lactate Accumulation<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for blood lactate (Nova biomedical lactate plus) • reading (device)
           </>
         ),
       },

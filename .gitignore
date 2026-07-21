@@ -16,6 +16,8 @@
 
 # private / sensitive documents — never publish
 *.pdf
+# …except reports vetted for publication (no ID numbers, DOB, or contact details)
+!/public/evidence/*.pdf
 *FI Status*
 /private/
 
