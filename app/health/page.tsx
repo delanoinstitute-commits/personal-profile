@@ -24,7 +24,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
           category: "Cardiovascular (low-risk transport)",
           metrics: [
             ["", "My lipids sit at low-risk levels, with iron and oxygen transport in full supply", false],
-            ["ApoB", "0.6 g/L / 60 mg/dL (<10th percentile)", true, "Apolipoprotein B — the count of atherogenic (artery-clogging) cholesterol particles. The strongest single lipid predictor of heart disease, and causal for it. Optimal is ≤0.6 g/L."],
+            ["ApoB", "0.70 g/L / 70 mg/dL (~15th percentile)", true, "Apolipoprotein B — the count of atherogenic (artery-clogging) cholesterol particles. The strongest single lipid predictor of heart disease, and causal for it. Optimal is ≤0.6 g/L."],
             ["Hemoglobin", "14.1 g/dL", true, "The oxygen-carrying protein in red blood cells; the primary screen for anaemia. 14–16.5 g/dL is ideal for men."],
             ["Ferritin", "166 µg/L", true, "Stored iron, the reserve for making hemoglobin. It falls before anaemia appears and rises with inflammation. 50–150 µg/L is optimal for men."],
           ],
@@ -33,8 +33,8 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
           category: "Endometabolic (sensitive disposal)",
           metrics: [
             ["", "My blood sugar and insulin run low — a metabolism efficient even under load", false],
-            ["HbA1c", "5.1% (eAG: 5.5 mmol/L)", true, "Average blood sugar over the past ~3 months; eAG restates it as an average glucose reading. The diabetes diagnostic and a predictor of vascular disease and mortality. Optimal is ≤5.2%."],
-            ["Fasting insulin", "4.1 IU/L", true, "Insulin at rest — it flags insulin resistance about five years before blood sugar begins to rise. Optimal is ≤5 IU/L."],
+            ["HbA1c", "5.2% (eAG: 5.7 mmol/L)", true, "Average blood sugar over the past ~3 months; eAG restates it as an average glucose reading. The diabetes diagnostic and a predictor of vascular disease and mortality. Optimal is ≤5.2%."],
+            ["Fasting insulin", "4.2 mIU/L", true, "Insulin at rest — it flags insulin resistance about five years before blood sugar begins to rise. Optimal is ≤5 mIU/L."],
             ["Lactate threshold", "1.8 mmol/L @ 70% VO₂max (2.5 W/kg)", true, "The intensity where lactate starts to accumulate — an endurance and metabolic-fitness marker, roughly co-equal with VO₂max and more trainable. ≥85% of VO₂max is elite."],
           ],
         },
@@ -42,7 +42,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
           category: "Hepatorenal (low-stress clearance)",
           metrics: [
             ["", "My liver and kidneys clear at full function, unstressed", false],
-            ["eGFR-CysC", "101 mL/min/1.73m²", true, "Kidney filtration rate from cystatin C, not muscle-biased like creatinine; declining filtration is an aging hallmark. ≥95 mL/min/1.73m² is optimal under 40."],
+            ["eGFR", "101 mL/min/1.73m²", true, "Estimated glomerular filtration rate — how fast the kidneys clear the blood, estimated from creatinine (CKD-EPI); declining filtration is an aging hallmark. ≥95 mL/min/1.73m² is optimal under 40."],
             ["ALT", "26 IU/L", true, "A liver enzyme — high signals liver stress, but unusually low signals muscle loss and frailty. 17–30 IU/L is optimal."],
             ["Uric acid", "0.28 mmol/L / 4.7 mg/dL", true, "A purine waste product cleared by the kidneys; high levels cause gout and predict cardiovascular disease and mortality. 0.20–0.36 mmol/L is optimal."],
           ],
