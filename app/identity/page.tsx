@@ -3,7 +3,7 @@ import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
-import { References, type Reference } from "@/components/References";
+import { References, type ReferenceSection } from "@/components/References";
 
 export const metadata: Metadata = { title: "Identity" };
 
@@ -173,121 +173,177 @@ const DRIVE: StatTableData = {
   ],
 };
 
-const IDENTITY_REFERENCES: Reference[] = [
+const IDENTITY_DATA: ReferenceSection[] = [
   {
-    id: "hilgard",
-    cite: (
-      <>
-        Hilgard, E. R. (1980). The trilogy of mind: cognition, affection, and conation.{" "}
-        <em>Journal of the History of the Behavioral Sciences</em>, 16(2).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/11608381/",
-    urlLabel: "PubMed",
-    tag: "Trilogy of mind",
+    label: "My data derived from instruments scored against population norms",
+    items: [
+      {
+        id: "aptitude-data",
+        cite: (
+          <>
+            <strong>Aptitude</strong>: <em>Adaptive IQ battery (pending)</em>; tests for working memory, processing speed, fluid reasoning, spatial ability, verbal reasoning, and reaction time (RIOT) • report (RIOT IQ)
+          </>
+        ),
+      },
+      {
+        id: "temperament-personality-data",
+        cite: (
+          <>
+            <strong>Temperament</strong>: <em>Personality inventory (pending)</em>; tests for honesty-humility, emotionality, extraversion, agreeableness, conscientiousness, and openness (HEXACO-PI-R) • report (hexaco.org)
+          </>
+        ),
+      },
+      {
+        id: "temperament-risk-data",
+        cite: (
+          <>
+            <strong>Temperament</strong>: <em>Risk profiling (Jun 2022)</em>; tests for financial risk tolerance (25-item questionnaire) • report (FinaMetrica)
+          </>
+        ),
+      },
+      {
+        id: "sentiment-primals-data",
+        cite: (
+          <>
+            <strong>Sentiment</strong>: <em>Primals survey (Jun 2022)</em>; tests for 26 primal world beliefs (99-item PWB) • report (UPenn Primals Project)
+          </>
+        ),
+      },
+      {
+        id: "sentiment-mfq-data",
+        cite: (
+          <>
+            <strong>Sentiment</strong>: <em>Moral foundations questionnaire (pending)</em>; tests for care, fairness, loyalty, authority, and sanctity (MFQ) • report (YourMorals)
+          </>
+        ),
+      },
+      {
+        id: "motivation-pvq-data",
+        cite: (
+          <>
+            <strong>Motivation</strong>: <em>Portrait values questionnaire (pending)</em>; tests for the ten basic values (PVQ-40) • report (self-scored)
+          </>
+        ),
+      },
+      {
+        id: "vocation-data",
+        cite: (
+          <>
+            <strong>Vocation</strong>: <em>Interest profiler (pending)</em>; tests for the six RIASEC types (O*NET Interest Profiler) • report (O*NET)
+          </>
+        ),
+      },
+    ],
   },
   {
-    id: "riot",
-    cite: <>RIOT — an open, adaptive online IQ test.</>,
-    url: "https://www.riotiq.com",
-    urlLabel: "riotiq.com",
-    tag: "Aptitude",
+    label: "My data derived from frameworks I position myself against",
+    items: [
+      {
+        id: "perspective-data",
+        cite: (
+          <>
+            <strong>Perspective</strong>: <em>Worldview positioning (pending)</em>; places seven philosophical stances (Funk&rsquo;s 7 perspectives) • reading (self-assessed)
+          </>
+        ),
+      },
+      {
+        id: "motivation-demartini-data",
+        cite: (
+          <>
+            <strong>Motivation</strong>: <em>Value determination (pending)</em>; ranks lived values by where time, energy, and money actually go (Demartini process) • reading (self-assessed)
+          </>
+        ),
+      },
+    ],
   },
+];
+
+const IDENTITY_EVIDENCE: ReferenceSection[] = [
   {
-    id: "funk",
-    cite: (
-      <>
-        Funk, K. What Is a Worldview? <em>Oregon State University</em>.
-      </>
-    ),
-    url: "https://web.engr.oregonstate.edu/~funkk/Personal/worldview.html",
-    urlLabel: "oregonstate.edu",
-    tag: "Perspective",
-  },
-  {
-    id: "deutsch",
-    cite: (
-      <>
-        Deutsch, D. (2011). <em>The Beginning of Infinity: Explanations That Transform the World</em>. Allen Lane.
-      </>
-    ),
-    tag: "Perspective",
-  },
-  {
-    id: "hexaco",
-    cite: <>Lee, K. and Ashton, M. C. The HEXACO Personality Inventory–Revised (HEXACO-PI-R).</>,
-    url: "https://hexaco.org",
-    urlLabel: "hexaco.org",
-    tag: "Temperament",
-  },
-  {
-    id: "finametrica",
-    cite: (
-      <>
-        FinaMetrica. <em>Personal Financial Risk Tolerance Report</em> (June 2022). Assessed via
-        the FinaMetrica Risk Profiling system.
-      </>
-    ),
-    tag: "Temperament",
-  },
-  {
-    id: "primals",
-    cite: (
-      <>
-        Clifton, J. D. W., et al. (2019). Primal world beliefs.{" "}
-        <em>Psychological Assessment</em>, 31(1).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/30299119/",
-    urlLabel: "PubMed",
-    tag: "Sentiment",
-  },
-  {
-    id: "moral-foundations",
-    cite: (
-      <>
-        Graham, J., Haidt, J., et al. (2011). Mapping the moral domain.{" "}
-        <em>Journal of Personality and Social Psychology</em>, 101(2). Assessed via the Moral
-        Foundations Questionnaire.
-      </>
-    ),
-    url: "https://www.yourmorals.org/",
-    urlLabel: "yourmorals.org",
-    tag: "Sentiment",
-  },
-  {
-    id: "schwartz",
-    cite: (
-      <>
-        Schwartz, S. H. (2012). An overview of the Schwartz theory of basic values.{" "}
-        <em>Online Readings in Psychology and Culture</em>, 2(1).
-      </>
-    ),
-    url: "https://doi.org/10.9707/2307-0919.1116",
-    urlLabel: "DOI",
-    tag: "Motivation",
-  },
-  {
-    id: "demartini",
-    cite: (
-      <>
-        Demartini, J. F. (2013). <em>The Values Factor</em>. Assessed via the Demartini Value
-        Determination Process.
-      </>
-    ),
-    tag: "Motivation",
-  },
-  {
-    id: "holland",
-    cite: (
-      <>
-        Holland, J. L. (1997). <em>Making Vocational Choices</em> (3rd ed.). Assessed via the
-        O*NET Interest Profiler.
-      </>
-    ),
-    url: "https://www.onetonline.org",
-    urlLabel: "onetonline.org",
-    tag: "Vocation",
+    label: "The studies validating the instruments behind my scores",
+    items: [
+      {
+        id: "riot",
+        cite: <><strong>Intelligence</strong>: RIOT — an open, adaptive online IQ test.</>,
+        url: "https://www.riotiq.com",
+        urlLabel: "riotiq.com",
+      },
+      {
+        id: "funk",
+        cite: (
+          <>
+            <strong>Worldview</strong>: Funk, K. What Is a Worldview? <em>Oregon State University</em>.
+          </>
+        ),
+        url: "https://web.engr.oregonstate.edu/~funkk/Personal/worldview.html",
+        urlLabel: "oregonstate.edu",
+      },
+      {
+        id: "hexaco",
+        cite: <><strong>Personality</strong>: Lee, K. and Ashton, M. C. The HEXACO Personality Inventory&ndash;Revised (HEXACO-PI-R).</>,
+        url: "https://hexaco.org",
+        urlLabel: "hexaco.org",
+      },
+      {
+        id: "finametrica",
+        cite: (
+          <>
+            <strong>Risk tolerance</strong>: FinaMetrica. <em>Personal Financial Risk Tolerance Report</em> (June 2022). Assessed via the FinaMetrica Risk Profiling system.
+          </>
+        ),
+      },
+      {
+        id: "primals",
+        cite: (
+          <>
+            <strong>Primal beliefs</strong>: Clifton, J. D. W., et al. (2019). Primal world beliefs.{" "}
+            <em>Psychological Assessment</em>, 31(1).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/30299119/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "moral-foundations",
+        cite: (
+          <>
+            <strong>Moral foundations</strong>: Graham, J., Haidt, J., et al. (2011). Mapping the moral domain.{" "}
+            <em>Journal of Personality and Social Psychology</em>, 101(2). Assessed via the Moral Foundations Questionnaire.
+          </>
+        ),
+        url: "https://www.yourmorals.org/",
+        urlLabel: "yourmorals.org",
+      },
+      {
+        id: "schwartz",
+        cite: (
+          <>
+            <strong>Portrait values</strong>: Schwartz, S. H. (2012). An overview of the Schwartz theory of basic values.{" "}
+            <em>Online Readings in Psychology and Culture</em>, 2(1).
+          </>
+        ),
+        url: "https://doi.org/10.9707/2307-0919.1116",
+        urlLabel: "DOI",
+      },
+      {
+        id: "demartini",
+        cite: (
+          <>
+            <strong>Behavioural values</strong>: Demartini, J. F. (2013). <em>The Values Factor</em>. Assessed via the Demartini Value Determination Process.
+          </>
+        ),
+      },
+      {
+        id: "holland",
+        cite: (
+          <>
+            <strong>Interests</strong>: Holland, J. L. (1997). <em>Making Vocational Choices</em> (3rd ed.). Assessed via the O*NET Interest Profiler.
+          </>
+        ),
+        url: "https://www.onetonline.org",
+        urlLabel: "onetonline.org",
+      },
+    ],
   },
 ];
 
@@ -330,8 +386,14 @@ export default function IdentityPage() {
       <NestedTable {...DRIVE} />
 
       <References
-        items={IDENTITY_REFERENCES}
-        intro="The instruments and frameworks behind these readings."
+        title={<>References <span className="heading-paren">(Data)</span></>}
+        sections={IDENTITY_DATA}
+      />
+
+      <References
+        id="evidence"
+        title={<>References <span className="heading-paren">(Evidence)</span></>}
+        sections={IDENTITY_EVIDENCE}
       />
     </>
   );
