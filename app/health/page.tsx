@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
-import { References, type Reference, type ReferenceSection } from "@/components/References";
+import { References, type ReferenceSection } from "@/components/References";
 import MovementLevels from "@/components/MovementLevels";
+import WikiLink from "@/components/WikiLink";
 
 export const metadata: Metadata = { title: "Health" };
 
@@ -279,7 +280,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
 
 const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
   {
-    label: "My data based on tests performed under resting, fasted conditions",
+    label: "My data derived from tests performed under resting, fasted conditions",
     items: [
       {
         id: "phlebotomy",
@@ -313,24 +314,16 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
           </>
         ),
       },
-      {
-        id: "photoplethysmography",
-        cite: (
-          <>
-            <strong>Photoplethysmography</strong>: <em>30-Day Average</em> (Jan 2026); tests for resting heart rate (OURA continuous monitoring) • reading (app)
-          </>
-        ),
-      },
     ],
   },
   {
-    label: "My data based on tests performed under load",
+    label: "My data derived from tests performed under load",
     items: [
       {
         id: "indirect-calorimetry",
         cite: (
           <>
-            <strong>Indirect calorimetry</strong>: <em><a className="wikilink external" href="/reports/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">CPET<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for VO&#8322;max, peak power output, and maximum heart rate (Cosmed Quark metabolic) • report (Science2Sport)
+            <strong>Indirect calorimetry</strong>: <em><a className="wikilink external" href="/reports/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">CPET<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for VO&#8322;max, peak power output, and maximum heart rate (Cosmed Quark metabolic cart) • report (Science2Sport)
           </>
         ),
       },
@@ -346,7 +339,7 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "electrocardiography",
         cite: (
           <>
-            <strong>Electrocardiography</strong>: <em>Norwegian 4x4</em> (Jan 2026); tests for maximum heart rate (Polar H10) • reading (app)
+            <strong>Electrocardiography</strong>: <em>Norwegian 4x4</em> (Jan 2026); tests for maximum heart rate and heart rate recovery (Polar H10) • reading (app)
           </>
         ),
       },
@@ -362,126 +355,167 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
   },
 ];
 
-// The evidence and guidelines the reference ranges draw on — guidelines set
-// the cutpoints, landmark cohorts establish the significance. Archived copy in
-// docs/health-methodology-references.md.
-const HEALTH_EVIDENCE: Reference[] = [
+// The studies behind the reference-range targets, ranked by mortality-reduction
+// / prevention impact (VO₂max first, no observed ceiling of benefit). One
+// most-credible study per marker; lagging/redundant markers deliberately
+// omitted. Archived copy in docs/health-methodology-references.md.
+const HEALTH_EVIDENCE: ReferenceSection[] = [
   {
-    id: "apob",
-    cite: (
-      <>
-        Sniderman, A. D., et al. (2019). Apolipoprotein B particles and cardiovascular disease: a narrative review. <em>JAMA Cardiology</em>, 4(12).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/31642874/",
-    urlLabel: "PubMed",
-    tag: "ApoB",
+    label: "The studies informing my reference range targets for lifespan",
+    items: [
+      {
+        id: "vo2max",
+        cite: (
+          <>
+            <strong>VO&#8322;max</strong>: Mandsager, R., et al. (2018). Association of cardiorespiratory fitness with long-term mortality among adults undergoing exercise treadmill testing. <em>JAMA Network Open</em>, 1(6).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/30646252/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "bloodpressure",
+        cite: (
+          <>
+            <strong>Blood pressure</strong>: Lewington, S., et al. (2002). Age-specific relevance of usual blood pressure to vascular mortality. <em>Lancet</em>, 360(9349).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/12493255/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "apob",
+        cite: (
+          <>
+            <strong>ApoB</strong>: Sniderman, A. D., et al. (2019). Apolipoprotein B particles and cardiovascular disease: a narrative review. <em>JAMA Cardiology</em>, 4(12).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/31642874/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "hba1c",
+        cite: (
+          <>
+            <strong>HbA1c</strong>: Selvin, E., et al. (2010). Glycated hemoglobin, diabetes, and cardiovascular risk in nondiabetic adults. <em>New England Journal of Medicine</em>, 362(9).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/20200384/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "hrrecovery",
+        cite: (
+          <>
+            <strong>HR recovery</strong>: Cole, C. R., et al. (1999). Heart-rate recovery immediately after exercise as a predictor of mortality. <em>New England Journal of Medicine</em>, 341(18).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/10536127/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "hrreserve",
+        cite: (
+          <>
+            <strong>HR reserve</strong>: Lauer, M. S., et al. (1999). Impaired chronotropic response to exercise stress testing as a predictor of mortality. <em>JAMA</em>, 281(6).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/10022108/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "almi",
+        cite: (
+          <>
+            <strong>ALMI</strong>: Cruz-Jentoft, A. J., et al. (2019). Sarcopenia: revised European consensus on definition and diagnosis (EWGSOP2). <em>Age and Ageing</em>, 48(1).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/30312372/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "vat",
+        cite: (
+          <>
+            <strong>VAT</strong>: Britton, K. A., et al. (2013). Body fat distribution, incident cardiovascular disease, cancer, and all-cause mortality. <em>Journal of the American College of Cardiology</em>, 62(10).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/23850922/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "whtr",
+        cite: (
+          <>
+            <strong>Waist-to-height ratio</strong>: Ashwell, M., Gunn, P., and Gibson, S. (2012). Waist-to-height ratio is a better screening tool than waist circumference and BMI. <em>Obesity Reviews</em>, 13(3).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/22106927/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "bmd",
+        cite: (
+          <>
+            <strong>Bone density</strong>: Marshall, D., Johnell, O., and Wedel, H. (1996). Meta-analysis of how well measures of bone mineral density predict occurrence of osteoporotic fractures. <em>BMJ</em>, 312(7041).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/8634613/",
+        urlLabel: "PubMed",
+      },
+    ],
   },
   {
-    id: "hba1c",
-    cite: (
-      <>
-        Khaw, K. T., et al. (2001). Glycated haemoglobin, diabetes, and mortality (EPIC-Norfolk). <em>BMJ</em>, 322(7277).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/11141143/",
-    urlLabel: "PubMed",
-    tag: "HbA1c",
-  },
-  {
-    id: "cystatinc",
-    cite: (
-      <>
-        Shlipak, M. G., et al. (2013). Cystatin C versus creatinine in determining risk based on kidney function. <em>New England Journal of Medicine</em>, 369(10).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/24004120/",
-    urlLabel: "PubMed",
-    tag: "eGFR",
-  },
-  {
-    id: "bloodpressure",
-    cite: (
-      <>
-        Lewington, S., et al. (2002). Age-specific relevance of usual blood pressure to vascular mortality. <em>Lancet</em>, 360(9349).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/12493255/",
-    urlLabel: "PubMed",
-    tag: "Blood pressure",
-  },
-  {
-    id: "hrreserve",
-    cite: (
-      <>
-        Lauer, M. S., et al. (1999). Impaired chronotropic response to exercise stress testing as a predictor of mortality. <em>JAMA</em>, 281(6).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/10022108/",
-    urlLabel: "PubMed",
-    tag: "Heart rate reserve",
-  },
-  {
-    id: "hrrecovery",
-    cite: (
-      <>
-        Cole, C. R., et al. (1999). Heart-rate recovery immediately after exercise as a predictor of mortality. <em>New England Journal of Medicine</em>, 341(18).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/10536127/",
-    urlLabel: "PubMed",
-    tag: "Heart rate recovery",
-  },
-  {
-    id: "sarcopenia",
-    cite: (
-      <>
-        Cruz-Jentoft, A. J., et al. (2019). Sarcopenia: revised European consensus on definition and diagnosis (EWGSOP2). <em>Age and Ageing</em>, 48(1).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/30312372/",
-    urlLabel: "PubMed",
-    tag: "ALMI",
-  },
-  {
-    id: "bmd",
-    cite: (
-      <>
-        Marshall, D., Johnell, O., and Wedel, H. (1996). Meta-analysis of how well measures of bone mineral density predict occurrence of osteoporotic fractures. <em>BMJ</em>, 312(7041).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/8634613/",
-    urlLabel: "PubMed",
-    tag: "Bone density",
-  },
-  {
-    id: "whtr",
-    cite: (
-      <>
-        Ashwell, M., Gunn, P., and Gibson, S. (2012). Waist-to-height ratio is a better screening tool than waist circumference and BMI. <em>Obesity Reviews</em>, 13(3).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/22106927/",
-    urlLabel: "PubMed",
-    tag: "Waist-to-height ratio",
-  },
-  {
-    id: "vo2max",
-    cite: (
-      <>
-        Kaminsky, L. A., et al. (2022). Updated reference standards for cardiorespiratory fitness (the FRIEND Registry). <em>Mayo Clinic Proceedings</em>, 97(2).
-      </>
-    ),
-    url: "https://pubmed.ncbi.nlm.nih.gov/34809986/",
-    urlLabel: "PubMed",
-    tag: "VO₂max",
+    label: "The sources informing my performance standards for healthspan",
+    items: [
+      {
+        id: "balance-sources",
+        cite: (
+          <>
+            <strong>Lower-body strength</strong>: Pistol squat and nordic curl ladders from personal experience, benchmarked against <WikiLink href="https://www.gymnasticbodies.com">GymnasticBodies</WikiLink>, the <WikiLink href="https://pubmed.ncbi.nlm.nih.gov/23242910/">sit-to-rise test</WikiLink>, and <WikiLink href="https://www.atgonlinecoaching.com">ATG</WikiLink> standards
+          </>
+        ),
+      },
+      {
+        id: "barbell-sources",
+        cite: (
+          <>
+            <strong>Barbell strength</strong>: Deadlift, overhead press, and overhead squat ladders from personal experience, adapted from <WikiLink href="https://drive.google.com/file/d/1HD4nwuWCbWrShbVMrU6N8H6JZzxmVP0A/view?usp=sharing">CrossFit</WikiLink> standards
+          </>
+        ),
+      },
+      {
+        id: "weighted-sources",
+        cite: (
+          <>
+            <strong>Upper-body strength</strong>: Weighted pull-up and chest dip ladders from personal experience, benchmarked against <WikiLink href="https://strengthlevel.com">StrengthLevel</WikiLink> standards
+          </>
+        ),
+      },
+      {
+        id: "core-sources",
+        cite: (
+          <>
+            <strong>Core stability</strong>: Compression strength and tensegrity ladders from personal experience, benchmarked against <WikiLink href="https://www.gymnastics.sport">FIG</WikiLink>, MAG, and <WikiLink href="https://www.gymnastics.sport/site/rules/">COP</WikiLink> standards
+          </>
+        ),
+      },
+      {
+        id: "global-sources",
+        cite: (
+          <>
+            <strong>Global power</strong>: Broad jump and sprint ladders from personal experience, benchmarked against <WikiLink href="https://exrx.net">ExRx</WikiLink>, <WikiLink href="https://www.topendsports.com">Top End Sports</WikiLink>, and world-record marks
+          </>
+        ),
+      },
+    ],
   },
 ];
 
 export default function HealthPage() {
   return (
     <>
-      <PageHeading title="Health" hatnote={<>The present — how I function</>} />
+      <PageHeading title="Health" hatnote={<>Status — my functional integrity with references and guidelines</>} />
 
       <p className="lead">
         Health is one body read at three levels: how soundly it&rsquo;s built (integrity),
@@ -520,13 +554,15 @@ export default function HealthPage() {
       </p>
       <NestedTable {...FUNCTIONAL_CAPACITY} />
 
-      <References sections={HEALTH_REFERENCE_SECTIONS} />
+      <References
+        title={<>References <span className="heading-paren">(Data)</span></>}
+        sections={HEALTH_REFERENCE_SECTIONS}
+      />
 
       <References
         id="evidence"
-        title="Evidence"
-        items={HEALTH_EVIDENCE}
-        intro="Where the optimal ranges come from — the guidelines that set the cutpoints and the cohorts that establish why each marker matters."
+        title={<>References <span className="heading-paren">(Guidelines)</span></>}
+        sections={HEALTH_EVIDENCE}
       />
     </>
   );

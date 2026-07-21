@@ -59,7 +59,7 @@ export function References({
   /** Sectioned mode: italic label + description over each group; numbering runs continuously. */
   sections?: ReferenceSection[];
   /** Heading text and anchor id — override to render a second, distinct block (e.g. Evidence). */
-  title?: string;
+  title?: ReactNode;
   id?: string;
 }) {
   let counter = 1;

@@ -63,7 +63,10 @@ export default function KnowledgePage() {
       </p>
       <NestedTable {...EDUCATION} />
 
-      <References sections={KNOWLEDGE_REFERENCE_SECTIONS} />
+      <References
+        title={<>References <span className="heading-paren">(Evidence)</span></>}
+        sections={KNOWLEDGE_REFERENCE_SECTIONS}
+      />
     </>
   );
 }
