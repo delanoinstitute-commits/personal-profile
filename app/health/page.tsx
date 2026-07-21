@@ -283,34 +283,34 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
     label: "My data derived from tests performed under resting, fasted conditions",
     items: [
       {
-        id: "phlebotomy",
+        id: "biochemistry",
         cite: (
           <>
-            <strong>Phlebotomy</strong>: <em>Blood Test</em> (Jan 2026); tests for ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, eGFR, ALT, and uric acid (biochemistry &amp; hematology) • report (Pathcare)
+            <strong>Biochemistry</strong>: <em>Phlebotomy (Jan 2026)</em>; tests for ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, eGFR, ALT, and uric acid (biochemistry &amp; hematology) • report (Pathcare)
           </>
         ),
       },
       {
-        id: "densitometry",
+        id: "composition",
         cite: (
           <>
-            <strong>Densitometry</strong>: <em>DEXA Scan</em> (May 2026); tests for height, total mass, ALMI, percent body fat, VAT, and bone density (Lunar iDXA) • report (Cape Radiology)
+            <strong>Composition</strong>: <em>Densitometry (May 2026)</em>; tests for height, total mass, ALMI, percent body fat, VAT, and bone density (Lunar iDXA) • report (Cape Radiology)
           </>
         ),
       },
       {
-        id: "anthropometry",
+        id: "geometry",
         cite: (
           <>
-            <strong>Anthropometry</strong>: <em>Girth Measurements</em> (Jan 2026); tests for waist circumference (Iliac Crest &lsquo;NHANES&rsquo; method) • reading (tape)
+            <strong>Geometry</strong>: <em>Anthropometry (Jan 2026)</em>; tests for waist circumference (Iliac Crest &lsquo;NHANES&rsquo; method) • reading (tape)
           </>
         ),
       },
       {
-        id: "sphygmomanometry",
+        id: "circulation",
         cite: (
           <>
-            <strong>Sphygmomanometry</strong>: <em>7-Day Average</em> (Jan 2026); tests for blood pressure and resting heart rate (OMRON) • reading (monitor)
+            <strong>Circulation</strong>: <em>Sphygmomanometry (Jan 2026)</em>; tests for blood pressure and resting heart rate (OMRON) • reading (monitor)
           </>
         ),
       },
@@ -320,34 +320,34 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
     label: "My data derived from tests performed under load",
     items: [
       {
-        id: "indirect-calorimetry",
+        id: "bioenergetics",
         cite: (
           <>
-            <strong>Indirect calorimetry</strong>: <em><a className="wikilink external" href="/evidence/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">CPET<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for VO&#8322;max, peak power output, and maximum heart rate (Cosmed Quark metabolic cart) • report (Science2Sport)
+            <strong>Bioenergetics</strong>: <em>Indirect calorimetry (Sep 2024)</em>; tests for VO&#8322;max, peak power output, and maximum heart rate (Cosmed Quark CPET) • <a className="wikilink external" href="/evidence/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">report<span className="sr-only"> (opens in a new tab)</span></a> (Science2Sport)
           </>
         ),
       },
       {
-        id: "capillary-prick",
+        id: "lactate",
         cite: (
           <>
-            <strong>Capillary prick</strong>: <em><a className="wikilink external" href="/evidence/cpet-2024-09.pdf" target="_blank" rel="noopener noreferrer">Lactate Accumulation<span className="sr-only"> (opens in a new tab)</span></a></em> (Sep 2024); tests for blood lactate (Nova biomedical lactate plus) • reading (device)
+            <strong>Lactate</strong>: <em>Capillary prick (Sep 2024)</em>; tests for blood lactate (Nova biomedical lactate plus) • reading (device)
           </>
         ),
       },
       {
-        id: "electrocardiography",
+        id: "heart-rate",
         cite: (
           <>
-            <strong>Electrocardiography</strong>: <em>Norwegian 4x4</em> (Jan 2026); tests for maximum heart rate and heart rate recovery (Polar H10) • reading (app)
+            <strong>Heart rate</strong>: <em>Electrocardiography (Jan 2026)</em>; tests for maximum heart rate and heart rate recovery (Polar H10) • reading (app)
           </>
         ),
       },
       {
-        id: "fitness-battery",
+        id: "biomechanics",
         cite: (
           <>
-            <strong>Fitness battery</strong>: <em>Big-12 Status</em> (Jan 2026); tests for local hip, core, shoulder and global functional capacity (muscular biomechanics) • report (video){/* TODO: link Big-12 Status to the single combined test video once filmed */}
+            <strong>Biomechanics</strong>: <em>Total-fitness battery (Jan 2026)</em>; tests for local hip, core, shoulder and global functional capacity (multi-modal testing facility) • report (video){/* TODO: link "report" to the single combined test video once filmed */}
           </>
         ),
       },
