@@ -34,6 +34,13 @@ const INTELLECT: StatTableData = {
             ["Reaction time", "—", true, "Speed of response to a stimulus.", undefined, true],
           ],
         },
+        {
+          category: "Rationality (second-thought reflex)",
+          metrics: [
+            ["", "I test whether I override a wrong gut answer with deliberate reasoning — results pending", false],
+            ["CRT score", "—", true, "How often I set aside the intuitive-but-wrong answer and reason to the right one — a disposition that predicts decision quality independently of IQ."],
+          ],
+        },
       ],
     },
     {
@@ -104,17 +111,6 @@ const CHARACTER: StatTableData = {
             ["Alive", "2.21 (with ‘needs me’ at 2.75)", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic.", undefined, true],
           ],
         },
-        {
-          category: "Moral foundations (intuitive ethics)",
-          metrics: [
-            ["", "I map the intuitions under my moral judgments with the MFQ — results pending", false],
-            ["Care", "—", true, "Sensitivity to suffering — kindness, nurturance, and protection from harm."],
-            ["Fairness", "—", true, "Justice, rights, and reciprocity — what is earned and what is cheated."],
-            ["Loyalty", "—", true, "Standing with the group — family, team, nation; self-sacrifice against betrayal."],
-            ["Authority", "—", true, "Deference to legitimate hierarchy, tradition, and duty."],
-            ["Sanctity", "—", true, "Purity and disgust — the sense that some things are elevated and others degrading."],
-          ],
-        },
       ],
     },
   ],
@@ -140,7 +136,7 @@ const DRIVE: StatTableData = {
         {
           category: "Behavioural values (revealed drives)",
           metrics: [
-            ["", "My time, energy, and money go to design first — then the body, teaching, resourcing, and music", false],
+            ["", "My time, energy, and money go first to design (with music), the body, then daily studying", false],
             ["Value hierarchy", "Design · Wellness · Education", true, "My top three revealed values; the full ranked five sit below."],
             ["Design", "1st", true, undefined, undefined, true],
             ["Wellness", "2nd", true, undefined, undefined, true],
@@ -159,7 +155,7 @@ const DRIVE: StatTableData = {
           category: "Interests (work attractions)",
           metrics: [
             ["", "I am drawn to ideas and to making things, in the service of people", false],
-            ["Holland code", "IAS (investigative · artistic · social)", true, "The three-letter code from my top three types — the standard summary of a RIASEC profile."],
+            ["Holland code", "IAS (investigative first, artistic second, then social)", true, "The three-letter code from my top three types — the standard summary of a RIASEC profile."],
             ["Investigative", "1st", true, "Drawn to ideas, analysis, and solving abstract problems.", undefined, true],
             ["Artistic", "2nd", true, "Drawn to creativity, self-expression, and unstructured work.", undefined, true],
             ["Social", "3rd", true, "Drawn to helping, teaching, and working with people.", undefined, true],
@@ -186,6 +182,14 @@ const IDENTITY_DATA: ReferenceSection[] = [
         ),
       },
       {
+        id: "rationality-data",
+        cite: (
+          <>
+            <strong>Aptitude</strong>: <em>Cognitive reflection test (pending)</em>; tests for reflective override of intuitive error (CRT) • report (self-scored)
+          </>
+        ),
+      },
+      {
         id: "temperament-personality-data",
         cite: (
           <>
@@ -206,14 +210,6 @@ const IDENTITY_DATA: ReferenceSection[] = [
         cite: (
           <>
             <strong>Sentiment</strong>: <em>Primals survey (Jun 2022)</em>; tests for 26 primal world beliefs (99-item PWB) • report (UPenn Primals Project)
-          </>
-        ),
-      },
-      {
-        id: "sentiment-mfq-data",
-        cite: (
-          <>
-            <strong>Sentiment</strong>: <em>Moral foundations questionnaire (pending)</em>; tests for care, fairness, loyalty, authority, and sanctity (MFQ) • report (YourMorals)
           </>
         ),
       },
@@ -260,29 +256,51 @@ const IDENTITY_DATA: ReferenceSection[] = [
 
 const IDENTITY_EVIDENCE: ReferenceSection[] = [
   {
-    label: "The studies validating the instruments behind my scores",
+    label: "The studies validating the instruments behind my scores, best-established first",
     items: [
       {
         id: "riot",
-        cite: <><strong>Intelligence</strong>: RIOT — an open, adaptive online IQ test.</>,
+        cite: <><strong>Intelligence</strong>: RIOT &mdash; an open, adaptive online IQ test.</>,
         url: "https://www.riotiq.com",
         urlLabel: "riotiq.com",
-      },
-      {
-        id: "funk",
-        cite: (
-          <>
-            <strong>Worldview</strong>: Funk, K. What Is a Worldview? <em>Oregon State University</em>.
-          </>
-        ),
-        url: "https://web.engr.oregonstate.edu/~funkk/Personal/worldview.html",
-        urlLabel: "oregonstate.edu",
       },
       {
         id: "hexaco",
         cite: <><strong>Personality</strong>: Lee, K. and Ashton, M. C. The HEXACO Personality Inventory&ndash;Revised (HEXACO-PI-R).</>,
         url: "https://hexaco.org",
         urlLabel: "hexaco.org",
+      },
+      {
+        id: "holland",
+        cite: (
+          <>
+            <strong>Interests</strong>: Holland, J. L. (1997). <em>Making Vocational Choices</em> (3rd ed.). Assessed via the O*NET Interest Profiler.
+          </>
+        ),
+        url: "https://www.onetonline.org",
+        urlLabel: "onetonline.org",
+      },
+      {
+        id: "crt",
+        cite: (
+          <>
+            <strong>Rationality</strong>: Frederick, S. (2005). Cognitive reflection and decision making.{" "}
+            <em>Journal of Economic Perspectives</em>, 19(4).
+          </>
+        ),
+        url: "https://doi.org/10.1257/089533005775196732",
+        urlLabel: "DOI",
+      },
+      {
+        id: "schwartz",
+        cite: (
+          <>
+            <strong>Portrait values</strong>: Schwartz, S. H. (2012). An overview of the Schwartz theory of basic values.{" "}
+            <em>Online Readings in Psychology and Culture</em>, 2(1).
+          </>
+        ),
+        url: "https://doi.org/10.9707/2307-0919.1116",
+        urlLabel: "DOI",
       },
       {
         id: "finametrica",
@@ -304,26 +322,14 @@ const IDENTITY_EVIDENCE: ReferenceSection[] = [
         urlLabel: "PubMed",
       },
       {
-        id: "moral-foundations",
+        id: "funk",
         cite: (
           <>
-            <strong>Moral foundations</strong>: Graham, J., Haidt, J., et al. (2011). Mapping the moral domain.{" "}
-            <em>Journal of Personality and Social Psychology</em>, 101(2). Assessed via the Moral Foundations Questionnaire.
+            <strong>Worldview</strong>: Funk, K. What Is a Worldview? <em>Oregon State University</em>.
           </>
         ),
-        url: "https://www.yourmorals.org/",
-        urlLabel: "yourmorals.org",
-      },
-      {
-        id: "schwartz",
-        cite: (
-          <>
-            <strong>Portrait values</strong>: Schwartz, S. H. (2012). An overview of the Schwartz theory of basic values.{" "}
-            <em>Online Readings in Psychology and Culture</em>, 2(1).
-          </>
-        ),
-        url: "https://doi.org/10.9707/2307-0919.1116",
-        urlLabel: "DOI",
+        url: "https://web.engr.oregonstate.edu/~funkk/Personal/worldview.html",
+        urlLabel: "oregonstate.edu",
       },
       {
         id: "demartini",
@@ -332,16 +338,6 @@ const IDENTITY_EVIDENCE: ReferenceSection[] = [
             <strong>Behavioural values</strong>: Demartini, J. F. (2013). <em>The Values Factor</em>. Assessed via the Demartini Value Determination Process.
           </>
         ),
-      },
-      {
-        id: "holland",
-        cite: (
-          <>
-            <strong>Interests</strong>: Holland, J. L. (1997). <em>Making Vocational Choices</em> (3rd ed.). Assessed via the O*NET Interest Profiler.
-          </>
-        ),
-        url: "https://www.onetonline.org",
-        urlLabel: "onetonline.org",
       },
     ],
   },

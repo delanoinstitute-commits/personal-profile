@@ -24,3 +24,14 @@ References (Evidence) — the studies validating those instruments. The trilogy 
 mind is the page's taxonomy (Intellect / Character / Drive), not a source for any
 reading, so it belongs with the framework material here.
 
+13. Graham, J., Haidt, J., et al. (2011). Mapping the moral domain. *Journal of Personality and Social Psychology*, 101(2). https://www.yourmorals.org/ — Instrument considered, not used
+
+Item 13 is a different kind of entry: an instrument that was scaffolded on
+/identity and then dropped (July 2026) before any sitting. The Moral Foundations
+Questionnaire was cut for redundancy — Schwartz's values already cover the moral
+terrain (universalism and benevolence against care and fairness; tradition,
+conformity and security against loyalty, authority and sanctity), and HEXACO's
+honesty-humility and agreeableness carry the moral-character variance. Its
+five-factor structure also replicates poorly, which is why MFQ-2 exists. Kept
+here because the selection reasoning is part of the taxonomy's story.
+
