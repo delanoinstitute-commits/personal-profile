@@ -1,7 +1,7 @@
 import WikiLink from "@/components/WikiLink";
 import { TimelineEra } from "@/components/Timeline";
 
-// The year-by-year biography, grouped into life eras. Rendered by the Biography
+// The year-by-year biography, grouped into life eras. Rendered by the History
 // page via the <Timeline> component.
 export const eras: TimelineEra[] = [
   {

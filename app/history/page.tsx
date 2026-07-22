@@ -3,12 +3,12 @@ import PageHeading from "@/components/PageHeading";
 import Timeline from "@/components/Timeline";
 import { eras } from "@/content/timeline";
 
-export const metadata: Metadata = { title: "Biography" };
+export const metadata: Metadata = { title: "History" };
 
-export default function BiographyPage() {
+export default function HistoryPage() {
   return (
     <>
-      <PageHeading title="Biography" hatnote={<>The past — his story</>} />
+      <PageHeading title="History" hatnote={<>The past — his story</>} />
 
       <p className="lead">
         The premise of this site is that an accurate chronology shows true causality — how a
@@ -16,7 +16,7 @@ export default function BiographyPage() {
         environment first, then the year-by-year development.
       </p>
 
-      <h2 id="biography">Biography</h2>
+      <h2 id="history">History</h2>
       <p>
         Delano grew up across the West Rand of Gauteng, South Africa — a childhood of
         frequent moves, financial hardship, farm life, injuries, and a fatherless,

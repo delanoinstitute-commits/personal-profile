@@ -60,7 +60,7 @@ export default function StartHerePage() {
         living database of Delano, organized into two lenses: the{" "}
         <WikiLink href="/knowledge">present</WikiLink> (what he does, who he is, how he
         functions, what he has, and how he lives) and the{" "}
-        <WikiLink href="/biography">past</WikiLink> (his story,
+        <WikiLink href="/history">past</WikiLink> (his story,
         education, and experience). The profile box summarizes what he is.
       </p>
 

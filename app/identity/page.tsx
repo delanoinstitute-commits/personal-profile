@@ -356,7 +356,7 @@ export default function IdentityPage() {
         Each lens is read with its gold-standard instrument — a composite profile over its components. In brief, I&rsquo;m intellectually curious and
         highly conscientious, emotionally steady, and independent-minded — a builder who
         questions consensus. For how these formed, see{" "}
-        <WikiLink href="/biography">my story</WikiLink>.
+        <WikiLink href="/history">my story</WikiLink>.
       </p>
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>

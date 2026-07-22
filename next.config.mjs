@@ -7,7 +7,9 @@ const nextConfig = {
       { source: "/current-status", destination: "/identity", permanent: true },
       { source: "/constituents", destination: "/identity", permanent: true },
       { source: "/time", destination: "/lifestyle", permanent: true },
-      { source: "/historical-context", destination: "/biography", permanent: true },
+      { source: "/historical-context", destination: "/history", permanent: true },
+      // Biography renamed to History (2026) when the nav split into Constitution / Capital.
+      { source: "/biography", destination: "/history", permanent: true },
       { source: "/future-trajectory", destination: "/", permanent: true },
       { source: "/purpose", destination: "/", permanent: true },
       { source: "/assets", destination: "/wealth", permanent: true },

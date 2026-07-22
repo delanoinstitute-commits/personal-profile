@@ -1,7 +1,9 @@
 // Global site metadata and navigation structure.
-// Navigation is grouped into four sections (overview → future → present → past).
-// Each group holds one or more pages; each page's children are in-page sections
-// (anchors) rendered as the horizontal SectionNav.
+// Navigation is grouped into three sections: Overview, then Constitution (the
+// inputs — where he came from, who he is, how he lives) and Capital (what those
+// produce — health, knowledge, wealth; the three canonical forms of personal
+// capital). Each group holds one or more pages; each page's children are in-page
+// sections (anchors) rendered as the horizontal SectionNav.
 //
 // CANONICAL NOMENCLATURE (house style — see DESIGN_SPEC.md §8). One spelling each:
 //   learning-systems designer · 10X · single-set-to-failure · self-mastery ·
@@ -44,8 +46,16 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    title: "Self",
+    title: "Constitution",
     pages: [
+      {
+        label: "History",
+        href: "/history",
+        sections: [
+          { label: "History", anchor: "history" },
+          { label: "Timeline", anchor: "timeline" },
+        ],
+      },
       {
         label: "Identity",
         href: "/identity",
@@ -56,18 +66,24 @@ export const NAV_GROUPS: NavGroup[] = [
         ],
       },
       {
-        label: "Biography",
-        href: "/biography",
-        sections: [
-          { label: "Biography", anchor: "biography" },
-          { label: "Timeline", anchor: "timeline" },
-        ],
+        label: "Lifestyle",
+        href: "/lifestyle",
+        sections: [{ label: "Behavioral", anchor: "behavioral" }],
       },
     ],
   },
   {
-    title: "Resources",
+    title: "Capital",
     pages: [
+      {
+        label: "Health",
+        href: "/health",
+        sections: [
+          { label: "Integrity", anchor: "integrity" },
+          { label: "Balance", anchor: "balance" },
+          { label: "Capacity", anchor: "capacity" },
+        ],
+      },
       {
         label: "Knowledge",
         href: "/knowledge",
@@ -81,25 +97,6 @@ export const NAV_GROUPS: NavGroup[] = [
         label: "Wealth",
         href: "/wealth",
         sections: [{ label: "Socioeconomic", anchor: "socioeconomic" }],
-      },
-    ],
-  },
-  {
-    title: "Status",
-    pages: [
-      {
-        label: "Health",
-        href: "/health",
-        sections: [
-          { label: "Integrity", anchor: "integrity" },
-          { label: "Balance", anchor: "balance" },
-          { label: "Capacity", anchor: "capacity" },
-        ],
-      },
-      {
-        label: "Lifestyle",
-        href: "/lifestyle",
-        sections: [{ label: "Behavioral", anchor: "behavioral" }],
       },
     ],
   },
