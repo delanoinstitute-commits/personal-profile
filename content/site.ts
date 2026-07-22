@@ -68,7 +68,11 @@ export const NAV_GROUPS: NavGroup[] = [
       {
         label: "Lifestyle",
         href: "/lifestyle",
-        sections: [{ label: "Behavioral", anchor: "behavioral" }],
+        sections: [
+          { label: "Activity", anchor: "activity" },
+          { label: "Space", anchor: "space" },
+          { label: "Time", anchor: "time" },
+        ],
       },
     ],
   },
