@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
+import WikiLink from "@/components/WikiLink";
 
 export const metadata: Metadata = { title: "Lifestyle" };
 
@@ -23,9 +24,21 @@ const ACTIVITY: StatTableData = {
         {
           category: "Creative (problem solving)",
           metrics: [
-            ["", "Both are growth: focused engagement on the problem, then the diffuse reflection that solves it elsewhere", false],
-            ["Solve", "I design coordination systems for self-mastery, first for myself then for others", true, "Active · 4 hrs/day. Working meaningful problems, personal or professional, on my own."],
-            ["Learn", "I study science daily, enrolling formally only when a domain demands it", true, "Passive · 1 hr/day. Studying, reflecting on, or writing something meaningful."],
+            ["", "Solving the problems you care most about in an informed way is purpose and security enough", false],
+            ["Solve", [
+              "I spend most of the day solving knowledge organisation problems for myself and others; exercising my ",
+              <WikiLink key="int" href="/identity#intellect">intelligence</WikiLink>,
+              " and ",
+              <WikiLink key="skl" href="/knowledge#skills">skills</WikiLink>,
+              " to build ",
+              <WikiLink key="wrk" href="/knowledge#works">works</WikiLink>,
+              " of enduring value",
+            ], true, "Active · 4 hrs/day. Working meaningful problems, personal or professional, on my own."],
+            ["Learn", [
+              "If I’m not working, exercising, or sleeping, you’ll find me studying; filling the many ",
+              <WikiLink key="edu" href="/knowledge#education">education</WikiLink>,
+              " gaps necessary for progress",
+            ], true, "Passive · 1 hr/day. Studying, reflecting on, or writing something meaningful."],
           ],
         },
         {
