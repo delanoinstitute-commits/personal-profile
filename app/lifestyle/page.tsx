@@ -46,9 +46,17 @@ const ACTIVITY: StatTableData = {
         {
           category: "Physiologic (stress balance)",
           metrics: [
-            ["", "Load and recovery in ratio: enough stress to force growth, not merely to hold the line", false],
-            ["Sleep", "I hold eight hours, eleven to seven, and track what it returns", true, "Passive · 8 hrs/day. The primary recovery block, and the single largest claim on the day."],
-            ["Train", "I run a six-day gymnastic split against twelve benchmark movements", true, "Active · 2 hrs/day. Mobility, stability, strength, speed, or endurance work."],
+            ["", "Health mastery depends on overload and recovery, cycled on rhythm and dosed to force growth", false],
+            ["Train", [
+              "Breaking to train at the same hour each day sharpens the work; the load builds ",
+              <WikiLink key="cap" href="/health#capacity">capacity</WikiLink>,
+              " rather than merely preserving ",
+              <WikiLink key="itg" href="/health#integrity">integrity</WikiLink>,
+            ], true, "Active · 2 hrs/day. Mobility, stability, strength, speed, or endurance work."],
+            ["Sleep", [
+              "Eight hours at the same time each night makes the other eleven habits possible; it consolidates what I learned and restores my ",
+              <WikiLink key="bal" href="/health#balance">balance</WikiLink>,
+            ], true, "Passive · 8 hrs/day. The primary recovery block, and the single largest claim on the day."],
           ],
         },
         {
