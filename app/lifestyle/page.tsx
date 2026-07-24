@@ -9,23 +9,24 @@ export const metadata: Metadata = { title: "Lifestyle" };
 // Life as designed, in three branches: Activity (what I do), Space (where I do
 // it), Time (when). The twelve activity habits are a complete partition of a
 // day — they sum to 24 hours exactly, which doubles as the page's integrity
-// check. Three structures run through it at once: each category pairs an active
-// habit with a passive one; each habit is growth, maintenance, or leisure; and the
-// individual categories mirror the relational ones (creative/collaborative,
-// physiologic/metabolic, personal/social). Space and Time are scaffolded.
+// check — each habit carries its daily allocation in its label. Three structures
+// run through it at once: each category pairs an active habit with a passive one;
+// each habit is growth, maintenance, or leisure; and the personal categories
+// mirror the relational ones (creative/collaborative, physiologic/metabolic,
+// personal/social). Definitions are pending. Space and Time are scaffolded.
 
 const ACTIVITY: StatTableData = {
   title: "Activity",
   groups: [
     {
-      domain: "Individual",
+      domain: "Personal Habits",
       label: "",
       rows: [
         {
           category: "Creative (problem solving)",
           metrics: [
             ["", "Knowledge and wealth mastery depends on solving meaningful problems in an informed way", false],
-            ["Solve", [
+            ["Solve (4 hrs)", [
               "I spend most of the day solving knowledge organisation problems for myself and others; exercising my ",
               <WikiLink key="int" href="/identity#intellect">intelligence</WikiLink>,
               " and ",
@@ -33,90 +34,90 @@ const ACTIVITY: StatTableData = {
               " to build ",
               <WikiLink key="wrk" href="/knowledge#works">works</WikiLink>,
               " of enduring value",
-            ], true, "Active · 4 hrs/day. Working meaningful problems, personal or professional, on my own."],
-            ["Learn", [
-              "If I’m not asleep, working, or exercising, you’ll find me studying; filling the many ",
+            ], true],
+            ["Learn (1 hr)", [
+              "If I\u2019m not asleep, working, or exercising, you\u2019ll find me studying; filling the many ",
               <WikiLink key="edu" href="/knowledge#education">education</WikiLink>,
               " and ",
               <WikiLink key="wvw" href="/identity#intellect">worldview</WikiLink>,
               " gaps necessary for progress",
-            ], true, "Passive · 1 hr/day. Studying, reflecting on, or writing something meaningful."],
+            ], true],
           ],
         },
         {
           category: "Physiologic (stress balance)",
           metrics: [
             ["", "Health mastery depends on well-timed cycles of strategic overload and recovery", false],
-            ["Train", [
+            ["Train (2 hrs)", [
               "Breaking to train at the same hour each day sharpens the work; improving functional ",
               <WikiLink key="itg" href="/health#integrity">integrity</WikiLink>,
               " against 12 universal ",
               <WikiLink key="prf" href="/health#capacity">performance</WikiLink>,
               " benchmarks",
-            ], true, "Active · 2 hrs/day. Mobility, stability, strength, speed, or endurance work."],
-            ["Sleep", [
+            ], true],
+            ["Sleep (8 hrs)", [
               "Eight hours at the same time each night makes the other eleven habits possible; consolidating learnings from yesterday while restoring ",
               <WikiLink key="bal" href="/health#balance">balance</WikiLink>,
               " for tomorrow",
-            ], true, "Passive · 8 hrs/day. The primary recovery block, and the single largest claim on the day."],
+            ], true],
           ],
         },
         {
           category: "Personal (self care)",
           metrics: [
             ["", "Sustained mastery depends on keeping my affairs in order and my attention unclaimed", false],
-            ["Maintain", [
+            ["Maintain (1 hr)", [
               "Daily hygiene and ad-hoc (body, home, relationship, legal, and financial) maintenance-service management; balancing personal care with ",
               <WikiLink key="lfs" href="/lifestyle">lifestyle</WikiLink>,
               " efficiency",
-            ], true, "Active · 1 hr/day. Hygiene, treatments, finances, home, and the admin that keeps them running."],
-            ["Entertain", [
-              "I set aside an hour each evening to escape reality with a good show or indulge its extremes on YouTube; taking on others’ ",
+            ], true],
+            ["Entertain (1 hr)", [
+              "I set aside an hour each evening to escape reality with a good show or indulge its extremes on YouTube; taking on others\u2019 ",
               <WikiLink key="wvw2" href="/identity#intellect">worldviews</WikiLink>,
-              " to expand and own my own",
-            ], true, "Passive · 1 hr/day. Games, books, or media — time with nothing asked of it."],
+              " to own and expand my own",
+            ], true],
           ],
         },
       ],
     },
     {
-      domain: "Relational",
+      domain: "Relational Habits",
       label: "",
       rows: [
         {
           category: "Collaborative (professional service)",
           metrics: [
             ["", "Wealth mastery depends on serving people directly and coordinating resources at a distance", false],
-            ["Serve", [
+            ["Serve (1 hr)", [
               "I run corporate apprenticeships and private live-in interventions under my own name; putting hard-won ",
               <WikiLink key="skl2" href="/knowledge#skills">skills</WikiLink>,
-              " to work on other people’s problems",
-            ], true, "Active · 1 hr/day. Formally helping others — clients, colleagues, family, or friends."],
-            ["Manage", [
+              " to work on other people\u2019s problems",
+            ], true],
+            ["Manage (1 hr)", [
               "I direct people and capital, including a registered real-estate company; the passive half that compounds ",
               <WikiLink key="wlt" href="/wealth">wealth</WikiLink>,
               " while my attention is elsewhere",
-            ], true, "Passive · 1 hr/day. Directing resources, human and financial."],
+            ], true],
           ],
         },
         {
           category: "Metabolic (energy balance)",
           metrics: [
             ["", "Health follows the daily balance between the energy I take in and the energy I spend", false],
-            ["Eat", [
-              "Primal-Mediterranean — three unprocessed meals, low carbohydrate, three coffees; the anabolic input my body ",
+            ["Eat (2 hrs)", [
+              "Primal-Mediterranean \u2014 three unprocessed meals, low carbohydrate, three coffees; the anabolic input my body ",
               <WikiLink key="cmp" href="/health#integrity">composition</WikiLink>,
               " is built from",
-            ], true, "Passive · 2 hrs/day. Meals, preparation included."],
-            ["Walk", "Seven thousand steps daily, mostly late afternoon and evening; the catabolic base that costs little and underwrites everything", true, "Active · 1 hr/day. Daily walking, counted separately from training."],
+            ], true],
+            ["Walk (1 hr)", "Seven thousand steps daily, mostly late afternoon and evening; the catabolic base that costs little and underwrites everything", true],
           ],
         },
         {
           category: "Social (shared experience)",
           metrics: [
             ["", "Emotional balance depends on hours that are shared and ask nothing in return", false],
-            ["Connect", "An unhurried hour with family and a few close friends; the relationships that outlast every project on this site", true, "Passive · 1 hr/day. Quality time with someone close to me."],
-            ["Play", "Sundays kept for structured play — sport, games, or travel; the only habit I keep with no productive justification", true, "Active · 1 hr/day. Structured play — sports, games, events, or travel."],
+            ["Connect (1 hr)", "An unhurried hour with family and a few close friends; the relationships that outlast every project on this site", true],
+            ["Play (1 hr)", "Sundays kept for structured play \u2014 sport, games, or travel; the only habit I keep with no productive justification", true],
           ],
         },
       ],
