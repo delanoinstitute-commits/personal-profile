@@ -25,7 +25,7 @@ const ACTIVITY: StatTableData = {
         {
           category: "Creative (problem solving)",
           metrics: [
-            ["", "Knowledge and wealth mastery depends on solving meaningful problems in an informed way", false],
+            ["", "A purposeful life depends on learning about (and solving) the problems you care about most", false],
             ["Solve (4 hrs)", [
               "I spend most of the day solving knowledge organization problems for myself and others; exercising my ",
               <WikiLink key="int" href="/identity#intellect">intelligence</WikiLink>,
