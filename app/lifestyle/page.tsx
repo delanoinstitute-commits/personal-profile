@@ -27,7 +27,7 @@ const ACTIVITY: StatTableData = {
           metrics: [
             ["", "Knowledge and wealth mastery depends on solving meaningful problems in an informed way", false],
             ["Solve (4 hrs)", [
-              "I spend most of the day solving knowledge organisation problems for myself and others; exercising my ",
+              "I spend most of the day solving knowledge organization problems for myself and others; exercising my ",
               <WikiLink key="int" href="/identity#intellect">intelligence</WikiLink>,
               " and ",
               <WikiLink key="skl" href="/knowledge#skills">skills</WikiLink>,
@@ -48,7 +48,7 @@ const ACTIVITY: StatTableData = {
           category: "Physiologic (stress balance)",
           metrics: [
             ["", "Health mastery depends on well-timed cycles of strategic overload and recovery", false],
-            ["Train (2 hrs)", [
+            ["Train (1 hr)", [
               "Breaking to train at the same hour each day sharpens the work; improving functional ",
               <WikiLink key="itg" href="/health#integrity">integrity</WikiLink>,
               " against 12 universal ",
@@ -88,7 +88,7 @@ const ACTIVITY: StatTableData = {
           category: "Collaborative (professional service)",
           metrics: [
             ["", "Wealth mastery depends on serving people directly and coordinating resources at a distance", false],
-            ["Serve (1 hr)", [
+            ["Serve (2 hrs)", [
               "I run corporate apprenticeships and private live-in interventions under my own name; putting hard-won ",
               <WikiLink key="skl2" href="/knowledge#skills">skills</WikiLink>,
               " to work on other people\u2019s problems",
