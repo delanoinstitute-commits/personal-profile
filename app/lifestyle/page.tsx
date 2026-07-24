@@ -24,7 +24,7 @@ const ACTIVITY: StatTableData = {
         {
           category: "Creative (problem solving)",
           metrics: [
-            ["", "Solving the problems you care most about in an informed way is purpose and security enough", false],
+            ["", "Knowledge and wealth mastery depends on solving meaningful problems in an informed way", false],
             ["Solve", [
               "I spend most of the day solving knowledge organisation problems for myself and others; exercising my ",
               <WikiLink key="int" href="/identity#intellect">intelligence</WikiLink>,
@@ -35,8 +35,10 @@ const ACTIVITY: StatTableData = {
               " of enduring value",
             ], true, "Active · 4 hrs/day. Working meaningful problems, personal or professional, on my own."],
             ["Learn", [
-              "If I’m not working, exercising, or sleeping, you’ll find me studying; filling the many ",
+              "If I’m not asleep, working, or exercising, you’ll find me studying; filling the many ",
               <WikiLink key="edu" href="/knowledge#education">education</WikiLink>,
+              " and ",
+              <WikiLink key="wvw" href="/identity#intellect">worldview</WikiLink>,
               " gaps necessary for progress",
             ], true, "Passive · 1 hr/day. Studying, reflecting on, or writing something meaningful."],
           ],
