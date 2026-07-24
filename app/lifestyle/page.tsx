@@ -65,8 +65,16 @@ const ACTIVITY: StatTableData = {
           category: "Personal (self care)",
           metrics: [
             ["", "Sustained mastery depends on keeping my affairs in order and my attention unclaimed", false],
-            ["Maintain", "Weekly rotas for hygiene, treatments, home, and admin; the small upkeep that stops neglect compounding into expensive problems", true, "Active · 1 hr/day. Hygiene, treatments, finances, home, and the admin that keeps them running."],
-            ["Entertain", "An undirected hour before sleep — news, books, or games; the one hour of the day I ask nothing of myself", true, "Passive · 1 hr/day. Games, books, or media — time with nothing asked of it."],
+            ["Maintain", [
+              "Daily hygiene and ad-hoc (body, home, relationship, legal, and financial) maintenance-service management; balancing personal care with ",
+              <WikiLink key="lfs" href="/lifestyle">lifestyle</WikiLink>,
+              " efficiency",
+            ], true, "Active · 1 hr/day. Hygiene, treatments, finances, home, and the admin that keeps them running."],
+            ["Entertain", [
+              "I set aside an hour each evening to escape reality with a good show or indulge its extremes on YouTube; taking on others’ ",
+              <WikiLink key="wvw2" href="/identity#intellect">worldviews</WikiLink>,
+              " to expand and own my own",
+            ], true, "Passive · 1 hr/day. Games, books, or media — time with nothing asked of it."],
           ],
         },
       ],
