@@ -64,9 +64,9 @@ const ACTIVITY: StatTableData = {
         {
           category: "Personal (self care)",
           metrics: [
-            ["", "Maintenance and leisure in equal measure — the upkeep that prevents decline, the idleness that restores", false],
-            ["Maintain", "I keep hygiene, treatments, home, and admin on a fixed weekly rota", true, "Active · 1 hr/day. Hygiene, treatments, finances, home, and the admin that keeps them running."],
-            ["Entertain", "I take an undirected hour — news, books, or games — before sleep", true, "Passive · 1 hr/day. Games, books, or media — time with nothing asked of it."],
+            ["", "Sustained mastery depends on keeping my affairs in order and my attention unclaimed", false],
+            ["Maintain", "Weekly rotas for hygiene, treatments, home, and admin; the small upkeep that stops neglect compounding into expensive problems", true, "Active · 1 hr/day. Hygiene, treatments, finances, home, and the admin that keeps them running."],
+            ["Entertain", "An undirected hour before sleep — news, books, or games; the one hour of the day I ask nothing of myself", true, "Passive · 1 hr/day. Games, books, or media — time with nothing asked of it."],
           ],
         },
       ],
@@ -78,25 +78,37 @@ const ACTIVITY: StatTableData = {
         {
           category: "Collaborative (professional service)",
           metrics: [
-            ["", "Working directly alongside people, then coordinating them at a distance — presence, then leverage", false],
-            ["Serve", "I run corporate apprenticeships and private live-in interventions under my own name", true, "Active · 1 hr/day. Formally helping others — clients, colleagues, family, or friends."],
-            ["Manage", "I direct people and capital, including a registered real-estate company", true, "Passive · 1 hr/day. Directing resources, human and financial."],
+            ["", "Wealth mastery depends on serving people directly and coordinating resources at a distance", false],
+            ["Serve", [
+              "I run corporate apprenticeships and private live-in interventions under my own name; putting hard-won ",
+              <WikiLink key="skl2" href="/knowledge#skills">skills</WikiLink>,
+              " to work on other people’s problems",
+            ], true, "Active · 1 hr/day. Formally helping others — clients, colleagues, family, or friends."],
+            ["Manage", [
+              "I direct people and capital, including a registered real-estate company; the passive half that compounds ",
+              <WikiLink key="wlt" href="/wealth">wealth</WikiLink>,
+              " while my attention is elsewhere",
+            ], true, "Passive · 1 hr/day. Directing resources, human and financial."],
           ],
         },
         {
           category: "Metabolic (energy balance)",
           metrics: [
-            ["", "Catabolic against anabolic: what I burn moving, set against what I take in to rebuild", false],
-            ["Eat", "I eat primal-Mediterranean: three unprocessed meals, low carbohydrate, three coffees", true, "Passive · 2 hrs/day. Meals, preparation included."],
-            ["Walk", "I walk seven thousand steps daily, mostly late afternoon and evening", true, "Active · 1 hr/day. Daily walking, counted separately from training."],
+            ["", "Health follows the daily balance between the energy I take in and the energy I spend", false],
+            ["Eat", [
+              "Primal-Mediterranean — three unprocessed meals, low carbohydrate, three coffees; the anabolic input my body ",
+              <WikiLink key="cmp" href="/health#integrity">composition</WikiLink>,
+              " is built from",
+            ], true, "Passive · 2 hrs/day. Meals, preparation included."],
+            ["Walk", "Seven thousand steps daily, mostly late afternoon and evening; the catabolic base that costs little and underwrites everything", true, "Active · 1 hr/day. Daily walking, counted separately from training."],
           ],
         },
         {
           category: "Social (shared experience)",
           metrics: [
-            ["", "Both leisure, both shared: unstructured company on one side, structured play on the other", false],
-            ["Connect", "I give an unhurried hour to family and a few close friends", true, "Passive · 1 hr/day. Quality time with someone close to me."],
-            ["Play", "I keep Sunday afternoons for structured play — sport, games, or travel", true, "Active · 1 hr/day. Structured play — sports, games, events, or travel."],
+            ["", "Emotional balance depends on hours that are shared and ask nothing in return", false],
+            ["Connect", "An unhurried hour with family and a few close friends; the relationships that outlast every project on this site", true, "Passive · 1 hr/day. Quality time with someone close to me."],
+            ["Play", "Sundays kept for structured play — sport, games, or travel; the only habit I keep with no productive justification", true, "Active · 1 hr/day. Structured play — sports, games, events, or travel."],
           ],
         },
       ],
