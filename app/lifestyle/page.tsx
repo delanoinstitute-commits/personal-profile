@@ -46,16 +46,18 @@ const ACTIVITY: StatTableData = {
         {
           category: "Physiologic (stress balance)",
           metrics: [
-            ["", "Health mastery depends on overload and recovery, cycled on rhythm and dosed to force growth", false],
+            ["", "Health mastery depends on well-timed cycles of strategic overload and recovery", false],
             ["Train", [
-              "Breaking to train at the same hour each day sharpens the work; the load builds ",
-              <WikiLink key="cap" href="/health#capacity">capacity</WikiLink>,
-              " rather than merely preserving ",
+              "Breaking to train at the same hour each day sharpens the work; improving functional ",
               <WikiLink key="itg" href="/health#integrity">integrity</WikiLink>,
+              " against 12 universal ",
+              <WikiLink key="prf" href="/health#capacity">performance</WikiLink>,
+              " benchmarks",
             ], true, "Active · 2 hrs/day. Mobility, stability, strength, speed, or endurance work."],
             ["Sleep", [
-              "Eight hours at the same time each night makes the other eleven habits possible; it consolidates what I learned and restores my ",
+              "Eight hours at the same time each night makes the other eleven habits possible; consolidating learnings from yesterday while restoring ",
               <WikiLink key="bal" href="/health#balance">balance</WikiLink>,
+              " for tomorrow",
             ], true, "Passive · 8 hrs/day. The primary recovery block, and the single largest claim on the day."],
           ],
         },
