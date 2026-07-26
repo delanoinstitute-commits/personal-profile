@@ -25,9 +25,9 @@ const ACTIVITY: StatTableData = {
         {
           category: "Creative (problem solving)",
           metrics: [
-            ["", "A purposeful life depends on learning about and attempting to solve meaningful problems", false],
-            ["Solve (4 hrs)", [
-              "I spend most of the day solving knowledge organization problems for myself and others; exercising my ",
+            ["", "Personal mastery depends on educating yourself to solve the most meaningful problems", false],
+            ["Work (4 hrs)", [
+              "I spend most of the day solving knowledge organization problems for myself and others — exercising my ",
               <WikiLink key="int" href="/identity#intellect">intelligence</WikiLink>,
               " and ",
               <WikiLink key="skl" href="/knowledge#skills">skills</WikiLink>,
@@ -35,11 +35,11 @@ const ACTIVITY: StatTableData = {
               <WikiLink key="wrk" href="/knowledge#works">works</WikiLink>,
               " of enduring value",
             ], true],
-            ["Learn (1 hr)", [
-              "If I\u2019m not asleep, working, or exercising, you\u2019ll find me studying; filling the many ",
+            ["Educate (1 hr)", [
+              "If I’m not asleep, working, or exercising, you’ll find me studying — filling the many ",
               <WikiLink key="edu" href="/knowledge#education">education</WikiLink>,
               " and ",
-              <WikiLink key="wvw" href="/identity#intellect">worldview</WikiLink>,
+              <WikiLink key="per" href="/identity#intellect">perspectival</WikiLink>,
               " gaps necessary for progress",
             ], true],
           ],
@@ -47,16 +47,15 @@ const ACTIVITY: StatTableData = {
         {
           category: "Physiologic (stress balance)",
           metrics: [
-            ["", "Health mastery depends on well-timed cycles of strategic overload and recovery", false],
-            ["Train (1 hr)", [
-              "Breaking to train at the same hour each day sharpens the work; improving functional ",
+            ["", "Health mastery requires a delicate balance of timely cycles of overload and recovery", false],
+            ["Exercise (1 hr)", [
+              "Breaking for exercise at the same time each day boosts productivity and guarantees progress — preserving functional ",
               <WikiLink key="itg" href="/health#integrity">integrity</WikiLink>,
-              " against 12 universal ",
+              " through improved ",
               <WikiLink key="prf" href="/health#capacity">performance</WikiLink>,
-              " benchmarks",
             ], true],
             ["Sleep (8 hrs)", [
-              "Eight hours at the same time each night makes the other eleven habits possible; consolidating learnings from yesterday while restoring ",
+              "Getting enough deep sleep at the same time each night makes the other habits possible — consolidating learnings from yesterday while restoring ",
               <WikiLink key="bal" href="/health#balance">balance</WikiLink>,
               " for tomorrow",
             ], true],
@@ -67,13 +66,13 @@ const ACTIVITY: StatTableData = {
           metrics: [
             ["", "Sustained mastery depends on keeping my affairs in order and my attention unclaimed", false],
             ["Maintain (1 hr)", [
-              "Daily hygiene and ad-hoc (body, home, relationship, legal, and financial) maintenance-service management; balancing personal care with ",
+              "Daily hygiene and ad-hoc (body, home, relationship, legal, and financial) maintenance-service management — balancing personal care with ",
               <WikiLink key="lfs" href="/lifestyle">lifestyle</WikiLink>,
               " efficiency",
             ], true],
             ["Entertain (1 hr)", [
-              "I set aside an hour each evening to escape reality with a good show or indulge its extremes on YouTube; taking on others\u2019 ",
-              <WikiLink key="wvw2" href="/identity#intellect">worldviews</WikiLink>,
+              "I set aside an hour each evening to escape reality with a good show or indulge its extremes on YouTube — taking on others’ ",
+              <WikiLink key="per2" href="/identity#intellect">perspective</WikiLink>,
               " to own and expand my own",
             ], true],
           ],
@@ -89,35 +88,47 @@ const ACTIVITY: StatTableData = {
           metrics: [
             ["", "Wealth mastery depends on serving people directly and coordinating resources at a distance", false],
             ["Serve (2 hrs)", [
-              "I run corporate apprenticeships and private live-in interventions under my own name; putting hard-won ",
-              <WikiLink key="skl2" href="/knowledge#skills">skills</WikiLink>,
-              " to work on other people\u2019s problems",
+              "Whether as employee, contractor, or coach, I set aside 10 hours weekly for client-facing activities — delivering the ",
+              <WikiLink key="tec" href="/knowledge#skills">technical</WikiLink>,
+              ", ",
+              <WikiLink key="ped" href="/knowledge#skills">pedagogical</WikiLink>,
+              ", or ",
+              <WikiLink key="dir" href="/knowledge#skills">directorial</WikiLink>,
+              " solutions they need most",
             ], true],
             ["Manage (1 hr)", [
-              "I direct people and capital, including a registered real-estate company; the passive half that compounds ",
+              "Coordinating others to help us manage our responsibilities in one form or another is unavoidable; learning to do it well compounds our network- and ",
               <WikiLink key="wlt" href="/wealth">wealth</WikiLink>,
-              " while my attention is elsewhere",
+              "-building efforts",
             ], true],
           ],
         },
         {
           category: "Metabolic (energy balance)",
           metrics: [
-            ["", "Health follows the daily balance between the energy I take in and the energy I spend", false],
-            ["Eat (2 hrs)", [
-              "Primal-Mediterranean \u2014 three unprocessed meals, low carbohydrate, three coffees; the anabolic input my body ",
-              <WikiLink key="cmp" href="/health#integrity">composition</WikiLink>,
-              " is built from",
+            ["", "Health mastery depends on sustaining socially supported, energy-balancing foundations", false],
+            ["Walk (1 hr)", [
+              "I walk twice daily — to the shops in the afternoon before exercising, and in the evening after dinner while studying — ",
+              <WikiLink key="bal2" href="/health#balance">balancing</WikiLink>,
+              " a PAL target of 1.7 times my BMR",
             ], true],
-            ["Walk (1 hr)", "Seven thousand steps daily, mostly late afternoon and evening; the catabolic base that costs little and underwrites everything", true],
+            ["Eat (2 hrs)", [
+              "I eat 2800 kcal within a 9-hour window each day — breakfast at 11 (eggs and fruit), lunch at 4 (yogurt mix), and dinner at 8 (meat and veg) — maintaining ideal ",
+              <WikiLink key="cmp" href="/health#integrity">composition</WikiLink>,
+              " scores effortlessly",
+            ], true],
           ],
         },
         {
           category: "Social (shared experience)",
           metrics: [
-            ["", "Emotional balance depends on hours that are shared and ask nothing in return", false],
-            ["Connect (1 hr)", "An unhurried hour with family and a few close friends; the relationships that outlast every project on this site", true],
-            ["Play (1 hr)", "Sundays kept for structured play \u2014 sport, games, or travel; the only habit I keep with no productive justification", true],
+            ["", "Personal mastery is balancing the emotional highs and lows without letting them undermine your health", false],
+            ["Play (1 hr)", [
+              "While I love going to the theater or playing board or TV games, I enjoy engaging in physical ",
+              <WikiLink key="chl" href="/health#capacity">challenges</WikiLink>,
+              " with others the most — practicing gymnastics or playing squash with friends",
+            ], true],
+            ["Connect (1 hr)", "The days I serve clients or share the road or a meal with loved ones are by far the most rewarding — a continued source of joy and growth", true],
           ],
         },
       ],
