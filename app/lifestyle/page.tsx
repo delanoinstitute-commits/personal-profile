@@ -224,24 +224,32 @@ const TIME: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Morning",
+          category: "Morning (creative essentials)",
           metrics: [
-            ["", "How the first block of the day is scheduled — pending", false],
-            ["Blocks", "—", true, "The activities fixed to the morning, and their hours."],
+            ["", "The freshest hours are reserved for recovery and the deepest solo work", false],
+            ["00:00–07:30", "Sleep (7–8 hrs) — solo health maintenance", true],
+            ["08:00–11:00", "Work (3 hrs) — personal knowledge/wealth growth", true],
+            ["11:00–12:00", "Eat (1 hr) — solo or social health maintenance", true],
           ],
         },
         {
-          category: "Afternoon",
+          category: "Afternoon (active duty)",
           metrics: [
-            ["", "How the middle block of the day is scheduled — pending", false],
-            ["Blocks", "—", true, "The activities fixed to the afternoon, and their hours."],
+            ["", "The body and other people get the middle of the day", false],
+            ["12:00–14:00", "Work / Serve (2 hrs) — solo or social knowledge/wealth growth", true],
+            ["14:00–14:30", "Walk (0.5 hrs) — solo or social emotional/personal maintenance", true],
+            ["14:30–16:00", "Exercise (1.5 hrs) — solo health development", true],
+            ["16:00–17:00", "Eat + Educate (1 hr) — solo health maintenance + knowledge growth", true],
           ],
         },
         {
-          category: "Evening",
+          category: "Evening (loose ends)",
           metrics: [
-            ["", "How the last block of the day is scheduled — pending", false],
-            ["Blocks", "—", true, "The activities fixed to the evening, and their hours."],
+            ["", "Whatever the day left undone, then food, company, and switching off", false],
+            ["17:00–19:00", "Work / Serve (2 hrs) — solo or social knowledge/wealth growth", true],
+            ["19:00–21:00", "Eat + Maintain (1–2 hrs) — solo or social personal maintenance", true],
+            ["21:00–22:00", "Walk + Educate (1 hr) — solo health maintenance + knowledge growth", true],
+            ["22:00–00:00", "Entertain / Connect (1–2 hrs) — solo / social leisure + growth", true],
           ],
         },
       ],
