@@ -25,7 +25,7 @@ const ACTIVITY: StatTableData = {
         {
           category: "Creative (problem solving)",
           metrics: [
-            ["", "Personal mastery depends on educating yourself to solve the most meaningful problems", false],
+            ["", "Knowledge depends on learning which problems matter, then solving them", false],
             ["Work (4 hrs)", [
               "I spend most of the day solving knowledge organization problems for myself and others — exercising my ",
               <WikiLink key="int" href="/identity#intellect">intelligence</WikiLink>,
@@ -47,9 +47,9 @@ const ACTIVITY: StatTableData = {
         {
           category: "Physiologic (stress balance)",
           metrics: [
-            ["", "Health mastery requires a delicate balance of timely cycles of overload and recovery", false],
+            ["", "Physical resilience depends on hard loading matched by full recovery", false],
             ["Exercise (1 hr)", [
-              "Breaking for exercise at the same time each day boosts productivity and guarantees progress — preserving functional ",
+              "Breaking for exercise at the same hour each day sharpens the work rather than stealing from it — preserving functional ",
               <WikiLink key="itg" href="/health#integrity">integrity</WikiLink>,
               " through improved ",
               <WikiLink key="prf" href="/health#capacity">performance</WikiLink>,
@@ -64,7 +64,7 @@ const ACTIVITY: StatTableData = {
         {
           category: "Personal (self care)",
           metrics: [
-            ["", "Sustained mastery depends on keeping my affairs in order and my attention unclaimed", false],
+            ["", "Peace of mind depends on keeping my affairs in order and my attention my own", false],
             ["Maintain (1 hr)", [
               "Daily hygiene and ad-hoc (body, home, relationship, legal, and financial) maintenance-service management — balancing personal care with ",
               <WikiLink key="lfs" href="/lifestyle">lifestyle</WikiLink>,
@@ -86,7 +86,7 @@ const ACTIVITY: StatTableData = {
         {
           category: "Collaborative (professional service)",
           metrics: [
-            ["", "Wealth mastery depends on serving people directly and coordinating resources at a distance", false],
+            ["", "Wealth depends on serving people directly and coordinating resources at a distance", false],
             ["Serve (2 hrs)", [
               "Whether as employee, contractor, or coach, I set aside 10 hours weekly for client-facing activities — delivering the ",
               <WikiLink key="tec" href="/knowledge#skills">technical</WikiLink>,
@@ -106,7 +106,7 @@ const ACTIVITY: StatTableData = {
         {
           category: "Metabolic (energy balance)",
           metrics: [
-            ["", "Health mastery depends on sustaining socially supported, energy-balancing foundations", false],
+            ["", "Physical vitality depends on balancing the energy I take in against what I spend", false],
             ["Walk (1 hr)", [
               "I walk twice daily — to the shops in the afternoon before exercising, and in the evening after dinner while studying — ",
               <WikiLink key="bal2" href="/health#balance">balancing</WikiLink>,
@@ -122,13 +122,13 @@ const ACTIVITY: StatTableData = {
         {
           category: "Social (shared experience)",
           metrics: [
-            ["", "Personal mastery is balancing the emotional highs and lows without letting them undermine your health", false],
+            ["", "Emotional balance depends on hours that are shared and ask nothing in return", false],
             ["Play (1 hr)", [
               "While I love going to the theater or playing board or TV games, I enjoy engaging in physical ",
               <WikiLink key="chl" href="/health#capacity">challenges</WikiLink>,
               " with others the most — practicing gymnastics or playing squash with friends",
             ], true],
-            ["Connect (1 hr)", "The days I serve clients or share the road or a meal with loved ones are by far the most rewarding — a continued source of joy and growth", true],
+            ["Connect (1 hr)", "The days I serve clients or share a walk or a meal with loved ones are by far the most rewarding — a continued source of joy and growth", true],
           ],
         },
       ],
