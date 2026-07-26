@@ -4,9 +4,6 @@ import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import WikiLink from "@/components/WikiLink";
 
-const ROUTINES =
-  "https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ";
-
 export const metadata: Metadata = { title: "Lifestyle" };
 
 // Life as designed, in three branches: Activity (what I do), Space (where I do
@@ -267,19 +264,19 @@ const TIME: StatTableData = {
           category: "Weekday (foundational events)",
           metrics: [
             ["", "The training split and standing commitments the daily blocks point to", false],
-            ["Monday (1)", ["Exercise (the ", <WikiLink key="mo1" href={ROUTINES}>balance</WikiLink>, " and ", <WikiLink key="mo2" href={ROUTINES}>row</WikiLink>, " tracks at home)"], true],
-            ["Tuesday (1)", ["Exercise (the ", <WikiLink key="tu1" href={ROUTINES}>push</WikiLink>, " and ", <WikiLink key="tu2" href={ROUTINES}>bridge</WikiLink>, " tracks at home)"], true],
-            ["Wednesday (2)", ["Exercise (the ", <WikiLink key="we1" href={ROUTINES}>run</WikiLink>, " complex outdoors); Maintain (periodic treatments or errands)"], true],
-            ["Thursday (1)", ["Exercise (the ", <WikiLink key="th1" href={ROUTINES}>pull</WikiLink>, " and ", <WikiLink key="th2" href={ROUTINES}>raise</WikiLink>, " tracks at home)"], true],
-            ["Friday (2)", ["Exercise (the ", <WikiLink key="fr1" href={ROUTINES}>bike</WikiLink>, " complex and the ", <WikiLink key="fr2" href={ROUTINES}>invert</WikiLink>, " track / weightlifting ", <WikiLink key="fr3" href={ROUTINES}>press</WikiLink>, " complex at the gym); Play (movie/games night) / Connect (favorite restaurants)"], true],
+            ["Monday (1)", ["Exercise (the ", <WikiLink key="mo1" href="https://youtu.be/FHwTvBykfl4">balance</WikiLink>, " and ", <WikiLink key="mo2" href="https://youtu.be/RNMYSyHg1JA">row</WikiLink>, " tracks at home)"], true],
+            ["Tuesday (1)", ["Exercise (the ", <WikiLink key="tu1" href="https://youtu.be/gxA9UdonEnM">push</WikiLink>, " and ", <WikiLink key="tu2" href="https://youtu.be/H-2wS9maf0o">bridge</WikiLink>, " tracks at home)"], true],
+            ["Wednesday (2)", ["Exercise (the ", <WikiLink key="we1" href="https://youtu.be/udrP_TOv0Fk">run</WikiLink>, " complex outdoors); Maintain (periodic treatments or errands)"], true],
+            ["Thursday (1)", ["Exercise (the ", <WikiLink key="th1" href="https://youtu.be/ECIMGIvqy2I">pull</WikiLink>, " and ", <WikiLink key="th2" href="https://youtu.be/xVKidipXY4Q">raise</WikiLink>, " tracks at home)"], true],
+            ["Friday (2)", ["Exercise (the ", <WikiLink key="fr1" href="https://youtu.be/0mBmF0ZTY9o">bike</WikiLink>, " complex and the ", <WikiLink key="fr2" href="https://youtu.be/YCTUivuaFvw">invert</WikiLink>, " track / weightlifting ", <WikiLink key="fr3" href="https://youtu.be/ubKcK5PwUUI">press</WikiLink>, " complex at the gym); Play (movie/games night) / Connect (favorite restaurants)"], true],
           ],
         },
         {
           category: "Weekend (elective ventures)",
           metrics: [
             ["", "Where variety, people, and next-week preparation get their room", false],
-            ["Saturday (2)", ["Exercise (the ", <WikiLink key="sa1" href={ROUTINES}>shift</WikiLink>, " and ", <WikiLink key="sa2" href={ROUTINES}>lean</WikiLink>, " tracks); Connect (new shared experiences)"], true],
-            ["Sunday (2)", ["Play (squash / the ", <WikiLink key="su1" href={ROUTINES}>dip</WikiLink>, " track / ", <WikiLink key="su2" href={ROUTINES}>row</WikiLink>, " complex with friends); Maintain (preparatory administration)"], true],
+            ["Saturday (2)", ["Exercise (the ", <WikiLink key="sa1" href="https://youtu.be/QUCWNiijp0I">shift</WikiLink>, " and ", <WikiLink key="sa2" href="https://youtu.be/lpk_IIwmZAk">lean</WikiLink>, " tracks); Connect (new shared experiences)"], true],
+            ["Sunday (2)", ["Play (squash / the ", <WikiLink key="su1" href="https://youtu.be/4pO8TvBPIZU">dip</WikiLink>, " track / ", <WikiLink key="su2" href="https://youtu.be/1-0EDBQK9WA">row</WikiLink>, " complex with friends); Maintain (preparatory administration)"], true],
           ],
         },
       ],
