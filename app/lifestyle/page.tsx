@@ -227,7 +227,7 @@ const TIME: StatTableData = {
         {
           category: "Morning (creative essentials)",
           metrics: [
-            ["", "Peak focus goes to what only I can do — sleep, deep work, first fuel", false],
+            ["", "The freshest hours are reserved for recovery and the deepest solo work", false],
             ["23:30–07:30", "Sleep (8 hrs) — deep restoration alone at home", true],
             ["07:30–08:00", "Maintain (0.5 hr) — morning hygiene, coffee, and a few stretches", true],
             ["08:00–11:00", "Work (3 hrs) — uninterruptible deep work on personal or hired problems", true],
@@ -238,7 +238,7 @@ const TIME: StatTableData = {
           category: "Afternoon (active duty)",
           metrics: [
             ["", "Energy at its highest is spent on the body and on other people", false],
-            ["12:00–14:00", "Work / Serve (2 hrs) — solo design or client-facing delivery (see weekly schedule)", true],
+            ["12:00–14:00", "Work / Serve (2 hrs) — solo design or client-facing delivery", true],
             ["14:00–15:00", "Walk + Maintain / Manage (1 hr) — walking errands, quick admin, and phone calls", true],
             ["15:00–16:00", "Exercise (1 hr) — total-body MSP workout of the day (see weekly schedule)", true],
             ["16:00–17:00", "Eat + Educate (1 hr) — post-workout yogurt mix with pressing studies of the day", true],
@@ -268,7 +268,7 @@ const TIME: StatTableData = {
             ["Tuesday (1)", ["Exercise (the ", <WikiLink key="tu1" href="https://youtu.be/gxA9UdonEnM">push</WikiLink>, " and ", <WikiLink key="tu2" href="https://youtu.be/H-2wS9maf0o">bridge</WikiLink>, " tracks at home)"], true],
             ["Wednesday (2)", ["Exercise (the ", <WikiLink key="we1" href="https://youtu.be/udrP_TOv0Fk">run</WikiLink>, " complex outdoors); Maintain (periodic treatments or errands)"], true],
             ["Thursday (1)", ["Exercise (the ", <WikiLink key="th1" href="https://youtu.be/ECIMGIvqy2I">pull</WikiLink>, " and ", <WikiLink key="th2" href="https://youtu.be/xVKidipXY4Q">raise</WikiLink>, " tracks at home)"], true],
-            ["Friday (2)", ["Exercise (the ", <WikiLink key="fr1" href="https://youtu.be/0mBmF0ZTY9o">bike</WikiLink>, " complex and the ", <WikiLink key="fr2" href="https://youtu.be/YCTUivuaFvw">invert</WikiLink>, " track / weightlifting ", <WikiLink key="fr3" href="https://youtu.be/ubKcK5PwUUI">press</WikiLink>, " complex at the gym); Play (movie/games night) / Connect (favorite restaurants)"], true],
+            ["Friday (2)", ["Exercise (the ", <WikiLink key="fr1" href="https://youtu.be/0mBmF0ZTY9o">cycle</WikiLink>, " complex and the ", <WikiLink key="fr2" href="https://youtu.be/YCTUivuaFvw">invert</WikiLink>, " track or weightlifting ", <WikiLink key="fr3" href="https://youtu.be/ubKcK5PwUUI">press</WikiLink>, " complex at the gym); Play (movie/games night) / Connect (favorite restaurants)"], true],
           ],
         },
         {
@@ -276,7 +276,7 @@ const TIME: StatTableData = {
           metrics: [
             ["", "Where variety, people, and next-week preparation get their room", false],
             ["Saturday (2)", ["Exercise (the ", <WikiLink key="sa1" href="https://youtu.be/QUCWNiijp0I">shift</WikiLink>, " and ", <WikiLink key="sa2" href="https://youtu.be/lpk_IIwmZAk">lean</WikiLink>, " tracks); Connect (new shared experiences)"], true],
-            ["Sunday (2)", ["Play (squash / the ", <WikiLink key="su1" href="https://youtu.be/4pO8TvBPIZU">dip</WikiLink>, " track / ", <WikiLink key="su2" href="https://youtu.be/1-0EDBQK9WA">row</WikiLink>, " complex with friends); Maintain (preparatory administration)"], true],
+            ["Sunday (2)", ["Play (squash, the ", <WikiLink key="su1" href="https://youtu.be/4pO8TvBPIZU">dip</WikiLink>, " track, or the ", <WikiLink key="su2" href="https://youtu.be/1-0EDBQK9WA">row</WikiLink>, " complex with friends); Maintain (p/review of the week)"], true],
           ],
         },
       ],
