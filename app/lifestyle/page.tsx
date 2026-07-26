@@ -4,6 +4,9 @@ import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import WikiLink from "@/components/WikiLink";
 
+const ROUTINES =
+  "https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ";
+
 export const metadata: Metadata = { title: "Lifestyle" };
 
 // Life as designed, in three branches: Activity (what I do), Space (where I do
@@ -241,7 +244,7 @@ const TIME: StatTableData = {
             ["12:00–14:00", "Work / Serve (2 hrs) — solo design or client-facing delivery (see weekly schedule)", true],
             ["14:00–15:00", "Walk + Maintain / Manage (1 hr) — walking errands, quick admin, and phone calls", true],
             ["15:00–16:00", "Exercise (1 hr) — total-body MSP workout of the day (see weekly schedule)", true],
-            ["16:00–17:00", "Eat + Educate (1 hr) — post-workout yogurt mix with exigent studies of the day", true],
+            ["16:00–17:00", "Eat + Educate (1 hr) — post-workout yogurt mix with pressing studies of the day", true],
           ],
         },
         {
@@ -261,22 +264,22 @@ const TIME: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Weekday",
+          category: "Weekday (foundational events)",
           metrics: [
-            ["", "Which workout and which client work fall on each day — pending", false],
-            ["Monday", "—", true],
-            ["Tuesday", "—", true],
-            ["Wednesday", "—", true],
-            ["Thursday", "—", true],
-            ["Friday", "—", true],
+            ["", "The training split and standing commitments the daily blocks point to", false],
+            ["Monday (1)", ["Exercise (the ", <WikiLink key="mo1" href={ROUTINES}>balance</WikiLink>, " and ", <WikiLink key="mo2" href={ROUTINES}>row</WikiLink>, " tracks at home)"], true],
+            ["Tuesday (1)", ["Exercise (the ", <WikiLink key="tu1" href={ROUTINES}>push</WikiLink>, " and ", <WikiLink key="tu2" href={ROUTINES}>bridge</WikiLink>, " tracks at home)"], true],
+            ["Wednesday (2)", ["Exercise (the ", <WikiLink key="we1" href={ROUTINES}>run</WikiLink>, " complex outdoors); Maintain (periodic treatments or errands)"], true],
+            ["Thursday (1)", ["Exercise (the ", <WikiLink key="th1" href={ROUTINES}>pull</WikiLink>, " and ", <WikiLink key="th2" href={ROUTINES}>raise</WikiLink>, " tracks at home)"], true],
+            ["Friday (2)", ["Exercise (the ", <WikiLink key="fr1" href={ROUTINES}>bike</WikiLink>, " complex and the ", <WikiLink key="fr2" href={ROUTINES}>invert</WikiLink>, " track / weightlifting ", <WikiLink key="fr3" href={ROUTINES}>press</WikiLink>, " complex at the gym); Play (movie/games night) / Connect (favorite restaurants)"], true],
           ],
         },
         {
-          category: "Weekend",
+          category: "Weekend (elective ventures)",
           metrics: [
-            ["", "The shape of the two rest days — pending", false],
-            ["Saturday", "—", true],
-            ["Sunday", "—", true],
+            ["", "Where variety, people, and next-week preparation get their room", false],
+            ["Saturday (2)", ["Exercise (the ", <WikiLink key="sa1" href={ROUTINES}>shift</WikiLink>, " and ", <WikiLink key="sa2" href={ROUTINES}>lean</WikiLink>, " tracks); Connect (new shared experiences)"], true],
+            ["Sunday (2)", ["Play (squash / the ", <WikiLink key="su1" href={ROUTINES}>dip</WikiLink>, " track / ", <WikiLink key="su2" href={ROUTINES}>row</WikiLink>, " complex with friends); Maintain (preparatory administration)"], true],
           ],
         },
       ],
