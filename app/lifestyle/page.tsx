@@ -13,7 +13,8 @@ export const metadata: Metadata = { title: "Lifestyle" };
 // run through it at once: each category pairs an active habit with a passive one;
 // each habit is growth, maintenance, or leisure; and the personal categories
 // mirror the relational ones (creative/collaborative, physiologic/metabolic,
-// personal/social). Definitions are pending. Space and Time are scaffolded.
+// personal/social). Definitions are pending. Time's daily schedule is filled;
+// its weekly one and the whole Space branch are scaffolded.
 
 const ACTIVITY: StatTableData = {
   title: "Activity",
@@ -220,56 +221,62 @@ const TIME: StatTableData = {
   title: "Time",
   groups: [
     {
-      domain: "Daily",
+      domain: "Perfect Days",
       label: "",
       rows: [
         {
           category: "Morning (creative essentials)",
           metrics: [
-            ["", "The freshest hours are reserved for recovery and the deepest solo work", false],
-            ["00:00–07:30", "Sleep (7–8 hrs) — solo health maintenance", true],
-            ["08:00–11:00", "Work (3 hrs) — personal knowledge/wealth growth", true],
-            ["11:00–12:00", "Eat (1 hr) — solo or social health maintenance", true],
+            ["", "Peak focus goes to what only I can do — sleep, deep work, first fuel", false],
+            ["23:30–07:30", "Sleep (8 hrs) — deep restoration alone at home", true],
+            ["07:30–08:00", "Maintain (0.5 hr) — morning hygiene, coffee, and a few stretches", true],
+            ["08:00–11:00", "Work (3 hrs) — uninterruptible deep work on personal or hired problems", true],
+            ["11:00–12:00", "Eat (1 hr) — eggs and fruit alone at home", true],
           ],
         },
         {
           category: "Afternoon (active duty)",
           metrics: [
-            ["", "The body and other people get the middle of the day", false],
-            ["12:00–14:00", "Work / Serve (2 hrs) — solo or social knowledge/wealth growth", true],
-            ["14:00–14:30", "Walk (0.5 hrs) — solo or social emotional/personal maintenance", true],
-            ["14:30–16:00", "Exercise (1.5 hrs) — solo health development", true],
-            ["16:00–17:00", "Eat + Educate (1 hr) — solo health maintenance + knowledge growth", true],
+            ["", "Energy at its highest is spent on the body and on other people", false],
+            ["12:00–14:00", "Work / Serve (2 hrs) — solo design or client-facing delivery (see weekly schedule)", true],
+            ["14:00–15:00", "Walk + Maintain / Manage (1 hr) — walking errands, quick admin, and phone calls", true],
+            ["15:00–16:00", "Exercise (1 hr) — total-body MSP workout of the day (see weekly schedule)", true],
+            ["16:00–17:00", "Eat + Educate (1 hr) — post-workout yogurt mix with exigent studies of the day", true],
           ],
         },
         {
           category: "Evening (loose ends)",
           metrics: [
-            ["", "Whatever the day left undone, then food, company, and switching off", false],
-            ["17:00–19:00", "Work / Serve (2 hrs) — solo or social knowledge/wealth growth", true],
-            ["19:00–21:00", "Eat + Maintain (1–2 hrs) — solo or social personal maintenance", true],
-            ["21:00–22:00", "Walk + Educate (1 hr) — solo health maintenance + knowledge growth", true],
-            ["22:00–00:00", "Entertain / Connect (1–2 hrs) — solo / social leisure + growth", true],
+            ["", "The flexible hours: finish what’s open, then eat, connect, and switch off", false],
+            ["17:00–19:00", "Work / Serve (2 hrs) — solo design or client delivery loose ends", true],
+            ["19:00–21:00", "Maintain + Eat (1–2 hrs) — solo or social sauna, evening hygiene, and dinner", true],
+            ["21:00–22:00", "Walk + Educate (1 hr) — treadmill walking with the science lecture of the day", true],
+            ["22:00–23:30", "Entertain / Connect (1–2 hrs) — social series or solo YouTube updates", true],
           ],
         },
       ],
     },
     {
-      domain: "Weekly",
+      domain: "Ideal Weeks",
       label: "",
       rows: [
         {
           category: "Weekday",
           metrics: [
-            ["", "What recurs Monday to Friday — pending", false],
-            ["Blocks", "—", true, "The activities fixed to particular weekdays."],
+            ["", "Which workout and which client work fall on each day — pending", false],
+            ["Monday", "—", true],
+            ["Tuesday", "—", true],
+            ["Wednesday", "—", true],
+            ["Thursday", "—", true],
+            ["Friday", "—", true],
           ],
         },
         {
           category: "Weekend",
           metrics: [
-            ["", "What recurs Saturday and Sunday — pending", false],
-            ["Blocks", "—", true, "The activities fixed to the weekend."],
+            ["", "The shape of the two rest days — pending", false],
+            ["Saturday", "—", true],
+            ["Sunday", "—", true],
           ],
         },
       ],
