@@ -70,8 +70,8 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/lifestyle",
         sections: [
           { label: "Activity", anchor: "activity" },
-          { label: "Space", anchor: "space" },
           { label: "Time", anchor: "time" },
+          { label: "Space", anchor: "space" },
         ],
       },
     ],

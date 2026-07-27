@@ -153,6 +153,7 @@ const SPACE: StatTableData = {
         {
           category: "Residential (private)",
           metrics: [
+            ["", "The one space I fully control — and the first I rebuild in a new city", false],
             ["Infrastructure (6)", "Noise (neighbors; construction), light (exposure; views; curtains), air (windows; smokers; HVAC), water (washer), power (electric stovetop), and internet (routers)", true],
             ["Spaces (6)", "Bedroom (bed; storage), bathroom (vanity), kitchen (fridge; storage; bin; washer), dining room (desk and chair), living room (lounge and TV), and parking (bicycle; car)", true],
             ["Resources (3)", "Belongings (clothing; toiletries; everyday-carry), installations (water filter; stallbar; rings), and add-ons (kitchenware; air filter)", true],
@@ -162,6 +163,7 @@ const SPACE: StatTableData = {
         {
           category: "Commercial (market)",
           metrics: [
+            ["", "The private-sector amenities within reach — what I buy, use, and enjoy", false],
             ["Stores (5)", "Grocery (food; household), department (pharmacy; clothing; electronics; stationery), hardware, convenience, and bookstore", true],
             ["Facilities (5)", "Co-work, gyms, sports, wellness, and studios", true],
             ["Experiences (5)", "Coffee, market, restaurant, cinema, and theater", true],
@@ -171,6 +173,7 @@ const SPACE: StatTableData = {
         {
           category: "Public (civic)",
           metrics: [
+            ["", "The civic services I lean on — and the paperwork no move avoids", false],
             ["Transport (6)", "Rentals, rideshare, buses, metro, trains, and airports", true],
             ["Outdoor (5)", "Parks, running tracks, hiking trails, swimming, and beaches", true],
             ["Institutions (5)", "Hospitals, schools, police, libraries, and post office", true],
@@ -186,6 +189,7 @@ const SPACE: StatTableData = {
         {
           category: "Geography",
           metrics: [
+            ["", "The land, climate, and food supply of a place — the natural givens I’d move into", false],
             ["Weather/climate", "temp; wind", true],
             ["Agriculture", "—", true],
           ],
@@ -193,6 +197,7 @@ const SPACE: StatTableData = {
         {
           category: "Socioeconomics",
           metrics: [
+            ["", "The politics, economy, and culture around them — the human climate", false],
             ["Politics", "—", true],
             ["Economics", "—", true],
             ["Culture", "—", true],
@@ -273,19 +278,19 @@ const TIME: StatTableData = {
 export default function LifestylePage() {
   return (
     <>
-      <PageHeading title="Lifestyle" hatnote={<>Practice — how I allocate my activity, space, and time</>} />
+      <PageHeading title="Lifestyle" hatnote={<>Practice — how I allocate my activity, time, and space</>} />
 
       <p className="lead">
-        Lifestyle is one life read three ways: what I do (activity), where I do it
-        (space), and when I do it (time). Together they are the design I actually live
+        Lifestyle is one life read three ways: what I do (activity), when I do it
+        (time), and where I do it (space). Together they are the design I actually live
         by, rather than the one I would report.
       </p>
       <p>
         The twelve habits below account for a full twenty-four hours. That is the point
         of the taxonomy: it is a partition of the day, not a list of good intentions — if
         the hours don&rsquo;t sum, something is mis-stated. Each habit&rsquo;s daily
-        allocation sits in its definition; the schedule that places them is under time,
-        scaffolded here and filled in next.
+        allocation sits in its definition; the schedule that places them follows under
+        time, and where they happen under space.
       </p>
 
       <h2 id="activity">Activity <span className="heading-paren">(Habits)</span></h2>
@@ -298,6 +303,14 @@ export default function LifestylePage() {
       </p>
       <NestedTable {...ACTIVITY} />
 
+      <h2 id="time">Time <span className="heading-paren">(Routines)</span></h2>
+      <p>
+        When the habits happen, in two registers: the shape of a single day (daily) and
+        the shape of a week (weekly). Hours are fixed to blocks so the allocation above
+        survives contact with an actual calendar.
+      </p>
+      <NestedTable {...TIME} />
+
       <h2 id="space">Space <span className="heading-paren">(Resources)</span></h2>
       <p>
         Where the habits happen, at two scales. The micro scale is where I live, read
@@ -306,14 +319,6 @@ export default function LifestylePage() {
         climate, and economics — is the larger consideration, and is pending.
       </p>
       <NestedTable {...SPACE} />
-
-      <h2 id="time">Time <span className="heading-paren">(Routines)</span></h2>
-      <p>
-        When the habits happen, in two registers: the shape of a single day (daily) and
-        the shape of a week (weekly). Hours are fixed to blocks so the allocation above
-        survives contact with an actual calendar.
-      </p>
-      <NestedTable {...TIME} />
     </>
   );
 }
