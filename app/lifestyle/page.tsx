@@ -146,70 +146,138 @@ const SPACE: StatTableData = {
   title: "Space",
   groups: [
     {
-      domain: "Private",
-      label: "",
+      domain: "Residential",
+      label: "private",
       rows: [
         {
-          category: "Mobile (belongings)",
+          category: "Infrastructure (6)",
           metrics: [
-            ["", "What I carry with me — pending", false],
-            ["Clothing", "—", true, "The working wardrobe, and what it is chosen for."],
-            ["Technology", "—", true, "The devices the work actually runs on."],
-            ["Everyday carry", "—", true, "What leaves the house with me every day."],
+            ["Noise", "neighbors; construction", true],
+            ["Light", "exposure; views; curtains", true],
+            ["Air", "windows; smokers; HVAC", true],
+            ["Water", "washer", true],
+            ["Power", "electric stovetop", true],
+            ["Internet", "routers", true],
           ],
         },
         {
-          category: "Home (fixtures)",
+          category: "Spaces (6)",
           metrics: [
-            ["", "The rooms I live and work in — pending", false],
-            ["Bedroom", "—", true, "Where the eight hours of sleep are spent."],
-            ["Bathroom", "—", true, "Where the maintenance habits happen."],
-            ["Kitchen", "—", true, "Where the eating habit is supplied."],
-            ["Office", "—", true, "Where the solving and serving happen."],
-            ["Gym", "—", true, "Where the training happens."],
+            ["Bedroom", "bed; storage", true],
+            ["Bathroom", "vanity", true],
+            ["Kitchen", "fridge; storage; bin; washer", true],
+            ["Dining room", "desk and chair", true],
+            ["Living room", "lounge and TV", true],
+            ["Parking", "bicycle; car", true],
           ],
         },
         {
-          category: "Stored (resources)",
+          category: "Resources (3)",
           metrics: [
-            ["", "What is kept but not in daily use — pending", false],
-            ["Storage", "—", true, "Held resources: equipment, archives, and reserves."],
+            ["Belongings", "clothing, toiletries, everyday-carry", true],
+            ["Installations", "water filter; stallbar; rings", true],
+            ["Add-ons", "kitchenware, air filter", true],
+          ],
+        },
+        {
+          category: "Services (5)",
+          metrics: [
+            ["Security", "access", true],
+            ["Cleaning", "housekeeping; laundry", true],
+            ["Waste", "recycling", true],
+            ["Concierge", "delivery; room service", true],
+            ["Maintenance", "IT; plumbing; electrical", true],
+          ],
+        },
+      ],
+    },
+    {
+      domain: "Commercial",
+      label: "market",
+      rows: [
+        {
+          category: "Stores (5)",
+          metrics: [
+            ["Grocery", "food; household", true],
+            ["Department", "pharmacy; clothing; electronics; stationery", true],
+            ["Hardware", "tools; DIY", true],
+            ["Convenience", "essentials; late-night", true],
+            ["Bookstore", "books; supplies", true],
+          ],
+        },
+        {
+          category: "Facilities (5)",
+          metrics: [
+            ["Co-work", "desks; meeting rooms", true],
+            ["Gyms", "weights; classes", true],
+            ["Sports", "courts; fields", true],
+            ["Wellness", "spa; sauna", true],
+            ["Studios", "yoga; music", true],
+          ],
+        },
+        {
+          category: "Services (5)",
+          metrics: [
+            ["Beauty", "hair; skin; nails", true],
+            ["Medical", "dental; general", true],
+            ["Financial", "banking; insurance", true],
+            ["Postal", "shipping; printing", true],
+            ["Repairs", "device; tailoring", true],
+          ],
+        },
+        {
+          category: "Experiences (5)",
+          metrics: [
+            ["Coffee", "cafes", true],
+            ["Restaurant", "dining", true],
+            ["Market", "fresh; artisan", true],
+            ["Cinema", "film", true],
+            ["Theater", "stage", true],
           ],
         },
       ],
     },
     {
       domain: "Public",
-      label: "",
+      label: "civic",
       rows: [
         {
-          category: "Economical (private sector)",
+          category: "Transport (5)",
           metrics: [
-            ["", "The private amenities I actually use — pending", false],
-            ["Restaurants", "—", true, "Where meals happen outside the kitchen."],
-            ["Shops", "—", true, "Where supply comes from."],
-            ["Gyms", "—", true, "Training facilities beyond the home gym."],
-            ["Co-working", "—", true, "Workspaces outside the office."],
+            ["Rentals", "car; bike", true],
+            ["Rideshare", "taxi", true],
+            ["Buses", "routes", true],
+            ["Rail", "metro; trains", true],
+            ["Airports", "flights", true],
           ],
         },
         {
-          category: "Governmental (public sector)",
+          category: "Institutions (5)",
           metrics: [
-            ["", "The public provision I depend on — pending", false],
-            ["Healthcare", "—", true, "Hospitals and clinics within reach."],
-            ["Safety", "—", true, "Policing and personal security."],
-            ["Food supply", "—", true, "Agriculture and the food system upstream of the kitchen."],
+            ["Hospitals", "clinics; emergency", true],
+            ["Schools", "education", true],
+            ["Police", "law enforcement", true],
+            ["Libraries", "study", true],
+            ["Post office", "mail", true],
           ],
         },
         {
-          category: "Geographic (environmental)",
+          category: "Administration (5)",
           metrics: [
-            ["", "The measured conditions of where I live — pending", false],
-            ["Air quality", "—", true, "Particulate load in the air I breathe daily."],
-            ["Climate", "—", true, "Temperature, humidity, and daylight across the year."],
-            ["Landscape", "—", true, "Terrain, green space, and what it affords."],
-            ["Demographics", "—", true, "Density, age profile, and cost of living."],
-            ["Culture", "—", true, "The norms and language of the place."],
+            ["Home affairs", "identity; records", true],
+            ["Social security", "benefits", true],
+            ["Licensing", "driver’s license", true],
+            ["Tax", "registration", true],
+            ["Immigration", "visa", true],
+          ],
+        },
+        {
+          category: "Outdoor (4)",
+          metrics: [
+            ["Parks", "green space", true],
+            ["Running tracks", "paths", true],
+            ["Trails", "hiking", true],
+            ["Swimming", "pools; beaches", true],
           ],
         },
       ],
@@ -314,9 +382,10 @@ export default function LifestylePage() {
 
       <h2 id="space">Space <span className="heading-paren">(Resources)</span></h2>
       <p>
-        Where the habits happen, in two registers: what I own and control (private) and
-        what I draw on but share (public). The private half is an inventory; the public
-        half is measurable — air, climate, amenity, and cost.
+        Where the habits happen, at two scales. The micro scale is where I live, read
+        from my own four walls outward — residential, then the market and civic amenities
+        within reach; it doubles as a relocation checklist. The macro scale — geography,
+        climate, and economics — is the larger consideration, and is pending.
       </p>
       <NestedTable {...SPACE} />
 
