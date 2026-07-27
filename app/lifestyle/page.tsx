@@ -13,8 +13,9 @@ export const metadata: Metadata = { title: "Lifestyle" };
 // run through it at once: each category pairs an active habit with a passive one;
 // each habit is growth, maintenance, or leisure; and the personal categories
 // mirror the relational ones (creative/collaborative, physiologic/metabolic,
-// personal/social). Definitions are pending. Time's daily schedule is filled;
-// its weekly one and the whole Space branch are scaffolded.
+// personal/social). Definitions are pending. Space runs two scales — Living
+// (micro: residential, commercial, public) and Environment (macro: geography,
+// socioeconomics, still taking shape). Time is filled.
 
 const ACTIVITY: StatTableData = {
   title: "Activity",
@@ -146,138 +147,55 @@ const SPACE: StatTableData = {
   title: "Space",
   groups: [
     {
-      domain: "Residential",
-      label: "private",
+      domain: "Living",
+      label: "micro",
       rows: [
         {
-          category: "Infrastructure (6)",
+          category: "Residential (services)",
           metrics: [
-            ["Noise", "neighbors; construction", true],
-            ["Light", "exposure; views; curtains", true],
-            ["Air", "windows; smokers; HVAC", true],
-            ["Water", "washer", true],
-            ["Power", "electric stovetop", true],
-            ["Internet", "routers", true],
+            ["Infrastructure (6)", "Noise (neighbours; construction), light (exposure; views; curtains), air (windows; smokers; HVAC), water (washer), power (electric stovetop), and internet (routers)", true],
+            ["Spaces (6)", "Bedroom (bed; storage), bathroom (vanity), kitchen (fridge; storage; bin; washer), dining room (desk and chair), living room (lounge and TV), and parking (bicycle; car)", true],
+            ["Resources (3)", "Belongings (clothing, toiletries, everyday-carry), installations (water filter; stallbar; rings), and add-ons (kitchenware, air filter)", true],
+            ["Services (5)", "Security (access), cleaning (housekeeping; laundry), waste (recycling), concierge (delivery; room service), maintenance (IT; plumbing; electrical)", true],
           ],
         },
         {
-          category: "Spaces (6)",
+          category: "Commercial (services)",
           metrics: [
-            ["Bedroom", "bed; storage", true],
-            ["Bathroom", "vanity", true],
-            ["Kitchen", "fridge; storage; bin; washer", true],
-            ["Dining room", "desk and chair", true],
-            ["Living room", "lounge and TV", true],
-            ["Parking", "bicycle; car", true],
+            ["Stores", "Grocery (food; household), department (pharmacy, clothing, electronics, printing, stationary), hardware", true],
+            ["Facilities", "Co-work, gyms, sports, wellness, medical", true],
+            ["Experiences", "Coffee, market, restaurant, cinema,", true],
+            ["Services", "Beauty (hair; skin; nails), medical (dental; general), financial (banking)", true],
           ],
         },
         {
-          category: "Resources (3)",
+          category: "Public (services)",
           metrics: [
-            ["Belongings", "clothing, toiletries, everyday-carry", true],
-            ["Installations", "water filter; stallbar; rings", true],
-            ["Add-ons", "kitchenware, air filter", true],
-          ],
-        },
-        {
-          category: "Services (5)",
-          metrics: [
-            ["Security", "access", true],
-            ["Cleaning", "housekeeping; laundry", true],
-            ["Waste", "recycling", true],
-            ["Concierge", "delivery; room service", true],
-            ["Maintenance", "IT; plumbing; electrical", true],
+            ["Transport", "Rentals, rideshare, busses, metro, trains", true],
+            ["Outdoor", "Parks, running tracks, hiking trails, swimming facilities", true],
+            ["Facilities", "Power stations, schools, airports, hospitals, law enforcement", true],
+            ["Administration", "Home affairs; social security; drivers licence", true],
           ],
         },
       ],
     },
     {
-      domain: "Commercial",
-      label: "market",
+      domain: "Environment",
+      label: "macro",
       rows: [
         {
-          category: "Stores (5)",
+          category: "Geography",
           metrics: [
-            ["Grocery", "food; household", true],
-            ["Department", "pharmacy; clothing; electronics; stationery", true],
-            ["Hardware", "tools; DIY", true],
-            ["Convenience", "essentials; late-night", true],
-            ["Bookstore", "books; supplies", true],
+            ["Weather/climate", "temp; wind", true],
+            ["Agriculture", "—", true],
           ],
         },
         {
-          category: "Facilities (5)",
+          category: "Socioeconomics",
           metrics: [
-            ["Co-work", "desks; meeting rooms", true],
-            ["Gyms", "weights; classes", true],
-            ["Sports", "courts; fields", true],
-            ["Wellness", "spa; sauna", true],
-            ["Studios", "yoga; music", true],
-          ],
-        },
-        {
-          category: "Services (5)",
-          metrics: [
-            ["Beauty", "hair; skin; nails", true],
-            ["Medical", "dental; general", true],
-            ["Financial", "banking; insurance", true],
-            ["Postal", "shipping; printing", true],
-            ["Repairs", "device; tailoring", true],
-          ],
-        },
-        {
-          category: "Experiences (5)",
-          metrics: [
-            ["Coffee", "cafes", true],
-            ["Restaurant", "dining", true],
-            ["Market", "fresh; artisan", true],
-            ["Cinema", "film", true],
-            ["Theater", "stage", true],
-          ],
-        },
-      ],
-    },
-    {
-      domain: "Public",
-      label: "civic",
-      rows: [
-        {
-          category: "Transport (5)",
-          metrics: [
-            ["Rentals", "car; bike", true],
-            ["Rideshare", "taxi", true],
-            ["Buses", "routes", true],
-            ["Rail", "metro; trains", true],
-            ["Airports", "flights", true],
-          ],
-        },
-        {
-          category: "Institutions (5)",
-          metrics: [
-            ["Hospitals", "clinics; emergency", true],
-            ["Schools", "education", true],
-            ["Police", "law enforcement", true],
-            ["Libraries", "study", true],
-            ["Post office", "mail", true],
-          ],
-        },
-        {
-          category: "Administration (5)",
-          metrics: [
-            ["Home affairs", "identity; records", true],
-            ["Social security", "benefits", true],
-            ["Licensing", "driver’s license", true],
-            ["Tax", "registration", true],
-            ["Immigration", "visa", true],
-          ],
-        },
-        {
-          category: "Outdoor (4)",
-          metrics: [
-            ["Parks", "green space", true],
-            ["Running tracks", "paths", true],
-            ["Trails", "hiking", true],
-            ["Swimming", "pools; beaches", true],
+            ["Politics", "—", true],
+            ["Economics", "—", true],
+            ["Culture", "—", true],
           ],
         },
       ],
