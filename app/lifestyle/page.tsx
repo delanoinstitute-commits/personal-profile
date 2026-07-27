@@ -241,7 +241,7 @@ const TIME: StatTableData = {
             ["12:00–14:00", "Work / Serve (2 hrs) — solo design or client-facing delivery", true],
             ["14:00–15:00", "Walk + Maintain / Manage (1 hr) — walking errands, quick admin, and phone calls", true],
             ["15:00–16:00", "Exercise (1 hr) — total-body MSP workout of the day (see weekly schedule)", true],
-            ["16:00–17:00", "Eat + Educate (1 hr) — post-workout yogurt mix with pressing studies of the day", true],
+            ["16:00–17:00", "Eat + Educate (1 hr) — yogurt mix with the most relevant lecture of the day", true],
           ],
         },
         {
