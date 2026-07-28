@@ -167,6 +167,8 @@ const SPACE: StatTableData = {
               <WikiLink key="lng" href="https://burrow.com/">lounge</WikiLink>,
               "), electronics (",
               <WikiLink key="tv" href="https://www.lg.com/us/oled-tvs">TV</WikiLink>,
+              "; ",
+              <WikiLink key="atv" href="https://www.apple.com/apple-tv-4k/">Apple TV</WikiLink>,
               "), appliances (",
               <WikiLink key="air" href="https://levoit.com/products/core-600s-smart-true-hepa-air-purifier">air filter</WikiLink>,
               "; ",
