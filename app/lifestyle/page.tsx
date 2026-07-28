@@ -155,7 +155,7 @@ const SPACE: StatTableData = {
           metrics: [
             ["", "The one space I fully control — and the first I rebuild in a new city", false],
             ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights; curtains), air (windows; smokers; damp; HVAC), water (pressure; hot supply; washer), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
-            ["Spaces (6)", "Bedroom (bed; storage), bathroom (vanity), kitchen (fridge; storage; bin; washer), dining room (desk and chair), living room (lounge and TV), and parking (bicycle; car)", true],
+            ["Spaces (6)", "Bedroom (bed; storage), bathroom (shower), kitchen (fridge; counter; storage; bin; washer), dining/office (desk and chair), living/gym (wall; floor space; lounge and TV), and parking (bicycle; car)", true],
             ["Resources (3)", [
               "Belongings (clothing; toiletries; devices; documents; everyday-carry), add-ons (kitchenware; air filter; health monitors), and installations (water filter; ",
               <WikiLink key="hg" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">home-gym essentials</WikiLink>,
