@@ -155,7 +155,7 @@ const SPACE: StatTableData = {
           metrics: [
             ["", "The one space I fully control — and the first I rebuild in a new city", false],
             ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights; curtains), air (windows; smokers; damp; HVAC), water (pressure; hot supply; washer), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
-            ["Spaces (6)", "Bedroom (closet), bathroom (shower), kitchen (fridge; storage; bin; washer), dining/office (open area), living/gym (wall and floor), and parking (bicycle; car)", true],
+            ["Spaces (6)", "Bedroom (closet), bathroom (shower), kitchen (fridge; storage; bin; washer), dining/office (open area), living/gym (wall and floor), and parking (bay)", true],
             ["Furnishings (6)", [
               "Furniture (bed; ",
               <WikiLink key="dsk" href="https://www.flexispot.com/comhar-all-in-one-standing-desk-wooden-top-48-w">desk</WikiLink>,
@@ -167,14 +167,14 @@ const SPACE: StatTableData = {
               <WikiLink key="hg" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">gym equipment</WikiLink>,
               "), kitchenware (",
               <WikiLink key="kit" href="https://fromourplace.com/">cookware</WikiLink>,
-              "; utensils), and textiles (bedding; towels; blackout curtains)",
+              "), and textiles (bedding; towels; blackout curtains)",
             ], true],
             ["Resources (6)", [
-              "Belongings that travel with me — ",
+              "Apparel (",
               <WikiLink key="clo" href="https://vuoriclothing.com/">clothing</WikiLink>,
-              ", toiletries, ",
+              "; footwear), toiletries (hygiene; grooming), ",
               <WikiLink key="dev" href="https://www.apple.com/store">devices</WikiLink>,
-              ", documents, health monitors, and everyday-carry",
+              " (laptop; phone; wearables), monitors (ring; cuff), documents (identity; medical; financial), and everyday-carry (wallet; keys; bag)",
             ], true],
             ["Services (6)", "Security (access), cleaning (housekeeping; laundry), waste (recycling), concierge (delivery), maintenance (plumbing; electrical; HVAC), and amenities (fitness center; sauna; pool)", true],
           ],
