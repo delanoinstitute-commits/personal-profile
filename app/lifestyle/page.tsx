@@ -151,7 +151,7 @@ const SPACE: StatTableData = {
       label: "micro",
       rows: [
         {
-          category: "Residential (private)",
+          category: "Residential (private services)",
           metrics: [
             ["", "The one space I fully control — and the first I rebuild in a new city", false],
             ["Infrastructure (6)", "Noise (neighbors; construction), light (exposure; views; curtains), air (windows; smokers; HVAC), water (washer), power (electric stovetop), and internet (routers)", true],
@@ -165,7 +165,7 @@ const SPACE: StatTableData = {
           ],
         },
         {
-          category: "Commercial (market)",
+          category: "Commercial (market services)",
           metrics: [
             ["", "The private-sector amenities within reach — what I buy, use, and enjoy", false],
             ["Stores (5)", "Grocery (food; household), department (pharmacy; clothing; electronics; stationery), hardware, convenience, and bookstore", true],
@@ -175,7 +175,7 @@ const SPACE: StatTableData = {
           ],
         },
         {
-          category: "Public (civic)",
+          category: "Public (civic services)",
           metrics: [
             ["", "The civic services I lean on — and the paperwork no move avoids", false],
             ["Transport (6)", "Rentals, rideshare, buses, metro, trains, and airports", true],
