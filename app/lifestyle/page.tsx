@@ -162,7 +162,7 @@ const SPACE: StatTableData = {
               "; ",
               <WikiLink key="dsk" href="https://www.flexispot.com/comhar-all-in-one-standing-desk-wooden-top-48-w">desk</WikiLink>,
               " and ",
-              <WikiLink key="chr" href="https://qor360.com/">chair</WikiLink>,
+              <WikiLink key="chr" href="https://varierfurniture.com/">chair</WikiLink>,
               "; ",
               <WikiLink key="lng" href="https://burrow.com/">lounge</WikiLink>,
               "), electronics (",
