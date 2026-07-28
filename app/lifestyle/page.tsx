@@ -172,7 +172,7 @@ const SPACE: StatTableData = {
               "; ",
               <WikiLink key="atv" href="https://www.apple.com/apple-tv-4k/">hub</WikiLink>,
               "; ",
-              <WikiLink key="snd" href="https://www.sonos.com/en-us/shop/beam">soundbar</WikiLink>,
+              <WikiLink key="snd" href="https://www.sonos.com/en-us/shop/beam">sound</WikiLink>,
               "), appliances (",
               <WikiLink key="air" href="https://levoit.com/products/core-600s-smart-true-hepa-air-purifier">air purifier</WikiLink>,
               "; ",
