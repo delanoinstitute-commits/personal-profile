@@ -161,7 +161,7 @@ const SPACE: StatTableData = {
               <WikiLink key="hg" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">home-gym essentials</WikiLink>,
               ")",
             ], true],
-            ["Services (5)", "Security (access), cleaning (housekeeping; laundry), waste (recycling), concierge (delivery; room service), and maintenance (IT; plumbing; electrical)", true],
+            ["Services (6)", "Security (access), cleaning (housekeeping; laundry), waste (recycling), concierge (delivery; room service), maintenance (plumbing; electrical; HVAC), and amenities (fitness center; sauna; pool)", true],
           ],
         },
         {
