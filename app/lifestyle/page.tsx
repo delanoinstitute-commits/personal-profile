@@ -154,7 +154,7 @@ const SPACE: StatTableData = {
           category: "Residential (private services)",
           metrics: [
             ["", "The one space I fully control — and the first I rebuild in a new city", false],
-            ["Infrastructure (6)", "Noise (neighbors; construction), light (exposure; views; curtains), air (windows; smokers; HVAC), water (washer), power (electric stovetop), and internet (routers)", true],
+            ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights; curtains), air (windows; smokers; damp; HVAC), water (pressure; hot supply; washer), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
             ["Spaces (6)", "Bedroom (bed; storage), bathroom (vanity), kitchen (fridge; storage; bin; washer), dining room (desk and chair), living room (lounge and TV), and parking (bicycle; car)", true],
             ["Resources (3)", [
               "Belongings (clothing; toiletries; devices; documents; everyday-carry), add-ons (kitchenware; air filter; health monitors), and installations (water filter; ",
