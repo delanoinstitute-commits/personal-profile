@@ -155,7 +155,7 @@ const SPACE: StatTableData = {
           metrics: [
             ["", "The one space I fully control — and the first I rebuild in a new city", false],
             ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights; curtains), air (windows; smokers; damp; HVAC), water (pressure; hot supply; washer), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
-            ["Spaces (6)", "Bedroom (closet), bathroom (shower), kitchen (fridge; storage; bin; washer), dining/office (open area), living/gym (wall and floor), and parking (bay)", true],
+            ["Spaces (6)", "Bedroom (closet; blackout curtains), bathroom (shower), kitchen (fridge; storage; bin; washer), dining/office (open area), living/gym (wall and floor), and parking (bay)", true],
             ["Furnishings (6)", [
               "Furniture (",
               <WikiLink key="bed" href="https://www.avocadogreenmattress.com/">bed</WikiLink>,
@@ -185,7 +185,7 @@ const SPACE: StatTableData = {
               <WikiLink key="kit" href="https://fromourplace.com/">cookware</WikiLink>,
               "), and textiles (",
               <WikiLink key="bdg" href="https://www.coyuchi.com/">bedding</WikiLink>,
-              "; towels; blackout curtains)",
+              "; towels)",
             ], true],
             ["Resources (5)", [
               "Apparel (",
