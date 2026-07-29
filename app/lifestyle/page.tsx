@@ -148,7 +148,7 @@ const SPACE: StatTableData = {
   groups: [
     {
       domain: "Environmental Conditions",
-      label: "macro",
+      label: "",
       rows: [
         {
           category: "Geography (natural givens)",
@@ -185,7 +185,7 @@ const SPACE: StatTableData = {
     },
     {
       domain: "Living Conditions",
-      label: "micro",
+      label: "",
       rows: [
         {
           category: "Residential (private services)",
