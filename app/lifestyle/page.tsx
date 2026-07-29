@@ -154,11 +154,11 @@ const SPACE: StatTableData = {
           category: "Geography (natural givens)",
           metrics: [
             ["", "The land’s givens — chosen once, then lived with daily", false],
-            ["Climate (4)", "Temperature, humidity, sunshine, and seasons", true],
-            ["Air (3)", "Quality (AQI), pollen, and wind", true],
-            ["Terrain (4)", "Landscape, water bodies, green space, and elevation", true],
-            ["Position (3)", "National centrality, time zone, and flight reach", true],
-            ["Hazards (3)", "Storms, heat, and grid reliability", true],
+            ["Climate (4)", "Temperature (18–25°C), humidity (40–60%), sunshine (2,500+ hrs/yr), and seasons (mild winters)", true],
+            ["Air (3)", "Quality (AQI ≤50; PM2.5 ≤10 µg/m³), pollen (low counts), and wind (light; ≤20 km/h)", true],
+            ["Terrain (4)", "Landscape (hills; water views), water bodies (lakes; rivers), green space (within 300 m), and elevation (low to moderate)", true],
+            ["Position (3)", "Centrality (mid-country), time zone (coast-bridging; family-overlapping), and flight reach (direct hubs)", true],
+            ["Hazards (3)", "Storms (low tornado and hurricane risk), heat (limited 38°C+ days), and grid (reliable; backed up)", true],
           ],
         },
         {
