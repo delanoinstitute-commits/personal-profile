@@ -153,7 +153,7 @@ const SPACE: StatTableData = {
         {
           category: "Residential (private services)",
           metrics: [
-            ["", "Five layers ordered by who provides them — from the building\u2019s shell down to the bag I carry", false],
+            ["", "Five layers by provider — the building\u2019s shell down to my bag", false],
             ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights; curtains), air (windows; smokers; damp; HVAC), water (pressure; hot supply; washer), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
             ["Spaces (6)", "Bedroom (closet; blackout curtains), bathroom (shower), kitchen (fridge; storage; bin; washer), dining/office (open area), living/gym (wall and floor), and parking (bay)", true],
             ["Furnishings (6)", [
@@ -224,7 +224,7 @@ const SPACE: StatTableData = {
         {
           category: "Commercial (market services)",
           metrics: [
-            ["", "The market in five deliverables — goods, access, labor, occasions, and travel — each answered with a brand", false],
+            ["", "The market’s five deliverables, each answered with a brand", false],
             ["Provisions (5)", [
               "Grocery (",
               <WikiLink key="wf" href="https://www.wholefoodsmarket.com/">Whole Foods</WikiLink>,
@@ -257,27 +257,25 @@ const SPACE: StatTableData = {
               <WikiLink key="ps" href="https://www.peerspace.com/">Peerspace</WikiLink>,
               ")",
             ], true],
-            ["Services (5)", [
-              "Personal (",
-              <WikiLink key="bb" href="https://blindbarber.com/">Blind Barber</WikiLink>,
-              "; ",
-              <WikiLink key="om" href="https://www.onemedical.com/">One Medical</WikiLink>,
-              "; ",
-              <WikiLink key="qd" href="https://www.questhealth.com/">Quest</WikiLink>,
-              "), financial (",
+            ["Services (4)", [
+              "Financial (",
               <WikiLink key="chs" href="https://www.chase.com/">Chase</WikiLink>,
               "; ",
               <WikiLink key="sch" href="https://www.schwab.com/">Schwab</WikiLink>,
               "; ",
               <WikiLink key="lem" href="https://www.lemonade.com/">Lemonade</WikiLink>,
-              "), postal (",
-              <WikiLink key="fdx" href="https://www.fedex.com/en-us/office.html">FedEx Office</WikiLink>,
-              "), material (",
-              <WikiLink key="ubi" href="https://www.ubreakifix.com/">uBreakiFix</WikiLink>,
-              "), and connectivity (",
+              "), connectivity (",
               <WikiLink key="vzn" href="https://www.verizon.com/">Verizon</WikiLink>,
               "; ",
               <WikiLink key="mnt" href="https://www.mintmobile.com/">Mint</WikiLink>,
+              "), personal (",
+              <WikiLink key="bb" href="https://blindbarber.com/">Blind Barber</WikiLink>,
+              "; ",
+              <WikiLink key="om" href="https://www.onemedical.com/">One Medical</WikiLink>,
+              "; ",
+              <WikiLink key="qd" href="https://www.questhealth.com/">Quest</WikiLink>,
+              "), and postal (",
+              <WikiLink key="fdx" href="https://www.fedex.com/en-us/office.html">FedEx Office</WikiLink>,
               ")",
             ], true],
             ["Outings (4)", [
@@ -333,7 +331,7 @@ const SPACE: StatTableData = {
         {
           category: "Geography",
           metrics: [
-            ["", "The land, climate, and food supply of a place — the natural givens I’d move into", false],
+            ["", "The land, climate, and food supply — the natural givens of a place", false],
             ["Weather/climate", "temp; wind", true],
             ["Agriculture", "—", true],
           ],
