@@ -314,10 +314,11 @@ const SPACE: StatTableData = {
           category: "Public (civic services)",
           metrics: [
             ["", "What only the city provides: movement, institutions, paperwork, and the outdoors", false],
+            ["Administration (6)", "Social security (SSN), immigration (USCIS), tax (IRS; EIN), driving (DMV), records (vital; voter), and business (state registration)", true],
+            ["Utilities (4)", "Electric, water, gas, and waste — the accounts opened in my name on arrival", true],
             ["Transport (4)", "Buses, metro, trains, and airports", true],
-            ["Outdoor (5)", "Parks, running tracks, hiking trails, swimming, and beaches", true],
             ["Institutions (6)", "Hospitals, schools, police, fire, libraries, and post office", true],
-            ["Administration (6)", "Home affairs, social security, driver’s license, tax, immigration, and voting", true],
+            ["Outdoor (5)", "Parks, running tracks, hiking trails, swimming, and beaches", true],
           ],
         },
       ],
