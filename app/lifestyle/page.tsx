@@ -265,6 +265,8 @@ const SPACE: StatTableData = {
               "), administrative (",
               <WikiLink key="chs" href="https://www.chase.com/">Chase</WikiLink>,
               "; ",
+              <WikiLink key="sch" href="https://www.schwab.com/">Schwab</WikiLink>,
+              "; ",
               <WikiLink key="lem" href="https://www.lemonade.com/">Lemonade</WikiLink>,
               "; ",
               <WikiLink key="fdx" href="https://www.fedex.com/en-us/office.html">FedEx Office</WikiLink>,
