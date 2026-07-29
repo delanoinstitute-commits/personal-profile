@@ -175,7 +175,7 @@ const SPACE: StatTableData = {
           category: "Society (human climate)",
           metrics: [
             ["", "The people of a place — who lives here, and how", false],
-            ["Culture (4)", "Mindset (builders; health-conscious), friendliness (warm but direct), language (English-first), and diversity (international mix)", true],
+            ["Culture (5)", "Mindset (builders; health-conscious), friendliness (warm but direct), language (English-first), diversity (international mix), and architecture (distinct character; preserved heritage)", true],
             ["Politics (3)", "State (business-friendly), city (competently run), and stability (predictable policy)", true],
             ["Safety (3)", "Crime (index ≤40/100), policing (responsive), and emergency care (Level I trauma center)", true],
             ["Quality of life (4)", "Healthcare (ranked systems), walkability (neighborhood Walk Score ≥80), traffic (short average commutes), and community (founder and fitness scenes)", true],
