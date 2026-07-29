@@ -153,7 +153,7 @@ const SPACE: StatTableData = {
         {
           category: "Residential (private services)",
           metrics: [
-            ["", "The one space I fully control — and the first I rebuild in a new city", false],
+            ["", "Five layers ordered by who provides them — from the building\u2019s shell down to the bag I carry", false],
             ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights; curtains), air (windows; smokers; damp; HVAC), water (pressure; hot supply; washer), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
             ["Spaces (6)", "Bedroom (closet; blackout curtains), bathroom (shower), kitchen (fridge; storage; bin; washer), dining/office (open area), living/gym (wall and floor), and parking (bay)", true],
             ["Furnishings (6)", [
@@ -224,8 +224,8 @@ const SPACE: StatTableData = {
         {
           category: "Commercial (market services)",
           metrics: [
-            ["", "The private-sector amenities within reach — what I buy, use, and enjoy", false],
-            ["Provisions (4)", [
+            ["", "The market in five deliverables — goods, access, labor, occasions, and travel — each answered with a brand", false],
+            ["Provisions (5)", [
               "Grocery (",
               <WikiLink key="wf" href="https://www.wholefoodsmarket.com/">Whole Foods</WikiLink>,
               "; ",
@@ -240,10 +240,12 @@ const SPACE: StatTableData = {
               <WikiLink key="tg" href="https://www.target.com/">Target</WikiLink>,
               "; ",
               <WikiLink key="cv" href="https://www.cvs.com/">CVS</WikiLink>,
-              "), and hardware (",
+              "), hardware (",
               <WikiLink key="ac" href="https://www.acehardware.com/">Ace</WikiLink>,
               "; ",
               <WikiLink key="hd" href="https://www.homedepot.com/">Home Depot</WikiLink>,
+              "), and online (",
+              <WikiLink key="amz" href="https://www.amazon.com/">Amazon</WikiLink>,
               ")",
             ], true],
             ["Facilities (3)", [
@@ -255,7 +257,7 @@ const SPACE: StatTableData = {
               <WikiLink key="ps" href="https://www.peerspace.com/">Peerspace</WikiLink>,
               ")",
             ], true],
-            ["Services (4)", [
+            ["Services (5)", [
               "Personal (",
               <WikiLink key="bb" href="https://blindbarber.com/">Blind Barber</WikiLink>,
               "; ",
@@ -270,8 +272,12 @@ const SPACE: StatTableData = {
               <WikiLink key="lem" href="https://www.lemonade.com/">Lemonade</WikiLink>,
               "), postal (",
               <WikiLink key="fdx" href="https://www.fedex.com/en-us/office.html">FedEx Office</WikiLink>,
-              "), and material (",
+              "), material (",
               <WikiLink key="ubi" href="https://www.ubreakifix.com/">uBreakiFix</WikiLink>,
+              "), and connectivity (",
+              <WikiLink key="vzn" href="https://www.verizon.com/">Verizon</WikiLink>,
+              "; ",
+              <WikiLink key="mnt" href="https://www.mintmobile.com/">Mint</WikiLink>,
               ")",
             ], true],
             ["Outings (4)", [
@@ -311,10 +317,10 @@ const SPACE: StatTableData = {
         {
           category: "Public (civic services)",
           metrics: [
-            ["", "The civic services I lean on — and the paperwork no move avoids", false],
+            ["", "What only the city provides: movement, institutions, paperwork, and the outdoors", false],
             ["Transport (4)", "Buses, metro, trains, and airports", true],
             ["Outdoor (5)", "Parks, running tracks, hiking trails, swimming, and beaches", true],
-            ["Institutions (5)", "Hospitals, schools, police, libraries, and post office", true],
+            ["Institutions (6)", "Hospitals, schools, police, fire, libraries, and post office", true],
             ["Administration (6)", "Home affairs, social security, driver’s license, tax, immigration, and voting", true],
           ],
         },
