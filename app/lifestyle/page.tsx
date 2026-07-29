@@ -166,7 +166,7 @@ const SPACE: StatTableData = {
           metrics: [
             ["", "What the market charges and offers at city scale", false],
             ["Taxes (3)", "Income (0% state ideal), property (≤1.5%), and sales (≤8.5%)", true],
-            ["Costs (3)", "Housing (≤30% of income), living index (below national average), and insurance (competitive market)", true],
+            ["Costs (3)", "Housing (≤30% of income), living index (<100; US average = 100), and insurance (competitive market)", true],
             ["Opportunity (4)", "Industries (health; education; tech), employers (HQ density), startups (top-10 VC metro), and wages (above national median)", true],
             ["Growth (3)", "Population (net inflow), investment (rising), and construction (supply keeping rents flat)", true],
           ],
