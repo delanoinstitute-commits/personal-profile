@@ -158,17 +158,17 @@ const SPACE: StatTableData = {
             ["Air (3)", "Quality (AQI ≤50; PM2.5 ≤10 µg/m³), pollen (low counts), and wind (light; ≤20 km/h)", true],
             ["Terrain (4)", "Landscape (hills; water views), water bodies (lakes; rivers), green space (within 300 m), and elevation (low to moderate)", true],
             ["Position (3)", "Centrality (mid-country), time zone (coast-bridging; family-overlapping), and flight reach (direct hubs)", true],
-            ["Hazards (3)", "Storms (low tornado and hurricane risk), heat (limited 38°C+ days), and grid (reliable; backed up)", true],
+            ["Hazards (4)", "Storms (low tornado and hurricane risk), wildfires (low risk; smoke-free seasons), heat (limited 38°C+ days), and grid (reliable; backed up)", true],
           ],
         },
         {
           category: "Economy (market conditions)",
           metrics: [
             ["", "What the market charges and offers at city scale", false],
-            ["Taxes (3)", "Income (state), property, and sales", true],
-            ["Costs (3)", "Housing, living index, and insurance", true],
-            ["Opportunity (4)", "Industries, employers, startups, and wages", true],
-            ["Growth (3)", "Population, investment, and construction", true],
+            ["Taxes (3)", "Income (0% state ideal), property (≤1.5%), and sales (≤8.5%)", true],
+            ["Costs (3)", "Housing (≤30% of income), living index (below national average), and insurance (competitive market)", true],
+            ["Opportunity (4)", "Industries (health; education; tech), employers (HQ density), startups (top-10 VC metro), and wages (above national median)", true],
+            ["Growth (3)", "Population (net inflow), investment (rising), and construction (supply keeping rents flat)", true],
           ],
         },
         {
