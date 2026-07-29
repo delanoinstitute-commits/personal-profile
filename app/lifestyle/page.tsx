@@ -276,6 +276,8 @@ const SPACE: StatTableData = {
               "Dining (",
               <WikiLink key="bbc" href="https://bluebottlecoffee.com/">Blue Bottle</WikiLink>,
               "; ",
+              <WikiLink key="itg2" href="https://www.intelligentsia.com/">Intelligentsia</WikiLink>,
+              "; ",
               <WikiLink key="tfk" href="https://www.truefoodkitchen.com/">True Food Kitchen</WikiLink>,
               "; ",
               <WikiLink key="dig" href="https://www.diginn.com/">DIG</WikiLink>,
