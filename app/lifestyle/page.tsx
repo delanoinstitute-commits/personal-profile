@@ -147,7 +147,44 @@ const SPACE: StatTableData = {
   title: "Space",
   groups: [
     {
-      domain: "Living",
+      domain: "Environmental Conditions",
+      label: "macro",
+      rows: [
+        {
+          category: "Geography (natural givens)",
+          metrics: [
+            ["", "The land’s givens — chosen once, then lived with daily", false],
+            ["Climate (4)", "Temperature, humidity, sunshine, and seasons", true],
+            ["Air (3)", "Quality (AQI), pollen, and wind", true],
+            ["Terrain (4)", "Landscape, water bodies, green space, and elevation", true],
+            ["Position (3)", "National centrality, time zone, and flight reach", true],
+            ["Hazards (3)", "Storms, heat, and grid reliability", true],
+          ],
+        },
+        {
+          category: "Economy (market conditions)",
+          metrics: [
+            ["", "What the market charges and offers at city scale", false],
+            ["Taxes (3)", "Income (state), property, and sales", true],
+            ["Costs (3)", "Housing, living index, and insurance", true],
+            ["Opportunity (4)", "Industries, employers, startups, and wages", true],
+            ["Growth (3)", "Population, investment, and construction", true],
+          ],
+        },
+        {
+          category: "Society (human climate)",
+          metrics: [
+            ["", "The people of a place — who lives here, and how", false],
+            ["Culture (4)", "Mindset, friendliness, language, and diversity", true],
+            ["Politics (3)", "State, city, and stability", true],
+            ["Safety (3)", "Crime index, policing, and emergency care", true],
+            ["Quality of life (4)", "Healthcare, walkability, traffic, and community", true],
+          ],
+        },
+      ],
+    },
+    {
+      domain: "Living Conditions",
       label: "micro",
       rows: [
         {
@@ -345,43 +382,6 @@ const SPACE: StatTableData = {
         },
       ],
     },
-    {
-      domain: "Environment",
-      label: "macro",
-      rows: [
-        {
-          category: "Geography (natural givens)",
-          metrics: [
-            ["", "The land’s givens — chosen once, then lived with daily", false],
-            ["Climate (4)", "Temperature, humidity, sunshine, and seasons", true],
-            ["Air (3)", "Quality (AQI), pollen, and wind", true],
-            ["Terrain (4)", "Landscape, water bodies, green space, and elevation", true],
-            ["Position (3)", "National centrality, time zone, and flight reach", true],
-            ["Hazards (3)", "Storms, heat, and grid reliability", true],
-          ],
-        },
-        {
-          category: "Economy (market conditions)",
-          metrics: [
-            ["", "What the market charges and offers at city scale", false],
-            ["Taxes (3)", "Income (state), property, and sales", true],
-            ["Costs (3)", "Housing, living index, and insurance", true],
-            ["Opportunity (4)", "Industries, employers, startups, and wages", true],
-            ["Growth (3)", "Population, investment, and construction", true],
-          ],
-        },
-        {
-          category: "Society (human climate)",
-          metrics: [
-            ["", "The people of a place — who lives here, and how", false],
-            ["Culture (4)", "Mindset, friendliness, language, and diversity", true],
-            ["Politics (3)", "State, city, and stability", true],
-            ["Safety (3)", "Crime index, policing, and emergency care", true],
-            ["Quality of life (4)", "Healthcare, walkability, traffic, and community", true],
-          ],
-        },
-      ],
-    },
   ],
 };
 
@@ -490,10 +490,10 @@ export default function LifestylePage() {
 
       <h2 id="space">Space <span className="heading-paren">(Resources)</span></h2>
       <p>
-        Where the habits happen, at two scales. The micro scale is where I live, read
-        from my own four walls outward — residential, then the market and civic amenities
-        within reach; it doubles as a relocation checklist. The macro scale weighs the
-        place itself — the same axis at city size: nature, market, and people.
+        Where the habits happen, at two scales, outermost first. The macro scale weighs
+        the place itself — nature, market, and people at city size. The micro scale is
+        where I live, read from my own four walls outward — residential, then the market
+        and civic amenities within reach; it doubles as a relocation checklist.
       </p>
       <NestedTable {...SPACE} />
     </>
