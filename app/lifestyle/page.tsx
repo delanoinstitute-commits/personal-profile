@@ -249,8 +249,8 @@ const SPACE: StatTableData = {
               <WikiLink key="ps" href="https://www.peerspace.com/">Peerspace</WikiLink>,
               ")",
             ], true],
-            ["Experiences (3)", "Dining (coffee; restaurants), markets (farmers; artisan), and entertainment (cinema; theater; bars)", true],
             ["Services (5)", "Beauty (hair; skin; nails), medical (dental; general), financial (banking; insurance), postal (shipping; printing), and repairs (device; tailoring)", true],
+            ["Experiences (3)", "Dining (coffee; restaurants), markets (farmers; artisan), and entertainment (cinema; theater; bars)", true],
           ],
         },
         {
