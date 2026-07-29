@@ -269,8 +269,6 @@ const SPACE: StatTableData = {
               "; ",
               <WikiLink key="mnt" href="https://www.mintmobile.com/">Mint</WikiLink>,
               "), personal (",
-              <WikiLink key="bb" href="https://blindbarber.com/">Blind Barber</WikiLink>,
-              "; ",
               <WikiLink key="om" href="https://www.onemedical.com/">One Medical</WikiLink>,
               "; ",
               <WikiLink key="qd" href="https://www.questhealth.com/">Quest</WikiLink>,
