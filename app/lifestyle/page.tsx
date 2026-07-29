@@ -225,13 +225,17 @@ const SPACE: StatTableData = {
           category: "Commercial (market services)",
           metrics: [
             ["", "The private-sector amenities within reach — what I buy, use, and enjoy", false],
-            ["Provisions (3)", [
+            ["Provisions (4)", [
               "Grocery (",
               <WikiLink key="wf" href="https://www.wholefoodsmarket.com/">Whole Foods</WikiLink>,
               "; ",
               <WikiLink key="tj" href="https://www.traderjoes.com/">Trader Joe&rsquo;s</WikiLink>,
               "; ",
               <WikiLink key="sp" href="https://www.sprouts.com/">Sprouts</WikiLink>,
+              "), coffee (",
+              <WikiLink key="onx" href="https://onyxcoffeelab.com/">Onyx</WikiLink>,
+              "; ",
+              <WikiLink key="cmt" href="https://cometeer.com/">Cometeer</WikiLink>,
               "), department (",
               <WikiLink key="tg" href="https://www.target.com/">Target</WikiLink>,
               "; ",
@@ -271,8 +275,6 @@ const SPACE: StatTableData = {
             ["Outings (3)", [
               "Dining (",
               <WikiLink key="bbc" href="https://bluebottlecoffee.com/">Blue Bottle</WikiLink>,
-              "; ",
-              <WikiLink key="lc" href="https://onyxcoffeelab.com/">Onyx</WikiLink>,
               "; ",
               <WikiLink key="tfk" href="https://www.truefoodkitchen.com/">True Food Kitchen</WikiLink>,
               "; ",
