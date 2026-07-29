@@ -272,7 +272,7 @@ const SPACE: StatTableData = {
               "Dining (",
               <WikiLink key="bbc" href="https://bluebottlecoffee.com/">Blue Bottle</WikiLink>,
               "; ",
-              <WikiLink key="lc" href="https://www.lacolombe.com/">La Colombe</WikiLink>,
+              <WikiLink key="lc" href="https://onyxcoffeelab.com/">Onyx</WikiLink>,
               "; ",
               <WikiLink key="tfk" href="https://www.truefoodkitchen.com/">True Food Kitchen</WikiLink>,
               "; ",
