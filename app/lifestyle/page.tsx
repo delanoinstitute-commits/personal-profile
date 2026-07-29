@@ -189,7 +189,7 @@ const SPACE: StatTableData = {
               <WikiLink key="bdg" href="https://www.coyuchi.com/">Coyuchi</WikiLink>,
               ")",
             ], true],
-            ["Belongings (5)", [
+            ["Belongings (6)", [
               "Apparel (",
               <WikiLink key="clo" href="https://vuoriclothing.com/">Vuori</WikiLink>,
               "; ",
@@ -200,7 +200,7 @@ const SPACE: StatTableData = {
               <WikiLink key="grm" href="https://hensonshaving.com/">Henson</WikiLink>,
               "), devices (",
               <WikiLink key="dev" href="https://www.apple.com/store">Apple</WikiLink>,
-              "), documents, and everyday-carry (",
+              "), documents, training kit (rings; bands; rope), and everyday-carry (",
               <WikiLink key="bag" href="https://bellroy.com/">Bellroy</WikiLink>,
               "; ",
               <WikiLink key="slv" href="https://www.orbitkey.com/">Orbitkey</WikiLink>,
@@ -215,7 +215,7 @@ const SPACE: StatTableData = {
           category: "Commercial (market services)",
           metrics: [
             ["", "The private-sector amenities within reach — what I buy, use, and enjoy", false],
-            ["Stores (3)", [
+            ["Provisions (3)", [
               "Grocery (",
               <WikiLink key="wf" href="https://www.wholefoodsmarket.com/">Whole Foods</WikiLink>,
               "; ",
@@ -244,8 +244,8 @@ const SPACE: StatTableData = {
               ")",
             ], true],
             ["Services (3)", "Personal (beauty; medical), administrative (financial; postal), and material (repairs; tailoring)", true],
-            ["Experiences (3)", "Dining (coffee; restaurants), markets (farmers; artisan), and entertainment (cinema; theater; bars)", true],
-            ["Accommodation (3)", [
+            ["Outings (3)", "Dining (coffee; restaurants), markets (farmers; artisan), and entertainment (cinema; theater; bars)", true],
+            ["Lodging (3)", [
               "Stays (",
               <WikiLink key="ab" href="https://www.airbnb.com/">Airbnb</WikiLink>,
               "), landings (",
