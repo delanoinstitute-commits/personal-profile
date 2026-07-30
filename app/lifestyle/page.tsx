@@ -3,6 +3,7 @@ import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import WikiLink from "@/components/WikiLink";
+import { References, type ReferenceSection } from "@/components/References";
 
 export const metadata: Metadata = { title: "Lifestyle" };
 
@@ -454,6 +455,169 @@ const TIME: StatTableData = {
   ],
 };
 
+const LIFESTYLE_DATA: ReferenceSection[] = [
+  {
+    label: "The indices scoring the environmental conditions",
+    items: [
+      {
+        id: "numbeo",
+        cite: (
+          <>
+            <strong>City indices</strong>: <em>Numbeo</em> (live); crime, cost of living, property price-to-income, and purchasing power • <WikiLink href="https://www.numbeo.com/">numbeo.com</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "c2er",
+        cite: (
+          <>
+            <strong>Cost of living</strong>: <em>C2ER index</em> (quarterly); US average = 100 • <WikiLink href="https://www.coli.org/">coli.org</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "walkscore",
+        cite: (
+          <>
+            <strong>Walkability</strong>: <em>Walk Score</em> (live); 0–100 by amenity distance • <WikiLink href="https://www.walkscore.com/">walkscore.com</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "airnow",
+        cite: (
+          <>
+            <strong>Air</strong>: <em>EPA AirNow</em> (daily); AQI and PM2.5 • <WikiLink href="https://www.airnow.gov/">airnow.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "noaa",
+        cite: (
+          <>
+            <strong>Climate</strong>: <em>NOAA 30-year normals</em>; temperature, humidity, and sunshine • <WikiLink href="https://www.ncei.noaa.gov/">ncei.noaa.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "usnews",
+        cite: (
+          <>
+            <strong>Hospitals</strong>: <em>US News Best Hospitals</em> (annual) • <WikiLink href="https://health.usnews.com/best-hospitals">usnews.com</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "bea",
+        cite: (
+          <>
+            <strong>Metro economy</strong>: <em>BEA GDP by metro</em> (annual); with BLS wages and Census population • <WikiLink href="https://www.bea.gov/">bea.gov</WikiLink>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    label: "The design behind the daily structure",
+    items: [
+      {
+        id: "design-doc",
+        cite: (
+          <>
+            <strong>Design</strong>: <em>Lifestyle (Design) taxonomy</em> (2026); the twelve-habit activity matrix and five-step practice • personal document
+          </>
+        ),
+      },
+      {
+        id: "tracking",
+        cite: (
+          <>
+            <strong>Tracking</strong>: <em>Calendar and health monitors</em> (daily); schedule adherence, steps, and sleep • reading (apps)
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+const LIFESTYLE_GUIDELINES: ReferenceSection[] = [
+  {
+    label: "The standards behind the benchmarks",
+    items: [
+      {
+        id: "who-air",
+        cite: (
+          <>
+            <strong>Air</strong>: World Health Organization (2021). <em>WHO global air quality guidelines</em>. PM2.5 and related pollutant thresholds.
+          </>
+        ),
+        url: "https://www.who.int/publications/i/item/9789240034228",
+        urlLabel: "who.int",
+      },
+      {
+        id: "who-green",
+        cite: (
+          <>
+            <strong>Green space</strong>: World Health Organization Europe (2016). <em>Urban green spaces and health</em>. The 300 m access recommendation.
+          </>
+        ),
+      },
+      {
+        id: "ashrae",
+        cite: (
+          <>
+            <strong>Temperature</strong>: ANSI/ASHRAE Standard 55. <em>Thermal environmental conditions for human occupancy</em>.
+          </>
+        ),
+      },
+      {
+        id: "sterling",
+        cite: (
+          <>
+            <strong>Humidity</strong>: Sterling, E. M., et al. (1985). Criteria for human exposure to humidity in occupied buildings. <em>ASHRAE Transactions</em>, 91(1). The 40–60% band.
+          </>
+        ),
+      },
+      {
+        id: "hud",
+        cite: (
+          <>
+            <strong>Housing</strong>: US Department of Housing and Urban Development. The 30%-of-income cost-burden threshold.
+          </>
+        ),
+        url: "https://www.huduser.gov/",
+        urlLabel: "huduser.gov",
+      },
+      {
+        id: "fao-pal",
+        cite: (
+          <>
+            <strong>Activity</strong>: FAO/WHO/UNU (2004). <em>Human energy requirements</em>. Physical activity level (PAL) bands; 1.7 marks an active lifestyle.
+          </>
+        ),
+      },
+      {
+        id: "sleep",
+        cite: (
+          <>
+            <strong>Sleep</strong>: Watson, N. F., et al. (2015). Recommended amount of sleep for a healthy adult. <em>Sleep</em>, 38(6).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/26039963/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "tversky",
+        cite: (
+          <>
+            <strong>Decision order</strong>: Tversky, A. (1972). Elimination by aspects: a theory of choice. <em>Psychological Review</em>, 79(4). Veto criteria before preference criteria.
+          </>
+        ),
+      },
+    ],
+  },
+];
+
 export default function LifestylePage() {
   return (
     <>
@@ -498,6 +662,17 @@ export default function LifestylePage() {
         and civic amenities within reach; it doubles as a relocation checklist.
       </p>
       <NestedTable {...SPACE} />
+
+      <References
+        title={<>References <span className="heading-paren">(Data)</span></>}
+        sections={LIFESTYLE_DATA}
+      />
+
+      <References
+        id="guidelines"
+        title={<>References <span className="heading-paren">(Guidelines)</span></>}
+        sections={LIFESTYLE_GUIDELINES}
+      />
     </>
   );
 }
