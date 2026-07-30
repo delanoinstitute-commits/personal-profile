@@ -455,84 +455,113 @@ const TIME: StatTableData = {
   ],
 };
 
-const LIFESTYLE_DATA: ReferenceSection[] = [
+const LIFESTYLE_PERSONAL: ReferenceSection[] = [
   {
-    label: "The indices scoring the environmental conditions",
+    label: "My guidelines — the programs the lifestyle runs on",
     items: [
       {
-        id: "numbeo",
+        id: "p-design",
         cite: (
           <>
-            <strong>City indices</strong>: <em>Numbeo</em> (live); crime, cost of living, property price-to-income, and purchasing power • <WikiLink href="https://www.numbeo.com/">numbeo.com</WikiLink>
+            <strong>Lifestyle</strong>: <em>Lifestyle (Design) taxonomy</em> (2026); the twelve-habit activity matrix and five-step practice • personal document
           </>
         ),
       },
       {
-        id: "c2er",
+        id: "p-exercise",
         cite: (
           <>
-            <strong>Cost of living</strong>: <em>C2ER index</em> (quarterly); US average = 100 • <WikiLink href="https://www.coli.org/">coli.org</WikiLink>
+            <strong>Exercise</strong>: <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X</WikiLink></em> (≈3 hrs/week) and <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">MSP</WikiLink></em> (≈5 hrs/week) programs • courses (YouTube)
           </>
         ),
       },
       {
-        id: "walkscore",
+        id: "p-nutrition",
         cite: (
           <>
-            <strong>Walkability</strong>: <em>Walk Score</em> (live); 0–100 by amenity distance • <WikiLink href="https://www.walkscore.com/">walkscore.com</WikiLink>
-          </>
-        ),
-      },
-      {
-        id: "airnow",
-        cite: (
-          <>
-            <strong>Air</strong>: <em>EPA AirNow</em> (daily); AQI and PM2.5 • <WikiLink href="https://www.airnow.gov/">airnow.gov</WikiLink>
-          </>
-        ),
-      },
-      {
-        id: "noaa",
-        cite: (
-          <>
-            <strong>Climate</strong>: <em>NOAA 30-year normals</em>; temperature, humidity, and sunshine • <WikiLink href="https://www.ncei.noaa.gov/">ncei.noaa.gov</WikiLink>
-          </>
-        ),
-      },
-      {
-        id: "usnews",
-        cite: (
-          <>
-            <strong>Hospitals</strong>: <em>US News Best Hospitals</em> (annual) • <WikiLink href="https://health.usnews.com/best-hospitals">usnews.com</WikiLink>
-          </>
-        ),
-      },
-      {
-        id: "bea",
-        cite: (
-          <>
-            <strong>Metro economy</strong>: <em>BEA GDP by metro</em> (annual); with BLS wages and Census population • <WikiLink href="https://www.bea.gov/">bea.gov</WikiLink>
+            <strong>Nutrition</strong>: <em>Primal-Mediterranean protocol</em>; 2,800 kcal across three unprocessed meals in a 9-hour window • personal program
           </>
         ),
       },
     ],
   },
   {
-    label: "The design behind the daily structure",
+    label: "My data — generated where activity meets time",
     items: [
       {
-        id: "design-doc",
+        id: "p-sleep",
         cite: (
           <>
-            <strong>Design</strong>: <em>Lifestyle (Design) taxonomy</em> (2026); the twelve-habit activity matrix and five-step practice • personal document
+            <strong>Sleep</strong>: duration, timing, and quality • reading (ring)
           </>
         ),
       },
       {
-        id: "tracking",
+        id: "p-screen",
         cite: (
           <>
-            <strong>Tracking</strong>: <em>Calendar and health monitors</em> (daily); schedule adherence, steps, and sleep • reading (apps)
+            <strong>Screen time</strong>: work and serve (laptop), educate (tablet), manage (laptop; mobile), entertain (TV) • reading (devices)
+          </>
+        ),
+      },
+      {
+        id: "p-activity",
+        cite: (
+          <>
+            <strong>Activity</strong>: steps, NEAT, heart-rate zones, and METs • reading (ring; watch)
+          </>
+        ),
+      },
+      {
+        id: "p-food",
+        cite: (
+          <>
+            <strong>Nutrition</strong>: foods, calories, macros, and micros • reading (log)
+          </>
+        ),
+      },
+      {
+        id: "p-social",
+        cite: (
+          <>
+            <strong>Social</strong>: shared hours with clients and loved ones • reading (calendar)
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    label: "My evidence — the lifestyle’s yield in each capital",
+    items: [
+      {
+        id: "p-health",
+        cite: (
+          <>
+            <strong>Health</strong>: the status the habits produce — integrity, balance, and capacity • <WikiLink href="/health">health</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "p-knowledge",
+        cite: (
+          <>
+            <strong>Knowledge</strong>: the works, skills, and education the work hours produce • <WikiLink href="/knowledge">knowledge</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "p-wealth",
+        cite: (
+          <>
+            <strong>Wealth</strong>: the socioeconomic position the service hours produce • <WikiLink href="/wealth">wealth</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "p-network",
+        cite: (
+          <>
+            <strong>Network</strong>: the relationships the shared hours produce • page pending
           </>
         ),
       },
@@ -540,22 +569,52 @@ const LIFESTYLE_DATA: ReferenceSection[] = [
   },
 ];
 
-const LIFESTYLE_GUIDELINES: ReferenceSection[] = [
+const LIFESTYLE_SOCIAL: ReferenceSection[] = [
   {
-    label: "The standards behind the benchmarks",
+    label: "The official guidelines for wellbeing",
     items: [
       {
-        id: "who-air",
+        id: "s-sleep",
         cite: (
           <>
-            <strong>Air</strong>: World Health Organization (2021). <em>WHO global air quality guidelines</em>. PM2.5 and related pollutant thresholds.
+            <strong>Sleep</strong>: Watson, N. F., et al. (2015). Recommended amount of sleep for a healthy adult. <em>Sleep</em>, 38(6). Seven or more hours.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/26039963/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-activity",
+        cite: (
+          <>
+            <strong>Activity</strong>: World Health Organization (2020). <em>WHO guidelines on physical activity and sedentary behaviour</em>. 150–300 minutes moderate weekly.
+          </>
+        ),
+        url: "https://www.who.int/publications/i/item/9789240015128",
+        urlLabel: "who.int",
+      },
+      {
+        id: "s-nutrition",
+        cite: (
+          <>
+            <strong>Nutrition</strong>: USDA and HHS. <em>Dietary Guidelines for Americans, 2020–2025</em>.
+          </>
+        ),
+        url: "https://www.dietaryguidelines.gov/",
+        urlLabel: "dietaryguidelines.gov",
+      },
+      {
+        id: "s-air",
+        cite: (
+          <>
+            <strong>Air</strong>: World Health Organization (2021). <em>WHO global air quality guidelines</em>. PM2.5 and related thresholds.
           </>
         ),
         url: "https://www.who.int/publications/i/item/9789240034228",
         urlLabel: "who.int",
       },
       {
-        id: "who-green",
+        id: "s-green",
         cite: (
           <>
             <strong>Green space</strong>: World Health Organization Europe (2016). <em>Urban green spaces and health</em>. The 300 m access recommendation.
@@ -563,7 +622,7 @@ const LIFESTYLE_GUIDELINES: ReferenceSection[] = [
         ),
       },
       {
-        id: "ashrae",
+        id: "s-temp",
         cite: (
           <>
             <strong>Temperature</strong>: ANSI/ASHRAE Standard 55. <em>Thermal environmental conditions for human occupancy</em>.
@@ -571,15 +630,7 @@ const LIFESTYLE_GUIDELINES: ReferenceSection[] = [
         ),
       },
       {
-        id: "sterling",
-        cite: (
-          <>
-            <strong>Humidity</strong>: Sterling, E. M., et al. (1985). Criteria for human exposure to humidity in occupied buildings. <em>ASHRAE Transactions</em>, 91(1). The 40–60% band.
-          </>
-        ),
-      },
-      {
-        id: "hud",
+        id: "s-housing",
         cite: (
           <>
             <strong>Housing</strong>: US Department of Housing and Urban Development. The 30%-of-income cost-burden threshold.
@@ -589,25 +640,109 @@ const LIFESTYLE_GUIDELINES: ReferenceSection[] = [
         urlLabel: "huduser.gov",
       },
       {
-        id: "fao-pal",
+        id: "s-energy",
         cite: (
           <>
-            <strong>Activity</strong>: FAO/WHO/UNU (2004). <em>Human energy requirements</em>. Physical activity level (PAL) bands; 1.7 marks an active lifestyle.
+            <strong>Energy</strong>: FAO/WHO/UNU (2004). <em>Human energy requirements</em>. Physical activity level bands; 1.7 marks an active lifestyle.
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    label: "The sociological data of space that inform the benchmarks",
+    items: [
+      {
+        id: "s-numbeo",
+        cite: (
+          <>
+            <strong>City indices</strong>: <em>Numbeo</em> (live); crime, cost of living, property price-to-income, and purchasing power • <WikiLink href="https://www.numbeo.com/">numbeo.com</WikiLink>
           </>
         ),
       },
       {
-        id: "sleep",
+        id: "s-c2er",
         cite: (
           <>
-            <strong>Sleep</strong>: Watson, N. F., et al. (2015). Recommended amount of sleep for a healthy adult. <em>Sleep</em>, 38(6).
+            <strong>Cost of living</strong>: <em>C2ER index</em> (quarterly); US average = 100 • <WikiLink href="https://www.coli.org/">coli.org</WikiLink>
           </>
         ),
-        url: "https://pubmed.ncbi.nlm.nih.gov/26039963/",
+      },
+      {
+        id: "s-walk",
+        cite: (
+          <>
+            <strong>Walkability</strong>: <em>Walk Score</em> (live); 0–100 by amenity distance • <WikiLink href="https://www.walkscore.com/">walkscore.com</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-airnow",
+        cite: (
+          <>
+            <strong>Air</strong>: <em>EPA AirNow</em> (daily); AQI and PM2.5 • <WikiLink href="https://www.airnow.gov/">airnow.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-noaa",
+        cite: (
+          <>
+            <strong>Climate</strong>: <em>NOAA 30-year normals</em>; temperature, humidity, and sunshine • <WikiLink href="https://www.ncei.noaa.gov/">ncei.noaa.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-usnews",
+        cite: (
+          <>
+            <strong>Hospitals</strong>: <em>US News Best Hospitals</em> (annual) • <WikiLink href="https://health.usnews.com/best-hospitals">usnews.com</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-bea",
+        cite: (
+          <>
+            <strong>Metro economy</strong>: <em>BEA GDP by metro</em> (annual); with BLS wages and Census population • <WikiLink href="https://www.bea.gov/">bea.gov</WikiLink>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    label: "The epidemiological evidence behind the guidelines",
+    items: [
+      {
+        id: "s-cappuccio",
+        cite: (
+          <>
+            <strong>Sleep</strong>: Cappuccio, F. P., et al. (2010). Sleep duration and all-cause mortality: a systematic review and meta-analysis. <em>Sleep</em>, 33(5).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/20469800/",
         urlLabel: "PubMed",
       },
       {
-        id: "tversky",
+        id: "s-james",
+        cite: (
+          <>
+            <strong>Green space</strong>: James, P., et al. (2016). Exposure to greenness and mortality in a nationwide prospective cohort of women. <em>Environmental Health Perspectives</em>, 124(9).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/27074702/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-sterling",
+        cite: (
+          <>
+            <strong>Humidity</strong>: Sterling, E. M., et al. (1985). Criteria for human exposure to humidity in occupied buildings. <em>ASHRAE Transactions</em>, 91(1). The 40–60% band.
+          </>
+        ),
+      },
+      {
+        id: "s-tversky",
         cite: (
           <>
             <strong>Decision order</strong>: Tversky, A. (1972). Elimination by aspects: a theory of choice. <em>Psychological Review</em>, 79(4). Veto criteria before preference criteria.
@@ -664,14 +799,14 @@ export default function LifestylePage() {
       <NestedTable {...SPACE} />
 
       <References
-        title={<>References <span className="heading-paren">(Data)</span></>}
-        sections={LIFESTYLE_DATA}
+        title={<>References <span className="heading-paren">(Personal)</span></>}
+        sections={LIFESTYLE_PERSONAL}
       />
 
       <References
-        id="guidelines"
-        title={<>References <span className="heading-paren">(Guidelines)</span></>}
-        sections={LIFESTYLE_GUIDELINES}
+        id="social"
+        title={<>References <span className="heading-paren">(Social)</span></>}
+        sections={LIFESTYLE_SOCIAL}
       />
     </>
   );
