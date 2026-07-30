@@ -151,7 +151,7 @@ const SPACE: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Geography (natural givens)",
+          category: "Geographic (natural conditions)",
           metrics: [
             ["", "The land’s givens — chosen once, then lived with daily", false],
             ["Climate (4)", "Temperature (18–25°C), humidity (40–60%), sunshine (2,500+ hrs/yr), and seasons (mild winters)", true],
@@ -162,24 +162,25 @@ const SPACE: StatTableData = {
           ],
         },
         {
-          category: "Economy (market conditions)",
+          category: "Economic (market conditions)",
           metrics: [
             ["", "What the market charges and offers at city scale", false],
             ["Taxes (3)", "Income (0% state ideal), property (≤1.5%), and sales (≤8.5%)", true],
             ["Costs (5)", "Housing (≤30% of income), property (price-to-income ≤5), living index (<100; US average = 100), purchasing power (local index ≥140), and insurance (competitive market)", true],
             ["Opportunity (4)", "Industries (health; education; tech), employers (HQ density), startups (top-10 VC metro), and wages (above national median)", true],
+            ["Talent (3)", "Universities (research-tier), skilled inflow (net positive), and retention (graduates who stay)", true],
             ["Growth (4)", "Output (metro GDP +3%/yr), population (net inflow), investment (rising), and construction (supply keeping rents flat)", true],
           ],
         },
         {
-          category: "Society (human climate)",
+          category: "Societal (human conditions)",
           metrics: [
             ["", "The people of a place — who lives here, and how", false],
             ["Culture (5)", "Mindset (builders; health-conscious), friendliness (warm but direct), language (English-first), diversity (international mix), and cuisine (rich culinary influences; chef scene)", true],
             ["Architecture (4)", "Character (a city that looks like itself), heritage (preserved districts), styles (layered eras), and streetscape (human-scale blocks)", true],
             ["Politics (3)", "State (business-friendly), city (competently run), and stability (predictable policy)", true],
             ["Safety (3)", "Crime (index ≤40/100), policing (responsive), and emergency care (Level I trauma center)", true],
-            ["Quality of life (4)", "Healthcare (ranked systems), walkability (neighborhood Walk Score ≥80), traffic (short average commutes), and community (founder and fitness scenes)", true],
+            ["Quality of life (4)", "Healthcare (US News–ranked hospital in metro), walkability (neighborhood Walk Score ≥80), traffic (short average commutes), and community (founder and fitness scenes)", true],
           ],
         },
       ],
