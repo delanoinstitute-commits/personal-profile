@@ -563,7 +563,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
 
 const LIFESTYLE_SOCIAL: ReferenceSection[] = [
   {
-    label: "The official guidelines for wellbeing",
+    label: "Public guidelines for human wellbeing",
     items: [
       {
         id: "s-sleep",
@@ -589,11 +589,31 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-nutrition",
         cite: (
           <>
-            <strong>Nutrition</strong>: USDA and HHS. <em>Dietary Guidelines for Americans, 2020–2025</em>.
+            <strong>Nutrition</strong>: USDA and HHS. <em>Dietary Guidelines for Americans, 2025–2030</em>.
           </>
         ),
         url: "https://www.dietaryguidelines.gov/",
         urlLabel: "dietaryguidelines.gov",
+      },
+      {
+        id: "s-alcohol",
+        cite: (
+          <>
+            <strong>Alcohol</strong>: World Health Organization (2023). <em>No level of alcohol consumption is safe for our health</em>. No safe amount; less is better.
+          </>
+        ),
+        url: "https://www.who.int/europe/news/item/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health",
+        urlLabel: "who.int",
+      },
+      {
+        id: "s-education",
+        cite: (
+          <>
+            <strong>Education</strong>: UNESCO (2015). <em>Recommendation on Adult Learning and Education</em>. Lifelong learning across literacy, professional development, and citizenship.
+          </>
+        ),
+        url: "https://www.unesco.org/en/legal-affairs/recommendation-adult-learning-and-education",
+        urlLabel: "unesco.org",
       },
       {
         id: "s-air",
