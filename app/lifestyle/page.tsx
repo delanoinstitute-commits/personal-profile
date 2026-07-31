@@ -457,13 +457,13 @@ const TIME: StatTableData = {
 
 const LIFESTYLE_PERSONAL: ReferenceSection[] = [
   {
-    label: "My guidelines — the programs the lifestyle runs on",
+    label: "My lifestyle guidelines derived from codified experience",
     items: [
       {
-        id: "p-design",
+        id: "p-lifestyle",
         cite: (
           <>
-            <strong>Lifestyle</strong>: <em>Lifestyle (Design) taxonomy</em> (2026); the twelve-habit activity matrix and five-step practice • personal document
+            <strong>Lifestyle</strong>: <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">Life Management Design</WikiLink> (2026)</em>; guidelines for designing the perfect day and ideal week • course (YouTube)
           </>
         ),
       },
@@ -471,36 +471,28 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-exercise",
         cite: (
           <>
-            <strong>Exercise</strong>: <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X</WikiLink></em> (≈3 hrs/week) and <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">MSP</WikiLink></em> (≈5 hrs/week) programs • courses (YouTube)
+            <strong>Exercise</strong>: <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">Training Program Design</WikiLink> (2025)</em>; guidelines for designing balanced, integrated exercise programs • course (YouTube)
           </>
         ),
       },
       {
-        id: "p-nutrition",
+        id: "p-education",
         cite: (
           <>
-            <strong>Nutrition</strong>: <em>Primal-Mediterranean protocol</em>; 2,800 kcal across three unprocessed meals in a 9-hour window • personal program
+            <strong>Education</strong>: <em><WikiLink href="https://youtu.be/h8FYdFHeDtg">Top-60 YouTube Resources</WikiLink> (2025)</em>; guidelines for continuous self-education • presentation (YouTube)
           </>
         ),
       },
     ],
   },
   {
-    label: "My data — generated where activity meets time",
+    label: "My lifestyle data derived from continuous and event-based tracking",
     items: [
       {
         id: "p-sleep",
         cite: (
           <>
-            <strong>Sleep</strong>: duration, timing, and quality • reading (ring)
-          </>
-        ),
-      },
-      {
-        id: "p-screen",
-        cite: (
-          <>
-            <strong>Screen time</strong>: work and serve (laptop), educate (tablet), manage (laptop; mobile), entertain (TV) • reading (devices)
+            <strong>Sleep</strong>: <em>PPG, thermometry, and accelerometry (continuous)</em>; tracks overall sleep quality using heart rate, HRV, SpO&#8322;, respiratory rate, skin temperature, and movement (OURA) • report (app)
           </>
         ),
       },
@@ -508,36 +500,36 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-activity",
         cite: (
           <>
-            <strong>Activity</strong>: steps, NEAT, heart-rate zones, and METs • reading (ring; watch)
+            <strong>Activity</strong>: <em>Accelerometry and ECG (continuous)</em>; tracks overall physical activity levels using heart rate and movement frequency, intensity, duration, and direction (Apple Watch) • report (app)
           </>
         ),
       },
       {
-        id: "p-food",
+        id: "p-nutrition",
         cite: (
           <>
-            <strong>Nutrition</strong>: foods, calories, macros, and micros • reading (log)
+            <strong>Nutrition</strong>: <em>Weighted food records (events)</em>; estimates overall energy and nutrient intake using food measurements against nutrition databases (Cronometer) • report (app)
           </>
         ),
       },
       {
-        id: "p-social",
+        id: "p-attention",
         cite: (
           <>
-            <strong>Social</strong>: shared hours with clients and loved ones • reading (calendar)
+            <strong>Attention</strong>: <em>Digital behavioral chronometry (continuous)</em>; tracks overall screen time for work, education, management, and entertainment using HCI informatics (Apple devices) • report (app)
           </>
         ),
       },
     ],
   },
   {
-    label: "My evidence — the lifestyle’s yield in each capital",
+    label: "My lifestyle\u2019s impact on key measures of life capital",
     items: [
       {
         id: "p-health",
         cite: (
           <>
-            <strong>Health</strong>: the status the habits produce — integrity, balance, and capacity • <WikiLink href="/health">health</WikiLink>
+            <strong>Health</strong>: <em>Functional integrity status (2026)</em>; the effects of sleep, exercise, nutrition, walking, and maintenance activities on measures of integrity, balance, and capacity • <WikiLink href="/health">health</WikiLink> (page)
           </>
         ),
       },
@@ -545,7 +537,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-knowledge",
         cite: (
           <>
-            <strong>Knowledge</strong>: the works, skills, and education the work hours produce • <WikiLink href="/knowledge">knowledge</WikiLink>
+            <strong>Knowledge</strong>: <em>Applied intelligence status (2026)</em>; the effects of work, studying, service, management, and maintenance on measures of education, skills, and works • <WikiLink href="/knowledge">knowledge</WikiLink> (page)
           </>
         ),
       },
@@ -553,7 +545,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-wealth",
         cite: (
           <>
-            <strong>Wealth</strong>: the socioeconomic position the service hours produce • <WikiLink href="/wealth">wealth</WikiLink>
+            <strong>Wealth</strong>: <em>Financial asset status (2026)</em>; the effects of service and maintenance on measures of asset ownership • <WikiLink href="/wealth">wealth</WikiLink> (page)
           </>
         ),
       },
@@ -561,7 +553,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-network",
         cite: (
           <>
-            <strong>Network</strong>: the relationships the shared hours produce • page pending
+            <strong>Network</strong>: <em>Social influence status (2026)</em>; the effects of service, management, play, and connection activities on measures of access, impact, and love • network (page pending)
           </>
         ),
       },
