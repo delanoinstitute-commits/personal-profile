@@ -626,6 +626,16 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "who.int",
       },
       {
+        id: "s-radiation",
+        cite: (
+          <>
+            <strong>Radiation</strong>: International Commission on Radiological Protection (2007). <em>ICRP Publication 103</em>. Occupational exposure 20 mSv per year averaged over five years, never above 50 mSv in one; public exposure 1 mSv per year.
+          </>
+        ),
+        url: "https://www.icrp.org/publication.asp?id=ICRP%20Publication%20103",
+        urlLabel: "icrp.org",
+      },
+      {
         id: "s-green",
         cite: (
           <>
@@ -662,13 +672,85 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
     ],
   },
   {
-    label: "The sociological data of space that inform the benchmarks",
+    label: "Public data derived from population surveys and public indices",
     items: [
       {
-        id: "s-numbeo",
+        id: "s-gallup",
         cite: (
           <>
-            <strong>City indices</strong>: <em>Numbeo</em> (live); crime, cost of living, property price-to-income, and purchasing power • <WikiLink href="https://www.numbeo.com/">numbeo.com</WikiLink>
+            <strong>Wellbeing</strong>: <em>Gallup World Poll</em> (annual); life evaluation on the Cantril ladder across 140+ countries — the base for the <em>World Happiness Report</em> and the income-to-happiness literature • <WikiLink href="https://worldhappiness.report/">worldhappiness.report</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-atus",
+        cite: (
+          <>
+            <strong>Time allocation</strong>: <em>American Time Use Survey</em> (annual since 2003); how a national sample spends the twenty-four hours, by activity (BLS/Census) • <WikiLink href="https://www.bls.gov/tus/">bls.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-nhanes",
+        cite: (
+          <>
+            <strong>Health and nutrition</strong>: <em>NHANES</em> (continuous); interviews, physical examination, and laboratory work on a national sample; its <em>What We Eat in America</em> component is the intake base for the dietary guidelines (CDC/NCHS) • <WikiLink href="https://www.cdc.gov/nchs/nhanes/">cdc.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-ukbiobank",
+        cite: (
+          <>
+            <strong>Cohort biology</strong>: <em>UK Biobank</em> (2006–, ongoing); 500,000 participants with genomics, imaging, and wrist accelerometry — the source behind most step-count and sleep dose-response findings • <WikiLink href="https://www.ukbiobank.ac.uk/">ukbiobank.ac.uk</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-lss",
+        cite: (
+          <>
+            <strong>Radiation</strong>: <em>Life Span Study</em> (1950–, ongoing); ~120,000 Hiroshima and Nagasaki survivors with individual dose estimates — the primary source informing every international dose limit (RERF) • <WikiLink href="https://www.rerf.or.jp/en/">rerf.or.jp</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-piaac",
+        cite: (
+          <>
+            <strong>Adult skills</strong>: <em>OECD PIAAC Survey of Adult Skills</em> (decennial); literacy, numeracy, and problem solving among adults aged 16–65 across member countries • <WikiLink href="https://www.oecd.org/en/about/programmes/piaac.html">oecd.org</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-scf",
+        cite: (
+          <>
+            <strong>Household wealth</strong>: <em>Survey of Consumer Finances</em> (triennial); family balance sheets — income, assets, debt, and net worth (US Federal Reserve) • <WikiLink href="https://www.federalreserve.gov/econres/scfindex.htm">federalreserve.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-fbi",
+        cite: (
+          <>
+            <strong>Crime</strong>: <em>FBI Crime Data Explorer</em> (annual); offence and arrest counts reported by agency through the national incident-based system • <WikiLink href="https://cde.ucr.cjis.gov/">cde.ucr.cjis.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-noaa",
+        cite: (
+          <>
+            <strong>Climate</strong>: <em>NOAA 30-year normals</em>; temperature, humidity, and sunshine • <WikiLink href="https://www.ncei.noaa.gov/">ncei.noaa.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-airnow",
+        cite: (
+          <>
+            <strong>Air</strong>: <em>EPA AirNow</em> (daily); AQI and PM2.5 • <WikiLink href="https://www.airnow.gov/">airnow.gov</WikiLink>
           </>
         ),
       },
@@ -689,26 +771,10 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         ),
       },
       {
-        id: "s-airnow",
+        id: "s-cms",
         cite: (
           <>
-            <strong>Air</strong>: <em>EPA AirNow</em> (daily); AQI and PM2.5 • <WikiLink href="https://www.airnow.gov/">airnow.gov</WikiLink>
-          </>
-        ),
-      },
-      {
-        id: "s-noaa",
-        cite: (
-          <>
-            <strong>Climate</strong>: <em>NOAA 30-year normals</em>; temperature, humidity, and sunshine • <WikiLink href="https://www.ncei.noaa.gov/">ncei.noaa.gov</WikiLink>
-          </>
-        ),
-      },
-      {
-        id: "s-usnews",
-        cite: (
-          <>
-            <strong>Hospitals</strong>: <em>US News Best Hospitals</em> (annual) • <WikiLink href="https://health.usnews.com/best-hospitals">usnews.com</WikiLink>
+            <strong>Hospitals</strong>: <em>CMS Care Compare</em> (quarterly); mortality, readmission, safety, and patient-experience measures reported by every Medicare-certified hospital • <WikiLink href="https://www.medicare.gov/care-compare/">medicare.gov</WikiLink>
           </>
         ),
       },
@@ -723,8 +789,18 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
     ],
   },
   {
-    label: "The epidemiological evidence behind the guidelines",
+    label: "Public evidence of lifestyle’s impact on longevity and wellbeing",
     items: [
+      {
+        id: "s-li",
+        cite: (
+          <>
+            <strong>Lifestyle (combined)</strong>: Li, Y., et al. (2018). Impact of healthy lifestyle factors on life expectancies in the US population. <em>Circulation</em>, 138(4). Five low-risk factors; 14.0 years for women, 12.2 for men.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/29712712/",
+        urlLabel: "PubMed",
+      },
       {
         id: "s-cappuccio",
         cite: (
@@ -736,6 +812,96 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "PubMed",
       },
       {
+        id: "s-arem",
+        cite: (
+          <>
+            <strong>Activity</strong>: Arem, H., et al. (2015). Leisure time physical activity and mortality: a detailed pooled analysis of the dose-response relationship. <em>JAMA Internal Medicine</em>, 175(6). 661,000 adults; benefit plateaus at three to five times the guideline minimum.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/25844730/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-estruch",
+        cite: (
+          <>
+            <strong>Nutrition</strong>: Estruch, R., et al. (2018). Primary prevention of cardiovascular disease with a Mediterranean diet supplemented with extra-virgin olive oil or nuts. <em>New England Journal of Medicine</em>, 378(25). PREDIMED; 7,447 randomised — a rare dietary trial rather than a cohort.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/29897866/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-gbdalcohol",
+        cite: (
+          <>
+            <strong>Alcohol</strong>: GBD 2016 Alcohol Collaborators (2018). Alcohol use and burden for 195 countries and territories, 1990–2016. <em>The Lancet</em>, 392(10152). 694 surveys and 592 studies; risk rises monotonically from zero.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/30146330/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-doll",
+        cite: (
+          <>
+            <strong>Smoking</strong>: Doll, R., Peto, R., Boreham, J., &amp; Sutherland, I. (2004). Mortality in relation to smoking: 50 years&rsquo; observations on male British doctors. <em>BMJ</em>, 328(7455). Smokers died about ten years younger; quitting at 30 recovered nearly all of it.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/15213107/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-casedeaton",
+        cite: (
+          <>
+            <strong>Education</strong>: Case, A., &amp; Deaton, A. (2021). Life expectancy in adulthood is falling for those without a BA degree. <em>PNAS</em>, 118(11). The educational divide in mortality more than doubled between 1990 and 2018.
+          </>
+        ),
+        url: "https://www.pnas.org/doi/full/10.1073/pnas.2024777118",
+        urlLabel: "PNAS",
+      },
+      {
+        id: "s-marmot",
+        cite: (
+          <>
+            <strong>Work</strong>: Marmot, M. G., et al. (1991). Health inequalities among British civil servants: the Whitehall II study. <em>The Lancet</em>, 337(8754). 10,314 civil servants; health tracks job control, not just income.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/1674771/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-chetty",
+        cite: (
+          <>
+            <strong>Wealth</strong>: Chetty, R., et al. (2016). The association between income and life expectancy in the United States, 2001–2014. <em>JAMA</em>, 315(16). 1.4 billion tax records; 14.6 years between the richest and poorest one percent.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/27063997/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-holtlunstad",
+        cite: (
+          <>
+            <strong>Connection</strong>: Holt-Lunstad, J., Smith, T. B., &amp; Layton, J. B. (2010). Social relationships and mortality risk: a meta-analytic review. <em>PLoS Medicine</em>, 7(7). 308,849 participants; strong relationships raise survival odds by half.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/20668659/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-dockery",
+        cite: (
+          <>
+            <strong>Air</strong>: Dockery, D. W., et al. (1993). An association between air pollution and mortality in six US cities. <em>New England Journal of Medicine</em>, 329(24). The Harvard Six Cities study; the basis of the American fine-particle standard.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/8179653/",
+        urlLabel: "PubMed",
+      },
+      {
         id: "s-james",
         cite: (
           <>
@@ -743,6 +909,26 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
           </>
         ),
         url: "https://pubmed.ncbi.nlm.nih.gov/27074702/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-ozasa",
+        cite: (
+          <>
+            <strong>Radiation</strong>: Ozasa, K., et al. (2012). Studies of the mortality of atomic bomb survivors, Report 14, 1950–2003. <em>Radiation Research</em>, 177(3). The dose-response that sets the limits.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/22171960/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "s-richardson",
+        cite: (
+          <>
+            <strong>Radiation (occupational)</strong>: Richardson, D. B., et al. (2015). Risk of cancer from occupational exposure to ionising radiation (INWORKS). <em>BMJ</em>, 351. 309,932 nuclear workers; risk persists at low dose rates.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/26487649/",
         urlLabel: "PubMed",
       },
       {
