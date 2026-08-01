@@ -7,16 +7,17 @@ import { References, type ReferenceSection } from "@/components/References";
 
 export const metadata: Metadata = { title: "Lifestyle" };
 
-// Life as designed, in three branches: Activity (what I do), Space (where I do
-// it), Time (when). The twelve activity habits are a complete partition of a
-// day — they sum to 24 hours exactly, which doubles as the page's integrity
-// check — each habit carries its daily allocation in its label. Three structures
-// run through it at once: each category pairs an active habit with a passive one;
-// each habit is growth, maintenance, or leisure; and the personal categories
-// mirror the relational ones (creative/collaborative, physiologic/metabolic,
-// personal/social). Definitions are pending. Space runs two scales — Living
-// (micro: residential, commercial, public) and Environment (macro: geography,
-// socioeconomics, still taking shape). Time is filled.
+// Life as designed, in three branches: Activity (what I do), Time (when), Space
+// (where). The twelve activity habits are a complete partition of a day — they
+// sum to 24 hours exactly, which doubles as the page's integrity check — each
+// habit carries its daily allocation in its label. Three structures run through
+// it at once: each category pairs an active habit with a passive one; each habit
+// is growth, maintenance, or leisure; and the personal categories mirror the
+// relational ones (creative/collaborative, physiologic/metabolic, personal/
+// social). Space runs two scales, outermost first: Environmental (macro:
+// geographic, economic, societal) then Living (micro: residential, commercial,
+// public). Both reference columns run guidelines → data → evidence, ordered to
+// match the taxonomy above.
 
 const ACTIVITY: StatTableData = {
   title: "Activity",
@@ -157,7 +158,7 @@ const SPACE: StatTableData = {
             ["", "The land’s givens — chosen once, then lived with daily", false],
             ["Climate (4)", "Temperature (18–25°C), humidity (40–60%), sunshine (2,500+ hrs/yr), and seasons (mild winters)", true],
             ["Air (3)", "Quality (AQI ≤50; PM2.5 ≤10 µg/m³), pollen (low counts), and wind (light; ≤20 km/h)", true],
-            ["Hazards (5)", "Storms (low tornado and hurricane risk), wildfires (low risk; smoke-free seasons), heat (limited 38°C+ days), pests (low mosquito and tick pressure), and grid (reliable; backed up)", true],
+            ["Hazards (6)", "Storms (low tornado and hurricane risk), wildfires (low risk; smoke-free seasons), heat (limited 38°C+ days), pests (low mosquito and tick pressure), radiation (radon ≤100 Bq/m³; 2.7 pCi/L), and grid (reliable; backed up)", true],
             ["Terrain (5)", "Landscape (hills; water views), water bodies (lakes; rivers), green space (within 300 m), nature access (wildlife; reserves), and elevation (low to moderate)", true],
             ["Position (3)", "Centrality (mid-country), time zone (coast-bridging; family-overlapping), and flight reach (direct hubs)", true],
           ],
@@ -167,7 +168,7 @@ const SPACE: StatTableData = {
           metrics: [
             ["", "What the market charges and offers at city scale", false],
             ["Opportunity (4)", "Industries (health; education; tech), employers (HQ density), startups (top-10 VC metro), and wages (above national median)", true],
-            ["Costs (5)", "Housing (≤30% of income), property (price-to-income ≤5), living index (<100; US average = 100), purchasing power (local index ≥140), and insurance (competitive market)", true],
+            ["Costs (5)", "Housing (≤30% of income), property (price-to-income ≤5), living index (<100; US average = 100), purchasing power (real income above the national median), and insurance (competitive market)", true],
             ["Taxes (3)", "Income (0% state ideal), property (≤1.5%), and sales (≤8.5%)", true],
             ["Growth (4)", "Output (metro GDP +3%/yr), population (net inflow), investment (rising), and construction (supply keeping rents flat)", true],
             ["Talent (3)", "Universities (research-tier), skilled inflow (net positive), and retention (graduates who stay)", true],
@@ -177,8 +178,8 @@ const SPACE: StatTableData = {
           category: "Societal (human conditions)",
           metrics: [
             ["", "The people of a place — who lives here, and how", false],
-            ["Safety (3)", "Crime (index ≤40/100), policing (responsive), and emergency care (Level I trauma center)", true],
-            ["Quality of life (4)", "Healthcare (US News–ranked hospital in metro), walkability (neighborhood Walk Score ≥80), traffic (short average commutes), and community (founder and fitness scenes)", true],
+            ["Safety (3)", "Crime (violent crime below the national rate), policing (responsive), and emergency care (Level I trauma center)", true],
+            ["Quality of life (4)", "Healthcare (CMS four-star hospital in metro), walkability (neighborhood Walk Score ≥80), traffic (short average commutes), and community (founder and fitness scenes)", true],
             ["Culture (5)", "Mindset (builders; health-conscious), friendliness (warm but direct), language (English-first), diversity (international mix), and cuisine (rich culinary influences; chef scene)", true],
             ["Politics (3)", "State (business-friendly), city (competently run), and stability (predictable policy)", true],
             ["Architecture (4)", "Character (a city that looks like itself), heritage (preserved districts), styles (layered eras), and streetscape (human-scale blocks)", true],
@@ -194,7 +195,7 @@ const SPACE: StatTableData = {
           category: "Residential (private services)",
           metrics: [
             ["", "Five layers by provider — the building\u2019s shell down to my bag", false],
-            ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights; curtains), air (windows; smokers; damp; HVAC), water (pressure; hot supply; washer), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
+            ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights), air (windows; smokers; radon; damp; HVAC), water (pressure; hot supply), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
             ["Spaces (6)", [
               "Bedroom (closet; blackout curtains), bathroom (shower), kitchen (fridge; storage; bin; washer), dining/office (open area), living/gym (",
               <WikiLink key="wf" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">wall and floor</WikiLink>,
@@ -360,14 +361,14 @@ const SPACE: StatTableData = {
           category: "Public (civic services)",
           metrics: [
             ["", "What only the city provides: paperwork, power, movement, institutions, and the outdoors", false],
-            ["Administration (6)", [
+            ["Administration (7)", [
               "Identification (",
               <WikiLink key="ssa" href="https://www.ssa.gov/">Social Security Administration</WikiLink>,
               "), immigration (",
               <WikiLink key="usc" href="https://www.uscis.gov/">USCIS</WikiLink>,
               "), taxation (",
               <WikiLink key="irs" href="https://www.irs.gov/">IRS</WikiLink>,
-              "), driving (DMV), records (county clerk), and business (secretary of state)",
+              "), driving (DMV), records (county clerk), voting (county elections office), and business (secretary of state)",
             ], true],
             ["Utilities (4)", "Power (city electric utility), water (city water utility), gas (gas company), and waste (sanitation department)", true],
             ["Transport (3)", [
@@ -529,7 +530,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-health",
         cite: (
           <>
-            <strong>Health</strong>: <em>Functional integrity status (2026)</em>; the effects of sleep, exercise, nutrition, walking, and maintenance activities on measures of integrity, balance, and capacity • <WikiLink href="/health">health</WikiLink> (page)
+            <strong>Health</strong>: <em>Functional integrity status (2026)</em>; the effects of sleep, exercise, nutrition, walking, and maintenance activities on measures of <WikiLink href="/health#integrity">integrity</WikiLink>, <WikiLink href="/health#balance">balance</WikiLink>, and <WikiLink href="/health#capacity">capacity</WikiLink> • <WikiLink href="/health">health</WikiLink> (page)
           </>
         ),
       },
@@ -537,7 +538,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-knowledge",
         cite: (
           <>
-            <strong>Knowledge</strong>: <em>Applied intelligence status (2026)</em>; the effects of work, studying, service, management, and maintenance on measures of education, skills, and works • <WikiLink href="/knowledge">knowledge</WikiLink> (page)
+            <strong>Knowledge</strong>: <em>Applied intelligence status (2026)</em>; the effects of work, studying, service, management, and maintenance on measures of <WikiLink href="/knowledge#education">education</WikiLink>, <WikiLink href="/knowledge#skills">skills</WikiLink>, and <WikiLink href="/knowledge#works">works</WikiLink> • <WikiLink href="/knowledge">knowledge</WikiLink> (page)
           </>
         ),
       },
@@ -616,6 +617,14 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "unesco.org",
       },
       {
+        id: "s-temp",
+        cite: (
+          <>
+            <strong>Climate</strong>: ANSI/ASHRAE Standard 55. <em>Thermal environmental conditions for human occupancy</em>.
+          </>
+        ),
+      },
+      {
         id: "s-air",
         cite: (
           <>
@@ -636,6 +645,16 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "icrp.org",
       },
       {
+        id: "s-radon",
+        cite: (
+          <>
+            <strong>Radon</strong>: World Health Organization (2009). <em>WHO handbook on indoor radon: a public health perspective</em>. A reference level of 100 Bq/m³ — the exposure that varies by where you live.
+          </>
+        ),
+        url: "https://www.who.int/publications/i/item/9789241547673",
+        urlLabel: "who.int",
+      },
+      {
         id: "s-green",
         cite: (
           <>
@@ -644,30 +663,14 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         ),
       },
       {
-        id: "s-temp",
-        cite: (
-          <>
-            <strong>Temperature</strong>: ANSI/ASHRAE Standard 55. <em>Thermal environmental conditions for human occupancy</em>.
-          </>
-        ),
-      },
-      {
         id: "s-housing",
         cite: (
           <>
-            <strong>Housing</strong>: US Department of Housing and Urban Development. The 30%-of-income cost-burden threshold.
+            <strong>Cost of living</strong>: US Department of Housing and Urban Development. The 30%-of-income cost-burden threshold.
           </>
         ),
         url: "https://www.huduser.gov/",
         urlLabel: "huduser.gov",
-      },
-      {
-        id: "s-energy",
-        cite: (
-          <>
-            <strong>Energy</strong>: FAO/WHO/UNU (2004). <em>Human energy requirements</em>. Physical activity level bands; 1.7 marks an active lifestyle.
-          </>
-        ),
       },
     ],
   },
@@ -691,6 +694,14 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         ),
       },
       {
+        id: "s-brfss",
+        cite: (
+          <>
+            <strong>Health behavior</strong>: <em>BRFSS</em> (annual); the largest continuous health-behavior surveillance system, covering sleep, activity, smoking, and alcohol prevalence by state (CDC) • <WikiLink href="https://www.cdc.gov/brfss/">cdc.gov</WikiLink>
+          </>
+        ),
+      },
+      {
         id: "s-nhanes",
         cite: (
           <>
@@ -703,14 +714,6 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         cite: (
           <>
             <strong>Cohort biology</strong>: <em>UK Biobank</em> (2006–, ongoing); 500,000 participants with genomics, imaging, and wrist accelerometry — the source behind most step-count and sleep dose-response findings • <WikiLink href="https://www.ukbiobank.ac.uk/">ukbiobank.ac.uk</WikiLink>
-          </>
-        ),
-      },
-      {
-        id: "s-lss",
-        cite: (
-          <>
-            <strong>Radiation</strong>: <em>Life Span Study</em> (1950–, ongoing); ~120,000 Hiroshima and Nagasaki survivors with individual dose estimates — the primary source informing every international dose limit (RERF) • <WikiLink href="https://www.rerf.or.jp/en/">rerf.or.jp</WikiLink>
           </>
         ),
       },
@@ -731,14 +734,6 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         ),
       },
       {
-        id: "s-fbi",
-        cite: (
-          <>
-            <strong>Crime</strong>: <em>FBI Crime Data Explorer</em> (annual); offence and arrest counts reported by agency through the national incident-based system • <WikiLink href="https://cde.ucr.cjis.gov/">cde.ucr.cjis.gov</WikiLink>
-          </>
-        ),
-      },
-      {
         id: "s-noaa",
         cite: (
           <>
@@ -755,6 +750,22 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         ),
       },
       {
+        id: "s-lss",
+        cite: (
+          <>
+            <strong>Radiation</strong>: <em>Life Span Study</em> (1950–, ongoing); ~120,000 Hiroshima and Nagasaki survivors with individual dose estimates — the primary source informing every international dose limit (RERF) • <WikiLink href="https://www.rerf.or.jp/en/">rerf.or.jp</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-radonzones",
+        cite: (
+          <>
+            <strong>Radon</strong>: <em>EPA Map of Radon Zones</em>; county-level screening potential from the national residential survey, read alongside a test of the specific address • <WikiLink href="https://www.epa.gov/radon/find-information-about-local-radon-zones-and-state-contact-information">epa.gov</WikiLink>
+          </>
+        ),
+      },
+      {
         id: "s-c2er",
         cite: (
           <>
@@ -763,10 +774,18 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         ),
       },
       {
-        id: "s-walk",
+        id: "s-bea",
         cite: (
           <>
-            <strong>Walkability</strong>: <em>Walk Score</em> (live); 0–100 by amenity distance • <WikiLink href="https://www.walkscore.com/">walkscore.com</WikiLink>
+            <strong>Growth</strong>: <em>BEA GDP by metro</em> (annual); with BLS wages and Census population • <WikiLink href="https://www.bea.gov/">bea.gov</WikiLink>
+          </>
+        ),
+      },
+      {
+        id: "s-fbi",
+        cite: (
+          <>
+            <strong>Safety</strong>: <em>FBI Crime Data Explorer</em> (annual); offence and arrest counts reported by agency through the national incident-based system • <WikiLink href="https://cde.ucr.cjis.gov/">cde.ucr.cjis.gov</WikiLink>
           </>
         ),
       },
@@ -774,15 +793,15 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-cms",
         cite: (
           <>
-            <strong>Hospitals</strong>: <em>CMS Care Compare</em> (quarterly); mortality, readmission, safety, and patient-experience measures reported by every Medicare-certified hospital • <WikiLink href="https://www.medicare.gov/care-compare/">medicare.gov</WikiLink>
+            <strong>Healthcare</strong>: <em>CMS Care Compare</em> (quarterly); mortality, readmission, safety, and patient-experience measures reported by every Medicare-certified hospital • <WikiLink href="https://www.medicare.gov/care-compare/">medicare.gov</WikiLink>
           </>
         ),
       },
       {
-        id: "s-bea",
+        id: "s-walk",
         cite: (
           <>
-            <strong>Metro economy</strong>: <em>BEA GDP by metro</em> (annual); with BLS wages and Census population • <WikiLink href="https://www.bea.gov/">bea.gov</WikiLink>
+            <strong>Walkability</strong>: <em>Walk Score</em> (live); 0–100 by amenity distance • <WikiLink href="https://www.walkscore.com/">walkscore.com</WikiLink>
           </>
         ),
       },
@@ -822,6 +841,16 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "PubMed",
       },
       {
+        id: "s-holtlunstad",
+        cite: (
+          <>
+            <strong>Play and connection</strong>: Holt-Lunstad, J., Smith, T. B., &amp; Layton, J. B. (2010). Social relationships and mortality risk: a meta-analytic review. <em>PLoS Medicine</em>, 7(7). 308,849 participants; strong relationships raise survival odds by half.
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/20668659/",
+        urlLabel: "PubMed",
+      },
+      {
         id: "s-estruch",
         cite: (
           <>
@@ -852,16 +881,6 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "PubMed",
       },
       {
-        id: "s-casedeaton",
-        cite: (
-          <>
-            <strong>Education</strong>: Case, A., &amp; Deaton, A. (2021). Life expectancy in adulthood is falling for those without a BA degree. <em>PNAS</em>, 118(11). The educational divide in mortality more than doubled between 1990 and 2018.
-          </>
-        ),
-        url: "https://www.pnas.org/doi/full/10.1073/pnas.2024777118",
-        urlLabel: "PNAS",
-      },
-      {
         id: "s-marmot",
         cite: (
           <>
@@ -870,6 +889,16 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         ),
         url: "https://pubmed.ncbi.nlm.nih.gov/1674771/",
         urlLabel: "PubMed",
+      },
+      {
+        id: "s-casedeaton",
+        cite: (
+          <>
+            <strong>Education</strong>: Case, A., &amp; Deaton, A. (2021). Life expectancy in adulthood is falling for those without a BA degree. <em>PNAS</em>, 118(11). The educational divide in mortality more than doubled between 1990 and 2018.
+          </>
+        ),
+        url: "https://www.pnas.org/doi/full/10.1073/pnas.2024777118",
+        urlLabel: "PNAS",
       },
       {
         id: "s-chetty",
@@ -882,14 +911,12 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "PubMed",
       },
       {
-        id: "s-holtlunstad",
+        id: "s-sterling",
         cite: (
           <>
-            <strong>Connection</strong>: Holt-Lunstad, J., Smith, T. B., &amp; Layton, J. B. (2010). Social relationships and mortality risk: a meta-analytic review. <em>PLoS Medicine</em>, 7(7). 308,849 participants; strong relationships raise survival odds by half.
+            <strong>Climate</strong>: Sterling, E. M., et al. (1985). Criteria for human exposure to humidity in occupied buildings. <em>ASHRAE Transactions</em>, 91(1). The 40–60% band.
           </>
         ),
-        url: "https://pubmed.ncbi.nlm.nih.gov/20668659/",
-        urlLabel: "PubMed",
       },
       {
         id: "s-dockery",
@@ -899,16 +926,6 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
           </>
         ),
         url: "https://pubmed.ncbi.nlm.nih.gov/8179653/",
-        urlLabel: "PubMed",
-      },
-      {
-        id: "s-james",
-        cite: (
-          <>
-            <strong>Green space</strong>: James, P., et al. (2016). Exposure to greenness and mortality in a nationwide prospective cohort of women. <em>Environmental Health Perspectives</em>, 124(9).
-          </>
-        ),
-        url: "https://pubmed.ncbi.nlm.nih.gov/27074702/",
         urlLabel: "PubMed",
       },
       {
@@ -932,20 +949,24 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "PubMed",
       },
       {
-        id: "s-sterling",
+        id: "s-darby",
         cite: (
           <>
-            <strong>Humidity</strong>: Sterling, E. M., et al. (1985). Criteria for human exposure to humidity in occupied buildings. <em>ASHRAE Transactions</em>, 91(1). The 40–60% band.
+            <strong>Radon</strong>: Darby, S., et al. (2005). Radon in homes and risk of lung cancer: collaborative analysis of individual data from 13 European case-control studies. <em>BMJ</em>, 330(7485). 7,148 cases; 16% more risk per 100 Bq/m³, linear with no threshold.
           </>
         ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/15613366/",
+        urlLabel: "PubMed",
       },
       {
-        id: "s-tversky",
+        id: "s-james",
         cite: (
           <>
-            <strong>Decision order</strong>: Tversky, A. (1972). Elimination by aspects: a theory of choice. <em>Psychological Review</em>, 79(4). Veto criteria before preference criteria.
+            <strong>Green space</strong>: James, P., et al. (2016). Exposure to greenness and mortality in a nationwide prospective cohort of women. <em>Environmental Health Perspectives</em>, 124(9).
           </>
         ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/27074702/",
+        urlLabel: "PubMed",
       },
     ],
   },
