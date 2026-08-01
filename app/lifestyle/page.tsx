@@ -168,7 +168,7 @@ const SPACE: StatTableData = {
           metrics: [
             ["", "What the market charges and offers at city scale", false],
             ["Opportunity (4)", "Industries (health; education; tech), employers (HQ density), startups (top-10 VC metro), and wages (above national median)", true],
-            ["Costs (5)", "Housing (≤30% of income), property (price-to-income ≤5), living index (<100; US average = 100), purchasing power (local index ≥140), and insurance (competitive market)", true],
+            ["Costs (5)", "Housing (≤30% of income), property (price-to-income ≤5), living index (<100; US average = 100), purchasing power (real value of $100 ≥ $105), and insurance (competitive market)", true],
             ["Taxes (3)", "Income (0% state ideal), property (≤1.5%), and sales (≤8.5%)", true],
             ["Growth (4)", "Output (metro GDP +3%/yr), population (net inflow), investment (rising), and construction (supply keeping rents flat)", true],
             ["Talent (3)", "Universities (research-tier), skilled inflow (net positive), and retention (graduates who stay)", true],
@@ -178,7 +178,7 @@ const SPACE: StatTableData = {
           category: "Societal (human conditions)",
           metrics: [
             ["", "The people of a place — who lives here, and how", false],
-            ["Safety (3)", "Crime (index ≤40/100), policing (responsive), and emergency care (Level I trauma center)", true],
+            ["Safety (3)", "Crime (violent crime ≤350 per 100,000), policing (responsive), and emergency care (Level I trauma center)", true],
             ["Quality of life (4)", "Healthcare (CMS four-star hospital in metro), walkability (neighborhood Walk Score ≥80), traffic (short average commutes), and community (founder and fitness scenes)", true],
             ["Culture (5)", "Mindset (builders; health-conscious), friendliness (warm but direct), language (English-first), diversity (international mix), and cuisine (rich culinary influences; chef scene)", true],
             ["Politics (3)", "State (business-friendly), city (competently run), and stability (predictable policy)", true],
@@ -587,6 +587,16 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "who.int",
       },
       {
+        id: "s-connection",
+        cite: (
+          <>
+            <strong>Play and connection</strong>: World Health Organization (2025). <em>From loneliness to social connection: charting a path to healthier societies</em>. Connection treated as a determinant of health; 871,000 early deaths a year attributed to disconnection.
+          </>
+        ),
+        url: "https://www.who.int/groups/commission-on-social-connection",
+        urlLabel: "who.int",
+      },
+      {
         id: "s-nutrition",
         cite: (
           <>
@@ -607,6 +617,26 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         urlLabel: "who.int",
       },
       {
+        id: "s-smoking",
+        cite: (
+          <>
+            <strong>Smoking</strong>: World Health Organization (2003). <em>WHO Framework Convention on Tobacco Control</em>. The first treaty negotiated under WHO auspices; over 180 parties bound to demand- and supply-reduction measures.
+          </>
+        ),
+        url: "https://fctc.who.int/",
+        urlLabel: "who.int",
+      },
+      {
+        id: "s-work",
+        cite: (
+          <>
+            <strong>Work</strong>: International Labour Organization (1962). <em>Reduction of Hours of Work Recommendation, No. 116</em>. The forty-hour week as the standard to progress toward, extending Convention No. 47 (1935).
+          </>
+        ),
+        url: "https://www.ilo.org/resource/other/ilo-helpdesk-business-and-working-time",
+        urlLabel: "ilo.org",
+      },
+      {
         id: "s-education",
         cite: (
           <>
@@ -623,6 +653,8 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
             <strong>Climate</strong>: ANSI/ASHRAE Standard 55. <em>Thermal environmental conditions for human occupancy</em>.
           </>
         ),
+        url: "https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy",
+        urlLabel: "ashrae.org",
       },
       {
         id: "s-air",
@@ -661,6 +693,8 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
             <strong>Green space</strong>: World Health Organization Europe (2016). <em>Urban green spaces and health</em>. The 300 m access recommendation.
           </>
         ),
+        url: "https://www.who.int/europe/publications/i/item/WHO-EURO-2016-3352-43111-60341",
+        urlLabel: "who.int",
       },
       {
         id: "s-housing",
