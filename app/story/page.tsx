@@ -29,9 +29,9 @@ const INHERITANCE: StatTableData = {
           category: "Constitution (individual)",
           metrics: [
             ["", "I was issued a body, and the code that wrote it, before anything was done with either", false],
-            ["Genotype (4)", "APOE (\u03b53/\u03b53; the common genotype, baseline Alzheimer\u2019s risk), ACTN3 (R/X; one working fast-twitch copy, the mixed power-endurance genotype), lactase (persistent; dairy digestible into adulthood), and alcohol metabolism (ALDH2 typical; no flush response)", true],
+            ["Genotype (4)", "APOE (\u03b53/\u03b53; baseline Alzheimer\u2019s risk), ACTN3 (R/X; mixed power-endurance), lactase (persistent), and alcohol metabolism (ALDH2 typical; no flush response)", true],
             ["Phenotype (5)", "Sex (male; XY), blood type (O negative), eyes (blue), hair (brown), and height (1.76 m)", true],
-            ["Ancestry (4)", "Composition (94.8% European; 2.2% Sub-Saharan African; 1.9% Central and South Asian; 0.7% Melanesian), European detail (Belgian, Rhinelander and Southern Dutch 46.9%; Dutch and Northern German 34.5%; Austrian and Southern German 5.0%; French 4.0%), admixture timing (non-European segments c. 1750\u20131840 \u2014 the Cape pattern, within a half-percent of the Afrikaner mean), and haplogroups (Y-DNA and mtDNA pending)", true],
+            ["Ancestry (2)", "Composition (94.8% European; 2.2% Sub-Saharan African; 1.9% Central and South Asian; 0.7% Melanesian), European detail (Belgian, Rhinelander and Southern Dutch 46.9%; Dutch and Northern German 34.5%; Austrian and Southern German 5.0%; French 4.0%)", true],
           ],
         },
         {
@@ -39,11 +39,10 @@ const INHERITANCE: StatTableData = {
           metrics: [
             ["", "Grouped by generation, named only where consent is mine to give", false],
             ["Parents (2)", "Mother (living; no cardiac, neurological, oncological, or metabolic history; major trauma at 17) and father (living; history not available)", true],
-            ["Siblings (1)", "Brother (died at 18 of necrotising pneumonia with multiple lung abscesses, progressing to respiratory failure, septic shock, and disseminated intravascular coagulation; cultures grew Streptococcus milleri and Escherichia coli, both sensitive to the antibiotics given; history of recurrent tonsillitis; serum IgG and IgM below reference range \u2014 autopsy, 2004). I was second of two", true],
-            ["Grandparents (3)", "Maternal grandfather (died at 73 of myocardial infarction; gout from 50; renal calculi; heavy smoker to 50, daily spirits until death), maternal grandmother (died at 57 of pulmonary fibrosis secondary to rheumatoid arthritis; type 2 diabetes; RA from 44; heavy smoker to 43, daily alcohol until death), and paternal grandparents (history pending)", true],
+            ["Siblings (1)", "Brother (died at 18 of necrotising pneumonia with multiple lung abscesses; respiratory failure, septic shock, and DIC; Streptococcus milleri and Escherichia coli, both sensitive to the antibiotics given; recurrent tonsillitis; IgG and IgM below reference range)", true],
+            ["Grandparents (3)", "Maternal grandfather (died at 73 of myocardial infarction; gout from 50; renal calculi; heavy smoker to 50, daily spirits until death), maternal grandmother (died at 57 of pulmonary fibrosis secondary to rheumatoid arthritis; type 2 diabetes; RA from 44; heavy smoker to 43, daily alcohol until death), and paternal grandparents (history unavailable)", true],
             ["Extended (3)", "Maternal uncle (died at 60 of bone cancer of the cervical spine; occupational pesticide exposure), maternal uncle (died at 4 of bronchopneumonia), and maternal aunt (living; type 2 diabetes; obstructive sleep apnoea from 54; neither smoker nor drinker)", true],
             ["Great-grandparents (2)", "Maternal great-grandfather (died at 85 of hepatosplenic disease; type 1 diabetes; smoker from 11 to 55) and maternal great-grandmother (died at 89; cause not recorded)", true],
-            ["Pattern", "Two generations of heavy tobacco and alcohol on the maternal line; type 2 diabetes in three relatives; no cardiac or neurodegenerative disease before 70. The one first-degree signal is immunological \u2014 a sibling lost at 18 to an infection that stayed ahead of treatment it should have answered", true],
           ],
         },
       ],
@@ -53,34 +52,12 @@ const INHERITANCE: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Civic (state)",
+          category: "Circumstance (social)",
           metrics: [
-            ["", "I was assigned a state, a date, and a legal status at birth", false],
-            ["Born", "7 December 1987, Krugersdorp, Gauteng", true],
-            ["Citizenship", "South African", true],
-            [
-              "Name",
-              "Lorenzo Roos at birth; Maritz from 1996, with a stepfather — neither of them chosen",
-              true,
-            ],
-          ],
-        },
-        {
-          category: "Cultural (people)",
-          metrics: [
-            ["", "I was handed a people before I could evaluate them", false],
-            ["Ethnicity", "Afrikaner", true],
-            ["Language", "Afrikaans (first); English (second)", true],
-            ["Religion of origin", "Pending", true],
-          ],
-        },
-        {
-          category: "Historical (era)",
-          metrics: [
-            ["", "I was born into a state that changed while I was in primary school", false],
-            ["Political era", "Apartheid at birth; transition to democracy at age six (1994)", true],
-            ["Generation", "Gen-Y (1981\u20131996)", true],
-            ["Technological era", "A childhood before household internet; online from adolescence", true],
+            ["", "I was handed a state, a people, and an era, and consulted about none of them", false],
+            ["Civic (3)", "Born (7 December 1987; Krugersdorp, Gauteng), citizenship (South African), and name (Lorenzo Roos at birth; Maritz from 1996, a stepfather\u2019s)", true],
+            ["Cultural (3)", "Ethnicity (Afrikaner), language (Afrikaans first; English second), and religion of origin (Dutch Reformed; the NG Kerk)", true],
+            ["Historical (4)", "Political era (apartheid under a nationwide State of Emergency at birth; democracy from 1994, age six), geopolitical era (the Cold War ending; the Soviet collapse took apartheid\u2019s anti-communist justification with it), generation (Gen-Y; 1981\u20131996), and technological era (pre-internet childhood; no private mobile network in the country until I was six)", true],
           ],
         },
       ],
@@ -175,7 +152,7 @@ const EMERGENCE: StatTableData = {
             ["", "I hold what survived my own scrutiny, not what I was handed", false],
             [
               "Name",
-              "Delano since 2009 — taken at 21, over a birth surname and a stepfather’s, neither of which I had picked",
+              "Delano since 2009 — taken at 21, over a birth surname and a stepfather’s",
               true,
             ],
             ["Record", "Pending", true],
