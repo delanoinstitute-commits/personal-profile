@@ -611,16 +611,6 @@ p.stat-hint {
 }
 
 /* ===================================================================
-   Timeline (biography) — §4.5
-   =================================================================== */
-
-.timeline-year {
-  font-family: var(--font-serif), Georgia, serif;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums lining-nums;
-}
-
-/* ===================================================================
    Section nav (horizontal in-page tabs) — §4.4
    =================================================================== */
 

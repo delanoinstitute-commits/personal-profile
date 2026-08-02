@@ -210,8 +210,8 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Rizel van den Berg (mother)" },
           { text: "Cornelius Roos (father)" },
           {
-            text: "Jean Pierre (brother)",
-            note: "Deceased 10 March 2004.",
+            text: "Brother",
+            note: "Deceased 2004, aged 18.",
           },
         ],
       },

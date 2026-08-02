@@ -3,8 +3,8 @@
 /.pnp
 .pnp.js
 
-# next.js
-/.next/
+# next.js — unanchored so nested build dirs (e.g. a stray sub-app) are caught too
+.next/
 /out/
 
 # production

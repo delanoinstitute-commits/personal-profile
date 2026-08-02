@@ -1,8 +1,15 @@
+import { ReactNode } from "react";
 import WikiLink from "@/components/WikiLink";
-import { TimelineEra } from "@/components/Timeline";
 
-// The year-by-year biography, grouped into life eras. Rendered by the History
-// page via the <Timeline> component.
+// The year-by-year biography, grouped into life eras. NOT RENDERED — this is
+// retained source material, not dead code: it is the raw record that fills the
+// Development branch of /story, whose stages currently read "Pending". The
+// <Timeline> component that used to render it was deleted once the page moved
+// to the site-wide NestedTable taxonomy, so the types it supplied are inlined
+// here to keep this file self-contained. Delete only once Development is written.
+type TimelineEntry = { year: string; age: string; body: ReactNode };
+type TimelineEra = { title: string; subtitle?: string; entries: TimelineEntry[] };
+
 export const eras: TimelineEra[] = [
   {
     title: "Spring — childhood (1987–2000)",

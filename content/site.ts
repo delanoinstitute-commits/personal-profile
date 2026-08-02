@@ -49,11 +49,12 @@ export const NAV_GROUPS: NavGroup[] = [
     title: "Constitution",
     pages: [
       {
-        label: "History",
-        href: "/history",
+        label: "Story",
+        href: "/story",
         sections: [
-          { label: "History", anchor: "history" },
-          { label: "Timeline", anchor: "timeline" },
+          { label: "Inheritance", anchor: "inheritance" },
+          { label: "Development", anchor: "development" },
+          { label: "Emergence", anchor: "emergence" },
         ],
       },
       {
