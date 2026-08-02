@@ -28,122 +28,22 @@ const INHERITANCE: StatTableData = {
         {
           category: "Constitution (individual)",
           metrics: [
-            ["", "I was issued a body before anything was done with it", false],
-            ["Sex", "Male (XY)", true],
-            ["Blood type", "O negative", true],
-            ["Haplogroups", "Y-DNA and mtDNA pending", true],
-            ["Eyes", "Blue", true],
-            ["Hair", "Brown", true],
-            ["Height", "1.76 m", true],
-          ],
-        },
-        {
-          category: "Genotype (molecular)",
-          metrics: [
-            ["", "I carry variants I did not select and cannot return", false],
-            [
-              "APOE",
-              "\u03b53/\u03b53 (rs429358 TT; rs7412 CC) \u2014 the most common genotype; neither the \u03b54 risk allele nor the \u03b52 protective one",
-              true,
-            ],
-            [
-              "ACTN3",
-              "R/X (rs1815739 CT) \u2014 one working copy of the fast-twitch protein; the mixed power-endurance genotype",
-              true,
-            ],
-            [
-              "Lactase",
-              "Persistent (rs4988235 AG) \u2014 dairy digestible into adulthood",
-              true,
-            ],
-            [
-              "Alcohol metabolism",
-              "Typical (rs671 GG) \u2014 no aldehyde flush response",
-              true,
-            ],
-            [
-              "Ancestry composition",
-              "European 94.8%; Sub-Saharan African 2.2%; Central and South Asian 1.9%; Melanesian 0.7%",
-              true,
-            ],
-            [
-              "European detail",
-              "Belgian, Rhinelander and Southern Dutch 46.9%; Dutch and Northern German 34.5%; Austrian and Southern German 5.0%; French 4.0%; Nordic 1.8%; Iberian 1.7%",
-              true,
-            ],
-            [
-              "Admixture timing",
-              "The non-European segments date to roughly 1750\u20131840 \u2014 the Cape pattern, and within a half-percent of the Afrikaner population mean",
-              true,
-            ],
-            ["Source", "23andMe v5; 631,991 markers; February 2022", true],
+            ["", "I was issued a body, and the code that wrote it, before anything was done with either", false],
+            ["Genotype (4)", "APOE (\u03b53/\u03b53; the common genotype, baseline Alzheimer\u2019s risk), ACTN3 (R/X; one working fast-twitch copy, the mixed power-endurance genotype), lactase (persistent; dairy digestible into adulthood), and alcohol metabolism (ALDH2 typical; no flush response)", true],
+            ["Phenotype (5)", "Sex (male; XY), blood type (O negative), eyes (blue), hair (brown), and height (1.76 m)", true],
+            ["Ancestry (4)", "Composition (94.8% European; 2.2% Sub-Saharan African; 1.9% Central and South Asian; 0.7% Melanesian), European detail (Belgian, Rhinelander and Southern Dutch 46.9%; Dutch and Northern German 34.5%; Austrian and Southern German 5.0%; French 4.0%), admixture timing (non-European segments c. 1750\u20131840 \u2014 the Cape pattern, within a half-percent of the Afrikaner mean), and haplogroups (Y-DNA and mtDNA pending)", true],
           ],
         },
         {
           category: "Descent (familial)",
           metrics: [
-            ["", "Each relative is one entry, named only where consent is mine to give", false],
-            [
-              "Mother",
-              "Riz\u00e9l Delano (born 1966). Living; no cardiac, neurological, oncological, or metabolic history. Major trauma at 17",
-              true,
-            ],
-            [
-              "Father",
-              "Cornelius Coenraad Roos (born 1965). Living; history not available",
-              true,
-            ],
-            [
-              "Brother",
-              "Died at 18 of necrotising pneumonia with multiple lung abscesses, progressing to respiratory failure, septic shock, and disseminated intravascular coagulation. Cultures grew Streptococcus milleri and Escherichia coli, both sensitive to the antibiotics given. History of recurrent tonsillitis; serum IgG and IgM below reference range (autopsy, 2004)",
-              true,
-            ],
-            ["Birth order", "Second of two", true],
-            [
-              "Maternal grandfather",
-              "Died at 73 of myocardial infarction; gout from 50; renal calculi. Heavy smoker to 50; daily spirits until death",
-              true,
-            ],
-            [
-              "Maternal grandmother",
-              "Died at 57 of pulmonary fibrosis secondary to rheumatoid arthritis (RA-ILD); type 2 diabetes; RA from 44. Heavy smoker to 43; daily alcohol until death",
-              true,
-            ],
-            [
-              "Maternal uncle",
-              "Died at 60 of bone cancer of the cervical spine; occupational pesticide exposure",
-              true,
-            ],
-            [
-              "Maternal uncle",
-              "Died at 4 of bronchopneumonia",
-              true,
-            ],
-            [
-              "Maternal aunt",
-              "Living; type 2 diabetes; obstructive sleep apnoea from 54. Neither smoker nor drinker",
-              true,
-            ],
-            [
-              "Maternal great-grandfather",
-              "Died at 85 of hepatosplenic disease; type 1 diabetes. Smoker from 11 to 55",
-              true,
-            ],
-            [
-              "Maternal great-grandmother",
-              "Died at 89; cause not recorded",
-              true,
-            ],
-            [
-              "Paternal grandparents",
-              "History pending",
-              true,
-            ],
-            [
-              "Pattern",
-              "Two generations of heavy tobacco and alcohol on the maternal line; type 2 diabetes in three relatives; no cardiac or neurodegenerative disease before 70. The one first-degree signal is immunological — a sibling lost at 18 to an infection that stayed ahead of treatment it should have answered",
-              true,
-            ],
+            ["", "Grouped by generation, named only where consent is mine to give", false],
+            ["Parents (2)", "Mother (living; no cardiac, neurological, oncological, or metabolic history; major trauma at 17) and father (living; history not available)", true],
+            ["Siblings (1)", "Brother (died at 18 of necrotising pneumonia with multiple lung abscesses, progressing to respiratory failure, septic shock, and disseminated intravascular coagulation; cultures grew Streptococcus milleri and Escherichia coli, both sensitive to the antibiotics given; history of recurrent tonsillitis; serum IgG and IgM below reference range \u2014 autopsy, 2004). I was second of two", true],
+            ["Grandparents (3)", "Maternal grandfather (died at 73 of myocardial infarction; gout from 50; renal calculi; heavy smoker to 50, daily spirits until death), maternal grandmother (died at 57 of pulmonary fibrosis secondary to rheumatoid arthritis; type 2 diabetes; RA from 44; heavy smoker to 43, daily alcohol until death), and paternal grandparents (history pending)", true],
+            ["Extended (3)", "Maternal uncle (died at 60 of bone cancer of the cervical spine; occupational pesticide exposure), maternal uncle (died at 4 of bronchopneumonia), and maternal aunt (living; type 2 diabetes; obstructive sleep apnoea from 54; neither smoker nor drinker)", true],
+            ["Great-grandparents (2)", "Maternal great-grandfather (died at 85 of hepatosplenic disease; type 1 diabetes; smoker from 11 to 55) and maternal great-grandmother (died at 89; cause not recorded)", true],
+            ["Pattern", "Two generations of heavy tobacco and alcohol on the maternal line; type 2 diabetes in three relatives; no cardiac or neurodegenerative disease before 70. The one first-degree signal is immunological \u2014 a sibling lost at 18 to an infection that stayed ahead of treatment it should have answered", true],
           ],
         },
       ],
@@ -160,7 +60,7 @@ const INHERITANCE: StatTableData = {
             ["Citizenship", "South African", true],
             [
               "Name",
-              "Lorenzo Roos at birth; Maritz from 1996, with a stepfather; Delano since 2009, by my own choice",
+              "Lorenzo Roos at birth; Maritz from 1996, with a stepfather — neither of them chosen",
               true,
             ],
           ],
@@ -273,6 +173,11 @@ const EMERGENCE: StatTableData = {
           category: "Positions (emergence)",
           metrics: [
             ["", "I hold what survived my own scrutiny, not what I was handed", false],
+            [
+              "Name",
+              "Delano since 2009 — taken at 21, over a birth surname and a stepfather’s, neither of which I had picked",
+              true,
+            ],
             ["Record", "Pending", true],
           ],
         },
