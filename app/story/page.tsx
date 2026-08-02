@@ -95,7 +95,7 @@ const INHERITANCE: StatTableData = {
             ],
             [
               "Brother",
-              "Died at 18 of septic shock following neutropenia",
+              "Died at 18 of necrotising pneumonia with multiple lung abscesses, progressing to respiratory failure, septic shock, and disseminated intravascular coagulation. Cultures grew Streptococcus milleri and Escherichia coli, both sensitive to the antibiotics given. History of recurrent tonsillitis; serum IgG and IgM below reference range (autopsy, 2004)",
               true,
             ],
             ["Birth order", "Second of two", true],
@@ -141,7 +141,7 @@ const INHERITANCE: StatTableData = {
             ],
             [
               "Pattern",
-              "Two generations of heavy tobacco and alcohol on the maternal line; type 2 diabetes in three relatives; no cardiac or neurodegenerative disease before 70",
+              "Two generations of heavy tobacco and alcohol on the maternal line; type 2 diabetes in three relatives; no cardiac or neurodegenerative disease before 70. The one first-degree signal is immunological — a sibling lost at 18 to an infection that stayed ahead of treatment it should have answered",
               true,
             ],
           ],

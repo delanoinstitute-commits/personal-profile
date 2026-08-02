@@ -207,7 +207,7 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "Family",
         values: [
-          { text: "Rizel van den Berg (mother)" },
+          { text: "Rizél Delano (mother)" },
           { text: "Cornelius Roos (father)" },
           {
             text: "Brother",
