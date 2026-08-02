@@ -158,7 +158,11 @@ const INHERITANCE: StatTableData = {
             ["", "I was assigned a state, a date, and a legal status at birth", false],
             ["Born", "7 December 1987, Krugersdorp, Gauteng", true],
             ["Citizenship", "South African", true],
-            ["Name at birth", "Lorenzo Roos", true],
+            [
+              "Name",
+              "Lorenzo Roos at birth; Maritz from 1996, with a stepfather; Delano since 2009, by my own choice",
+              true,
+            ],
           ],
         },
         {
