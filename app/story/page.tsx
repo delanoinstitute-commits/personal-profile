@@ -142,32 +142,62 @@ const EMERGENCE: StatTableData = {
   title: "Emergence",
   groups: [
     {
-      domain: "Convictions",
+      domain: "Dispositions",
       label: "",
       rows: [
         {
-          category: "Positions (emergence)",
+          category: "Demonstrated (by the record)",
           metrics: [
-            ["", "I hold what survived my own scrutiny, not what I was handed", false],
-            [
-              "Name",
-              "Delano since 2009 — taken at 21, over a birth surname and a stepfather’s",
-              true,
-            ],
-            ["Record", "Pending", true],
+            ["", "What thirty years already prove about what I elected to be", false],
+            ["Influences", "Bruce Lee through John Little — three books that redirected my training, my reading and my work, and whose common author I only noticed writing this page. Then Neale Donald Walsch, Ken Wilber, John Demartini and David Deutsch, in that order: a sequence that ends where I stopped looking for a system to belong to.", true],
+            ["Tastes", "Mortal Kombat arrived when I was eight and never left — watched perhaps fifteen times, the third game daily at eleven, the soundtrack still in my training thirty years on. A taste chosen by a child and never revised.", true],
+            ["Interests", "Mandarin to competition standard without schooling; gymnastics taken up in my thirties; organic chemistry in my late thirties; and taxonomy itself, which became the work rather than the method.", true],
+            ["Only bias is better", "I am agnostic about almost everything. A more accurate account, a better method, a better opportunity — I adopt it immediately and without reluctance, including against my own prior position.", true],
+            ["Reasons before compliance", "If I cannot see why a thing is done, I will not do it, or I will improve it. This cost me formal schooling and every job that ran on procedure.", true],
+            ["All in, then gone", "Given a clear vision I am relentless until it is done; the moment it stops being the best use of my time I stop on the spot. It is why I build for others and why no business of mine has run long.", true],
+            ["Nothing kept", "I do not hoard. I have given away or sold almost everything I have owned, more than once, and used every relocation to rebuild my physical, digital and habitual life from nothing.", true],
+            ["Curiosity ends at competence", "Once I understand how something works I lose interest in doing it again. Solving the problem is the reward; running the solution for others indefinitely is not.", true],
+            ["People who grow, stay", "Relationships that keep pace remain; the rest fade without rupture. I have not maintained a friendship out of obligation.", true],
+          ],
+        },
+        {
+          category: "Declared (for what follows)",
+          metrics: [
+            ["", "What I state before there is evidence for it, and can be held to", false],
+            ["Declarations", "Pending", true],
           ],
         },
       ],
     },
     {
-      domain: "Ventures",
+      domain: "Decisions",
       label: "",
       rows: [
         {
-          category: "Undertakings (emergence)",
+          category: "Taken (with their cost)",
           metrics: [
-            ["", "I built what nobody asked me to build", false],
-            ["Record", "Pending", true],
+            ["", "Choices no circumstance accounts for, and what each one cost", false],
+            ["Formal schooling, 2002", "I dropped out entirely at fifteen after a year of correspondence. Friends’ parents treated me with suspicion for years afterwards — unschooled, fatherless, no stable household — and I have been self-taught since.", true],
+            ["China at sixteen", "Three months after my brother died I flew to Shijiazhuang alone to teach English, having failed to raise the money for my school’s trip and been let down by a sponsor. I went back twice more.", true],
+            ["Christianity, 2005–2010", "Taken on at eighteen from the household I lived in and held for five years through church and bible study, then left when the dissonance with what I was learning became unbearable. It was psychologically the hardest thing I have done, and it removed most of my social world at once.", true],
+            ["The Chinese Bridge, 2009", "I entered a competition for university students without a school certificate, on a motivation letter. I placed first in South Africa and represented the country among 130 others in Beijing.", true],
+            ["The surname, 2009", "I took Delano at twenty-one, over a birth surname and a stepfather’s. Neither had been chosen for me, and this was the first fact about myself I selected outright.", true],
+            ["Quantum Physiques, 2011", "Brad and I opened a gym in a wrestling hall and ran it from five each morning. I could not have planned what it produced: Jelena walked in as a client.", true],
+            ["South Africa, 2015", "I sold my belongings, ended my relationship, and flew to the United States with no job and no money, working for accommodation while looking for a way in. Nothing about my position justified the confidence.", true],
+            ["Malaysia, 2016", "I took the Mindvalley job knowing I did not want to live in Kuala Lumpur. It became the decade of work that followed.", true],
+            ["Mindvalley, twice", "I resigned as a marketing specialist in 2017 by writing to the founder that there was no growth in it, and was rehired into better work. In 2024 I left again and sold my shares in the 10X company.", true],
+            ["The Demartini method, 2023", "I signed us onto a five-day training on an impulse, with no brief and no expectation. It remains the most transformative thing either of us has done.", true],
+            ["The partnership, 2025", "Jelena and I released each other from romantic expectation and stayed close. Ending it without ending the relationship was the deliberate part.", true],
+            ["The United States, 2026", "I am giving up my country and arriving as a refugee — not a reaction to circumstance but a decision taken with a decade of preparation behind it.", true],
+          ],
+        },
+        {
+          category: "Committed (before the fact)",
+          metrics: [
+            ["", "What I have decided to do next, stated while it can still be judged", false],
+            ["Six domains of self-mastery", ["Train, eat, finance, learn, mind and plan — the six behaviours I intend to codify completely, of which training is done and published as ", <WikiLink key="ce" href="/knowledge#works">five course series</WikiLink>, "."], true],
+            ["Reach 120", "In good health, in the year 2107. Stated as a target rather than a hope, because it determines what I do daily.", true],
+            ["Further goals", "Pending", true],
           ],
         },
       ],
@@ -227,11 +257,13 @@ export default function StoryPage() {
       </h2>
       <p>
         What is left once inheritance and development are subtracted: the choices no
-        circumstance accounts for, in two registers — what I decided was true
-        (convictions) and what I decided to build (ventures). The test is whether the
-        first two branches would have predicted it. Where they would, it is not here; it
-        sits under the branch that explains it, or under{" "}
-        <WikiLink href="/lifestyle">lifestyle</WikiLink> as a habit.
+        circumstance accounts for, in two registers — what I elected to be
+        (dispositions) and what I elected to do (decisions). The test is whether the
+        first two branches would have predicted it; where they would, it is not here.
+        This is the one branch that argues rather than records, so each entry says what
+        the choice cost or contradicted. The best things in my life came from choosing
+        exposure without controlling the outcome — I could not choose who I would meet,
+        only the rooms I would be standing in.
       </p>
       <NestedTable {...EMERGENCE} />
     </>
