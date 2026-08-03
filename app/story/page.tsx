@@ -76,7 +76,9 @@ const DEVELOPMENT: StatTableData = {
           category: "Early childhood (0–6)",
           metrics: [
             ["", "I absorbed a world I had no means of evaluating", false],
-            ["Record", "Pending", true],
+            ["1987 (birth)", "Born in Krugersdorp to a mother of 21 and a father of 19, then a furniture-store manager at Joshua Doore; a brother two years ahead of me; the household in Sunward Park. I have rocked rhythmically since birth and still do", true],
+            ["1990 (age 3)", "My parents divorced on 21 September, and I lived in four households across the year — Little Falls, a flat in Kenmare, the farm again, then a house in Witpoortjie, where my brother and I started pre-primary", true],
+            ["1991–1993 (ages 4–6)", "The Witpoortjie house sold and we returned to Kenmare; my mother started a construction business, and later a relationship with a new partner. At six the farm dog bit my head open, and a fall down a three-step drop broke my left arm", true],
           ],
         },
         {
