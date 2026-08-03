@@ -222,14 +222,15 @@ Test at **360, 390, 768, 1024, 1280px**. On each: (a) nav reachable, (b) infobox
 
 ### 8.1 Voice & person — the headline decision
 
-**The site runs a principled hybrid, split by content function.** Third person is the **default backbone** (the credibility spine); first person is the **high-value exception** for the personal, interpretive layer. The switch is **structural — by section/element, never an accidental "I" mid-paragraph** (like a magazine profile: third-person article, first-person pull-quotes). When a piece of content is ambiguous, default to third person.
+**First person is primary. It is the default for everything in the article body.** The site is written by its subject and reads that way: leads, section intros, table leads, and every row value speak as "I". This replaces the earlier third-person-backbone rule, which the site outgrew — by August 2026 the body copy ran roughly 290 first-person tokens against a handful of third-person ones, all of them in two pages that had not been rewritten yet.
 
-- **Third person = the record (credibility):** the infobox, the home/"Start here" lead, Biography, Timeline, Education, Experience — the verifiable *what's been done / who he is on paper*. Preserves the encyclopedia conceit and reads as objective.
-- **First person = my voice (connection):** Identity (psychology, values, worldview, drive), Health self-assessment, Purpose/vision, the offering + Contact CTA, and pull-quotes / "words I live by".
-- **Subject reference:** in third-person sections, first mention is bolded **Lorenzo Delano**, thereafter **Delano** or **he** (never bare "Lorenzo" / "Mr Delano"). First-person sections use "I", "me", "my".
-- **Tense:** present for standing facts/current state; past for completed events and the timeline; present/future for stated intent (Future trajectory).
-- **Imperative** only in nav/UI microcopy ("Contact", "Skip to content") and the CTA ask ("How I can help you").
-- **Data & definitions stay impersonal** in either register (metric tables, universal statements) — voice attaches to interpretation, not to numbers.
+- **First person = the whole article.** Page leads, section intros, italic table leads, row values, reference-section labels ("My data derived from…"). Use "I", "me", "my".
+- **Third person / impersonal = the infobox only.** The infobox is a record card, not a voice. It may read as bare stated facts ("Born · 7 December 1987 · Krugersdorp") or, where a sentence is unavoidable, third person. Nothing else on the site uses "he" or "Delano" as a subject.
+- **Data and definitions stay impersonal in either register.** Metric values, universal statements, and citations carry no voice — voice attaches to interpretation, never to numbers.
+- **Tense:** present for standing facts and dispositions; past for the record; present or future for stated intent, and mark it as intent so a plan is never mistaken for a fact.
+- **Imperative** only in nav and UI microcopy ("Contact", "Skip to content") and the contact CTA.
+
+**Outstanding at the time of writing:** `/` (home) and `/wealth` are still third person and need converting. They are the last two.
 
 ### 8.2 Spelling, capitalization, punctuation
 
@@ -252,8 +253,8 @@ Test at **360, 390, 768, 1024, 1280px**. On each: (a) nav reachable, (b) infobox
 
 | Do | Don't |
 |---|---|
-| "Delano designs taxonomies…" (3rd person) | "I design taxonomies…" (1st person in body) |
-| "How Delano can help you" + "reach out" | "I can help" mixed with "He is best known" |
+| "I design taxonomies…" (1st person body) | "Delano designs taxonomies…" (3rd person outside the infobox) |
+| "How I can help you" + "reach out" | "I can help" mixed with "He is best known" |
 | "7 December 1987" | "7 Dec 1987", "Dec 7, 1987", "12/7/1987" |
 | "1.76 m (5′9″)" sitewide | "1.76m", "176 cm" alongside "1.76 m" |
 | "72 kg (158 lb)", "8.2%", "90,000+" | "72kg", "158 lbs", "8.2 %", "over 90000" |
@@ -263,3 +264,45 @@ Test at **360, 390, 768, 1024, 1280px**. On each: (a) nav reachable, (b) infobox
 | curly "it's", "Delano's"; "South African" | straight quotes; "South-African" |
 | sentence-case "Known for", "Creative works" | "Known For", "Creative Works" |
 | "the US", "US employers"; "5×/week", "10X" | "the U.S.", "USA"; "5x/week", "10x" |
+| "my maternal grandmother" (relation) | naming a living relative without consent |
+| exactly 2 bands per branch | 3 bands "because the content needed it" |
+| "Genotype (4)" with 4 items | a count that does not match its value |
+
+
+---
+
+## 9. Taxonomy standard (binding — the site's spine)
+
+The site is a faceted classification of one person. Every page is an application of the same structure, and deviations are defects rather than variations.
+
+### 9.1 The three levels
+
+1. **Branch** — an `<h2>` section with a parenthetical gloss: `Inheritance (Identity)`. **Exactly three per page** (Wealth is the outstanding exception, with one).
+2. **Band** — the green header row inside a table, `domain` in the data. **Exactly two per branch. This is non-negotiable and has been broken twice; check it before writing any table.** Verify by counting `domain:` keys in each `StatTableData` — the count must be 2.
+3. **Category** — the grey header row, `category` in the data. **Variable with the data**, typically 1–4 per band. The live range is `[2,1] [3,1] [4,1] [3,2] [3,3] [2,2]`.
+
+### 9.2 Rows
+
+- **Label + parenthetical**: either a count of the items in the value (`Genotype (4)`) or a qualifier (`Early childhood (age 0–6)`, `1997 (age 10)`). **A numeric parenthetical must equal the item count in the value** — this is machine-checkable and has caught real errors.
+- **Grouped-facet form** (Lifestyle, Inheritance): `Facet (detail), facet (detail), and facet (detail)`. Oxford comma; semicolons for sub-detail inside a parenthesis.
+- **Faceted-prose form** (Story → Development): a short factual paragraph, ~50 words, with Ranganathan facets named inline once each — `(Space)`, `(Matter)`, `(Energy)`. Time is the chronology; Personality is the paragraph. Prose carries agency through grammatical voice, which is why no separate "responses" facet is needed.
+- **Argued form** (Story → Emergence): longer prose that makes a case rather than recording one. No word ceiling. Each entry states what the choice cost or contradicted.
+- **Leads**: every category opens with an unlabelled italic first-person claim, one line.
+
+### 9.3 References
+
+Two blocks per page, both using the `References` component, titled by what they hold — `(Personal)` / `(Social)`, or `(Data)` / `(Evidence)`, or `(Guidelines)`. Sections within run **guidelines → data → evidence**, ordered to match the taxonomy above them. Labels are sentences: "My data derived from…", "Public evidence of…".
+
+### 9.4 Sourcing and consent (binding)
+
+- **Read values from raw sources, don't assert them.** Genotype comes from the raw export and cites its rsIDs; ancestry from the composition report. This caught a live error: APOE was recorded as ε4/ε4 and the raw data says ε3/ε3.
+- **Report facts, not judgements.** A social-services report *was made*; whether it was mistaken is not a record.
+- **Third-party consent.** Only **mother and father** may be named. Every other relative is stated by relation. People acting in a **public or professional capacity** may be named and linked (a teacher, a performer, a business partner with a site); everyone else is a role. Psychiatric history of relatives is withheld. This applies site-wide including the infobox, not only the page being edited.
+- **Link into the wiki before linking out.** A mention with a fuller record elsewhere on the site links there; external links are for things the site does not itself document.
+
+### 9.5 Machine checks (run before every commit)
+
+- Every `StatTableData` has exactly 2 `domain:` keys.
+- Every numeric row parenthetical equals the item count in its value.
+- No unconsented private names in any page file.
+- `npx tsc --noEmit` clean; production build in an isolated copy, never in place while the dev server is running.
