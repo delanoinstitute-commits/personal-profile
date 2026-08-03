@@ -133,13 +133,6 @@ const DEVELOPMENT: StatTableData = {
             ["2026 (age 39)", ["I published ", <WikiLink key="tax" href="/knowledge#works">five taxonomy course series</WikiLink>, " free, studied organic chemistry, and built the ", <WikiLink key="autop" href="/knowledge#works">autoprofiling taxonomy</WikiLink>, " project (Energy). I emigrate to the United States in August (Space)."], true],
           ],
         },
-        {
-          category: "Middle adulthood (age 45–65)",
-          metrics: [
-            ["", "The years I intend to spend compounding what already works", false],
-            ["Intent", "Places, people, activities, and events I mean to answer for — pending", true],
-          ],
-        },
       ],
     },
   ],
