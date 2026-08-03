@@ -73,26 +73,28 @@ const DEVELOPMENT: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Early childhood (0–6)",
+          category: "Early childhood (age 0–6)",
           metrics: [
             ["", "I absorbed a world I had no means of evaluating", false],
             ["1987 (birth)", "Places (the household in Sunward Park); people (a mother of 21, a father of 19 managing at Joshua Doore, a brother two years ahead); events (born 7 December in Krugersdorp); activities (rocking rhythmically, since birth and still)", true],
             ["1990 (age 3)", "Places (four households — Little Falls, a flat in Kenmare, the farm, then Witpoortjie); people (my parents divorced on 21 September); events (started pre-primary with my brother)", true],
             ["1991–1993 (ages 4–6)", "Places (the Witpoortjie house sold; back to Kenmare); people (a new partner of my mother’s); events (she started a construction business; the farm dog bit my head open; a fall down a three-step drop broke my left arm)", true],
+            ["Technology (1987–1993)", "No household internet in South Africa — the country\u2019s first connection was a university line in 1991; a handful of broadcast channels; no mobile network of any kind", true],
           ],
         },
         {
-          category: "Middle-late childhood (7–13)",
+          category: "Middle-late childhood (age 7–13)",
           metrics: [
             ["", "I began testing the world against itself", false],
             ["1994–1996 (ages 7–9)", "Places (back to the farm; Muldersdrift Primary; Roodekrans from 1996); people (my grandmother, nursed by my mother, died at 57 in 1995); activities (a Super Nintendo, played daily)", true],
             ["1997 (age 10)", "Places (Standerton, then Evander; Laerskool Hoëveld); people (my mother met my stepfather); events (a child killed running into the road in front of her car; a motorcycle accident cost her a finger; the construction business closed); activities (gymnastics); responses (left after six months, when flips did not come)", true],
             ["1998 (age 11)", "People (a first close school friend); events (a dog ran in front of my bicycle; the straddle injury led to an orchiectomy); activities (cycling everywhere; a SEGA console); responses (took up skateboarding with him)", true],
             ["1999–2000 (ages 12–13)", "Places (the skateparks at Edenvale and Thrashers; a short spell at Secunda High); people (my mother and stepfather married on 3 August 1999); events (they adopted my brother and me; a skateboarding fall broke my right forearm, plated)", true],
+            ["Technology (1994–2000)", "Vodacom and MTN switched on the first mobile networks weeks after the 1994 election; dial-up reached households mid-decade; home computing arrived as consoles, a Super Nintendo then a SEGA", true],
           ],
         },
         {
-          category: "Adolescence (14–19)",
+          category: "Adolescence (age 14–19)",
           metrics: [
             ["", "I left formal schooling and started answering for myself", false],
             ["2001–2002 (ages 14–15)", ["Places (Sunward Park when my mother left my stepfather; briefly Evander; then Garsfontein, Pretoria); people (their divorce finalised in March 2002; three friends met at Thrashers skatepark); events (9/11; homeschooling with ", <WikiLink key="intec" href="/knowledge#education">INTEC College</WikiLink>, "); responses (dropped formal schooling entirely in 2002)"], true],
@@ -100,18 +102,7 @@ const DEVELOPMENT: StatTableData = {
             ["2004 (age 17)", ["Places (Kempton Park, then Tipperary Mews, Pretoria; Shijiazhuang, China, from October); people (my brother died on 10 March; Shi Fu Yang Long Fei, my first mentor, at Tang Lang Cuan Wushu); activities (", <WikiLink key="tefl04" href="/knowledge#works">teaching English in China</WikiLink>, "; running); responses (dropped skateboarding for kung fu; Warrior Within returned me to reading)"], true],
             ["2005 (age 18)", ["Places (in with a friend’s family; my mother to Rustenburg, then KwaZulu-Natal); people (my grandfather died in February; my kung-fu teacher left for New York); activities (waiting tables at Java; weekly ", <WikiLink key="mand" href="/knowledge#education">Mandarin at the Pretoria Chinese School</WikiLink>, "); responses (took on the Christian values of the household I lived in)"], true],
             ["2006 (age 19)", ["Places (Ballinderry in Garsfontein, where a break-in left my mother assaulted); people (my first girlfriend; Jaco van der Merwe of Bittereinder, who taught me to drive); activities (the Adidas outlet; gym, squash, road races; ", <WikiLink key="tefl" href="/knowledge#education">TEFL certification</WikiLink>, "); responses (wrote and directed short kung-fu films after Tao of Jeet Kune Do)"], true],
-          ],
-        },
-        {
-          category: "Emerging adulthood (20–29)",
-          metrics: [
-            ["", "I traded instruction for trial and error at full cost", false],
-            ["2007–2008 (ages 20–21)", ["Places (China twice more to teach English; in with a friend’s family in Brooklyn, Pretoria); people (met the friend who became my business partner); activities (managing ", <WikiLink key="java" href="/knowledge#works">Java</WikiLink>, "; sprinting at TUKS; yoga; a fitness-trainer certificate at ", <WikiLink key="eta" href="/knowledge#education">ETA College</WikiLink>, "); responses (Tony Robbins and NLP began unsettling my Christian faith)"], true],
-            ["2009 (age 22)", ["Events (placed first nationally at the ", <WikiLink key="cb" href="/knowledge#education">Chinese Bridge competition</WikiLink>, " in April, then represented South Africa among 130 countries in China in September; certified as a massage therapist; ", <WikiLink key="nm" href="/story#emergence">changed my surname from Maritz to Delano</WikiLink>, " on 1 December)"], true],
-            ["2010 (age 23)", ["People (certified in NLP and life coaching under Robert Simic at Evolved Coaching); events (competed at the CrossFit Africa regionals; fired from ", <WikiLink key="bx" href="/knowledge#works">Ballistix</WikiLink>, " for rewriting a week’s programming); responses (left the church as the dissonance became unbearable; began teaching CrossFit classes from a friend’s house)"], true],
-            ["2011–2012 (ages 24–25)", ["Places (Quantum Physiques, a pop-up gym in Menlo Park); people (", <WikiLink key="jl" href="https://www.jelenalakic.com/">Jelena Lakic</WikiLink>, ", who became my partner, joined as a client); activities (running the gym from five to ten each morning; a year of vegetarianism); responses (Neale Donald Walsch’s Conversations with God, sent by my mother)"], true],
-            ["2013–2014 (ages 26–27)", "Events (the gym became Wi-move, then I sold it back to my partner; two weeks in China sourcing equipment); responses (Mark Sisson’s Primal Blueprint ended the vegetarianism; Doug McGuff’s Body by Science moved me to minimum-effective-dose training; Ken Wilber redirected me toward education)", true],
-            ["2015–2016 (ages 28–29)", ["Places (New York, Los Angeles and San Francisco from October 2015; Kuala Lumpur from May 2016); people (interviewed John Demartini and Tim Noakes; hired by ", <WikiLink key="mv" href="https://www.mindvalley.com/">Mindvalley</WikiLink>, "); events (sold my belongings and left South Africa; Jelena and I separated); responses (studied marketing and software after applications went nowhere)"], true],
+            ["Technology (2001–2006)", "Telkom launched the country\u2019s first ADSL in 2002, though I reached the internet through a gym membership rather than a household line; mobile phones became ordinary; music went to MP3", true],
           ],
         },
       ],
@@ -121,7 +112,20 @@ const DEVELOPMENT: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Established adulthood (30–44)",
+          category: "Emerging adulthood (age 20–29)",
+          metrics: [
+            ["", "I traded instruction for trial and error at full cost", false],
+            ["2007–2008 (ages 20–21)", ["Places (China twice more to teach English; in with a friend’s family in Brooklyn, Pretoria); people (met the friend who became my business partner); activities (managing ", <WikiLink key="java" href="/knowledge#works">Java</WikiLink>, "; sprinting at TUKS; yoga; a fitness-trainer certificate at ", <WikiLink key="eta" href="/knowledge#education">ETA College</WikiLink>, "); responses (Tony Robbins and NLP began unsettling my Christian faith)"], true],
+            ["2009 (age 22)", ["Events (placed first nationally at the ", <WikiLink key="cb" href="/knowledge#education">Chinese Bridge competition</WikiLink>, " in April, then represented South Africa among 130 countries in China in September; certified as a massage therapist; ", <WikiLink key="nm" href="/story#emergence">changed my surname from Maritz to Delano</WikiLink>, " on 1 December)"], true],
+            ["2010 (age 23)", ["People (certified in NLP and life coaching under Robert Simic at Evolved Coaching); events (competed at the CrossFit Africa regionals; fired from ", <WikiLink key="bx" href="/knowledge#works">Ballistix</WikiLink>, " for rewriting a week’s programming); responses (left the church as the dissonance became unbearable; began teaching CrossFit classes from a friend’s house)"], true],
+            ["2011–2012 (ages 24–25)", ["Places (Quantum Physiques, a pop-up gym in Menlo Park); people (", <WikiLink key="jl" href="https://www.jelenalakic.com/">Jelena Lakic</WikiLink>, ", who became my partner, joined as a client); activities (running the gym from five to ten each morning; a year of vegetarianism); responses (Neale Donald Walsch’s Conversations with God, sent by my mother)"], true],
+            ["2013–2014 (ages 26–27)", "Events (the gym became Wi-move, then I sold it back to my partner; two weeks in China sourcing equipment); responses (Mark Sisson’s Primal Blueprint ended the vegetarianism; Doug McGuff’s Body by Science moved me to minimum-effective-dose training; Ken Wilber redirected me toward education)", true],
+            ["2015–2016 (ages 28–29)", ["Places (New York, Los Angeles and San Francisco from October 2015; Kuala Lumpur from May 2016); people (interviewed John Demartini and Tim Noakes; hired by ", <WikiLink key="mv" href="https://www.mindvalley.com/">Mindvalley</WikiLink>, "); events (sold my belongings and left South Africa; Jelena and I separated); responses (studied marketing and software after applications went nowhere)"], true],
+            ["Technology (2007–2016)", "The iPhone shipped the year this stage opened and the smartphone became the default computer; social platforms and YouTube industrialised; Uber reached South Africa in 2013; software moved wholesale to the cloud", true],
+          ],
+        },
+        {
+          category: "Established adulthood (age 30–44)",
           metrics: [
             ["", "I stopped searching for a method and started running one", false],
             ["2017 (age 30)", ["Places (back to South Africa from Kuala Lumpur; Barcelona for a four-week trial); events (quit marketing at Mindvalley and was rehired as a learning designer, more than five times the income; ", <WikiLink key="tenx" href="/knowledge#works">10X</WikiLink>, " named and born at Mindvalley-U); responses (built the first courses with Ken Wilber and Neale Donald Walsch)"], true],
@@ -130,27 +134,14 @@ const DEVELOPMENT: StatTableData = {
             ["2022–2023 (ages 35–36)", ["Places (Spokane to produce a course; a Camps Bay house from April 2023); events (launched the ", <WikiLink key="cert" href="https://www.mindvalley.com/certs/10x">10X coach certification</WikiLink>, " to 500 coaches, then a relaunch that did not sell; my highest-paying contract, as a learning systems designer); responses (Demartini’s five-day method, the most transformative training we had done)"], true],
             ["2024 (age 37)", "Events (brokered, designed and directed the Values Factor course with John Demartini; produced the BodyFirst Quest; registered Erfaring, a property company; my Mindvalley contract ended, not renewed on account of AI); responses (studied Daniel Lieberman and lifespan development)", true],
             ["2025–2026 (ages 38–39)", "Places (Val de Vie, Paarl, from September 2025 — the first place I have lived alone); people (Jelena and I ended the romance and stayed friends; my mother moved in, then nearby); activities (five taxonomy course series published free; organic chemistry); responses (rebuilt my exercise taxonomy with the time)", true],
+            ["Technology (2017–)", "Online courses became a livelihood rather than a novelty; the pandemic made remote work standard in 2020; generative AI arrived in late 2022 and ended a contract of mine two years later", true],
           ],
         },
         {
-          category: "Middle adulthood (45–65)",
+          category: "Middle adulthood (age 45–65)",
           metrics: [
             ["", "The years I intend to spend compounding what already works", false],
-            ["Intent", "Pending", true],
-          ],
-        },
-        {
-          category: "Late adulthood (66–84)",
-          metrics: [
-            ["", "The years I intend to spend handing the work over", false],
-            ["Intent", "Pending", true],
-          ],
-        },
-        {
-          category: "Old adulthood (85+)",
-          metrics: [
-            ["", "The years I intend to spend having been right about the rest", false],
-            ["Intent", "Reach 120 in good health — the year 2107", true],
+            ["Intent", "Places, people, activities, and events I mean to answer for — pending", true],
           ],
         },
       ],
