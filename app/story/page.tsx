@@ -76,23 +76,30 @@ const DEVELOPMENT: StatTableData = {
           category: "Early childhood (0–6)",
           metrics: [
             ["", "I absorbed a world I had no means of evaluating", false],
-            ["1987 (birth)", "Born in Krugersdorp to a mother of 21 and a father of 19, then a furniture-store manager at Joshua Doore; a brother two years ahead of me; the household in Sunward Park. I have rocked rhythmically since birth and still do", true],
-            ["1990 (age 3)", "My parents divorced on 21 September, and I lived in four households across the year — Little Falls, a flat in Kenmare, the farm again, then a house in Witpoortjie, where my brother and I started pre-primary", true],
-            ["1991–1993 (ages 4–6)", "The Witpoortjie house sold and we returned to Kenmare; my mother started a construction business, and later a relationship with a new partner. At six the farm dog bit my head open, and a fall down a three-step drop broke my left arm", true],
+            ["1987 (birth)", "Places (the household in Sunward Park); people (a mother of 21, a father of 19 managing at Joshua Doore, a brother two years ahead); events (born 7 December in Krugersdorp); activities (rocking rhythmically, since birth and still)", true],
+            ["1990 (age 3)", "Places (four households — Little Falls, a flat in Kenmare, the farm, then Witpoortjie); people (my parents divorced on 21 September); events (started pre-primary with my brother)", true],
+            ["1991–1993 (ages 4–6)", "Places (the Witpoortjie house sold; back to Kenmare); people (a new partner of my mother’s); events (she started a construction business; the farm dog bit my head open; a fall down a three-step drop broke my left arm)", true],
           ],
         },
         {
           category: "Middle-late childhood (7–13)",
           metrics: [
             ["", "I began testing the world against itself", false],
-            ["Record", "Pending", true],
+            ["1994–1996 (ages 7–9)", "Places (back to the farm; Muldersdrift Primary; Roodekrans from 1996); people (my grandmother, nursed by my mother, died at 57 in 1995); activities (a Super Nintendo, played daily)", true],
+            ["1997 (age 10)", "Places (Standerton, then Evander; Laerskool Hoëveld); people (my mother met my stepfather); events (a child killed running into the road in front of her car; a motorcycle accident cost her a finger; the construction business closed); activities (gymnastics); responses (left after six months, when flips did not come)", true],
+            ["1998 (age 11)", "People (a first close school friend); events (a dog ran in front of my bicycle; the straddle injury led to an orchiectomy); activities (cycling everywhere; a SEGA console); responses (took up skateboarding with him)", true],
+            ["1999–2000 (ages 12–13)", "Places (the skateparks at Edenvale and Thrashers; a short spell at Secunda High); people (my mother and stepfather married on 3 August 1999); events (they adopted my brother and me; a skateboarding fall broke my right forearm, plated)", true],
           ],
         },
         {
           category: "Adolescence (14–19)",
           metrics: [
             ["", "I left formal schooling and started answering for myself", false],
-            ["Record", "Pending", true],
+            ["2001–2002 (ages 14–15)", "Places (Sunward Park when my mother left my stepfather; briefly Evander; then Garsfontein, Pretoria); people (their divorce finalised in March 2002; three friends met at Thrashers skatepark); events (9/11; homeschooling with INTEC College); responses (dropped formal schooling entirely in 2002)", true],
+            ["2003 (age 16)", "Places (Glen Park apartments, Waterkloof Glen); people (my mother working at Virgin Active Menlyn); events (first job performing magic at a kiosk in Menlyn Park Mall, then Sidewalk Surfer through my brother); activities (using her gym access to get online)", true],
+            ["2004 (age 17)", "Places (Kempton Park, then Tipperary Mews, Pretoria; Shijiazhuang, China, from October); people (my brother died on 10 March; Shi Fu Yang Long Fei, my first mentor, at Tang Lang Cuan Wushu); activities (teaching English in China; running); responses (dropped skateboarding for kung fu; Warrior Within returned me to reading)", true],
+            ["2005 (age 18)", "Places (in with a friend’s family; my mother to Rustenburg, then KwaZulu-Natal); people (my grandfather died in February; my kung-fu teacher left for New York); activities (waiting tables at Java; weekly Mandarin at the Pretoria Chinese School); responses (took on the Christian values of the household I lived in)", true],
+            ["2006 (age 19)", "Places (Ballinderry in Garsfontein, where a break-in left my mother assaulted); people (my first girlfriend; Jaco van der Merwe of Bittereinder, who taught me to drive); activities (the Adidas outlet; gym, squash, road races; TEFL certification); responses (wrote and directed short kung-fu films after Tao of Jeet Kune Do)", true],
           ],
         },
         {
