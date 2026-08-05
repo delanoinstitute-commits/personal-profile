@@ -163,7 +163,7 @@ const EMERGENCE: StatTableData = {
         {
           category: "Intrinsic (personal convictions)",
           metrics: [
-            ["", "Each of these cost me something that was working, on the promise of something better", false],
+            ["", "Hard decisions I took blind, and every one changed my life for the better", false],
             ["Schooling", "Left formal schooling at fifteen with nothing lined up, and have taught myself since (2002)", true],
             ["Skateboarding", "Walked away from the sport and the community around it the day I found kung fu (2004)", true],
             ["China", "Flew out alone to teach English at sixteen, three months after my brother died (2004)", true],
