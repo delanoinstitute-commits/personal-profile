@@ -231,7 +231,7 @@ export default function StoryPage() {
       <NestedTable {...DEVELOPMENT} />
 
       <h2 id="emergence">
-        Emergence <span className="heading-paren">(Niche)</span>
+        Emergence <span className="heading-paren">(Agency)</span>
       </h2>
       <p>
         What is left once inheritance and development are subtracted: the choices no
