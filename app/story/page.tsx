@@ -76,7 +76,7 @@ const DEVELOPMENT: StatTableData = {
         {
           category: "Early childhood (age 0–6)",
           metrics: [
-            ["", "Where attachment and initiative are meant to form, mine formed across six households and a divorce", false],
+            ["", "Where attachment is meant to settle, mine settled across six households and a divorce", false],
             ["1987 (birth)", "I was born on 7 December in Krugersdorp, to a mother of 21 and a father of 19 who managed at Joshua Doore, with a brother two years ahead of me; we lived in Sunward Park (Space). I rocked rhythmically from the start, and still do (Energy).", true],
             ["1990 (age 3)", "My parents divorced on 21 September. I lived in four households across the year — Little Falls, a flat in Kenmare, the farm again, then a house in Witpoortjie (Space) — and started pre-primary with my brother (Energy).", true],
             ["1991–1993 (ages 4–6)", "The Witpoortjie house sold and we returned to Kenmare (Space). My mother started a construction business (Energy) and later took a new partner. The farm dog bit my head open, and a fall down a three-step drop broke my left arm.", true],
@@ -124,7 +124,7 @@ const DEVELOPMENT: StatTableData = {
         {
           category: "Established adulthood (age 30–44)",
           metrics: [
-            ["", "The stage for consolidating a career; I consolidated one method and taught it to ninety thousand", false],
+            ["", "Career consolidation is the task; I settled on one method and taught ninety thousand", false],
             ["2017 (age 30)", ["I quit marketing at Mindvalley and was rehired as a learning designer, then built the first courses with Ken Wilber and Neale Donald Walsch (Energy). ", <WikiLink key="tenx" href="/knowledge#works">10X</WikiLink>, " was named and born at Mindvalley-U. I moved back to South Africa from Kuala Lumpur, and ran a four-week trial in Barcelona (Space)."], true],
             ["2018–2019 (ages 31–32)", "I designed courses with Ben Greenfield, Steven Kotler and Ken Wilber, and ran a live-in training intervention for Gerard Butler (Energy), working across Sardinia, Tallinn, Croatia, Denver and Spokane (Space). Jelena, her children and I moved in together as a family, I registered my first US company, and started studying science in earnest.", true],
             ["2020–2021 (ages 33–34)", ["I trained clients in Seattle and Costa Rica, then flew home days before the lockdown; we moved to Camps Bay in March 2021 (Space). I codified the ", <WikiLink key="m10x" href="/knowledge#works">10X method</WikiLink>, " and published it free, and the ", <WikiLink key="quest" href="/knowledge#works">10X Quest</WikiLink>, " launched, since completed by over 90,000 people (Energy). I certified in nutritional biochemistry, then blood chemistry analysis."], true],
