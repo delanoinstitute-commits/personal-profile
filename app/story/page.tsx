@@ -3,6 +3,7 @@ import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import WikiLink from "@/components/WikiLink";
+import { References, type ReferenceSection } from "@/components/References";
 
 export const metadata: Metadata = { title: "Story" };
 
@@ -183,6 +184,63 @@ const EMERGENCE: StatTableData = {
   ],
 };
 
+
+const STORY_DATA: ReferenceSection[] = [
+  {
+    label: "My data derived from sequencing, admixture analysis, and family interview",
+    items: [
+      {
+        id: "genotype",
+        cite: (
+          <>
+            <strong>Genotype</strong>: <em>Autosomal genotyping (Feb 2022)</em>; 631,991 markers, from which APOE (rs429358 TT; rs7412 CC), ACTN3, lactase persistence, and alcohol metabolism are read (23andMe v5) • raw export (23andMe)
+          </>
+        ),
+      },
+      {
+        id: "ancestry",
+        cite: (
+          <>
+            <strong>Ancestry</strong>: <em>Admixture analysis (Nov 2025)</em>; composition across European, Sub-Saharan African, Central and South Asian, and Melanesian populations, with the timing of each segment (23andMe) • report (23andMe)
+          </>
+        ),
+      },
+      {
+        id: "family-history",
+        cite: (
+          <>
+            <strong>Family history</strong>: <em>Structured questionnaire (2026)</em>; ages and causes of death, conditions, and exposures across three generations, collected from relatives and clinical records (Attia Medical instrument) • record (family)
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+const STORY_MEDIA: ReferenceSection[] = [
+  {
+    label: "My life as others have filmed it, and the voices I keep returning to",
+    items: [
+      {
+        id: "self-portrait",
+        cite: (
+          <>
+            <strong>Emerging adulthood</strong>: <em><WikiLink href="https://youtu.be/iogu9akcur4">Self Portrait</WikiLink> (2016)</em>; a nine-minute film made in the months before my first departure for the United States, narrated in my own words (directed by Ique Langa) • film (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "exemplars",
+        cite: (
+          <>
+            <strong>Exemplars</strong>: <em>Lessons (ongoing)</em>; curated lectures from the voices I return to, on <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9rOYMzQ_cKKsfY-O7t5sVFD">wealth</WikiLink>, <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9r1sgnpJGcmZ5Ab_tKQF-JI">creativity</WikiLink>, and <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9p4Raa9N8d_A5467agmvgMk">health</WikiLink> • playlists (YouTube)
+          </>
+        ),
+      },
+    ],
+  },
+];
+
 export default function StoryPage() {
   return (
     <>
@@ -242,6 +300,17 @@ export default function StoryPage() {
         the first two branches predicts them.
       </p>
       <NestedTable {...EMERGENCE} />
+
+      <References
+        title={<>References <span className="heading-paren">(Data)</span></>}
+        sections={STORY_DATA}
+      />
+
+      <References
+        id="media"
+        title={<>References <span className="heading-paren">(Media)</span></>}
+        sections={STORY_MEDIA}
+      />
     </>
   );
 }
