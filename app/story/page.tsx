@@ -114,7 +114,7 @@ const DEVELOPMENT: StatTableData = {
           metrics: [
             ["", "I traded instruction for trial and error at full cost", false],
             ["2007–2008 (ages 20–21)", ["I returned to China twice more to teach English and lived with a friend’s family in Pretoria (Space). I was promoted to manage ", <WikiLink key="java" href="/knowledge#works">Java</WikiLink>, ", sprinted at TUKS, took up yoga, and earned a fitness-trainer certificate at ", <WikiLink key="eta" href="/knowledge#education">ETA College</WikiLink>, " (Energy). I met ", <WikiLink key="brad" href="https://www.movefreely.co.za">Brad Openshaw</WikiLink>, ", who became my best friend and business partner; Tony Robbins and NLP began unsettling my Christian faith."], true],
-            ["2009 (age 22)", ["Still living with a friend’s family in Pretoria (Space), I placed first nationally at the ", <WikiLink key="cb" href="/knowledge#education">Chinese Bridge competition</WikiLink>, " in April and represented South Africa among 130 countries at the Beijing finals in September (Energy). I certified as a massage therapist, and ", <WikiLink key="nm" href="/story#emergence">changed my surname from Maritz to Delano</WikiLink>, " on 1 December."], true],
+            ["2009 (age 22)", ["Still living with a friend’s family in Pretoria (Space), I placed first nationally at the ", <WikiLink key="cb" href="/knowledge#education">Chinese Bridge competition</WikiLink>, " in April and represented South Africa among 130 countries at the Beijing finals in September (Energy). I certified as a massage therapist, and changed my surname from Maritz to Delano on 1 December."], true],
             ["2010 (age 23)", ["I certified in NLP and life coaching under Robert Simic at Evolved Coaching, was recruited to coach at ", <WikiLink key="bx" href="/knowledge#works">Ballistix</WikiLink>, ", and competed at the CrossFit Africa regionals (Energy). I left the church as the dissonance became unbearable, moved in with my mother at my uncle’s house (Space), and began teaching CrossFit classes from a friend’s house."], true],
             ["2011–2012 (ages 24–25)", ["Brad and I opened Quantum Physiques, a pop-up gym in Menlo Park (Space), and ran it from five to ten each morning (Energy). ", <WikiLink key="jl" href="https://www.jelenalakic.com/">Jelena Lakic</WikiLink>, " joined as a client and became my partner. We kept a year of vegetarianism, and my mother sent me Neale Donald Walsch’s Conversations with God."], true],
             ["2013–2014 (ages 26–27)", "The gym became Wi-move and I sold my share back to Brad; Jelena and I spent two weeks in China sourcing equipment (Space). Mark Sisson’s Primal Blueprint ended the vegetarianism, Doug McGuff’s Body by Science moved me to minimum-effective-dose training (Energy), and Ken Wilber redirected me toward education.", true],
@@ -131,7 +131,6 @@ const DEVELOPMENT: StatTableData = {
             ["2022–2023 (ages 35–36)", ["I produced a course in Spokane and we moved into a Camps Bay house in April 2023 (Space). We launched the ", <WikiLink key="cert" href="/knowledge#works">10X coach certification</WikiLink>, " to 500 coaches (Energy), and I took my highest-paying contract, as a learning systems designer. Jelena and I did Demartini’s five-day method, the most transformative training we had done."], true],
             ["2024 (age 37)", ["I brokered, designed and directed the ", <WikiLink key="vf" href="/knowledge#works">Values Factor course</WikiLink>, " with John Demartini, and produced the ", <WikiLink key="bf" href="/knowledge#works">BodyFirst Quest</WikiLink>, " (Energy). Jelena and I registered Erfaring, a property company (Matter). I left Mindvalley and sold my 10X company shares, and studied Daniel Lieberman and lifespan development."], true],
             ["2025 (age 38)", "My mother and I moved to Val de Vie in Paarl that September, she to her own place and I to a studio (Space). Jelena and I ended the romance and stayed friends. I rebuilt my exercise taxonomy with the time (Energy).", true],
-            ["2026 (age 39)", ["I published ", <WikiLink key="tax" href="/knowledge#works">five taxonomy course series</WikiLink>, " free, studied organic chemistry, and built the ", <WikiLink key="autop" href="/knowledge#works">autoprofiling taxonomy</WikiLink>, " project (Energy). I emigrate to the United States in August (Space)."], true],
           ],
         },
       ],
@@ -152,7 +151,7 @@ const EMERGENCE: StatTableData = {
             ["", "I recognised myself in these before I could explain why", false],
             ["Stories", "Mortal Kombat’s Liu Kang (1995), Dragon’s Bruce Lee (1997), Dragon Ball Z’s Goku (2003), The Last Samurai’s Nathan Algren (2005), Iron Man’s Tony Stark (2008), and Benedict Cumberbatch’s Sherlock Holmes (2017)", true],
             ["Exemplars", "Bruce Lee (2004–2006); Tony Robbins and Greg Glassman (2008–2011); John Demartini, Neale Donald Walsch, and Mark Sisson (2011–2014); Doug McGuff, Ken Wilber, and Alan Watts (2014–2017); Christopher Sommer, Jordan Peterson, and Naval Ravikant (2017–2021); Peter Attia, David Deutsch, Aswath Damodaran, and Elon Musk (2021–)", true],
-            ["Disciplines", "Eastern philosophy (2003), languages (2004), theology, psychology, exercise physiology, western philosophy, education psychology, medicine, corporate finance (2024), and chemistry, computer science, and epistemology (current)", true],
+            ["Disciplines", "Eastern philosophy (2004), languages and theology (2005), psychology and exercise physiology (2008), education (2013), western philosophy and marketing (2014), finance (2016), medicine (2018), epistemology (2021), chemistry (2022), and computer science and knowledge organisation (current)", true],
           ],
         },
       ],
@@ -165,18 +164,18 @@ const EMERGENCE: StatTableData = {
           category: "Intrinsic (personal convictions)",
           metrics: [
             ["", "Hard decisions I took blind, and every one changed my life for the better", false],
-            ["Schooling", "Left formal schooling at fifteen with nothing lined up, and have taught myself since (2002)", true],
-            ["Skateboarding", "Walked away from the sport and the community around it the day I found kung fu (2004)", true],
-            ["China", "Flew out alone to teach English at sixteen, three months after my brother died (2004)", true],
-            ["Surname", "Chose my own at twenty-one, over a birth name and a stepfather’s, neither of them mine (2009)", true],
-            ["Faith", "Left the church at twenty-three when the dissonance became unbearable, and most of my social world went with it (2010)", true],
-            ["Quantum Physiques", "Bought out my partner, then sold him the gym back while it was still working, to move toward education (2013)", true],
-            ["America", "Sold everything and flew out at twenty-seven to look for work, with no job and no money (2015)", true],
-            ["Mindvalley", "Moved to Malaysia for the job, resigned inside a year for lack of growth, and was rehired into better work (2017)", true],
-            ["The Demartini method", "Signed us onto a five-day training on an impulse, with no brief and no expectation of it (2023)", true],
-            ["10X", "Sold my shares in the company I had built around the method I had spent six years codifying (2024)", true],
-            ["Partnership", "Ended things with Jelena twice — in 2015 for two and a half years, and again in 2025 before emigrating", true],
-            ["Citizenship", "Gave up my country and arrived in the United States as a refugee, a decade in preparation (2026)", true],
+            ["Schooling", "Left school at fifteen with nothing lined up; self-taught since (2002)", true],
+            ["Skateboarding", "Quit the sport and its community the day I found kung fu (2004)", true],
+            ["China", "Flew out alone to teach English at sixteen, months after my brother died (2004)", true],
+            ["Surname", "Took my own name at twenty-one, over a birth name and a stepfather’s (2009)", true],
+            ["Faith", "Left the church at twenty-three when the dissonance broke, losing my social world (2010)", true],
+            ["Quantum Physiques", "Sold the gym back to my partner while it was still working (2013)", true],
+            ["America", "Sold everything and flew out at twenty-seven with no job and no money (2015)", true],
+            ["Mindvalley", "Moved to Malaysia for the job, resigned inside a year, was rehired better (2017)", true],
+            ["The Demartini method", "Signed us onto a five-day training on impulse, with no expectation (2023)", true],
+            ["10X", "Sold my shares in the company built on six years of my method (2024)", true],
+            ["Partnership", "Ended things with Jelena twice, in 2015 and again in 2025 before leaving", true],
+            ["Citizenship", "Gave up my country to arrive in the United States as a refugee (2026)", true],
           ],
         },
       ],
@@ -225,7 +224,7 @@ const STORY_MEDIA: ReferenceSection[] = [
         id: "self-portrait",
         cite: (
           <>
-            <strong>Emerging adulthood</strong>: <em><WikiLink href="https://youtu.be/iogu9akcur4">Self Portrait</WikiLink> (2016)</em>; a nine-minute film made in the months before my first departure for the United States, narrated in my own words (directed by Ique Langa) • film (YouTube)
+            <strong>Emerging adulthood</strong>: <em><WikiLink href="https://youtu.be/iogu9akcur4">Self Portrait</WikiLink> (2015)</em>; a nine-minute film shot in the months before my first departure for the United States, released the following February, narrated in my own words (directed by Ique Langa) • film (YouTube)
           </>
         ),
       },
@@ -233,7 +232,7 @@ const STORY_MEDIA: ReferenceSection[] = [
         id: "exemplars",
         cite: (
           <>
-            <strong>Exemplars</strong>: <em>Lessons (ongoing)</em>; curated lectures from the voices I return to, on <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9rOYMzQ_cKKsfY-O7t5sVFD">wealth</WikiLink>, <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9r1sgnpJGcmZ5Ab_tKQF-JI">creativity</WikiLink>, and <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9p4Raa9N8d_A5467agmvgMk">health</WikiLink> • playlists (YouTube)
+            <strong>Exemplars</strong>: <em>Lessons (ongoing)</em>; curated lectures from the voices I return to, on <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9p4Raa9N8d_A5467agmvgMk">health</WikiLink>, <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9r1sgnpJGcmZ5Ab_tKQF-JI">creativity</WikiLink>, and <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9rOYMzQ_cKKsfY-O7t5sVFD">wealth</WikiLink> • playlists (YouTube)
           </>
         ),
       },
