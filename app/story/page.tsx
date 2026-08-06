@@ -76,7 +76,7 @@ const DEVELOPMENT: StatTableData = {
         {
           category: "Early childhood (age 0–6)",
           metrics: [
-            ["", "I absorbed a world I had no means of evaluating", false],
+            ["", "Where attachment and initiative are meant to form, mine formed across six households and a divorce", false],
             ["1987 (birth)", "I was born on 7 December in Krugersdorp, to a mother of 21 and a father of 19 who managed at Joshua Doore, with a brother two years ahead of me; we lived in Sunward Park (Space). I rocked rhythmically from the start, and still do (Energy).", true],
             ["1990 (age 3)", "My parents divorced on 21 September. I lived in four households across the year — Little Falls, a flat in Kenmare, the farm again, then a house in Witpoortjie (Space) — and started pre-primary with my brother (Energy).", true],
             ["1991–1993 (ages 4–6)", "The Witpoortjie house sold and we returned to Kenmare (Space). My mother started a construction business (Energy) and later took a new partner. The farm dog bit my head open, and a fall down a three-step drop broke my left arm.", true],
@@ -85,7 +85,7 @@ const DEVELOPMENT: StatTableData = {
         {
           category: "Middle-late childhood (age 7–13)",
           metrics: [
-            ["", "I began testing the world against itself", false],
+            ["", "The years competence and friendship are built; I built both on a skateboard", false],
             ["1994–1996 (ages 7–9)", "We moved back to the farm at Muldersdrift so my mother could nurse hers, and I started at Muldersdrift Primary — both inside the Cradle of Humankind (Space); we left for Roodekrans in 1996. My grandmother died at 57 in 1995, the year the Mortal Kombat film was released. A Super Nintendo arrived (Matter) and I played it daily (Energy).", true],
             ["1997 (age 10)", "My mother met my stepfather in Standerton and we moved to Evander, where my brother and I entered Laerskool Hoëveld (Space). A child ran into the road in front of her car and was killed; a motorcycle accident later cost her a finger, and her construction business closed. I trained gymnastics for six months (Energy).", true],
             ["1998 (age 11)", ["A dog ran in front of my bicycle and the straddle injury led to an orchiectomy. I cycled everywhere otherwise (Energy), was given a SEGA console (Matter), played Mortal Kombat 3 daily, and took up skateboarding with my closest school friend, ", <WikiLink key="charl" href="https://www.instagram.com/skipper_skate_87/">Charl Steyn</WikiLink>, " — Skippy — who became one of the best skateboarders in Gauteng."], true],
@@ -95,7 +95,7 @@ const DEVELOPMENT: StatTableData = {
         {
           category: "Adolescence (age 14–19)",
           metrics: [
-            ["", "I left formal schooling and started answering for myself", false],
+            ["", "Identity is meant to form at school among peers; mine formed abroad, alone, after a death", false],
             ["2001–2002 (ages 14–15)", ["My mother left my stepfather and we returned to Sunward Park, spent a short time back in Evander, then settled in Garsfontein, Pretoria (Space). My brother and I moved to homeschooling with ", <WikiLink key="intec" href="/knowledge#education">INTEC College</WikiLink>, " in 2001, the year of the September 11 attacks (Energy); I dropped formal schooling entirely the following year."], true],
             ["2003 (age 16)", "We moved to Glen Park apartments in Waterkloof Glen (Space), where I made three friends at Thrashers skatepark. My first job was performing magic at a kiosk in Menlyn Park Mall, and my brother found me a second at Sidewalk Surfer (Energy). My mother worked at Virgin Active Menlyn, and I used her membership to get online.", true],
             ["2004 (age 17)", ["My brother died on 9 March. I joined Tang Lang Cuan Wushu, where Shi Fu Yang Long Fei became my first mentor; I dropped skateboarding for kung fu and started running (Energy). We moved to Kempton Park, then Tipperary Mews in Pretoria, and in October I went to Shijiazhuang, China, to ", <WikiLink key="tefl04" href="/knowledge#works">teach English</WikiLink>, " (Space). John Little’s Warrior Within returned me to reading."], true],
@@ -112,7 +112,7 @@ const DEVELOPMENT: StatTableData = {
         {
           category: "Emerging adulthood (age 20–29)",
           metrics: [
-            ["", "I traded instruction for trial and error at full cost", false],
+            ["", "Instability defines this stage; I used mine to choose a name, a partner, and a trade", false],
             ["2007–2008 (ages 20–21)", ["I returned to China twice more to teach English and lived with a friend’s family in Pretoria (Space). I was promoted to manage ", <WikiLink key="java" href="/knowledge#works">Java</WikiLink>, ", sprinted at TUKS, took up yoga, and earned a fitness-trainer certificate at ", <WikiLink key="eta" href="/knowledge#education">ETA College</WikiLink>, " (Energy). I met ", <WikiLink key="brad" href="https://www.movefreely.co.za">Brad Openshaw</WikiLink>, ", who became my best friend and business partner; Tony Robbins and NLP began unsettling my Christian faith."], true],
             ["2009 (age 22)", ["Still living with a friend’s family in Pretoria (Space), I placed first nationally at the ", <WikiLink key="cb" href="/knowledge#education">Chinese Bridge competition</WikiLink>, " in April and represented South Africa among 130 countries at the Beijing finals in September (Energy). I certified as a massage therapist, and changed my surname from Maritz to Delano on 1 December."], true],
             ["2010 (age 23)", ["I certified in NLP and life coaching under Robert Simic at Evolved Coaching, was recruited to coach at ", <WikiLink key="bx" href="/knowledge#works">Ballistix</WikiLink>, ", and competed at the CrossFit Africa regionals (Energy). I left the church as the dissonance became unbearable, moved in with my mother at my uncle’s house (Space), and began teaching CrossFit classes from a friend’s house."], true],
@@ -124,7 +124,7 @@ const DEVELOPMENT: StatTableData = {
         {
           category: "Established adulthood (age 30–44)",
           metrics: [
-            ["", "I stopped searching for a method and started running one", false],
+            ["", "The stage for consolidating a career; I consolidated one method and taught it to ninety thousand", false],
             ["2017 (age 30)", ["I quit marketing at Mindvalley and was rehired as a learning designer, then built the first courses with Ken Wilber and Neale Donald Walsch (Energy). ", <WikiLink key="tenx" href="/knowledge#works">10X</WikiLink>, " was named and born at Mindvalley-U. I moved back to South Africa from Kuala Lumpur, and ran a four-week trial in Barcelona (Space)."], true],
             ["2018–2019 (ages 31–32)", "I designed courses with Ben Greenfield, Steven Kotler and Ken Wilber, and ran a live-in training intervention for Gerard Butler (Energy), working across Sardinia, Tallinn, Croatia, Denver and Spokane (Space). Jelena, her children and I moved in together as a family, I registered my first US company, and started studying science in earnest.", true],
             ["2020–2021 (ages 33–34)", ["I trained clients in Seattle and Costa Rica, then flew home days before the lockdown; we moved to Camps Bay in March 2021 (Space). I codified the ", <WikiLink key="m10x" href="/knowledge#works">10X method</WikiLink>, " and published it free, and the ", <WikiLink key="quest" href="/knowledge#works">10X Quest</WikiLink>, " launched, since completed by over 90,000 people (Energy). I certified in nutritional biochemistry, then blood chemistry analysis."], true],
