@@ -70,7 +70,7 @@ const SECURITY: StatTableData = {
             ["Sponsorship", "Audience access sold", true, undefined, undefined, true],
             ["Affiliate", "Referral percentages", true, undefined, undefined, true],
             ["Platform", "Content, subscriptions, and ad revenue", true, undefined, undefined, true],
-            ["Investment", "Return ratio >1.0 against benchmark; leverages capital", true, "What owned capital pays out, measured against the index alternative — a ratio under 1.0 means the passive index would have done better."],
+            ["Investment", "Coverage ratio \u22652.0 — returns covering expenses twice over; leverages capital", true, "Total investment returns \u00f7 expenses: the financial-freedom ratio. At 1.0 the returns pay the bills but inflation eats the principal; sustainability means spending only the real return and reinvesting the inflation share, so the required ratio is nominal \u00f7 real return — about 1.75 at 7% returns and 3% inflation, rounded to 2.0 for sequence-of-returns margin over a long horizon. Spend one half, reinvest the other; equivalently, capital of roughly 29\u00d7 annual expenses — the perpetual form of the 4% rule."],
             ["Interest", "Debt instruments and cash", true, undefined, undefined, true],
             ["Dividends", "Equity distributions", true, undefined, undefined, true],
             ["Rental", "Property lease income", true, undefined, undefined, true],
