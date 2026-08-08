@@ -98,11 +98,12 @@ const EFFICIENCY: StatTableData = {
           category: "Operational (monthly burn)",
           metrics: [
             ["", "The recurring cost of running my life, held under a third of income", false],
-            ["Fixed", "Gross margin <30% — recurring burn as a share of gross income", true, "Every cost that arrives monthly whether or not anything happens. Held under 30% so that no month's income is spoken for before it lands."],
-            ["Home", "Facilities (rent; utilities); consumables (groceries; toiletries)", true, undefined, undefined, true],
-            ["Health", "Wellness (fitness; beauty)", true, undefined, undefined, true],
-            ["Finance", "Insurance (health; property; life; liability); services (fees)", true, undefined, undefined, true],
-            ["Personal", "Experiences (education; entertainment; restaurants; travel); goods (clothing; stationery)", true, undefined, undefined, true],
+            ["Fixed", "Gross margin <30% — recurring burn as a share of gross income", true, "Every cost that arrives monthly whether or not anything happens. With variable spending under 5%, total expenses hold under 35% of gross; tax takes under 15%; at least half of every dollar flows on to payments, savings, and investment."],
+            ["Home", "Facilities (rent; utilities; services) and consumables (groceries; detergents; toiletries)", true, "Spans Materials, Industrials, Real Estate, Utilities, Communication Services, and Consumer Staples — the domestic slice of the market.", undefined, true],
+            ["Health", "Wellness (fitness; beauty)", true, "Consumer Discretionary — the elective half; the Health Care sector appears on the capital side.", undefined, true],
+            ["Finance", "Insurance (health; disability; property; umbrella; life) and services (fees)", true, "Financials. The insurance lines mirror the Security branch — what is bought there is paid for here.", undefined, true],
+            ["Personal", "Experiences (dining; entertainment; education), technology (software), and giving (donations)", true, "Consumer Discretionary and Information Technology. Giving is deductible against income tax when itemized.", undefined, true],
+            ["Mobility", "Transit (rideshare; public transit) and vehicle (lease; charging)", true, "Industrials and Energy — the sector that completes the set: with Mobility, the expense map touches all eleven GICS sectors.", undefined, true],
           ],
         },
         {
@@ -110,10 +111,10 @@ const EFFICIENCY: StatTableData = {
           metrics: [
             ["", "The lumpy costs, capped so they never set the pace", false],
             ["Variable", "Operating margin <5% — once-off outlays as a share of gross income", true, "Irregular and once-off spending, averaged annually. Capped low because lumpy costs are where budgets quietly die."],
-            ["Home", "Facilities (services; repairs)", true, undefined, undefined, true],
-            ["Health", "Medical (diagnostics; copays)", true, undefined, undefined, true],
-            ["Finance", "Insurance (excess); services (professional fees)", true, undefined, undefined, true],
-            ["Personal", "Goods (technology; capital items); experiences (education; travel)", true, undefined, undefined, true],
+            ["Home", "Equipment (furniture; appliances) and repairs (services)", true, undefined, undefined, true],
+            ["Health", "Medical (out-of-pocket; diagnostics)", true, "Health Care — the sector's capital-side appearance.", undefined, true],
+            ["Finance", "Services (professional fees)", true, undefined, undefined, true],
+            ["Personal", "Goods (devices; clothing; toys) and experiences (travel)", true, undefined, undefined, true],
           ],
         },
       ],
@@ -280,8 +281,9 @@ export default function WealthPage() {
       <p>
         The income statement of a life, in two registers: what running it costs
         (expenses) and what must be settled with lenders, the state, and the future
-        (payments). Every line is a margin against gross income, and the last one —
-        the savings margin — is the number the rest exist to protect.
+        (payments). The cascade is fixed — expenses under 35% of gross, tax under
+        15%, so at least half of every dollar flows on to payments, savings, and
+        investment. The savings margin is the number the rest exist to protect.
       </p>
       <NestedTable {...EFFICIENCY} />
 
