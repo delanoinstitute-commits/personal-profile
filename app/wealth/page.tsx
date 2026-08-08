@@ -99,11 +99,11 @@ const EFFICIENCY: StatTableData = {
           metrics: [
             ["", "The recurring cost of running my life, held under a third of income", false],
             ["Fixed", "Gross margin <30% — recurring burn as a share of gross income", true, "Every cost that arrives monthly whether or not anything happens. With variable spending under 5%, total expenses hold under 35% of gross; tax takes under 15%; at least half of every dollar flows on to payments, savings, and investment."],
-            ["Home", "Facilities (rent; utilities; services) and consumables (groceries; detergents; toiletries)", true, { text: (<>Purchases in the following industries:<ul><li>Real estate</li><li>Utilities</li><li>Communication services</li><li>Industrials</li><li>Materials</li><li>Consumer staples</li></ul></>) }, undefined, true],
-            ["Health", "Care (fitness; beauty)", true, { text: (<>Purchases in the following industries:<ul><li>Health care</li><li>Consumer discretionary</li></ul></>) }, undefined, true],
-            ["Mobility", "Transit (rideshare; public transit) and vehicle (lease; fuel; charging)", true, { text: (<>Purchases in the following industries:<ul><li>Industrials</li><li>Energy</li><li>Consumer discretionary</li></ul></>) }, undefined, true],
-            ["Finance", "Insurance (health; disability; property; umbrella; life) and services (fees)", true, { text: (<>Purchases in the following industries:<ul><li>Financials</li></ul></>) }, undefined, true],
-            ["Personal", "Experiences (dining; entertainment; education) and goods (software subscriptions)", true, { text: (<>Purchases in the following industries:<ul><li>Consumer discretionary</li><li>Information technology</li></ul></>) }, undefined, true],
+            ["Home", "Facilities (rent; utilities; services) and consumables (groceries; detergents; toiletries)", true, undefined, undefined, true],
+            ["Health", "Care (fitness; beauty; therapy; childcare; eldercare; pet care)", true, undefined, undefined, true],
+            ["Mobility", "Transit (rideshare; public transit) and vehicle (lease; fuel; charging)", true, undefined, undefined, true],
+            ["Finance", "Insurance (health; disability; property; umbrella; life) and services (fees)", true, undefined, undefined, true],
+            ["Personal", "Experiences (dining; entertainment; education) and goods (software subscriptions)", true, undefined, undefined, true],
           ],
         },
         {
