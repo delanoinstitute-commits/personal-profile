@@ -28,7 +28,7 @@ const SECURITY: StatTableData = {
             ["Health", "HSA-qualified high-deductible plan; out-of-pocket maximum held within cash reserves", true, "In the US, an HSA-qualified plan pairs lower premiums with a Health Savings Account — the only triple-tax-advantaged account (deductible in, growing untaxed, untaxed out for medical costs). The benchmark: the plan's worst-case annual cost never exceeds the cash reserve."],
             ["Disability", "Own-occupation cover replacing ~60% of income", true, "The insurance on earning capacity itself — statistically likelier to be needed before 65 than life cover. Own-occupation pays if I cannot do my work, not merely any work."],
             ["Property", "Coverage ratio >1.0 — insured at or above replacement cost", true, "Insured value ÷ replacement cost. Below 1.0 a loss is partly mine; at or above it the asset is made whole."],
-            ["Renters", "Liability-first at $300k+ with replacement-cost contents — the umbrella\u2019s foundation while renting furnished", true, undefined, undefined, true],
+            ["Renters", "Liability-first at $300k+ with replacement-cost contents", true, undefined, undefined, true],
             ["Auto", "None owned — non-owner liability while carless; 250/500/100 when owned", true, undefined, undefined, true],
             ["Homeowners", "No purchase planned anytime soon — the benchmark waits on ownership", true, undefined, undefined, true],
           ],
