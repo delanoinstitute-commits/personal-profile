@@ -101,7 +101,11 @@ export const NAV_GROUPS: NavGroup[] = [
       {
         label: "Wealth",
         href: "/wealth",
-        sections: [{ label: "Socioeconomic", anchor: "socioeconomic" }],
+        sections: [
+          { label: "Security", anchor: "security" },
+          { label: "Efficiency", anchor: "efficiency" },
+          { label: "Growth", anchor: "growth" },
+        ],
       },
     ],
   },
