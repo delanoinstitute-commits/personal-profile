@@ -98,7 +98,7 @@ const EFFICIENCY: StatTableData = {
           category: "Operational (monthly burn)",
           metrics: [
             ["", "The recurring cost of running my life, held under a third of income", false],
-            ["Fixed", "Gross margin <30% — recurring burn as a share of gross income", true, "Every cost that arrives monthly whether or not anything happens. With variable spending under 5%, total expenses hold under 35% of gross; tax takes under 15%; at least half of every dollar flows on to payments, savings, and investment."],
+            ["Fixed", "Gross margin >70% (income surviving the recurring burn)", true, "Read the corporate way: the share of gross income kept after fixed costs — everything that arrives monthly whether or not anything happens, held under 30%. With variable spending under 5%, total expenses hold under 35% of gross; tax takes under 15%; at least half of every dollar flows on to payments, savings, and investment."],
             ["Home", "Facilities (rent; utilities; services) and consumables (groceries; detergents; toiletries)", true, undefined, undefined, true],
             ["Health", "Care (fitness; beauty; therapy; childcare; eldercare; pet care)", true, undefined, undefined, true],
             ["Mobility", "Transit (rideshare; public transit) and vehicle (lease; fuel; charging)", true, undefined, undefined, true],
@@ -110,7 +110,7 @@ const EFFICIENCY: StatTableData = {
           category: "Capital (once-off costs)",
           metrics: [
             ["", "The lumpy costs, capped so they never set the pace", false],
-            ["Variable", "Operating margin <5% — once-off outlays as a share of gross income", true, "Irregular and once-off spending, averaged annually. Capped low because lumpy costs are where budgets quietly die."],
+            ["Variable", "Operating margin >65% (income surviving all burn)", true, "What remains of gross once fixed and variable costs are both paid. The variable line itself — irregular and once-off spending, averaged annually — is capped under 5%, because lumpy costs are where budgets quietly die."],
             ["Home", "Equipment (furniture; appliances) and repairs (services)", true, undefined, undefined, true],
             ["Health", "Medical (out-of-pocket; diagnostics)", true, undefined, undefined, true],
             ["Mobility", "Vehicle (repairs)", true, undefined, undefined, true],
@@ -170,10 +170,10 @@ const EFFICIENCY: StatTableData = {
           category: "Profits (free cash flow)",
           metrics: [
             ["", "I run myself as a firm — free cash has three uses, each with a rule", false],
-            ["Financing", "Repayment margin ≥15% (principal retired first)", true, "Corporate finance sorts every use of free cash into three decisions — financing, investing, dividends — and I run them on a firm of one; the frame is Aswath Damodaran’s (“It’s all corporate finance”). The financing decision holds the right mix of debt and equity: every dollar of principal retired is a guaranteed return at the loan’s own rate, so the highest rate goes first."],
+            ["Financing", "Repayment margin ≥15% (principal retired first)", true, "Corporate finance sorts every use of free cash into three decisions — financing, investing, dividends — and I run them on a firm of one; the frame is Aswath Damodaran’s (“It’s all corporate finance”). The financing decision holds the right mix of debt and equity: every dollar of principal retired is a guaranteed return at the loan’s own rate, so the highest rate goes first. While no debt is held, the margin has nothing to retire and folds into investing — the floor binds only when a balance exists."],
             ["Unsecured", "Maximum pace (the highest rate, retired first)", true, undefined, undefined, true],
             ["Secured", "Minimum schedule (the lowest rate, held longest)", true, undefined, undefined, true],
-            ["Dividends", "Payout margin ≤15% (the owner’s draw and the giving)", true, "The dividend decision: cash that cannot beat the hurdle rate is returned to the owners — and the owner is me. The draw funds experiences, goods, and donations, and the cap does the quiet work: lifestyle is held to growing slower than capital, whatever income does."],
+            ["Dividends", "Payout margin ≤15% (the owner’s draw and the giving)", true, "The dividend decision: cash that cannot beat the hurdle rate is returned to the owners — and the owner is me. The Personal rows in Expenses are the operating baseline; the draw is consumption and giving beyond it — upgrades, indulgences, donations. The cap does the quiet work: lifestyle is held to growing slower than capital, whatever income does."],
             ["Investing", "Savings margin ≥70% (the compounding engine)", true, "The investment decision: allocate only to assets returning above the minimum acceptable hurdle rate. The margin is a firm of one’s retained earnings — the share of free cash that becomes capital — and the single ratio the whole page exists to protect."],
             ["Investments", "The standing portfolio (cash, funds, and shares)", true, undefined, undefined, true],
             ["Ventures", "The active positions (real, equity, and currency)", true, undefined, undefined, true],
@@ -226,8 +226,8 @@ const GROWTH: StatTableData = {
           metrics: [
             ["", "Assets I can stand on, hold, or hand over", false],
             ["Property", "A primary residence at minimum viable; income property through Erfaring", true, "Erfaring (Pty) Ltd — the real-estate venture registered 24 October 2024, holding title where deals justify custody."],
-            ["Gold", "Pending — a hedge, not a bet", true, undefined, undefined, true],
-            ["Collectibles", "Pending", true, undefined, undefined, true],
+            ["Gold", "Pending (a hedge, not a bet)", true],
+            ["Collectibles", "Pending", true],
           ],
         },
         {
@@ -235,16 +235,16 @@ const GROWTH: StatTableData = {
           metrics: [
             ["", "Ownership in businesses, mine before anyone else’s", false],
             ["Business", "Eudaemonia, Inc. — US C-Corp, registered 1 August 2019", true, "The operating company: learning systems, productions, and coaching run through it."],
-            ["Venture", "Early-stage positions — pending", true, undefined, undefined, true],
-            ["Private", "Private placements — pending", true, undefined, undefined, true],
+            ["Venture", "Early-stage positions (pending)", true],
+            ["Private", "Private placements (pending)", true],
           ],
         },
         {
           category: "Currency (active trading)",
           metrics: [
             ["", "The speculative edge, sized so its failure is a lesson and not an event", false],
-            ["FOREX", "Pending", true, undefined, undefined, true],
-            ["Crypto", "Held as an allocation, never a thesis", true, undefined, undefined, true],
+            ["FOREX", "Pending", true],
+            ["Crypto", "Held as an allocation, never a thesis", true],
           ],
         },
       ],
