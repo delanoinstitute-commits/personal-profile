@@ -245,9 +245,12 @@ const GROWTH: StatTableData = {
           category: "Equity (active ownership)",
           metrics: [
             ["", "Ownership in businesses, mine before anyone else’s", false],
-            ["Business", "Eudaemonia, Inc. — US C-Corp, registered 1 August 2019", true, "The operating company: learning systems, productions, and coaching run through it."],
-            ["Venture", "Early-stage positions (pending)", true],
-            ["Private", "Private placements (pending)", true],
+            ["Enterprise", "Pending (the firm of one, incorporated)", true, "The operating company — income, intellectual property, and liability run through an entity owned outright, with no shareholders or very few. The benchmark waits on the next incorporation."],
+            ["Business", "An operating company held at or near 100%", true, undefined, undefined, true],
+            ["Conviction", "Pending (dry powder for founders believed in)", true, "Backing startups because the thesis holds, never because the founder is a friend — though the founder may be. Sized as money I can afford to lose; the education level in Investments is the apprenticeship for exactly this judgment."],
+            ["Venture", "Early-stage positions (SAFEs and priced rounds)", true, undefined, undefined, true],
+            ["Participation", "Pending (a share of operators’ upside)", true, "Positions in businesses that are not startups — where I am neither the founder nor the first believer, but a partner in the economics."],
+            ["Private", "GP stakes and placements", true, undefined, undefined, true],
           ],
         },
         {
