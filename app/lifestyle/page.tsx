@@ -306,7 +306,7 @@ const SPACE: StatTableData = {
               "Financial (",
               <WikiLink key="chs" href="https://www.chase.com/">Chase</WikiLink>,
               "; ",
-              <WikiLink key="sch" href="https://www.schwab.com/">Schwab</WikiLink>,
+              <WikiLink key="fid" href="https://www.fidelity.com/">Fidelity</WikiLink>,
               "; ",
               <WikiLink key="lem" href="https://www.lemonade.com/">Lemonade</WikiLink>,
               "), technology (",
