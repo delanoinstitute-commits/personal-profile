@@ -195,8 +195,9 @@ const GROWTH: StatTableData = {
           category: "Cash (active banking)",
           metrics: [
             ["", "Three months of burn in cash — enough to be calm, too little to be lazy", false],
-            ["Checking", "Working capital — one month of expenses", true, "The operating account: enough to clear one month's obligations, no more, since idle cash loses to inflation."],
-            ["Savings", "Reserve capital — two months of expenses, in high-yield savings", true, "The buffer for capital expenses, debt, and taxes, held where it earns a market rate while staying a day away."],
+            ["Liquidity", "Current ratio ≥3.0 (cash covering obligations three times over)", true, "Current assets over current liabilities — the lender’s first read on solvency. Three months of burn against one month of obligations holds the ratio at three; below it the buffer thins, far above it cash sits idle."],
+            ["Checking", "Working capital (one month of expenses)", true, "The operating account: enough to clear one month's obligations, no more, since idle cash loses to inflation.", undefined, true],
+            ["Savings", "Reserve capital (two months of expenses, in high-yield savings)", true, "The buffer for capital expenses, debt, taxes, and the health plan’s out-of-pocket maximum — sized to the largest single claim, not their sum — held where it earns a market rate while staying a day away.", undefined, true],
           ],
         },
         {
