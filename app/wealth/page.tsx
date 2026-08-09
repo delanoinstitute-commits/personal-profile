@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
+import { References, type ReferenceSection } from "@/components/References";
 
 export const metadata: Metadata = { title: "Wealth" };
 
@@ -259,6 +260,150 @@ const GROWTH: StatTableData = {
   ],
 };
 
+const WEALTH_DATA: ReferenceSection[] = [
+  {
+    label: "My data derived from the firm of one’s statements",
+    description: (
+      <>the balance sheet completes the three, but stays unpublished — readings are excluded by design</>
+    ),
+    items: [
+      {
+        id: "income-statement",
+        cite: (
+          <>
+            <strong>Income</strong>: <em>Monthly close (2025–present)</em>; tracks worldwide income, expenses, earnings before tax, tax, and net profit against benchmarks (LD ledger) • statement (Google Sheets)
+          </>
+        ),
+      },
+      {
+        id: "cashflow-statement",
+        cite: (
+          <>
+            <strong>Cash flow</strong>: <em>Monthly close (2025–present)</em>; tracks operating, investing, and financing flows, each entry debited or credited by principle (LD ledger) • statement (Google Sheets)
+          </>
+        ),
+      },
+      {
+        id: "performance-indicators",
+        cite: (
+          <>
+            <strong>Performance</strong>: <em>Monthly close (2025–present)</em>; tracks credit score, current ratio, and gross, tax, and free-cash-flow yields by stakeholder (LD ledger) • indicators (Google Sheets)
+          </>
+        ),
+      },
+    ],
+  },
+];
+
+const WEALTH_GUIDELINES: ReferenceSection[] = [
+  {
+    label: "The doctrine informing the structure, first principles first",
+    items: [
+      {
+        id: "damodaran",
+        cite: (
+          <>
+            <strong>The three decisions</strong>: Damodaran, A. (2014). <em>Applied Corporate Finance</em> (4th ed.). Wiley — the investment, financing, and dividend decisions, run here on a firm of one.
+          </>
+        ),
+        url: "https://pages.stern.nyu.edu/~adamodar/",
+        urlLabel: "NYU Stern",
+      },
+      {
+        id: "buffett",
+        cite: (
+          <>
+            <strong>Circle of competence</strong>: Buffett, W. E. (1996). Chairman’s letter to the shareholders of <em>Berkshire Hathaway</em> — the unique skill that makes the enterprise less risky in your hands than in anyone else’s.
+          </>
+        ),
+        url: "https://www.berkshirehathaway.com/letters/1996.html",
+        urlLabel: "Berkshire Hathaway",
+      },
+      {
+        id: "robbins",
+        cite: (
+          <>
+            <strong>Ballast and notes</strong>: Robbins, T. (2014). <em>Money: Master the Game</em>. Simon &amp; Schuster — the All Seasons Treasury ballast (via the Ray Dalio interview) and principal-protected notes behind the hedge and deposits rows.
+          </>
+        ),
+      },
+      {
+        id: "perkins",
+        cite: (
+          <>
+            <strong>Die with zero</strong>: Perkins, B. (2020). <em>Die With Zero</em>. Houghton Mifflin Harcourt — the horizon that shrinks the investment coverage requirement and retires most transfer tax.
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    label: "The standards informing the benchmarks",
+    items: [
+      {
+        id: "fico",
+        cite: (
+          <>
+            <strong>Credit</strong>: the five FICO factor weights — payment history 35%, utilization 30%, history 15%, new credit 10%, mix 10%.
+          </>
+        ),
+        url: "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        urlLabel: "myFICO",
+      },
+      {
+        id: "load",
+        cite: (
+          <>
+            <strong>Load</strong>: the 28/36 qualifying ratios — housing and total debt service against gross income, the lenders’ own ceiling.
+          </>
+        ),
+        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/",
+        urlLabel: "CFPB",
+      },
+      {
+        id: "hsa",
+        cite: (
+          <>
+            <strong>HSA</strong>: IRS Publication 969 — the qualifying plan and the triple tax advantage behind the health shell.
+          </>
+        ),
+        url: "https://www.irs.gov/publications/p969",
+        urlLabel: "IRS",
+      },
+      {
+        id: "retirement",
+        cite: (
+          <>
+            <strong>Retirement</strong>: IRS Publication 560 — the solo 401(k)’s employee and employer contribution mechanics and limits.
+          </>
+        ),
+        url: "https://www.irs.gov/publications/p560",
+        urlLabel: "IRS",
+      },
+      {
+        id: "transfer",
+        cite: (
+          <>
+            <strong>Transfer</strong>: IRS Topic 409 — the 0/15/20% long-term capital gains schedule earned by holding past one year.
+          </>
+        ),
+        url: "https://www.irs.gov/taxtopics/tc409",
+        urlLabel: "IRS",
+      },
+      {
+        id: "disability",
+        cite: (
+          <>
+            <strong>Disability</strong>: Council for Disability Awareness — the roughly one-in-four odds of disability before retirement that put own-occupation cover ahead of life cover.
+          </>
+        ),
+        url: "https://disabilitycanhappen.org/disability-statistic/",
+        urlLabel: "CDA",
+      },
+    ],
+  },
+];
+
 export default function WealthPage() {
   return (
     <>
@@ -314,6 +459,17 @@ export default function WealthPage() {
         hierarchy is the discipline: nothing ventures until everything is invested.
       </p>
       <NestedTable {...GROWTH} />
+
+      <References
+        title={<>References <span className="heading-paren">(Data)</span></>}
+        sections={WEALTH_DATA}
+      />
+
+      <References
+        id="guidelines"
+        title={<>References <span className="heading-paren">(Guidelines)</span></>}
+        sections={WEALTH_GUIDELINES}
+      />
     </>
   );
 }
