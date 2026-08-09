@@ -238,7 +238,7 @@ const GROWTH: StatTableData = {
           ],
         },
         {
-          category: "Equity (active management)",
+          category: "Equity (active ownership)",
           metrics: [
             ["", "Ownership in businesses, mine before anyone else’s", false],
             ["Business", "Eudaemonia, Inc. — US C-Corp, registered 1 August 2019", true, "The operating company: learning systems, productions, and coaching run through it."],
