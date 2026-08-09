@@ -261,16 +261,20 @@ export default function WealthPage() {
       />
 
       <p className="lead">
-        Wealth is one balance sheet read three ways: what protects it (security), what
-        leaves it (efficiency), and what compounds it (growth). The branches are also a
-        sequence — insure first, then earn; spend and settle cleanly; invest what
+        Wealth is not a balance — it is the number and quality of transformations I can
+        generate from the resources I hold: little into a lot, something into something
+        else. Money is only the most fungible of those resources; I am the least. That
+        capacity reads off one balance sheet three ways: what protects it (security),
+        what leaves it (efficiency), and what compounds it (growth). The branches are
+        also a sequence — insure first, then earn; spend and settle cleanly; invest what
         remains, and venture only past sufficiency.
       </p>
       <p>
         Unlike the other status pages, this one publishes no readings. Balances, net
         worth, and holdings are excluded from the site by design; what is public is the
         system itself — every account the money moves through, and the benchmark each is
-        held to. The structure is auditable even where the numbers are private.
+        held to. The benchmarks measure how well the money is run, not how much of it
+        there is; the structure is auditable even where the numbers are private.
       </p>
 
       <h2 id="security">
