@@ -209,7 +209,7 @@ const GROWTH: StatTableData = {
             ["HSA", "Triple-tax-advantaged (deductible in, untaxed growth, untaxed out)", true, "The only shell untaxed at all three gates when spent on medical costs, now or reimbursed decades later. Eligibility comes from the HSA-qualified plan in Security — insurance opens the shell, allocation fills it.", undefined, true],
             ["Roth IRA", "Post-tax in, untaxed forever", true, "Funded with taxed dollars, then never taxed again — growth and withdrawals both. Income limits push high earners through the backdoor conversion; contributions, though not growth, stay accessible without penalty — a quiet second reserve.", undefined, true],
             ["Rewards", "Every dream priced, dated, and funded (the system pays its owner)", true, "The level where the waterfall pays its owner: weddings, holidays, homes, a child’s education — the big purchases, planned rather than impulsed. Funded only once retirement is filled; the reward follows the security."],
-            ["Deposits", "Goal-dated Treasuries and CDs (maturing when the purchase arrives)", true, "Money with a date on it — matched to the purchase it funds rather than to a return target.", undefined, true],
+            ["Deposits", "Goal-dated Treasuries, CDs, and principal-protected notes (maturing when the purchase arrives)", true, "Money with a date on it — matched to the purchase it funds rather than to a return target. Principal-protected notes only through a fee-only fiduciary; retail versions leak their upside in fees.", undefined, true],
           ],
         },
         {
@@ -218,6 +218,7 @@ const GROWTH: StatTableData = {
             ["", "The market bought whole, with a small budget for opinions", false],
             ["Hedge", "Maximum allocation (a hedge against retirement shortfalls)", true, "Capital grown past what the retirement shells can hold — insurance against needing more than they offer. Diversified indices are stock ownership in its beginner-safe form: the market’s return without requiring anyone to be right."],
             ["ETFs", "Broad index funds (blend, value, and growth; held for decades)", true, undefined, undefined, true],
+            ["Bonds", "Treasuries and TIPS held as ballast (rising in the seasons equities fall)", true, "A dollar split evenly is still mostly equity risk — stocks run about three times bonds’ volatility — so the ballast is duration held permanently, not a date-matched deposit.", undefined, true],
             ["Education", "<20% of the portfolio (tuition capped)", true, "Market education paid at market prices: positions sized so being wrong is affordable tuition. The apprenticeship for ventures — judging businesses with money at stake before running one.", undefined, false],
             ["Stocks", "Individual positions (micro to mega caps)", true, undefined, undefined, true],
           ],
