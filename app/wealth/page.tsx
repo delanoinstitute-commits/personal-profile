@@ -170,13 +170,13 @@ const EFFICIENCY: StatTableData = {
           category: "Profits (free cash flow)",
           metrics: [
             ["", "I run myself as a firm — free cash has three uses, each with a rule", false],
-            ["Financing", "Repayment margin ≥15% — principal retired first", true, "Corporate finance sorts every use of free cash into three decisions — financing, investing, dividends — and I run them on a firm of one; the frame is Aswath Damodaran’s (“It’s all corporate finance”). The financing decision holds the right mix of debt and equity: every dollar of principal retired is a guaranteed return at the loan’s own rate, so the highest rate goes first."],
+            ["Financing", "Repayment margin ≥15% (principal retired first)", true, "Corporate finance sorts every use of free cash into three decisions — financing, investing, dividends — and I run them on a firm of one; the frame is Aswath Damodaran’s (“It’s all corporate finance”). The financing decision holds the right mix of debt and equity: every dollar of principal retired is a guaranteed return at the loan’s own rate, so the highest rate goes first."],
             ["Unsecured", "Maximum pace (the highest rate, retired first)", true, undefined, undefined, true],
             ["Secured", "Minimum schedule (the lowest rate, held longest)", true, undefined, undefined, true],
-            ["Dividends", "Payout margin ≤15% — the owner’s draw and the giving", true, "The dividend decision: cash that cannot beat the hurdle rate is returned to the owners — and the owner is me. The draw funds experiences, goods, and donations, and the cap does the quiet work: lifestyle is held to growing slower than capital, whatever income does."],
-            ["Investing", "Savings margin ≥70% — the compounding engine", true, "The investment decision: allocate only to assets returning above the minimum acceptable hurdle rate. The margin is a firm of one’s retained earnings — the share of free cash that becomes capital — and the single ratio the whole page exists to protect."],
-            ["Investments", "The standing portfolio", true, undefined, undefined, true],
-            ["Ventures", "The active positions", true, undefined, undefined, true],
+            ["Dividends", "Payout margin ≤15% (the owner’s draw and the giving)", true, "The dividend decision: cash that cannot beat the hurdle rate is returned to the owners — and the owner is me. The draw funds experiences, goods, and donations, and the cap does the quiet work: lifestyle is held to growing slower than capital, whatever income does."],
+            ["Investing", "Savings margin ≥70% (the compounding engine)", true, "The investment decision: allocate only to assets returning above the minimum acceptable hurdle rate. The margin is a firm of one’s retained earnings — the share of free cash that becomes capital — and the single ratio the whole page exists to protect."],
+            ["Investments", "The standing portfolio (cash, funds, and shares)", true, undefined, undefined, true],
+            ["Ventures", "The active positions (real, equity, and currency)", true, undefined, undefined, true],
           ],
         },
       ],
@@ -261,20 +261,16 @@ export default function WealthPage() {
       />
 
       <p className="lead">
-        Wealth is not a balance — it is the number and quality of transformations I can
-        generate from the resources I hold: little into a lot, something into something
-        else. Money is only the most fungible of those resources; I am the least. That
-        capacity reads off one balance sheet three ways: what protects it (security),
-        what leaves it (efficiency), and what compounds it (growth). The branches are
-        also a sequence — insure first, then earn; spend and settle cleanly; invest what
+        Wealth is one balance sheet read three ways: what protects it (security), what
+        leaves it (efficiency), and what compounds it (growth). The branches are also a
+        sequence — insure first, then earn; spend and settle cleanly; invest what
         remains, and venture only past sufficiency.
       </p>
       <p>
         Unlike the other status pages, this one publishes no readings. Balances, net
         worth, and holdings are excluded from the site by design; what is public is the
         system itself — every account the money moves through, and the benchmark each is
-        held to. The benchmarks measure how well the money is run, not how much of it
-        there is; the structure is auditable even where the numbers are private.
+        held to. The structure is auditable even where the numbers are private.
       </p>
 
       <h2 id="security">
