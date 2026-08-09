@@ -232,7 +232,7 @@ const GROWTH: StatTableData = {
           category: "Real (active custody)",
           metrics: [
             ["", "Assets I can stand on, hold, or hand over", false],
-            ["Space", "Pending (a piece of the earth owned)", true, "The value function is land itself — the one asset nobody makes more of. Its two modes are interchangeable: a residence becomes a rental when I move on, a rental becomes a residence when I move in; the space is the asset, its use is a decision."],
+            ["Space", "Pending (a piece of the earth owned)", true, "The value function is land itself — the one asset nobody makes more of. Its two modes are interchangeable: a residence becomes a rental when I move on, a rental becomes a residence when I move in — the same instrument, a deed, either way; only the use is a decision."],
             ["Residence", "Owner-occupied at minimum viable (a use asset, not an investment)", true, "The use mode: a roof pays imputed rent, never income, so minimum viable keeps capital in the levels that compound. The homeowners benchmark in Security waits on the same purchase.", undefined, true],
             ["Rentals", "Income property at positive leverage (cap rate above the cost of debt)", true, "The business mode: a property earns its place only when its capitalization rate clears the cost of the debt behind it — otherwise the lender keeps the return and I keep the work.", undefined, true],
             ["Haven", "Pending (a hedge, not a bet)", true, "The safe-haven position — a store of value against debasement, sized as insurance rather than conviction. The benchmark waits on the first position."],
