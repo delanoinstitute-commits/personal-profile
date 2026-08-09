@@ -151,9 +151,9 @@ const EFFICIENCY: StatTableData = {
           metrics: [
             ["", "Paid in full, on time, and never a percent more than the law asks", false],
             ["Income", "Effective rate <15% (money arriving)", true, "Total income tax paid ÷ gross income. As a self-employed filer the levers are entity structure, retirement contributions, and the QBI deduction."],
-            ["Federal", "Income (progressive); self-employment (15.3% — both halves of Social Security and Medicare)", true, undefined, undefined, true],
+            ["Federal", "Income (progressive); self-employment (15.3% — Social Security and Medicare)", true, undefined, undefined, true],
             ["State", "Income (0–13% by state; a relocation criterion)", true, undefined, undefined, true],
-            ["Deductions", "Standard or itemized (charitable giving deducts here); QBI for pass-through income", true, undefined, undefined, true],
+            ["Deductions", "Standard or itemized (charitable giving); QBI (pass-through income)", true, undefined, undefined, true],
             ["Consumption", "Effective rate <5% (money leaving)", true, "Taxes on spending rather than earning — mostly set by where I live and how much I buy."],
             ["Sales", "State and local, by jurisdiction", true, undefined, undefined, true],
             ["Excise", "Fuel, tires, and specific goods", true, undefined, undefined, true],
