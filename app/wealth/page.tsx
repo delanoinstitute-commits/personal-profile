@@ -204,7 +204,10 @@ const GROWTH: StatTableData = {
           category: "Funds (passive management)",
           metrics: [
             ["", "The tax-advantaged shells filled first, every year they can be", false],
-            ["Retirement", "Solo 401(k), HSA, and Roth IRA at maximum contribution", true, "The self-employed stack, in funding order: a Solo 401(k) takes both employee and employer contributions, the HSA is the only account untaxed in, growing, and out, and a Roth IRA compounds untaxed forever. Maximum contribution is the benchmark because the space expires each year it goes unused. The HSA's eligibility comes from the health plan in Security — insurance opens the shell, allocation fills it."],
+            ["Retirement", "Contribution ratio 100% (every shell filled to its annual limit)", true, "The self-employed stack, in funding order. Maximum contribution is the benchmark because the space expires each year it goes unused — a year skipped never comes back."],
+            ["Solo 401(k)", "Employee and employer contributions (both sides maxed)", true, "One person plays both roles: the employee elective deferral plus an employer profit-share of ~25% of compensation, stacking to the highest annual limit of any retirement shell.", undefined, true],
+            ["HSA", "Triple-tax-advantaged (deductible in, untaxed growth, untaxed out)", true, "The only shell untaxed at all three gates when spent on medical costs, now or reimbursed decades later. Eligibility comes from the HSA-qualified plan in Security — insurance opens the shell, allocation fills it.", undefined, true],
+            ["Roth IRA", "Post-tax in, untaxed forever", true, "Funded with taxed dollars, then never taxed again — growth and withdrawals both. Income limits push high earners through the backdoor conversion; contributions, though not growth, stay accessible without penalty — a quiet second reserve.", undefined, true],
             ["Deposits", "Goal-dated Treasuries and CDs for planned purchases", true, "Money with a date on it — matched to the purchase it funds rather than to a return target."],
           ],
         },
