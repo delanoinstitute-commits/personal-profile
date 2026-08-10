@@ -546,7 +546,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-wealth",
         cite: (
           <>
-            <strong>Wealth</strong>: <em>Financial asset status (2026)</em>; the effects of service and maintenance on measures of asset ownership • <WikiLink href="/wealth">wealth</WikiLink> (page)
+            <strong>Wealth</strong>: <em>Financial asset status (2026)</em>; the effects of service and maintenance on measures of <WikiLink href="/wealth#security">security</WikiLink>, <WikiLink href="/wealth#efficiency">efficiency</WikiLink>, and <WikiLink href="/wealth#growth">growth</WikiLink> • <WikiLink href="/wealth">wealth</WikiLink> (page)
           </>
         ),
       },

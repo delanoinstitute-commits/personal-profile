@@ -136,6 +136,8 @@ const EFFICIENCY: StatTableData = {
             ["Credit history", "15% (average account age, kept long)", true, undefined, undefined, true],
             ["New credit", "10% (inquiries kept rare)", true, undefined, undefined, true],
             ["Credit mix", "10% (revolving and installment both held)", true, undefined, undefined, true],
+            ["Load", "Debt service \u226436% of gross (the lenders\u2019 own ceiling)", true, "The 28/36 rule, the standard US underwriting ceiling: housing debt service within 28% of gross income, all debt service within 36%. Access and price mean nothing without a cap on quantity."],
+            ["Housing", "\u226428% of gross", true, undefined, undefined, true],
             ["Interest", "Blended cost of debt <5% APR", true, "The weighted average rate across everything owed, kept below what invested capital conservatively returns so debt never outruns assets. Cards and personal loans are unsecured — extended on credit alone; the rest is secured on the asset it bought."],
             ["Credit cards", "Paid in full monthly (0% effective)", true, undefined, undefined, true],
             ["Unsecured", "Personal, student, and business loans (none held)", true, undefined, undefined, true],
@@ -143,9 +145,6 @@ const EFFICIENCY: StatTableData = {
             ["Mortgage", "Market rate; refinanced when it pays", true, undefined, undefined, true],
             ["HELOC", "Revolving credit secured on home equity", true, undefined, undefined, true],
             ["SBLOC", "<6% APR (borrowing against the portfolio)", true, undefined, undefined, true],
-            ["Load", "Debt service \u226436% of gross (the lenders\u2019 own ceiling)", true, "The 28/36 rule, the standard US underwriting ceiling: housing debt service within 28% of gross income, all debt service within 36%. Access and price mean nothing without a cap on quantity."],
-            ["Housing", "\u226428% of gross", true, undefined, undefined, true],
-            ["Total", "\u226436% of gross, counting every obligation", true, undefined, undefined, true],
           ],
         },
         {
