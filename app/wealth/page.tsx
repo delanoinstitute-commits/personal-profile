@@ -311,43 +311,317 @@ const WEALTH_DATA: ReferenceSection[] = [
 
 const WEALTH_GUIDELINES: ReferenceSection[] = [
   {
-    label: "The doctrine informing the structure, first principles first",
+    label: "The studies informing my security benchmarks",
     items: [
       {
-        id: "damodaran",
+        id: "health-cover",
         cite: (
           <>
-            <strong>The three decisions</strong>: Damodaran, A. (2014). <em>Applied Corporate Finance</em> (4th ed.). Wiley — the investment, financing, and dividend decisions, run here on a firm of one.
+            <strong>Health</strong>: Finkelstein, A., et al. (2012). The Oregon Health Insurance Experiment: evidence from the first year. <em>Quarterly Journal of Economics</em>, 127(3).
           </>
         ),
-        url: "https://pages.stern.nyu.edu/~adamodar/",
-        urlLabel: "NYU Stern",
+        url: "https://academic.oup.com/qje/article/127/3/1057/1923446",
+        urlLabel: "Oxford",
       },
       {
-        id: "buffett",
+        id: "deductibles",
         cite: (
           <>
-            <strong>Circle of competence</strong>: Buffett, W. E. (1996). Chairman’s letter to the shareholders of <em>Berkshire Hathaway</em> — the unique skill that makes the enterprise less risky in your hands than in anyone else’s.
+            <strong>Deductibles</strong>: Manning, W. G., et al. (1987). Health insurance and the demand for medical care: evidence from a randomized experiment. <em>American Economic Review</em>, 77(3).
           </>
         ),
-        url: "https://www.berkshirehathaway.com/letters/1996.html",
-        urlLabel: "Berkshire Hathaway",
+        url: "https://pubmed.ncbi.nlm.nih.gov/10284091/",
+        urlLabel: "PubMed",
       },
       {
-        id: "robbins",
+        id: "disability-shock",
         cite: (
           <>
-            <strong>Ballast and notes</strong>: Robbins, T. (2014). <em>Money: Master the Game</em>. Simon &amp; Schuster — the All Seasons Treasury ballast (via the Ray Dalio interview) and principal-protected notes behind the hedge and deposits rows.
+            <strong>Disability</strong>: Meyer, B. D., and Mok, W. K. C. (2019). Disability, earnings, income and consumption. <em>Journal of Public Economics</em>, 171.
           </>
         ),
+        url: "https://www.nber.org/papers/w18869",
+        urlLabel: "NBER",
       },
       {
-        id: "perkins",
+        id: "property-uninsured",
         cite: (
           <>
-            <strong>Die with zero</strong>: Perkins, B. (2020). <em>Die With Zero</em>. Houghton Mifflin Harcourt — the horizon that shrinks the investment coverage requirement and retires most transfer tax.
+            <strong>Property</strong>: Billings, S. B., Gallagher, E. A., and Ricketts, L. (2022). Let the rich be flooded: the distribution of financial aid and distress after Hurricane Harvey. <em>Journal of Financial Economics</em>, 146(2).
           </>
         ),
+        url: "https://doi.org/10.1016/j.jfineco.2021.11.006",
+        urlLabel: "DOI",
+      },
+      {
+        id: "life-adequacy",
+        cite: (
+          <>
+            <strong>Life</strong>: Bernheim, B. D., et al. (2003). The mismatch between life insurance holdings and financial vulnerabilities. <em>American Economic Review</em>, 93(1).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/000282803321455340",
+        urlLabel: "AEA",
+      },
+      {
+        id: "windfalls",
+        cite: (
+          <>
+            <strong>Windfalls</strong>: Holtz-Eakin, D., Joulfaian, D., and Rosen, H. S. (1993). The Carnegie conjecture: some empirical evidence. <em>Quarterly Journal of Economics</em>, 108(2).
+          </>
+        ),
+        url: "https://academic.oup.com/qje/article/108/2/413/1917556",
+        urlLabel: "Oxford",
+      },
+      {
+        id: "self-employment",
+        cite: (
+          <>
+            <strong>Self-employment</strong>: Hamilton, B. H. (2000). Does entrepreneurship pay? An empirical analysis of the returns to self-employment. <em>Journal of Political Economy</em>, 108(3).
+          </>
+        ),
+        url: "https://doi.org/10.1086/262131",
+        urlLabel: "DOI",
+      },
+      {
+        id: "independence",
+        cite: (
+          <>
+            <strong>Independence</strong>: Benz, M., and Frey, B. S. (2008). Being independent is a great thing: subjective evaluations of self-employment and hierarchy. <em>Economica</em>, 75(298).
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1468-0335.2007.00594.x",
+        urlLabel: "DOI",
+      },
+    ],
+  },
+  {
+    label: "The studies informing my efficiency benchmarks",
+    items: [
+      {
+        id: "cards",
+        cite: (
+          <>
+            <strong>Cards</strong>: Prelec, D., and Simester, D. (2001). Always leave home without it: a further investigation of the credit-card effect on willingness to pay. <em>Marketing Letters</em>, 12(1).
+          </>
+        ),
+        url: "https://doi.org/10.1023/A:1008196717017",
+        urlLabel: "DOI",
+      },
+      {
+        id: "card-rewards",
+        cite: (
+          <>
+            <strong>Card rewards</strong>: Agarwal, S., et al. (2023). Who pays for your rewards? Redistribution in the credit card market. <em>Finance and Economics Discussion Series</em>, 2023-007.
+          </>
+        ),
+        url: "https://www.federalreserve.gov/econres/feds/who-pays-for-your-rewards-redistribution-in-the-credit-card-market.htm",
+        urlLabel: "Federal Reserve",
+      },
+      {
+        id: "subscriptions",
+        cite: (
+          <>
+            <strong>Subscriptions</strong>: Einav, L., Klopack, B., and Mahoney, N. (2025). Selling subscriptions. <em>American Economic Review</em>, 115(5).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/aer.20231612",
+        urlLabel: "AEA",
+      },
+      {
+        id: "leverage",
+        cite: (
+          <>
+            <strong>Leverage</strong>: Mian, A., and Sufi, A. (2011). House prices, home equity-based borrowing, and the US household leverage crisis. <em>American Economic Review</em>, 101(5).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/aer.101.5.2132",
+        urlLabel: "AEA",
+      },
+      {
+        id: "scores",
+        cite: (
+          <>
+            <strong>Scores</strong>: Dobbie, W., et al. (2020). Bad credit, no problem? Credit and labor market consequences of bad credit reports. <em>Journal of Finance</em>, 75(5).
+          </>
+        ),
+        url: "https://www.nber.org/papers/w22711",
+        urlLabel: "NBER",
+      },
+      {
+        id: "tax-friction",
+        cite: (
+          <>
+            <strong>Tax</strong>: Benzarti, Y. (2020). How taxing is tax filing? Using revealed preferences to estimate compliance costs. <em>American Economic Journal: Economic Policy</em>, 12(4).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/pol.20180664",
+        urlLabel: "AEA",
+      },
+    ],
+  },
+  {
+    label: "The studies informing my growth benchmarks",
+    items: [
+      {
+        id: "cash-drag",
+        cite: (
+          <>
+            <strong>Cash</strong>: Dimson, E., Marsh, P., and Staunton, M. (2002). <em>Triumph of the Optimists: 101 Years of Global Investment Returns</em>. Princeton University Press.
+          </>
+        ),
+        url: "https://press.princeton.edu/books/hardcover/9780691091945/triumph-of-the-optimists",
+        urlLabel: "Princeton",
+      },
+      {
+        id: "liquidity-buffer",
+        cite: (
+          <>
+            <strong>Liquidity</strong>: Farrell, D., Greig, F., and Yu, C. (2019). Weathering volatility 2.0: a monthly stress test to guide savings. <em>JPMorgan Chase Institute</em>.
+          </>
+        ),
+        url: "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/institute/pdf/institute-volatility-cash-buffer-report.pdf",
+        urlLabel: "JPMC",
+      },
+      {
+        id: "diversification",
+        cite: (
+          <>
+            <strong>Diversification</strong>: Markowitz, H. (1952). Portfolio selection. <em>Journal of Finance</em>, 7(1).
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+        urlLabel: "DOI",
+      },
+      {
+        id: "indexing",
+        cite: (
+          <>
+            <strong>Indexing</strong>: Fama, E. F., and French, K. R. (2010). Luck versus skill in the cross-section of mutual fund returns. <em>Journal of Finance</em>, 65(5).
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1540-6261.2010.01598.x",
+        urlLabel: "DOI",
+      },
+      {
+        id: "contributions",
+        cite: (
+          <>
+            <strong>Contributions</strong>: Chetty, R., et al. (2014). Active vs. passive decisions and crowd-out in retirement savings accounts: evidence from Denmark. <em>Quarterly Journal of Economics</em>, 129(3).
+          </>
+        ),
+        url: "https://academic.oup.com/qje/article/129/3/1141/1817647",
+        urlLabel: "Oxford",
+      },
+      {
+        id: "hedge-skew",
+        cite: (
+          <>
+            <strong>Hedge</strong>: Bessembinder, H. (2018). Do stocks outperform Treasury bills? <em>Journal of Financial Economics</em>, 129(3).
+          </>
+        ),
+        url: "https://doi.org/10.1016/j.jfineco.2018.06.004",
+        urlLabel: "DOI",
+      },
+      {
+        id: "trading",
+        cite: (
+          <>
+            <strong>Trading</strong>: Barber, B. M., and Odean, T. (2000). Trading is hazardous to your wealth: the common stock investment performance of individual investors. <em>Journal of Finance</em>, 55(2).
+          </>
+        ),
+        url: "https://doi.org/10.1111/0022-1082.00226",
+        urlLabel: "DOI",
+      },
+      {
+        id: "education-count",
+        cite: (
+          <>
+            <strong>Education</strong>: Evans, J. L., and Archer, S. H. (1968). Diversification and the reduction of dispersion: an empirical analysis. <em>Journal of Finance</em>, 23(5) — the ten-stock answer; Statman, M. (1987), <em>Journal of Financial and Quantitative Analysis</em>, 22(3), argues thirty or more.
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1540-6261.1968.tb00315.x",
+        urlLabel: "DOI",
+      },
+      {
+        id: "space-returns",
+        cite: (
+          <>
+            <strong>Space</strong>: Jordà, Ò., et al. (2019). The rate of return on everything, 1870–2015. <em>Quarterly Journal of Economics</em>, 134(3).
+          </>
+        ),
+        url: "https://doi.org/10.1093/qje/qjz012",
+        urlLabel: "DOI",
+      },
+      {
+        id: "gold-dilemma",
+        cite: (
+          <>
+            <strong>Gold</strong>: Erb, C. B., and Harvey, C. R. (2013). The golden dilemma. <em>Financial Analysts Journal</em>, 69(4).
+          </>
+        ),
+        url: "https://doi.org/10.2469/faj.v69.n4.1",
+        urlLabel: "DOI",
+      },
+      {
+        id: "crypto-retail",
+        cite: (
+          <>
+            <strong>Crypto</strong>: Auer, R., et al. (2022). Crypto trading and Bitcoin prices: evidence from a new database of retail adoption. <em>BIS Working Papers</em>, 1049.
+          </>
+        ),
+        url: "https://www.bis.org/publ/work1049.htm",
+        urlLabel: "BIS",
+      },
+      {
+        id: "collectibles-returns",
+        cite: (
+          <>
+            <strong>Collectibles</strong>: Dimson, E., and Spaenjers, C. (2011). Ex post: the investment performance of collectible stamps. <em>Journal of Financial Economics</em>, 100(2).
+          </>
+        ),
+        url: "https://doi.org/10.1016/j.jfineco.2010.12.005",
+        urlLabel: "DOI",
+      },
+      {
+        id: "enterprise-premium",
+        cite: (
+          <>
+            <strong>Enterprise</strong>: Moskowitz, T. J., and Vissing-Jørgensen, A. (2002). The returns to entrepreneurial investment: a private equity premium puzzle? <em>American Economic Review</em>, 92(4).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/00028280260344452",
+        urlLabel: "AEA",
+      },
+      {
+        id: "exits",
+        cite: (
+          <>
+            <strong>Exits</strong>: Hall, R. E., and Woodward, S. E. (2010). The burden of the nondiversifiable risk of entrepreneurship. <em>American Economic Review</em>, 100(3).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/aer.100.3.1163",
+        urlLabel: "AEA",
+      },
+      {
+        id: "private-equity",
+        cite: (
+          <>
+            <strong>Private equity</strong>: Kaplan, S. N., and Schoar, A. (2005). Private equity performance: returns, persistence, and capital flows. <em>Journal of Finance</em>, 60(4).
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1540-6261.2005.00780.x",
+        urlLabel: "DOI",
+      },
+      {
+        id: "forecasting",
+        cite: (
+          <>
+            <strong>Forecasting</strong>: Tetlock, P. E. (2005). <em>Expert Political Judgment: How Good Is It? How Can We Know?</em> Princeton University Press.
+          </>
+        ),
+        url: "https://press.princeton.edu/books/hardcover/9780691178288/expert-political-judgment",
+        urlLabel: "Princeton",
       },
     ],
   },
