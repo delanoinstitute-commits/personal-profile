@@ -263,7 +263,7 @@ const GROWTH: StatTableData = {
 
 const WEALTH_DATA: ReferenceSection[] = [
   {
-    label: "My data derived from underwriting, banking, and accounting",
+    label: "My data derived from underwriting, banking, accounting, and analysis",
     items: [
       {
         id: "insurance-data",
@@ -277,7 +277,7 @@ const WEALTH_DATA: ReferenceSection[] = [
         id: "banking-data",
         cite: (
           <>
-            <strong>Banking</strong>: <em>Source records (2026–present)</em>; recording and storing source data for all income, expenses, and payments categories • statements (Chase; Mercury)
+            <strong>Banking</strong>: <em>Source records (2026–present)</em>; recording and storing source transactions for all income, expenses, and payments categories • statements (Chase; Mercury)
           </>
         ),
       },
@@ -293,7 +293,15 @@ const WEALTH_DATA: ReferenceSection[] = [
         id: "accounting-data",
         cite: (
           <>
-            <strong>Accounting</strong>: <em>General-ledger mapping (2026–present)</em>; organizing and reconciling the LLC&rsquo;s transactions into financial statements for lenders, the state, and owners • statements (Xero)
+            <strong>Accounting</strong>: <em>General-ledger mapping (2026–present)</em>; organizing and reconciling business transactions into financial statements for lenders, the state, and owners • statements (Xero)
+          </>
+        ),
+      },
+      {
+        id: "performance-data",
+        cite: (
+          <>
+            <strong>Performance</strong>: <em>Analysis (2025–present)</em>; consolidating banking, credit, and accounting into personal performance statements • ledger (Google Sheets)
           </>
         ),
       },
