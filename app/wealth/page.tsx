@@ -3,6 +3,7 @@ import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import { References, type ReferenceSection } from "@/components/References";
+import WikiLink from "@/components/WikiLink";
 
 export const metadata: Metadata = { title: "Wealth" };
 
@@ -262,32 +263,37 @@ const GROWTH: StatTableData = {
 
 const WEALTH_DATA: ReferenceSection[] = [
   {
-    label: "My data derived from the firm of one’s statements",
-    description: (
-      <>the balance sheet completes the three, but stays unpublished — readings are excluded by design</>
-    ),
+    label: "My data derived from underwriting, banking, and accounting",
     items: [
       {
-        id: "income-statement",
+        id: "insurance-data",
         cite: (
           <>
-            <strong>Income</strong>: <em>Monthly close (2025–present)</em>; tracks worldwide income, expenses, earnings before tax, tax, and net profit against benchmarks (LD ledger) • statement (Google Sheets)
+            <strong>Insurance</strong>: <em>Underwriting (2026–present)</em>; coverage for claims on health, disability, <WikiLink href="https://www.lemonade.com/renters">property</WikiLink>, <WikiLink href="https://www.rlicorp.com/personal-umbrella-insurance">liability</WikiLink>, and <WikiLink href="https://www.lgamerica.com/">life</WikiLink> • policy (multiple providers)
           </>
         ),
       },
       {
-        id: "cashflow-statement",
+        id: "banking-data",
         cite: (
           <>
-            <strong>Cash flow</strong>: <em>Monthly close (2025–present)</em>; tracks operating, investing, and financing flows, each entry debited or credited by principle (LD ledger) • statement (Google Sheets)
+            <strong>Banking</strong>: <em>Source records (2026–present)</em>; recording and storing source data for all income, expenses, and payments categories • statements (Chase; Mercury)
           </>
         ),
       },
       {
-        id: "performance-indicators",
+        id: "credit-data",
         cite: (
           <>
-            <strong>Performance</strong>: <em>Monthly close (2025–present)</em>; tracks credit score, current ratio, and gross, tax, and free-cash-flow yields by stakeholder (LD ledger) • indicators (Google Sheets)
+            <strong>Credit</strong>: <em>Scoring (2026–present)</em>; scoring financial behavior across five dimensions to assess lending and leasing risks • score (FICO)
+          </>
+        ),
+      },
+      {
+        id: "accounting-data",
+        cite: (
+          <>
+            <strong>Accounting</strong>: <em>General-ledger mapping (2026–present)</em>; organizing and reconciling the LLC&rsquo;s transactions into financial statements for lenders, the state, and owners • statements (Xero)
           </>
         ),
       },
