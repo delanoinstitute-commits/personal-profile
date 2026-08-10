@@ -311,7 +311,7 @@ const WEALTH_DATA: ReferenceSection[] = [
 
 const WEALTH_GUIDELINES: ReferenceSection[] = [
   {
-    label: "The studies informing my security benchmarks",
+    label: "The studies and standards informing my security benchmarks",
     items: [
       {
         id: "health-cover",
@@ -342,6 +342,16 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         ),
         url: "https://www.nber.org/papers/w18869",
         urlLabel: "NBER",
+      },
+      {
+        id: "incidence",
+        cite: (
+          <>
+            <strong>Incidence</strong>: Council for Disability Awareness — the roughly one-in-four odds of disability before retirement that put own-occupation cover ahead of life cover.
+          </>
+        ),
+        url: "https://disabilitycanhappen.org/disability-statistic/",
+        urlLabel: "CDA",
       },
       {
         id: "property-uninsured",
@@ -396,7 +406,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "The studies informing my efficiency benchmarks",
+    label: "The studies and standards informing my efficiency benchmarks",
     items: [
       {
         id: "cards",
@@ -429,14 +439,14 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         urlLabel: "AEA",
       },
       {
-        id: "leverage",
+        id: "fico",
         cite: (
           <>
-            <strong>Leverage</strong>: Mian, A., and Sufi, A. (2011). House prices, home equity-based borrowing, and the US household leverage crisis. <em>American Economic Review</em>, 101(5).
+            <strong>Credit</strong>: the five FICO factor weights — payment history 35%, utilization 30%, history 15%, new credit 10%, mix 10%.
           </>
         ),
-        url: "https://www.aeaweb.org/articles?id=10.1257/aer.101.5.2132",
-        urlLabel: "AEA",
+        url: "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        urlLabel: "myFICO",
       },
       {
         id: "scores",
@@ -449,6 +459,26 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         urlLabel: "NBER",
       },
       {
+        id: "load",
+        cite: (
+          <>
+            <strong>Load</strong>: the 28/36 qualifying ratios — housing and total debt service against gross income, the lenders&rsquo; own ceiling.
+          </>
+        ),
+        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/",
+        urlLabel: "CFPB",
+      },
+      {
+        id: "leverage",
+        cite: (
+          <>
+            <strong>Leverage</strong>: Mian, A., and Sufi, A. (2011). House prices, home equity-based borrowing, and the US household leverage crisis. <em>American Economic Review</em>, 101(5).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/aer.101.5.2132",
+        urlLabel: "AEA",
+      },
+      {
         id: "tax-friction",
         cite: (
           <>
@@ -458,10 +488,20 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         url: "https://www.aeaweb.org/articles?id=10.1257/pol.20180664",
         urlLabel: "AEA",
       },
+      {
+        id: "transfer",
+        cite: (
+          <>
+            <strong>Transfer</strong>: IRS Topic 409 — the 0/15/20% long-term capital gains schedule earned by holding past one year.
+          </>
+        ),
+        url: "https://www.irs.gov/taxtopics/tc409",
+        urlLabel: "IRS",
+      },
     ],
   },
   {
-    label: "The studies informing my growth benchmarks",
+    label: "The studies and standards informing my growth benchmarks",
     items: [
       {
         id: "cash-drag",
@@ -484,6 +524,36 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         urlLabel: "JPMC",
       },
       {
+        id: "hsa",
+        cite: (
+          <>
+            <strong>HSA</strong>: IRS Publication 969 — the qualifying plan and the triple tax advantage behind the health shell.
+          </>
+        ),
+        url: "https://www.irs.gov/publications/p969",
+        urlLabel: "IRS",
+      },
+      {
+        id: "retirement",
+        cite: (
+          <>
+            <strong>Retirement</strong>: IRS Publication 560 — the solo 401(k)&rsquo;s employee and employer contribution mechanics and limits.
+          </>
+        ),
+        url: "https://www.irs.gov/publications/p560",
+        urlLabel: "IRS",
+      },
+      {
+        id: "contributions",
+        cite: (
+          <>
+            <strong>Contributions</strong>: Chetty, R., et al. (2014). Active vs. passive decisions and crowd-out in retirement savings accounts: evidence from Denmark. <em>Quarterly Journal of Economics</em>, 129(3).
+          </>
+        ),
+        url: "https://academic.oup.com/qje/article/129/3/1141/1817647",
+        urlLabel: "Oxford",
+      },
+      {
         id: "diversification",
         cite: (
           <>
@@ -502,16 +572,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         ),
         url: "https://doi.org/10.1111/j.1540-6261.2010.01598.x",
         urlLabel: "DOI",
-      },
-      {
-        id: "contributions",
-        cite: (
-          <>
-            <strong>Contributions</strong>: Chetty, R., et al. (2014). Active vs. passive decisions and crowd-out in retirement savings accounts: evidence from Denmark. <em>Quarterly Journal of Economics</em>, 129(3).
-          </>
-        ),
-        url: "https://academic.oup.com/qje/article/129/3/1141/1817647",
-        urlLabel: "Oxford",
       },
       {
         id: "hedge-skew",
@@ -622,71 +682,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         ),
         url: "https://press.princeton.edu/books/hardcover/9780691178288/expert-political-judgment",
         urlLabel: "Princeton",
-      },
-    ],
-  },
-  {
-    label: "The standards informing the benchmarks",
-    items: [
-      {
-        id: "fico",
-        cite: (
-          <>
-            <strong>Credit</strong>: the five FICO factor weights — payment history 35%, utilization 30%, history 15%, new credit 10%, mix 10%.
-          </>
-        ),
-        url: "https://www.myfico.com/credit-education/whats-in-your-credit-score",
-        urlLabel: "myFICO",
-      },
-      {
-        id: "load",
-        cite: (
-          <>
-            <strong>Load</strong>: the 28/36 qualifying ratios — housing and total debt service against gross income, the lenders’ own ceiling.
-          </>
-        ),
-        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/",
-        urlLabel: "CFPB",
-      },
-      {
-        id: "hsa",
-        cite: (
-          <>
-            <strong>HSA</strong>: IRS Publication 969 — the qualifying plan and the triple tax advantage behind the health shell.
-          </>
-        ),
-        url: "https://www.irs.gov/publications/p969",
-        urlLabel: "IRS",
-      },
-      {
-        id: "retirement",
-        cite: (
-          <>
-            <strong>Retirement</strong>: IRS Publication 560 — the solo 401(k)’s employee and employer contribution mechanics and limits.
-          </>
-        ),
-        url: "https://www.irs.gov/publications/p560",
-        urlLabel: "IRS",
-      },
-      {
-        id: "transfer",
-        cite: (
-          <>
-            <strong>Transfer</strong>: IRS Topic 409 — the 0/15/20% long-term capital gains schedule earned by holding past one year.
-          </>
-        ),
-        url: "https://www.irs.gov/taxtopics/tc409",
-        urlLabel: "IRS",
-      },
-      {
-        id: "disability",
-        cite: (
-          <>
-            <strong>Disability</strong>: Council for Disability Awareness — the roughly one-in-four odds of disability before retirement that put own-occupation cover ahead of life cover.
-          </>
-        ),
-        url: "https://disabilitycanhappen.org/disability-statistic/",
-        urlLabel: "CDA",
       },
     ],
   },
