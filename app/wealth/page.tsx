@@ -311,7 +311,7 @@ const WEALTH_DATA: ReferenceSection[] = [
 
 const WEALTH_GUIDELINES: ReferenceSection[] = [
   {
-    label: "The studies and standards informing my security benchmarks",
+    label: "Randomized experiments — the treatment assigned by lottery",
     items: [
       {
         id: "health-cover",
@@ -334,25 +334,20 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         urlLabel: "PubMed",
       },
       {
-        id: "disability-shock",
+        id: "cards",
         cite: (
           <>
-            <strong>Disability</strong>: Meyer, B. D., and Mok, W. K. C. (2019). Disability, earnings, income and consumption. <em>Journal of Public Economics</em>, 171.
+            <strong>Cards</strong>: Prelec, D., and Simester, D. (2001). Always leave home without it: a further investigation of the credit-card effect on willingness to pay. <em>Marketing Letters</em>, 12(1).
           </>
         ),
-        url: "https://www.nber.org/papers/w18869",
-        urlLabel: "NBER",
+        url: "https://doi.org/10.1023/A:1008196717017",
+        urlLabel: "DOI",
       },
-      {
-        id: "incidence",
-        cite: (
-          <>
-            <strong>Incidence</strong>: Council for Disability Awareness — the roughly one-in-four odds of disability before retirement that put own-occupation cover ahead of life cover.
-          </>
-        ),
-        url: "https://disabilitycanhappen.org/disability-statistic/",
-        urlLabel: "CDA",
-      },
+    ],
+  },
+  {
+    label: "Natural and quasi-experiments — causation from shocks nobody chose",
+    items: [
       {
         id: "property-uninsured",
         cite: (
@@ -362,16 +357,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         ),
         url: "https://doi.org/10.1016/j.jfineco.2021.11.006",
         urlLabel: "DOI",
-      },
-      {
-        id: "life-adequacy",
-        cite: (
-          <>
-            <strong>Life</strong>: Bernheim, B. D., et al. (2003). The mismatch between life insurance holdings and financial vulnerabilities. <em>American Economic Review</em>, 93(1).
-          </>
-        ),
-        url: "https://www.aeaweb.org/articles?id=10.1257/000282803321455340",
-        urlLabel: "AEA",
       },
       {
         id: "windfalls",
@@ -384,51 +369,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         urlLabel: "Oxford",
       },
       {
-        id: "self-employment",
-        cite: (
-          <>
-            <strong>Self-employment</strong>: Hamilton, B. H. (2000). Does entrepreneurship pay? An empirical analysis of the returns to self-employment. <em>Journal of Political Economy</em>, 108(3).
-          </>
-        ),
-        url: "https://doi.org/10.1086/262131",
-        urlLabel: "DOI",
-      },
-      {
-        id: "independence",
-        cite: (
-          <>
-            <strong>Independence</strong>: Benz, M., and Frey, B. S. (2008). Being independent is a great thing: subjective evaluations of self-employment and hierarchy. <em>Economica</em>, 75(298).
-          </>
-        ),
-        url: "https://doi.org/10.1111/j.1468-0335.2007.00594.x",
-        urlLabel: "DOI",
-      },
-    ],
-  },
-  {
-    label: "The studies and standards informing my efficiency benchmarks",
-    items: [
-      {
-        id: "cards",
-        cite: (
-          <>
-            <strong>Cards</strong>: Prelec, D., and Simester, D. (2001). Always leave home without it: a further investigation of the credit-card effect on willingness to pay. <em>Marketing Letters</em>, 12(1).
-          </>
-        ),
-        url: "https://doi.org/10.1023/A:1008196717017",
-        urlLabel: "DOI",
-      },
-      {
-        id: "card-rewards",
-        cite: (
-          <>
-            <strong>Card rewards</strong>: Agarwal, S., et al. (2023). Who pays for your rewards? Redistribution in the credit card market. <em>Finance and Economics Discussion Series</em>, 2023-007.
-          </>
-        ),
-        url: "https://www.federalreserve.gov/econres/feds/who-pays-for-your-rewards-redistribution-in-the-credit-card-market.htm",
-        urlLabel: "Federal Reserve",
-      },
-      {
         id: "subscriptions",
         cite: (
           <>
@@ -439,16 +379,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         urlLabel: "AEA",
       },
       {
-        id: "fico",
-        cite: (
-          <>
-            <strong>Credit</strong>: the five FICO factor weights — payment history 35%, utilization 30%, history 15%, new credit 10%, mix 10%.
-          </>
-        ),
-        url: "https://www.myfico.com/credit-education/whats-in-your-credit-score",
-        urlLabel: "myFICO",
-      },
-      {
         id: "scores",
         cite: (
           <>
@@ -457,16 +387,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         ),
         url: "https://www.nber.org/papers/w22711",
         urlLabel: "NBER",
-      },
-      {
-        id: "load",
-        cite: (
-          <>
-            <strong>Load</strong>: the 28/36 qualifying ratios — housing and total debt service against gross income, the lenders&rsquo; own ceiling.
-          </>
-        ),
-        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/",
-        urlLabel: "CFPB",
       },
       {
         id: "leverage",
@@ -489,20 +409,30 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         urlLabel: "AEA",
       },
       {
-        id: "transfer",
+        id: "contributions",
         cite: (
           <>
-            <strong>Transfer</strong>: IRS Topic 409 — the 0/15/20% long-term capital gains schedule earned by holding past one year.
+            <strong>Contributions</strong>: Chetty, R., et al. (2014). Active vs. passive decisions and crowd-out in retirement savings accounts: evidence from Denmark. <em>Quarterly Journal of Economics</em>, 129(3).
           </>
         ),
-        url: "https://www.irs.gov/taxtopics/tc409",
-        urlLabel: "IRS",
+        url: "https://academic.oup.com/qje/article/129/3/1141/1817647",
+        urlLabel: "Oxford",
       },
     ],
   },
   {
-    label: "The studies and standards informing my growth benchmarks",
+    label: "Administrative and historical records — populations counted, not sampled",
     items: [
+      {
+        id: "card-rewards",
+        cite: (
+          <>
+            <strong>Card rewards</strong>: Agarwal, S., et al. (2023). Who pays for your rewards? Redistribution in the credit card market. <em>Finance and Economics Discussion Series</em>, 2023-007.
+          </>
+        ),
+        url: "https://www.federalreserve.gov/econres/feds/who-pays-for-your-rewards-redistribution-in-the-credit-card-market.htm",
+        urlLabel: "Federal Reserve",
+      },
       {
         id: "cash-drag",
         cite: (
@@ -522,46 +452,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         ),
         url: "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/institute/pdf/institute-volatility-cash-buffer-report.pdf",
         urlLabel: "JPMC",
-      },
-      {
-        id: "hsa",
-        cite: (
-          <>
-            <strong>HSA</strong>: IRS Publication 969 — the qualifying plan and the triple tax advantage behind the health shell.
-          </>
-        ),
-        url: "https://www.irs.gov/publications/p969",
-        urlLabel: "IRS",
-      },
-      {
-        id: "retirement",
-        cite: (
-          <>
-            <strong>Retirement</strong>: IRS Publication 560 — the solo 401(k)&rsquo;s employee and employer contribution mechanics and limits.
-          </>
-        ),
-        url: "https://www.irs.gov/publications/p560",
-        urlLabel: "IRS",
-      },
-      {
-        id: "contributions",
-        cite: (
-          <>
-            <strong>Contributions</strong>: Chetty, R., et al. (2014). Active vs. passive decisions and crowd-out in retirement savings accounts: evidence from Denmark. <em>Quarterly Journal of Economics</em>, 129(3).
-          </>
-        ),
-        url: "https://academic.oup.com/qje/article/129/3/1141/1817647",
-        urlLabel: "Oxford",
-      },
-      {
-        id: "diversification",
-        cite: (
-          <>
-            <strong>Diversification</strong>: Markowitz, H. (1952). Portfolio selection. <em>Journal of Finance</em>, 7(1).
-          </>
-        ),
-        url: "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
-        urlLabel: "DOI",
       },
       {
         id: "indexing",
@@ -591,16 +481,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
           </>
         ),
         url: "https://doi.org/10.1111/0022-1082.00226",
-        urlLabel: "DOI",
-      },
-      {
-        id: "education-count",
-        cite: (
-          <>
-            <strong>Education</strong>: Evans, J. L., and Archer, S. H. (1968). Diversification and the reduction of dispersion: an empirical analysis. <em>Journal of Finance</em>, 23(5) — the ten-stock answer; Statman, M. (1987), <em>Journal of Financial and Quantitative Analysis</em>, 22(3), argues thirty or more.
-          </>
-        ),
-        url: "https://doi.org/10.1111/j.1540-6261.1968.tb00315.x",
         urlLabel: "DOI",
       },
       {
@@ -644,16 +524,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         urlLabel: "DOI",
       },
       {
-        id: "enterprise-premium",
-        cite: (
-          <>
-            <strong>Enterprise</strong>: Moskowitz, T. J., and Vissing-Jørgensen, A. (2002). The returns to entrepreneurial investment: a private equity premium puzzle? <em>American Economic Review</em>, 92(4).
-          </>
-        ),
-        url: "https://www.aeaweb.org/articles?id=10.1257/00028280260344452",
-        urlLabel: "AEA",
-      },
-      {
         id: "exits",
         cite: (
           <>
@@ -673,6 +543,61 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         url: "https://doi.org/10.1111/j.1540-6261.2005.00780.x",
         urlLabel: "DOI",
       },
+    ],
+  },
+  {
+    label: "Panels, cohorts, and surveys — associations, with selection risks",
+    items: [
+      {
+        id: "disability-shock",
+        cite: (
+          <>
+            <strong>Disability</strong>: Meyer, B. D., and Mok, W. K. C. (2019). Disability, earnings, income and consumption. <em>Journal of Public Economics</em>, 171.
+          </>
+        ),
+        url: "https://www.nber.org/papers/w18869",
+        urlLabel: "NBER",
+      },
+      {
+        id: "life-adequacy",
+        cite: (
+          <>
+            <strong>Life</strong>: Bernheim, B. D., et al. (2003). The mismatch between life insurance holdings and financial vulnerabilities. <em>American Economic Review</em>, 93(1).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/000282803321455340",
+        urlLabel: "AEA",
+      },
+      {
+        id: "self-employment",
+        cite: (
+          <>
+            <strong>Self-employment</strong>: Hamilton, B. H. (2000). Does entrepreneurship pay? An empirical analysis of the returns to self-employment. <em>Journal of Political Economy</em>, 108(3).
+          </>
+        ),
+        url: "https://doi.org/10.1086/262131",
+        urlLabel: "DOI",
+      },
+      {
+        id: "independence",
+        cite: (
+          <>
+            <strong>Independence</strong>: Benz, M., and Frey, B. S. (2008). Being independent is a great thing: subjective evaluations of self-employment and hierarchy. <em>Economica</em>, 75(298).
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1468-0335.2007.00594.x",
+        urlLabel: "DOI",
+      },
+      {
+        id: "enterprise-premium",
+        cite: (
+          <>
+            <strong>Enterprise</strong>: Moskowitz, T. J., and Vissing-Jørgensen, A. (2002). The returns to entrepreneurial investment: a private equity premium puzzle? <em>American Economic Review</em>, 92(4).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/00028280260344452",
+        urlLabel: "AEA",
+      },
       {
         id: "forecasting",
         cite: (
@@ -682,6 +607,101 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         ),
         url: "https://press.princeton.edu/books/hardcover/9780691178288/expert-political-judgment",
         urlLabel: "Princeton",
+      },
+    ],
+  },
+  {
+    label: "Theory and simulation — true by construction, tested by everything above",
+    items: [
+      {
+        id: "diversification",
+        cite: (
+          <>
+            <strong>Diversification</strong>: Markowitz, H. (1952). Portfolio selection. <em>Journal of Finance</em>, 7(1).
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+        urlLabel: "DOI",
+      },
+      {
+        id: "education-count",
+        cite: (
+          <>
+            <strong>Education</strong>: Evans, J. L., and Archer, S. H. (1968). Diversification and the reduction of dispersion: an empirical analysis. <em>Journal of Finance</em>, 23(5) — the ten-stock answer; Statman, M. (1987), <em>Journal of Financial and Quantitative Analysis</em>, 22(3), argues thirty or more.
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1540-6261.1968.tb00315.x",
+        urlLabel: "DOI",
+      },
+    ],
+  },
+  {
+    label: "Rules of the game — policy and institutional standards, not evidence",
+    items: [
+      {
+        id: "fico",
+        cite: (
+          <>
+            <strong>Credit</strong>: the five FICO factor weights — payment history 35%, utilization 30%, history 15%, new credit 10%, mix 10%.
+          </>
+        ),
+        url: "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        urlLabel: "myFICO",
+      },
+      {
+        id: "load",
+        cite: (
+          <>
+            <strong>Load</strong>: the 28/36 qualifying ratios — housing and total debt service against gross income, the lenders&rsquo; own ceiling.
+          </>
+        ),
+        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/",
+        urlLabel: "CFPB",
+      },
+      {
+        id: "hsa",
+        cite: (
+          <>
+            <strong>HSA</strong>: IRS Publication 969 — the qualifying plan and the triple tax advantage behind the health shell.
+          </>
+        ),
+        url: "https://www.irs.gov/publications/p969",
+        urlLabel: "IRS",
+      },
+      {
+        id: "retirement",
+        cite: (
+          <>
+            <strong>Retirement</strong>: IRS Publication 560 — the solo 401(k)&rsquo;s employee and employer contribution mechanics and limits.
+          </>
+        ),
+        url: "https://www.irs.gov/publications/p560",
+        urlLabel: "IRS",
+      },
+      {
+        id: "transfer",
+        cite: (
+          <>
+            <strong>Transfer</strong>: IRS Topic 409 — the 0/15/20% long-term capital gains schedule earned by holding past one year.
+          </>
+        ),
+        url: "https://www.irs.gov/taxtopics/tc409",
+        urlLabel: "IRS",
+      },
+    ],
+  },
+  {
+    label: "Industry figures — the border with folklore",
+    items: [
+      {
+        id: "incidence",
+        cite: (
+          <>
+            <strong>Incidence</strong>: Council for Disability Awareness — the roughly one-in-four odds of disability before retirement that put own-occupation cover ahead of life cover.
+          </>
+        ),
+        url: "https://disabilitycanhappen.org/disability-statistic/",
+        urlLabel: "CDA",
       },
     ],
   },
