@@ -311,6 +311,61 @@ const WEALTH_DATA: ReferenceSection[] = [
 
 const WEALTH_GUIDELINES: ReferenceSection[] = [
   {
+    label: "The policies and standards informing my benchmarks",
+    items: [
+      {
+        id: "fico",
+        cite: (
+          <>
+            <strong>Credit</strong>: the five FICO factor weights — payment history 35%, utilization 30%, history 15%, new credit 10%, mix 10%.
+          </>
+        ),
+        url: "https://www.myfico.com/credit-education/whats-in-your-credit-score",
+        urlLabel: "myFICO",
+      },
+      {
+        id: "load",
+        cite: (
+          <>
+            <strong>Load</strong>: the 28/36 qualifying ratios — housing and total debt service against gross income, the lenders&rsquo; own ceiling.
+          </>
+        ),
+        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/",
+        urlLabel: "CFPB",
+      },
+      {
+        id: "hsa",
+        cite: (
+          <>
+            <strong>HSA</strong>: IRS Publication 969 — the qualifying plan and the triple tax advantage behind the health shell.
+          </>
+        ),
+        url: "https://www.irs.gov/publications/p969",
+        urlLabel: "IRS",
+      },
+      {
+        id: "retirement",
+        cite: (
+          <>
+            <strong>Retirement</strong>: IRS Publication 560 — the solo 401(k)&rsquo;s employee and employer contribution mechanics and limits.
+          </>
+        ),
+        url: "https://www.irs.gov/publications/p560",
+        urlLabel: "IRS",
+      },
+      {
+        id: "transfer",
+        cite: (
+          <>
+            <strong>Transfer</strong>: IRS Topic 409 — the 0/15/20% long-term capital gains schedule earned by holding past one year.
+          </>
+        ),
+        url: "https://www.irs.gov/taxtopics/tc409",
+        urlLabel: "IRS",
+      },
+    ],
+  },
+  {
     label: "The randomized experiments informing my benchmarks",
     items: [
       {
@@ -418,21 +473,31 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         url: "https://academic.oup.com/qje/article/129/3/1141/1817647",
         urlLabel: "Oxford",
       },
+      {
+        id: "access",
+        cite: (
+          <>
+            <strong>Access</strong>: Kalda, A., et al. (2021). Smart(phone) investing? A within investor-time analysis of new technologies and trading behavior. <em>NBER Working Paper</em>, 28363.
+          </>
+        ),
+        url: "https://www.nber.org/papers/w28363",
+        urlLabel: "NBER",
+      },
+      {
+        id: "gambling",
+        cite: (
+          <>
+            <strong>Gambling</strong>: Baker, S. R., et al. (2026). Gambling away stability: sports betting’s impact on vulnerable households. <em>Journal of Financial Economics</em>, 183.
+          </>
+        ),
+        url: "https://doi.org/10.1016/j.jfineco.2026.104330",
+        urlLabel: "DOI",
+      },
     ],
   },
   {
     label: "The administrative and historical records informing my benchmarks",
     items: [
-      {
-        id: "card-rewards",
-        cite: (
-          <>
-            <strong>Card rewards</strong>: Agarwal, S., et al. (2023). Who pays for your rewards? Redistribution in the credit card market. <em>Finance and Economics Discussion Series</em>, 2023-007.
-          </>
-        ),
-        url: "https://www.federalreserve.gov/econres/feds/who-pays-for-your-rewards-redistribution-in-the-credit-card-market.htm",
-        urlLabel: "Federal Reserve",
-      },
       {
         id: "cash-drag",
         cite: (
@@ -481,6 +546,16 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
           </>
         ),
         url: "https://doi.org/10.1111/0022-1082.00226",
+        urlLabel: "DOI",
+      },
+      {
+        id: "attention",
+        cite: (
+          <>
+            <strong>Attention</strong>: Barber, B. M., et al. (2022). Attention-induced trading and returns: evidence from Robinhood users. <em>Journal of Finance</em>, 77(6).
+          </>
+        ),
+        url: "https://doi.org/10.1111/jofi.13183",
         urlLabel: "DOI",
       },
       {
@@ -632,61 +707,6 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         ),
         url: "https://doi.org/10.1111/j.1540-6261.1968.tb00315.x",
         urlLabel: "DOI",
-      },
-    ],
-  },
-  {
-    label: "The policies and standards informing my benchmarks",
-    items: [
-      {
-        id: "fico",
-        cite: (
-          <>
-            <strong>Credit</strong>: the five FICO factor weights — payment history 35%, utilization 30%, history 15%, new credit 10%, mix 10%.
-          </>
-        ),
-        url: "https://www.myfico.com/credit-education/whats-in-your-credit-score",
-        urlLabel: "myFICO",
-      },
-      {
-        id: "load",
-        cite: (
-          <>
-            <strong>Load</strong>: the 28/36 qualifying ratios — housing and total debt service against gross income, the lenders&rsquo; own ceiling.
-          </>
-        ),
-        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/",
-        urlLabel: "CFPB",
-      },
-      {
-        id: "hsa",
-        cite: (
-          <>
-            <strong>HSA</strong>: IRS Publication 969 — the qualifying plan and the triple tax advantage behind the health shell.
-          </>
-        ),
-        url: "https://www.irs.gov/publications/p969",
-        urlLabel: "IRS",
-      },
-      {
-        id: "retirement",
-        cite: (
-          <>
-            <strong>Retirement</strong>: IRS Publication 560 — the solo 401(k)&rsquo;s employee and employer contribution mechanics and limits.
-          </>
-        ),
-        url: "https://www.irs.gov/publications/p560",
-        urlLabel: "IRS",
-      },
-      {
-        id: "transfer",
-        cite: (
-          <>
-            <strong>Transfer</strong>: IRS Topic 409 — the 0/15/20% long-term capital gains schedule earned by holding past one year.
-          </>
-        ),
-        url: "https://www.irs.gov/taxtopics/tc409",
-        urlLabel: "IRS",
       },
     ],
   },
