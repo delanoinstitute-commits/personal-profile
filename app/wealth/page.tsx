@@ -311,7 +311,7 @@ const WEALTH_DATA: ReferenceSection[] = [
 
 const WEALTH_GUIDELINES: ReferenceSection[] = [
   {
-    label: "Randomized experiments — the treatment assigned by lottery",
+    label: "Randomized experiments informing my benchmarks",
     items: [
       {
         id: "health-cover",
@@ -346,7 +346,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Natural and quasi-experiments — causation from shocks nobody chose",
+    label: "Natural and quasi-experiments informing my benchmarks",
     items: [
       {
         id: "property-uninsured",
@@ -421,7 +421,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Administrative and historical records — populations counted, not sampled",
+    label: "Administrative and historical records informing my benchmarks",
     items: [
       {
         id: "card-rewards",
@@ -546,7 +546,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Panels, cohorts, and surveys — associations, with selection risks",
+    label: "Panels, cohorts, and surveys informing my benchmarks",
     items: [
       {
         id: "disability-shock",
@@ -611,7 +611,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Theory and simulation — true by construction, tested by everything above",
+    label: "Theory and simulation informing my benchmarks",
     items: [
       {
         id: "diversification",
@@ -636,7 +636,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Rules of the game — policy and institutional standards, not evidence",
+    label: "Policies and standards informing my benchmarks",
     items: [
       {
         id: "fico",
@@ -691,7 +691,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Industry figures — the border with folklore",
+    label: "Industry figures informing my benchmarks",
     items: [
       {
         id: "incidence",
