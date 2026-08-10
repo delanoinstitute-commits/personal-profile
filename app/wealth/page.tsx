@@ -311,7 +311,7 @@ const WEALTH_DATA: ReferenceSection[] = [
 
 const WEALTH_GUIDELINES: ReferenceSection[] = [
   {
-    label: "Randomized experiments informing my benchmarks",
+    label: "The randomized experiments informing my benchmarks",
     items: [
       {
         id: "health-cover",
@@ -346,7 +346,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Natural and quasi-experiments informing my benchmarks",
+    label: "The natural and quasi-experiments informing my benchmarks",
     items: [
       {
         id: "property-uninsured",
@@ -421,7 +421,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Administrative and historical records informing my benchmarks",
+    label: "The administrative and historical records informing my benchmarks",
     items: [
       {
         id: "card-rewards",
@@ -546,7 +546,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Panels, cohorts, and surveys informing my benchmarks",
+    label: "The panels, cohorts, and surveys informing my benchmarks",
     items: [
       {
         id: "disability-shock",
@@ -611,7 +611,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Theory and simulation informing my benchmarks",
+    label: "The theory and simulation informing my benchmarks",
     items: [
       {
         id: "diversification",
@@ -636,7 +636,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Policies and standards informing my benchmarks",
+    label: "The policies and standards informing my benchmarks",
     items: [
       {
         id: "fico",
@@ -691,7 +691,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
-    label: "Industry figures informing my benchmarks",
+    label: "The industry figures informing my benchmarks",
     items: [
       {
         id: "incidence",
