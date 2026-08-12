@@ -34,7 +34,7 @@ const NURTURE: StatTableData = {
           metrics: [
             ["", "The care I call on rather than schedule — the people who raised me still steady me", false],
             ["On-demand", "Available, capable, and affective", true, "The closest tier of the whole map: no appointment, no invoice, no judgment. The benchmark is the person, not the service — availability first, because care that cannot be reached is not care."],
-            ["Parents", "Rizél Delano", true, undefined, undefined, true],
+            ["Parents", "Mother (Rizél Delano)", true, undefined, undefined, true],
             ["Neighbors", "Pending", true, undefined, undefined, true],
           ],
         },
@@ -258,8 +258,78 @@ const NETWORK_GUIDELINES: ReferenceSection[] = [
     ],
   },
   {
+    label: "The randomized experiments informing my benchmarks",
+    items: [
+      {
+        id: "neighborhoods",
+        cite: (
+          <>
+            <strong>Neighborhoods</strong>: Chetty, R., Hendren, N., and Katz, L. F. (2016). The effects of exposure to better neighborhoods on children: new evidence from the Moving to Opportunity experiment. <em>American Economic Review</em>, 106(4).
+          </>
+        ),
+        url: "https://www.aeaweb.org/articles?id=10.1257/aer.20150572",
+        urlLabel: "AEA",
+      },
+      {
+        id: "time",
+        cite: (
+          <>
+            <strong>Time</strong>: Whillans, A. V., et al. (2017). Buying time promotes happiness. <em>Proceedings of the National Academy of Sciences</em>, 114(32).
+          </>
+        ),
+        url: "https://doi.org/10.1073/pnas.1706541114",
+        urlLabel: "DOI",
+      },
+    ],
+  },
+  {
+    label: "The administrative and historical records informing my benchmarks",
+    items: [
+      {
+        id: "place",
+        cite: (
+          <>
+            <strong>Place</strong>: Chetty, R., et al. (2014). Where is the land of opportunity? The geography of intergenerational mobility in the United States. <em>Quarterly Journal of Economics</em>, 129(4).
+          </>
+        ),
+        url: "https://www.nber.org/papers/w19843",
+        urlLabel: "NBER",
+      },
+      {
+        id: "connection",
+        cite: (
+          <>
+            <strong>Connection</strong>: Chetty, R., et al. (2022). Social capital I: measurement and associations with economic mobility. <em>Nature</em>, 608(7921).
+          </>
+        ),
+        url: "https://doi.org/10.1038/s41586-022-04996-4",
+        urlLabel: "DOI",
+      },
+    ],
+  },
+  {
     label: "The cohorts and field studies informing my benchmarks",
     items: [
+      {
+        id: "status",
+        cite: (
+          <>
+            <strong>Status</strong>: Marmot, M. G., et al. (1991). Health inequalities among British civil servants: the Whitehall II study. <em>Lancet</em>, 337(8754).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/1674771/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "ties",
+        cite: (
+          <>
+            <strong>Ties</strong>: Granovetter, M. S. (1973). The strength of weak ties. <em>American Journal of Sociology</em>, 78(6).
+          </>
+        ),
+        url: "https://doi.org/10.1086/225469",
+        urlLabel: "DOI",
+      },
       {
         id: "size",
         cite: (
