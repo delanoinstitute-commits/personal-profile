@@ -122,6 +122,7 @@ const GROWTH: StatTableData = {
             ["Circle", "Pending (the wider fifteen)", true, undefined, undefined, true],
             ["Family (blood)", "The best families turn shared history into chosen friendship", true, "The companions I did not choose and would choose anyway — the sibling test: the relationship that starts unchosen and earns its re-choosing in adulthood."],
             ["Siblings", "Brother", true, undefined, undefined, true],
+            ["Cousins", "Pending", true, "The best cousins pick up mid-conversation after years apart.", undefined, true],
           ],
         },
       ],
@@ -180,10 +181,9 @@ const CONTRIBUTION: StatTableData = {
           metrics: [
             ["", "The people my work is finally for — those with first claim on what I build", false],
             ["Family (blood)", "The best families inherit the time before the money", true, "Giving with a warm hand: experiences funded while the giver is alive to share them — the inheritance that beats the estate."],
-            ["Parents", "Pending", true, undefined, undefined, true],
+            ["Parents", "Mother (Rizél Delano)", true, undefined, undefined, true],
             ["Children", "None", true, undefined, undefined, true],
             ["Nephews and nieces", "Pending", true, "The best nephews and nieces know you as a presence, not a legend — the mentor they get before they know to look for one.", undefined, true],
-            ["Cousins", "Pending", true, "The best cousins pick up mid-conversation after years apart.", undefined, true],
           ],
         },
         {
@@ -191,7 +191,7 @@ const CONTRIBUTION: StatTableData = {
           metrics: [
             ["", "The health I hold for others — proxy, navigator, and advocate when they cannot be", false],
             ["Wards (care)", "The best wards sign the proxy before it is needed", true, "Advocacy granted in advance: the proxy, the directives, the passwords — held quietly until the day they are not."],
-            ["Parents", "Pending", true, undefined, undefined, true],
+            ["Parents", "Mother (Rizél Delano)", true, undefined, undefined, true],
             ["Partner", "Pending", true, undefined, undefined, true],
           ],
         },
