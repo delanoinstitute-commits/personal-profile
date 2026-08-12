@@ -33,7 +33,7 @@ export type NavGroup = { title: string; pages: NavPage[] };
 
 export const NAV_GROUPS: NavGroup[] = [
   {
-    title: "Overview",
+    title: "Constitution",
     pages: [
       {
         label: "About",
@@ -43,11 +43,6 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Contact", anchor: "contact" },
         ],
       },
-    ],
-  },
-  {
-    title: "Constitution",
-    pages: [
       {
         label: "Story",
         href: "/story",
@@ -111,7 +106,7 @@ export const NAV_GROUPS: NavGroup[] = [
         label: "Network",
         href: "/network",
         sections: [
-          { label: "Maintenance", anchor: "maintenance" },
+          { label: "Nurture", anchor: "nurture" },
           { label: "Growth", anchor: "growth" },
           { label: "Contribution", anchor: "contribution" },
         ],
