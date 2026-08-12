@@ -57,8 +57,9 @@ const NURTURE: StatTableData = {
             ["Aesthetician", "Pending", true, undefined, undefined, true],
             ["Keepers", "Capable, consistent, and likable", true, "The home's attendants, and the first hire of the buying-back-time ladder — the next arrives whenever life gets busier or income gets larger."],
             ["Housekeeper", "Sonja", true, undefined, undefined, true],
-            ["Aides", "Available, consistent, and fast", true, "The calendar's attendants — the roles that return time itself. Currently a role AI holds outright: the one attendant that is always available, never inconsistent, and instant."],
-            ["Assistant", "AI", true, undefined, undefined, true],
+            ["Agents", "Available, consistent, and fast", true, "The calendar's attendants — those empowered to act in my stead, which is what buying back time means. The digital agent already holds the role outright: always available, never inconsistent, and instant."],
+            ["Personal", "Pending", true, undefined, undefined, true],
+            ["Digital", "AI", true, undefined, undefined, true],
           ],
         },
         {
