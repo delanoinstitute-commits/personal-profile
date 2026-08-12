@@ -12,15 +12,17 @@ export const metadata: Metadata = { title: "Network" };
 // people who depend on me). Two bands per branch, per the site standard:
 // personal and professional. Categories are named for the page each
 // relationship serves (Story, Lifestyle, Knowledge, Health, Wealth) with the
-// role class in the gloss. Every category organizes its roles by encounter
-// frequency — frequency sets intimacy — and each tier carries the qualities
-// that make its relationships good: the four A's for people (available, able,
-// affective, advocating) shading into the three C's for services (consistent,
-// comprehensive, current) as encounters thin. Named people appear only in
-// professional capacity or with standing consent; "Pending" marks a role
-// unfilled, not yet worth recommending, or waiting on a stage of life.
-// Frequency-tier assignments outside Nurture are scaffold defaults, refined
-// band by band.
+// role class in the gloss. Rows are ROLES ordered by need — each appears in
+// the order life requires it, the next hire triggered by getting busier or
+// richer — so band counts count relationship types. Each role's value is its
+// benchmark: the four A's for people (available, able, affective, advocating)
+// shading into the three C's for services (consistent, comprehensive,
+// current) as encounters thin. The holder hangs beneath as an unlabelled
+// child ("Pending" = unfilled, no one worth recommending yet, or waiting on
+// a stage of life). Kept deliberately minimal: standing relationships only —
+// once-off and referral-reachable experts live in the private plans, not the
+// map. Named people appear only in professional capacity or with standing
+// consent. Benchmarks marked "Pending" refine band by band.
 
 const NURTURE: StatTableData = {
   title: "Nurture",
@@ -33,9 +35,10 @@ const NURTURE: StatTableData = {
           category: "Story (caretakers)",
           metrics: [
             ["", "The care I call on rather than schedule — the people who raised me still steady me", false],
-            ["On-demand", "Available, capable, and affective", true, "The closest tier of the whole map: no appointment, no invoice, no judgment. The benchmark is the person, not the service — availability first, because care that cannot be reached is not care."],
-            ["Parents", "Mother (Rizél Delano)", true, undefined, undefined, true],
-            ["Neighbors", "Pending", true, undefined, undefined, true],
+            ["Parents", "Available, capable, and affective", true, "The closest tier of the whole map: no appointment, no invoice, no judgment. The benchmark is the person, not the service — availability first, because care that cannot be reached is not care."],
+            ["Mother", "Rizél Delano", true, undefined, undefined, true],
+            ["Neighbors", "Available, affective, and advocating", true, "The closest strangers: near enough to help before anyone else can, warm enough to want to, connected enough to know who to call when they cannot."],
+            ["", "Pending", true, undefined, undefined, true],
           ],
         },
       ],
@@ -48,63 +51,62 @@ const NURTURE: StatTableData = {
           category: "Lifestyle (attendants)",
           metrics: [
             ["", "I buy back my hours from people worth keeping in my home and week", false],
-            ["On-demand", "Available, consistent, and fast", true],
-            ["Assistant", "AI", true, undefined, undefined, true],
-            ["Mechanic", "Pending (waits on a vehicle)", true, undefined, undefined, true],
-            ["Weekly", "Capable, consistent, and likable", true],
-            ["Housekeeper", "Sonja", true, undefined, undefined, true],
-            ["Au pair", "Pending", true, undefined, undefined, true],
-            ["Monthly", "Consistent and responsive", true],
-            ["Landlord", "Pending", true, undefined, undefined, true],
-            ["Every 4–8 weeks", "Consistent and likable", true],
-            ["Hairdresser", "Pending", true, undefined, undefined, true],
-            ["Beautician", "Pending", true, undefined, undefined, true],
-            ["Aesthetician", "Pending", true, undefined, undefined, true],
-            ["Tailor", "Pending", true, undefined, undefined, true],
+            ["Hairdresser", "Consistent and likable", true],
+            ["", "Pending", true, undefined, undefined, true],
+            ["Mechanic", "Capable, consistent, and fair", true],
+            ["", "Pending (waits on a vehicle)", true, undefined, undefined, true],
+            ["Housekeeper", "Capable, consistent, and likable", true, "The first hire of the buying-back-time ladder: roles below this one arrive as life gets busier and income gets larger — housekeeper, then au pair, then assistant."],
+            ["", "Sonja", true, undefined, undefined, true],
+            ["Au pair", "Capable, consistent, and affective", true],
+            ["", "Pending", true, undefined, undefined, true],
+            ["Assistant", "Available, consistent, and fast", true],
+            ["", "AI", true, undefined, undefined, true],
+            ["Beautician", "Consistent and likable", true],
+            ["", "Pending", true, undefined, undefined, true],
+            ["Aesthetician", "Consistent and likable", true],
+            ["", "Pending", true, undefined, undefined, true],
           ],
         },
         {
           category: "Knowledge (instructors)",
           metrics: [
             ["", "The teachers I take instruction from — knowledge fed to the organism, not traded", false],
-            ["Weekly", "Capable, current, and clear", true, "Paid instruction is nurture, not collaboration: input the growing organism takes. What makes it collaboration is reciprocity — and that tier lives under Growth, with the mentors."],
-            ["Tutors", "Pending", true, undefined, undefined, true],
-            ["Teachers", "Pending", true, undefined, undefined, true],
+            ["Teachers", "Capable, current, and clear", true, "Paid instruction is nurture, not collaboration: input the growing organism takes. What makes it collaboration is reciprocity — and that tier lives under Growth, with the mentors."],
+            ["", "Pending", true, undefined, undefined, true],
+            ["Tutors", "Capable, current, and clear", true],
+            ["", "Pending", true, undefined, undefined, true],
           ],
         },
         {
           category: "Health (examiners)",
           metrics: [
-            ["", "My clinicians run on the body's calendar, from on-call to annual", false],
-            ["On-demand", "Available, capable, and well-connected", true, "The doctor's tier runs on advocacy: if he cannot help, he must know who can. Well-connected is the fourth quality of a valuable person — the network behind the person."],
-            ["Doctor", "Dr. Darren Levin", true, undefined, undefined, true],
-            ["Pharmacist", "Pending", true, undefined, undefined, true],
-            ["Physical therapist", "Pending", true, undefined, undefined, true],
-            ["Veterinarian", "Pending (waits on pets)", true, undefined, undefined, true],
-            ["Every 4–6 months", "Consistent, one-stop, and current", true, "As encounters thin, the service outweighs the person: diagnosis, cleaning, and surgery under one roof, on the newest equipment. Every additional service a provider offers is one fewer relationship the network has to carry."],
-            ["Dentist", "Dr. JJ Serfontein", true, undefined, undefined, true],
-            ["Every 1–2 years", "Consistent and current", true],
-            ["Physiologist", "Tim Klein; Reece McDonald", true, undefined, undefined, true],
-            ["Radiologist", "Cape Radiology", true, undefined, undefined, true],
-            ["Optometrist", "Dr. Johann Kruger", true, undefined, undefined, true],
-            ["Dermatologist", "Pending", true, undefined, undefined, true],
+            ["", "My clinicians, from the first call to the annual scan", false],
+            ["Doctor", "Available, capable, and well-connected", true, "The doctor's benchmark runs on advocacy: if he cannot help, he must know who can. Well-connected is the fourth quality of a valuable person — the network behind the person."],
+            ["", "Dr. Darren Levin", true, undefined, undefined, true],
+            ["Dentist", "Consistent, one-stop, and current", true, "Diagnosis, cleaning, and surgery under one roof, on the newest equipment. Every additional service a provider offers is one fewer relationship the network has to carry."],
+            ["", "Dr. JJ Serfontein", true, undefined, undefined, true],
+            ["Pharmacist", "Available, consistent, and current", true],
+            ["", "Pending", true, undefined, undefined, true],
+            ["Optometrist", "Consistent and current", true],
+            ["", "Dr. Johann Kruger", true, undefined, undefined, true],
+            ["Dermatologist", "Consistent and current", true],
+            ["", "Pending", true, undefined, undefined, true],
+            ["Physiologist", "Consistent and current", true],
+            ["", "Tim Klein; Reece McDonald", true, undefined, undefined, true],
+            ["Radiologist", "Consistent and current", true],
+            ["", "Cape Radiology", true, undefined, undefined, true],
+            ["Veterinarian", "Available, capable, and gentle", true],
+            ["", "Pending (waits on pets)", true, undefined, undefined, true],
           ],
         },
         {
           category: "Wealth (advisors)",
           metrics: [
             ["", "One firm reads the whole balance sheet — personal and corporate in a single conversation", false],
-            ["Monthly", "Consistent and accountable", true],
-            ["Property manager", "Pending (waits on rentals)", true, undefined, undefined, true],
-            ["Yearly", "Same-firm personal and corporate services", true, "The rarest recurring tier, so comprehensiveness is nearly everything: one firm holding both the person and the business means the two ledgers never contradict each other."],
-            ["CPA", "Eugene Park (Baker Tilly)", true, undefined, undefined, true],
-            ["Fiduciary", "Pending", true, undefined, undefined, true],
-            ["Estate attorney", "Pending", true, undefined, undefined, true],
-            ["Per project", "Capable, connected, and conflict-free", true, "The episodic experts hired for a transaction rather than a season: capability first, the network behind them second, and no incentive that competes with mine — commissions disclosed, fees only where possible."],
-            ["Immigration attorney", "Pending", true, undefined, undefined, true],
-            ["Insurance broker", "Pending", true, undefined, undefined, true],
-            ["Forex specialist", "Pending", true, undefined, undefined, true],
-            ["Realtor", "Pending", true, undefined, undefined, true],
+            ["CPA", "Same-firm personal and corporate services", true, "The rarest recurring relationship, so comprehensiveness is nearly everything: one firm holding both the person and the business means the two ledgers never contradict each other."],
+            ["", "Eugene Park (Baker Tilly)", true, undefined, undefined, true],
+            ["Fiduciary", "Fee-only, capable, and conflict-free", true, "Advice priced so the advisor wins only when I do: no commissions, no products, no incentive competing with mine. The episodic experts — attorneys, brokers, agents — are reached through this tier\u2019s advocacy, not kept on standing retainer."],
+            ["", "Pending", true, undefined, undefined, true],
           ],
         },
       ],
@@ -123,15 +125,12 @@ const GROWTH: StatTableData = {
           category: "Story (companions)",
           metrics: [
             ["", "The people I share life with — the one tier of the map that is the point, not a means", false],
-            ["Daily", "Pending", true],
-            ["Spouse", "Pending", true, undefined, undefined, true],
-            ["Pets", "Pending", true, undefined, undefined, true],
-            ["Weekly", "Pending", true],
-            ["Friends", "Pending", true, undefined, undefined, true],
-            ["Monthly", "Pending", true],
-            ["Siblings", "Pending", true, undefined, undefined, true],
-            ["Nephews and nieces", "Pending", true, undefined, undefined, true],
-            ["Cousins", "Pending", true, undefined, undefined, true],
+            ["Spouse", "Pending", true],
+            ["Friends", "Pending", true],
+            ["Siblings", "Pending", true],
+            ["Nephews and nieces", "Pending", true],
+            ["Cousins", "Pending", true],
+            ["Pets", "Pending", true],
           ],
         },
       ],
@@ -144,34 +143,28 @@ const GROWTH: StatTableData = {
           category: "Knowledge (guides)",
           metrics: [
             ["", "The minds I trade with — wisdom shared, not bought", false],
-            ["Weekly", "Pending", true],
-            ["Language partner", "Pending", true, undefined, undefined, true],
-            ["Monthly", "Pending", true],
-            ["Mentors", "Pending", true, undefined, undefined, true],
-            ["Masterminds", "Pending", true, undefined, undefined, true],
+            ["Mentors", "Pending", true],
+            ["Masterminds", "Pending", true],
+            ["Language partner", "Pending", true],
           ],
         },
         {
           category: "Health (practitioners)",
           metrics: [
             ["", "The professionals I train with, week in and week out — collaboration, not diagnosis", false],
-            ["Weekly", "Pending (capable, consistent, and aligned)", true],
-            ["Coach", "Pending", true, undefined, undefined, true],
-            ["Therapist", "Pending", true, undefined, undefined, true],
-            ["Trainer", "Pending", true, undefined, undefined, true],
+            ["Coach", "Pending", true],
+            ["Trainer", "Pending", true],
+            ["Therapist", "Pending", true],
           ],
         },
         {
           category: "Wealth (managers)",
           metrics: [
             ["", "The people building alongside me, stakes aligned", false],
-            ["Daily", "Pending", true],
-            ["Cofounders", "Pending", true, undefined, undefined, true],
-            ["Weekly", "Pending", true],
-            ["Managers", "Pending", true, undefined, undefined, true],
-            ["Affiliates", "Pending", true, undefined, undefined, true],
-            ["Quarterly", "Pending", true],
-            ["Investors", "Pending", true, undefined, undefined, true],
+            ["Cofounders", "Pending", true],
+            ["Investors", "Pending", true],
+            ["Managers", "Pending", true],
+            ["Affiliates", "Pending", true],
           ],
         },
       ],
@@ -190,17 +183,15 @@ const CONTRIBUTION: StatTableData = {
           category: "Story (beneficiaries)",
           metrics: [
             ["", "The people my work is finally for — those with first claim on what I build", false],
-            ["Daily", "Pending", true],
-            ["Children", "None", true, undefined, undefined, true],
-            ["Parents", "Pending", true, undefined, undefined, true],
+            ["Parents", "Pending", true],
+            ["Children", "None", true],
           ],
         },
         {
           category: "Health (advocates)",
           metrics: [
             ["", "The health I hold for others — proxy, navigator, and advocate when they cannot be", false],
-            ["On-demand", "Pending", true],
-            ["Family", "Pending", true, undefined, undefined, true],
+            ["Family", "Pending", true],
           ],
         },
       ],
@@ -213,27 +204,20 @@ const CONTRIBUTION: StatTableData = {
           category: "Knowledge (explorers)",
           metrics: [
             ["", "The learners downstream of what I know", false],
-            ["Weekly", "Pending", true],
-            ["Students", "Pending", true, undefined, undefined, true],
-            ["Monthly", "Pending", true],
-            ["Audience", "Pending", true, undefined, undefined, true],
+            ["Students", "Pending", true],
+            ["Audience", "Pending", true],
           ],
         },
         {
           category: "Wealth (multipliers)",
           metrics: [
             ["", "The people who turn my output into income — theirs and mine", false],
-            ["Daily", "Pending", true],
-            ["Employers", "Pending", true, undefined, undefined, true],
-            ["Employees", "Pending", true, undefined, undefined, true],
-            ["Weekly", "Pending", true],
-            ["Clients", "Pending", true, undefined, undefined, true],
-            ["Monthly", "Pending", true],
-            ["Customers", "Pending", true, undefined, undefined, true],
-            ["Quarterly", "Pending", true],
-            ["Shareholders", "Pending", true, undefined, undefined, true],
-            ["Yearly", "Pending", true],
-            ["Causes", "Pending", true, undefined, undefined, true],
+            ["Employers", "Pending", true],
+            ["Clients", "Pending", true],
+            ["Customers", "Pending", true],
+            ["Employees", "Pending", true],
+            ["Shareholders", "Pending", true],
+            ["Causes", "Pending", true],
           ],
         },
       ],
@@ -384,10 +368,11 @@ export default function NetworkPage() {
         The relationships I take from — the people who give the organism what it
         needs, when it needs it: healing when below health, sustenance at health,
         inputs to build on, in two registers — family (personal) and services
-        (professional). Rows run by frequency of encounter, because frequency sets
-        intimacy: the more often we meet, the more the person matters; the rarer the
-        visit, the more the service must carry — consistent, comprehensive, and
-        current.
+        (professional). Roles run by need — each appears in the order life requires
+        it, the next hire triggered by getting busier or richer — and each carries
+        its benchmark: the person’s qualities (available, able, affective,
+        advocating) where encounters are close, the service’s (consistent,
+        comprehensive, current) where they thin.
       </p>
       <NestedTable {...NURTURE} />
 
