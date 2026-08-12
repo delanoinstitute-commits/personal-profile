@@ -107,6 +107,15 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Growth", anchor: "growth" },
         ],
       },
+      {
+        label: "Network",
+        href: "/network",
+        sections: [
+          { label: "Maintenance", anchor: "maintenance" },
+          { label: "Growth", anchor: "growth" },
+          { label: "Contribution", anchor: "contribution" },
+        ],
+      },
     ],
   },
 ];
