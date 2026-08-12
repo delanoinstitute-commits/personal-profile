@@ -78,9 +78,10 @@ const NURTURE: StatTableData = {
           metrics: [
             ["", "My clinicians, from the first call to the annual scan", false],
             ["Clinicians (care)", "The best clinicians are available, capable, and know exactly who to call next", true, "The treating half of the health network. The benchmark runs on advocacy: if they cannot help, they must know who can — well-connected is the fourth quality of a valuable person, the network behind the person."],
-            ["Doctor", "Dr. Darren Levin", true, undefined, undefined, true],
+            ["Pharmacist", "Pending", true, "The best pharmacists are available, consistent, and current on every script. The most frequent health touchpoint in American life — roughly thirty-five pharmacy visits for every four provider visits.", undefined, true],
             ["Dentist", "Dr. JJ Serfontein", true, "The best dentists diagnose, clean, and operate under one current roof — every additional service is one fewer relationship the network has to carry.", undefined, true],
-            ["Pharmacist", "Pending", true, "The best pharmacists are available, consistent, and current on every script.", undefined, true],
+            ["Doctor", "Dr. Darren Levin", true, undefined, undefined, true],
+            ["Psychologist", "Pending", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is nurture; as development it sits under Growth, with the practitioners.", undefined, true],
             ["Veterinarian", "Pending (waits on pets)", true, "The best veterinarians are available, capable, and gentle.", undefined, true],
             ["Diagnosticians (data)", "The best diagnosticians measure the same way every year, on the newest machines", true, "The measuring half: their product is the trend line, so consistency of method is the benchmark — a reading is only comparable to readings taken the same way."],
             ["Optometrist", "Dr. Johann Kruger", true, "The best optometrists are consistent and current, one prescription to the next.", undefined, true],
@@ -346,7 +347,8 @@ export default function NetworkPage() {
         mean little until they are spent with and on people. The map doubles as index
         and benchmark — who holds each role, what makes each relationship good, and
         which roles stand open. The aim is not the biggest network but the right one
-        for this stage of life; the more capable its people, the fewer it needs.
+        for this stage of life; the more capable its people, the fewer it needs —
+        the best-connected members carry whole networks behind them.
       </p>
 
       <h2 id="nurture">
