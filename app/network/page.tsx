@@ -34,11 +34,13 @@ const NURTURE: StatTableData = {
         {
           category: "Story (caretakers)",
           metrics: [
-            ["", "The care I call on rather than schedule — the people who raised me still steady me", false],
-            ["Parents", "The best parents stay available, capable, and affective long after the raising", true, "The closest tier of the whole map: no appointment, no invoice, no judgment. The benchmark is the person, not the service — availability first, because care that cannot be reached is not care."],
-            ["Mother", "Rizél Delano", true, undefined, undefined, true],
-            ["Neighbors", "The best neighbors are close, warm, and watchful", true, "The closest strangers: near enough to help before anyone else can, warm enough to want to, connected enough to know who to call when they cannot."],
-            ["", "Pending", true, undefined, undefined, true],
+            ["", "The care I call on rather than schedule — from the people who raised me to the people next door", false],
+            ["Family (blood)", "The best families stay available, capable, and affective long after the raising", true, "The closest tier of the whole map: no appointment, no invoice, no judgment. The benchmark is the person, not the service — availability first, because care that cannot be reached is not care."],
+            ["Parents", "Mother (Rizél Delano)", true, undefined, undefined, true],
+            ["Grandparents", "Deceased", true, undefined, undefined, true],
+            ["Community (place)", "The best communities are close, warm, and watchful", true, "The closest strangers: near enough to help before anyone else can, warm enough to want to, connected enough to know who to call when they cannot. The one tier of the support network that money never touches — free help, freely returned."],
+            ["Neighbors", "Pending", true, undefined, undefined, true],
+            ["Groups", "Pending (clubs, congregations, circles)", true, undefined, undefined, true],
           ],
         },
       ],
