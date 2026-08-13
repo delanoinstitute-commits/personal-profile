@@ -133,13 +133,14 @@ const GROWTH: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Knowledge (counterparts)",
+          category: "Knowledge (competitors)",
           metrics: [
             ["", "The minds I trade with — wisdom shared, not bought", false],
-            ["Peers (competition)", "The best peers are candid and slightly out of your league", true],
+            ["Peers (challenge)", "The best peers are candid and slightly out of your league", true],
             ["Mates", "Private", true, "The peers of shared eras — classrooms, teams, homelands — who knew you before the record existed.", undefined, true],
             ["Colleagues", "Pending", true, "The peers of the same craft: the ones who understand the work without the backstory.", undefined, true],
             ["Members", "Private", true, "The peers of chosen rooms — masterminds, clubs, cohorts — joined on purpose and sworn to candor. One of the map’s five connectors — every member a gateway to their own cluster.", undefined, true],
+            ["Rivals", "Pending", true, "The peers of the arena — the other school, the rival shop: opposed on the day, improving each other across the years.", undefined, true],
           ],
         },
         {
