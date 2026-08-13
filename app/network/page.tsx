@@ -133,7 +133,7 @@ const GROWTH: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Knowledge (guides)",
+          category: "Knowledge (counterparts)",
           metrics: [
             ["", "The minds I trade with — wisdom shared, not bought", false],
             ["Peers (beside)", "The best peers are candid and slightly out of your league", true],
