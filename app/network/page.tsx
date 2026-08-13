@@ -57,12 +57,6 @@ const NURTURE: StatTableData = {
             ["Agents (time)", "The best agents are always available, consistent, and fast", true],
             ["Digital", "AI", true, "The one role AI holds outright — always available, never inconsistent, and instant.", undefined, true],
             ["Personal", "Pending", true, "The last hire of the ladder: a human agent, arriving only when the calendar is worth more than the salary.", undefined, true],
-          ],
-        },
-        {
-          category: "Knowledge (instructors)",
-          metrics: [
-            ["", "The teachers I take instruction from — knowledge fed to the organism, not traded", false],
             ["Groomers (body)", "The best groomers are consistent, likable, and close by", true],
             ["Hairdresser", "Pending", true, "The best hairdressers are consistent, likable, and close by — kept for years, they know the head they are working on.", undefined, true],
             ["Esthetician", "Pending", true, "The best estheticians keep the skin on schedule — quarterly, clinical, and honest about what works.", undefined, true],
@@ -70,6 +64,12 @@ const NURTURE: StatTableData = {
             ["Housekeeper", "Sonja", true, "The first hire of the buying-back-time ladder — the next arrives whenever life gets busier or income gets larger.", undefined, true],
             ["Handyman", "Pending", true, "The best handymen close the gap between the landlord’s contract and daily life — everything smaller than a major break.", undefined, true],
             ["Domestic robot", "Pending (vacuums today, humanoids later)", true, "The role robotics has not yet earned: a home is the hardest environment there is, so the vacuum holds the post until the humanoids arrive.", undefined, true],
+          ],
+        },
+        {
+          category: "Knowledge (instructors)",
+          metrics: [
+            ["", "The teachers I take instruction from — knowledge fed to the organism, not traded", false],
             ["Educators (mind)", "The best educators are capable, current, and clear", true],
             ["Teachers", "Pending", true, "Paid instruction is nurture, not collaboration: input the growing organism takes. Reciprocity is what moves a teacher to Growth, into the mentors.", undefined, true],
             ["Tutors", "Pending", true, "The best tutors are clear, patient, and paced to the student.", undefined, true],
