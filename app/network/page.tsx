@@ -18,8 +18,10 @@ export const metadata: Metadata = { title: "Network" };
 // benchmark: the four A's for people (available, able, affective, advocating)
 // shading into the three C's for services (consistent, comprehensive,
 // current) as encounters thin. The holder hangs beneath as an unlabelled
-// child ("Pending" = unfilled, no one worth recommending yet, or waiting on
-// a stage of life). Kept deliberately minimal: standing relationships only —
+// child. Two statuses: "Pending" marks a role whose holder will be published
+// and linked once the contact is made; "Private" marks a role held or to be
+// held whose details stay unpublished by design — private individuals,
+// protected relationships, confidential rooms. Kept deliberately minimal: standing relationships only —
 // once-off and referral-reachable experts live in the private plans, not the
 // map. Named people appear only in professional capacity or with standing
 // consent. Benchmarks marked "Pending" refine band by band.
@@ -39,7 +41,7 @@ const NURTURE: StatTableData = {
             ["Parents", "Mother (Rizél Delano)", true, "The best parents remain the first call — no appointment, no invoice, no judgment.", undefined, true],
             ["Grandparents", "Deceased", true, "Two generations of care, held now in early memory — the tier the map loses first.", undefined, true],
             ["Community (place)", "The best communities are close, warm, and watchful", true],
-            ["Neighbors", "Pending", true, "The best neighbors are close, warm, and watchful. One of the map’s six connectors — the local world’s map of who shows up and who to trust.", undefined, true],
+            ["Neighbors", "Private", true, "The best neighbors are close, warm, and watchful. One of the map’s six connectors — the local world’s map of who shows up and who to trust.", undefined, true],
           ],
         },
       ],
@@ -81,7 +83,7 @@ const NURTURE: StatTableData = {
             ["Pharmacist", "Pending", true, "The best pharmacists are available, consistent, and current on every script. The most frequent health touchpoint in American life — roughly thirty-five pharmacy visits for every four provider visits.", undefined, true],
             ["Dentist", "Dr. JJ Serfontein", true, "The best dentists diagnose, clean, and operate under one current roof — every additional service is one fewer relationship the network has to carry.", undefined, true],
             ["Doctor", "Dr. Darren Levin", true, "The best doctors are available, capable, and know exactly who to call next. One of the map’s six connectors — the medical world reached through a single relationship.", undefined, true],
-            ["Psychologist", "Pending", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is nurture; as development it sits under Growth, with the practitioners.", undefined, true],
+            ["Psychologist", "Private", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is nurture; as development it sits under Growth, with the practitioners.", undefined, true],
             ["Veterinarian", "Pending (waits on pets)", true, "The best veterinarians are available, capable, and gentle.", undefined, true],
             ["Diagnosticians (data)", "The best diagnosticians measure the same way using the latest tech", true],
             ["Optometrist", "Dr. Johann Kruger", true, "The best optometrists are consistent and current, one prescription to the next.", undefined, true],
@@ -115,14 +117,14 @@ const GROWTH: StatTableData = {
           metrics: [
             ["", "The people I share life with — the one tier of the map that is the point, not a means", false],
             ["Household (hearth)", "The best households share the values, the direction, and the load", true],
-            ["Partner", "Pending", true, "The best partners share the values, the direction, and the load — chosen once, kept daily.", undefined, true],
+            ["Partner", "Private", true, "The best partners share the values, the direction, and the load — chosen once, kept daily.", undefined, true],
             ["Pets", "Pending", true, "The best pets keep no ledger (affection without account).", undefined, true],
             ["Friends (chosen)", "The best friends are present, honest, and glad when you win", true],
-            ["Confidants", "Pending (the closest five)", true, "The closest five — the ones who hear the news before it is good.", undefined, true],
-            ["Circle", "Pending (the wider fifteen)", true, "The wider fifteen — the friendships that survive on monthly attention.", undefined, true],
+            ["Confidants", "Private (the closest five)", true, "The closest five — the ones who hear the news before it is good.", undefined, true],
+            ["Circle", "Private (the wider fifteen)", true, "The wider fifteen — the friendships that survive on monthly attention.", undefined, true],
             ["Family (blood)", "The best families turn shared history into chosen friendship", true],
             ["Siblings", "Brother", true, "The best siblings turn shared history into chosen friendship — the relationship that starts unchosen and earns its re-choosing.", undefined, true],
-            ["Cousins", "Pending", true, "The best cousins pick up mid-conversation after years apart.", undefined, true],
+            ["Cousins", "Private", true, "The best cousins pick up mid-conversation after years apart.", undefined, true],
           ],
         },
       ],
@@ -138,8 +140,8 @@ const GROWTH: StatTableData = {
             ["Elders (ahead)", "The best elders are a decade ahead and still ask more than they tell", true],
             ["Mentors", "Pending", true, "The best mentors are a decade ahead and still ask more than they tell. One of the map’s six connectors — the rooms ahead, entered by introduction.", undefined, true],
             ["Peers (beside)", "The best peers are candid and slightly out of your league", true],
-            ["Masterminds", "Pending", true, "The best masterminds are small, candid, and sworn to confidence. One of the map’s six connectors — every member a gateway to their own cluster.", undefined, true],
-            ["Language partner", "Pending", true, "The best language partners trade tongues evenly and correct in the moment.", undefined, true],
+            ["Masterminds", "Private", true, "The best masterminds are small, candid, and sworn to confidence. One of the map’s six connectors — every member a gateway to their own cluster.", undefined, true],
+            ["Language partner", "Private", true, "The best language partners trade tongues evenly and correct in the moment.", undefined, true],
           ],
         },
         {
@@ -149,7 +151,7 @@ const GROWTH: StatTableData = {
             ["Developers (performance)", "The best developers build capacity before I need it", true],
             ["Coach", "Pending", true, "The best coaches see what I cannot and say it before I want to hear it.", undefined, true],
             ["Trainer", "Pending", true, "The best trainers program for the decade, not the session.", undefined, true],
-            ["Therapist", "Pending", true, "The best therapists ask the question I have been avoiding.", undefined, true],
+            ["Therapist", "Private", true, "The best therapists ask the question I have been avoiding.", undefined, true],
           ],
         },
         {
@@ -183,7 +185,7 @@ const CONTRIBUTION: StatTableData = {
             ["Family (blood)", "The best families inherit the time before the money", true],
             ["Parents", "Mother (Rizél Delano)", true, "The first claim runs upstream: the warm-hand inheritance — time and experiences given while they can still be shared.", undefined, true],
             ["Children", "None", true, "The claim that does not exist yet — the map holds the slot.", undefined, true],
-            ["Nephews and nieces", "Pending", true, "The best nephews and nieces know you as a presence, not a legend — the mentor they get before they know to look for one.", undefined, true],
+            ["Nephews and nieces", "Private", true, "The best nephews and nieces know you as a presence, not a legend — the mentor they get before they know to look for one.", undefined, true],
           ],
         },
         {
@@ -192,7 +194,7 @@ const CONTRIBUTION: StatTableData = {
             ["", "The health I hold for others — proxy, navigator, and advocate when they cannot be", false],
             ["Wards (care)", "The best wards sign the proxy before it is needed", true],
             ["Parents", "Mother (Rizél Delano)", true, "The proxy held for the person who once held mine — advocacy granted in advance, used only on the day it must be.", undefined, true],
-            ["Partner", "Pending", true, "The mutual grant: each holds the other’s directives before either needs them.", undefined, true],
+            ["Partner", "Private", true, "The mutual grant: each holds the other’s directives before either needs them.", undefined, true],
           ],
         },
       ],
