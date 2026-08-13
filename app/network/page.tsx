@@ -70,7 +70,7 @@ const NURTURE: StatTableData = {
           metrics: [
             ["", "Instruction on demand — one tutor, many shelves", false],
             ["Educators (mind)", "The best educators are capable, current, and clear", true],
-            ["Artificial intelligence", "Claude (tutor)", true, "The best tutors are clear, patient, and paced to the student — and the LLM is all three at once, on demand.", undefined, true],
+            ["Artificial intelligence", "Claude (researcher, tutor, and evaluator)", true, "The best tutors are clear, patient, and paced to the student — and the LLM is all three at once, on demand.", undefined, true],
             ["Virtual teachers", "Creators (YouTube); Authors (Kindle; Audible); Podcasters (Apple)", true, "Instruction at broadcast distance — a faculty assembled shelf by shelf, one subscription at a time.", undefined, true],
           ],
         },
