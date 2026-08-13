@@ -137,8 +137,9 @@ const GROWTH: StatTableData = {
           metrics: [
             ["", "The minds I trade with — wisdom shared, not bought", false],
             ["Peers (beside)", "The best peers are candid and slightly out of your league", true],
-            ["Masterminds", "Private", true, "The best masterminds are small, candid, and sworn to confidence. One of the map’s five connectors — every member a gateway to their own cluster.", undefined, true],
-            ["Language partner", "Private", true, "The best language partners trade tongues evenly and correct in the moment.", undefined, true],
+            ["Mates", "Private", true, "The peers of shared eras — classrooms, teams, cities — who knew you before the record existed.", undefined, true],
+            ["Colleagues", "Pending", true, "The peers of the same craft: the ones who understand the work without the backstory.", undefined, true],
+            ["Members", "Private", true, "The peers of chosen rooms — masterminds, clubs, cohorts — joined on purpose and sworn to candor. One of the map’s five connectors — every member a gateway to their own cluster.", undefined, true],
           ],
         },
         {
