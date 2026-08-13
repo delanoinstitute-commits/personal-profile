@@ -53,16 +53,16 @@ const NURTURE: StatTableData = {
         {
           category: "Lifestyle (attendants)",
           metrics: [
-            ["", "My hours bought back, my body groomed, my home kept — in that order of need", false],
+            ["", "My hours bought back, my home kept, my body groomed — in that order of need", false],
             ["Agents (time)", "The best agents are always available, consistent, and fast", true],
             ["Artificial intelligence", "Claude (education, design, and coding); Gemini (research)", true, "The one role AI holds outright — always available, never inconsistent, and instant.", undefined, true],
             ["Personal assistant", "Private", true, "The last hire of the ladder: a human agent, arriving only when the calendar is worth more than the salary.", undefined, true],
+            ["Keepers (home)", "The best keepers are capable, consistent, and likable (trusted alone at home)", true],
+            ["Housekeeper", "Sonja Mightywoman", true, "The first hire of the buying-back-time ladder — the next arrives whenever life gets busier or income gets larger.", undefined, true],
+            ["Handyman", "Pending", true, "The best handymen close the gap between the landlord’s contract and daily life — everything smaller than a major break.", undefined, true],
             ["Groomers (body)", "The best groomers are consistent, likable, and close by", true],
             ["Hairdresser", "Pending", true, "The best hairdressers are consistent, likable, and close by — kept for years, they know the head they are working on.", undefined, true],
             ["Esthetician", "Pending", true, "The best estheticians keep the skin on schedule — quarterly, clinical, and honest about what works.", undefined, true],
-            ["Keepers (home)", "The best keepers are capable, consistent, and likable (trusted alone at home)", true],
-            ["Housekeeper", "Sonja", true, "The first hire of the buying-back-time ladder — the next arrives whenever life gets busier or income gets larger.", undefined, true],
-            ["Handyman", "Pending", true, "The best handymen close the gap between the landlord’s contract and daily life — everything smaller than a major break.", undefined, true],
           ],
         },
         {
