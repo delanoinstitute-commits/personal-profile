@@ -137,9 +137,9 @@ const GROWTH: StatTableData = {
           metrics: [
             ["", "The minds I trade with — wisdom shared, not bought", false],
             ["Peers (challenge)", "The best peers are candid and slightly out of your league", true],
-            ["Mates", "Private", true, "The peers of shared eras — classrooms, teams, homelands — who knew you before the record existed.", undefined, true],
-            ["Rivals", "Pending", true, "The peers of the arena — the other school, the rival shop: opposed on the day, improving each other across the years.", undefined, true],
-            ["Members", "Private", true, "The peers of chosen rooms — masterminds, clubs, cohorts — joined on purpose and sworn to candor. One of the map’s five connectors — every member a gateway to their own cluster.", undefined, true],
+            ["Mates", "Charl (primary school)", true, "The peers of shared eras — classrooms, teams, homelands — who knew you before the record existed.", undefined, true],
+            ["Rivals", "Private", true, "The peers of the arena — the other school, the rival shop: opposed on the day, improving each other across the years.", undefined, true],
+            ["Members", "Andani (martial arts school); Caleb (church)", true, "The peers of chosen rooms — masterminds, clubs, cohorts — joined on purpose and sworn to candor. One of the map’s five connectors — every member a gateway to their own cluster.", undefined, true],
             ["Collaborators", "Pending", true, "The peers of the shared build — often from different crafts entirely, met over one project and kept long after the credits.", undefined, true],
             ["Colleagues", "Pending", true, "The peers of the same craft: the ones who understand the work without the backstory.", undefined, true],
           ],
