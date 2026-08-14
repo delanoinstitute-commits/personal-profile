@@ -159,14 +159,14 @@ const GROWTH: StatTableData = {
           ],
         },
         {
-          category: "Wealth (managers)",
+          category: "Wealth (stakeholders)",
           metrics: [
             ["", "The people building alongside me, stakes aligned", false],
-            ["Builders (inside)", "The best builders are opposite in skill, identical in values", true],
+            ["Owners (equity)", "The best owners share the risk, the upside, and the values", true],
             ["Cofounders", "Pending", true, "The best cofounders are opposite in skill, identical in values — mismatched skills compound, mismatched values detonate.", undefined, true],
-            ["Managers", "Pending", true, "The best managers need the goal, not the method.", undefined, true],
-            ["Backers (outside)", "The best backers bring the network and the patience, not just the check", true],
             ["Investors", "Pending", true, "The best investors bring the network and the patience, not just the check. One of the map’s five connectors — the deal world behind the check.", undefined, true],
+            ["Partners (revenue)", "The best partners bring capital, distribution, and incentives that point in", true],
+            ["Lenders", "Pending", true, "The fixed claim on the venture: paid first, capped, indifferent to the upside — kept cheap and kept close.", undefined, true],
             ["Affiliates", "Pending", true, "The best affiliates sell what they already use.", undefined, true],
           ],
         },
