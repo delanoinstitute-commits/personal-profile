@@ -127,7 +127,7 @@ export const EDUCATION: StatTableData = {
                   key="cert"
                   media={{
                     src: "/credentials/acquisition.jpg",
-                    alt: "Lorenzo and a companion in Acquisition.com caps outside the company’s Las Vegas headquarters at the scaling workshop, 2025",
+                    alt: "Lorenzo Delano and Federico, founder of Personal Fit, in Acquisition.com caps outside the company’s Las Vegas headquarters at the scaling workshop, 2025",
                   }}
                   content="Scaling workshop — two days at Acquisition.com headquarters, Las Vegas (2025). Photographed outside the headquarters; acquisition.com."
                 >
