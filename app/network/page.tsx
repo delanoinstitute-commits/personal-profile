@@ -161,7 +161,7 @@ const GROWTH: StatTableData = {
           ],
         },
         {
-          category: "Wealth (stakeholders)",
+          category: "Wealth (venturers)",
           metrics: [
             ["", "The people building alongside me, stakes aligned", false],
             ["Owners (equity)", "The best owners share the risk, the upside, and the values", true],
@@ -224,6 +224,9 @@ const CONTRIBUTION: StatTableData = {
             ["Sponsors", "Pending", true, "The patron of the audience: they buy access to attention, not hours or products — demand wearing a marketing budget.", undefined, true],
             ["Stakeholders (supply)", "The best stakeholders share the labor, the capital, and the upside", true],
             ["Employees (referrers)", "Pending", true, "The stake paid in labor: the best employees treat the venture as their own, and are given reason to — the best hires arrive by their referral.", undefined, true],
+            ["Contractors", "Pending", true, "Labor by agreement, not employment — the lead followed without the payroll.", undefined, true],
+            ["Representatives", "Pending", true, "The venture’s voice at the customer: they sell as you, not just for you — where the affiliate endorses to their audience, the representative carries yours.", undefined, true],
+            ["Trainees", "Pending", true, "The student with a hire date: taught with intent — the knowledge category’s learner, grown toward the payroll.", undefined, true],
             ["Shareholders", "Pending", true, "The stake paid in capital: fortunes shared both ways.", undefined, true],
           ],
         },
