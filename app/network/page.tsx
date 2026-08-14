@@ -116,7 +116,7 @@ const GROWTH: StatTableData = {
           category: "Story (companions)",
           metrics: [
             ["", "The people I share life with — the one tier of the map that is the point, not a means", false],
-            ["Household (hearth)", "The best households share the values, the direction, and the load", true],
+            ["Intimates (love)", "The best intimates share the values, the direction, and the load", true],
             ["Partner", "Private", true, "The best partners share the values, the direction, and the load — chosen once, kept daily.", undefined, true],
             ["Pets", "Pending", true, "The best pets keep no ledger (affection without account).", undefined, true],
             ["Friends (heart)", "The best friends are present, honest, and glad when you win", true],
