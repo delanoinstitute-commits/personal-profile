@@ -97,7 +97,7 @@ const NURTURE: StatTableData = {
             ["", "One firm reads the whole balance sheet — personal and corporate in a single conversation", false],
             ["Counselors (money)", "The best counselors read the whole position and sell nothing", true],
             ["Accountant (AI)", "Eugene Park (Baker Tilly); Claude (analyst)", true, "The best CPAs hold the person and the business at one firm — two ledgers that never contradict each other.", undefined, true],
-            ["Fiduciary (AI)", "Pending; Claude (researcher; analyst; planner)", true, "The best fiduciaries are fee-only, capable, and conflict-free. The episodic experts — attorneys, brokers, agents — are reached through this tier’s advocacy, not kept on retainer. One of the map’s five connectors — the money world behind one fee-only relationship.", undefined, true],
+            ["Fiduciary (connector)", "Pending; Claude (researcher; analyst; planner)", true, "The best fiduciaries are fee-only, capable, and conflict-free. The episodic experts — attorneys, brokers, agents — are reached through this tier’s advocacy, not kept on retainer. One of the map’s five connectors — the money world behind one fee-only relationship.", undefined, true],
           ],
         },
       ],
