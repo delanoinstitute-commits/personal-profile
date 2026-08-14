@@ -149,9 +149,9 @@ const GROWTH: StatTableData = {
           metrics: [
             ["", "The professionals I train with, week in and week out — collaboration, not diagnosis", false],
             ["Developers (performance)", "The best developers build capacity before I need it", true],
-            ["Therapist", "Pending", true, "The physiotherapist in the corner: clinical anatomy behind the hands — diagnosing the basic injury, rehabbing it, and working the tissue as maintenance. Rehab, prehab, and productive massage in one relationship; what separates a therapist from a groomer is what the hands know.", undefined, true],
-            ["Coach", "Claude (life)", true, "The best coaches see what I cannot and say it before I want to hear it — behavior shaped through strategy, accountability, and tiny experiments, in person or virtual. Sports coaches sit here too: half mind, half mechanics.", undefined, true],
-            ["Trainer", "Unnecessary", true, "The rep-counter’s role, held in-house: a certified trainer needs no trainer — programming is my own craft.", undefined, true],
+            ["Therapist", "Pending", true, "Clinical anatomy behind the hands: one relationship that diagnoses the basic injury, rehabs it, and maintains the tissue — rehab, prehab, and productive massage. What separates a therapist from a groomer is what the hands know; you cannot massage yourself, which is why this row leads.", undefined, true],
+            ["Coach", "Claude (life)", true, "Behavior, not reps: strategy, accountability, and tiny experiments, in person or virtual — seeing what I cannot and saying it early. A coach's endpoint is self-sufficiency. Sports coaches sit here too: half mind, half mechanics.", undefined, true],
+            ["Trainer", "Unnecessary", true, "The best trainers pull the highest-quality work out of their subjects on well-designed programs — assessing, motivating, and tracking performance as it happens. A different audience from the coach: coaches build self-sufficiency, trainers tell you what to do. Mine is unnecessary — programming is my own craft.", undefined, true],
           ],
         },
         {
