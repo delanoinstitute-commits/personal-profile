@@ -122,7 +122,7 @@ const GROWTH: StatTableData = {
             ["Cousin", "Imelda van den Berg", true, "The best cousins pick up mid-conversation after years apart.", undefined, true],
             ["Friends (heart)", "The best friends are present, honest, and glad when you win", true],
             ["Confidants", "Jelena, Brad, Federico, Vadim, and David (the closest five)", true, "The closest five — the ones who hear the news before it is good.", undefined, true],
-            ["Circle", "Private (the wider fifteen)", true, "The wider fifteen — the friendships that survive on monthly attention.", undefined, true],
+            ["Circle", "Vishen, Federico, Pam (the wider fifteen)", true, "The wider fifteen — the friendships that survive on monthly attention.", undefined, true],
             ["Intimates (love)", "The best intimates share the values, the direction, and the load", true],
             ["Partner", "Private", true, "The best partners share the values, the direction, and the load — chosen once, kept daily.", undefined, true],
             ["Pets", "Pending", true, "The best pets keep no ledger (affection without account).", undefined, true],
