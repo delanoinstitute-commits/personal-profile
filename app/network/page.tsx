@@ -148,15 +148,14 @@ const GROWTH: StatTableData = {
         {
           category: "Health (practitioners)",
           metrics: [
-            ["", "The professionals who push me past baseline — behavior, technique, and program", false],
-            ["Coaches (behavior)", "The best coaches change what I do — toward needing them less", true],
-            ["Behavioral", "Claude (life)", true, "Strategy, accountability, and tiny experiments, in person or virtual — seeing what I cannot and saying it early. A coach's endpoint is self-sufficiency.", undefined, true],
-            ["Sports", "Pending", true, "Half mind, half mechanics: preparing the athlete and correcting the performance.", undefined, true],
-            ["Instructors (technique)", "The best instructors change what my body can do — taught in the rep", true],
-            ["Personal", "Unnecessary", true, "The best trainers pull peak work from their subjects on well-designed programs: assess, motivate, track as it happens — a craft I hold myself.", undefined, true],
-            ["Martial arts", "Pending", true, "The art taught the only way it can be: under a teacher's eye, one correction at a time.", undefined, true],
+            ["", "The professionals who push me past baseline — program, technique, and behavior", false],
             ["Planners (program)", "The best planners change what I follow — assessment turned into design", true],
-            ["Dietitian", "Pending", true, "Dietitian, not nutritionist: the licensed clinical tier — medical nutrition therapy read off labs. Behavioral nutrition is my own craft; the dietitian is hired for the margin beyond it.", undefined, true],
+            ["Dietitians", "Pending", true, "Dietitian, not nutritionist: the licensed clinical tier — medical nutrition therapy read off labs. Behavioral nutrition is my own craft; the dietitian is hired for the margin beyond it.", undefined, true],
+            ["Instructors (technique)", "The best instructors change what my body can do — taught in the rep", true],
+            ["Fitness", "Unnecessary", true, "The best trainers pull peak work from their subjects on well-designed programs: assess, motivate, track as it happens — a craft I hold myself.", undefined, true],
+            ["Martial arts", "Pending", true, "The art taught the only way it can be: under a teacher's eye, one correction at a time.", undefined, true],
+            ["Coaches (behavior)", "The best coaches change what I do — toward needing them less", true],
+            ["Performance", "Claude (life)", true, "Strategy, accountability, and tiny experiments, in person or virtual — toward self-sufficiency. Sports coaching sits here too: half mind, half mechanics.", undefined, true],
           ],
         },
         {
