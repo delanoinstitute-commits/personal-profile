@@ -55,8 +55,8 @@ const NURTURE: StatTableData = {
           metrics: [
             ["", "My hours bought back, my home kept, my body groomed", false],
             ["Agents (time)", "The best agents are always available, consistent, and fast", true],
-            ["Artificial intelligence", "Claude (researcher; analyst; editor)", true, "The one role AI holds outright — always available, never inconsistent, and instant.", undefined, true],
-            ["Personal assistant", "Private (communications; planner)", true, "The last hire of the ladder: a human agent, arriving only when the calendar is worth more than the salary.", undefined, true],
+            ["AI", "Claude (researcher; analyst; editor)", true, "The one role AI holds outright — always available, never inconsistent, and instant.", undefined, true],
+            ["PA", "Private (communications; planner)", true, "The last hire of the ladder: a human agent, arriving only when the calendar is worth more than the salary.", undefined, true],
             ["Keepers (home)", "The best keepers are capable, consistent, and likable (trusted alone at home)", true],
             ["Housekeeper", "Sonja Mightywoman", true, "The first hire of the buying-back-time ladder — the next arrives whenever life gets busier or income gets larger.", undefined, true],
             ["Handyman", "Pending", true, "The best handymen close the gap between the landlord’s contract and daily life — everything smaller than a major break.", undefined, true],
@@ -87,8 +87,9 @@ const NURTURE: StatTableData = {
           metrics: [
             ["", "Instruction on demand — one tutor, many shelves", false],
             ["Educators (mind)", "The best educators are capable, current, and clear", true],
-            ["Artificial intelligence", "Claude (researcher, tutor, and evaluator)", true, "The best tutors are clear, patient, and paced to the student — and the LLM is all three at once, on demand.", undefined, true],
+            ["AI", "Claude (researcher, tutor, and evaluator)", true, "The best tutors are clear, patient, and paced to the student — and the LLM is all three at once, on demand.", undefined, true],
             ["Virtual mentors", "Creators (YouTube); Authors (Kindle; Audible); Podcasters (Apple)", true, "Instruction at broadcast distance — a faculty assembled shelf by shelf, one subscription at a time.", undefined, true],
+            ["Role models", "Bruce Lee", true, "The furthest instruction: never addressed to you — the exemplar teaches by being watched, chosen young, chosen precisely, and kept for life.", undefined, true],
           ],
         },
         {
