@@ -120,6 +120,23 @@ export const EDUCATION: StatTableData = {
               ],
               true,
             ],
+            [
+              "Acquisition",
+              [
+                <Tooltip
+                  key="cert"
+                  media={{
+                    src: "/credentials/acquisition.jpg",
+                    alt: "Lorenzo and a companion in Acquisition.com caps outside the company’s Las Vegas headquarters at the scaling workshop, 2025",
+                  }}
+                  content="Scaling workshop — two days at Acquisition.com headquarters, Las Vegas (2025). Photographed outside the headquarters; acquisition.com."
+                >
+                  Scaling workshop
+                </Tooltip>,
+                ", 2 days, Las Vegas, 2025 (age 37)",
+              ],
+              true,
+            ],
           ],
         },
       ],
