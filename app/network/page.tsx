@@ -83,6 +83,7 @@ const NURTURE: StatTableData = {
             ["Dentist", "Sune (hygiene); Dr. JJ Serfontein (dentistry)", true, "The best dentists diagnose, clean, and operate under one current roof — every additional service is one fewer relationship the network has to carry.", undefined, true],
             ["Doctor", "Dr. Darren Levin", true, "The best doctors are available, capable, and know exactly who to call next. One of the map’s five connectors — the medical world reached through a single relationship.", undefined, true],
             ["Psychologist", "Private; Claude (sounding board)", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is nurture; as development it sits under Growth, with the practitioners. The sounding board supplements, never substitutes.", undefined, true],
+            ["Therapist", "Pending", true, "The physiotherapist: clinical anatomy behind the hands — diagnose the injury, rehab it, maintain the tissue. Rehab, prehab, and productive massage in one; you cannot massage yourself.", undefined, true],
             ["Veterinarian", "Pending (waits on pets)", true, "The best veterinarians are available, capable, and gentle.", undefined, true],
             ["Diagnosticians (data)", "The best diagnosticians measure the same way using the latest tech", true],
             ["Optometrist", "Dr. Johann Kruger", true, "The best optometrists are consistent and current, one prescription to the next.", undefined, true],
@@ -147,12 +148,15 @@ const GROWTH: StatTableData = {
         {
           category: "Health (practitioners)",
           metrics: [
-            ["", "The professionals I train with, week in and week out — collaboration, not diagnosis", false],
-            ["Developers (performance)", "The best developers build capacity before I need it", true],
-            ["Therapist", "Pending", true, "Clinical anatomy behind the hands: diagnose the injury, rehab it, maintain the tissue — rehab, prehab, and productive massage in one. You cannot massage yourself; that is why this row leads.", undefined, true],
-            ["Coach", "Claude (life)", true, "Behavior, not reps: strategy, accountability, and tiny experiments, in person or virtual. A coach's endpoint is self-sufficiency. Sports coaches sit here too: half mind, half mechanics.", undefined, true],
+            ["", "The professionals who push me past baseline — behavior, technique, and program", false],
+            ["Coaches (behavior)", "The best coaches change what I do — toward needing them less", true],
+            ["Behavioral", "Claude (life)", true, "Strategy, accountability, and tiny experiments, in person or virtual — seeing what I cannot and saying it early. A coach's endpoint is self-sufficiency.", undefined, true],
+            ["Sports", "Pending", true, "Half mind, half mechanics: preparing the athlete and correcting the performance.", undefined, true],
+            ["Instructors (technique)", "The best instructors change what my body can do — taught in the rep", true],
+            ["Personal", "Unnecessary", true, "The best trainers pull peak work from their subjects on well-designed programs: assess, motivate, track as it happens — a craft I hold myself.", undefined, true],
+            ["Martial arts", "Pending", true, "The art taught the only way it can be: under a teacher's eye, one correction at a time.", undefined, true],
+            ["Planners (program)", "The best planners change what I follow — assessment turned into design", true],
             ["Dietitian", "Pending", true, "Dietitian, not nutritionist: the licensed clinical tier — medical nutrition therapy read off labs. Behavioral nutrition is my own craft; the dietitian is hired for the margin beyond it.", undefined, true],
-            ["Trainer", "Unnecessary", true, "The best trainers pull peak work from their subjects on well-designed programs: assess, motivate, track as it happens. Coaches build self-sufficiency; trainers tell you what to do — a craft I hold myself.", undefined, true],
           ],
         },
         {
