@@ -83,7 +83,7 @@ const NURTURE: StatTableData = {
           ],
         },
         {
-          category: "Knowledge (instructors)",
+          category: "Knowledge (transmitters)",
           metrics: [
             ["", "Instruction on demand — one tutor, many shelves", false],
             ["Educators (mind)", "The best educators are capable, current, and clear", true],
@@ -202,12 +202,15 @@ const CONTRIBUTION: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Knowledge (explorers)",
+          category: "Knowledge (receivers)",
           metrics: [
             ["", "The learners downstream of what I know", false],
             ["Learners (mind)", "The best learners outgrow the teacher", true],
-            ["Students", "Pending", true, "The best students outgrow the teacher — the teaching’s point is its own obsolescence.", undefined, true],
-            ["Audience", "Pending", true, "The learners at broadcast distance — taught without being met.", undefined, true],
+            ["Students", "Pending", true, "The most immersive seat: enrolled and interactive, in person or virtual — the teaching’s full bandwidth.", undefined, true],
+            ["Attendees", "Pending", true, "Present for the live transmission — the room’s energy without the enrollment.", undefined, true],
+            ["Viewers", "YouTube", true, "The recorded lesson, watched: full picture, no presence.", undefined, true],
+            ["Listeners", "None", true, "Audio only — the lesson that travels with the listener.", undefined, true],
+            ["Readers", "Pending", true, "The oldest bandwidth: text — slowest, deepest, most re-readable.", undefined, true],
           ],
         },
         {
