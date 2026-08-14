@@ -89,7 +89,7 @@ const NURTURE: StatTableData = {
             ["Educators (mind)", "The best educators are capable, current, and clear", true],
             ["AI", "Claude (researcher, tutor, and evaluator)", true, "The best tutors are clear, patient, and paced to the student — and the LLM is all three at once, on demand.", undefined, true],
             ["Virtual mentors", "Creators (YouTube); Authors (Kindle; Audible); Podcasters (Apple)", true, "Instruction at broadcast distance — a faculty assembled shelf by shelf, one subscription at a time.", undefined, true],
-            ["Role models", "Bruce Lee", true, "The furthest instruction: never addressed to you — the exemplar teaches by being watched, chosen young, chosen precisely, and kept for life.", undefined, true],
+            ["Role models", "Bruce Lee (body); John Demartini (mind); Tony Robbins (humanity); David Deutsch (progress); Elon Musk (future)", true, "The furthest instruction: never addressed to you — the exemplar teaches by being watched, chosen young, chosen precisely, and kept for life.", undefined, true],
           ],
         },
         {
