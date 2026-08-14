@@ -599,9 +599,11 @@ p.stat-hint {
   content: counter(list-item) ".\00a0\2009";
 }
 
-/* Sub-components hang uncounted and italic under their numbered entry. */
+/* Sub-components hang counted and italic under their numbered entry —
+   native decimal markers so every engine (including WebKit, which ignores
+   ::marker content) numbers them identically. */
 .nested-content ol.metric-numbered .metric-subs {
-  list-style: none;
+  list-style: decimal;
   margin: 0.15rem 0 0;
   padding-left: 0.9rem;
   font-style: italic;
