@@ -149,9 +149,9 @@ const GROWTH: StatTableData = {
           metrics: [
             ["", "The professionals I train with, week in and week out — collaboration, not diagnosis", false],
             ["Developers (performance)", "The best developers build capacity before I need it", true],
-            ["Therapist", "Pending", true, "Clinical anatomy behind the hands: one relationship that diagnoses the basic injury, rehabs it, and maintains the tissue — rehab, prehab, and productive massage. What separates a therapist from a groomer is what the hands know; you cannot massage yourself, which is why this row leads.", undefined, true],
-            ["Coach", "Claude (life)", true, "Behavior, not reps: strategy, accountability, and tiny experiments, in person or virtual — seeing what I cannot and saying it early. A coach's endpoint is self-sufficiency. Sports coaches sit here too: half mind, half mechanics.", undefined, true],
-            ["Trainer", "Unnecessary", true, "The best trainers pull the highest-quality work out of their subjects on well-designed programs — assessing, motivating, and tracking performance as it happens. A different audience from the coach: coaches build self-sufficiency, trainers tell you what to do. Mine is unnecessary — programming is my own craft.", undefined, true],
+            ["Therapist", "Pending", true, "Clinical anatomy behind the hands: diagnose the injury, rehab it, maintain the tissue — rehab, prehab, and productive massage in one. You cannot massage yourself; that is why this row leads.", undefined, true],
+            ["Coach", "Claude (life)", true, "Behavior, not reps: strategy, accountability, and tiny experiments, in person or virtual. A coach's endpoint is self-sufficiency. Sports coaches sit here too: half mind, half mechanics.", undefined, true],
+            ["Trainer", "Unnecessary", true, "The best trainers pull peak work from their subjects on well-designed programs: assess, motivate, track as it happens. Coaches build self-sufficiency; trainers tell you what to do — a craft I hold myself.", undefined, true],
           ],
         },
         {
