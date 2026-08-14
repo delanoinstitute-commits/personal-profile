@@ -66,15 +66,6 @@ const NURTURE: StatTableData = {
           ],
         },
         {
-          category: "Knowledge (instructors)",
-          metrics: [
-            ["", "Instruction on demand — one tutor, many shelves", false],
-            ["Educators (mind)", "The best educators are capable, current, and clear", true],
-            ["Artificial intelligence", "Claude (researcher, tutor, and evaluator)", true, "The best tutors are clear, patient, and paced to the student — and the LLM is all three at once, on demand.", undefined, true],
-            ["Virtual mentors", "Creators (YouTube); Authors (Kindle; Audible); Podcasters (Apple)", true, "Instruction at broadcast distance — a faculty assembled shelf by shelf, one subscription at a time.", undefined, true],
-          ],
-        },
-        {
           category: "Health (examiners)",
           metrics: [
             ["", "My clinicians, from the first call to the annual scan", false],
@@ -89,6 +80,15 @@ const NURTURE: StatTableData = {
             ["Optometrist", "Dr. Johann Kruger", true, "The best optometrists are consistent and current, one prescription to the next.", undefined, true],
             ["Physiologist", "Tim Klein; Reece McDonald", true, "The best physiologists test consistently and on the latest protocols — the product is the trend line, not the reading.", undefined, true],
             ["Radiologist", "Cape Radiology", true, "The best radiologists scan on the same current machine year after year.", undefined, true],
+          ],
+        },
+        {
+          category: "Knowledge (instructors)",
+          metrics: [
+            ["", "Instruction on demand — one tutor, many shelves", false],
+            ["Educators (mind)", "The best educators are capable, current, and clear", true],
+            ["Artificial intelligence", "Claude (researcher, tutor, and evaluator)", true, "The best tutors are clear, patient, and paced to the student — and the LLM is all three at once, on demand.", undefined, true],
+            ["Virtual mentors", "Creators (YouTube); Authors (Kindle; Audible); Podcasters (Apple)", true, "Instruction at broadcast distance — a faculty assembled shelf by shelf, one subscription at a time.", undefined, true],
           ],
         },
         {
@@ -134,18 +134,6 @@ const GROWTH: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Knowledge (competitors)",
-          metrics: [
-            ["", "The minds I trade with — wisdom shared, not bought", false],
-            ["Peers (challenge)", "The best peers are candid and slightly out of your league", true],
-            ["Mates", "Private", true, "The peers of shared eras — classrooms, teams, homelands — who knew you before the record existed.", undefined, true],
-            ["Rivals", "Private", true, "The peers of the arena — the other school, the rival shop: opposed on the day, improving each other across the years.", undefined, true],
-            ["Members", "Abundance360; Integral Life; GymnasticBodies", true, "The peers of chosen rooms — masterminds, clubs, cohorts — joined on purpose and sworn to candor. One of the map’s five connectors — every member a gateway to their own cluster.", undefined, true],
-            ["Collaborators", "Private", true, "The peers of the shared build — often from different crafts entirely, met over one project and kept long after the credits.", undefined, true],
-            ["Colleagues", "None", true, "The peers of the same craft: the ones who understand the work without the backstory.", undefined, true],
-          ],
-        },
-        {
           category: "Health (practitioners)",
           metrics: [
             ["", "The professionals who push me past baseline — behavior, technique, and program", false],
@@ -156,6 +144,18 @@ const GROWTH: StatTableData = {
             ["Martial arts", "Pending", true, "The art taught the only way it can be: under a teacher's eye, one correction at a time.", undefined, true],
             ["Planners (program)", "The best planners assess, design, and adjust what I follow", true],
             ["Dietitians", "Self-sufficient", true, "Dietitian, not nutritionist: the licensed clinical tier — medical nutrition therapy read off labs. Behavioral nutrition is my own craft; a dietitian would be hired only for the clinical margin beyond it.", undefined, true],
+          ],
+        },
+        {
+          category: "Knowledge (competitors)",
+          metrics: [
+            ["", "The minds I trade with — wisdom shared, not bought", false],
+            ["Peers (challenge)", "The best peers are candid and slightly out of your league", true],
+            ["Mates", "Private", true, "The peers of shared eras — classrooms, teams, homelands — who knew you before the record existed.", undefined, true],
+            ["Rivals", "Private", true, "The peers of the arena — the other school, the rival shop: opposed on the day, improving each other across the years.", undefined, true],
+            ["Members", "Abundance360; Integral Life; GymnasticBodies", true, "The peers of chosen rooms — masterminds, clubs, cohorts — joined on purpose and sworn to candor. One of the map’s five connectors — every member a gateway to their own cluster.", undefined, true],
+            ["Collaborators", "Private", true, "The peers of the shared build — often from different crafts entirely, met over one project and kept long after the credits.", undefined, true],
+            ["Colleagues", "None", true, "The peers of the same craft: the ones who understand the work without the backstory.", undefined, true],
           ],
         },
         {
