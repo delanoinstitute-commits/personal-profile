@@ -148,14 +148,14 @@ const GROWTH: StatTableData = {
         {
           category: "Health (practitioners)",
           metrics: [
-            ["", "The professionals who push me past baseline — program, technique, and behavior", false],
-            ["Planners (program)", "The best planners assess, design, and adjust what I follow", true],
-            ["Dietitians", "Self-sufficient", true, "Dietitian, not nutritionist: the licensed clinical tier — medical nutrition therapy read off labs. Behavioral nutrition is my own craft; a dietitian would be hired only for the clinical margin beyond it.", undefined, true],
+            ["", "The professionals who push me past baseline — behavior, technique, and program", false],
+            ["Coaches (behavior)", "The best coaches bring strategy, accountability, and tiny experiments", true],
+            ["Performance", "Claude (life)", true, "In person or virtual, toward the endpoint of self-sufficiency: needing them less. Sports coaching sits here too: half mind, half mechanics.", undefined, true],
             ["Instructors (technique)", "The best instructors demonstrate, correct, and progress the technique", true],
             ["Fitness", "Self-sufficient", true, "The best trainers pull peak work from their subjects on well-designed programs: assess, motivate, track as it happens — a craft I hold myself.", undefined, true],
             ["Martial arts", "Pending", true, "The art taught the only way it can be: under a teacher's eye, one correction at a time.", undefined, true],
-            ["Coaches (behavior)", "The best coaches bring strategy, accountability, and tiny experiments", true],
-            ["Performance", "Claude (life)", true, "In person or virtual, toward the endpoint of self-sufficiency: needing them less. Sports coaching sits here too: half mind, half mechanics.", undefined, true],
+            ["Planners (program)", "The best planners assess, design, and adjust what I follow", true],
+            ["Dietitians", "Self-sufficient", true, "Dietitian, not nutritionist: the licensed clinical tier — medical nutrition therapy read off labs. Behavioral nutrition is my own craft; a dietitian would be hired only for the clinical margin beyond it.", undefined, true],
           ],
         },
         {
