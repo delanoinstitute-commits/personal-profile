@@ -149,9 +149,9 @@ const GROWTH: StatTableData = {
           metrics: [
             ["", "The professionals I train with, week in and week out — collaboration, not diagnosis", false],
             ["Developers (performance)", "The best developers build capacity before I need it", true],
-            ["Coach", "Pending", true, "The best coaches see what I cannot and say it before I want to hear it.", undefined, true],
-            ["Trainer", "Pending", true, "The best trainers program for the decade, not the session.", undefined, true],
-            ["Therapist", "Private", true, "The best therapists ask the question I have been avoiding.", undefined, true],
+            ["Therapist", "Pending", true, "The physiotherapist in the corner: clinical anatomy behind the hands — diagnosing the basic injury, rehabbing it, and working the tissue as maintenance. Rehab, prehab, and productive massage in one relationship; what separates a therapist from a groomer is what the hands know.", undefined, true],
+            ["Coach", "Claude (life)", true, "The best coaches see what I cannot and say it before I want to hear it — behavior shaped through strategy, accountability, and tiny experiments, in person or virtual. Sports coaches sit here too: half mind, half mechanics.", undefined, true],
+            ["Trainer", "Unnecessary", true, "The rep-counter’s role, held in-house: a certified trainer needs no trainer — programming is my own craft.", undefined, true],
           ],
         },
         {
