@@ -71,10 +71,10 @@ const NURTURE: StatTableData = {
             ["", "My clinicians, from the first call to the annual scan", false],
             ["Clinicians (care)", "The best clinicians are available, capable, and know exactly who to call next", true],
             ["Pharmacist", "Pending", true, "The best pharmacists are available, consistent, and current on every script. The most frequent health touchpoint in American life — roughly thirty-five pharmacy visits for every four provider visits.", undefined, true],
+            ["Physical therapist", "Pending", true, "Clinical anatomy behind the hands: diagnose the injury, rehab it, maintain the tissue. Rehab, prehab, and productive massage in one; you cannot massage yourself.", undefined, true],
             ["Dentist", "Sune (hygiene); Dr. JJ Serfontein (dentistry)", true, "The best dentists diagnose, clean, and operate under one current roof — every additional service is one fewer relationship the network has to carry.", undefined, true],
             ["Doctor", "Dr. Darren Levin", true, "The best doctors are available, capable, and know exactly who to call next. One of the map’s five connectors — the medical world reached through a single relationship.", undefined, true],
             ["Psychologist", "Private; Claude (sounding board)", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is nurture; as development it sits under Growth, with the practitioners. The sounding board supplements, never substitutes.", undefined, true],
-            ["Therapist", "Pending", true, "The physiotherapist: clinical anatomy behind the hands — diagnose the injury, rehab it, maintain the tissue. Rehab, prehab, and productive massage in one; you cannot massage yourself.", undefined, true],
             ["Veterinarian", "Pending (waits on pets)", true, "The best veterinarians are available, capable, and gentle.", undefined, true],
             ["Diagnosticians (data)", "The best diagnosticians measure the same way using the latest tech", true],
             ["Optometrist", "Dr. Johann Kruger", true, "The best optometrists are consistent and current, one prescription to the next.", undefined, true],
@@ -189,9 +189,9 @@ const CONTRIBUTION: StatTableData = {
           metrics: [
             ["", "The people my work is finally for — those with first claim on what I build", false],
             ["Family (blood)", "The best families inherit the time before the money", true],
-            ["Parents", "Mother (Rizél Delano)", true, "The first claim runs upstream: the warm-hand inheritance — time and experiences given while they can still be shared.", undefined, true],
             ["Children", "None", true, "The claim that does not exist yet — the map holds the slot.", undefined, true],
-            ["Nephews and nieces", "Private", true, "The best nephews and nieces know you as a presence, not a legend — the mentor they get before they know to look for one.", undefined, true],
+            ["Parents", "Rizél Delano", true, "The first claim runs upstream: the warm-hand inheritance — time and experiences given while they can still be shared.", undefined, true],
+            ["Nephews and nieces", "None", true, "The best nephews and nieces know you as a presence, not a legend — the mentor they get before they know to look for one.", undefined, true],
           ],
         },
         {
