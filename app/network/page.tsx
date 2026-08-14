@@ -151,6 +151,7 @@ const GROWTH: StatTableData = {
             ["Developers (performance)", "The best developers build capacity before I need it", true],
             ["Therapist", "Pending", true, "Clinical anatomy behind the hands: diagnose the injury, rehab it, maintain the tissue — rehab, prehab, and productive massage in one. You cannot massage yourself; that is why this row leads.", undefined, true],
             ["Coach", "Claude (life)", true, "Behavior, not reps: strategy, accountability, and tiny experiments, in person or virtual. A coach's endpoint is self-sufficiency. Sports coaches sit here too: half mind, half mechanics.", undefined, true],
+            ["Dietitian", "Pending", true, "Dietitian, not nutritionist: the licensed clinical tier — medical nutrition therapy read off labs. Behavioral nutrition is my own craft; the dietitian is hired for the margin beyond it.", undefined, true],
             ["Trainer", "Unnecessary", true, "The best trainers pull peak work from their subjects on well-designed programs: assess, motivate, track as it happens. Coaches build self-sufficiency; trainers tell you what to do — a craft I hold myself.", undefined, true],
           ],
         },
