@@ -342,6 +342,46 @@ const NETWORK_GUIDELINES: ReferenceSection[] = [
         url: "https://doi.org/10.1371/journal.pmed.1000316",
         urlLabel: "DOI",
       },
+      {
+        id: "grandparents",
+        cite: (
+          <>
+            <strong>Grandparents</strong>: Sear, R., and Mace, R. (2008). Who keeps children alive? A review of the effects of kin on child survival. <em>Evolution and Human Behavior</em>, 29(1).
+          </>
+        ),
+        url: "https://doi.org/10.1016/j.evolhumbehav.2007.10.001",
+        urlLabel: "DOI",
+      },
+      {
+        id: "screening",
+        cite: (
+          <>
+            <strong>Screening</strong>: Krogsbøll, L. T., Jørgensen, K. J., and Gøtzsche, P. C. (2019). General health checks in adults for reducing morbidity and mortality from disease. <em>Cochrane Database of Systematic Reviews</em>, 1.
+          </>
+        ),
+        url: "https://doi.org/10.1002/14651858.CD009009.pub3",
+        urlLabel: "DOI",
+      },
+      {
+        id: "pets-survival",
+        cite: (
+          <>
+            <strong>Pets</strong>: Kramer, C. K., Mehmood, S., and Suen, R. S. (2019). Dog ownership and survival: a systematic review and meta-analysis. <em>Circulation: Cardiovascular Quality and Outcomes</em>, 12(10).
+          </>
+        ),
+        url: "https://doi.org/10.1161/CIRCOUTCOMES.119.005554",
+        urlLabel: "DOI",
+      },
+      {
+        id: "coaching",
+        cite: (
+          <>
+            <strong>Coaching</strong>: Jones, R. J., Woods, S. A., and Guillaume, Y. R. F. (2016). The effectiveness of workplace coaching: a meta-analysis of learning and performance outcomes from coaching. <em>Journal of Occupational and Organizational Psychology</em>, 89(2).
+          </>
+        ),
+        url: "https://doi.org/10.1111/joop.12119",
+        urlLabel: "DOI",
+      },
     ],
   },
   {
@@ -367,6 +407,36 @@ const NETWORK_GUIDELINES: ReferenceSection[] = [
         url: "https://doi.org/10.1073/pnas.1706541114",
         urlLabel: "DOI",
       },
+      {
+        id: "giving",
+        cite: (
+          <>
+            <strong>Giving</strong>: Dunn, E. W., Aknin, L. B., and Norton, M. I. (2008). Spending money on others promotes happiness. <em>Science</em>, 319(5870).
+          </>
+        ),
+        url: "https://doi.org/10.1126/science.1150952",
+        urlLabel: "DOI",
+      },
+      {
+        id: "luck",
+        cite: (
+          <>
+            <strong>Luck</strong>: Salganik, M. J., Dodds, P. S., and Watts, D. J. (2006). Experimental study of inequality and unpredictability in an artificial cultural market. <em>Science</em>, 311(5762).
+          </>
+        ),
+        url: "https://doi.org/10.1126/science.1121066",
+        urlLabel: "DOI",
+      },
+      {
+        id: "exemplars",
+        cite: (
+          <>
+            <strong>Exemplars</strong>: Lockwood, P., and Kunda, Z. (1997). Superstars and me: predicting the impact of role models on the self. <em>Journal of Personality and Social Psychology</em>, 73(1).
+          </>
+        ),
+        url: "https://doi.org/10.1037/0022-3514.73.1.91",
+        urlLabel: "DOI",
+      },
     ],
   },
   {
@@ -390,6 +460,66 @@ const NETWORK_GUIDELINES: ReferenceSection[] = [
           </>
         ),
         url: "https://doi.org/10.1038/s41586-022-04996-4",
+        urlLabel: "DOI",
+      },
+      {
+        id: "clinicians-supply",
+        cite: (
+          <>
+            <strong>Clinicians</strong>: Basu, S., et al. (2019). Association of primary care physician supply with population mortality in the United States, 2005–2015. <em>JAMA Internal Medicine</em>, 179(4).
+          </>
+        ),
+        url: "https://doi.org/10.1001/jamainternmed.2018.7624",
+        urlLabel: "DOI",
+      },
+      {
+        id: "schooling",
+        cite: (
+          <>
+            <strong>Schooling</strong>: Coleman, J. S., et al. (1966). <em>Equality of Educational Opportunity</em>. United States Government Printing Office.
+          </>
+        ),
+        url: "https://eric.ed.gov/?id=ED012275",
+        urlLabel: "ERIC",
+      },
+      {
+        id: "founders",
+        cite: (
+          <>
+            <strong>Founders</strong>: Azoulay, P., et al. (2020). Age and high-growth entrepreneurship. <em>American Economic Review: Insights</em>, 2(1).
+          </>
+        ),
+        url: "https://doi.org/10.1257/aeri.20180582",
+        urlLabel: "DOI",
+      },
+      {
+        id: "teams",
+        cite: (
+          <>
+            <strong>Teams</strong>: Wu, L., Wang, D., and Evans, J. A. (2019). Large teams develop and small teams disrupt science and technology. <em>Nature</em>, 566(7744).
+          </>
+        ),
+        url: "https://doi.org/10.1038/s41586-019-0941-9",
+        urlLabel: "DOI",
+      },
+      {
+        id: "word-of-mouth",
+        cite: (
+          <>
+            <strong>Word of mouth</strong>: Trusov, M., Bucklin, R. E., and Pauwels, K. (2009). Effects of word-of-mouth versus traditional marketing: findings from an internet social networking site. <em>Journal of Marketing</em>, 73(5).
+          </>
+        ),
+        url: "https://doi.org/10.1509/jmkg.73.5.90",
+        urlLabel: "DOI",
+      },
+      {
+        id: "investors-smart",
+        cite: (
+          <>
+            <strong>Investors</strong>: Sørensen, M. (2007). How smart is smart money? A two-sided matching model of venture capital. <em>Journal of Finance</em>, 62(6).
+          </>
+        ),
+        url: "https://doi.org/10.1111/j.1540-6261.2007.01291.x",
         urlLabel: "DOI",
       },
     ],
@@ -435,6 +565,86 @@ const NETWORK_GUIDELINES: ReferenceSection[] = [
           </>
         ),
         url: "https://doi.org/10.1016/0047-2484(92)90081-J",
+        urlLabel: "DOI",
+      },
+      {
+        id: "parents-structure",
+        cite: (
+          <>
+            <strong>Parents</strong>: McLanahan, S., and Sandefur, G. (1994). <em>Growing Up with a Single Parent: What Hurts, What Helps</em>. Harvard University Press.
+          </>
+        ),
+        url: "https://eric.ed.gov/?id=ED375224",
+        urlLabel: "ERIC",
+      },
+      {
+        id: "friends-contagion",
+        cite: (
+          <>
+            <strong>Friends</strong>: Christakis, N. A., and Fowler, J. H. (2007). The spread of obesity in a large social network over 32 years. <em>New England Journal of Medicine</em>, 357(4).
+          </>
+        ),
+        url: "https://doi.org/10.1056/NEJMsa066082",
+        urlLabel: "DOI",
+      },
+      {
+        id: "partners-harvard",
+        cite: (
+          <>
+            <strong>Partners</strong>: Waldinger, R. J., and Schulz, M. S. (2010). What’s love got to do with it? Social functioning, perceived health, and daily happiness in married octogenarians. <em>Psychology and Aging</em>, 25(2).
+          </>
+        ),
+        url: "https://doi.org/10.1037/a0019087",
+        urlLabel: "DOI",
+      },
+      {
+        id: "communities",
+        cite: (
+          <>
+            <strong>Communities</strong>: Li, S., et al. (2016). Association of religious service attendance with mortality among women. <em>JAMA Internal Medicine</em>, 176(6).
+          </>
+        ),
+        url: "https://doi.org/10.1001/jamainternmed.2016.1615",
+        urlLabel: "DOI",
+      },
+      {
+        id: "rivals-drive",
+        cite: (
+          <>
+            <strong>Rivals</strong>: Kilduff, G. J. (2014). Driven to win: rivalry, motivation, and performance. <em>Social Psychological and Personality Science</em>, 5(8).
+          </>
+        ),
+        url: "https://doi.org/10.1177/1948550614539770",
+        urlLabel: "DOI",
+      },
+      {
+        id: "brokerage",
+        cite: (
+          <>
+            <strong>Brokerage</strong>: Burt, R. S. (2004). Structural holes and good ideas. <em>American Journal of Sociology</em>, 110(2).
+          </>
+        ),
+        url: "https://doi.org/10.1086/421787",
+        urlLabel: "DOI",
+      },
+      {
+        id: "caregiving",
+        cite: (
+          <>
+            <strong>Caregiving</strong>: Schulz, R., and Beach, S. R. (1999). Caregiving as a risk factor for mortality: the Caregiver Health Effects Study. <em>JAMA</em>, 282(23).
+          </>
+        ),
+        url: "https://doi.org/10.1001/jama.282.23.2215",
+        urlLabel: "DOI",
+      },
+      {
+        id: "credentials",
+        cite: (
+          <>
+            <strong>Credentials</strong>: Altonji, J. G., and Zhong, L. (2021). The labor market returns to advanced degrees. <em>Journal of Labor Economics</em>, 39(2).
+          </>
+        ),
+        url: "https://doi.org/10.1086/710959",
         urlLabel: "DOI",
       },
     ],
