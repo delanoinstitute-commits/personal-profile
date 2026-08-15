@@ -661,30 +661,30 @@ export default function NetworkPage() {
 
       <p className="lead">
         My network is the team my life runs on. Every human relationship points one of
-        three ways: toward the people I depend on (nurture), beside the people I share
-        with (growth), and toward the people who depend on me (contribution). We are
-        always one of these three to someone — every role classifies along the vectors
-        take, share, give.
+        three ways — toward the people I depend on (nurture), beside the people I share
+        with (growth), and toward the people who depend on me (contribution) — and
+        every bond is ultimately one of two kinds: given or chosen. A network is the
+        record of what life gave me and what I chose back.
       </p>
       <p>
         This page is the site&rsquo;s dependent variable: health, knowledge, and wealth
         mean little until they are spent with and on people. The map doubles as index
         and benchmark — who holds each role, what makes each relationship good, and
-        which roles stand open. The aim is not the biggest network but the right one
-        for this stage of life; the more capable its people, the fewer it needs —
-        the best-connected members carry whole networks behind them.
+        which seats stand open (pending), protected (private), or held by my own hands
+        (self-sufficient). The aim is not the biggest network but the right one: a
+        small map kept powerful by its comprehensives, who absorb whole services under
+        one roof, and its connectors, who carry whole worlds behind them.
       </p>
 
       <h2 id="nurture">
         Nurture <span className="heading-paren">(Support)</span>
       </h2>
       <p>
-        The relationships I take from — the people who give the organism what it
-        needs, when it needs it: healing when below health, sustenance at health,
-        inputs to build on, in two registers — family (personal) and services
-        (professional). Roles run by need — each appears in the order life requires
-        it, the next hire triggered by getting busier or richer — and each carries
-        its benchmark: the person’s qualities (available, able, affective,
+        The relationships I take from: the people who give the organism what it
+        needs, when it needs it — healing below health, sustenance at it, inputs to
+        build on. The widest branch, drawing on all five pages, because an organism
+        takes whatever it needs. Roles appear in the order life requires them, each
+        held to its benchmark: the person’s qualities (available, able, affective,
         advocating) where encounters are close, the service’s (consistent,
         comprehensive, current) where they thin.
       </p>
@@ -694,11 +694,11 @@ export default function NetworkPage() {
         Growth <span className="heading-paren">(Collaboration)</span>
       </h2>
       <p>
-        The relationships I share with — peers beside me rather than above or below,
-        building on top of health, in two registers: the companions life is spent with
-        (personal) and the collaborators work is built with (professional). The one
-        branch valued for itself: these relationships are not a means to the others;
-        they are what the others are for.
+        The relationships I share with: peers beside me rather than above or below,
+        building past baseline rather than back to it. The chosen branch — hearts,
+        rooms, and ventures elected on purpose — where collaboration takes every form
+        from candor to contest. The one branch valued for itself: these relationships
+        are not a means to the others; they are what the others are for.
       </p>
       <NestedTable {...GROWTH} />
 
@@ -706,10 +706,10 @@ export default function NetworkPage() {
         Contribution <span className="heading-paren">(Service)</span>
       </h2>
       <p>
-        The relationships I give to — the people who depend on me, in two registers:
-        those I provide for (personal) and those my work serves (professional). The
-        vector that points downstream, where the excess of the other three capitals is
-        finally shared.
+        The relationships I give to: the people who depend on me, holding claims on
+        what I build. The narrowest branch, because giving requires surplus — story,
+        knowledge, and wealth are where I hold more than I need — and the one built
+        to widen: every pending seat here is a forecast.
       </p>
       <NestedTable {...CONTRIBUTION} />
 
