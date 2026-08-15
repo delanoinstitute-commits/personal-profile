@@ -53,8 +53,8 @@ export const NAV_GROUPS: NavGroup[] = [
         ],
       },
       {
-        label: "Identity",
-        href: "/identity",
+        label: "Nature",
+        href: "/nature",
         sections: [
           { label: "Intellect", anchor: "intellect" },
           { label: "Character", anchor: "character" },

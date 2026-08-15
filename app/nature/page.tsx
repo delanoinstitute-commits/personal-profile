@@ -5,7 +5,7 @@ import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import { References, type ReferenceSection } from "@/components/References";
 
-export const metadata: Metadata = { title: "Identity" };
+export const metadata: Metadata = { title: "Nature" };
 
 // The mind in the trilogy: Intellect (cognition), Character (affect), Drive
 // (conation). Six sub-branches; Temperament, Sentiment, and Motivation carry
@@ -346,7 +346,7 @@ const IDENTITY_EVIDENCE: ReferenceSection[] = [
 export default function IdentityPage() {
   return (
     <>
-      <PageHeading title="Identity" hatnote={<>The present — who I am</>} />
+      <PageHeading title="Nature" hatnote={<>The givens — my intellect, character, and drive</>} />
 
       <p className="lead">
         Who I am now — my mind in three lenses: how I think (intellect), how I&rsquo;m wired

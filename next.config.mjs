@@ -4,8 +4,11 @@ const nextConfig = {
   async redirects() {
     // Preserve old URLs after the navigation restructure.
     return [
-      { source: "/current-status", destination: "/identity", permanent: true },
-      { source: "/constituents", destination: "/identity", permanent: true },
+      { source: "/current-status", destination: "/nature", permanent: true },
+      { source: "/constituents", destination: "/nature", permanent: true },
+      // Identity → Nature (2026): the word returned to Story's Inheritance branch,
+      // and the page took the given half of nature/nurture.
+      { source: "/identity", destination: "/nature", permanent: true },
       { source: "/time", destination: "/lifestyle", permanent: true },
       { source: "/historical-context", destination: "/story", permanent: true },
       // Biography → History (2026) when the nav split into Constitution / Capital;

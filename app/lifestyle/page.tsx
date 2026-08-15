@@ -32,7 +32,7 @@ const ACTIVITY: StatTableData = {
             ["", "Knowledge depends on learning which problems matter, then solving them", false],
             ["Work (4 hrs)", [
               "I spend most of the day solving knowledge organization problems for myself and others — exercising my ",
-              <WikiLink key="int" href="/identity#intellect">intelligence</WikiLink>,
+              <WikiLink key="int" href="/nature#intellect">intelligence</WikiLink>,
               " and ",
               <WikiLink key="skl" href="/knowledge#skills">skills</WikiLink>,
               " to build ",
@@ -43,7 +43,7 @@ const ACTIVITY: StatTableData = {
               "If I’m not asleep, working, or exercising, you’ll find me studying — filling the many ",
               <WikiLink key="edu" href="/knowledge#education">education</WikiLink>,
               " and ",
-              <WikiLink key="per" href="/identity#intellect">perspectival</WikiLink>,
+              <WikiLink key="per" href="/nature#intellect">perspectival</WikiLink>,
               " gaps necessary for progress",
             ], true],
           ],
@@ -76,7 +76,7 @@ const ACTIVITY: StatTableData = {
             ], true],
             ["Entertain (1 hr)", [
               "I set aside an hour each evening to escape reality with a good show or indulge its extremes on YouTube — taking on others’ ",
-              <WikiLink key="per2" href="/identity#intellect">perspective</WikiLink>,
+              <WikiLink key="per2" href="/nature#intellect">perspective</WikiLink>,
               " to own and expand my own",
             ], true],
           ],
@@ -136,7 +136,7 @@ const ACTIVITY: StatTableData = {
             ], true],
             ["Connect (1 hr)", [
               "The days I serve clients or share a walk or a meal with loved ones are by far the most rewarding — a continued source of joy and ",
-              <WikiLink key="grw" href="/identity#character">growth</WikiLink>,
+              <WikiLink key="grw" href="/nature#character">growth</WikiLink>,
             ], true],
           ],
         },
