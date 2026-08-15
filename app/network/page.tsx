@@ -243,7 +243,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "profile-patrons",
         cite: (
           <>
-            <strong>Patrons</strong>: <em><WikiLink href="/">Complete Profile</WikiLink> (2026)</em>; the full record — who I am, what I can do, and how I work — offered before any engagement • website (Vercel)
+            <strong>Patrons</strong>: <em><WikiLink href="/">Complete Profile</WikiLink> (2026)</em>; the full record of who I am, what I can do, and how I work, offered before any engagement • website (Vercel)
           </>
         ),
       },
@@ -251,7 +251,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "profile-learners",
         cite: (
           <>
-            <strong>Learners</strong>: <em>Teaching Platform (2025)</em>; the published lessons, demonstrations, and methods, free to any learner • social media (YouTube)
+            <strong>Learners</strong>: <em><WikiLink href="https://www.youtube.com/@LorenzoDelano">Teaching Platform</WikiLink> (2025)</em>; the published lessons, demonstrations, and methods, free to any learner • channel (YouTube)
           </>
         ),
       },
@@ -259,7 +259,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "profile-peers",
         cite: (
           <>
-            <strong>Peers</strong>: <em>Professional Profile (2025)</em>; the career record — roles, works, and collaborations — kept current for the professional world • social media (LinkedIn)
+            <strong>Peers</strong>: <em>Professional Profile (2025)</em>; the career record of roles, works, and collaborations, kept current for the professional world • page (LinkedIn)
           </>
         ),
       },
@@ -272,7 +272,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-assistant",
         cite: (
           <>
-            <strong>Assistant</strong>: <em>Claude (2025–present)</em>; research, analysis, editing, tutoring, and the sounding board — the roles it holds across this page • LLM (<WikiLink href="https://www.anthropic.com">Anthropic</WikiLink>)
+            <strong>Assistant</strong>: <em>Claude (2025-present)</em>; researcher, analyst, editor, tutor, and sounding board, the roles it holds across this page • LLM (<WikiLink href="https://www.anthropic.com">Anthropic</WikiLink>)
           </>
         ),
       },
@@ -280,15 +280,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-dentist",
         cite: (
           <>
-            <strong>Dentist</strong>: <em>Dr. JJ Serfontein (2023–present)</em>; examination, hygiene, and dental work under one roof • dentistry (JJS Dentistry)
-          </>
-        ),
-      },
-      {
-        id: "rec-doctor",
-        cite: (
-          <>
-            <strong>Doctor</strong>: <em>Dr. Gabrielle Lyon (2023–present)</em>; primary care built muscle-first — protein-forward, strength-trained medicine • family medicine (<WikiLink href="https://drgabriellelyon.com">Lyon</WikiLink>)
+            <strong>Dentist</strong>: <em>Dr. JJ Serfontein (2023-present)</em>; examination, hygiene, and dental work under one roof • dentistry (<WikiLink href="https://www.jjteeth.co.za/">JJS Dentistry</WikiLink>)
           </>
         ),
       },
@@ -296,7 +288,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-psychologist",
         cite: (
           <>
-            <strong>Psychologist</strong>: <em>Dr. John Demartini (2023–present)</em>; values work and emotional-mental mastery — systematized, not essayed • human behavior (<WikiLink href="https://drdemartini.com">Demartini Institute</WikiLink>)
+            <strong>Psychologist</strong>: <em>Dr. John Demartini (2023-present)</em>; values work and emotional and mental mastery, systematized rather than essayed • human behavior (<WikiLink href="https://drdemartini.com">Demartini Institute</WikiLink>)
           </>
         ),
       },
@@ -304,7 +296,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-physiologist",
         cite: (
           <>
-            <strong>Physiologist</strong>: <em>Reece McDonald (2023–present)</em>; CPET, lactate, and performance testing on repeatable protocols • exercise physiology (<WikiLink href="https://www.science2sport.com">Science2Sport</WikiLink>, SSISA)
+            <strong>Physiologist</strong>: <em>Reece McDonald (2023-present)</em>; CPET, lactate, and performance testing on repeatable protocols • exercise physiology (<WikiLink href="https://www.science2sport.com">Science2Sport</WikiLink>, SSISA)
           </>
         ),
       },
@@ -312,7 +304,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-virtual-mentors",
         cite: (
           <>
-            <strong>Virtual mentors</strong>: <em>Top-60 YouTube Resources (2025)</em>; the curated faculty — guidelines for continuous self-education • presentation (YouTube)
+            <strong>Virtual mentors</strong>: <em><WikiLink href="https://youtu.be/h8FYdFHeDtg">Top-60 YouTube Resources</WikiLink> (2025)</em>; the curated faculty and guidelines for continuous self-education • presentation (YouTube)
           </>
         ),
       },
@@ -320,7 +312,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-coach",
         cite: (
           <>
-            <strong>Coach</strong>: <em>Jelena Lakic (2018–present)</em>; behavior, accountability, and health strategy — in person and virtual • health coaching (website)
+            <strong>Coach</strong>: <em>Jelena Lakic (2018-present)</em>; behavior, accountability, and health strategy, in person and virtual • health coaching (<WikiLink href="https://jelenalakic.com/">jelenalakic.com</WikiLink>)
           </>
         ),
       },
@@ -328,15 +320,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-instructor",
         cite: (
           <>
-            <strong>Instructor</strong>: <em>Brad Openshaw (2011–present)</em>; strength and movement instruction — the standard the self-sufficiency was built on • personal training (Move Freely)
-          </>
-        ),
-      },
-      {
-        id: "rec-associates",
-        cite: (
-          <>
-            <strong>Associates</strong>: <em>Co-members (2026)</em>; the rooms joined on purpose — join me in <WikiLink href="https://integrallife.com">Integral Life</WikiLink>, <WikiLink href="https://www.abundance360.com">Abundance360</WikiLink>, and <WikiLink href="https://www.gymnasticbodies.com">GymnasticBodies</WikiLink> • communities (online)
+            <strong>Instructor</strong>: <em>Brad Openshaw (2011-present)</em>; strength and movement instruction, the standard the self-sufficiency was built on • personal training (<WikiLink href="https://movefreely.co.za/">MoveFreely</WikiLink>)
           </>
         ),
       },
