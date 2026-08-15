@@ -85,7 +85,7 @@ const NURTURE: StatTableData = {
         {
           category: "Knowledge (transmitters)",
           metrics: [
-            ["", "Instruction on demand — one tutor, many shelves", false],
+            ["", "Instruction on demand, from one tutor to many shelves", false],
             ["Educators (mind)", "The best educators are capable, current, and clear", true],
             ["Tutor (AI)", "Claude (researcher; explainer; evaluator)", true, "The best tutors are clear, patient, and paced to the student — and the LLM is all three at once, on demand.", undefined, true],
             ["Role models", "Bruce Lee (body); John Demartini (mind); Tony Robbins (humanity); David Deutsch (progress); Elon Musk (future)", true, "The furthest instruction: never addressed to you — the exemplar teaches by being watched, chosen young, chosen precisely, and kept for life.", undefined, true],
@@ -95,7 +95,7 @@ const NURTURE: StatTableData = {
         {
           category: "Wealth (advisors)",
           metrics: [
-            ["", "One firm reads the whole balance sheet — personal and corporate in a single conversation", false],
+            ["", "One firm reads the whole balance sheet, personal and corporate in one conversation", false],
             ["Counselors (money)", "The best counselors read the whole position and sell nothing", true],
             ["Accountant (AI)", "Eugene Park (Baker Tilly); Claude (analyst)", true, "The best CPAs hold the person and the business at one firm — two ledgers that never contradict each other.", undefined, true],
             ["Fiduciary (connector)", "Pending; Claude (researcher; analyst; planner)", true, "The best fiduciaries are fee-only, capable, and conflict-free. The episodic experts — attorneys, brokers, agents — are reached through this tier’s advocacy, not kept on retainer. One of the map’s five connectors — the money world behind one fee-only relationship.", undefined, true],
@@ -116,7 +116,7 @@ const GROWTH: StatTableData = {
         {
           category: "Story (companions)",
           metrics: [
-            ["", "The people I share life with — the one tier of the map that is the point, not a means", false],
+            ["", "The people I share life with, the one tier of the map that is the point rather than a means", false],
             ["Family (blood)", "The best families turn shared history into chosen friendship", true],
             ["Brother", "JP Maritz (Deceased)", true, "The best siblings turn shared history into chosen friendship — the relationship that starts unchosen and earns its re-choosing.", undefined, true],
             ["Cousin", "Imelda van den Berg", true, "The best cousins pick up mid-conversation after years apart.", undefined, true],
@@ -137,7 +137,7 @@ const GROWTH: StatTableData = {
         {
           category: "Health (practitioners)",
           metrics: [
-            ["", "The professionals who push me past baseline — behavior, technique, and program", false],
+            ["", "The professionals pushing me past baseline in behavior, technique, and program", false],
             ["Coaches (behavior)", "The best coaches bring strategy, accountability, and tiny experiments", true],
             ["Performance coach (AI)", "Claude (life)", true, "In person or virtual, toward the endpoint of self-sufficiency: needing them less. Sports coaching sits here too: half mind, half mechanics.", undefined, true],
             ["Instructors (technique)", "The best instructors demonstrate, correct, and progress the technique", true],
@@ -150,7 +150,7 @@ const GROWTH: StatTableData = {
         {
           category: "Knowledge (competitors)",
           metrics: [
-            ["", "The minds I trade with — wisdom shared, not bought", false],
+            ["", "The minds I trade with, wisdom shared rather than bought", false],
             ["Cohorts (circumstance)", "The best cohorts share the era, the craft, or the arena", true],
             ["Mates", "Private", true, "The peers of shared eras — classrooms, teams, homelands — who knew you before the record existed.", undefined, true],
             ["Colleagues", "None", true, "The peers of the same craft: the ones who understand the work without the backstory.", undefined, true],
@@ -189,7 +189,7 @@ const CONTRIBUTION: StatTableData = {
         {
           category: "Story (beneficiaries)",
           metrics: [
-            ["", "The people my work is finally for — those with first claim on what I build", false],
+            ["", "The people my work is finally for, holding first claim on what I build", false],
             ["Family (blood)", "The best families inherit the time before the money", true],
             ["Children", "None", true, "The claim that does not exist yet — the map holds the slot.", undefined, true],
             ["Mother", "Rizél Delano", true, "The first claim runs upstream: the warm-hand inheritance — time and experiences given while they can still be shared. The proxy travels with the claim: advocacy granted in advance, held for the person who once held mine.", undefined, true],
@@ -216,7 +216,7 @@ const CONTRIBUTION: StatTableData = {
         {
           category: "Wealth (multipliers)",
           metrics: [
-            ["", "The people who turn my output into income — theirs and mine", false],
+            ["", "The people who turn my output into income, theirs and mine", false],
             ["Patrons (demand)", "The best patrons buy the hours, the outcomes, the products, or the attention", true],
             ["Employers", "None", true, "The patron at zero distance: one buyer of all the hours.", undefined, true],
             ["Clients (referrers)", "Private", true, "The patron at arm’s length: they buy outcomes, and the rate prices the value rather than the time — and the best bring the next client with them.", undefined, true],
@@ -304,7 +304,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-virtual-mentors",
         cite: (
           <>
-            <strong>Virtual mentors</strong>: <em><WikiLink href="https://youtu.be/h8FYdFHeDtg">Top-60 YouTube Resources</WikiLink> (2025)</em>; the curated faculty and guidelines for continuous self-education • presentation (YouTube)
+            <strong>Virtual mentors</strong>: <em>Top-60 YouTube Resources (2025)</em>; the curated faculty and guidelines for continuous self-education • presentation (<WikiLink href="https://youtu.be/h8FYdFHeDtg">YouTube</WikiLink>)
           </>
         ),
       },
