@@ -1,9 +1,10 @@
 // The infobox data — the right-column profile that sits beside the article,
-// like the summary box on a Wikipedia biography. Organized into three lenses,
-// ordered for a first-time visitor scanning "who is this, and should I engage
-// them?": Personal → Cultural → Legal. Within each group, entries
-// are ordered by descending engagement-signal. Financial/economic data is
-// intentionally excluded from the public site.
+// like the summary box on a Wikipedia biography. Organized into four lenses
+// mirroring the site's arc from given to chosen: Identity (the givens) →
+// Professional (the doing) → Psychological (the mind) → Personal (the pages,
+// one line each). Group headings carry a "See …" link into the page holding
+// the full record. Financial/economic data beyond the one-line Wealth status
+// is intentionally excluded from the public site.
 
 export type InfoboxValue = {
   text: string;
@@ -14,11 +15,14 @@ export type InfoboxValue = {
 
 export type InfoboxRow = {
   label: string;
+  labelHref?: string; // link the label itself (e.g. Skills → /knowledge#skills)
   values: InfoboxValue[];
 };
 
 export type InfoboxGroup = {
   heading: string;
+  headingLink?: { text: string; href: string }; // "(See Story)" beside the heading
+  headingNote?: string; // unlinked heading suffix, e.g. "(See Pages)"
   rows: InfoboxRow[];
 };
 
@@ -136,84 +140,124 @@ export const CAROUSEL: CarouselImage[] = [
 
 export const INFOBOX: InfoboxGroup[] = [
   {
-    // Positioning first (archetype), then origin, then what he does and stands
-    // for, closing on formation and the motto he lives by.
-    heading: "Personal",
+    // The givens — who this is by birth and body. The full record is Story.
+    heading: "Identity",
+    headingLink: { text: "See Story", href: "/story" },
     rows: [
-      {
-        label: "Occupation",
-        values: [
-          { text: "Applied taxonomist" },
-          { text: "Education producer" },
-          { text: "Performance coach" },
-        ],
-      },
       {
         label: "Born",
         values: [
-          { text: "Lorenzo Roos" },
+          { text: "Lorenzo Delano" },
           { text: `7 December 1987 (age ${AGE})` },
           { text: "Krugersdorp, South Africa" },
         ],
       },
-      {
-        label: "Appearance",
-        values: [
-          { text: "Blue eyes · brown hair · average height (176 cm)" },
-        ],
-      },
-      {
-        label: "Quote",
-        values: [
-          {
-            text: "“How you do anything is how you do everything.”",
-            italic: true,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    // Collaboration-fit signal — languages lead, belief disclosures sit in the
-    // cold tail so a differing viewer doesn't filter on them.
-    heading: "Cultural",
-    rows: [
-      {
-        label: "Languages",
-        values: [
-          { text: "English (primary)" },
-          { text: "Afrikaans (mother tongue)" },
-          { text: "Mandarin Chinese" },
-        ],
-      },
-      { label: "Ethnicity", values: [{ text: "Afrikaner" }] },
-      {
-        label: "Ancestry",
-        values: [{ text: "Western European (Belgian, Dutch, German)" }],
-      },
-      { label: "Generation", values: [{ text: "Y (Millennial)" }] },
-      { label: "Religion", values: [{ text: "None (secular humanist)" }] },
-    ],
-  },
-  {
-    // Engagement-decisive facts up top (work-eligibility), personal context
-    // last.
-    heading: "Legal",
-    rows: [
-      { label: "Residency", values: [{ text: "United States (since 2026)" }] },
       { label: "Citizenship", values: [{ text: "South African" }] },
-      { label: "Full name", values: [{ text: "Lorenzo Delano (since 2009)" }] },
-      { label: "Children", values: [{ text: "None" }] },
       {
-        label: "Family",
+        label: "Phenotype",
         values: [
-          { text: "Rizél Delano (mother)" },
-          { text: "Cornelius Roos (father)" },
-          {
-            text: "Brother",
-            note: "Deceased 2004, aged 18.",
-          },
+          { text: "Caucasian, male" },
+          { text: "Blue eyes and brown hair" },
+          { text: "Average height (176 cm)" },
         ],
+      },
+      { label: "Ancestry", values: [{ text: "Western European (Dutch)" }] },
+      { label: "Ethnicity", values: [{ text: "Afrikaner" }] },
+      { label: "Language", values: [{ text: "Afrikaans; English; Mandarin" }] },
+    ],
+  },
+  {
+    // The doing — occupation up top, then the Knowledge trio (linked into
+    // their sections), closing on eligibility and the way in.
+    heading: "Professional",
+    headingLink: { text: "See Knowledge", href: "/knowledge" },
+    rows: [
+      {
+        label: "Occupation",
+        values: [{ text: "Designer, producer, and coach" }],
+      },
+      {
+        label: "Skills",
+        labelHref: "/knowledge#skills",
+        values: [
+          { text: "Knowledge organization" },
+          { text: "Pedagogy" },
+          { text: "Productions" },
+        ],
+      },
+      {
+        label: "Education",
+        labelHref: "/knowledge#education",
+        values: [{ text: "Self-taught (age 13)" }],
+      },
+      {
+        label: "Works",
+        labelHref: "/knowledge#works",
+        values: [
+          { text: "Design methodologies" },
+          { text: "Published programs" },
+        ],
+      },
+      { label: "Employment", values: [{ text: "Self-employed" }] },
+      { label: "Residency", values: [{ text: "United States (since 2026)" }] },
+      {
+        label: "Contact",
+        values: [{ text: "Email", href: "mailto:lorenzo@lorenzodelano.com" }],
+      },
+    ],
+  },
+  {
+    // The mind — the Nature page's headline outputs, one composite per row.
+    heading: "Psychological",
+    headingLink: { text: "See Nature", href: "/nature" },
+    // Intelligence (full-scale IQ) joins once the RIOT result is wired on
+    // Nature — the infobox never cites a number its source page lacks.
+    rows: [
+      { label: "Worldview", values: [{ text: "Rational optimist" }] },
+      {
+        label: "Personality",
+        values: [{ text: "Disciplined, unflappable, and independent" }],
+      },
+      {
+        label: "Values",
+        values: [{ text: "Autonomy, achievement, and universal care" }],
+      },
+      {
+        label: "Interests",
+        values: [{ text: "Holland code: Investigative, artistic, and social" }],
+      },
+    ],
+  },
+  {
+    // The pages — one status line per remaining page, labels linked; the
+    // infobox doubles as the site index.
+    heading: "Personal",
+    headingNote: "See Pages",
+    rows: [
+      {
+        label: "About",
+        labelHref: "/",
+        values: [{ text: "Personal mastery broker" }],
+      },
+      {
+        label: "Lifestyle",
+        labelHref: "/lifestyle",
+        values: [{ text: "Design, teach, and exercise" }],
+      },
+      {
+        label: "Health",
+        labelHref: "/health",
+        values: [{ text: "Lean, muscular, and fit" }],
+      },
+      {
+        label: "Wealth",
+        labelHref: "/wealth",
+        values: [{ text: "Debt free with high credit score" }],
+      },
+      {
+        label: "Network",
+        labelHref: "/network",
+        values: [{ text: "Unmarried and no children" }],
       },
     ],
   },

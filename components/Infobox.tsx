@@ -13,16 +13,16 @@ type InfoboxProps = {
   embedded?: boolean;
 };
 
-// All groups collapse (native <details>). Personal defaults open (it's the
-// hook); Cultural and Legal default collapsed.
-const DEFAULT_OPEN = new Set(["Personal"]);
+// All groups collapse (native <details>). Identity defaults open (it's the
+// hook); the rest default collapsed.
+const DEFAULT_OPEN = new Set(["Identity"]);
 
 /**
- * The infobox — the profile across three lenses (Personal / Cultural / Legal)
- * as an encyclopedia data panel. Rows are a semantic description list; Cultural
- * and Legal are native <details> collapsibles (zero-JS, keyboard/AT friendly,
- * no CLS). Rendered twice (desktop rail + inline mobile copy); only the rail
- * copy is priority-loaded. See DESIGN_SPEC.md §4.3.
+ * The infobox — the profile across four lenses (Identity / Professional /
+ * Psychological / Personal) as an encyclopedia data panel. Rows are a semantic
+ * description list; groups are native <details> collapsibles (zero-JS,
+ * keyboard/AT friendly, no CLS). Rendered twice (desktop rail + inline mobile
+ * copy); only the rail copy is priority-loaded. See DESIGN_SPEC.md §4.3.
  */
 export default function Infobox({
   priority = false,
@@ -69,13 +69,35 @@ function Group({ group, defaultOpen }: { group: InfoboxGroup; defaultOpen: boole
   return (
     <details className="infobox-details" open={defaultOpen}>
       <summary className="infobox-heading">
-        {group.heading}
+        <span>
+          {group.heading}
+          {group.headingLink && (
+            <span className="ml-1.5 font-sans text-xs font-normal normal-case">
+              (
+              <WikiLink href={group.headingLink.href}>
+                {group.headingLink.text}
+              </WikiLink>
+              )
+            </span>
+          )}
+          {group.headingNote && (
+            <span className="ml-1.5 font-sans text-xs font-normal normal-case text-muted">
+              ({group.headingNote})
+            </span>
+          )}
+        </span>
         <Chevron className="chevron" />
       </summary>
       <dl className="infobox-dl">
         {visible.map((row) => (
           <div className="infobox-row" key={row.label}>
-            <dt>{row.label}</dt>
+            <dt>
+              {row.labelHref ? (
+                <WikiLink href={row.labelHref}>{row.label}</WikiLink>
+              ) : (
+                row.label
+              )}
+            </dt>
             <dd>
               {row.values.map((v, i) => (
                 <span key={i} className="block">
