@@ -140,7 +140,8 @@ export const CAROUSEL: CarouselImage[] = [
 
 export const INFOBOX: InfoboxGroup[] = [
   {
-    // The givens — who this is by birth and body. The full record is Story.
+    // The givens — birth, body, blood, culture, tongue; the legal row closes
+    // (same shape as Professional's status pair). The full record is Story.
     heading: "Identity",
     headingLink: { text: "See Story", href: "/story" },
     rows: [
@@ -152,7 +153,6 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Krugersdorp, South Africa" },
         ],
       },
-      { label: "Citizenship", values: [{ text: "South African" }] },
       {
         label: "Phenotype",
         values: [
@@ -164,11 +164,13 @@ export const INFOBOX: InfoboxGroup[] = [
       { label: "Ancestry", values: [{ text: "Western European (Dutch)" }] },
       { label: "Ethnicity", values: [{ text: "Afrikaner" }] },
       { label: "Language", values: [{ text: "Afrikaans; English; Mandarin" }] },
+      { label: "Citizenship", values: [{ text: "South African" }] },
     ],
   },
   {
-    // The doing — occupation up top, then the Knowledge trio (linked into
-    // their sections), closing on eligibility and the way in.
+    // The doing — occupation up top, then the Knowledge trio in the page's
+    // own order (Works > Skills > Education, linked into their sections),
+    // closing on the status pair.
     heading: "Professional",
     headingLink: { text: "See Knowledge", href: "/knowledge" },
     rows: [
@@ -177,12 +179,20 @@ export const INFOBOX: InfoboxGroup[] = [
         values: [{ text: "Designer, producer, and coach" }],
       },
       {
+        label: "Works",
+        labelHref: "/knowledge#works",
+        values: [
+          { text: "Design methodologies" },
+          { text: "Published designs" },
+        ],
+      },
+      {
         label: "Skills",
         labelHref: "/knowledge#skills",
         values: [
           { text: "Knowledge organization" },
           { text: "Pedagogy" },
-          { text: "Productions" },
+          { text: "Production" },
         ],
       },
       {
@@ -190,20 +200,8 @@ export const INFOBOX: InfoboxGroup[] = [
         labelHref: "/knowledge#education",
         values: [{ text: "Self-taught (age 13)" }],
       },
-      {
-        label: "Works",
-        labelHref: "/knowledge#works",
-        values: [
-          { text: "Design methodologies" },
-          { text: "Published programs" },
-        ],
-      },
       { label: "Employment", values: [{ text: "Self-employed" }] },
       { label: "Residency", values: [{ text: "United States (since 2026)" }] },
-      {
-        label: "Contact",
-        values: [{ text: "Email", href: "mailto:lorenzo@lorenzodelano.com" }],
-      },
     ],
   },
   {
