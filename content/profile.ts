@@ -200,33 +200,41 @@ export const INFOBOX: InfoboxGroup[] = [
         labelHref: "/knowledge#education",
         values: [
           { text: "Self-directed (since age 13)" },
-          { text: "Certified trainer, coach, and designer" },
-          { text: "Mandarin to international distinction" },
+          { text: "Certified coach and designer" },
+          { text: "Mandarin distinction" },
         ],
       },
       { label: "Employment", values: [{ text: "Independent (results-based)" }] },
-      { label: "Residency", values: [{ text: "United States (since 2026)" }] },
+      {
+        label: "Residency",
+        values: [
+          { text: "United States (since 2026)" },
+          { text: "No sponsorship required" },
+        ],
+      },
     ],
   },
   {
     // The mind — the Nature page's headline outputs, one composite per row.
     heading: "Psychological",
     headingLink: { text: "See Nature", href: "/nature" },
-    // Intelligence (full-scale IQ) joins once the RIOT result is wired on
-    // Nature — the infobox never cites a number its source page lacks.
+    // Intelligence leads once the RIOT result is wired on Nature — until
+    // then the row shows Pending; the infobox never cites a number its
+    // source page lacks.
     rows: [
+      { label: "Intelligence", values: [{ text: "RIOT: Pending" }] },
       { label: "Worldview", values: [{ text: "Rational optimist" }] },
       {
         label: "Personality",
-        values: [{ text: "Disciplined, unflappable, and independent" }],
+        values: [{ text: "HEXACO: Disciplined, unflappable, and independent" }],
       },
       {
         label: "Values",
-        values: [{ text: "Autonomy, achievement, and universal care" }],
+        values: [{ text: "PVQ: Autonomy, achievement, and universal-care" }],
       },
       {
         label: "Interests",
-        values: [{ text: "Holland code: Investigative, artistic, and social" }],
+        values: [{ text: "RIASEC: Investigative, artistic, and social" }],
       },
     ],
   },
@@ -239,17 +247,17 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "About",
         labelHref: "/",
-        values: [{ text: "Personal mastery broker" }],
+        values: [{ text: "What makes a person?" }],
       },
       {
         label: "Lifestyle",
         labelHref: "/lifestyle",
-        values: [{ text: "Design, teach, and exercise" }],
+        values: [{ text: "Days by design, cities by scorecard" }],
       },
       {
         label: "Health",
         labelHref: "/health",
-        values: [{ text: "Lean, muscular, and fit" }],
+        values: [{ text: "Elite VO₂max, optimal labs" }],
       },
       {
         label: "Wealth",
