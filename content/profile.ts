@@ -198,9 +198,13 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "Education",
         labelHref: "/knowledge#education",
-        values: [{ text: "Self-taught (age 13)" }],
+        values: [
+          { text: "Self-directed (since age 13)" },
+          { text: "Certified trainer, coach, and designer" },
+          { text: "Mandarin to international distinction" },
+        ],
       },
-      { label: "Employment", values: [{ text: "Self-employed" }] },
+      { label: "Employment", values: [{ text: "Independent (results-based)" }] },
       { label: "Residency", values: [{ text: "United States (since 2026)" }] },
     ],
   },
