@@ -259,7 +259,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "profile-peers",
         cite: (
           <>
-            <strong>Peers</strong>: <em>Professional Profile (2025)</em>; the career record of roles, works, and collaborations, kept current for the professional world • page (LinkedIn)
+            <strong>Peers</strong>: <em><WikiLink href="https://www.linkedin.com/in/lorenzo-delano-7b6143364/">Professional Profile</WikiLink> (2025)</em>; the career record of roles, works, and collaborations, kept current for the professional world • page (LinkedIn)
           </>
         ),
       },
