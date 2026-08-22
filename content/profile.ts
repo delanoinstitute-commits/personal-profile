@@ -179,6 +179,12 @@ export const INFOBOX: InfoboxGroup[] = [
         values: [{ text: "Designer, producer, and coach" }],
       },
       {
+        // Trade > subject > medium — the industries he serves, in the
+        // site's plain vocabulary (no GICS; it shelves securities).
+        label: "Industry",
+        values: [{ text: "Education, health, and tech" }],
+      },
+      {
         label: "Works",
         labelHref: "/knowledge#works",
         values: [
