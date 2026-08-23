@@ -107,7 +107,7 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/network",
         sections: [
           { label: "Nurture", anchor: "nurture" },
-          { label: "Growth", anchor: "growth" },
+          { label: "Progress", anchor: "progress" },
           { label: "Contribution", anchor: "contribution" },
         ],
       },

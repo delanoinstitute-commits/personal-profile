@@ -554,7 +554,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-network",
         cite: (
           <>
-            <strong>Network</strong>: <em>Social influence status (2026)</em>; the effects of service, management, play, and connection activities on measures of access, impact, and love • network (page pending)
+            <strong>Network</strong>: <em>Social influence status (2026)</em>; the effects of service, management, play, and connection activities on measures of <WikiLink href="/network#nurture">nurture</WikiLink>, <WikiLink href="/network#progress">progress</WikiLink>, and <WikiLink href="/network#contribution">contribution</WikiLink> • <WikiLink href="/network">network</WikiLink> (page)
           </>
         ),
       },

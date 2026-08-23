@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "Network" };
 
 // Network in three branches — the three vectors of every human relationship:
 // Nurture (take — the people who give the organism what it needs, when it
-// needs it), Growth (share — the people beside me), Contribution (give — the
+// needs it), Progress (share — the people beside me), Contribution (give — the
 // people who depend on me). Two bands per branch, per the site standard:
 // personal and professional. Categories are named for the page each
 // relationship serves (Story, Lifestyle, Knowledge, Health, Wealth) with the
@@ -74,7 +74,7 @@ const NURTURE: StatTableData = {
             ["Physical therapist", "Pending", true, "Clinical anatomy behind the hands: diagnose the injury, rehab it, maintain the tissue. Rehab, prehab, and productive massage in one; you cannot massage yourself.", undefined, true],
             ["Dentist", "Sune (hygiene); Dr. JJ Serfontein (dentistry)", true, "The best dentists diagnose, clean, and operate under one current roof — every additional service is one fewer relationship the network has to carry.", undefined, true],
             ["Doctor (connector)", "Dr. Darren Levin", true, "The best doctors are available, capable, and know exactly who to call next. One of the map’s five connectors — the medical world reached through a single relationship.", undefined, true],
-            ["Psychologist (AI)", "Dr. John Demartini; Claude (sounding board)", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is nurture; as development it sits under Growth, with the practitioners. The sounding board supplements, never substitutes.", undefined, true],
+            ["Psychologist (AI)", "Dr. John Demartini; Claude (sounding board)", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is nurture; as development it sits under Progress, with the practitioners. The sounding board supplements, never substitutes.", undefined, true],
             ["Veterinarian", "Pending (waits on pets)", true, "The best veterinarians are available, capable, and gentle.", undefined, true],
             ["Diagnosticians (data)", "The best diagnosticians measure the same way using the latest tech", true],
             ["Optometrist", "Dr. Johann Kruger", true, "The best optometrists are consistent and current, one prescription to the next.", undefined, true],
@@ -106,8 +106,8 @@ const NURTURE: StatTableData = {
   ],
 };
 
-const GROWTH: StatTableData = {
-  title: "Growth",
+const PROGRESS: StatTableData = {
+  title: "Progress",
   groups: [
     {
       domain: "Personal partners",
@@ -266,7 +266,7 @@ const NETWORK_DATA: ReferenceSection[] = [
     ],
   },
   {
-    label: "My standing providers from nurture and growth, recommended by use",
+    label: "My standing providers from nurture and progress, recommended by use",
     items: [
       {
         id: "rec-assistant",
@@ -662,7 +662,7 @@ export default function NetworkPage() {
       <p className="lead">
         My network is the team my life runs on. Every human relationship points one of
         three ways — toward the people I depend on (nurture), beside the people I share
-        with (growth), and toward the people who depend on me (contribution) — and
+        with (progress), and toward the people who depend on me (contribution) — and
         every bond is ultimately one of two kinds: given or chosen. A network is the
         record of what life gave me and what I chose back.
       </p>
@@ -690,8 +690,8 @@ export default function NetworkPage() {
       </p>
       <NestedTable {...NURTURE} />
 
-      <h2 id="growth">
-        Growth <span className="heading-paren">(Collaboration)</span>
+      <h2 id="progress">
+        Progress <span className="heading-paren">(Collaboration)</span>
       </h2>
       <p>
         The relationships I share with: peers beside me rather than above or below,
@@ -700,7 +700,7 @@ export default function NetworkPage() {
         from candor to contest. The one branch valued for itself: these relationships
         are not a means to the others; they are what the others are for.
       </p>
-      <NestedTable {...GROWTH} />
+      <NestedTable {...PROGRESS} />
 
       <h2 id="contribution">
         Contribution <span className="heading-paren">(Service)</span>
