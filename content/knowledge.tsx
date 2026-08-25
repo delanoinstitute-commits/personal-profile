@@ -433,6 +433,16 @@ export const WORKS: StatTableData = {
               true,
             ],
             [
+              "ValuesFactor",
+              [
+                "A universal values-mastery program co-authored with ",
+                <WikiLink key="djd" href="https://drdemartini.com/">Dr. John Demartini</WikiLink>,
+                " using my educational design framework, available as a ",
+                <WikiLink key="vf" href="https://www.mindvalley.com/values">Mindvalley quest</WikiLink>,
+              ],
+              true,
+            ],
+            [
               "MSP",
               [
                 "A universal exercise-mastery system taught using my IID methodology, available as five free YouTube (",

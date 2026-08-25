@@ -177,7 +177,7 @@ const EFFICIENCY: StatTableData = {
             ["Dividends", "Payout margin ≤15% (the owner’s draw and the giving)", true, "The dividend decision: cash that cannot beat the hurdle rate is returned to the owners — and the owner is me. The Personal rows in Expenses are the operating baseline; the draw is consumption and giving beyond it — upgrades, indulgences, donations. The cap does the quiet work: lifestyle is held to growing slower than capital, whatever income does."],
             ["Investing", "Savings margin ≥70% (the compounding engine)", true, "The investment decision: allocate only to assets returning above the minimum acceptable hurdle rate. The margin is a firm of one’s retained earnings — the share of free cash that becomes capital — and the single ratio the whole page exists to protect."],
             ["Investments", "The standing portfolio (cash, funds, and shares)", true, undefined, undefined, true],
-            ["Ventures", "The active positions (real, equity, and currency)", true, undefined, undefined, true],
+            ["Ventures", "The active positions (real and equity)", true, undefined, undefined, true],
           ],
         },
       ],
@@ -731,7 +731,6 @@ export default function WealthPage() {
     <>
       <PageHeading
         title="Wealth"
-        hatnote={<>Capital — how I protect it, spend it, and compound it</>}
       />
 
       <p className="lead">

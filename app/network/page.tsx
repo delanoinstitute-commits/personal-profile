@@ -656,7 +656,6 @@ export default function NetworkPage() {
     <>
       <PageHeading
         title="Network"
-        hatnote={<>Relationships — who I take from, share with, and give to</>}
       />
 
       <p className="lead">

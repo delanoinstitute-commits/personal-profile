@@ -20,10 +20,8 @@ export default function PageHeading({
   return (
     <>
       <div className="mb-3">
-        <h1 className="border-b border-rule pb-1">{title}</h1>
-        <div className="hatnote">
-          {hatnote ?? <>From the personal wiki of Lorenzo Delano</>}
-        </div>
+        <h1>{title}</h1>
+        {hatnote && <div className="hatnote">{hatnote}</div>}
       </div>
       <MobileInfobox />
       <SectionNav />

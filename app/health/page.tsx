@@ -515,7 +515,7 @@ const HEALTH_EVIDENCE: ReferenceSection[] = [
 export default function HealthPage() {
   return (
     <>
-      <PageHeading title="Health" hatnote={<>Status — my functional integrity with references and guidelines</>} />
+      <PageHeading title="Health" />
 
       <p className="lead">
         Health is one body read at three levels: how soundly it&rsquo;s built (integrity),

@@ -1009,7 +1009,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
 export default function LifestylePage() {
   return (
     <>
-      <PageHeading title="Lifestyle" hatnote={<>Practice — how I allocate my activity, time, and space</>} />
+      <PageHeading title="Lifestyle" />
 
       <p className="lead">
         Lifestyle is one life read three ways: what I do (activity), when I do it

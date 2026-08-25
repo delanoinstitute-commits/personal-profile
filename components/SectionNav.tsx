@@ -80,18 +80,32 @@ export default function SectionNav() {
       <ul className="section-scroll flex snap-x snap-mandatory flex-nowrap gap-1 overflow-x-auto text-sm sm:flex-wrap sm:overflow-visible">
         {sections.map((s) => {
           const isActive = active === s.anchor;
+          const isRefs = s.kind === "refs";
+          // The References chip is the apparatus, not a branch: muted and
+          // outlined, pushed to the far edge on desktop so the gap itself
+          // separates the taxonomy from its evidence.
+          const chipClass = isRefs
+            ? isActive
+              ? "border border-border-strong bg-surface-band font-medium text-text"
+              : "border border-rule text-muted hover:bg-surface-band hover:text-text"
+            : isActive
+              ? "bg-accent font-medium text-white focus-visible:outline-white focus-visible:[outline-offset:-2px]"
+              : "text-link hover:bg-surface-band";
           return (
-            <li key={s.anchor} className="shrink-0 snap-start">
+            <li
+              key={s.anchor}
+              className={`shrink-0 snap-start ${isRefs ? "refs-chip" : ""}`}
+              // Inline because the compiled stylesheet refused the rule in dev;
+              // auto margin is inert when the mobile strip overflows, so this
+              // is desktop's right-push with no mobile cost.
+              style={isRefs ? { marginLeft: "auto" } : undefined}
+            >
               <a
                 href={`#${s.anchor}`}
                 data-anchor={s.anchor}
                 aria-current={isActive ? "true" : undefined}
                 onClick={() => setActive(s.anchor)}
-                className={`no-wiki inline-flex min-h-11 items-center whitespace-nowrap rounded px-3 py-2 transition-colors sm:min-h-0 sm:px-2.5 sm:py-1 ${
-                  isActive
-                    ? "bg-accent font-medium text-white focus-visible:outline-white focus-visible:[outline-offset:-2px]"
-                    : "text-link hover:bg-surface-band"
-                }`}
+                className={`no-wiki inline-flex min-h-11 items-center whitespace-nowrap rounded px-3 py-2 transition-colors sm:min-h-0 sm:px-2.5 sm:py-1 ${chipClass}`}
               >
                 {s.label}
               </a>

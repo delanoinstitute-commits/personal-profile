@@ -245,7 +245,6 @@ export default function StoryPage() {
     <>
       <PageHeading
         title="Story"
-        hatnote={<>The record — what I was given, what shaped me, and what I chose</>}
       />
 
       <p className="lead">

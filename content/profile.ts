@@ -175,8 +175,11 @@ export const INFOBOX: InfoboxGroup[] = [
     headingLink: { text: "See Knowledge", href: "/knowledge" },
     rows: [
       {
+        // The single designation — the method he IS (classify by function,
+        // test on self, publish). The three trades it feeds (designer,
+        // producer, coach) stay legible in the Skills row below.
         label: "Occupation",
-        values: [{ text: "Designer, producer, and coach" }],
+        values: [{ text: "Applied taxonomist" }],
       },
       {
         // Trade > subject > medium — the industries he serves, in the

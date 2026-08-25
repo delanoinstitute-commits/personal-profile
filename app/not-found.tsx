@@ -6,7 +6,6 @@ export default function NotFound() {
     <>
       <PageHeading
         title="This page has not been written"
-        hatnote={<>Error 404 — the requested entry does not exist</>}
       />
       <p>
         The page you are looking for is not part of this wiki. It may have been moved, or

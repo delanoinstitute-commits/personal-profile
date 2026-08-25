@@ -346,7 +346,7 @@ const IDENTITY_EVIDENCE: ReferenceSection[] = [
 export default function IdentityPage() {
   return (
     <>
-      <PageHeading title="Nature" hatnote={<>The givens — my intellect, character, and drive</>} />
+      <PageHeading title="Nature" />
 
       <p className="lead">
         Who I am now — my mind in three lenses: how I think (intellect), how I&rsquo;m wired

@@ -23,7 +23,9 @@ export const SITE = {
   email: "lorenzo@lorenzodelano.com",
 };
 
-export type NavSection = { label: string; anchor: string };
+// kind "refs" renders as the visually subordinate References chip in the
+// SectionNav — the apparatus, distinguished from the three content branches.
+export type NavSection = { label: string; anchor: string; kind?: "refs" };
 export type NavPage = {
   label: string;
   href: string;
@@ -39,7 +41,8 @@ export const NAV_GROUPS: NavGroup[] = [
         label: "About",
         href: "/",
         sections: [
-          { label: "About", anchor: "about" },
+          { label: "Lorenzo", anchor: "lorenzo" },
+          { label: "Website", anchor: "website" },
           { label: "Contact", anchor: "contact" },
         ],
       },
@@ -50,6 +53,7 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Inheritance", anchor: "inheritance" },
           { label: "Development", anchor: "development" },
           { label: "Emergence", anchor: "emergence" },
+          { label: "References", anchor: "references", kind: "refs" },
         ],
       },
       {
@@ -59,6 +63,7 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Intellect", anchor: "intellect" },
           { label: "Character", anchor: "character" },
           { label: "Drive", anchor: "drive" },
+          { label: "References", anchor: "references", kind: "refs" },
         ],
       },
       {
@@ -68,6 +73,7 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Activity", anchor: "activity" },
           { label: "Time", anchor: "time" },
           { label: "Space", anchor: "space" },
+          { label: "References", anchor: "references", kind: "refs" },
         ],
       },
     ],
@@ -82,6 +88,7 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Integrity", anchor: "integrity" },
           { label: "Balance", anchor: "balance" },
           { label: "Capacity", anchor: "capacity" },
+          { label: "References", anchor: "references", kind: "refs" },
         ],
       },
       {
@@ -91,6 +98,7 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Works", anchor: "works" },
           { label: "Skills", anchor: "skills" },
           { label: "Education", anchor: "education" },
+          { label: "References", anchor: "references", kind: "refs" },
         ],
       },
       {
@@ -100,6 +108,7 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Security", anchor: "security" },
           { label: "Efficiency", anchor: "efficiency" },
           { label: "Growth", anchor: "growth" },
+          { label: "References", anchor: "references", kind: "refs" },
         ],
       },
       {
@@ -109,6 +118,7 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Nurture", anchor: "nurture" },
           { label: "Progress", anchor: "progress" },
           { label: "Contribution", anchor: "contribution" },
+          { label: "References", anchor: "references", kind: "refs" },
         ],
       },
     ],
