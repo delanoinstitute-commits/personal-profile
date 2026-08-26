@@ -101,7 +101,7 @@ const LORENZO: StatTableData = {
                 " and today’s ",
                 <WikiLink key="msp" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">MSP system</WikiLink>,
                 " (review my ",
-                <WikiLink key="fit" href="/health#capacity">fitness stats</WikiLink>,
+                <WikiLink key="fit" href="/health#capacity">fitness results</WikiLink>,
                 ")",
               ],
               true,
@@ -110,7 +110,7 @@ const LORENZO: StatTableData = {
               "Nutrition",
               [
                 "I’ve experimented with diets since 20 (paleo, primal, vegetarian, fasting) and settled into a calorically informed, whole-food pattern that keeps me lean, muscular, and metabolically flexible year-round (review my ",
-                <WikiLink key="bc" href="/health#integrity">body composition numbers</WikiLink>,
+                <WikiLink key="bc" href="/health#integrity">body composition results</WikiLink>,
                 ")",
               ],
               true,
@@ -118,7 +118,7 @@ const LORENZO: StatTableData = {
             [
               "Mind",
               [
-                "I’ve worked on my inner game since 22 (NLP, values determination, psychometrics); today my psyche is profiled, measured, and published (review my ",
+                "I’ve worked on my inner game since 22 (waking, growing, cleaning, and showing up); today my psyche is profiled, measured, and published (review my ",
                 <WikiLink key="nt" href="/nature">Nature</WikiLink>,
                 " results)",
               ],
@@ -129,16 +129,16 @@ const LORENZO: StatTableData = {
               [
                 "I’ve worked since 15 and managed my own money from the start, seriously from 30; the structures now in place make financial freedom a matter of time (see my ",
                 <WikiLink key="w" href="/wealth">Wealth</WikiLink>,
-                " page)",
+                " map)",
               ],
               true,
             ],
             [
               "Production",
               [
-                "I’ve made films since childhood (kung-fu-inspired at first); now I design, produce, and ship digital products end to end (explore my ",
-                <WikiLink key="sk" href="/knowledge#skills">skills</WikiLink>,
-                " to learn more)",
+                "I’ve made films since childhood (kung-fu-inspired at first); now I design, produce, and ship digital products end to end (review my ",
+                <WikiLink key="dsn" href="/knowledge#works">designs</WikiLink>,
+                ")",
               ],
               true,
             ],
@@ -151,7 +151,15 @@ const LORENZO: StatTableData = {
               ],
               true,
             ],
-            ["Technology", "I master each generation of tools, from gym equipment to studio gear to AI (this website, authored by me and coded and edited by Claude, is no exception)", true],
+            [
+              "Technology",
+              [
+                "I master each generation of tools, from gym equipment to studio gear to AI (this ",
+                <WikiLink key="ws" href="/">website</WikiLink>,
+                ", authored by me and coded and edited by Claude, is no exception)",
+              ],
+              true,
+            ],
           ],
         },
       ],
