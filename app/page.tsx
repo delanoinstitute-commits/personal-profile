@@ -67,7 +67,7 @@ const LORENZO: StatTableData = {
           ],
         },
         {
-          category: "Story (what I’ve done)",
+          category: "Background (what I’ve done)",
           metrics: [
             ["", "I solved these problems for myself first and continue to help others do the same", false],
             ["Meta-learning", "I left school at 13 and taught myself ever since; learning to learn became my trade, and applied taxonomy its highest form (including but not limited to the skills below)", true],
