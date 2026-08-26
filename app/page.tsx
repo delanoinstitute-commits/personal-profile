@@ -28,8 +28,8 @@ const LORENZO: StatTableData = {
               true,
               "Taxonomy, from the Greek: taxis (arrangement) and nomos (law) — the laws of arrangement. The trade: design the representative model of a domain as it is and as it could be, then close the gap.",
             ],
-            ["Taxonomist", "A specialist in classifying all things according to their functions and natural relationships", true, undefined, undefined, true],
-            ["Applied", "Testing every model against reality and revising until it produces the outcome", true, undefined, undefined, true],
+            ["Taxonomist", "A specialist in classifying phenomena according to their functions and natural relationships for the purpose of understanding, navigating, and transforming them", true, undefined, undefined, true],
+            ["Applied", "Testing and revising those classifications against reality", true, undefined, undefined, true],
             [
               "Transformation",
               [
@@ -169,23 +169,23 @@ const LORENZO: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Work (my current focus)",
+          category: "Work (my current preoccupation)",
           metrics: [
             ["", "Two problems hold my attention; you’re welcome to join either", false],
             [
-              "Education",
-              "I’m building a self-guided, universal, lifelong curriculum made personal; this site is my first prototype of the structure",
-              true,
-              "Subjects studied according to one’s own constitution and capital: math for wealth, philosophy and psychology for nature, history from your own life outward to your country and the universe, biology for your inheritance and health. Knowledge made personal is more meaningful and more memorable, and converts into self-efficacy rather than mere acquisition.",
-            ],
-            [
               "Market",
               [
-                "I relocated permanently to the US (who you know and where you live beat what you know); I’m rebuilding from scratch in search of product-market fit for my intellectual capital (my ",
-                <WikiLink key="nr" href="/network#guidelines">Network references</WikiLink>,
-                " carry the evidence)",
+                "I’m in search of my next best long-term US-based ",
+                <WikiLink key="pt" href="#contact">partnership</WikiLink>,
+                " (client, employer, co-founder, or owner) to make our best shared ideas in education, health, or tech a reality",
               ],
               true,
+            ],
+            [
+              "Education",
+              "I envision creating the world’s first lifelong, self-directed education curriculum, built and consumed according to a taxonomy of the self; this site is my first prototype of the structure",
+              true,
+              "Subjects studied according to one’s own constitution and capital: math for wealth, philosophy and psychology for nature, history from your own life outward to your country and the universe, biology for your inheritance and health. Knowledge made personal is more meaningful and more memorable, and converts into self-efficacy rather than mere acquisition.",
             ],
           ],
         },
@@ -196,29 +196,31 @@ const LORENZO: StatTableData = {
             [
               "Location",
               [
-                "I live in Austin, Texas, the best fit on my city scorecard (see ",
+                "I recently moved to Austin, Texas, the top recommended city based on my environmental scorecard (see ",
                 <WikiLink key="sp" href="/lifestyle#space">Space</WikiLink>,
-                " on Lifestyle); my mother came along, and I’m helping her build the same",
+                ")",
               ],
               true,
             ],
             [
               "Activities",
               [
-                "I work, exercise, and study, as I always have (my exact ",
+                "Barring maintenance activities, I do only three things: I work, exercise, and study, and have for most of my life (see ",
                 <WikiLink key="sch" href="/lifestyle#time">schedule</WikiLink>,
-                " lives on Lifestyle)",
+                ")",
               ],
               true,
             ],
             [
-              "Personal",
+              "Quirks",
               [
-                "I’m single and not looking; I default to progressive trance; I keep no social media except ",
+                "I keep no social media, except ",
                 <WikiLink key="li" href="https://www.linkedin.com/in/lorenzo-delano-7b6143364/">LinkedIn</WikiLink>,
-                " (reluctantly, for networking) and ",
+                " and ",
                 <WikiLink key="yt" href="https://youtube.com/@LorenzoDelano">YouTube</WikiLink>,
-                " (for publishing); my perfect day ends in a sauna and a long walk after serving someone well",
+                "; I like my coffee the way I enjoy my Trance, progressive; I sleep alone, in and out of relationships; I start reciting the periodic table of elements when I get bored; my all-time favorite movie, album, and game: Mortal Kombat; I have an annoying habit of ",
+                <WikiLink key="rk" href="/story#development">rocking</WikiLink>,
+                " while I work (it’s how I think)",
               ],
               true,
             ],
