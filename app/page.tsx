@@ -50,7 +50,7 @@ const LORENZO: StatTableData = {
             ],
             [
               "Mission",
-              "I accumulate and allocate my life capital where it benefits others most",
+              "I help expand consciousness for all, starting with myself",
               true,
             ],
             ["Personal", "I solve my own problems first, then publish the solutions free for anyone", true, undefined, undefined, true],
@@ -58,7 +58,7 @@ const LORENZO: StatTableData = {
             ["Organizational", "And then help companies productize the same solutions for their users", true, undefined, undefined, true],
             [
               "Principles",
-              "I live my life by a set of principles that have served me best over the years",
+              "I run my life on three principles, distilled from everything that’s worked",
               true,
             ],
             ["Attention", "The quality of your life is based on the quality of your attention", true, "“How you do anything is how you do everything” — win the moment and you win the past (nothing to regret) and the future (nothing to fear).", undefined, true],
