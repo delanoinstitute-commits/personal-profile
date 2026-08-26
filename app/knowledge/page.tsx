@@ -56,10 +56,11 @@ export default function KnowledgePage() {
 
       <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
       <p>
-        The classroom ended at 13; the curriculum never did. Since then I
-        enroll only when a domain demands it — guided when a teacher is the
-        fastest path, independent when I am. Certificates where they count,
-        practice where they don&rsquo;t: the theory everything above stands on.
+        I don&rsquo;t take degrees, I design them. The classroom ended at 13;
+        the curriculum never did. Since then I enroll only when a domain
+        demands it — guided when a teacher is the fastest path, independent
+        when I am. Certificates where they count, practice where they
+        don&rsquo;t: the theory everything above stands on.
       </p>
       <NestedTable {...EDUCATION} />
 
