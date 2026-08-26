@@ -69,16 +69,85 @@ const LORENZO: StatTableData = {
         {
           category: "Story (what I’ve done)",
           metrics: [
-            ["", "I solved these problems for myself first; now I help others solve them", false],
-            ["Meta-learning", "I left school at 13 and taught myself ever since; learning to learn became my trade, and applied taxonomy its highest form", true],
-            ["Time management", "Early autonomy made every hour mine to allocate; I’ve designed my days ever since (the schedule lives on Lifestyle)", true, undefined, "/lifestyle#time"],
-            ["Spatial design", "I’ve moved more than thirty times, so I can rebuild an optimal environment anywhere (the studio and home gym designs show my current answer)", true, undefined, "https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w"],
-            ["Physical exercise", "I started with gymnastics at 12 and kung fu at 16 (following Bruce Lee into the gym), then added running, CrossFit, and McGuff, integrated for complete development", true, undefined, "/health#capacity"],
-            ["Sustainable dieting", "I’ve experimented with diets since 20 (paleo, primal, vegetarian, fasting) and settled into a calorically informed, whole-food pattern: sub-10% body fat, high muscle, insulin sensitive", true, undefined, "/health#balance"],
-            ["Asset allocation", "I’ve worked since 15 and managed my own money from the start, seriously from 30; the structures now in place make financial freedom a matter of time", true, undefined, "/wealth"],
-            ["Educational productions", "I’ve made films since childhood (mostly kung fu movies); now I design, produce, and ship digital products end to end", true, undefined, "/knowledge#works"],
-            ["Teacher’s training", "I’ve taught since 17 (English in China, finance in Malaysia, fitness in Barcelona); my teacher’s training manual is in progress", true, undefined, "/knowledge#skills"],
-            ["Technophilia", "I master each generation of tools, from gym equipment to studio gear to AI (I designed and wrote this site with Claude as my coding and editorial assistant)", true],
+            ["", "I solved these problems for myself first and continue to help others do the same", false],
+            ["Meta-learning", "I left school at 13 and taught myself ever since; learning to learn became my trade, and applied taxonomy its highest form (including but not limited to the below skills)", true],
+            [
+              "Time",
+              [
+                "Early autonomy made every hour mine to allocate; I’ve designed my days ever since (see the ",
+                <WikiLink key="lf" href="/lifestyle">Lifestyle</WikiLink>,
+                " page or take my lifestyle design course to learn more)",
+              ],
+              true,
+            ],
+            [
+              "Space",
+              [
+                "I’ve moved more than thirty times, so I can rebuild an optimal environment anywhere (see my latest studio design or take my free ",
+                <WikiLink key="gym" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">home-gym design</WikiLink>,
+                " course)",
+              ],
+              true,
+            ],
+            [
+              "Exercise",
+              [
+                "I started exercising at age 16 and never stopped, spending multiple years on various disciplines: from martial arts to sprinting to CrossFit to the 10X method and today’s MSP system (review my ",
+                <WikiLink key="fit" href="/health#capacity">fitness stats</WikiLink>,
+                ")",
+              ],
+              true,
+            ],
+            [
+              "Nutrition",
+              [
+                "I’ve experimented with diets since 20 (paleo, primal, vegetarian, fasting) and settled into a calorically informed, whole-food pattern that keeps me lean, muscular, and metabolically flexible year-round (review my ",
+                <WikiLink key="bc" href="/health#integrity">body composition numbers</WikiLink>,
+                ")",
+              ],
+              true,
+            ],
+            [
+              "Mind",
+              [
+                "I’ve worked on my inner game since 22 (NLP, values determination, psychometrics); today my psyche is profiled, measured, and published (review my ",
+                <WikiLink key="nt" href="/nature">Nature</WikiLink>,
+                " results)",
+              ],
+              true,
+            ],
+            [
+              "Finance",
+              [
+                "I’ve worked since 15 and managed my own money from the start, seriously from 30; the structures now in place make financial freedom a matter of time (see the ",
+                <WikiLink key="w" href="/wealth">Wealth</WikiLink>,
+                " page to learn more)",
+              ],
+              true,
+            ],
+            [
+              "Production",
+              [
+                "I’ve made (kung-fu-inspired) films since childhood; now I design, produce, and ship digital products end to end (learn more under ",
+                <WikiLink key="wk" href="/knowledge#works">works</WikiLink>,
+                " on the ",
+                <WikiLink key="kn" href="/knowledge">Knowledge</WikiLink>,
+                " page)",
+              ],
+              true,
+            ],
+            [
+              "Training",
+              [
+                "I’ve taught since the age of 17 (English in China, finance in Malaysia, fitness all over the world); I still coach clients, teach students, and train teachers (review my ",
+                <WikiLink key="rf" href="/knowledge#references">references</WikiLink>,
+                " on the ",
+                <WikiLink key="kn2" href="/knowledge">Knowledge</WikiLink>,
+                " page)",
+              ],
+              true,
+            ],
+            ["Technology", "I master each generation of tools, from gym equipment to studio gear to AI (this website, authored by me and coded/edited by Claude, is no exception)", true],
           ],
         },
       ],
