@@ -28,7 +28,7 @@ const LORENZO: StatTableData = {
               true,
               "Taxonomy, from the Greek: taxis (arrangement) and nomos (law) — the laws of arrangement. The trade: design the representative model of a domain as it is and as it could be, then close the gap.",
             ],
-            ["Taxonomist", "Someone good at mapping various domains of reality using the laws (nomos) of knowledge classification (taxis)", true, undefined, undefined, true],
+            ["Taxonomist", "A specialist in classifying all things according to their functions and natural relationships", true, undefined, undefined, true],
             ["Applied", "Testing every model against reality and revising until it produces the outcome", true, undefined, undefined, true],
             [
               "Transformation",
@@ -55,7 +55,7 @@ const LORENZO: StatTableData = {
             ],
             ["Personal", "I solve my own problems first, then publish the solutions free for anyone", true, undefined, undefined, true],
             ["Social", "I then help individuals apply the same solutions to their lives, partners, or families", true, undefined, undefined, true],
-            ["Organizational", "And then help companies productize the same solutions for employees", true, undefined, undefined, true],
+            ["Organizational", "And then help companies productize the same solutions for their users", true, undefined, undefined, true],
             [
               "Principles",
               "I live my life by a set of principles that have served me best over the years",
