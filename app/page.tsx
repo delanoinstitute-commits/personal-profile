@@ -180,10 +180,12 @@ const LORENZO: StatTableData = {
             ],
             [
               "Market",
-              "I relocated permanently to the US (who you know and where you live beat what you know); I’m rebuilding from scratch in search of product-market fit for my intellectual capital",
+              [
+                "I relocated permanently to the US (who you know and where you live beat what you know); I’m rebuilding from scratch in search of product-market fit for my intellectual capital (my ",
+                <WikiLink key="nr" href="/network#guidelines">Network references</WikiLink>,
+                " carry the evidence)",
+              ],
               true,
-              undefined,
-              "/network#guidelines",
             ],
           ],
         },
@@ -191,9 +193,35 @@ const LORENZO: StatTableData = {
           category: "Life (my current conditions)",
           metrics: [
             ["", "Where I live, how the days run, and what I’m like off duty", false],
-            ["Location", "I live in Austin, Texas, the best fit on my city scorecard (see Space on Lifestyle); my mother came along, and I’m helping her build the same", true, undefined, "/lifestyle#space"],
-            ["Activities", "I work, exercise, and study, as I always have (my exact schedule lives on Lifestyle)", true, undefined, "/lifestyle#time"],
-            ["Personal", "I’m single and not looking; I default to progressive trance; I keep no social media except LinkedIn (reluctantly, for networking) and YouTube (for publishing); my perfect day ends in a sauna and a long walk after serving someone well", true],
+            [
+              "Location",
+              [
+                "I live in Austin, Texas, the best fit on my city scorecard (see ",
+                <WikiLink key="sp" href="/lifestyle#space">Space</WikiLink>,
+                " on Lifestyle); my mother came along, and I’m helping her build the same",
+              ],
+              true,
+            ],
+            [
+              "Activities",
+              [
+                "I work, exercise, and study, as I always have (my exact ",
+                <WikiLink key="sch" href="/lifestyle#time">schedule</WikiLink>,
+                " lives on Lifestyle)",
+              ],
+              true,
+            ],
+            [
+              "Personal",
+              [
+                "I’m single and not looking; I default to progressive trance; I keep no social media except ",
+                <WikiLink key="li" href="https://www.linkedin.com/in/lorenzo-delano-7b6143364/">LinkedIn</WikiLink>,
+                " (reluctantly, for networking) and ",
+                <WikiLink key="yt" href="https://youtube.com/@LorenzoDelano">YouTube</WikiLink>,
+                " (for publishing); my perfect day ends in a sauna and a long walk after serving someone well",
+              ],
+              true,
+            ],
           ],
         },
       ],
