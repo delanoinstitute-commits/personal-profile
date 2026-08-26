@@ -175,9 +175,9 @@ const LORENZO: StatTableData = {
             [
               "Market",
               [
-                "I’m in search of my next best long-term US-based ",
-                <WikiLink key="pt" href="#contact">partnership</WikiLink>,
-                " (client, employer, co-founder, or owner) to make our best shared ideas in education, health, or tech a reality",
+                "I’m choosing my next long-term work chapter in the US, employment to equity: the one ",
+                <WikiLink key="pt" href="#contact">commitment</WikiLink>,
+                " where my leverage creates the largest impact",
               ],
               true,
             ],
