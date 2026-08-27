@@ -244,7 +244,7 @@ const WEBSITE: StatTableData = {
             ["", "I built one site to do two jobs: my personal record and my public storefront", false],
             ["Personal", "I keep this site as the digital blueprint of my entire life", true],
             ["Website", "It’s a wiki of interlinked pages; navigate the map that is me", true, undefined, undefined, true],
-            ["Database", "It’s the single source of truth on my life, with references", true, undefined, undefined, true],
+            ["Database", "It’s the single source of truth on my life, formatted for AI", true, undefined, undefined, true],
             [
               "Journal",
               [
@@ -259,7 +259,6 @@ const WEBSITE: StatTableData = {
               undefined,
               true,
             ],
-            ["Dataset", "It’s formatted for AI; paste the URL into your LLM and ask it anything about me", true, undefined, undefined, true],
             ["Commercial", "It’s also my primary point of contact for collaborations", true],
             [
               "Resume",
@@ -285,7 +284,7 @@ const WEBSITE: StatTableData = {
               undefined,
               true,
             ],
-            ["Taxonomy", "It maps what it means to fulfill one’s potential (constitution and capital); the structure doubles as a complete self-education curriculum", true, undefined, undefined, true],
+            ["Curriculum", "The taxonomy of what it means to fulfill one’s potential (constitution and capital) doubles as a complete self-education curriculum", true, undefined, undefined, true],
           ],
         },
         {
