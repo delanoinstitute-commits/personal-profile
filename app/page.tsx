@@ -327,7 +327,6 @@ const WEBSITE: StatTableData = {
               true,
             ],
             ["Pages", "I keep all eight pages on one identical layout", true],
-            ["Introduction", "Each page opens with a headline, the section bar, and an introduction", true, undefined, undefined, true],
             ["Taxonomy", "Each page holds three branches of two bands each, in accordions for maximal compression", true, undefined, undefined, true],
             ["References", "Each page closes with the data, guidelines, and studies behind it", true, undefined, undefined, true],
           ],
