@@ -338,13 +338,41 @@ const WEBSITE: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Browser (journeys)",
+          category: "Visitor (journeys)",
           metrics: [
             ["", "I’ve laid four paths in, ordered by how much time you have", false],
             ["AI me", "Paste this URL into your favorite LLM and ask it anything you’d like to know about me", true],
-            ["Qualify me", "Considering me for a role? Read the infobox quick facts (identity, professional, and psychological), then the Knowledge page", true, undefined, "/knowledge"],
-            ["Get to know me", "Qualified? Read parts of Story, Nature, and Lifestyle until I feel familiar", true, undefined, "/story"],
-            ["Work with me", "Finish with the capital pages for my current status, then contact me through the offers below", true, undefined, "#contact"],
+            [
+              "Qualify me",
+              [
+                "Considering me for a role? Read the infobox quick facts (identity, professional, and psychological), then the ",
+                <WikiLink key="kn4" href="/knowledge">Knowledge</WikiLink>,
+                " page",
+              ],
+              true,
+            ],
+            [
+              "Get to know me",
+              [
+                "Qualified? Read parts of ",
+                <WikiLink key="st2" href="/story">Story</WikiLink>,
+                ", ",
+                <WikiLink key="na2" href="/nature">Nature</WikiLink>,
+                ", and ",
+                <WikiLink key="li2" href="/lifestyle">Lifestyle</WikiLink>,
+                " until I feel familiar",
+              ],
+              true,
+            ],
+            [
+              "Work with me",
+              [
+                "Finish with the capital pages for my current status, then contact me through the ",
+                <WikiLink key="of" href="#contact">offers below</WikiLink>,
+                "",
+              ],
+              true,
+            ],
           ],
         },
       ],
