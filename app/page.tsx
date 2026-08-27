@@ -341,9 +341,9 @@ const WEBSITE: StatTableData = {
           category: "Visitor (journeys)",
           metrics: [
             ["", "I’ve laid four paths in, ordered by how much time you have", false],
-            ["AI me", "Paste this URL into your favorite LLM and ask it anything you’d like to know about me", true],
+            ["Search", "In a hurry? Paste this URL into your favorite LLM and ask it anything you’d like to know about me", true],
             [
-              "Qualify me",
+              "Qualify",
               [
                 "Considering me for a role? Read the infobox quick facts (identity, professional, and psychological), then the ",
                 <WikiLink key="kn4" href="/knowledge">Knowledge</WikiLink>,
@@ -352,9 +352,9 @@ const WEBSITE: StatTableData = {
               true,
             ],
             [
-              "Get to know me",
+              "Learn",
               [
-                "Qualified? Read parts of ",
+                "Curious about me? Read parts of ",
                 <WikiLink key="st2" href="/story">Story</WikiLink>,
                 ", ",
                 <WikiLink key="na2" href="/nature">Nature</WikiLink>,
@@ -365,9 +365,9 @@ const WEBSITE: StatTableData = {
               true,
             ],
             [
-              "Work with me",
+              "Contact",
               [
-                "Finish with the capital pages for my current status, then contact me through the ",
+                "Have an inquiry? Read my capital pages then contact me through the ",
                 <WikiLink key="of" href="#contact">offers below</WikiLink>,
                 "",
               ],
