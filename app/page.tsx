@@ -391,7 +391,7 @@ const CONTACT: StatTableData = {
           category: "Learners (viewers and readers)",
           metrics: [
             ["", "I’ve published everything below; use it free on your own, or join in with me inside", false],
-            ["Content", "Public and free: master your time, exercise, and profile by yourself", true],
+            ["Content (free)", "Master your time, exercise, and profile by yourself for free", true],
             [
               "Training",
               [
@@ -429,7 +429,7 @@ const CONTACT: StatTableData = {
               true,
             ],
             ["Profiling", "Build the taxonomy of your own life (the spec and worked example: this site)", true, undefined, undefined, true],
-            ["Membership", "Private and paid: master your fitness and values alongside other members", true],
+            ["Membership (paid)", "Master your fitness and values alongside other members", true],
             [
               "Fitness",
               [
@@ -460,10 +460,10 @@ const CONTACT: StatTableData = {
           category: "Counterparties (distributors and affiliates)",
           metrics: [
             ["", "My content on your platform, your stage, or your floor", false],
-            ["Commercial", "Public: put my content in front of your clients or users", true],
+            ["Commercial (external)", "Put my content in front of your clients or users", true],
             ["Content", "License any of my free courses for a more structured experience on your platform", true, undefined, undefined, true],
             ["Speaking", "Hire me to present any of my published works at your event", true, undefined, undefined, true],
-            ["Corporate", "Private: train your employees on my content", true],
+            ["Corporate (internal)", "Train your employees on my content", true],
             ["Training", "Hire me to train your employees in time, exercise, and work performance mastery", true, undefined, undefined, true],
             ["Presenting", "Hire me for a closed presentation to your team on any of my published works", true, undefined, undefined, true],
           ],
@@ -478,12 +478,12 @@ const CONTACT: StatTableData = {
           category: "Patrons (clients and employers)",
           metrics: [
             ["", "I take one commitment at a time and serve it fully until the problem is solved", false],
-            ["Individuals", "Private: hire me to transform yourself, your partner, or your family", true],
+            ["Individuals (personal)", "Hire me to transform yourself, your partner, or your family", true],
             ["Design", "I’ll design you a personalized lifestyle, exercise, nutrition, or self-study program to run on your own", true, undefined, undefined, true],
             ["Profiling", "I’ll build a taxonomy of your life as profile, portfolio, resume, or AI database (like this site)", true, undefined, undefined, true],
             ["Coaching", "I’ll run tiny lifestyle, exercise, nutrition, or self-study experiments with you until you’ve reached your goal", true, undefined, undefined, true],
             ["Interventions", "I’ll rearrange your environment and train you in person, for accelerated, guaranteed change", true, undefined, undefined, true],
-            ["Companies", "Private: hire me as employee or contractor to transform your employees or customers", true],
+            ["Companies (professional)", "Hire me as employee or contractor to transform your employees or customers", true],
             ["Design", "I’ll design a transformative product, protocol, content, assessment, or software experience", true, undefined, undefined, true],
             ["Production", "I’ll produce transformative educational content end to end for your staff or users", true, undefined, undefined, true],
             ["Consulting", "I’ll clarify, analyze, and plan your next best product design move", true, undefined, undefined, true],
@@ -494,9 +494,9 @@ const CONTACT: StatTableData = {
           category: "Owners (cofounders and investors)",
           metrics: [
             ["", "Bring the market or the capital; I’ll bring the build", false],
-            ["Operators", "Public: I partner with operators in need of a builder", true],
+            ["Operators (revenue)", "I partner with operators in need of a builder", true],
             ["Services", "I build, sell, and fulfill the product offer; you acquire the customers and manage the resources", true, undefined, undefined, true],
-            ["Startups", "Private: give me equity and I’ll take your product to the next level", true],
+            ["Startups (equity)", "Give me equity and I’ll take your product to the next level", true],
             ["Product", "I allocate and manage product development for maximal impact; you manage the rest", true, undefined, undefined, true],
           ],
         },
