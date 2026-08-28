@@ -99,9 +99,9 @@ const LORENZO: StatTableData = {
               "Exercise",
               [
                 "I started exercising at 16 and never stopped, spending multiple years on various disciplines, from martial arts to sprinting to CrossFit to the ",
-                <WikiLink key="tx" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X method</WikiLink>,
+                <WikiLink key="tx" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X Method</WikiLink>,
                 " and today’s ",
-                <WikiLink key="msp" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">MSP system</WikiLink>,
+                <WikiLink key="msp" href="https://www.youtube.com/@LorenzoDelano">MSP System</WikiLink>,
                 " (review my ",
                 <WikiLink key="fit" href="/health#capacity">fitness results</WikiLink>,
                 ")",
@@ -403,7 +403,7 @@ const CONTACT: StatTableData = {
         {
           category: "Learners (viewers and readers)",
           metrics: [
-            ["", "I’ve published everything below; use it free on your own, or join in with me inside", false],
+            ["", "I’ve published everything below; use it free on your own, or join me inside", false],
             ["Content (free)", "Master your time, exercise, and profile by yourself for free", true],
             [
               "Training",
@@ -533,7 +533,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-learning",
         cite: (
           <>
-            <strong>Learning</strong>: <em><WikiLink href="/knowledge#works">Design Methodologies</WikiLink> (since 2017)</em>; I’ve created both learning and teaching design methodologies over the years; skills of classification and architecture • page (Web)
+            <strong>Meta-learning</strong>: <em><WikiLink href="/knowledge#works">Design Methodologies</WikiLink> (since 2017)</em>; I’ve created both learning and teaching design methodologies; skills of classification and architecture • page (Web)
           </>
         ),
       },
@@ -557,7 +557,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-exercise",
         cite: (
           <>
-            <strong>Exercise</strong>: <em>Programmed Practice (since 2008)</em>; train with the <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X Method</WikiLink> or <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">Exercise Design</WikiLink>, my <WikiLink href="/health#capacity">fitness</WikiLink> the proof; skills of architecture and production • courses (YouTube)
+            <strong>Exercise</strong>: <em>Programmed Practice (since 2008)</em>; train with the <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X Method</WikiLink> or <WikiLink href="https://www.youtube.com/@LorenzoDelano">MSP System</WikiLink>, my <WikiLink href="/health#capacity">results</WikiLink> the proof; skills of architecture and production • courses (YouTube)
           </>
         ),
       },
@@ -602,7 +602,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-design-solo",
         cite: (
           <>
-            <strong>Design</strong>: <em>Client Report (2022, Cape Town)</em>; <WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">this video</WikiLink> illustrates the depth of my personalized designs; skills of analysis and production • video (Loom)
+            <strong>Design</strong>: <em><WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Client Report</WikiLink> (2022, Cape Town)</em>; my reports combine maps, status, goals, and the plans to achieve them; skills of analysis and production • video (Loom)
           </>
         ),
       },
@@ -618,7 +618,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-coaching-solo",
         cite: (
           <>
-            <strong>Coaching</strong>: <em>Behavioral Change (2022, Utah)</em>; I help people change behavior for the results they seek, <WikiLink href="https://youtu.be/8p5pAPpmy1o">this family</WikiLink> no exception; skills of training and analysis • video (YouTube)
+            <strong>Coaching</strong>: <em>Behavioral Change (2022, Utah)</em>; I help people change behavior for the results they seek, <WikiLink href="https://youtu.be/8p5pAPpmy1o">this family</WikiLink> is no exception; skills of training and analysis • video (YouTube)
           </>
         ),
       },
@@ -626,7 +626,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-interventions-solo",
         cite: (
           <>
-            <strong>Interventions</strong>: <em>Lifestyle Management (2019, Los Angeles)</em>; I help a <WikiLink href="https://youtu.be/r4L78CYP99I">celebrity</WikiLink> or entrepreneur reset their environment; skills of profiling and planning • video (YouTube)
+            <strong>Interventions</strong>: <em>Lifestyle Management (2019, Los Angeles)</em>; I’ve helped celebrities and entrepreneurs reset their environments in person; skills of profiling and planning
           </>
         ),
       },
@@ -639,7 +639,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-design-teams",
         cite: (
           <>
-            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">education</WikiLink> and software experiences for teams and educators; skills of architecture and production • videos (Loom)
+            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">education</WikiLink> and <WikiLink href="https://youtu.be/IncVxo4Un9w">software</WikiLink> for teams and educators; skills of architecture and production • videos (YouTube; Loom)
           </>
         ),
       },
@@ -663,7 +663,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-training-teams",
         cite: (
           <>
-            <strong>Training</strong>: <em>Enterprise Productivity (since 2017)</em>; I help companies, big or <WikiLink href="https://www.youtube.com/watch?v=BYUzGC72SnQ">small</WikiLink>, maximize employee health and performance; skills of teaching and training • videos (YouTube)
+            <strong>Training</strong>: <em>Enterprise Productivity (since 2017)</em>; I help companies, <WikiLink href="https://youtu.be/ATpSICwbAvE?t=749">big</WikiLink> or <WikiLink href="https://www.youtube.com/watch?v=BYUzGC72SnQ">small</WikiLink>, maximize employee health and performance; skills of teaching and training • videos (YouTube)
           </>
         ),
       },
@@ -710,7 +710,7 @@ export default function AboutPage() {
       <p>
         Every way to use my work or hire my hands, from free courses to equity
         partnerships. One rule governs all of it: <strong>one commitment at a
-        time</strong>. If I take an employed or embedded role, I&rsquo;m fully committed
+        time</strong>. If I take an employed or contracted role, I&rsquo;m fully committed
         and take nothing else on; while I&rsquo;m engaged, new work queues until the
         current problem is solved. If any offer below fits, write to{" "}
         <WikiLink href="mailto:lorenzo@lorenzodelano.com">
