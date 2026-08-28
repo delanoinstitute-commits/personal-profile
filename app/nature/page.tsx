@@ -24,14 +24,14 @@ const INTELLECT: StatTableData = {
         {
           category: "Intelligence (processing power)",
           metrics: [
-            ["", "I measure my general ability with the full RIOT battery — results pending", false],
-            ["Full-scale IQ", "—", true, "General cognitive ability (g) — the composite the six abilities below load onto."],
-            ["Working memory", "—", true, "Holding and manipulating information in mind.", undefined, true],
-            ["Processing speed", "—", true, "How quickly you take in and respond to information.", undefined, true],
-            ["Fluid reasoning", "—", true, "Solving novel problems without relying on prior knowledge.", undefined, true],
-            ["Spatial ability", "—", true, "Reasoning about shapes, space, and visual relationships.", undefined, true],
-            ["Verbal reasoning", "—", true, "Reasoning with words, language, and meaning.", undefined, true],
-            ["Reaction time", "—", true, "Speed of response to a stimulus.", undefined, true],
+            ["", "I measure my general ability with the full RIOT battery (abilities as T-scores: mean 50, SD 10)", false],
+            ["Full-scale IQ", "112 (top 21.2%)", true, "General cognitive ability (g) — the composite the six abilities below load onto. Tested August 2026, full battery, ±3.7. Profile: VF+ (verbal and fluid strengths; 7.4% of adults). Flagged non-normed: the norm sample is US-based, so a South African examinee’s comparisons carry extra uncertainty."],
+            ["Working memory", "44 (26.5th percentile)", true, "Holding and manipulating information in mind. Subtests: visual reversal 46, computation span 42 (my lowest single score), exposure memory 50.", undefined, true],
+            ["Processing speed", "50 (49.6th percentile)", true, "How quickly you take in and respond to information. Subtests: symbol search 55, abstract matching 43.", undefined, true],
+            ["Fluid reasoning", "60 (84.5th percentile)", true, "Solving novel problems without relying on prior knowledge. Subtests: matrix reasoning 50, visual puzzles 64, figure weights 62.", undefined, true],
+            ["Spatial ability", "54 (65.6th percentile)", true, "Reasoning about shapes, space, and visual relationships. Subtests: object rotation 56, SToVeS 54, spatial orientation 51.", undefined, true],
+            ["Verbal reasoning", "64 (92.5th percentile)", true, "Reasoning with words, language, and meaning — in my second language, against a US norm sample. Subtests: vocabulary 61, information 60, analogies 66 (94th percentile, my highest single score).", undefined, true],
+            ["Reaction time", "57 (75.5th percentile)", true, "Speed of response to a stimulus. Subtests: simple 57, choice 55.", undefined, true],
           ],
         },
         {
@@ -177,7 +177,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "aptitude-data",
         cite: (
           <>
-            <strong>Aptitude</strong>: <em>Adaptive IQ battery (pending)</em>; tests for working memory, processing speed, fluid reasoning, spatial ability, verbal reasoning, and reaction time (RIOT) • report (RIOT IQ)
+            <strong>Aptitude</strong>: <em><WikiLink href="https://www.riotiq.com/app/share/77c600a4-14df-4c10-8055-59c55f384f3a">Adaptive IQ battery</WikiLink> (2026)</em>; tests for working memory, processing speed, fluid reasoning, spatial ability, verbal reasoning, and reaction time (RIOT) • report (RIOT IQ)
           </>
         ),
       },

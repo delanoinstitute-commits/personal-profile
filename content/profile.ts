@@ -227,11 +227,10 @@ export const INFOBOX: InfoboxGroup[] = [
     // The mind — the Nature page's headline outputs, one composite per row.
     heading: "Psychological",
     headingLink: { text: "See Nature", href: "/nature" },
-    // Intelligence leads once the RIOT result is wired on Nature — until
-    // then the row shows Pending; the infobox never cites a number its
-    // source page lacks.
+    // Intelligence leads the group — full-scale RIOT result, wired the same
+    // day as the Nature page's battery (August 2026).
     rows: [
-      { label: "Intelligence", values: [{ text: "RIOT: Pending" }] },
+      { label: "Intelligence", values: [{ text: "RIOT: Full-scale IQ 112" }] },
       { label: "Worldview", values: [{ text: "Rational optimist" }] },
       {
         label: "Personality",
