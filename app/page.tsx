@@ -1,6 +1,7 @@
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
+import { References, type ReferenceSection } from "@/components/References";
 import WikiLink from "@/components/WikiLink";
 
 // The About page — the site's preamble and integration, written last. Three
@@ -50,8 +51,9 @@ const LORENZO: StatTableData = {
             ],
             [
               "Mission",
-              "I help expand consciousness for all, starting with myself",
+              "I help expand consciousness by moving our hours from surviving, to mastering, to serving",
               true,
+              "Consciousness expands when maintenance shrinks, the non-outsourceable is mastered (exercise, eating, studying, finances, time, mind), and the hours freed go to the problems we care about most — serving others with our uniqueness. Musk works at the planetary level; I work at the individual: self-sufficiency, then self-mastery.",
             ],
             ["Personal", "I solve my own problems first, then publish the solutions free for anyone", true, undefined, undefined, true],
             ["Social", "I then help individuals apply the same solutions to their lives, partners, or families", true, undefined, undefined, true],
@@ -328,7 +330,18 @@ const WEBSITE: StatTableData = {
             ],
             ["Pages", "I keep all eight pages on one identical layout", true],
             ["Taxonomy", "Each page holds three branches of two bands each, in accordions for maximal compression", true, undefined, undefined, true],
-            ["References", "Each page closes with the data, guidelines, and studies behind it", true, undefined, undefined, true],
+            [
+              "References",
+              [
+                "Each page closes with the ",
+                <WikiLink key="rfs" href="#references">data, guidelines, and studies</WikiLink>,
+                " behind it",
+              ],
+              true,
+              undefined,
+              undefined,
+              true,
+            ],
           ],
         },
       ],
@@ -505,6 +518,159 @@ const CONTACT: StatTableData = {
   ],
 };
 
+
+// References (Evidence) — the page's receipts, mirroring its own structure:
+// the first section evidences the Background band (personal examples and
+// published works), the second and third evidence the Contact offers
+// (Individuals and Companies). Nearly every resource also lives on
+// /knowledge — reorganized here so the most load-bearing proof reaches
+// visitors who never make it that far.
+const ABOUT_EVIDENCE: ReferenceSection[] = [
+  {
+    label: "My skills demonstrated through personal examples and published works",
+    items: [
+      {
+        id: "ev-learning",
+        cite: (
+          <>
+            <strong>Learning</strong>: <em><WikiLink href="/knowledge#works">Design Methodologies</WikiLink> (since 2017)</em>; I’ve created both learning and teaching design methodologies over the years; skills of classification and architecture • page (Web)
+          </>
+        ),
+      },
+      {
+        id: "ev-time",
+        cite: (
+          <>
+            <strong>Time</strong>: <em>Life Management (since 2015)</em>; master your time with <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">this free course</WikiLink> while referencing my <WikiLink href="/lifestyle">Lifestyle</WikiLink> page; skills of planning and teaching • course (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "ev-space",
+        cite: (
+          <>
+            <strong>Space</strong>: <em>Spatial Planning (since 2012)</em>; plan a training space with <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">this free course</WikiLink>, like my <WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">studio apartment</WikiLink>; skills of architecture and planning • course (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "ev-exercise",
+        cite: (
+          <>
+            <strong>Exercise</strong>: <em>Programmed Practice (since 2008)</em>; train with the <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X Method</WikiLink> or <WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">Exercise Design</WikiLink>, my <WikiLink href="/health#capacity">fitness</WikiLink> the proof; skills of architecture and production • courses (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "ev-nutrition",
+        cite: (
+          <>
+            <strong>Nutrition</strong>: <em>Planned Practice (since 2009)</em>; no course yet, but my <WikiLink href="/health#integrity">body composition</WikiLink> stands as the example to follow; skills of analysis and planning • page (Web)
+          </>
+        ),
+      },
+      {
+        id: "ev-mind",
+        cite: (
+          <>
+            <strong>Mind</strong>: <em>Inner Game (since 2009)</em>; no courses yet, but my <WikiLink href="/nature">Nature</WikiLink> page holds the profiled and measured results; skills of profiling and analysis • page (Web)
+          </>
+        ),
+      },
+      {
+        id: "ev-finance",
+        cite: (
+          <>
+            <strong>Finance</strong>: <em>Asset Allocation (since 2016)</em>; no course yet either, but my <WikiLink href="/wealth">Wealth</WikiLink> map publishes the whole system and its benchmarks; skills of classification and planning • page (Web)
+          </>
+        ),
+      },
+      {
+        id: "ev-technology",
+        cite: (
+          <>
+            <strong>Technology</strong>: <em>Tactical Productivity (since 2015)</em>; I master each generation of tools, this AI-coded <WikiLink href="/">website</WikiLink> the latest proof; skills of architecture and production • website (Vercel)
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    label: "My skills demonstrated working with individuals, couples, and families",
+    items: [
+      {
+        id: "ev-design-solo",
+        cite: (
+          <>
+            <strong>Design</strong>: <em>Client Report (2022, Cape Town)</em>; <WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">this video</WikiLink> illustrates the depth of my personalized designs; skills of analysis and production • video (Loom)
+          </>
+        ),
+      },
+      {
+        id: "ev-profiling-solo",
+        cite: (
+          <>
+            <strong>Profiling</strong>: <em>Personal Profiling (2015, New York)</em>; I’ve profiled 20+ professionals via my <WikiLink href="https://artrepreneurs.co.za/">marketing</WikiLink> and <WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">education</WikiLink> agencies; skills of profiling and management • pages (Web)
+          </>
+        ),
+      },
+      {
+        id: "ev-coaching-solo",
+        cite: (
+          <>
+            <strong>Coaching</strong>: <em>Behavioral Change (2022, Utah)</em>; I help people change behavior for the results they seek, <WikiLink href="https://youtu.be/8p5pAPpmy1o">this family</WikiLink> no exception; skills of training and analysis • video (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "ev-interventions-solo",
+        cite: (
+          <>
+            <strong>Interventions</strong>: <em>Lifestyle Management (2019, Los Angeles)</em>; I help a <WikiLink href="https://youtu.be/r4L78CYP99I">celebrity</WikiLink> or entrepreneur reset their environment; skills of profiling and planning • video (YouTube)
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    label: "My skills demonstrated working with professionals and companies",
+    items: [
+      {
+        id: "ev-design-teams",
+        cite: (
+          <>
+            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">education</WikiLink> and software experiences for teams and educators; skills of architecture and production • videos (Loom)
+          </>
+        ),
+      },
+      {
+        id: "ev-production-teams",
+        cite: (
+          <>
+            <strong>Production</strong>: <em>Education Products (since 2017)</em>; I <WikiLink href="https://www.loom.com/share/2ada01c69cfe4b14af5f087d05068261">produce</WikiLink> education products from start to finish, in-house or directly; skills of production and management • video (Loom)
+          </>
+        ),
+      },
+      {
+        id: "ev-consulting-teams",
+        cite: (
+          <>
+            <strong>Consulting</strong>: <em><WikiLink href="https://youtu.be/zQ9A5bylhoc">Strategic Advice</WikiLink> (since 2023)</em>; I help others focus on what matters most and accelerate their development; skills of profiling and analysis • video (YouTube)
+          </>
+        ),
+      },
+      {
+        id: "ev-training-teams",
+        cite: (
+          <>
+            <strong>Training</strong>: <em>Enterprise Productivity (since 2017)</em>; I help companies, big or <WikiLink href="https://www.youtube.com/watch?v=BYUzGC72SnQ">small</WikiLink>, maximize employee health and performance; skills of teaching and training • videos (YouTube)
+          </>
+        ),
+      },
+    ],
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -553,6 +719,11 @@ export default function AboutPage() {
         .
       </p>
       <NestedTable {...CONTACT} />
+
+      <References
+        title={<>References <span className="heading-paren">(Evidence)</span></>}
+        sections={ABOUT_EVIDENCE}
+      />
     </>
   );
 }

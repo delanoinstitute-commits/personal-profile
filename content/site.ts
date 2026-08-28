@@ -44,6 +44,7 @@ export const NAV_GROUPS: NavGroup[] = [
           { label: "Lorenzo", anchor: "lorenzo" },
           { label: "Website", anchor: "website" },
           { label: "Contact", anchor: "contact" },
+          { label: "References", anchor: "references", kind: "refs" },
         ],
       },
       {
