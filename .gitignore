@@ -38,4 +38,6 @@ yarn-error.log*
 next-env.d.ts
 
 # Un-redacted medical reports — never commit; redact to images before shipping
-/public/reports/
+/public/reports/*
+# Vetted for publication (scores only; no ID, DOB, or contact details):
+!/public/reports/hexaco.png

@@ -234,7 +234,7 @@ export const INFOBOX: InfoboxGroup[] = [
       { label: "Worldview", values: [{ text: "Rational optimist" }] },
       {
         label: "Personality",
-        values: [{ text: "HEXACO: Disciplined, unflappable, and independent" }],
+        values: [{ text: "HEXACO: Disciplined, honest, and curious" }],
       },
       {
         label: "Values",

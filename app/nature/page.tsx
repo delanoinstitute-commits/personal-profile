@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
+import Tooltip from "@/components/Tooltip";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import { References, type ReferenceSection } from "@/components/References";
@@ -26,12 +27,12 @@ const INTELLECT: StatTableData = {
           metrics: [
             ["", "I measure my general ability with the full RIOT battery (abilities as T-scores: mean 50, SD 10)", false],
             ["Full-scale IQ", "112 (top 21.2%)", true, "General cognitive ability (g) — the composite the six abilities below load onto. Tested August 2026, full battery, ±3.7. Profile: VF+ (verbal and fluid strengths; 7.4% of adults). Flagged non-normed: the norm sample is US-based, so a South African examinee’s comparisons carry extra uncertainty."],
-            ["Working memory", "44 (26.5th percentile)", true, "Holding and manipulating information in mind. Subtests: visual reversal 46, computation span 42 (my lowest single score), exposure memory 50.", undefined, true],
-            ["Processing speed", "50 (49.6th percentile)", true, "How quickly you take in and respond to information. Subtests: symbol search 55, abstract matching 43.", undefined, true],
-            ["Fluid reasoning", "60 (84.5th percentile)", true, "Solving novel problems without relying on prior knowledge. Subtests: matrix reasoning 50, visual puzzles 64, figure weights 62.", undefined, true],
-            ["Spatial ability", "54 (65.6th percentile)", true, "Reasoning about shapes, space, and visual relationships. Subtests: object rotation 56, SToVeS 54, spatial orientation 51.", undefined, true],
             ["Verbal reasoning", "64 (92.5th percentile)", true, "Reasoning with words, language, and meaning — in my second language, against a US norm sample. Subtests: vocabulary 61, information 60, analogies 66 (94th percentile, my highest single score).", undefined, true],
+            ["Fluid reasoning", "60 (84.5th percentile)", true, "Solving novel problems without relying on prior knowledge. Subtests: matrix reasoning 50, visual puzzles 64, figure weights 62.", undefined, true],
             ["Reaction time", "57 (75.5th percentile)", true, "Speed of response to a stimulus. Subtests: simple 57, choice 55.", undefined, true],
+            ["Spatial ability", "54 (65.6th percentile)", true, "Reasoning about shapes, space, and visual relationships. Subtests: object rotation 56, SToVeS 54, spatial orientation 51.", undefined, true],
+            ["Processing speed", "50 (49.6th percentile)", true, "How quickly you take in and respond to information. Subtests: symbol search 55, abstract matching 43.", undefined, true],
+            ["Working memory", "44 (26.5th percentile)", true, "Holding and manipulating information in mind. Subtests: visual reversal 46, computation span 42 (my lowest single score), exposure memory 50.", undefined, true],
           ],
         },
         {
@@ -76,13 +77,13 @@ const CHARACTER: StatTableData = {
         {
           category: "Personality (default dispositions)",
           metrics: [
-            ["", "I am disciplined, unflappable, and independent", false],
-            ["Honesty-Humility", "pending", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn’t measure."],
-            ["Emotionality", "1st (very low)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent."],
-            ["eXtraversion", "29th", true, "Sociability, assertiveness, and energy drawn from others."],
-            ["Agreeableness", "30th", true, "Patience, forgiveness, and cooperation versus temper and criticism."],
-            ["Conscientiousness", "96th", true, "Diligence, organization, self-discipline, and reliability."],
-            ["Openness", "49th", true, "Curiosity, imagination, and openness to new experience."],
+            ["", "I am disciplined, honest, and curious (factors scored 1–7)", false],
+            ["Conscientiousness", "6.87 (above the 90th percentile)", true, "Diligence, organization, self-discipline, and reliability. Facets: organization 6.35, diligence 6.42, perfectionism 6.96, prudence 5.76."],
+            ["Honesty-Humility", "6.25 (~90th percentile)", true, "Sincerity, fairness, and modesty — the integrity factor, which OCEAN doesn’t measure. Facets: sincerity 5.39, fairness 6.49, greed avoidance 6.12, modesty 5.28."],
+            ["Openness", "5.79 (above median)", true, "Curiosity, imagination, and openness to new experience. Facets: aesthetic appreciation 5.02, inquisitiveness 6.53, creativity 5.53, unconventionality 5.13."],
+            ["Agreeableness", "5.34 (median)", true, "Patience, forgiveness, and cooperation versus temper and criticism. Facets: forgiveness 6.50, gentleness 5.05, flexibility 4.26, patience 5.08."],
+            ["eXtraversion", "4.81 (below median)", true, "Sociability, assertiveness, and energy drawn from others. Facets: social self-esteem 4.54, social boldness 5.84, sociability 2.66 (bottom decile), liveliness 6.29."],
+            ["Emotionality", "4.73 (below median)", true, "Fearfulness, anxiety, sentimentality, and need for support; low means emotionally tough and independent. Facets: fearfulness 5.95, anxiety 4.51, dependence 3.57, sentimentality 5.38."],
           ],
         },
         {
@@ -193,7 +194,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "temperament-personality-data",
         cite: (
           <>
-            <strong>Temperament</strong>: <em>Personality inventory (pending)</em>; tests for honesty-humility, emotionality, extraversion, agreeableness, conscientiousness, and openness (HEXACO-PI-R) • report (hexaco.org)
+            <strong>Temperament</strong>: <em><Tooltip media={{ src: "/reports/hexaco.png", alt: "HEXACO-PI-R report chart: six factors and 25 facets with percentile markers" }} content="HEXACO-PI-R full report (August 2026) — six factors and 25 facets scored 1–7 against the online sample’s 10th, 50th, and 90th percentiles.">Personality inventory</Tooltip> (2026)</em>; tests for honesty-humility, emotionality, extraversion, agreeableness, conscientiousness, and openness (HEXACO-PI-R) • report (hexaco.org)
           </>
         ),
       },
