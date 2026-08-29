@@ -1008,48 +1008,38 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
 
 export default function LifestylePage() {
   return (
-    <>
+    <div className="zoned">
       <PageHeading title="Lifestyle" />
 
-      <p className="lead">
-        Lifestyle is one life read three ways: what I do (activity), when I do it
-        (time), and where I do it (space). Together they are the design I actually live
-        by, rather than the one I would report.
+      <p className="page-hook">Most people list good intentions. My twelve habits sum to twenty-four hours.</p>
+      <p className="page-promise">
+        My complete lifestyle design — every habit with its daily allocation, the
+        schedule that places it, and the spaces that host it, from city choice down to my
+        own four walls.
       </p>
       <p>
-        The twelve habits below account for a full twenty-four hours. That is the point
-        of the taxonomy: it is a partition of the day, not a list of good intentions — if
-        the hours don&rsquo;t sum, something is mis-stated. Each habit&rsquo;s daily
-        allocation sits in its definition; the schedule that places them follows under
-        time, and where they happen under space.
+        This page reads one life in three branches: <WikiLink href="#activity">Activity</WikiLink>{" "}
+        (what I do), <WikiLink href="#time">Time</WikiLink> (when I do it), and{" "}
+        <WikiLink href="#space">Space</WikiLink> (where I do it). The twelve habits
+        partition the day — if the hours don&rsquo;t sum, something is mis-stated — and
+        each carries its allocation in its definition. Time fixes them to daily and
+        weekly blocks so the design survives contact with an actual calendar, and Space
+        grades the places at two scales, outermost first; the outer scale doubles as my
+        relocation scorecard.
       </p>
 
+      <hr className="zone-rule" />
+
       <h2 id="activity">Activity <span className="heading-paren">(Habits)</span></h2>
-      <p>
-        What I do, in two registers that mirror each other — alone (individual) and with
-        others (relational): creative solving against collaborative service, physiologic
-        stress against metabolic energy, private care against shared experience. Each
-        category pairs one active habit with one passive, and every habit is one of three
-        kinds — growth, maintenance, or leisure.
-      </p>
       <NestedTable {...ACTIVITY} />
 
       <h2 id="time">Time <span className="heading-paren">(Routines)</span></h2>
-      <p>
-        When the habits happen, in two registers: the shape of a single day (daily) and
-        the shape of a week (weekly). Hours are fixed to blocks so the allocation above
-        survives contact with an actual calendar.
-      </p>
       <NestedTable {...TIME} />
 
       <h2 id="space">Space <span className="heading-paren">(Resources)</span></h2>
-      <p>
-        Where the habits happen, at two scales, outermost first. The macro scale weighs
-        the place itself — nature, market, and people at city size. The micro scale is
-        where I live, read from my own four walls outward — residential, then the market
-        and civic amenities within reach; it doubles as a relocation checklist.
-      </p>
       <NestedTable {...SPACE} />
+
+      <hr className="zone-rule" />
 
       <References
         title={<>References <span className="heading-paren">(Personal)</span></>}
@@ -1061,6 +1051,6 @@ export default function LifestylePage() {
         title={<>References <span className="heading-paren">(Social)</span></>}
         sections={LIFESTYLE_SOCIAL}
       />
-    </>
+    </div>
   );
 }

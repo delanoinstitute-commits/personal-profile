@@ -673,57 +673,54 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="zoned">
       <PageHeading title="About" />
 
-      <p className="lead">
-        What makes a person? This site is my answer, demonstrated on the only subject I
-        can fully access: myself. This page is the preamble — one branch introduces me,
-        one explains the site, and one lays out every way to work with me. The other
-        seven pages hold the record.
+      <p className="page-hook">What makes a person? This site is my answer, demonstrated on myself.</p>
+      <p className="page-promise">
+        Who I am, how the site works, and every way to work with me — from free courses
+        to equity partnerships — with the other seven pages holding the record.
       </p>
-
-      <h2 id="lorenzo">
-        Lorenzo <span className="heading-paren">(Introduction)</span>
-      </h2>
       <p>
-        The person in brief: what I&rsquo;m about, what I&rsquo;ve done, and where life
-        stands now. Every claim below compresses a page that proves it — follow the
-        links inward when a line earns your doubt.
-      </p>
-      <NestedTable {...LORENZO} />
-
-      <h2 id="website">
-        Website <span className="heading-paren">(Guide)</span>
-      </h2>
-      <p>
-        Why the site exists and how to use it fast. It runs on one conviction: it is too
-        easy to hide behind aesthetics and social proof, and an interlinked, referenced
-        record is harder to fake than a feed. Read it yourself or hand it to your AI —
-        it was built for both.
-      </p>
-      <NestedTable {...WEBSITE} />
-
-      <h2 id="contact">
-        Contact <span className="heading-paren">(Offers)</span>
-      </h2>
-      <p>
-        Every way to use my work or hire my hands, from free courses to equity
-        partnerships. One rule governs all of it: <strong>one commitment at a
-        time</strong>. If I take an employed or contracted role, I&rsquo;m fully committed
-        and take nothing else on; while I&rsquo;m engaged, new work queues until the
-        current problem is solved. If any offer below fits, write to{" "}
+        This page is the preamble, in three branches:{" "}
+        <WikiLink href="#lorenzo">Lorenzo</WikiLink> (the person in brief — every claim
+        compresses a page that proves it, so follow the links inward when a line earns
+        your doubt), <WikiLink href="#website">Website</WikiLink> (why it exists and how
+        to use it fast: an interlinked, referenced record is harder to fake than a feed —
+        read it yourself or hand it to your AI, it was built for both), and{" "}
+        <WikiLink href="#contact">Contact</WikiLink> (every offer, governed by one rule:{" "}
+        <strong>one commitment at a time</strong> — engaged means fully committed, and
+        new work queues until the current problem is solved). If any offer fits, write
+        to{" "}
         <WikiLink href="mailto:lorenzo@lorenzodelano.com">
           lorenzo@lorenzodelano.com
         </WikiLink>
         .
       </p>
+
+      <hr className="zone-rule" />
+
+      <h2 id="lorenzo">
+        Lorenzo <span className="heading-paren">(Introduction)</span>
+      </h2>
+      <NestedTable {...LORENZO} />
+
+      <h2 id="website">
+        Website <span className="heading-paren">(Guide)</span>
+      </h2>
+      <NestedTable {...WEBSITE} />
+
+      <h2 id="contact">
+        Contact <span className="heading-paren">(Offers)</span>
+      </h2>
       <NestedTable {...CONTACT} />
+
+      <hr className="zone-rule" />
 
       <References
         title={<>References <span className="heading-paren">(Evidence)</span></>}
         sections={ABOUT_EVIDENCE}
       />
-    </>
+    </div>
   );
 }

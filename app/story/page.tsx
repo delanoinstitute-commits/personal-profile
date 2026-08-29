@@ -242,62 +242,47 @@ const STORY_MEDIA: ReferenceSection[] = [
 
 export default function StoryPage() {
   return (
-    <>
+    <div className="zoned">
       <PageHeading
         title="Story"
       />
 
-      <p className="lead">
-        A story is one life read three ways: what arrived without my consent
-        (inheritance), what I was placed in and answered (development), and what I chose
-        against both (emergence). Together they separate what happened to me from what I
-        did about it.
+      <p className="page-hook">My biography separates what happened to me from what I did about it.</p>
+      <p className="page-promise">
+        My whole record, germline to present — genotype and ancestry read from raw
+        sequencing, the family pedigree, the timeline of every lived stage, and the
+        choices nothing in them predicts.
       </p>
       <p>
-        The order is causal rather than chronological, and a fact belongs to whichever
-        branch its <em>timing</em> assigns it. Inheritance was true at the instant of
-        birth, when no response was possible. Development was administered over years, so
-        a response was possible but the terms were not mine. Emergence is what is left:
-        the choices that neither the genome nor the upbringing predicts. Most of a life
-        is the first two, which is the point — the interesting part is how little is
-        genuinely the third, and how much it matters.
+        This page reads in three branches, ordered by causality rather than chronology:{" "}
+        <WikiLink href="#inheritance">Inheritance</WikiLink> (what arrived without my
+        consent), <WikiLink href="#development">Development</WikiLink> (what I was placed
+        in and answered), and <WikiLink href="#emergence">Emergence</WikiLink> (what I
+        chose against both). A fact belongs to whichever branch its timing assigns it,
+        and lived stages carry a record while unreached ones carry an intent — a plan is
+        never mistaken for a fact. Most of a life is the first two branches, which is the
+        point: the interesting part is how little is genuinely the third, and how much it
+        matters.
       </p>
+
+      <hr className="zone-rule" />
 
       <h2 id="inheritance">
         Inheritance <span className="heading-paren">(Identity)</span>
       </h2>
-      <p>
-        What arrived without consent, in two registers divided by how it reached me:
-        what came down a germline (biological) and what came with a birth certificate
-        (sociological). None of it was chosen; all of it is load-bearing. Genotype and
-        ancestry are read from raw sequencing rather than asserted, and the family health
-        history is arranged as a clinical pedigree.
-      </p>
       <NestedTable {...INHERITANCE} />
 
       <h2 id="development">
         Development <span className="heading-paren">(Timeline)</span>
       </h2>
-      <p>
-        The years themselves, in two halves — the ones that formed me (early) and the
-        ones I spend as a formed adult (adult). Lived stages carry a{" "}
-        <strong>record</strong>; stages I have not reached carry an{" "}
-        <strong>intent</strong>, so that a plan is never mistaken for a fact.
-      </p>
       <NestedTable {...DEVELOPMENT} />
 
       <h2 id="emergence">
         Emergence <span className="heading-paren">(Agency)</span>
       </h2>
-      <p>
-        What is left once inheritance and development are subtracted: the choices no
-        circumstance accounts for, in two registers. Dispositions are what I recognised
-        myself in — the stories, people, and fields I was drawn to rather than assigned.
-        Decisions are the moments I quit, left, or gave something up while it was still
-        working, on the promise of something better. The test for both is that nothing in
-        the first two branches predicts them.
-      </p>
       <NestedTable {...EMERGENCE} />
+
+      <hr className="zone-rule" />
 
       <References
         title={<>References <span className="heading-paren">(Data)</span></>}
@@ -309,6 +294,6 @@ export default function StoryPage() {
         title={<>References <span className="heading-paren">(Media)</span></>}
         sections={STORY_MEDIA}
       />
-    </>
+    </div>
   );
 }

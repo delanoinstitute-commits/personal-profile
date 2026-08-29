@@ -514,45 +514,39 @@ const HEALTH_EVIDENCE: ReferenceSection[] = [
 
 export default function HealthPage() {
   return (
-    <>
+    <div className="zoned">
       <PageHeading title="Health" />
 
-      <p className="lead">
-        Health is one body read at three levels: how soundly it&rsquo;s built (integrity),
-        how steadily it holds — and returns to — rest (balance), and what it can do under
-        load (capacity) — from full rest to all-out effort.
+      <p className="page-hook">Every health claim on this page has a lab report behind it.</p>
+      <p className="page-promise">
+        My full 2026 health status — body composition, blood chemistry, and performance
+        under load — measured clinically, benchmarked against reference ranges, with the
+        redacted reports published in the references.
       </p>
       <p>
-        At 1.76 m and 74.3 kg I sit high on all three: a lean and muscular frame over sound
-        bone, clean blood and a heart that idles low yet opens a wide reserve, and broad
-        strength with deep aerobic capacity. Below is my health status for 2026.
+        This page reads one body at three levels, from full rest to all-out effort:{" "}
+        <WikiLink href="#integrity">Integrity</WikiLink> (how soundly it&rsquo;s built),{" "}
+        <WikiLink href="#balance">Balance</WikiLink> (how steadily it holds, and returns
+        to, rest), and <WikiLink href="#capacity">Capacity</WikiLink> (what it can do
+        under load). If you only read one row per level: a lean, muscular frame over
+        sound bone at 1.76 m and 74.3 kg, blood that idles low and calm yet opens a wide
+        cardiac reserve, and deep aerobic capacity over head-to-toe strength. Hover any{" "}
+        <WikiLink href="#references">reference</WikiLink> for the report behind the
+        number.
       </p>
 
+      <hr className="zone-rule" />
+
       <h2 id="integrity">Integrity <span className="heading-paren">(Structure)</span></h2>
-      <p>
-        How my body is built and holds together, in two readings of one frame:
-        its make-up of muscle, fat, and bone (compositional) and its proportion (geometric).
-        Mine is lean and muscular over sound bone, carrying little central fat.
-      </p>
       <NestedTable {...STRUCTURAL_INTEGRITY} />
 
       <h2 id="balance">Balance <span className="heading-paren">(Homeostasis)</span></h2>
-      <p>
-        How steadily my body holds a resting state, and how well it returns to one
-        after load, in two readings of one system: its blood chemistry (biomolecular) and its
-        circulation (hemodynamic). Mine sits low and calm at rest yet opens a wide cardiac
-        reserve under effort, on low-risk lipids and a metabolism efficient even when stressed.
-      </p>
       <NestedTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="capacity">Capacity <span className="heading-paren">(Performance)</span></h2>
-      <p>
-        What my body can do under load, in two readings of one output: the force
-        and movement it produces (biomechanical) and the energy that fuels it (bioenergetic).
-        Mine is broad — strength and power head to toe, high aerobic capacity, and efficient
-        fuel use.
-      </p>
       <NestedTable {...FUNCTIONAL_CAPACITY} />
+
+      <hr className="zone-rule" />
 
       <References
         title={<>References <span className="heading-paren">(Data)</span></>}
@@ -564,6 +558,6 @@ export default function HealthPage() {
         title={<>References <span className="heading-paren">(Guidelines)</span></>}
         sections={HEALTH_EVIDENCE}
       />
-    </>
+    </div>
   );
 }

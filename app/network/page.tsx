@@ -653,64 +653,48 @@ const NETWORK_GUIDELINES: ReferenceSection[] = [
 
 export default function NetworkPage() {
   return (
-    <>
+    <div className="zoned">
       <PageHeading
         title="Network"
       />
 
-      <p className="lead">
-        My network is the team my life runs on. Every human relationship points one of
-        three ways — toward the people I depend on (nurture), beside the people I share
-        with (progress), and toward the people who depend on me (contribution) — and
-        every bond is ultimately one of two kinds: given or chosen. A network is the
-        record of what life gave me and what I chose back.
+      <p className="page-hook">My network is the team my life runs on. This is the roster.</p>
+      <p className="page-promise">
+        The complete taxonomy of my human relationships — who holds each seat, the
+        benchmark each is held to, and which seats stand open, protected, or held by my
+        own hands.
       </p>
       <p>
-        This page is the site&rsquo;s dependent variable: health, knowledge, and wealth
-        mean little until they are spent with and on people. The map doubles as index
-        and benchmark — who holds each role, what makes each relationship good, and
-        which seats stand open (pending), protected (private), or held by my own hands
-        (self-sufficient). The aim is not the biggest network but the right one: a
-        small map kept powerful by its comprehensives, who absorb whole services under
-        one roof, and its connectors, who carry whole worlds behind them.
+        This page reads every relationship in one of three directions:{" "}
+        <WikiLink href="#nurture">Nurture</WikiLink> (the people I take from),{" "}
+        <WikiLink href="#progress">Progress</WikiLink> (the peers I share with), and{" "}
+        <WikiLink href="#contribution">Contribution</WikiLink> (the people who depend on
+        me). Roles appear in the order life requires them; people are graded on four
+        A&rsquo;s (available, able, affective, advocating) and services on three
+        C&rsquo;s (consistent, comprehensive, current) as encounters thin. The aim is not
+        the biggest network but the right one — and the one branch valued for itself is
+        Progress: these relationships are not a means to the others; they are what the
+        others are for.
       </p>
+
+      <hr className="zone-rule" />
 
       <h2 id="nurture">
         Nurture <span className="heading-paren">(Support)</span>
       </h2>
-      <p>
-        The relationships I take from: the people who give the organism what it
-        needs, when it needs it — healing below health, sustenance at it, inputs to
-        build on. The widest branch, drawing on all five pages, because an organism
-        takes whatever it needs. Roles appear in the order life requires them, each
-        held to its benchmark: the person’s qualities (available, able, affective,
-        advocating) where encounters are close, the service’s (consistent,
-        comprehensive, current) where they thin.
-      </p>
       <NestedTable {...NURTURE} />
 
       <h2 id="progress">
         Progress <span className="heading-paren">(Collaboration)</span>
       </h2>
-      <p>
-        The relationships I share with: peers beside me rather than above or below,
-        building past baseline rather than back to it. The chosen branch — hearts,
-        rooms, and ventures elected on purpose — where collaboration takes every form
-        from candor to contest. The one branch valued for itself: these relationships
-        are not a means to the others; they are what the others are for.
-      </p>
       <NestedTable {...PROGRESS} />
 
       <h2 id="contribution">
         Contribution <span className="heading-paren">(Service)</span>
       </h2>
-      <p>
-        The relationships I give to: the people who depend on me, holding claims on
-        what I build. The narrowest branch, because giving requires surplus — story,
-        knowledge, and wealth are where I hold more than I need — and the one built
-        to widen: every pending seat here is a forecast.
-      </p>
       <NestedTable {...CONTRIBUTION} />
+
+      <hr className="zone-rule" />
 
       <References
         title={<>References <span className="heading-paren">(Data)</span></>}
@@ -722,6 +706,6 @@ export default function NetworkPage() {
         title={<>References <span className="heading-paren">(Guidelines)</span></>}
         sections={NETWORK_GUIDELINES}
       />
-    </>
+    </div>
   );
 }

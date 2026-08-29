@@ -728,58 +728,47 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
 
 export default function WealthPage() {
   return (
-    <>
+    <div className="zoned">
       <PageHeading
         title="Wealth"
       />
 
-      <p className="lead">
-        Wealth is one balance sheet read three ways: what protects it (security), what
-        leaves it (efficiency), and what compounds it (growth). The branches are also a
-        sequence — insure first, then earn; spend and settle cleanly; invest what
-        remains, and venture only past sufficiency.
+      <p className="page-hook">Every account my money moves through is public. No balance is.</p>
+      <p className="page-promise">
+        My complete financial architecture — the insurance floor, the income exchanges,
+        the expense cascade, and the investment waterfall — every account held to a named
+        benchmark.
       </p>
       <p>
-        Unlike the other status pages, this one publishes no readings. Balances, net
-        worth, and holdings are excluded from the site by design; what is public is the
-        system itself — every account the money moves through, and the benchmark each is
-        held to. The structure is auditable even where the numbers are private.
+        This page reads one balance sheet in three branches that are also a sequence:{" "}
+        <WikiLink href="#security">Security</WikiLink> (insure first, then earn),{" "}
+        <WikiLink href="#efficiency">Efficiency</WikiLink> (spend and settle cleanly),
+        and <WikiLink href="#growth">Growth</WikiLink> (invest what remains, venture only
+        past sufficiency). Unlike the other status pages it publishes no readings —
+        balances, net worth, and holdings are excluded by design. What is public is the
+        system itself: a cascade holding expenses under 35% of gross and tax under 15%,
+        and a waterfall that ventures nothing until everything is invested. The structure
+        is auditable even where the numbers are private.
       </p>
+
+      <hr className="zone-rule" />
 
       <h2 id="security">
         Security <span className="heading-paren">(Protection)</span>
       </h2>
-      <p>
-        The floor under everything else, in two registers: the losses I have transferred
-        to insurers (insurance) and the earning that funds the whole system (income).
-        Cover is bought against capacity first and possessions second, and income is
-        priced actively by the hour until ownership can pay instead.
-      </p>
       <NestedTable {...SECURITY} />
 
       <h2 id="efficiency">
         Efficiency <span className="heading-paren">(Leverage)</span>
       </h2>
-      <p>
-        The income statement of a life, in two registers: what running it costs
-        (expenses) and what must be settled with lenders, the state, and the future
-        (payments). The cascade is fixed — expenses under 35% of gross, tax under
-        15%, so at least half of every dollar flows on to payments, savings, and
-        investment. The savings margin is the number the rest exist to protect.
-      </p>
       <NestedTable {...EFFICIENCY} />
 
       <h2 id="growth">
         Growth <span className="heading-paren">(Allocation)</span>
       </h2>
-      <p>
-        Where the savings margin goes, in two registers: the standing portfolio filled
-        as a waterfall — liquidity, then retirement, then rewards, then the hedge, then
-        education (investments) — and the active positions taken only once every level
-        is full (ventures). Each level is a grade of financial development, and the
-        hierarchy is the discipline: nothing ventures until everything is invested.
-      </p>
       <NestedTable {...GROWTH} />
+
+      <hr className="zone-rule" />
 
       <References
         title={<>References <span className="heading-paren">(Data)</span></>}
@@ -791,6 +780,6 @@ export default function WealthPage() {
         title={<>References <span className="heading-paren">(Guidelines)</span></>}
         sections={WEALTH_GUIDELINES}
       />
-    </>
+    </div>
   );
 }
