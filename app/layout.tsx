@@ -70,8 +70,7 @@ export default function RootLayout({
         <footer className="mx-auto max-w-[81.5rem] px-5 py-8 text-xs text-muted sm:px-7">
           <div className="flex flex-col gap-2 border-t border-rule pt-4 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {new Date().getFullYear()} {SITE.name} · The free encyclopedia
-              of one person
+              © {new Date().getFullYear()} {SITE.name} · {SITE.tagline}
             </p>
             <nav aria-label="Footer">
               <ul className="flex flex-wrap gap-x-4 gap-y-1">

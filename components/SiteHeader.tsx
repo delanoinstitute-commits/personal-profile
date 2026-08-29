@@ -24,7 +24,7 @@ export default function SiteHeader() {
               {SITE.name}
             </span>
             <span className="hidden text-[0.8125rem] text-muted sm:block">
-              The free encyclopedia of one person
+              {SITE.tagline}
             </span>
           </span>
         </Link>

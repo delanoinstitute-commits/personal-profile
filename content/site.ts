@@ -16,9 +16,9 @@
 
 export const SITE = {
   name: "Lorenzo Delano",
-  tagline: "Designer · Practitioner · Teacher of self-mastery",
+  tagline: "Designing the technologies of personal transformation",
   description:
-    "A living, Wikipedia-style profile of Lorenzo Delano — learning-systems designer, health coach, and taxonomist. What he is, what he has done, where he is going.",
+    "Designing the technologies of personal transformation. The Wikipedia-style record of Lorenzo Delano — applied taxonomist: his mind, health, knowledge, wealth, and network, measured and referenced.",
   url: "https://lorenzodelano.com",
   email: "lorenzo@lorenzodelano.com",
 };
