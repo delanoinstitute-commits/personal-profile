@@ -29,13 +29,15 @@ export default function SiteHeader() {
           </span>
         </Link>
 
+        {/* The single CTA: lands on the offer taxonomy (one-commitment rule,
+            lanes) rather than a bare mailto; dressed in the nav-chip idiom. */}
         <div className="ml-auto flex items-center">
-          <a
-            href={`mailto:${SITE.email}`}
-            className="inline-flex min-h-11 items-center px-2 text-sm text-link hover:underline"
+          <Link
+            href="/#contact"
+            className="inline-flex min-h-9 items-center whitespace-nowrap rounded border border-rule px-3 py-1 text-sm text-muted transition-colors hover:border-border-strong hover:bg-surface-band hover:text-text"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </header>
