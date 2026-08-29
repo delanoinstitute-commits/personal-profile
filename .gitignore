@@ -41,3 +41,4 @@ next-env.d.ts
 /public/reports/*
 # Vetted for publication (scores only; no ID, DOB, or contact details):
 !/public/reports/hexaco.png
+!/public/reports/risk-tolerance.png

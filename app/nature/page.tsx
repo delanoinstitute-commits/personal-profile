@@ -35,13 +35,6 @@ const INTELLECT: StatTableData = {
             ["Working memory", "44 (26.5th percentile)", true, "Holding and manipulating information in mind. Subtests: visual reversal 46, computation span 42 (my lowest single score), exposure memory 50.", undefined, true],
           ],
         },
-        {
-          category: "Rationality (second-thought reflex)",
-          metrics: [
-            ["", "I test whether I override a wrong gut answer with deliberate reasoning — results pending", false],
-            ["CRT score", "—", true, "How often I set aside the intuitive-but-wrong answer and reason to the right one — a disposition that predicts decision quality independently of IQ."],
-          ],
-        },
       ],
     },
     {
@@ -183,18 +176,10 @@ const IDENTITY_DATA: ReferenceSection[] = [
         ),
       },
       {
-        id: "rationality-data",
-        cite: (
-          <>
-            <strong>Aptitude</strong>: <em>Cognitive reflection test (pending)</em>; tests for reflective override of intuitive error (CRT) • report (self-scored)
-          </>
-        ),
-      },
-      {
         id: "temperament-personality-data",
         cite: (
           <>
-            <strong>Temperament</strong>: <em><Tooltip media={{ src: "/reports/hexaco.png", alt: "HEXACO-PI-R report chart: six factors and 25 facets with percentile markers" }} content="HEXACO-PI-R full report (August 2026) — six factors and 25 facets scored 1–7 against the online sample’s 10th, 50th, and 90th percentiles.">Personality inventory</Tooltip> (2026)</em>; tests for honesty-humility, emotionality, extraversion, agreeableness, conscientiousness, and openness (HEXACO-PI-R) • report (hexaco.org)
+            <strong>Temperament</strong>: <em><Tooltip media={{ src: "/reports/hexaco.png", alt: "HEXACO-PI-R report chart: six factors and 25 facets with percentile markers" }} content="HEXACO-PI-R full report (August 2026) — six factors and 25 facets scored 1–7 against the online sample’s 10th, 50th, and 90th percentiles."><em>Personality inventory</em></Tooltip> (2026)</em>; tests for honesty-humility, emotionality, extraversion, agreeableness, conscientiousness, and openness (HEXACO-PI-R) • report (hexaco.org)
           </>
         ),
       },
@@ -202,7 +187,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "temperament-risk-data",
         cite: (
           <>
-            <strong>Temperament</strong>: <em>Risk profiling (Jun 2022)</em>; tests for financial risk tolerance (25-item questionnaire) • report (FinaMetrica)
+            <strong>Temperament</strong>: <em><Tooltip media={{ src: "/reports/risk-tolerance.png", alt: "FinaMetrica risk tolerance report: score 68, risk group 6 of 7, against the population bell curve" }} content="FinaMetrica report (June 2022) — score 68 of 100, risk group 6 of 7, higher than 96% of the representative adult sample. The report notes I estimated 80: a major over-estimate."><em>Risk profiling</em></Tooltip> (Jun 2022)</em>; tests for financial risk tolerance (25-item questionnaire) • report (FinaMetrica)
           </>
         ),
       },
