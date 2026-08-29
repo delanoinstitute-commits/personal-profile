@@ -58,18 +58,22 @@ export type CarouselImage = {
   objectPosition?: string;
 };
 
-// Each page opens the carousel on its own portrait (nav order → carousel
-// order for now); the carousel stays freely flippable after landing.
-// Re-match a page to a different photo by changing its index here.
+// Each page opens the carousel on its own portrait, matched to the page's
+// claim, not just its topic; the carousel stays freely flippable after
+// landing. Re-match a page by changing its index here. Semantic pairing:
+// About = the portrait; Story = the oldest photo; Nature = beside the
+// flow-psychology author; Lifestyle = domestic space at work; Health = the
+// gym; Knowledge = producing published works; Wealth = the business stage;
+// Network = people around a table. Spare: Jordan speaking (3).
 export const PAGE_PORTRAIT: Record<string, number> = {
-  "/": 0,
-  "/story": 1,
-  "/nature": 2,
-  "/lifestyle": 3,
-  "/health": 4,
-  "/knowledge": 5,
-  "/wealth": 6,
-  "/network": 7,
+  "/": 0, // portrait (Joburg 2020)
+  "/story": 8, // training workshop (Barcelona 2017)
+  "/nature": 6, // with Steven Kotler (Estonia 2018)
+  "/lifestyle": 4, // kitchen-scene directing (Washington 2022)
+  "/health": 5, // gym coaching (Italy 2018)
+  "/knowledge": 2, // clapperboard shoot (Colorado 2019)
+  "/wealth": 1, // panel stage (Dubai 2025)
+  "/network": 7, // family coaching (Calgary 2020)
 };
 
 export const CAROUSEL: CarouselImage[] = [
