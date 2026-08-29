@@ -20,7 +20,7 @@ export default function SiteHeader() {
             LD
           </span>
           <span className="leading-tight">
-            <span className="block font-serif text-[var(--fs-wordmark)] font-semibold tracking-[-0.005em] text-text">
+            <span className="block font-serif text-[var(--fs-wordmark)] font-semibold uppercase tracking-[0.02em] text-text">
               {SITE.name}
             </span>
             <span className="hidden text-[0.8125rem] text-muted sm:block">
@@ -29,15 +29,15 @@ export default function SiteHeader() {
           </span>
         </Link>
 
-        {/* The single CTA: lands on the offer taxonomy (one-commitment rule,
-            lanes) rather than a bare mailto; dressed in the nav-chip idiom. */}
+        {/* The single CTA: the direct line — the Contact section holds the
+            offers, so the header holds the address. Nav-chip idiom. */}
         <div className="ml-auto flex items-center">
-          <Link
-            href="/#contact"
+          <a
+            href={`mailto:${SITE.email}`}
             className="inline-flex min-h-9 items-center whitespace-nowrap rounded border border-rule px-3 py-1 text-sm text-muted transition-colors hover:border-border-strong hover:bg-surface-band hover:text-text"
           >
-            Contact
-          </Link>
+            Email
+          </a>
         </div>
       </div>
     </header>
