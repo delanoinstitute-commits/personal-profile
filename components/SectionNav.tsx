@@ -80,21 +80,15 @@ export default function SectionNav() {
       <ul className="section-scroll flex snap-x snap-mandatory flex-nowrap gap-1 overflow-x-auto text-sm sm:flex-wrap sm:overflow-visible">
         {sections.map((s) => {
           const isActive = active === s.anchor;
-          const isRefs = s.kind === "refs";
-          // The References chip is the apparatus, not a branch: muted and
-          // outlined, sitting in line after the branches in page order.
-          const chipClass = isRefs
-            ? isActive
-              ? "border border-border-strong bg-surface-band font-medium text-text"
-              : "border border-rule text-muted hover:bg-surface-band hover:text-text"
-            : isActive
-              ? "bg-accent font-medium text-white focus-visible:outline-white focus-visible:[outline-offset:-2px]"
-              : "text-link hover:bg-surface-band";
+          // One idiom, three states: every chip rests as a quiet hairline
+          // outline in muted ink, shares one hover (border darkens, faint
+          // surface tint), and the current location alone fills solid ink.
+          // Chips are interface, so they never wear link-blue.
+          const chipClass = isActive
+            ? "border border-accent bg-accent font-medium text-white focus-visible:outline-white focus-visible:[outline-offset:-2px]"
+            : "border border-rule text-muted hover:border-border-strong hover:bg-surface-band hover:text-text";
           return (
-            <li
-              key={s.anchor}
-              className={`shrink-0 snap-start ${isRefs ? "refs-chip" : ""}`}
-            >
+            <li key={s.anchor} className="shrink-0 snap-start">
               <a
                 href={`#${s.anchor}`}
                 data-anchor={s.anchor}
