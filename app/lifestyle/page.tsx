@@ -23,7 +23,7 @@ const ACTIVITY: StatTableData = {
   title: "Activity",
   groups: [
     {
-      domain: "Personal Habits",
+      domain: "Personal habits",
       hue: "red",
       label: "",
       rows: [
@@ -85,7 +85,7 @@ const ACTIVITY: StatTableData = {
       ],
     },
     {
-      domain: "Relational Habits",
+      domain: "Relational habits",
       hue: "orange",
       label: "",
       rows: [
@@ -151,7 +151,7 @@ const SPACE: StatTableData = {
   title: "Space",
   groups: [
     {
-      domain: "Environmental Conditions",
+      domain: "Environmental conditions",
       hue: "blue",
       label: "",
       rows: [
@@ -191,7 +191,7 @@ const SPACE: StatTableData = {
       ],
     },
     {
-      domain: "Living Conditions",
+      domain: "Living conditions",
       hue: "violet",
       label: "",
       rows: [
@@ -397,7 +397,7 @@ const TIME: StatTableData = {
   title: "Time",
   groups: [
     {
-      domain: "Perfect Days",
+      domain: "Perfect days",
       hue: "yellow",
       label: "",
       rows: [
@@ -434,7 +434,7 @@ const TIME: StatTableData = {
       ],
     },
     {
-      domain: "Ideal Weeks",
+      domain: "Ideal weeks",
       hue: "green",
       label: "",
       rows: [
