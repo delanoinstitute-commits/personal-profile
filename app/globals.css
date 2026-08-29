@@ -589,9 +589,9 @@ p.stat-hint {
   cursor: pointer;
 }
 
-/* Band names run sentence case and italic — the colored band itself carries
-   seniority, so the label no longer shouts in caps over its categories. */
-.nested-band-toggle .nested-domain {
+/* Band names run Title Case and italic, counts included — the colored band
+   itself carries seniority, so the label no longer shouts in caps. */
+.nested-band-toggle {
   font-style: italic;
 }
 
