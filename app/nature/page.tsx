@@ -323,37 +323,29 @@ export default function IdentityPage() {
     <>
       <PageHeading title="Nature" />
 
-      <p className="lead">
-        Who I am now — my mind in three lenses: how I think (intellect), how I&rsquo;m wired
-        (character), and what moves me (drive). Current readings, not history.
+      <p className="page-hook">Most people describe their character. I had mine measured.</p>
+      <p className="page-promise">
+        My full psychological profile — intelligence, personality, worldview, values, and
+        vocational interests — scored on gold-standard instruments, with every report published.
       </p>
       <p>
-        Each lens is read with its gold-standard instrument — a composite profile over its components. In brief, I&rsquo;m intellectually curious and
-        highly conscientious, emotionally steady, and independent-minded — a builder who
-        questions consensus. For how these formed, see{" "}
-        <WikiLink href="/story">my story</WikiLink>.
+        This page reads in three lenses: <WikiLink href="#intellect">Intellect</WikiLink> (how
+        I think), <WikiLink href="#character">Character</WikiLink> (how I&rsquo;m wired), and{" "}
+        <WikiLink href="#drive">Drive</WikiLink> (what moves me). Each holds ranked tables: the
+        composite score first, components beneath it, scales in the italic line above each
+        instrument. If you only read one row per lens: full-scale IQ 112 with a verbal-fluid
+        profile shared by 7% of adults, conscientiousness 6.87 of 7, and a value hierarchy that
+        puts design first. Hover any <WikiLink href="#references">reference</WikiLink> for the
+        report behind the number — the rest of the page is the evidence.
       </p>
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>
-      <p>How I think. The head.</p>
       <NestedTable {...INTELLECT} />
 
       <h2 id="character">Character <span className="heading-paren">(Affect)</span></h2>
-      <p>
-        How I&rsquo;m wired to feel and react, apart from what I think or pursue. I&rsquo;m
-        disciplined and hard to rattle, reserved, self-reliant, and tough-minded rather than
-        accommodating — and I meet a world I find fundamentally good, safe, and improving, yet
-        impersonal: wonderful, but not watching.
-      </p>
       <NestedTable {...CHARACTER} />
 
       <h2 id="drive">Drive <span className="heading-paren">(Conation)</span></h2>
-      <p>
-        The will that moves me to act, apart from how I think or feel. Mine runs
-        on autonomy and mastery: self-directed achievement in a stable, caring frame,
-        indifferent to status, tradition, or thrill — expressed as an investigator and maker
-        serving people through ideas and craft.
-      </p>
       <NestedTable {...DRIVE} />
 
       <References
