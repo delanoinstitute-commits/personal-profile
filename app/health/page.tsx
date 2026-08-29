@@ -17,7 +17,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
   title: "Functional homeostasis",
   groups: [
     {
-      domain: "Blood biochemistry",
+      domain: "Blood Biochemistry",
       hue: "yellow",
       label: "",
       rows: [
@@ -51,7 +51,7 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
       ],
     },
     {
-      domain: "Blood circulation",
+      domain: "Blood Circulation",
       hue: "green",
       label: "",
       rows: [
@@ -75,7 +75,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
   title: "Structural integrity",
   groups: [
     {
-      domain: "Body composition",
+      domain: "Body Composition",
       hue: "red",
       label: "",
       rows: [
@@ -109,7 +109,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
       ],
     },
     {
-      domain: "Body geometry",
+      domain: "Body Geometry",
       hue: "orange",
       label: "",
       rows: [
@@ -131,7 +131,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
   title: "Functional capacity",
   groups: [
     {
-      domain: "Muscular biomechanics",
+      domain: "Muscular Biomechanics",
       hue: "blue",
       label: "",
       rows: [
@@ -253,7 +253,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
       ],
     },
     {
-      domain: "Metabolic bioenergetics",
+      domain: "Metabolic Bioenergetics",
       hue: "violet",
       label: "",
       rows: [

@@ -16,7 +16,7 @@ const LORENZO: StatTableData = {
   title: "Lorenzo",
   groups: [
     {
-      domain: "About me",
+      domain: "About Me",
       hue: "red",
       label: "",
       rows: [
@@ -168,7 +168,7 @@ const LORENZO: StatTableData = {
       ],
     },
     {
-      domain: "My status",
+      domain: "My Status",
       hue: "orange",
       label: "",
       rows: [
@@ -239,7 +239,7 @@ const WEBSITE: StatTableData = {
   title: "Website",
   groups: [
     {
-      domain: "Site purpose",
+      domain: "Site Purpose",
       hue: "yellow",
       label: "",
       rows: [
@@ -350,7 +350,7 @@ const WEBSITE: StatTableData = {
       ],
     },
     {
-      domain: "Site navigation",
+      domain: "Site Navigation",
       hue: "green",
       label: "",
       rows: [
@@ -401,7 +401,7 @@ const CONTACT: StatTableData = {
   title: "Contact",
   groups: [
     {
-      domain: "Published works",
+      domain: "Published Works",
       hue: "blue",
       label: "",
       rows: [
@@ -489,7 +489,7 @@ const CONTACT: StatTableData = {
       ],
     },
     {
-      domain: "Hired ventures",
+      domain: "Hired Ventures",
       hue: "violet",
       label: "",
       rows: [

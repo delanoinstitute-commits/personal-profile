@@ -13,7 +13,7 @@ export const EDUCATION: StatTableData = {
   title: "Education",
   groups: [
     {
-      domain: "Guided education",
+      domain: "Guided Education",
       hue: "blue",
       label: "",
       rows: [
@@ -143,7 +143,7 @@ export const EDUCATION: StatTableData = {
       ],
     },
     {
-      domain: "Independent learning",
+      domain: "Independent Learning",
       hue: "violet",
       label: "",
       rows: [
@@ -213,7 +213,7 @@ export const SKILLS: StatTableData = {
   title: "Skills",
   groups: [
     {
-      domain: "Technical skills",
+      domain: "Technical Skills",
       hue: "yellow",
       label: "",
       rows: [
@@ -237,7 +237,7 @@ export const SKILLS: StatTableData = {
       ],
     },
     {
-      domain: "Interpersonal skills",
+      domain: "Interpersonal Skills",
       hue: "green",
       label: "",
       rows: [
@@ -274,7 +274,7 @@ export const WORKS: StatTableData = {
   title: "Works",
   groups: [
     {
-      domain: "Professional experience",
+      domain: "Professional Experience",
       hue: "red",
       label: "",
       rows: [
@@ -398,7 +398,7 @@ export const WORKS: StatTableData = {
       ],
     },
     {
-      domain: "Personal works",
+      domain: "Personal Works",
       hue: "orange",
       label: "",
       rows: [

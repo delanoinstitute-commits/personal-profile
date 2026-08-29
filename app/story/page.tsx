@@ -23,7 +23,7 @@ const INHERITANCE: StatTableData = {
   title: "Inheritance",
   groups: [
     {
-      domain: "Biological identity",
+      domain: "Biological Identity",
       hue: "red",
       label: "",
       rows: [
@@ -50,7 +50,7 @@ const INHERITANCE: StatTableData = {
       ],
     },
     {
-      domain: "Sociological identity",
+      domain: "Sociological Identity",
       hue: "orange",
       label: "",
       rows: [
@@ -72,7 +72,7 @@ const DEVELOPMENT: StatTableData = {
   title: "Development",
   groups: [
     {
-      domain: "Early years",
+      domain: "Early Years",
       hue: "yellow",
       label: "",
       rows: [
@@ -109,7 +109,7 @@ const DEVELOPMENT: StatTableData = {
       ],
     },
     {
-      domain: "Adult years",
+      domain: "Adult Years",
       hue: "green",
       label: "",
       rows: [
@@ -146,7 +146,7 @@ const EMERGENCE: StatTableData = {
   title: "Emergence",
   groups: [
     {
-      domain: "Creative dispositions",
+      domain: "Creative Dispositions",
       hue: "blue",
       label: "",
       rows: [
@@ -162,7 +162,7 @@ const EMERGENCE: StatTableData = {
       ],
     },
     {
-      domain: "Transformative decisions",
+      domain: "Transformative Decisions",
       hue: "violet",
       label: "",
       rows: [
