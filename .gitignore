@@ -42,3 +42,5 @@ next-env.d.ts
 # Vetted for publication (scores only; no ID, DOB, or contact details):
 !/public/reports/hexaco.png
 !/public/reports/risk-tolerance.png
+!/public/reports/demartini-values.png
+!/public/reports/riasec.png

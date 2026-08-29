@@ -42,17 +42,17 @@ const INTELLECT: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Worldview (interpretive lens)",
+          category: "Worldview (philosophical positions)",
           metrics: [
             ["", "I am an integral (naturalistic) humanist — reason-grounded, humanity-centered", false],
             ["Worldview", "Integral naturalistic humanist", true, "The composite stance the seven perspectives below resolve into."],
-            ["Knowing", "Explanatory fallibilist", true, "Epistemology — the nature and sources of knowledge; how we know.", undefined, true],
-            ["Being", "Physical idealist", true, "Metaphysics — what is ultimately real; the fundamental nature of reality.", undefined, true],
-            ["Origins", "Evolutionary emergentist", true, "Cosmology — the origin and nature of the universe and of life.", undefined, true],
-            ["Purpose", "Self-authored", true, "Teleology — whether existence has an inherent purpose or direction.", undefined, true],
-            ["Divinity", "Agnostic atheist", true, "Theology — the existence and nature of God or the divine.", undefined, true],
-            ["Humanity", "Universalist", true, "Anthropology — the nature and purpose of human beings.", undefined, true],
-            ["Value", "Amoral realist", true, "Axiology — the nature of value; what is good, bad, right, and wrong.", undefined, true],
+            ["Knowing", "Explanatory fallibilist (knowledge grows by better explanations; none final)", true, "Epistemology — the nature and sources of knowledge; how we know.", undefined, true],
+            ["Being", "Physical idealist (one physical reality, in which ideas have real effects)", true, "Metaphysics — what is ultimately real; the fundamental nature of reality.", undefined, true],
+            ["Origins", "Evolutionary emergentist (life and mind emerged bottom-up through evolution)", true, "Cosmology — the origin and nature of the universe and of life.", undefined, true],
+            ["Purpose", "Self-authored (existence has no inherent purpose; I write my own)", true, "Teleology — whether existence has an inherent purpose or direction.", undefined, true],
+            ["Divinity", "Agnostic atheist (I don’t believe in gods, and don’t claim certainty)", true, "Theology — the existence and nature of God or the divine.", undefined, true],
+            ["Humanity", "Universalist (all humans share one nature, worth, and potential)", true, "Anthropology — the nature and purpose of human beings.", undefined, true],
+            ["Value", "Amoral realist (nature has no morals; values are made by valuers)", true, "Axiology — the nature of value; what is good, bad, right, and wrong.", undefined, true],
           ],
         },
       ],
@@ -128,15 +128,15 @@ const DRIVE: StatTableData = {
           ],
         },
         {
-          category: "Behavioural values (revealed drives)",
+          category: "Behavioral values (revealed drives)",
           metrics: [
-            ["", "My time, energy, and money go first to design (with music), the body, then daily studying", false],
-            ["Value hierarchy", "Design · Wellness · Education", true, "My top three revealed values; the full ranked five sit below."],
-            ["Design", "1st", true, undefined, undefined, true],
-            ["Wellness", "2nd", true, undefined, undefined, true],
-            ["Education", "3rd", true, undefined, undefined, true],
-            ["Resource allocation", "4th", true, undefined, undefined, true],
-            ["Music", "5th", true, undefined, undefined, true],
+            ["", "My time, energy, and money go first to design, then the body, then teaching what I learn", false],
+            ["Value hierarchy", "DEE (design first, exercise second, and then education)", true, "The code from my top three revealed values; the full ranked five and their shares sit below. Design and Exercise run nearly tied at the top; the next three share a third."],
+            ["Design", "33%", true, "My devices, hours, and spaces all serve one activity: designing taxonomies and getting things to fit in my designs.", undefined, true],
+            ["Exercise", "31%", true, "My equipment, kitchen, and entire home environment are built around training — maximizing my physical capital (liquid steel).", undefined, true],
+            ["Education", "18%", true, "Teaching what I learn, solving problems in education, and coaching the most influential people behind the scenes.", undefined, true],
+            ["Truth", "10%", true, "The subjects I read and discuss: philosophy, epistemology, and metaphysics, with psychology, economics, and history behind them.", undefined, true],
+            ["Exploration", "8%", true, "Daily studying — the connections and knowledge of the day, gathered through designs and studies.", undefined, true],
           ],
         },
       ],
@@ -203,7 +203,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "motivation-pvq-data",
         cite: (
           <>
-            <strong>Motivation</strong>: <em>Portrait values questionnaire (pending)</em>; tests for the ten basic values (PVQ-40) • report (self-scored)
+            <strong>Motivation</strong>: <em>Portrait values questionnaire (2026)</em>; tests for the ten basic values (PVQ-40) • report (self-scored)
           </>
         ),
       },
@@ -211,7 +211,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "vocation-data",
         cite: (
           <>
-            <strong>Vocation</strong>: <em>Interest profiler (pending)</em>; tests for the six RIASEC types (O*NET Interest Profiler) • report (O*NET)
+            <strong>Vocation</strong>: <em><Tooltip media={{ src: "/reports/riasec.png", alt: "O*NET Interest Profiler results: profile line across the six RIASEC types, with Investigative, Artistic, and Social as top interests" }} content="O*NET Interest Profiler (3 July 2026) — the profile line across all six types: Investigative peaks, Artistic and Social run close behind, Realistic sits lowest."><em>Interest profiler</em></Tooltip> (Jul 2026)</em>; tests for the six RIASEC types (O*NET Interest Profiler) • report (O*NET)
           </>
         ),
       },
@@ -232,7 +232,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "motivation-demartini-data",
         cite: (
           <>
-            <strong>Motivation</strong>: <em>Value determination (pending)</em>; ranks lived values by where time, energy, and money actually go (Demartini process) • reading (self-assessed)
+            <strong>Motivation</strong>: <em><Tooltip media={{ src: "/reports/demartini-values.png", alt: "Demartini value determination results: Design 33%, Exercise 31%, Education 18%, Truth 10%, Exploration 8%" }} content="Value determination report (29 August 2026) — ranked from my answers to the thirteen evidence questions: Design 33%, Exercise 31%, Education 18%, Truth 10%, Exploration 8%. Design and Exercise run nearly tied at the top; the next three share a third."><em>Value determination</em></Tooltip> (Aug 2026)</em>; ranks lived values by where time, energy, and money actually go (Demartini process) • report (self-assessed)
           </>
         ),
       },
@@ -265,17 +265,6 @@ const IDENTITY_EVIDENCE: ReferenceSection[] = [
         ),
         url: "https://www.onetonline.org",
         urlLabel: "onetonline.org",
-      },
-      {
-        id: "crt",
-        cite: (
-          <>
-            <strong>Rationality</strong>: Frederick, S. (2005). Cognitive reflection and decision making.{" "}
-            <em>Journal of Economic Perspectives</em>, 19(4).
-          </>
-        ),
-        url: "https://doi.org/10.1257/089533005775196732",
-        urlLabel: "DOI",
       },
       {
         id: "schwartz",
@@ -321,7 +310,7 @@ const IDENTITY_EVIDENCE: ReferenceSection[] = [
         id: "demartini",
         cite: (
           <>
-            <strong>Behavioural values</strong>: Demartini, J. F. (2013). <em>The Values Factor</em>. Assessed via the Demartini Value Determination Process.
+            <strong>Behavioral values</strong>: Demartini, J. F. (2013). <em>The Values Factor</em>. Assessed via the Demartini Value Determination Process.
           </>
         ),
       },
