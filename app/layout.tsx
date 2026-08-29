@@ -63,17 +63,43 @@ export default function RootLayout({
           </div>
         </div>
 
+        {/* Footer: one hairline, two clusters — identity left, destinations
+            right. Contact funnels through the About page's offer taxonomy
+            rather than exposing a raw mailto (also keeps the address off
+            scrapers). LinkedIn and YouTube are the only external profiles. */}
         <footer className="mx-auto max-w-[81.5rem] px-5 py-8 text-xs text-muted sm:px-7">
-          <div className="border-t border-rule pt-4">
+          <div className="flex flex-col gap-2 border-t border-rule pt-4 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              A personal encyclopedia — a structured, honest record of one life,
-              modelled on Wikipedia. Content authored by {SITE.name}.
+              © {new Date().getFullYear()} {SITE.name} · The free encyclopedia
+              of one person
             </p>
-            <p className="mt-1">
-              <a href={`mailto:${SITE.email}`} className="wikilink">
-                {SITE.email}
-              </a>
-            </p>
+            <nav aria-label="Footer">
+              <ul className="flex flex-wrap gap-x-4 gap-y-1">
+                <li>
+                  <a href="/" className="wikilink">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="/#contact" className="wikilink">
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/lorenzo-delano-7b6143364/"
+                    className="wikilink"
+                  >
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://youtube.com/@LorenzoDelano" className="wikilink">
+                    YouTube
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </footer>
 
