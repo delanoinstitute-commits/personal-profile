@@ -723,7 +723,9 @@ p.stat-hint {
   text-align: center;
   font-size: 0.8125rem;
   font-weight: 600;
-  font-style: italic; /* matches the taxonomy bands: Title Case, italic */
+  font-style: italic;
+  letter-spacing: 0.04em;
+  text-transform: uppercase; /* caps for rail seniority, italic to match the bands */
   color: var(--text);
 }
 
