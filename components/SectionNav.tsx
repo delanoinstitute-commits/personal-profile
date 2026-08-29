@@ -82,8 +82,7 @@ export default function SectionNav() {
           const isActive = active === s.anchor;
           const isRefs = s.kind === "refs";
           // The References chip is the apparatus, not a branch: muted and
-          // outlined, pushed to the far edge on desktop so the gap itself
-          // separates the taxonomy from its evidence.
+          // outlined, sitting in line after the branches in page order.
           const chipClass = isRefs
             ? isActive
               ? "border border-border-strong bg-surface-band font-medium text-text"
@@ -95,10 +94,6 @@ export default function SectionNav() {
             <li
               key={s.anchor}
               className={`shrink-0 snap-start ${isRefs ? "refs-chip" : ""}`}
-              // Inline because the compiled stylesheet refused the rule in dev;
-              // auto margin is inert when the mobile strip overflows, so this
-              // is desktop's right-push with no mobile cost.
-              style={isRefs ? { marginLeft: "auto" } : undefined}
             >
               <a
                 href={`#${s.anchor}`}
