@@ -76,26 +76,33 @@ export default function RootLayout({
             <nav aria-label="Footer">
               <ul className="flex flex-wrap gap-x-4 gap-y-1">
                 <li>
-                  <a href="/" className="wikilink">
+                  <a href="/#lorenzo" className="wikilink">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="/#contact" className="wikilink">
-                    Contact
+                  <a href={`mailto:${SITE.email}`} className="wikilink">
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://youtube.com/@LorenzoDelano"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="wikilink"
+                  >
+                    YouTube
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.linkedin.com/in/lorenzo-delano-7b6143364/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="wikilink"
                   >
                     LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="https://youtube.com/@LorenzoDelano" className="wikilink">
-                    YouTube
                   </a>
                 </li>
               </ul>
