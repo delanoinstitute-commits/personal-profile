@@ -66,7 +66,7 @@ export function NestedTable({
           );
           return (
             <tbody key={group.domain}>
-              <tr className="nested-band" onClick={() => toggleBand(group.domain)}>
+              <tr className="nested-band" data-hue={group.hue} onClick={() => toggleBand(group.domain)}>
                 <th>
                   <button
                     type="button"

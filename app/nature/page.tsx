@@ -20,6 +20,7 @@ const INTELLECT: StatTableData = {
   groups: [
     {
       domain: "Aptitude",
+      hue: "red",
       label: "",
       rows: [
         {
@@ -39,6 +40,7 @@ const INTELLECT: StatTableData = {
     },
     {
       domain: "Perspective",
+      hue: "orange",
       label: "",
       rows: [
         {
@@ -65,6 +67,7 @@ const CHARACTER: StatTableData = {
   groups: [
     {
       domain: "Temperament",
+      hue: "yellow",
       label: "",
       rows: [
         {
@@ -93,6 +96,7 @@ const CHARACTER: StatTableData = {
     },
     {
       domain: "Sentiment",
+      hue: "green",
       label: "",
       rows: [
         {
@@ -115,6 +119,7 @@ const DRIVE: StatTableData = {
   groups: [
     {
       domain: "Motivation",
+      hue: "blue",
       label: "",
       rows: [
         {
@@ -143,6 +148,7 @@ const DRIVE: StatTableData = {
     },
     {
       domain: "Vocation",
+      hue: "violet",
       label: "",
       rows: [
         {
@@ -320,7 +326,7 @@ const IDENTITY_EVIDENCE: ReferenceSection[] = [
 
 export default function IdentityPage() {
   return (
-    <>
+    <div className="zoned">
       <PageHeading title="Nature" />
 
       <p className="page-hook">Most people describe their character. I had mine measured.</p>
@@ -333,11 +339,16 @@ export default function IdentityPage() {
         I think), <WikiLink href="#character">Character</WikiLink> (how I&rsquo;m wired), and{" "}
         <WikiLink href="#drive">Drive</WikiLink> (what moves me). Each holds ranked tables: the
         composite score first, components beneath it, scales in the italic line above each
-        instrument. If you only read one row per lens: full-scale IQ 112 with a verbal-fluid
-        profile shared by 7% of adults, conscientiousness 6.87 of 7, and a value hierarchy that
-        puts design first. Hover any <WikiLink href="#references">reference</WikiLink> for the
-        report behind the number — the rest of the page is the evidence.
+        instrument.
       </p>
+      <p>
+        If you only read one row per lens: full-scale IQ 112 with a verbal-fluid profile shared
+        by 7% of adults, conscientiousness 6.87 of 7, and a value hierarchy that puts design
+        first. Hover any <WikiLink href="#references">reference</WikiLink> for the report behind
+        the number — the rest of the page is the evidence.
+      </p>
+
+      <hr className="zone-rule" />
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>
       <NestedTable {...INTELLECT} />
@@ -347,6 +358,8 @@ export default function IdentityPage() {
 
       <h2 id="drive">Drive <span className="heading-paren">(Conation)</span></h2>
       <NestedTable {...DRIVE} />
+
+      <hr className="zone-rule" />
 
       <References
         title={<>References <span className="heading-paren">(Data)</span></>}
@@ -358,6 +371,6 @@ export default function IdentityPage() {
         title={<>References <span className="heading-paren">(Evidence)</span></>}
         sections={IDENTITY_EVIDENCE}
       />
-    </>
+    </div>
   );
 }

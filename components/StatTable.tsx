@@ -35,7 +35,9 @@ export type Metric = [
   sub?: boolean,
 ];
 export type Row = { category: string; metrics: Metric[] };
-export type Group = { domain: string; label: string; rows: Row[] };
+/** ROYGBIV band tint — hierarchical hue order across a page's taxonomy. */
+export type BandHue = "red" | "orange" | "yellow" | "green" | "blue" | "violet";
+export type Group = { domain: string; label: string; hue?: BandHue; rows: Row[] };
 export type StatTableData = { title: string; groups: Group[] };
 
 /** Render a label with any parenthetical portions dropped to normal weight. */

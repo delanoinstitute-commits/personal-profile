@@ -18,6 +18,15 @@
   --accent: #0b5e57;
   --accent-light: #0f6e66;
   --accent-soft: #c9ded8; /* pale teal band — a touch more intense than the neutral gray */
+  /* ROYGBIV band tints (Nature pilot) — hierarchical hue order down the page;
+     matched to --accent-soft's lightness so the spectrum reads as order,
+     not decoration, and dark text stays AA-readable on every tint. */
+  --band-red: #ecccc9;
+  --band-orange: #f0d9c0;
+  --band-yellow: #efe3b8;
+  --band-green: #c8e0c4;
+  --band-blue: #c8daee;
+  --band-violet: #d9cfe8;
   --focus: #0b57d0;
   --surface-paper: #ffffff;
   --surface-app: #f4f5f6;
@@ -202,6 +211,21 @@ body {
   line-height: 1.55;
   color: var(--muted);
   margin-top: 0;
+}
+
+/* Zoned layout (pilot: /nature) — the page separates into three zones
+   (prose > taxonomies > references) by two hairlines; headings inside run
+   bare and tighter, since the zone rules carry the separation. */
+.zoned h2 {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 1.1rem;
+}
+
+.zoned .zone-rule {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 1.5rem 0;
 }
 
 .wiki-article ul,
@@ -539,6 +563,14 @@ p.stat-hint {
   background: var(--accent-soft);
   padding: 0;
 }
+
+/* Spectrum bands: a group with a `hue` overrides the teal default. */
+.nested-table .nested-band[data-hue="red"] th { background: var(--band-red); }
+.nested-table .nested-band[data-hue="orange"] th { background: var(--band-orange); }
+.nested-table .nested-band[data-hue="yellow"] th { background: var(--band-yellow); }
+.nested-table .nested-band[data-hue="green"] th { background: var(--band-green); }
+.nested-table .nested-band[data-hue="blue"] th { background: var(--band-blue); }
+.nested-table .nested-band[data-hue="violet"] th { background: var(--band-violet); }
 
 .nested-band-toggle {
   display: flex;
