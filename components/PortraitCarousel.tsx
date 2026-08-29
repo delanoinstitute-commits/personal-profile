@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
-import { CAROUSEL } from "@/content/profile";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
+import { CAROUSEL, PAGE_PORTRAIT } from "@/content/profile";
 
 /**
  * Portrait carousel — Delano across contexts, in a fixed 4:3 box (shorter than
@@ -11,10 +12,17 @@ import { CAROUSEL } from "@/content/profile";
  * touch swipe. Crossfade honors prefers-reduced-motion via global CSS.
  */
 export default function PortraitCarousel({ priority = false }: { priority?: boolean }) {
-  const [index, setIndex] = useState(0);
+  // Each page lands on its own portrait; the carousel flips freely after.
+  const pathname = usePathname();
+  const pagePhoto = PAGE_PORTRAIT[pathname] ?? 0;
+  const [index, setIndex] = useState(pagePhoto);
   const touchX = useRef<number | null>(null);
   const n = CAROUSEL.length;
   const go = (i: number) => setIndex((i + n) % n);
+
+  useEffect(() => {
+    setIndex(pagePhoto);
+  }, [pagePhoto]);
 
   const onKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "ArrowLeft") {
@@ -55,7 +63,7 @@ export default function PortraitCarousel({ priority = false }: { priority?: bool
             alt={img.alt}
             fill
             sizes="(min-width: 1024px) 336px, 100vw"
-            priority={priority && i === 0}
+            priority={priority && i === pagePhoto}
             style={{ objectPosition: img.objectPosition }}
             className={`object-cover transition-opacity duration-300 ${
               i === index ? "opacity-100" : "opacity-0"

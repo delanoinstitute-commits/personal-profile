@@ -58,6 +58,20 @@ export type CarouselImage = {
   objectPosition?: string;
 };
 
+// Each page opens the carousel on its own portrait (nav order → carousel
+// order for now); the carousel stays freely flippable after landing.
+// Re-match a page to a different photo by changing its index here.
+export const PAGE_PORTRAIT: Record<string, number> = {
+  "/": 0,
+  "/story": 1,
+  "/nature": 2,
+  "/lifestyle": 3,
+  "/health": 4,
+  "/knowledge": 5,
+  "/wealth": 6,
+  "/network": 7,
+};
+
 export const CAROUSEL: CarouselImage[] = [
   {
     src: "/carousel/portrait.jpg",
