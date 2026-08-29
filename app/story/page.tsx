@@ -253,7 +253,7 @@ export default function StoryPage() {
         title="Story"
       />
 
-      <p className="page-hook">My biography separates what happened to me from what I did about it.</p>
+      <p id="introduction" className="page-hook">My biography separates what happened to me from what I did about it.</p>
       <p className="page-promise">
         My whole record, germline to present — genotype and ancestry read from raw
         sequencing, the family pedigree, the timeline of every lived stage, and the

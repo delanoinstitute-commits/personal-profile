@@ -523,7 +523,7 @@ export default function HealthPage() {
     <div className="zoned">
       <PageHeading title="Health" />
 
-      <p className="page-hook">Every health claim on this page has a lab report behind it.</p>
+      <p id="introduction" className="page-hook">Every health claim on this page has a lab report behind it.</p>
       <p className="page-promise">
         My full 2026 health status — body composition, blood chemistry, and performance
         under load — measured clinically, benchmarked against reference ranges, with the

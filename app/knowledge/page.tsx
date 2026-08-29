@@ -21,7 +21,7 @@ export default function KnowledgePage() {
     <div className="zoned">
       <PageHeading title="Knowledge" />
 
-      <p className="page-hook">I don&rsquo;t take degrees, I design them.</p>
+      <p id="introduction" className="page-hook">I don&rsquo;t take degrees, I design them.</p>
       <p className="page-promise">
         My full inventory of competence — the methodologies and designs I&rsquo;ve
         shipped, the skills behind them, and the self-directed curriculum they all stand

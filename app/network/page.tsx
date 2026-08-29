@@ -664,7 +664,7 @@ export default function NetworkPage() {
         title="Network"
       />
 
-      <p className="page-hook">My network is the team my life runs on. This is the roster.</p>
+      <p id="introduction" className="page-hook">My network is the team my life runs on. This is the roster.</p>
       <p className="page-promise">
         The complete taxonomy of my human relationships — who holds each seat, the
         benchmark each is held to, and which seats stand open, protected, or held by my

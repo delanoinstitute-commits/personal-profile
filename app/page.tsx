@@ -682,7 +682,7 @@ export default function AboutPage() {
     <div className="zoned">
       <PageHeading title="About" />
 
-      <p className="page-hook">What makes a person? This site is my answer, demonstrated on myself.</p>
+      <p id="introduction" className="page-hook">What makes a person? This site is my answer, demonstrated on myself.</p>
       <p className="page-promise">
         Who I am, how the site works, and every way to work with me — from free courses
         to equity partnerships — with the other seven pages holding the record.

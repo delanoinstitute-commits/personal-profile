@@ -1017,7 +1017,7 @@ export default function LifestylePage() {
     <div className="zoned">
       <PageHeading title="Lifestyle" />
 
-      <p className="page-hook">Most people list good intentions. My twelve habits sum to twenty-four hours.</p>
+      <p id="introduction" className="page-hook">Most people list good intentions. My twelve habits sum to twenty-four hours.</p>
       <p className="page-promise">
         My complete lifestyle design — every habit with its daily allocation, the
         schedule that places it, and the spaces that host it, from city choice down to my

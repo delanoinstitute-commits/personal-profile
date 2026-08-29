@@ -329,7 +329,7 @@ export default function IdentityPage() {
     <div className="zoned">
       <PageHeading title="Nature" />
 
-      <p className="page-hook">Most people describe their character. I had mine measured.</p>
+      <p id="introduction" className="page-hook">Most people describe their character. I had mine measured.</p>
       <p className="page-promise">
         My full psychological profile — intelligence, personality, worldview, values, and
         vocational interests — scored on gold-standard instruments, with every report published.
