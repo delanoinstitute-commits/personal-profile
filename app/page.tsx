@@ -17,6 +17,7 @@ const LORENZO: StatTableData = {
   groups: [
     {
       domain: "About Me",
+      hue: "red",
       label: "",
       rows: [
         {
@@ -168,6 +169,7 @@ const LORENZO: StatTableData = {
     },
     {
       domain: "My Status",
+      hue: "orange",
       label: "",
       rows: [
         {
@@ -238,6 +240,7 @@ const WEBSITE: StatTableData = {
   groups: [
     {
       domain: "Site Purpose",
+      hue: "yellow",
       label: "",
       rows: [
         {
@@ -348,6 +351,7 @@ const WEBSITE: StatTableData = {
     },
     {
       domain: "Site Navigation",
+      hue: "green",
       label: "",
       rows: [
         {
@@ -398,6 +402,7 @@ const CONTACT: StatTableData = {
   groups: [
     {
       domain: "Published Works",
+      hue: "blue",
       label: "",
       rows: [
         {
@@ -485,6 +490,7 @@ const CONTACT: StatTableData = {
     },
     {
       domain: "Hired Ventures",
+      hue: "violet",
       label: "",
       rows: [
         {

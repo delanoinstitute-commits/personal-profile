@@ -32,6 +32,7 @@ const NURTURE: StatTableData = {
   groups: [
     {
       domain: "Personal nurturers",
+      hue: "red",
       label: "",
       rows: [
         {
@@ -49,6 +50,7 @@ const NURTURE: StatTableData = {
     },
     {
       domain: "Professional nurturers",
+      hue: "orange",
       label: "",
       rows: [
         {
@@ -111,6 +113,7 @@ const PROGRESS: StatTableData = {
   groups: [
     {
       domain: "Personal partners",
+      hue: "yellow",
       label: "",
       rows: [
         {
@@ -132,6 +135,7 @@ const PROGRESS: StatTableData = {
     },
     {
       domain: "Professional partners",
+      hue: "green",
       label: "",
       rows: [
         {
@@ -184,6 +188,7 @@ const CONTRIBUTION: StatTableData = {
   groups: [
     {
       domain: "Personal dependents",
+      hue: "blue",
       label: "",
       rows: [
         {
@@ -199,6 +204,7 @@ const CONTRIBUTION: StatTableData = {
     },
     {
       domain: "Professional dependents",
+      hue: "violet",
       label: "",
       rows: [
         {

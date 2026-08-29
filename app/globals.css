@@ -15,9 +15,12 @@
   --link: #3366cc;
   --link-hover: #2a4b8d;
   --link-red: #ba0000;
-  --accent: #0b5e57;
-  --accent-light: #0f6e66;
-  --accent-soft: #c9ded8; /* pale teal band — a touch more intense than the neutral gray */
+  /* Brand accent: ink black for now — identity marks (logo, active nav pill,
+     carousel dot) stay neutral so the ROYGBIV spectrum is the site's only
+     color system. Teal history: #0b5e57 / #0f6e66 / #c9ded8. */
+  --accent: #1b1c1d;
+  --accent-light: #3a3d3f;
+  --accent-soft: #e8eaed; /* neutral band — infobox headers and any unhued band */
   /* ROYGBIV band tints (Nature pilot) — hierarchical hue order down the page;
      matched to --accent-soft's lightness so the spectrum reads as order,
      not decoration, and dark text stays AA-readable on every tint. */
