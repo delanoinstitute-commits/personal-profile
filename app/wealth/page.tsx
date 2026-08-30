@@ -20,7 +20,7 @@ const SECURITY: StatTableData = {
   title: "Security",
   groups: [
     {
-      domain: "Insurance",
+      domain: "Personal Insurance",
       hue: "red",
       label: "",
       rows: [
@@ -47,7 +47,7 @@ const SECURITY: StatTableData = {
       ],
     },
     {
-      domain: "Income",
+      domain: "Earned Income",
       hue: "orange",
       label: "",
       rows: [
@@ -95,7 +95,7 @@ const EFFICIENCY: StatTableData = {
   title: "Efficiency",
   groups: [
     {
-      domain: "Expenses",
+      domain: "Living Expenses",
       hue: "yellow",
       label: "",
       rows: [
@@ -126,7 +126,7 @@ const EFFICIENCY: StatTableData = {
       ],
     },
     {
-      domain: "Payments",
+      domain: "Owed Payments",
       hue: "green",
       label: "",
       rows: [
@@ -193,7 +193,7 @@ const GROWTH: StatTableData = {
   title: "Growth",
   groups: [
     {
-      domain: "Investments",
+      domain: "Standing Investments",
       hue: "blue",
       label: "",
       rows: [
@@ -232,7 +232,7 @@ const GROWTH: StatTableData = {
       ],
     },
     {
-      domain: "Ventures",
+      domain: "Active Ventures",
       hue: "violet",
       label: "",
       rows: [

@@ -19,7 +19,7 @@ const INTELLECT: StatTableData = {
   title: "Intellect",
   groups: [
     {
-      domain: "Aptitude",
+      domain: "Cognitive Aptitude",
       hue: "red",
       label: "",
       rows: [
@@ -39,7 +39,7 @@ const INTELLECT: StatTableData = {
       ],
     },
     {
-      domain: "Perspective",
+      domain: "Philosophical Perspective",
       hue: "orange",
       label: "",
       rows: [
@@ -66,7 +66,7 @@ const CHARACTER: StatTableData = {
   title: "Character",
   groups: [
     {
-      domain: "Temperament",
+      domain: "Emotional Temperament",
       hue: "yellow",
       label: "",
       rows: [
@@ -95,7 +95,7 @@ const CHARACTER: StatTableData = {
       ],
     },
     {
-      domain: "Sentiment",
+      domain: "Primal Sentiment",
       hue: "green",
       label: "",
       rows: [
@@ -118,7 +118,7 @@ const DRIVE: StatTableData = {
   title: "Drive",
   groups: [
     {
-      domain: "Motivation",
+      domain: "Personal Motivation",
       hue: "blue",
       label: "",
       rows: [
@@ -147,7 +147,7 @@ const DRIVE: StatTableData = {
       ],
     },
     {
-      domain: "Vocation",
+      domain: "Professional Vocation",
       hue: "violet",
       label: "",
       rows: [
