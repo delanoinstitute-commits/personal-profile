@@ -668,6 +668,15 @@ p.stat-hint {
   margin: 0.1rem 0;
 }
 
+/* Primary numbered rows speak in ink so the scan catches them first;
+   sub-rows stay muted and italic beneath them. */
+.nested-content ol.metric-numbered > li {
+  color: var(--text);
+}
+.nested-content ol.metric-numbered .metric-subs {
+  color: var(--muted);
+}
+
 /* ===================================================================
    Section nav (horizontal in-page tabs) — §4.4
    =================================================================== */
