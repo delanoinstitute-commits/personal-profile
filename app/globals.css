@@ -590,9 +590,11 @@ p.stat-hint {
 }
 
 /* Band names run Title Case and italic, counts included — the colored band
-   itself carries seniority, so the label no longer shouts in caps. */
+   itself carries seniority, so the label no longer shouts in caps. One size
+   step above the category rows beneath (15px vs 14px). */
 .nested-band-toggle {
   font-style: italic;
+  font-size: 0.9375rem;
 }
 
 .nested-band-toggle .nested-gloss {
