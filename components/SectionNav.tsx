@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { NAV } from "@/content/site";
+import { NAV, SITE } from "@/content/site";
 
 /**
  * Horizontal, sticky in-page section navigation under each page title. On
@@ -101,6 +101,18 @@ export default function SectionNav() {
             </li>
           );
         })}
+        {/* The direct line rides the far edge of every page's nav — an
+            action, not a section, so it never takes the active fill.
+            Inline margin: the compiled stylesheet refused ml-auto in dev;
+            auto margin is inert when the mobile strip overflows. */}
+        <li className="shrink-0 snap-start" style={{ marginLeft: "auto" }}>
+          <a
+            href={`mailto:${SITE.email}`}
+            className="no-wiki inline-flex min-h-11 items-center whitespace-nowrap rounded border border-rule px-3 py-2 text-muted transition-colors hover:border-border-strong hover:bg-surface-band hover:text-text sm:min-h-0 sm:px-2.5 sm:py-1"
+          >
+            Email
+          </a>
+        </li>
       </ul>
     </nav>
   );
