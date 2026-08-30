@@ -108,7 +108,7 @@ export default function SectionNav() {
         <li className="shrink-0 snap-start" style={{ marginLeft: "auto" }}>
           <a
             href={`mailto:${SITE.email}`}
-            className="no-wiki inline-flex min-h-11 items-center whitespace-nowrap rounded border border-rule px-3 py-2 text-muted transition-colors hover:border-border-strong hover:bg-surface-band hover:text-text sm:min-h-0 sm:px-2.5 sm:py-1"
+            className="no-wiki inline-flex min-h-11 items-center whitespace-nowrap rounded border border-rule bg-surface-band px-3 py-2 text-text transition-colors hover:border-accent hover:bg-accent hover:text-white sm:min-h-0 sm:px-2.5 sm:py-1"
           >
             Email Lorenzo
           </a>
