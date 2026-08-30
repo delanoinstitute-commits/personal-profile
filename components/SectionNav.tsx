@@ -110,7 +110,7 @@ export default function SectionNav() {
             href={`mailto:${SITE.email}`}
             className="no-wiki inline-flex min-h-11 items-center whitespace-nowrap rounded border border-rule px-3 py-2 text-muted transition-colors hover:border-border-strong hover:bg-surface-band hover:text-text sm:min-h-0 sm:px-2.5 sm:py-1"
           >
-            Email
+            Contact
           </a>
         </li>
       </ul>
