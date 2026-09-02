@@ -80,6 +80,16 @@ export default function RootLayout({
                   </a>
                 </li>
                 <li>
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    className="wikilink"
+                  >
+                    Resume
+                  </a>
+                </li>
+                <li>
                   <a href={`mailto:${SITE.email}`} className="wikilink">
                     Email
                   </a>

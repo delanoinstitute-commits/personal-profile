@@ -44,3 +44,6 @@ next-env.d.ts
 !/public/reports/risk-tolerance.png
 !/public/reports/demartini-values.png
 !/public/reports/riasec.png
+
+# The public resume — the master single-column PDF, vetted (public info only)
+!/public/resume.pdf
