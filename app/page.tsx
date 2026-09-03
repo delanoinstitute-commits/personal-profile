@@ -340,7 +340,7 @@ const WEBSITE: StatTableData = {
         {
           category: "Visitor (how to navigate)",
           metrics: [
-            ["", "I’ve laid four paths in, ordered by how much time you have", false],
+            ["", "Take one of four paths, ordered by how much time you have", false],
             ["Search", "In a hurry? Paste this URL into your favorite LLM and ask it anything you’d like to know about me", true],
             [
               "Qualify",
