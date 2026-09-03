@@ -46,8 +46,8 @@ const INTELLECT: StatTableData = {
         {
           category: "Worldview (reasoned positions)",
           metrics: [
-            ["", "I am an integral (naturalistic) humanist: reason-grounded, humanity-centered", false],
-            ["Worldview", "Integral naturalistic humanist", true, "The composite stance the seven perspectives below resolve into."],
+            ["", "I am an Enlightenment humanist: reason-grounded, humanity-centered", false],
+            ["Worldview", "Enlightenment humanist", true, "The composite stance the seven perspectives below resolve into: technically, an integral naturalistic humanism."],
             ["Knowing", "Explanatory fallibilist (knowledge grows by better explanations; none final)", true, "Epistemology — the nature and sources of knowledge; how we know.", undefined, true],
             ["Being", "Physical idealist (one physical reality, in which ideas have real effects)", true, "Metaphysics — what is ultimately real; the fundamental nature of reality.", undefined, true],
             ["Origins", "Evolutionary emergentist (life and mind emerged bottom-up through evolution)", true, "Cosmology — the origin and nature of the universe and of life.", undefined, true],

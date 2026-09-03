@@ -244,7 +244,7 @@ export const INFOBOX: InfoboxGroup[] = [
     // day as the Nature page's battery (August 2026).
     rows: [
       { label: "Intelligence", values: [{ text: "RIOT: Full-scale IQ 112" }] },
-      { label: "Worldview", values: [{ text: "Integral naturalistic humanist" }] },
+      { label: "Worldview", values: [{ text: "Enlightenment humanist" }] },
       {
         label: "Personality",
         values: [{ text: "HEXACO: Disciplined, honest, and curious" }],
