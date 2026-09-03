@@ -180,7 +180,7 @@ const EMERGENCE: StatTableData = {
             ["Mindvalley", "Moved to Malaysia for the job, resigned inside a year, was rehired better (2017)", true],
             ["The Demartini method", "Signed us onto a five-day training on impulse, with no expectation (2023)", true],
             ["10X", "Sold my shares in the company built on six years of my method (2024)", true],
-            ["Partnership", "Ended things with Jelena twice, in 2015 and again in 2025, before leaving South Africa", true],
+            ["Partnership", "Ended things with Jelena twice, in 2015 and again in 2025, before leaving SA", true],
             ["Citizenship", "Gave up my country to arrive in the United States as a refugee (2026)", true],
           ],
         },

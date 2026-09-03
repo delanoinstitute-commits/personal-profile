@@ -32,7 +32,7 @@ const INTELLECT: StatTableData = {
             ["Fluid reasoning", "60 (84.5th percentile)", true, "Solving novel problems without relying on prior knowledge. Subtests: matrix reasoning 50, visual puzzles 64, figure weights 62.", undefined, true],
             ["Reaction time", "57 (75.5th percentile)", true, "Speed of response to a stimulus. Subtests: simple 57, choice 55.", undefined, true],
             ["Spatial ability", "54 (65.6th percentile)", true, "Reasoning about shapes, space, and visual relationships. Subtests: object rotation 56, SToVeS 54, spatial orientation 51.", undefined, true],
-            ["Processing speed", "50 (49.6th percentile)", true, "How quickly you take in and respond to information. Subtests: symbol search 55, abstract matching 43.", undefined, true],
+            ["Processing speed", "50 (49.6th percentile)", true, "How quickly information is taken in and acted on. Subtests: symbol search 55, abstract matching 43.", undefined, true],
             ["Working memory", "44 (26.5th percentile)", true, "Holding and manipulating information in mind. Subtests: visual reversal 46, computation span 42 (my lowest single score), exposure memory 50.", undefined, true],
           ],
         },
@@ -46,7 +46,7 @@ const INTELLECT: StatTableData = {
         {
           category: "Worldview (reasoned positions)",
           metrics: [
-            ["", "I am an integral (naturalistic) humanist — reason-grounded, humanity-centered", false],
+            ["", "I am an integral (naturalistic) humanist: reason-grounded, humanity-centered", false],
             ["Worldview", "Integral naturalistic humanist", true, "The composite stance the seven perspectives below resolve into."],
             ["Knowing", "Explanatory fallibilist (knowledge grows by better explanations; none final)", true, "Epistemology — the nature and sources of knowledge; how we know.", undefined, true],
             ["Being", "Physical idealist (one physical reality, in which ideas have real effects)", true, "Metaphysics — what is ultimately real; the fundamental nature of reality.", undefined, true],
