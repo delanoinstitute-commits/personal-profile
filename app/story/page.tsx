@@ -32,7 +32,7 @@ const INHERITANCE: StatTableData = {
           metrics: [
             ["", "I was issued a body, and the code that wrote it, before anything was done with either", false],
             ["Genotype (4)", "APOE (\u03b53/\u03b53; baseline Alzheimer\u2019s risk), ACTN3 (R/X; mixed power-endurance), lactase (persistent), and alcohol metabolism (ALDH2 typical; no flush response)", true],
-            ["Phenotype (5)", "Sex (male; XY), blood type (O negative), eyes (blue), hair (brown), and height (1.76 m)", true],
+            ["Phenotype (5)", "Sex (male; XY), blood type (O negative), eyes (blue), hair (brown), and height (176 cm)", true],
             ["Ancestry (2)", "Composition (94.8% European; 2.2% Sub-Saharan African; 1.9% Central and South Asian; 0.7% Melanesian), European detail (Belgian, Rhinelander and Southern Dutch 46.9%; Dutch and Northern German 34.5%; Austrian and Southern German 5.0%; French 4.0%)", true],
           ],
         },
@@ -41,9 +41,9 @@ const INHERITANCE: StatTableData = {
           metrics: [
             ["", "Grouped by generation, named only where consent is mine to give", false],
             ["Parents (2)", "Mother (living; no cardiac, neurological, oncological, or metabolic history; major trauma at 17) and father (living; history not available)", true],
-            ["Siblings (1)", "Brother (died at 18 of necrotising pneumonia with multiple lung abscesses; respiratory failure, septic shock, and DIC; Streptococcus milleri and Escherichia coli, both sensitive to the antibiotics given; recurrent tonsillitis; IgG and IgM below reference range)", true],
+            ["Siblings (1)", "Brother (died at 18 of necrotizing pneumonia with multiple lung abscesses; respiratory failure, septic shock, and DIC; Streptococcus milleri and Escherichia coli, both sensitive to the antibiotics given; recurrent tonsillitis; IgG and IgM below reference range)", true],
             ["Grandparents (3)", "Maternal grandfather (died at 73 of myocardial infarction; gout from 50; renal calculi; heavy smoker to 50, daily spirits until death), maternal grandmother (died at 57 of pulmonary fibrosis secondary to rheumatoid arthritis; type 2 diabetes; RA from 44; heavy smoker to 43, daily alcohol until death), and paternal grandparents (history unavailable)", true],
-            ["Extended (3)", "Maternal uncle (died at 60 of bone cancer of the cervical spine; occupational pesticide exposure), maternal uncle (died at 4 of bronchopneumonia), and maternal aunt (living; type 2 diabetes; obstructive sleep apnoea from 54; neither smoker nor drinker)", true],
+            ["Extended (3)", "Maternal uncle (died at 60 of bone cancer of the cervical spine; occupational pesticide exposure), maternal uncle (died at 4 of bronchopneumonia), and maternal aunt (living; type 2 diabetes; obstructive sleep apnea from 54; neither smoker nor drinker)", true],
             ["Great-grandparents (2)", "Maternal great-grandfather (died at 85 of hepatosplenic disease; type 1 diabetes; smoker from 11 to 55) and maternal great-grandmother (died at 89; cause not recorded)", true],
           ],
         },
