@@ -103,9 +103,9 @@ const CHARACTER: StatTableData = {
           category: "Primal beliefs (felt assumptions)",
           metrics: [
             ["", "I meet a world that is good, safe, and improving, with a mechanistic bent (scored 0–5)", false],
-            ["Good", "3.66 (with neutral primals ‘acceptable’ at 1.25 and ‘hierarchical’ at 3.8)", true, "The top-order primal — how good the world is overall, composed of the three below. Five neutral primals sit outside it, orthogonal to Good: acceptable, changing, hierarchical, interconnected, understandable."],
+            ["Good", "3.66 (with neutral primals ‘acceptable’ at 1.25 and ‘hierarchical’ at 3.80)", true, "The top-order primal: how good the world is overall, composed of the three below. Five neutral primals sit outside it, orthogonal to Good: acceptable, changing, hierarchical, interconnected, understandable."],
             ["Safe", "3.69 (with ‘progressing’ at 4.75)", true, "Whether the world is safe and nurturing, or dangerous and threatening.", undefined, true],
-            ["Enticing", "3.86 (with ‘abundant’ at 4.5)", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren.", undefined, true],
+            ["Enticing", "3.86 (with ‘abundant’ at 4.50)", true, "Whether the world is abundant, beautiful, and worth engaging, or dull and barren.", undefined, true],
             ["Alive", "2.21 (with ‘needs me’ at 2.75)", true, "Whether the world is a conscious, intentional agent aware of you, or impersonal and mechanistic.", undefined, true],
           ],
         },
