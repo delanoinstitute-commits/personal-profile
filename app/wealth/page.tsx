@@ -200,7 +200,7 @@ const GROWTH: StatTableData = {
         {
           category: "Cash (active banking)",
           metrics: [
-            ["", "Three months of burn in cash — enough to be calm, too little to be lazy", false],
+            ["", "Three months of burn in cash: enough to be calm, too little to be lazy", false],
             ["Liquidity", "Current ratio ≥3.0 (cash covering obligations three times over)", true, "Current assets over current liabilities — the lender’s first read on solvency. Three months of burn against one month of obligations holds the ratio at three; below it the buffer thins, far above it cash sits idle."],
             ["Checking", "Working capital (one month of expenses)", true, "The operating account: enough to clear one month's obligations, no more, since idle cash loses to inflation.", undefined, true],
             ["Savings", "Reserve capital (two months of expenses, in high-yield savings)", true, "The buffer for capital expenses, debt, taxes, and the health plan’s out-of-pocket maximum — sized to the largest single claim, not their sum — held where it earns a market rate while staying a day away.", undefined, true],
@@ -209,7 +209,7 @@ const GROWTH: StatTableData = {
         {
           category: "Funds (passive management)",
           metrics: [
-            ["", "Future me funded first, dreams funded on a date — both before the market gets a dollar", false],
+            ["", "Future me funded first, dreams funded on a date: both before the market gets a dollar", false],
             ["Retirement", "Contribution ratio 100% (every shell filled to its annual limit)", true, "The self-employed stack, in funding order. Maximum contribution is the benchmark because the space expires each year it goes unused — a year skipped never comes back."],
             ["Solo 401(k)", "Employee and employer contributions (both sides maxed)", true, "One person plays both roles: the employee elective deferral plus an employer profit-share of ~25% of compensation, stacking to the highest annual limit of any retirement shell.", undefined, true],
             ["HSA", "Triple-tax-advantaged (deductible in, untaxed growth, untaxed out)", true, "The only shell untaxed at all three gates when spent on medical costs, now or reimbursed decades later. Eligibility comes from the HSA-qualified plan in Security — insurance opens the shell, allocation fills it.", undefined, true],
