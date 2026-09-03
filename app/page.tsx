@@ -392,11 +392,11 @@ const CONTACT: StatTableData = {
           category: "Learners (viewers and readers)",
           metrics: [
             ["", "I’ve published everything below; use it free on your own, or join me inside", false],
-            ["Content (free)", "Master your time, exercise, and profile by yourself for free", true],
+            ["Content (free)", "Master your time, exercise, and profile by yourself", true],
             [
               "Training",
               [
-                "Build muscle and stay fit in under an hour a week with the free ",
+                "Build muscle and stay fit in under an hour a week with the ",
                 <WikiLink key="txm" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X Method</WikiLink>,
                 " course",
               ],
@@ -408,7 +408,7 @@ const CONTACT: StatTableData = {
             [
               "Lifestyle",
               [
-                "Design an organized life with the free ",
+                "Design an organized life with the ",
                 <WikiLink key="lfd" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">Lifestyle Design</WikiLink>,
                 " course",
               ],
@@ -420,7 +420,7 @@ const CONTACT: StatTableData = {
             [
               "Programming",
               [
-                "Design balanced, integrated exercise programs for yourself and others with the free ",
+                "Design balanced, integrated exercise programs for yourself and others with the ",
                 <WikiLink key="exd" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">Exercise Design</WikiLink>,
                 " course",
               ],
