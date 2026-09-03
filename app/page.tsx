@@ -35,7 +35,7 @@ const LORENZO: StatTableData = {
             ["Transformation", "The behavioral changes associated with personal progress", true, undefined, undefined, true],
             [
               "Mission",
-              "I help expand consciousness by moving our hours from surviving, to mastering, to serving",
+              "I accelerate the expansion of human consciousness using education technologies",
               true,
               "Consciousness expands when maintenance shrinks, the non-outsourceable is mastered (exercise, eating, studying, finances, time, mind), and the hours freed go to the problems we care about most — serving others with our uniqueness. Musk works at the planetary level; I work at the individual: self-sufficiency, then self-mastery.",
             ],
