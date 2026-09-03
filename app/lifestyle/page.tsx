@@ -363,7 +363,7 @@ const SPACE: StatTableData = {
             ["", "What only the city provides: paperwork, power, movement, institutions, and the outdoors", false],
             ["Administration (7)", [
               "Identification (",
-              <WikiLink key="ssa" href="https://www.ssa.gov/">Social Security Administration</WikiLink>,
+              <WikiLink key="ssa" href="https://www.ssa.gov/">SSA</WikiLink>,
               "), immigration (",
               <WikiLink key="usc" href="https://www.uscis.gov/">USCIS</WikiLink>,
               "), taxation (",
@@ -482,7 +482,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-education",
         cite: (
           <>
-            <strong>Education</strong>: <em><WikiLink href="https://youtu.be/h8FYdFHeDtg">Top-60 YouTube Resources</WikiLink> (2025)</em>; guidelines for continuous self-education • presentation (YouTube)
+            <strong>Study</strong>: <em><WikiLink href="https://youtu.be/h8FYdFHeDtg">Top-60 YouTube Resources</WikiLink> (2025)</em>; guidelines for continuous self-education • presentation (YouTube)
           </>
         ),
       },
@@ -495,7 +495,7 @@ const LIFESTYLE_PERSONAL: ReferenceSection[] = [
         id: "p-sleep",
         cite: (
           <>
-            <strong>Sleep</strong>: <em>PPG, thermometry, and accelerometry (continuous)</em>; tracks overall sleep quality using heart rate, HRV, SpO&#8322;, respiratory rate, skin temperature, and movement (OURA) • report (app)
+            <strong>Sleep</strong>: <em>PPG, thermometry, and accelerometry (continuous)</em>; tracks overall sleep quality using heart rate, HRV, SpO&#8322;, respiratory rate, skin temperature, and movement (Oura) • report (app)
           </>
         ),
       },
@@ -682,7 +682,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-radon",
         cite: (
           <>
-            <strong>Radon</strong>: World Health Organization (2009). <em>WHO handbook on indoor radon: a public health perspective</em>. A reference level of 100 Bq/m³ — the exposure that varies by where you live.
+            <strong>Radon</strong>: World Health Organization (2009). <em>WHO handbook on indoor radon: a public health perspective</em>. A reference level of 100 Bq/m³, the exposure that varies by where you live.
           </>
         ),
         url: "https://www.who.int/publications/i/item/9789241547673",
@@ -717,7 +717,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-gallup",
         cite: (
           <>
-            <strong>Wellbeing</strong>: <em>Gallup World Poll</em> (annual); life evaluation on the Cantril ladder across 140+ countries — the base for the <em>World Happiness Report</em> and the income-to-happiness literature • <WikiLink href="https://worldhappiness.report/">worldhappiness.report</WikiLink>
+            <strong>Wellbeing</strong>: <em>Gallup World Poll</em> (annual); life evaluation on the Cantril ladder across 140+ countries: the base for the <em>World Happiness Report</em> and the income-to-happiness literature • <WikiLink href="https://worldhappiness.report/">worldhappiness.report</WikiLink>
           </>
         ),
       },
@@ -749,7 +749,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-ukbiobank",
         cite: (
           <>
-            <strong>Cohort biology</strong>: <em>UK Biobank</em> (2006–, ongoing); 500,000 participants with genomics, imaging, and wrist accelerometry — the source behind most step-count and sleep dose-response findings • <WikiLink href="https://www.ukbiobank.ac.uk/">ukbiobank.ac.uk</WikiLink>
+            <strong>Cohort biology</strong>: <em>UK Biobank</em> (2006–, ongoing); 500,000 participants with genomics, imaging, and wrist accelerometry: the source behind most step-count and sleep dose-response findings • <WikiLink href="https://www.ukbiobank.ac.uk/">ukbiobank.ac.uk</WikiLink>
           </>
         ),
       },
@@ -789,7 +789,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-lss",
         cite: (
           <>
-            <strong>Radiation</strong>: <em>Life Span Study</em> (1950–, ongoing); ~120,000 Hiroshima and Nagasaki survivors with individual dose estimates — the primary source informing every international dose limit (RERF) • <WikiLink href="https://www.rerf.or.jp/en/">rerf.or.jp</WikiLink>
+            <strong>Radiation</strong>: <em>Life Span Study</em> (1950–, ongoing); ~120,000 Hiroshima and Nagasaki survivors with individual dose estimates: the primary source informing every international dose limit (RERF) • <WikiLink href="https://www.rerf.or.jp/en/">rerf.or.jp</WikiLink>
           </>
         ),
       },
@@ -821,7 +821,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-fbi",
         cite: (
           <>
-            <strong>Safety</strong>: <em>FBI Crime Data Explorer</em> (annual); offence and arrest counts reported by agency through the national incident-based system • <WikiLink href="https://cde.ucr.cjis.gov/">cde.ucr.cjis.gov</WikiLink>
+            <strong>Safety</strong>: <em>FBI Crime Data Explorer</em> (annual); offense and arrest counts reported by agency through the national incident-based system • <WikiLink href="https://cde.ucr.cjis.gov/">cde.ucr.cjis.gov</WikiLink>
           </>
         ),
       },
@@ -890,7 +890,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-estruch",
         cite: (
           <>
-            <strong>Nutrition</strong>: Estruch, R., et al. (2018). Primary prevention of cardiovascular disease with a Mediterranean diet supplemented with extra-virgin olive oil or nuts. <em>New England Journal of Medicine</em>, 378(25). PREDIMED; 7,447 randomised — a rare dietary trial rather than a cohort.
+            <strong>Nutrition</strong>: Estruch, R., et al. (2018). Primary prevention of cardiovascular disease with a Mediterranean diet supplemented with extra-virgin olive oil or nuts. <em>New England Journal of Medicine</em>, 378(25). PREDIMED; 7,447 randomized, a rare dietary trial rather than a cohort.
           </>
         ),
         url: "https://pubmed.ncbi.nlm.nih.gov/29897866/",
