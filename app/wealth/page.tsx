@@ -112,10 +112,10 @@ const EFFICIENCY: StatTableData = {
           ],
         },
         {
-          category: "Capital (once-off costs)",
+          category: "Capital (one-off costs)",
           metrics: [
             ["", "The lumpy costs, capped so they never set the pace", false],
-            ["Variable", "Operating margin >65% (income surviving all burn)", true, "What remains of gross once fixed and variable costs are both paid. The variable line itself — irregular and once-off spending, averaged annually — is capped under 5%, because lumpy costs are where budgets quietly die."],
+            ["Variable", "Operating margin >65% (income surviving all burn)", true, "What remains of gross once fixed and variable costs are both paid. The variable line itself — irregular and one-off spending, averaged annually — is capped under 5%, because lumpy costs are where budgets quietly die."],
             ["Home", "Equipment (furniture; appliances) and repairs (services)", true, undefined, undefined, true],
             ["Health", "Medical (out-of-pocket; diagnostics)", true, undefined, undefined, true],
             ["Mobility", "Vehicle (repairs)", true, undefined, undefined, true],
@@ -174,7 +174,7 @@ const EFFICIENCY: StatTableData = {
         {
           category: "Profits (free cash flow)",
           metrics: [
-            ["", "I run myself as a firm — free cash has three uses, each with a rule", false],
+            ["", "I run myself as a firm: free cash has three uses, each with a rule", false],
             ["Financing", "Repayment margin ≥15% (principal retired first)", true, "The financing decision holds the right mix of debt and equity: every dollar of principal retired is a guaranteed return at the loan’s own rate, so the highest rate goes first. While no debt is held, the margin has nothing to retire and folds into investing — the floor binds only when a balance exists."],
             ["Unsecured", "Maximum pace (the highest rate, retired first)", true, undefined, undefined, true],
             ["Secured", "Minimum schedule (the lowest rate, held longest)", true, undefined, undefined, true],
