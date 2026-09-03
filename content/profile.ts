@@ -272,27 +272,27 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "About",
         labelHref: "/",
-        values: [{ text: "Person, website, and offers" }],
+        values: [{ text: "Every claim referenced" }],
       },
       {
         label: "Lifestyle",
         labelHref: "/lifestyle",
-        values: [{ text: "What I do, when, and where" }],
+        values: [{ text: "12 habits, all 24 hours" }],
       },
       {
         label: "Health",
         labelHref: "/health",
-        values: [{ text: "Build, balance, and capacity" }],
+        values: [{ text: "Elite VO₂max, optimal labs" }],
       },
       {
         label: "Wealth",
         labelHref: "/wealth",
-        values: [{ text: "Guarded, moved, and grown" }],
+        values: [{ text: "Debt-free, top-tier credit" }],
       },
       {
         label: "Network",
         labelHref: "/network",
-        values: [{ text: "Who I lean on, walk with, and lift" }],
+        values: [{ text: "Each seat benchmarked" }],
       },
     ],
   },
