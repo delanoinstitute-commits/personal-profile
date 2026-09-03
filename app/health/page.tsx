@@ -266,7 +266,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
               <MovementLevels
                 summary="Peak rate of oxygen use during exercise: the VO₂max ladder."
                 measure="Peak Rate"
-                ageBand="Age 35-39"
+                ageBand="Age 35–39"
                 male={["30 ml/kg/min (low)", "38 ml/kg/min (fair)", "44 ml/kg/min (average)", "49 ml/kg/min (good)", "53 ml/kg/min (elite)"]}
                 female={["25 ml/kg/min (low)", "32 ml/kg/min (fair)", "38 ml/kg/min (average)", "43 ml/kg/min (good)", "47 ml/kg/min (elite)"]}
               />
@@ -293,7 +293,7 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "biochemistry",
         cite: (
           <>
-            <strong>Biochemistry</strong>: <em>Phlebotomy (Jan 2026)</em>; tests for ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, eGFR, ALT, and uric acid (biochemistry &amp; hematology) • report (Pathcare)
+            <strong>Biochemistry</strong>: <em>Phlebotomy (Jan 2026)</em>; tests for ApoB, HbA1c, fasting insulin, ferritin, hemoglobin, hs-CRP, eGFR, ALT, and uric acid (biochemistry &amp; hematology) • report (Pathcare)
           </>
         ),
       },
