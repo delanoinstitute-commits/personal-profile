@@ -220,7 +220,7 @@ export const SKILLS: StatTableData = {
         {
           category: "Structural (knowledge and system design)",
           metrics: [
-            ["", "I organize, design, and strategize transformative outcomes", false],
+            ["", "I organize knowledge, design systems, and strategize outcomes", false],
             ["Classification", "Knowledge domain mapping, distillation, and standardization", true],
             ["Architecture", "Product, protocol, content, assessment, and software design", true],
             ["Analysis", "Performance tracking, benchmarking, planning, programming, and reporting", true],
@@ -330,7 +330,7 @@ export const WORKS: StatTableData = {
             [
               "Fitness studio",
               [
-                <em key="n">Q. Physiques</em>,
+                <em key="n">QP</em>,
                 " with ",
                 <WikiLink key="brad" href="https://movefreely.co.za/">Brad Openshaw</WikiLink>,
                 ", Pretoria, 3 years, 2011–2013 (age 23–25)",
