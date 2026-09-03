@@ -156,7 +156,7 @@ const EMERGENCE: StatTableData = {
             ["", "I recognized myself in these before I could explain why", false],
             ["Stories", [<em key="mk">Mortal Kombat</em>, "’s Liu Kang (1995), ", <em key="dr">Dragon</em>, "’s Bruce Lee (1997), ", <em key="dbz">Dragon Ball Z</em>, "’s Goku (2003), ", <em key="tls">The Last Samurai</em>, "’s Nathan Algren (2005), ", <em key="im">Iron Man</em>, "’s Tony Stark (2008), and Benedict Cumberbatch’s Sherlock Holmes (2017)"], true],
             ["Exemplars", "Bruce Lee (2004–2006); Tony Robbins and Greg Glassman (2008–2011); John Demartini, Neale Donald Walsch, and Mark Sisson (2011–2014); Doug McGuff, Ken Wilber, and Alan Watts (2014–2017); Christopher Sommer, Jordan Peterson, and Naval Ravikant (2017–2021); Peter Attia, David Deutsch, Aswath Damodaran, and Elon Musk (2021–)", true],
-            ["Disciplines", "Eastern philosophy (2004), languages and theology (2005), psychology and exercise physiology (2008), education (2013), western philosophy and marketing (2014), finance (2016), medicine (2018), epistemology (2021), chemistry (2022), and computer science and knowledge organization (current)", true],
+            ["Disciplines", "Eastern philosophy (2004), languages and theology (2005), exercise physiology (2008), education psychology (2013), western philosophy and marketing (2014), finance (2016), medicine (2018), epistemology (2021), chemistry (2022), and computer science and knowledge organization (current)", true],
           ],
         },
       ],
