@@ -90,7 +90,7 @@ const ACTIVITY: StatTableData = {
           metrics: [
             ["", "Wealth depends on serving people directly and coordinating resources at a distance", false],
             ["Serve (2 hrs)", [
-              "Whether as employee, contractor, or coach, I set aside 10 hours weekly for client-facing activities — delivering the ",
+              "Whether as employee, contractor, or coach, I set aside 10 hours weekly for client-facing activities, delivering the ",
               <WikiLink key="tec" href="/knowledge#skills">technical</WikiLink>,
               ", ",
               <WikiLink key="ped" href="/knowledge#skills">pedagogical</WikiLink>,
@@ -99,7 +99,7 @@ const ACTIVITY: StatTableData = {
               " solutions they need most",
             ], true],
             ["Manage (1 hr)", [
-              "Coordinating others to help us manage our responsibilities in one form or another is unavoidable; learning to do it well compounds our network- and ",
+              "Coordinating others to manage my responsibilities is unavoidable; learning to do it well compounds my network- and ",
               <WikiLink key="wlt" href="/wealth">wealth</WikiLink>,
               "-building efforts",
             ], true],
@@ -110,7 +110,7 @@ const ACTIVITY: StatTableData = {
           metrics: [
             ["", "Physical vitality depends on balancing the energy I take in against what I spend", false],
             ["Walk (1 hr)", [
-              "I walk twice daily — to the shops in the afternoon before exercising, and in the evening after dinner while studying — ",
+              "I walk twice daily (to the shops in the afternoon before exercising, and in the evening after dinner while studying), ",
               <WikiLink key="bal2" href="/health#balance">balancing</WikiLink>,
               " a PAL target of 1.7 times my BMR",
             ], true],
@@ -130,10 +130,10 @@ const ACTIVITY: StatTableData = {
             ["Play (1 hr)", [
               "While I love going to the theater or playing board or TV games, I enjoy engaging in physical ",
               <WikiLink key="chl" href="/health#capacity">challenges</WikiLink>,
-              " with others the most — practicing gymnastics or playing squash with friends",
+              " with others the most, practicing gymnastics or playing squash with friends",
             ], true],
             ["Connect (1 hr)", [
-              "The days I serve clients or share a walk or a meal with loved ones are by far the most rewarding — a continued source of joy and ",
+              "The days I serve clients or share a walk or a meal with loved ones are by far the most rewarding: a continued source of joy and ",
               <WikiLink key="grw" href="/nature#character">growth</WikiLink>,
             ], true],
           ],
