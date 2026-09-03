@@ -405,7 +405,7 @@ export const WORKS: StatTableData = {
         {
           category: "Methodologies (design principles)",
           metrics: [
-            ["", "I am the creator of two methodologies: one for learning (organizing knowledge), one for teaching (transmitting it)", false],
+            ["", "I am the creator of two methodologies: one for learning (FT), one for teaching (BA)", false],
             ["Functional Taxonomy", "My learning methodology: a universal process that classifies any domain by function into five frames, for efficient reference, retrieval, and transmission", true, "The five frames of a functional taxonomy: maps (the view of a domain), routines (the full search space of possible paths), designs (the paths selected), spaces (the tools and environment implementation takes), and programs (what to do when). The same content classifies differently by frame; the frame follows the taxonomy\u2019s function."],
             ["Benchmark Apprenticeship", "My teaching methodology: establish the fastest verified transmission of a skill to self-sufficiency under ideal conditions, then hold every medium to that benchmark", true, "The benchmark experience: once-off (1\u20132 days), four-part (thesis, evaluation, strategy, and training), 1-on-1/duo, in person, apprenticeship-based. The clock stops when the student can execute, track, and close their remaining gaps alone; formats that deviate (group, virtual, book) pay the delta in the learner\u2019s own hours, making media design loss minimization. Theory ships ahead with a self-assessment; the session itself is hands-on."],
           ],
@@ -433,7 +433,7 @@ export const WORKS: StatTableData = {
               [
                 "A universal basic-fitness program co-authored with ",
                 <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
-                " using my educational design framework, available as a ",
+                ", mapped with my FT (the workbook) and delivered with my BA, available as a ",
                 <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
               ],
               true,
@@ -443,7 +443,7 @@ export const WORKS: StatTableData = {
               [
                 "A universal values-mastery program co-authored with ",
                 <WikiLink key="djd" href="https://drdemartini.com/">Dr. John Demartini</WikiLink>,
-                " using my educational design framework, available as a ",
+                ", mapped with my FT and delivered with my BA, available as a ",
                 <WikiLink key="vf" href="https://www.mindvalley.com/values">Mindvalley quest</WikiLink>,
               ],
               true,
@@ -451,7 +451,7 @@ export const WORKS: StatTableData = {
             [
               "MSP",
               [
-                "A universal exercise-mastery system taught using my Functional Taxonomy method, available as five free YouTube (",
+                "A universal exercise-mastery protocol designed and delivered with my FT alone (the slides adapt its taxonomy tables), available as five free YouTube (",
                 <WikiLink key="map" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9rBcU7Fwl6-eizseHRR50lI">map</WikiLink>,
                 ", ",
                 <WikiLink key="routines" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">routines</WikiLink>,
@@ -467,9 +467,9 @@ export const WORKS: StatTableData = {
               true,
             ],
             [
-              "Taxonomy of the Self",
+              "Autaxonomy",
               [
-                "The map taxonomy of a person (constitution and capital), built with my Functional Taxonomy method; available as a free (but credited) ",
+                "The taxonomy of the self: a map of a person (constitution and capital) designed with my FT, available as a free (but credited) ",
                 <WikiLink key="tax" href="/">taxonomy</WikiLink>,
                 " and design-spec markdown file",
               ],
@@ -530,7 +530,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "education-methodology",
         cite: (
           <>
-            <strong>Product design</strong>: <em><WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">Education Methodology</WikiLink> (2023, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, architecture, and production • video (Loom)
+            <strong>Methodology design</strong>: <em><WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">Education Methodology</WikiLink> (2023, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, architecture, and production • video (Loom)
           </>
         ),
       },
@@ -607,7 +607,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "personal-wikipedia",
         cite: (
           <>
-            <strong>Profile taxonomy</strong>: <em><WikiLink href="/">Personal Wikipedia</WikiLink> (2026, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification and architecture (vibe coding) • website (Vercel)
+            <strong>Profile taxonomy</strong>: <em><WikiLink href="/">Autaxonomy</WikiLink> (2026, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification and architecture (vibe coding) • website (Vercel)
           </>
         ),
       },
