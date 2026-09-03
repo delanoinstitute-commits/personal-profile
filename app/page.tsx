@@ -162,7 +162,7 @@ const LORENZO: StatTableData = {
             [
               "Market",
               [
-                "I’m choosing my next long-term work chapter in the US, employment to equity: the one ",
+                "I’m choosing my next long-term work chapter in the US (employment to equity): the one ",
                 <WikiLink key="pt" href="#contact">commitment</WikiLink>,
                 " where my leverage creates the largest impact",
               ],
@@ -170,7 +170,7 @@ const LORENZO: StatTableData = {
             ],
             [
               "Education",
-              "I envision creating the world’s first lifelong, self-directed education curriculum, built and consumed according to a taxonomy of the self; this site is my first prototype of the structure",
+              "I’m designing the world’s first lifelong, self-directed education curriculum, built and consumed according to a taxonomy of the self; this site is its first prototype",
               true,
               "Subjects studied according to one’s own constitution and capital: math for wealth, philosophy and psychology for nature, history from your own life outward to your country and the universe, biology for your inheritance and health. Knowledge made personal is more meaningful and more memorable, and converts into self-efficacy rather than mere acquisition.",
             ],
