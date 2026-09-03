@@ -99,9 +99,9 @@ const NURTURE: StatTableData = {
           metrics: [
             ["", "One firm reads the whole balance sheet, personal and corporate in one conversation", false],
             ["Counselors (money)", "The best counselors read the whole position and sell nothing", true],
+            ["Banker", "Andrea Juarez (Chase)", true, "The best bankers put a face on the branch: a named officer who answers, expedites, and escalates — the retail tier the fiduciary doesn’t cover.", undefined, true],
             ["Accountant (AI)", "Eugene Park (Baker Tilly); Claude (analyst)", true, "The best CPAs hold the person and the business at one firm — two ledgers that never contradict each other.", undefined, true],
             ["Fiduciary (connector)", "Pending; Claude (researcher; analyst; planner)", true, "The best fiduciaries are fee-only, capable, and conflict-free. The episodic experts — attorneys, brokers, agents — are reached through this tier’s advocacy, not kept on retainer. One of the map’s five connectors — the money world behind one fee-only relationship.", undefined, true],
-            ["Banker", "Andrea Juarez (Chase)", true, "The best bankers put a face on the branch: a named officer who answers, expedites, and escalates — the retail tier the fiduciary doesn’t cover.", undefined, true],
           ],
         },
       ],
@@ -279,7 +279,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-assistant",
         cite: (
           <>
-            <strong>Assistant</strong>: <em>Claude (2025-present)</em>; researcher, analyst, editor, tutor, and sounding board, the roles it holds across this page • LLM (<WikiLink href="https://www.anthropic.com">Anthropic</WikiLink>)
+            <strong>Assistant</strong>: <em>Claude (2025–present)</em>; researcher, analyst, editor, tutor, and sounding board, the roles it holds across this page • LLM (<WikiLink href="https://www.anthropic.com">Anthropic</WikiLink>)
           </>
         ),
       },
@@ -287,7 +287,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-dentist",
         cite: (
           <>
-            <strong>Dentist</strong>: <em>Dr. JJ Serfontein (2023-present)</em>; examination, hygiene, and dental work under one roof • dentistry (<WikiLink href="https://www.jjteeth.co.za/">JJS Dentistry</WikiLink>)
+            <strong>Dentist</strong>: <em>Dr. JJ Serfontein (2023–2026)</em>; examination, hygiene, and dental work under one roof • dentistry (<WikiLink href="https://www.jjteeth.co.za/">JJS Dentistry</WikiLink>)
           </>
         ),
       },
@@ -295,7 +295,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-psychologist",
         cite: (
           <>
-            <strong>Psychologist</strong>: <em>Dr. John Demartini (2023-present)</em>; values work and emotional and mental mastery, systematized rather than essayed • human behavior (<WikiLink href="https://drdemartini.com">Demartini Institute</WikiLink>)
+            <strong>Psychologist</strong>: <em>Dr. John Demartini (2023–present)</em>; values work and emotional and mental mastery, systematized rather than essayed • human behavior (<WikiLink href="https://drdemartini.com">Demartini Institute</WikiLink>)
           </>
         ),
       },
@@ -303,7 +303,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-physiologist",
         cite: (
           <>
-            <strong>Physiologist</strong>: <em>Reece McDonald (2023-present)</em>; CPET, lactate, and performance testing on repeatable protocols • exercise physiology (<WikiLink href="https://www.science2sport.com">Science2Sport</WikiLink>, SSISA)
+            <strong>Physiologist</strong>: <em>Reece McDonald (2023–present)</em>; CPET, lactate, and performance testing on repeatable protocols • exercise physiology (<WikiLink href="https://www.science2sport.com">Science2Sport</WikiLink>, SSISA)
           </>
         ),
       },
@@ -319,7 +319,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-coach",
         cite: (
           <>
-            <strong>Coach</strong>: <em>Jelena Lakic (2018-present)</em>; behavior, accountability, and health strategy, in person and virtual • health coaching (<WikiLink href="https://jelenalakic.com/">jelenalakic.com</WikiLink>)
+            <strong>Coach</strong>: <em>Jelena Lakic (2018–present)</em>; behavior, accountability, and health strategy, in person and virtual • health coaching (<WikiLink href="https://jelenalakic.com/">jelenalakic.com</WikiLink>)
           </>
         ),
       },
@@ -327,7 +327,7 @@ const NETWORK_DATA: ReferenceSection[] = [
         id: "rec-instructor",
         cite: (
           <>
-            <strong>Instructor</strong>: <em>Brad Openshaw (2011-present)</em>; strength and movement instruction, the standard the self-sufficiency was built on • personal training (<WikiLink href="https://movefreely.co.za/">MoveFreely</WikiLink>)
+            <strong>Instructor</strong>: <em>Brad Openshaw (2011–present)</em>; strength and movement instruction, the standard the self-sufficiency was built on • personal training (<WikiLink href="https://movefreely.co.za/">MoveFreely</WikiLink>)
           </>
         ),
       },
