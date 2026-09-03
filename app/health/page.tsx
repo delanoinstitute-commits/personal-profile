@@ -523,18 +523,18 @@ export default function HealthPage() {
     <div className="zoned">
       <PageHeading title="Health" />
 
-      <p id="introduction" className="page-hook">Every number here comes with a lab report.</p>
+      <p id="introduction" className="page-hook">My body: built, balanced, and load-tested.</p>
       <p className="page-promise">
         My full 2026 health status — body composition, blood chemistry, and
-        performance under load — all clinically measured, all benchmarked, with the
-        redacted reports published.
+        performance at full effort — all clinically measured, all benchmarked, with
+        the redacted reports published.
       </p>
       <p>
         It reads one body at three levels, from rest to all-out effort:{" "}
         <WikiLink href="#integrity">Integrity</WikiLink> (how soundly it&rsquo;s built),{" "}
         <WikiLink href="#balance">Balance</WikiLink> (how calmly it holds and returns
         to rest), and <WikiLink href="#capacity">Capacity</WikiLink> (what it can do
-        under load).
+        flat out).
       </p>
       <p>
         If you read one row per level: a lean, muscular frame at 1.76 m and 74.3 kg,

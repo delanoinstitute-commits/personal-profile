@@ -739,7 +739,7 @@ export default function WealthPage() {
         title="Wealth"
       />
 
-      <p id="introduction" className="page-hook">My money&rsquo;s system is public. Its balances aren&rsquo;t.</p>
+      <p id="introduction" className="page-hook">I run my finances like a firm of one.</p>
       <p className="page-promise">
         My complete financial architecture — the insurance floor, the income
         exchanges, the expense cascade, and the investment waterfall — with every

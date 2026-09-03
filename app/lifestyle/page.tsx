@@ -1026,14 +1026,14 @@ export default function LifestylePage() {
       <p>
         It reads in three branches: <WikiLink href="#activity">Activity</WikiLink>{" "}
         (what I do), <WikiLink href="#time">Time</WikiLink> (when I do it), and{" "}
-        <WikiLink href="#space">Space</WikiLink> (where I do it). The twelve habits
-        split the day between them — if the hours don&rsquo;t add up, something on this
-        page is wrong.
+        <WikiLink href="#space">Space</WikiLink> (where I do it). This is the current
+        design, not a fixed one — and the goal isn&rsquo;t a full calendar; it&rsquo;s
+        one so well planned it feels empty.
       </p>
       <p>
-        Time pins each habit to real daily and weekly blocks, so the design survives
-        an actual calendar. Space grades the places that host it all, at two scales:
-        the city that fits the life, and the home that runs it.
+        The blocks move easily: when the work needs different hours, the design adapts
+        to the job, not the other way around. Space grades the places that host it
+        all, at two scales — the city that fits the life, and the home that runs it.
       </p>
 
       <hr className="zone-rule" />
