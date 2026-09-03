@@ -192,7 +192,7 @@ const EMERGENCE: StatTableData = {
 
 const STORY_DATA: ReferenceSection[] = [
   {
-    label: "My data derived from sequencing, admixture analysis, and family interview",
+    label: "My data derived from genotyping, admixture analysis, and family interview",
     items: [
       {
         id: "genotype",
@@ -253,7 +253,7 @@ export default function StoryPage() {
         title="Story"
       />
 
-      <p id="introduction" className="page-hook">My story: what I was given, what I chose.</p>
+      <p id="introduction" className="page-hook">What made me, and what I made of it.</p>
       <p className="page-promise">
         From my DNA and family tree to every stage of life so far: the whole timeline
         is here, including the parts that were handed to me and the choices nothing
