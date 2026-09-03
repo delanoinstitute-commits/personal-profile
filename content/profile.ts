@@ -255,6 +255,10 @@ export const INFOBOX: InfoboxGroup[] = [
         values: [{ text: "PVQ: Autonomy, achievement, and universal-care" }],
       },
       {
+        label: "Beliefs",
+        values: [{ text: "PWB: Good, safe, and improving" }],
+      },
+      {
         label: "Interests",
         values: [{ text: "RIASEC: Investigative, artistic, and social" }],
       },
