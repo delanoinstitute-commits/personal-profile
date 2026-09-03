@@ -88,7 +88,7 @@ const CHARACTER: StatTableData = {
             ["", "I take financial risk more readily than 96 in 100 adults (scored 0–100)", false],
             ["Risk score", "68 (96th percentile)", true, "Overall financial risk tolerance against a representative adult sample; 68 is a very high score."],
             ["Risk group", "6 of 7", true, "The band my score falls in — group 6 reads risk as opportunity and takes a medium-to-large degree of it.", undefined, true],
-            ["Self-estimate", "80 (actual 68)", true, "What I predicted I would score. Most people under-estimate their tolerance; I over-estimated mine.", undefined, true],
+            ["Self-estimate", "80 (actual 68)", true, "What I predicted I would score. Most people underestimate their tolerance; I overestimated mine.", undefined, true],
             ["Loss tolerance", "> 50% fall", true, "How far the total value of my investments would have to drop before I began to feel uncomfortable.", undefined, true],
           ],
         },
