@@ -367,7 +367,7 @@ const WEBSITE: StatTableData = {
             [
               "Contact",
               [
-                "Have an inquiry? Read my capital pages then contact me through the ",
+                "Have an inquiry? Read my capital pages, then contact me through the ",
                 <WikiLink key="of" href="#contact">offers below</WikiLink>,
                 "",
               ],
