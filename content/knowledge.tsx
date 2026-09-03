@@ -405,9 +405,9 @@ export const WORKS: StatTableData = {
         {
           category: "Methodologies (design principles)",
           metrics: [
-            ["", "I am the creator of two design methodologies, the philosophy behind all my designs", false],
-            ["Taxonomical", "A universal information integration design (IID) process for efficient knowledge classification, retrieval, and referencing", true],
-            ["Educational", "A universal product (instructional) design framework that maps the behavioral changes a prospect (student) must make to become a lifelong, self-sufficient user (practitioner) of any product (skill)", true],
+            ["", "I am the creator of two methodologies: one for learning (organizing knowledge), one for teaching (transmitting it)", false],
+            ["Functional Taxonomy", "My learning methodology: a universal process that classifies any domain by function into five frames, for efficient reference, retrieval, and transmission", true, "The five frames of a functional taxonomy: maps (the view of a domain), routines (the full search space of possible paths), designs (the paths selected), spaces (the tools and environment implementation takes), and programs (what to do when). The same content classifies differently by frame; the frame follows the taxonomy\u2019s function."],
+            ["Benchmark Apprenticeship", "My teaching methodology: establish the fastest verified transmission of a skill to self-sufficiency under ideal conditions, then hold every medium to that benchmark", true, "The benchmark experience: once-off (1\u20132 days), four-part (thesis, evaluation, strategy, and training), 1-on-1/duo, in person, apprenticeship-based. The clock stops when the student can execute, track, and close their remaining gaps alone; formats that deviate (group, virtual, book) pay the delta in the learner\u2019s own hours, making media design loss minimization. Theory ships ahead with a self-assessment; the session itself is hands-on."],
           ],
         },
         {
@@ -451,7 +451,7 @@ export const WORKS: StatTableData = {
             [
               "MSP",
               [
-                "A universal exercise-mastery system taught using my IID methodology, available as five free YouTube (",
+                "A universal exercise-mastery system taught using my Functional Taxonomy method, available as five free YouTube (",
                 <WikiLink key="map" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9rBcU7Fwl6-eizseHRR50lI">map</WikiLink>,
                 ", ",
                 <WikiLink key="routines" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">routines</WikiLink>,
@@ -467,9 +467,9 @@ export const WORKS: StatTableData = {
               true,
             ],
             [
-              "Autoprofiler",
+              "Taxonomy of the Self",
               [
-                "A universal personal-profiling framework built using IID principles, available as a free (but credited) ",
+                "The map taxonomy of a person (constitution and capital), built with my Functional Taxonomy method; available as a free (but credited) ",
                 <WikiLink key="tax" href="/">taxonomy</WikiLink>,
                 " and design-spec markdown file",
               ],
