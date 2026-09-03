@@ -86,13 +86,13 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
             ["Percent body fat", "8.2% (<5th percentile)", true, "Body fat as a share of soft tissue (the DEXA measure, excluding bone); both too-high and too-low are adverse for health. 10–18% is optimal for men."],
             ["Total mass", "74.3 kg", true, undefined, undefined, true],
             ["Fat mass", "5.9 kg", true, undefined, undefined, true],
-            ["Visceral adipose tissue", "114 g", true, "Fat packed around the internal organs — the most metabolically harmful kind, with a strong gradient to cardiometabolic disease. Below 0.5 kg is the target."],
+            ["Visceral adipose tissue", "114 g", true, "Fat packed around the internal organs — the most metabolically harmful kind, with a strong gradient to cardiometabolic disease. Below 500 g is the target."],
           ],
         },
         {
           category: "Muscle mass (force reserve)",
           metrics: [
-            ["", "I carry more muscle than four in five men my age", false],
+            ["", "I carry more muscle than 4 in 5 men my age", false],
             ["ALMI", "9.4 kg/m² (>85th percentile)", true, "Appendicular lean mass index — arm and leg muscle relative to height. The strongest body-composition marker; low defines sarcopenia. ≥8.0 kg/m² is optimal for men."],
             ["Height squared", "3.09 m²", true, undefined, undefined, true],
             ["Appendicular lean mass", "29.1 kg", true, undefined, undefined, true],
@@ -116,7 +116,7 @@ const STRUCTURAL_INTEGRITY: StatTableData = {
         {
           category: "Waistline (central adiposity)",
           metrics: [
-            ["", "My waist is well under half my height — low central-fat risk", false],
+            ["", "My waist is well under half my height: low central-fat risk", false],
             ["Waist-to-height ratio", "0.45", true, "Waist ÷ height — the best simple predictor of central-fat risk, beating BMI; under 0.5 is the target."],
             ["Height", "176 cm", true, undefined, undefined, true],
             ["Waist circumference", "80 cm", true, undefined, undefined, true],
