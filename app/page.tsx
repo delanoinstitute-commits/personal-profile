@@ -682,22 +682,28 @@ export default function AboutPage() {
     <div className="zoned">
       <PageHeading title="About" />
 
-      <p id="introduction" className="page-hook">What makes a person? This site is my answer, demonstrated on myself.</p>
+      <p id="introduction" className="page-hook">Hi, I&rsquo;m Lorenzo. I design education people actually finish.</p>
       <p className="page-promise">
-        Who I am, how the site works, and every way to work with me — from free courses
-        to equity partnerships — with the other seven pages holding the record.
+        For the past decade I&rsquo;ve turned best-selling authors&rsquo; expertise into
+        structured learning — 90,000+ students completed a method I codified, 500+
+        coaches were certified to teach it — and my own life is the first test of
+        everything I build.
       </p>
       <p>
-        This page is the preamble, in three branches:{" "}
-        <WikiLink href="#lorenzo">Lorenzo</WikiLink> (the person in brief — every claim
-        compresses a page that proves it, so follow the links inward when a line earns
-        your doubt), <WikiLink href="#website">Website</WikiLink> (why it exists and how
-        to use it fast: an interlinked, referenced record is harder to fake than a feed —
-        read it yourself or hand it to your AI, it was built for both), and{" "}
-        <WikiLink href="#contact">Contact</WikiLink> (every offer, governed by one rule:{" "}
-        <strong>one commitment at a time</strong> — engaged means fully committed, and
-        new work queues until the current problem is solved). If any offer fits, write
-        to{" "}
+        My mission is easy to say and hard to do: make personal transformation
+        teachable, then make it reach everyone. I hold my work to one standard —
+        teaching isn&rsquo;t done until behavior changes — and one rule:{" "}
+        <strong>one commitment at a time</strong>. Since 2024, Claude has been my daily
+        production partner, this site included.
+      </p>
+      <p>
+        Everything I claim here is checkable: my{" "}
+        <WikiLink href="/story">story</WikiLink>, my{" "}
+        <WikiLink href="/nature">measured psychology</WikiLink>, my{" "}
+        <WikiLink href="/health">lab-verified health</WikiLink>, my{" "}
+        <WikiLink href="/knowledge">methods</WikiLink> — every page carries its
+        references, so you can verify instead of trust. If you&rsquo;re building
+        technology for human transformation, start anywhere, then write to{" "}
         <WikiLink href="mailto:lorenzo@lorenzodelano.com">
           lorenzo@lorenzodelano.com
         </WikiLink>
