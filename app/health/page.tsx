@@ -24,10 +24,11 @@ const FUNCTIONAL_HOMEOSTASIS: StatTableData = {
         {
           category: "Cardiovascular (low-risk transport)",
           metrics: [
-            ["", "My lipids sit at low-risk levels, with iron and oxygen transport in full supply", false],
+            ["", "My lipids and inflammation sit at low-risk levels, with iron and oxygen transport in full supply", false],
             ["ApoB", "0.70 g/L / 70 mg/dL (~15th percentile)", true, "Apolipoprotein B — the count of atherogenic (artery-clogging) cholesterol particles. The strongest single lipid predictor of heart disease, and causal for it. Optimal is ≤0.6 g/L."],
             ["Hemoglobin", "14.1 g/dL", true, "The oxygen-carrying protein in red blood cells; the primary screen for anemia. 14–16.5 g/dL is optimal for men."],
             ["Ferritin", "166 µg/L", true, "Stored iron, the reserve for making hemoglobin. It falls before anemia appears and rises with inflammation. 50–150 µg/L is optimal for men."],
+            ["hs-CRP", "<1.0 mg/L", true, "High-sensitivity C-reactive protein — the standard marker of systemic inflammation and an independent cardiovascular risk predictor. An acute-phase reactant, so it is read in a recovered, resting state; mine sits below 1 whenever measured there (2026). Optimal is <1.0 mg/L."],
           ],
         },
         {
@@ -154,11 +155,11 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
                 female={["40 kg (~0.65× BW)", "60 kg (~1.0× BW)", "80 kg (~1.35× BW)", "100 kg (~1.65× BW)", "120 kg (~2.0× BW)"]}
               />
             ) }],
-            ["Curl strength", "1 hinge nordic-curl (L3)", true, { text: (
+            ["Curl strength", "1 hinge Nordic curl (L3)", true, { text: (
               <MovementLevels
                 summary="Hamstring knee-flexion strength: the Nordic curl ladder."
                 measure="1 Rep Skill"
-                male={["1 one-leg leg-curl/side (supine)", "1 eccentric-hinge nordic curl", "1 hinge nordic-curl", "1 eccentric nordic-curl", "1 nordic-curl"]}
+                male={["1 one-leg leg-curl/side (supine)", "1 eccentric-hinge Nordic curl", "1 hinge Nordic curl", "1 eccentric Nordic curl", "1 Nordic curl"]}
               />
             ) }],
           ],
@@ -167,21 +168,21 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
           category: "Core (midline stability)",
           metrics: [
             ["", "I hold my trunk rigid through levers, front and back", false],
-            ["Compression strength", "0:15 sec V-sit (L5)", true, { text: (
+            ["Compression strength", "0:15 V-sit (L5)", true, { text: (
               <MovementLevels
                 summary="Anterior-chain trunk compression under active hip flexion: the V-sit ladder."
                 measure="Max Skill Hold"
                 male={["1:00 L-tuck", "0:40 low-L or high-tuck", "0:30 L-sit", "0:15 straddle-L", "0:05 V-sit (90°)"]}
               />
             ) }],
-            ["Press tensegrity", "0:15 sec back lever (L5)", true, { text: (
+            ["Press tensegrity", "0:15 back lever (L5)", true, { text: (
               <MovementLevels
                 summary="Straight-arm pressing tension through the trunk: the back lever ladder."
                 measure="Max Skill Hold"
                 male={["1:00 German hang", "0:40 back-lever tuck", "0:30 flat-tuck or half-straddle", "0:20 half-lay or straddle", "0:10 back lever"]}
               />
             ) }],
-            ["Pull tensegrity", "0:05 sec front lever (L5)", true, { text: (
+            ["Pull tensegrity", "0:05 front lever (L5)", true, { text: (
               <MovementLevels
                 summary="Straight-arm pulling tension through the trunk: the front lever ladder."
                 measure="Max Skill Hold"
