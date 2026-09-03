@@ -707,7 +707,7 @@ const WEALTH_GUIDELINES: ReferenceSection[] = [
         id: "education-count",
         cite: (
           <>
-            <strong>Education</strong>: Evans, J. L., and Archer, S. H. (1968). Diversification and the reduction of dispersion: an empirical analysis. <em>Journal of Finance</em>, 23(5) — the ten-stock answer; Statman, M. (1987), <em>Journal of Financial and Quantitative Analysis</em>, 22(3), argues thirty or more.
+            <strong>Education</strong>: Evans, J. L., and Archer, S. H. (1968). Diversification and the reduction of dispersion: an empirical analysis. <em>Journal of Finance</em>, 23(5), the ten-stock answer; Statman, M. (1987), <em>Journal of Financial and Quantitative Analysis</em>, 22(3), argues thirty or more.
           </>
         ),
         url: "https://doi.org/10.1111/j.1540-6261.1968.tb00315.x",
