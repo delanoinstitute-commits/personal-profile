@@ -192,7 +192,7 @@ const LORENZO: StatTableData = {
             [
               "Activities",
               [
-                "Barring maintenance activities, I do only three things: I work, exercise, and study, and have for most of my life (see ",
+                "I do only three things outside maintenance: work, exercise, and study; it’s been this way most of my life (see ",
                 <WikiLink key="sch" href="/lifestyle#time">schedule</WikiLink>,
                 ")",
               ],
