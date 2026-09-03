@@ -44,7 +44,7 @@ const INTELLECT: StatTableData = {
       label: "",
       rows: [
         {
-          category: "Worldview (philosophical positions)",
+          category: "Worldview (reasoned positions)",
           metrics: [
             ["", "I am an integral (naturalistic) humanist — reason-grounded, humanity-centered", false],
             ["Worldview", "Integral naturalistic humanist", true, "The composite stance the seven perspectives below resolve into."],
@@ -230,7 +230,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "perspective-data",
         cite: (
           <>
-            <strong>Perspective</strong>: <em>Worldview positioning (pending)</em>; places seven philosophical stances (Funk&rsquo;s 7 perspectives) • reading (self-assessed)
+            <strong>Perspective</strong>: <em>Worldview positioning (pending)</em>; places seven reasoned stances (Funk&rsquo;s 7 worldviews) • reading (self-assessed)
           </>
         ),
       },
