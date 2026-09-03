@@ -29,8 +29,14 @@ export default function SiteHeader() {
           </span>
         </Link>
 
-        {/* The Email CTA lives in the SectionNav bar, far right of the
-            Introduction > Taxonomy > References chips. */}
+        {/* The Email CTA returns to the header now that the SectionNav bar is
+            retired — same gray action chip, far right, on every page. */}
+        <a
+          href={`mailto:${SITE.email}`}
+          className="no-wiki ml-auto inline-flex items-center whitespace-nowrap rounded border border-rule bg-surface-subtle px-3 py-1 text-sm text-text transition-colors hover:border-accent hover:bg-accent hover:text-white"
+        >
+          Email Lorenzo
+        </a>
       </div>
     </header>
   );

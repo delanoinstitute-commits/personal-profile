@@ -231,6 +231,14 @@ body {
   margin: 1.5rem 0;
 }
 
+/* Title rule — the hairline under the page title, standing in for the
+   retired SectionNav bar; same stroke as the zone rules below it. */
+.title-rule {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 0.4rem 0 0.25rem;
+}
+
 .wiki-article ul,
 .wiki-article ol {
   margin: 0.5rem 0 0.9rem 0;
