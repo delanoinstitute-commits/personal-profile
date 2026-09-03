@@ -562,7 +562,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-mind",
         cite: (
           <>
-            <strong>Mind</strong>: <em>Inner Game (since 2009)</em>; no courses yet, but my <WikiLink href="/nature">Nature</WikiLink> page holds the profiled and measured results; skills of profiling and analysis • page (Web)
+            <strong>Mind</strong>: <em>Inner Game (since 2009)</em>; no course yet, but my <WikiLink href="/nature">Nature</WikiLink> page holds the profiled and measured results; skills of profiling and analysis • page (Web)
           </>
         ),
       },
@@ -607,7 +607,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-coaching-solo",
         cite: (
           <>
-            <strong>Coaching</strong>: <em>Behavioral Change (2022, Utah)</em>; I help people change behavior for the results they seek, <WikiLink href="https://youtu.be/8p5pAPpmy1o">this family</WikiLink> is no exception; skills of training and analysis • video (YouTube)
+            <strong>Coaching</strong>: <em>Behavioral Change (2022, Utah)</em>; I help people change behavior for the results they seek: <WikiLink href="https://youtu.be/8p5pAPpmy1o">this family</WikiLink> is no exception; skills of training and analysis • video (YouTube)
           </>
         ),
       },
@@ -615,7 +615,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-interventions-solo",
         cite: (
           <>
-            <strong>Interventions</strong>: <em>Lifestyle Management (2019, Los Angeles)</em>; I’ve helped celebrities and entrepreneurs reset their environments in person; skills of profiling and planning
+            <strong>Interventions</strong>: <em>Lifestyle Management (2019, Los Angeles)</em>; I’ve helped celebrities and entrepreneurs reset their environments in person; skills of profiling and planning • engagements (confidential)
           </>
         ),
       },
@@ -628,7 +628,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-design-teams",
         cite: (
           <>
-            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">education</WikiLink> and <WikiLink href="https://youtu.be/IncVxo4Un9w">software</WikiLink> for teams and educators; skills of architecture and production • videos (YouTube; Loom)
+            <strong>Architecture</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">education</WikiLink> and <WikiLink href="https://youtu.be/IncVxo4Un9w">software</WikiLink> for teams and educators; skills of architecture and production • videos (YouTube; Loom)
           </>
         ),
       },
