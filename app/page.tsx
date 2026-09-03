@@ -56,7 +56,7 @@ const LORENZO: StatTableData = {
           category: "Background (what I’ve done)",
           metrics: [
             ["", "I solved these problems for myself first and continue to help others do the same", false],
-            ["Meta-learning", "I left school at 13 and taught myself ever since; learning to learn became my trade, and applied taxonomy its highest form (including but not limited to the skills below)", true],
+            ["Meta-learning", "I left school at 13 and taught myself ever since; learning to learn became my trade, and applied taxonomy its highest form", true],
             [
               "Time",
               [
@@ -64,7 +64,7 @@ const LORENZO: StatTableData = {
                 <WikiLink key="lf" href="/lifestyle">Lifestyle</WikiLink>,
                 " page or take my ",
                 <WikiLink key="lfd" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">lifestyle design</WikiLink>,
-                " course to learn more)",
+                " course)",
               ],
               true,
             ],
@@ -82,9 +82,9 @@ const LORENZO: StatTableData = {
             [
               "Exercise",
               [
-                "I started exercising at 16 and never stopped, spending multiple years on various disciplines, from martial arts to sprinting to CrossFit to the ",
+                "I started exercising at 16 and never stopped: years in martial arts, sprinting, and CrossFit; then the ",
                 <WikiLink key="tx" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9qCpUj7zoLbLQ4OvAQzRAYQ">10X Method</WikiLink>,
-                " and today’s ",
+                "; now the ",
                 <WikiLink key="msp" href="https://www.youtube.com/@LorenzoDelano">MSP System</WikiLink>,
                 " (review my ",
                 <WikiLink key="fit" href="/health#capacity">fitness results</WikiLink>,
@@ -95,7 +95,7 @@ const LORENZO: StatTableData = {
             [
               "Nutrition",
               [
-                "I’ve experimented with diets since 20 (paleo, primal, vegetarian, fasting) and settled into a calorically informed, whole-food pattern that keeps me lean, muscular, and metabolically flexible year-round (review my ",
+                "I’ve experimented with diets since 20 (paleo, primal, vegetarian, fasting) and settled on a calorically informed, whole-food pattern; it keeps me lean, muscular, and metabolically flexible year-round (review my ",
                 <WikiLink key="bc" href="/health#integrity">body composition results</WikiLink>,
                 ")",
               ],
@@ -113,7 +113,7 @@ const LORENZO: StatTableData = {
             [
               "Finance",
               [
-                "I’ve worked since 15 and managed my own money from the start, seriously from 30; the structures now in place make financial freedom a matter of time (see my ",
+                "I’ve worked since 15 and managed my own money from the start (seriously from 30); the structures now in place make financial freedom a matter of time (see my ",
                 <WikiLink key="w" href="/wealth">Wealth</WikiLink>,
                 " map)",
               ],
@@ -131,9 +131,9 @@ const LORENZO: StatTableData = {
             [
               "Training",
               [
-                "I’ve been teaching since 17 (English in China, finance in Malaysia, fitness all over the world); I continue to coach, teach, and train others in various disciplines (see ",
+                "I’ve taught since 17: English in China, finance in Malaysia, fitness worldwide; I still coach, teach, and train today (see ",
                 <WikiLink key="ex" href="/knowledge#references">examples</WikiLink>,
-                " here)",
+                ")",
               ],
               true,
             ],
