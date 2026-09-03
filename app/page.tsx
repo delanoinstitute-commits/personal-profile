@@ -681,7 +681,7 @@ export default function AboutPage() {
       <p>
         My mission: accelerate the expansion of human consciousness using
         education technologies. The road ran from South Africa through Malaysia to{" "}
-        <WikiLink href="/story">Austin</WikiLink> — and this site is the record, every
+        <WikiLink href="/story">the US</WikiLink> — and this site is the record, every
         page referenced.
       </p>
 
