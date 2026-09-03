@@ -530,7 +530,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-time",
         cite: (
           <>
-            <strong>Time</strong>: <em>Life Management (since 2015)</em>; master your time with <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">this free course</WikiLink> while referencing my <WikiLink href="/lifestyle">Lifestyle</WikiLink> page; skills of planning and teaching • course (YouTube)
+            <strong>Time</strong>: <em>Life Management (since 2015)</em>; master your time with the <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">Lifestyle Design</WikiLink> course while referencing my <WikiLink href="/lifestyle">Lifestyle</WikiLink> page; skills of planning and teaching • course (YouTube)
           </>
         ),
       },
@@ -538,7 +538,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-space",
         cite: (
           <>
-            <strong>Space</strong>: <em>Spatial Planning (since 2012)</em>; plan a training space with <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">this free course</WikiLink>, like my <WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">studio apartment</WikiLink>; skills of architecture and planning • course (YouTube)
+            <strong>Space</strong>: <em>Spatial Planning (since 2012)</em>; plan a training space with the <WikiLink href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">Home-Gym Design</WikiLink> course, like my <WikiLink href="https://youtube.com/shorts/miniCkaRHTQ">studio apartment</WikiLink>; skills of architecture and planning • course (YouTube)
           </>
         ),
       },
@@ -636,7 +636,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-production-teams",
         cite: (
           <>
-            <strong>Production</strong>: <em>Education Products (since 2017)</em>; I <WikiLink href="https://www.loom.com/share/2ada01c69cfe4b14af5f087d05068261">produce</WikiLink> education products from start to finish, in-house or directly; skills of production and management • video (Loom)
+            <strong>Production</strong>: <em><WikiLink href="https://www.loom.com/share/2ada01c69cfe4b14af5f087d05068261">Education Products</WikiLink> (since 2017)</em>; I produce them from start to finish, in-house or directly; skills of production and management • video (Loom)
           </>
         ),
       },
