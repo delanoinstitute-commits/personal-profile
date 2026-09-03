@@ -336,9 +336,9 @@ export default function IdentityPage() {
         published.
       </p>
       <p>
-        It reads in three lenses: <WikiLink href="#intellect">Intellect</WikiLink> (how
-        I think), <WikiLink href="#character">Character</WikiLink> (how I&rsquo;m wired),
-        and <WikiLink href="#drive">Drive</WikiLink> (what moves me). Each lens ranks
+        It reads in three lenses: <WikiLink href="#intellect">intellect</WikiLink> (how
+        I think), <WikiLink href="#character">character</WikiLink> (how I&rsquo;m wired),
+        and <WikiLink href="#drive">drive</WikiLink> (what moves me). Each lens ranks
         its results: the headline score first, the pieces underneath.
       </p>
       <p>

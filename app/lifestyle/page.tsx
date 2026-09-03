@@ -1024,9 +1024,9 @@ export default function LifestylePage() {
         my own four walls.
       </p>
       <p>
-        It reads in three branches: <WikiLink href="#activity">Activity</WikiLink>{" "}
-        (what I do), <WikiLink href="#time">Time</WikiLink> (when I do it), and{" "}
-        <WikiLink href="#space">Space</WikiLink> (where I do it). This is the current
+        It reads in three branches: <WikiLink href="#activity">activity</WikiLink>{" "}
+        (what I do), <WikiLink href="#time">time</WikiLink> (when I do it), and{" "}
+        <WikiLink href="#space">space</WikiLink> (where I do it). This is the current
         design, not a fixed one — and the goal isn&rsquo;t a full calendar; it&rsquo;s
         one so well planned it feels empty.
       </p>

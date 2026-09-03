@@ -747,9 +747,9 @@ export default function WealthPage() {
       </p>
       <p>
         It reads one balance sheet in three branches that run in order:{" "}
-        <WikiLink href="#security">Security</WikiLink> (insure first, then earn),{" "}
-        <WikiLink href="#efficiency">Efficiency</WikiLink> (spend and settle cleanly),
-        and <WikiLink href="#growth">Growth</WikiLink> (invest what remains, venture
+        <WikiLink href="#security">security</WikiLink> (insure first, then earn),{" "}
+        <WikiLink href="#efficiency">efficiency</WikiLink> (spend and settle cleanly),
+        and <WikiLink href="#growth">growth</WikiLink> (invest what remains, venture
         only past sufficiency).
       </p>
       <p>

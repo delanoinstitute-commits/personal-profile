@@ -29,9 +29,9 @@ export default function KnowledgePage() {
         stands on.
       </p>
       <p>
-        It reads one competence three ways: <WikiLink href="#works">Works</WikiLink>{" "}
-        (what I&rsquo;ve made), <WikiLink href="#skills">Skills</WikiLink> (what I can
-        do), and <WikiLink href="#education">Education</WikiLink> (what I know). A
+        It reads one competence three ways: <WikiLink href="#works">works</WikiLink>{" "}
+        (what I&rsquo;ve made), <WikiLink href="#skills">skills</WikiLink> (what I can
+        do), and <WikiLink href="#education">education</WikiLink> (what I know). A
         working system, not a trophy case: study becomes practice, and practice
         becomes shipped work.
       </p>

@@ -260,9 +260,9 @@ export default function StoryPage() {
         about them predicted.
       </p>
       <p>
-        It reads in three branches: <WikiLink href="#inheritance">Inheritance</WikiLink>{" "}
-        (what arrived before I could choose), <WikiLink href="#development">Development</WikiLink>{" "}
-        (what shaped me while I grew), and <WikiLink href="#emergence">Emergence</WikiLink>{" "}
+        It reads in three branches: <WikiLink href="#inheritance">inheritance</WikiLink>{" "}
+        (what arrived before I could choose), <WikiLink href="#development">development</WikiLink>{" "}
+        (what shaped me while I grew), and <WikiLink href="#emergence">emergence</WikiLink>{" "}
         (what I chose for myself). Each fact sits where its timing puts it.
       </p>
       <p>

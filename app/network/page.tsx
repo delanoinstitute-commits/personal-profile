@@ -672,9 +672,9 @@ export default function NetworkPage() {
       </p>
       <p>
         It reads every relationship in one of three directions:{" "}
-        <WikiLink href="#nurture">Nurture</WikiLink> (the people I learn and take
-        from), <WikiLink href="#progress">Progress</WikiLink> (the peers I share the
-        road with), and <WikiLink href="#contribution">Contribution</WikiLink> (the
+        <WikiLink href="#nurture">nurture</WikiLink> (the people I learn and take
+        from), <WikiLink href="#progress">progress</WikiLink> (the peers I share the
+        road with), and <WikiLink href="#contribution">contribution</WikiLink> (the
         people who count on me).
       </p>
       <p>

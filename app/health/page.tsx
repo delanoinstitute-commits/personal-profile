@@ -531,9 +531,9 @@ export default function HealthPage() {
       </p>
       <p>
         It reads one body at three levels, from rest to all-out effort:{" "}
-        <WikiLink href="#integrity">Integrity</WikiLink> (how soundly it&rsquo;s built),{" "}
-        <WikiLink href="#balance">Balance</WikiLink> (how calmly it holds and returns
-        to rest), and <WikiLink href="#capacity">Capacity</WikiLink> (what it can do
+        <WikiLink href="#integrity">integrity</WikiLink> (how soundly it&rsquo;s built),{" "}
+        <WikiLink href="#balance">balance</WikiLink> (how calmly it holds and returns
+        to rest), and <WikiLink href="#capacity">capacity</WikiLink> (what it can do
         flat out).
       </p>
       <p>
