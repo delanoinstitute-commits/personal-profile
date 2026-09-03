@@ -205,7 +205,7 @@ const LORENZO: StatTableData = {
                 <WikiLink key="li" href="https://www.linkedin.com/in/lorenzo-delano-7b6143364/">LinkedIn</WikiLink>,
                 " and ",
                 <WikiLink key="yt" href="https://youtube.com/@LorenzoDelano">YouTube</WikiLink>,
-                "; I like my coffee the way I enjoy my Trance, progressive; I start reciting the periodic table of elements when I get bored; my all-time favorite movie, album, and game: Mortal Kombat; I ",
+                "; I like my coffee the way I enjoy my Trance, progressive; I recite the periodic table of elements when I get bored; my all-time favorite movie, album, and game: Mortal Kombat; I ",
                 <WikiLink key="rk" href="/story#development">rock back and forth</WikiLink>,
                 " when I work (it’s how I think)",
               ],
@@ -247,7 +247,7 @@ const WEBSITE: StatTableData = {
               undefined,
               true,
             ],
-            ["Commercial", "It’s also my primary point of contact for collaborations", true],
+            ["Commercial", "It’s my primary point of contact for collaborations", true],
             [
               "Resume",
               [
@@ -263,16 +263,16 @@ const WEBSITE: StatTableData = {
             [
               "Portfolio",
               [
-                "My works with references live on ",
+                "My works and their references live on ",
                 <WikiLink key="kn2" href="/knowledge">Knowledge</WikiLink>,
-                ", this website included",
+                " (this website included)",
               ],
               true,
               undefined,
               undefined,
               true,
             ],
-            ["Curriculum", "The taxonomy of what it means to fulfill one’s potential (constitution and capital) doubles as a complete self-education curriculum", true, undefined, undefined, true],
+            ["Curriculum", "The taxonomy of what it means to fulfill one’s potential (constitution and capital) doubles as a self-education curriculum", true, undefined, undefined, true],
           ],
         },
         {
