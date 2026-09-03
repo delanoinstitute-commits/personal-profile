@@ -523,22 +523,23 @@ export default function HealthPage() {
     <div className="zoned">
       <PageHeading title="Health" />
 
-      <p id="introduction" className="page-hook">Every health claim on this page has a lab report behind it.</p>
+      <p id="introduction" className="page-hook">Every number here comes with a lab report.</p>
       <p className="page-promise">
-        My full 2026 health status — body composition, blood chemistry, and performance
-        under load — measured clinically, benchmarked against reference ranges, with the
-        redacted reports published in the references.
+        My full 2026 health status — body composition, blood chemistry, and
+        performance under load — all clinically measured, all benchmarked, with the
+        redacted reports published.
       </p>
       <p>
-        This page reads one body at three levels, from full rest to all-out effort:{" "}
+        It reads one body at three levels, from rest to all-out effort:{" "}
         <WikiLink href="#integrity">Integrity</WikiLink> (how soundly it&rsquo;s built),{" "}
-        <WikiLink href="#balance">Balance</WikiLink> (how steadily it holds, and returns
-        to, rest), and <WikiLink href="#capacity">Capacity</WikiLink> (what it can do
-        under load). If you only read one row per level: a lean, muscular frame over
-        sound bone at 1.76 m and 74.3 kg, blood that idles low and calm yet opens a wide
-        cardiac reserve, and deep aerobic capacity over head-to-toe strength. Hover any{" "}
-        <WikiLink href="#references">reference</WikiLink> for the report behind the
-        number.
+        <WikiLink href="#balance">Balance</WikiLink> (how calmly it holds and returns
+        to rest), and <WikiLink href="#capacity">Capacity</WikiLink> (what it can do
+        under load).
+      </p>
+      <p>
+        If you read one row per level: a lean, muscular frame at 1.76 m and 74.3 kg,
+        blood work that idles low and calm, and a deep aerobic engine with plenty in
+        reserve. The <WikiLink href="#evidence">references</WikiLink> hold every report.
       </p>
 
       <hr className="zone-rule" />

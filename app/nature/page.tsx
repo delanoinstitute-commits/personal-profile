@@ -329,23 +329,23 @@ export default function IdentityPage() {
     <div className="zoned">
       <PageHeading title="Nature" />
 
-      <p id="introduction" className="page-hook">Most people describe their character. I had mine measured.</p>
+      <p id="introduction" className="page-hook">I didn&rsquo;t guess my personality. I measured it.</p>
       <p className="page-promise">
-        My full psychological profile — intelligence, personality, worldview, values, and
-        vocational interests — scored on gold-standard instruments, with every report published.
+        My full psychological profile — intelligence, personality, worldview, values,
+        and interests — every one scored on gold-standard instruments, every report
+        published.
       </p>
       <p>
-        This page reads in three lenses: <WikiLink href="#intellect">Intellect</WikiLink> (how
-        I think), <WikiLink href="#character">Character</WikiLink> (how I&rsquo;m wired), and{" "}
-        <WikiLink href="#drive">Drive</WikiLink> (what moves me). Each holds ranked tables: the
-        composite score first, components beneath it, scales in the italic line above each
-        instrument.
+        It reads in three lenses: <WikiLink href="#intellect">Intellect</WikiLink> (how
+        I think), <WikiLink href="#character">Character</WikiLink> (how I&rsquo;m wired),
+        and <WikiLink href="#drive">Drive</WikiLink> (what moves me). Each lens ranks
+        its results: the headline score first, the pieces underneath.
       </p>
       <p>
-        If you only read one row per lens: full-scale IQ 112 with a verbal-fluid profile shared
-        by 7% of adults, conscientiousness 6.87 of 7, and a value hierarchy that puts design
-        first. Hover any <WikiLink href="#references">reference</WikiLink> for the report behind
-        the number — the rest of the page is the evidence.
+        If you read one row per lens: IQ 112 with a verbal profile shared by 7% of
+        adults, conscientiousness 6.87 of 7, and a value hierarchy that puts design
+        first. Hover any <WikiLink href="#references">reference</WikiLink> for the
+        report behind the number.
       </p>
 
       <hr className="zone-rule" />

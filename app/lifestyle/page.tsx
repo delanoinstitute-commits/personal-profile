@@ -1017,21 +1017,23 @@ export default function LifestylePage() {
     <div className="zoned">
       <PageHeading title="Lifestyle" />
 
-      <p id="introduction" className="page-hook">Most people list good intentions. My twelve habits sum to twenty-four hours.</p>
+      <p id="introduction" className="page-hook">My twelve habits add up to twenty-four hours.</p>
       <p className="page-promise">
-        My complete lifestyle design — every habit with its daily allocation, the
-        schedule that places it, and the spaces that host it, from city choice down to my
-        own four walls.
+        My whole lifestyle by design — every habit with its daily hours, the schedule
+        that places them, and the spaces that host them, from the city I chose down to
+        my own four walls.
       </p>
       <p>
-        This page reads one life in three branches: <WikiLink href="#activity">Activity</WikiLink>{" "}
+        It reads in three branches: <WikiLink href="#activity">Activity</WikiLink>{" "}
         (what I do), <WikiLink href="#time">Time</WikiLink> (when I do it), and{" "}
         <WikiLink href="#space">Space</WikiLink> (where I do it). The twelve habits
-        partition the day — if the hours don&rsquo;t sum, something is mis-stated — and
-        each carries its allocation in its definition. Time fixes them to daily and
-        weekly blocks so the design survives contact with an actual calendar, and Space
-        grades the places at two scales, outermost first; the outer scale doubles as my
-        relocation scorecard.
+        split the day between them — if the hours don&rsquo;t add up, something on this
+        page is wrong.
+      </p>
+      <p>
+        Time pins each habit to real daily and weekly blocks, so the design survives
+        an actual calendar. Space grades the places that host it all, at two scales:
+        the city that fits the life, and the home that runs it.
       </p>
 
       <hr className="zone-rule" />

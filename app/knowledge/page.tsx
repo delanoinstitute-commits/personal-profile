@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
+import WikiLink from "@/components/WikiLink";
 import { NestedTable } from "@/components/NestedTable";
 import { References } from "@/components/References";
 import {
@@ -23,18 +24,21 @@ export default function KnowledgePage() {
 
       <p id="introduction" className="page-hook">I don&rsquo;t take degrees, I design them.</p>
       <p className="page-promise">
-        My full inventory of competence — the methodologies and designs I&rsquo;ve
-        shipped, the skills behind them, and the self-directed curriculum they all stand
-        on.
+        My full inventory of competence — the methods and designs I&rsquo;ve shipped,
+        the skills behind them, and the self-directed curriculum that everything else
+        stands on.
       </p>
       <p>
-        This page reads one competence three ways: Works (what I have made), Skills
-        (what I can do), and Education (what I know). It is a working system, not a
-        trophy case — what I study becomes what I practice, and what I practice becomes
-        what I ship, so trace any entry and you&rsquo;ll find the other two tables in it:
-        the course behind the skill, the skill behind the work. The classroom ended at
-        13; the curriculum never did. Skill claimed is skill shown — the references link
-        to the designs, productions, and certificates themselves.
+        It reads one competence three ways: <WikiLink href="#works">Works</WikiLink>{" "}
+        (what I&rsquo;ve made), <WikiLink href="#skills">Skills</WikiLink> (what I can
+        do), and <WikiLink href="#education">Education</WikiLink> (what I know). A
+        working system, not a trophy case: study becomes practice, and practice
+        becomes shipped work.
+      </p>
+      <p>
+        Trace any entry and you&rsquo;ll find the other two tables inside it — the
+        course behind the skill, the skill behind the work. My classroom ended at
+        thirteen; the curriculum never did, and this page is where it lives.
       </p>
 
       <hr className="zone-rule" />

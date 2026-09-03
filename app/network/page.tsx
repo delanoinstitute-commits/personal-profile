@@ -664,23 +664,23 @@ export default function NetworkPage() {
         title="Network"
       />
 
-      <p id="introduction" className="page-hook">My network is the team my life runs on. This is the roster.</p>
+      <p id="introduction" className="page-hook">My network is a team. This is the roster.</p>
       <p className="page-promise">
-        The complete taxonomy of my human relationships — who holds each seat, the
-        benchmark each is held to, and which seats stand open, protected, or held by my
-        own hands.
+        The complete map of my human relationships — who holds each seat, the standard
+        each is held to, and which seats stand open, protected, or filled by my own
+        hands.
       </p>
       <p>
-        This page reads every relationship in one of three directions:{" "}
-        <WikiLink href="#nurture">Nurture</WikiLink> (the people I take from),{" "}
-        <WikiLink href="#progress">Progress</WikiLink> (the peers I share with), and{" "}
-        <WikiLink href="#contribution">Contribution</WikiLink> (the people who depend on
-        me). Roles appear in the order life requires them; people are graded on four
-        A&rsquo;s (available, able, affective, advocating) and services on three
-        C&rsquo;s (consistent, comprehensive, current) as encounters thin. The aim is not
-        the biggest network but the right one — and the one branch valued for itself is
-        Progress: these relationships are not a means to the others; they are what the
-        others are for.
+        It reads every relationship in one of three directions:{" "}
+        <WikiLink href="#nurture">Nurture</WikiLink> (the people I learn and take
+        from), <WikiLink href="#progress">Progress</WikiLink> (the peers I share the
+        road with), and <WikiLink href="#contribution">Contribution</WikiLink> (the
+        people who count on me).
+      </p>
+      <p>
+        Roles appear in the order life requires them. People are graded on four
+        A&rsquo;s — available, able, affective, advocating — services on three
+        C&rsquo;s. Open seats are listed as plainly as the filled ones.
       </p>
 
       <hr className="zone-rule" />

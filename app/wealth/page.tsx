@@ -739,22 +739,23 @@ export default function WealthPage() {
         title="Wealth"
       />
 
-      <p id="introduction" className="page-hook">Every account my money moves through is public. No balance is.</p>
+      <p id="introduction" className="page-hook">My money&rsquo;s system is public. Its balances aren&rsquo;t.</p>
       <p className="page-promise">
-        My complete financial architecture — the insurance floor, the income exchanges,
-        the expense cascade, and the investment waterfall — every account held to a named
-        benchmark.
+        My complete financial architecture — the insurance floor, the income
+        exchanges, the expense cascade, and the investment waterfall — with every
+        account held to a named benchmark.
       </p>
       <p>
-        This page reads one balance sheet in three branches that are also a sequence:{" "}
+        It reads one balance sheet in three branches that run in order:{" "}
         <WikiLink href="#security">Security</WikiLink> (insure first, then earn),{" "}
         <WikiLink href="#efficiency">Efficiency</WikiLink> (spend and settle cleanly),
-        and <WikiLink href="#growth">Growth</WikiLink> (invest what remains, venture only
-        past sufficiency). Unlike the other status pages it publishes no readings —
-        balances, net worth, and holdings are excluded by design. What is public is the
-        system itself: a cascade holding expenses under 35% of gross and tax under 15%,
-        and a waterfall that ventures nothing until everything is invested. The structure
-        is auditable even where the numbers are private.
+        and <WikiLink href="#growth">Growth</WikiLink> (invest what remains, venture
+        only past sufficiency).
+      </p>
+      <p>
+        Unlike the other status pages, this one publishes no readings — balances and
+        holdings stay private by design. What&rsquo;s public is the system itself: how
+        the money moves, and the benchmark each account answers to.
       </p>
 
       <hr className="zone-rule" />

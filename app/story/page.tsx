@@ -253,22 +253,22 @@ export default function StoryPage() {
         title="Story"
       />
 
-      <p id="introduction" className="page-hook">My biography separates what happened to me from what I did about it.</p>
+      <p id="introduction" className="page-hook">My story: what I was given, what I chose.</p>
       <p className="page-promise">
-        My whole record, germline to present — genotype and ancestry read from raw
-        sequencing, the family pedigree, the timeline of every lived stage, and the
-        choices nothing in them predicts.
+        From my DNA and family tree to every stage of life so far — the whole timeline
+        is here, including the parts that were handed to me and the choices nothing
+        about them predicted.
       </p>
       <p>
-        This page reads in three branches, ordered by causality rather than chronology:{" "}
-        <WikiLink href="#inheritance">Inheritance</WikiLink> (what arrived without my
-        consent), <WikiLink href="#development">Development</WikiLink> (what I was placed
-        in and answered), and <WikiLink href="#emergence">Emergence</WikiLink> (what I
-        chose against both). A fact belongs to whichever branch its timing assigns it,
-        and lived stages carry a record while unreached ones carry an intent — a plan is
-        never mistaken for a fact. Most of a life is the first two branches, which is the
-        point: the interesting part is how little is genuinely the third, and how much it
-        matters.
+        It reads in three branches: <WikiLink href="#inheritance">Inheritance</WikiLink>{" "}
+        (what arrived before I could choose), <WikiLink href="#development">Development</WikiLink>{" "}
+        (what shaped me while I grew), and <WikiLink href="#emergence">Emergence</WikiLink>{" "}
+        (what I chose for myself). Each fact sits where its timing puts it.
+      </p>
+      <p>
+        Lived years carry records; future ones carry plans, and I never confuse the
+        two. Most of a life belongs to the first two branches — the interesting part
+        is how small the third is, and how much it changes.
       </p>
 
       <hr className="zone-rule" />
