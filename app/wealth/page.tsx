@@ -741,7 +741,7 @@ export default function WealthPage() {
 
       <p id="introduction" className="page-hook">I run my finances like a firm of one.</p>
       <p className="page-promise">
-        My complete financial architecture — the insurance floor, the income
+        My complete financial architecture: the insurance floor, the income
         exchanges, the expense cascade, and the investment waterfall — with every
         account held to a named benchmark.
       </p>

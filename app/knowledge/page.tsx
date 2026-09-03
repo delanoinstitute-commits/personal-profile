@@ -24,7 +24,7 @@ export default function KnowledgePage() {
 
       <p id="introduction" className="page-hook">I don&rsquo;t take degrees, I design them.</p>
       <p className="page-promise">
-        My full inventory of competence — the methods and designs I&rsquo;ve shipped,
+        My full inventory of competence: the methods and designs I&rsquo;ve shipped,
         the skills behind them, and the self-directed curriculum that everything else
         stands on.
       </p>

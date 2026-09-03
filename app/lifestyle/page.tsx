@@ -1019,7 +1019,7 @@ export default function LifestylePage() {
 
       <p id="introduction" className="page-hook">My lifestyle runs on design, not discipline.</p>
       <p className="page-promise">
-        My whole lifestyle, mapped — every habit with its daily hours, the schedule
+        My whole lifestyle, mapped: every habit with its daily hours, the schedule
         that places them, and the spaces that host them, from the city I chose down to
         my own four walls.
       </p>
@@ -1033,7 +1033,7 @@ export default function LifestylePage() {
       <p>
         The blocks move easily: when the work needs different hours, the design adapts
         to the job, not the other way around. Space grades the places that host it
-        all, at two scales — the city that fits the life, and the home that runs it.
+        all, at two scales: the city that fits the life, and the home that runs it.
       </p>
 
       <hr className="zone-rule" />

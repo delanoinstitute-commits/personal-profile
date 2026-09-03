@@ -331,7 +331,7 @@ export default function IdentityPage() {
 
       <p id="introduction" className="page-hook">I didn&rsquo;t guess my personality. I measured it.</p>
       <p className="page-promise">
-        My full psychological profile — intelligence, personality, worldview, values,
+        My full psychological profile: intelligence, personality, worldview, values,
         and interests — every one scored on gold-standard instruments, every report
         published.
       </p>

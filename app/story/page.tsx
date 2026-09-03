@@ -255,7 +255,7 @@ export default function StoryPage() {
 
       <p id="introduction" className="page-hook">My story: what I was given, what I chose.</p>
       <p className="page-promise">
-        From my DNA and family tree to every stage of life so far — the whole timeline
+        From my DNA and family tree to every stage of life so far: the whole timeline
         is here, including the parts that were handed to me and the choices nothing
         about them predicted.
       </p>

@@ -684,13 +684,13 @@ export default function AboutPage() {
 
       <p id="introduction" className="page-hook">Hi, I&rsquo;m Lorenzo. I make personal transformation teachable.</p>
       <p className="page-promise">
-        I left school at thirteen and taught myself everything since — learning how to
+        I left school at thirteen and taught myself everything since: learning how to
         learn became my trade, designing it for others became my work, and my own life
         became the proof.
       </p>
       <p>
         The proof is public: my <WikiLink href="/nature">psychology</WikiLink> measured
-        — design is my highest value — my <WikiLink href="/health">health</WikiLink>{" "}
+        (design is my highest value), my <WikiLink href="/health">health</WikiLink>{" "}
         lab-verified, my days built from{" "}
         <WikiLink href="/lifestyle">twelve habits</WikiLink> that sum to twenty-four
         hours. I solve my own problems first, then publish the solutions free.

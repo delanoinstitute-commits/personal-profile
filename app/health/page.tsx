@@ -525,7 +525,7 @@ export default function HealthPage() {
 
       <p id="introduction" className="page-hook">My body: built, balanced, and load-tested.</p>
       <p className="page-promise">
-        My full 2026 health status — body composition, blood chemistry, and
+        My full 2026 health status: body composition, blood chemistry, and
         performance at full effort — all clinically measured, all benchmarked, with
         the redacted reports published.
       </p>

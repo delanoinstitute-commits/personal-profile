@@ -679,7 +679,7 @@ export default function NetworkPage() {
       </p>
       <p>
         Roles appear in the order life requires them. People are graded on four
-        A&rsquo;s — available, able, affective, advocating — services on three
+        A&rsquo;s (available, able, affective, advocating), services on three
         C&rsquo;s. Open seats are listed as plainly as the filled ones.
       </p>
 
