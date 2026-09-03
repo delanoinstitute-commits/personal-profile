@@ -314,7 +314,7 @@ const WEBSITE: StatTableData = {
               undefined,
               true,
             ],
-            ["Pages", "One layout serves all eight; only the content changes", true],
+            ["Layout", "One layout serves all eight; only the content changes", true],
             ["Taxonomy", "Each page holds three branches of two bands each, in accordions for maximal compression", true, undefined, undefined, true],
             [
               "References",
