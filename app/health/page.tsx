@@ -338,7 +338,7 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "lactate",
         cite: (
           <>
-            <strong>Lactate</strong>: <em>Capillary prick (Sep 2024)</em>; tests for blood lactate (Nova biomedical lactate plus) • reading (device)
+            <strong>Lactate</strong>: <em>Capillary prick (Sep 2024)</em>; tests for blood lactate (Nova Biomedical Lactate Plus) • reading (device)
           </>
         ),
       },
@@ -354,7 +354,7 @@ const HEALTH_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "biomechanics",
         cite: (
           <>
-            <strong>Biomechanics</strong>: <em>Total-fitness battery (Jan 2026)</em>; tests for local hip, core, shoulder and global functional capacity (multi-modal testing facility) • report (video){/* TODO: link "report" to the single combined test video once filmed */}
+            <strong>Biomechanics</strong>: <em>Total-fitness battery (Jan 2026)</em>; tests for local hip, core, shoulder, and global functional capacity (multi-modal testing facility) • report (video){/* TODO: link "report" to the single combined test video once filmed */}
           </>
         ),
       },
@@ -408,6 +408,16 @@ const HEALTH_EVIDENCE: ReferenceSection[] = [
           </>
         ),
         url: "https://pubmed.ncbi.nlm.nih.gov/20200384/",
+        urlLabel: "PubMed",
+      },
+      {
+        id: "hscrp",
+        cite: (
+          <>
+            <strong>hs-CRP</strong>: Emerging Risk Factors Collaboration (2010). C-reactive protein concentration and risk of coronary heart disease, stroke, and mortality: an individual participant meta-analysis. <em>The Lancet</em>, 375(9709).
+          </>
+        ),
+        url: "https://pubmed.ncbi.nlm.nih.gov/20031199/",
         urlLabel: "PubMed",
       },
       {
@@ -479,7 +489,7 @@ const HEALTH_EVIDENCE: ReferenceSection[] = [
         id: "balance-sources",
         cite: (
           <>
-            <strong>Lower-body strength</strong>: Pistol squat and nordic curl ladders from personal experience, benchmarked against <WikiLink href="https://www.gymnasticbodies.com">GymnasticBodies</WikiLink>, the <WikiLink href="https://pubmed.ncbi.nlm.nih.gov/23242910/">sit-to-rise test</WikiLink>, and <WikiLink href="https://www.atgonlinecoaching.com">ATG</WikiLink> standards
+            <strong>Lower-body strength</strong>: Pistol squat and Nordic curl ladders from personal experience, benchmarked against <WikiLink href="https://www.gymnasticbodies.com">GymnasticBodies</WikiLink>, the <WikiLink href="https://pubmed.ncbi.nlm.nih.gov/23242910/">sit-to-rise test</WikiLink>, and <WikiLink href="https://www.atgonlinecoaching.com">ATG</WikiLink> standards
           </>
         ),
       },
