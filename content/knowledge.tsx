@@ -21,8 +21,8 @@ export const EDUCATION: StatTableData = {
           category: "Formal (in-person schooling)",
           metrics: [
             ["", "I took seven grades of schooling, then mastered Mandarin to international distinction", false],
-            ["Muldersdrif Primary", "Grades 1–3, Muldersdrift, 3 years, 1994–1996 (age 6–8)", true],
-            ["Hoeveld Primary", "Grades 4–7, Evander, 4 years, 1997–2000 (age 9–12)", true],
+            ["Laerskool Muldersdrif", "Grades 1–3, Muldersdrift, 3 years, 1994–1996 (age 6–8)", true],
+            ["Laerskool Hoëveld", "Grades 4–7, Evander, 4 years, 1997–2000 (age 9–12)", true],
             [
               "Pretoria Chinese High",
               [
@@ -66,7 +66,7 @@ export const EDUCATION: StatTableData = {
         {
           category: "Non-formal (in-person training)",
           metrics: [
-            ["", "I tend to certify in transmission roles — tutor, trainer, coach, and designer", false],
+            ["", "I tend to certify in transmission roles: tutor, trainer, coach, and designer", false],
             [
               "Language Link",
               [

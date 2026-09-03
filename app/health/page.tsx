@@ -236,7 +236,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
             ["Jumping power", "2.4 m broad jump (L4)", true, { text: (
               <MovementLevels
                 summary="Explosive lower-body power: the standing broad jump ladder."
-                measure="1 Rep Max"
+                measure="1 Jump Max"
                 male={["1.8 m (~1.0× height)", "2.0 m (~1.15× height)", "2.2 m (~1.25× height)", "2.4 m (~1.35× height)", "2.6 m (~1.45× height)"]}
                 female={["1.45 m (~0.9× height)", "1.6 m (~0.95× height)", "1.75 m (~1.05× height)", "1.9 m (~1.15× height)", "2.1 m (~1.25× height)"]}
               />
