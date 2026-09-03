@@ -174,7 +174,6 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "Phenotype",
         values: [
-          { text: "Caucasian, male" },
           { text: "Blue eyes and brown hair" },
           { text: "Average height (176 cm)" },
         ],

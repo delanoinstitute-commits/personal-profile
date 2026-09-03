@@ -35,7 +35,7 @@ const LORENZO: StatTableData = {
             ["Transformation", "The behavioral changes associated with personal progress", true, undefined, undefined, true],
             [
               "Mission",
-              "I accelerate the expansion of human consciousness using education technologies",
+              "I accelerate the expansion of human consciousness using the technologies of personal transformation",
               true,
               "Consciousness expands when maintenance shrinks, the non-outsourceable is mastered (exercise, eating, studying, finances, time, mind), and the hours freed go to the problems we care about most — serving others with our uniqueness. Musk works at the planetary level; I work at the individual: self-sufficiency, then self-mastery.",
             ],
@@ -679,8 +679,9 @@ export default function AboutPage() {
         hours. I solve my own problems first, then publish the solutions free.
       </p>
       <p>
-        My mission: accelerate the expansion of human consciousness using
-        education technologies. The road ran from South Africa through Malaysia to{" "}
+        My mission: accelerate the expansion of human consciousness using the
+        technologies of personal transformation. The road ran from South Africa
+        through Malaysia to{" "}
         <WikiLink href="/story">the US</WikiLink> — and this site is the record, every
         page referenced.
       </p>
