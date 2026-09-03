@@ -231,13 +231,9 @@ export const INFOBOX: InfoboxGroup[] = [
           { text: "Mandarin distinction" },
         ],
       },
-      { label: "Employment", values: [{ text: "Independent (results-based)" }] },
       {
         label: "Residency",
-        values: [
-          { text: "United States (since 2026)" },
-          { text: "No sponsorship required" },
-        ],
+        values: [{ text: "United States (since 2026)" }],
       },
     ],
   },
