@@ -433,7 +433,7 @@ export const WORKS: StatTableData = {
               [
                 "A universal basic-fitness program co-authored with ",
                 <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
-                ", mapped with my FT (the workbook) and delivered with my BA, available as a ",
+                ", mapped using my FT learning methodology and delivered using my BA teaching methodology, available as a ",
                 <WikiLink key="mv" href="https://www.mindvalley.com/body-first">Mindvalley quest</WikiLink>,
               ],
               true,
@@ -443,7 +443,7 @@ export const WORKS: StatTableData = {
               [
                 "A universal values-mastery program co-authored with ",
                 <WikiLink key="djd" href="https://drdemartini.com/">Dr. John Demartini</WikiLink>,
-                ", mapped with my FT and delivered with my BA, available as a ",
+                ", mapped using my FT learning methodology and delivered using my BA teaching methodology, available as a ",
                 <WikiLink key="vf" href="https://www.mindvalley.com/values">Mindvalley quest</WikiLink>,
               ],
               true,
@@ -451,7 +451,7 @@ export const WORKS: StatTableData = {
             [
               "MSP",
               [
-                "A universal exercise-mastery protocol designed and delivered with my FT alone (the slides adapt its taxonomy tables), available as five free YouTube (",
+                "A universal exercise-mastery protocol designed and delivered using my FT methodology, available as five free YouTube (",
                 <WikiLink key="map" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9rBcU7Fwl6-eizseHRR50lI">map</WikiLink>,
                 ", ",
                 <WikiLink key="routines" href="https://youtube.com/playlist?list=PLkxFhm6Fhw9oejXvkzADRTChNUd1LB0lZ">routines</WikiLink>,
@@ -469,7 +469,7 @@ export const WORKS: StatTableData = {
             [
               "Autaxonomy",
               [
-                "The taxonomy of the self: a map of a person (constitution and capital) designed with my FT, available as a free (but credited) ",
+                "The taxonomy of the self: a map of a person (constitution and capital) designed using my FT methodology, available as a free (but credited) ",
                 <WikiLink key="tax" href="/">taxonomy</WikiLink>,
                 " and design-spec markdown file",
               ],
