@@ -272,12 +272,12 @@ export const INFOBOX: InfoboxGroup[] = [
       {
         label: "About",
         labelHref: "/",
-        values: [{ text: "What makes a person?" }],
+        values: [{ text: "The person, the website, and the offers" }],
       },
       {
         label: "Lifestyle",
         labelHref: "/lifestyle",
-        values: [{ text: "Days by design, cities by scorecard" }],
+        values: [{ text: "What I do, when, and where" }],
       },
       {
         label: "Health",
