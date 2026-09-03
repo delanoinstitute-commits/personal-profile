@@ -177,7 +177,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "aptitude-data",
         cite: (
           <>
-            <strong>Aptitude</strong>: <em><WikiLink href="https://www.riotiq.com/app/share/77c600a4-14df-4c10-8055-59c55f384f3a">Adaptive IQ battery</WikiLink> (2026)</em>; tests for working memory, processing speed, fluid reasoning, spatial ability, verbal reasoning, and reaction time (RIOT) • report (RIOT IQ)
+            <strong>Intelligence</strong>: <em><WikiLink href="https://www.riotiq.com/app/share/77c600a4-14df-4c10-8055-59c55f384f3a">Adaptive IQ battery</WikiLink> (Aug 2026)</em>; tests for working memory, processing speed, fluid reasoning, spatial ability, verbal reasoning, and reaction time (RIOT) • report (RIOT IQ)
           </>
         ),
       },
@@ -185,7 +185,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "temperament-personality-data",
         cite: (
           <>
-            <strong>Temperament</strong>: <em><Tooltip media={{ src: "/reports/hexaco.png", alt: "HEXACO-PI-R report chart: six factors and 25 facets with percentile markers" }} content="HEXACO-PI-R full report (August 2026) — six factors and 25 facets scored 1–7 against the online sample’s 10th, 50th, and 90th percentiles."><em>Personality inventory</em></Tooltip> (2026)</em>; tests for honesty-humility, emotionality, extraversion, agreeableness, conscientiousness, and openness (HEXACO-PI-R) • report (hexaco.org)
+            <strong>Personality</strong>: <em><Tooltip media={{ src: "/reports/hexaco.png", alt: "HEXACO-PI-R report chart: six factors and 25 facets with percentile markers" }} content="HEXACO-PI-R full report (August 2026) — six factors and 25 facets scored 1–7 against the online sample’s 10th, 50th, and 90th percentiles."><em>Personality inventory</em></Tooltip> (Aug 2026)</em>; tests for honesty-humility, emotionality, extraversion, agreeableness, conscientiousness, and openness (HEXACO-PI-R) • report (hexaco.org)
           </>
         ),
       },
@@ -193,7 +193,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "temperament-risk-data",
         cite: (
           <>
-            <strong>Temperament</strong>: <em><Tooltip media={{ src: "/reports/risk-tolerance.png", alt: "FinaMetrica risk tolerance report: score 68, risk group 6 of 7, against the population bell curve" }} content="FinaMetrica report (June 2022) — score 68 of 100, risk group 6 of 7, higher than 96% of the representative adult sample. The report notes I estimated 80: a major over-estimate."><em>Risk profiling</em></Tooltip> (Jun 2022)</em>; tests for financial risk tolerance (25-item questionnaire) • report (FinaMetrica)
+            <strong>Risk tolerance</strong>: <em><Tooltip media={{ src: "/reports/risk-tolerance.png", alt: "FinaMetrica risk tolerance report: score 68, risk group 6 of 7, against the population bell curve" }} content="FinaMetrica report (June 2022) — score 68 of 100, risk group 6 of 7, higher than 96% of the representative adult sample. The report notes I estimated 80: a major overestimate."><em>Risk profiling</em></Tooltip> (Jun 2022)</em>; tests for financial risk tolerance (25-item questionnaire) • report (FinaMetrica)
           </>
         ),
       },
@@ -201,7 +201,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "sentiment-primals-data",
         cite: (
           <>
-            <strong>Sentiment</strong>: <em>Primals survey (Jun 2022)</em>; tests for 26 primal world beliefs (99-item PWB) • report (UPenn Primals Project)
+            <strong>Primal beliefs</strong>: <em>Primals survey (Jun 2022)</em>; tests for 26 primal world beliefs (99-item PWB) • report (UPenn Primals Project)
           </>
         ),
       },
@@ -209,7 +209,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "motivation-pvq-data",
         cite: (
           <>
-            <strong>Motivation</strong>: <em>Portrait values questionnaire (2026)</em>; tests for the ten basic values (PVQ-40) • report (self-scored)
+            <strong>Portrait values</strong>: <em>Portrait values questionnaire (2026)</em>; tests for the ten basic values (PVQ-40) • report (self-scored)
           </>
         ),
       },
@@ -217,7 +217,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "vocation-data",
         cite: (
           <>
-            <strong>Vocation</strong>: <em><Tooltip media={{ src: "/reports/riasec.png", alt: "O*NET Interest Profiler results: profile line across the six RIASEC types, with Investigative, Artistic, and Social as top interests" }} content="O*NET Interest Profiler (3 July 2026) — the profile line across all six types: Investigative peaks, Artistic and Social run close behind, Realistic sits lowest."><em>Interest profiler</em></Tooltip> (Jul 2026)</em>; tests for the six RIASEC types (O*NET Interest Profiler) • report (O*NET)
+            <strong>Interests</strong>: <em><Tooltip media={{ src: "/reports/riasec.png", alt: "O*NET Interest Profiler results: profile line across the six RIASEC types, with Investigative, Artistic, and Social as top interests" }} content="O*NET Interest Profiler (3 July 2026) — the profile line across all six types: Investigative peaks, Artistic and Social run close behind, Realistic sits lowest."><em>Interest profiler</em></Tooltip> (Jul 2026)</em>; tests for the six RIASEC types (O*NET Interest Profiler) • report (O*NET)
           </>
         ),
       },
@@ -230,7 +230,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "perspective-data",
         cite: (
           <>
-            <strong>Perspective</strong>: <em>Worldview positioning (pending)</em>; places seven reasoned stances (Funk&rsquo;s 7 worldviews) • reading (self-assessed)
+            <strong>Worldview</strong>: <em>Worldview positioning (pending)</em>; positions my seven reasoned stances within Funk&rsquo;s 7 worldviews • reading (self-assessed)
           </>
         ),
       },
@@ -238,7 +238,7 @@ const IDENTITY_DATA: ReferenceSection[] = [
         id: "motivation-demartini-data",
         cite: (
           <>
-            <strong>Motivation</strong>: <em><Tooltip media={{ src: "/reports/demartini-values.png", alt: "Demartini value determination results: Design 33%, Exercise 31%, Education 18%, Truth 10%, Exploration 8%" }} content="Value determination report (29 August 2026) — ranked from my answers to the thirteen evidence questions: Design 33%, Exercise 31%, Education 18%, Truth 10%, Exploration 8%. Design and Exercise run nearly tied at the top; the next three share a third."><em>Value determination</em></Tooltip> (Aug 2026)</em>; ranks lived values by where time, energy, and money actually go (Demartini process) • report (self-assessed)
+            <strong>Behavioral values</strong>: <em><Tooltip media={{ src: "/reports/demartini-values.png", alt: "Demartini value determination results: Design 33%, Exercise 31%, Education 18%, Truth 10%, Exploration 8%" }} content="Value determination report (29 August 2026) — ranked from my answers to the thirteen evidence questions: Design 33%, Exercise 31%, Education 18%, Truth 10%, Exploration 8%. Design and Exercise run nearly tied at the top; the next three share a third."><em>Value determination</em></Tooltip> (Aug 2026)</em>; ranks lived values by where time, energy, and money actually go (Demartini process) • report (self-assessed)
           </>
         ),
       },
@@ -252,7 +252,7 @@ const IDENTITY_EVIDENCE: ReferenceSection[] = [
     items: [
       {
         id: "riot",
-        cite: <><strong>Intelligence</strong>: RIOT &mdash; an open, adaptive online IQ test.</>,
+        cite: <><strong>Intelligence</strong>: RIOT, an open, adaptive online IQ test.</>,
         url: "https://www.riotiq.com",
         urlLabel: "riotiq.com",
       },
