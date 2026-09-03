@@ -499,7 +499,7 @@ const CONTACT: StatTableData = {
             ["Operators (revenue)", "I partner with operators in need of a builder", true],
             ["Services", "I build, sell, and fulfill the product offer; you acquire the customers and manage the resources", true, undefined, undefined, true],
             ["Startups (equity)", "Give me equity and I’ll take your product to the next level", true],
-            ["Product", "I allocate and manage product development for maximal impact; you manage the rest", true, undefined, undefined, true],
+            ["Product", "I allocate and drive product development for maximal impact; you manage the rest", true, undefined, undefined, true],
           ],
         },
       ],
