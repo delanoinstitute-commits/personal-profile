@@ -160,7 +160,7 @@ const LORENZO: StatTableData = {
           metrics: [
             ["", "Three problems hold my attention; you’re welcome to join any", false],
             [
-              "Market",
+              "Position",
               [
                 "I’m choosing my next long-term work chapter in the US (employment to equity): the one ",
                 <WikiLink key="pt" href="#contact">commitment</WikiLink>,
@@ -169,13 +169,13 @@ const LORENZO: StatTableData = {
               true,
             ],
             [
-              "Education",
+              "Curriculum",
               "I’m designing the world’s first lifelong, self-directed education curriculum, built and consumed according to a taxonomy of the self; this site is its first prototype",
               true,
               "Subjects studied according to one’s own constitution and capital: math for wealth, philosophy and psychology for nature, history from your own life outward to your country and the universe, biology for your inheritance and health. Knowledge made personal is more meaningful and more memorable, and converts into self-efficacy rather than mere acquisition.",
             ],
             [
-              "Worldview",
+              "Assessment",
               [
                 "I’m building a worldview assessment: a Likert-scale inventory that scores anyone’s stances across the seven perspectives published on my ",
                 <WikiLink key="wv" href="/nature">Nature</WikiLink>,

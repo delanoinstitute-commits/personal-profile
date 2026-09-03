@@ -32,7 +32,7 @@ const ACTIVITY: StatTableData = {
           metrics: [
             ["", "Knowledge depends on learning which problems matter, then solving them", false],
             ["Work (4 hrs)", [
-              "I spend most of the day solving knowledge organization problems for myself and others — exercising my ",
+              "I spend most of the day solving knowledge organization problems for myself and others, exercising my ",
               <WikiLink key="int" href="/nature#intellect">intelligence</WikiLink>,
               " and ",
               <WikiLink key="skl" href="/knowledge#skills">skills</WikiLink>,
@@ -40,8 +40,8 @@ const ACTIVITY: StatTableData = {
               <WikiLink key="wrk" href="/knowledge#works">works</WikiLink>,
               " of enduring value",
             ], true],
-            ["Educate (1 hr)", [
-              "If I’m not asleep, working, or exercising, you’ll find me studying — filling the many ",
+            ["Study (1 hr)", [
+              "If I’m not asleep, working, or exercising, you’ll find me studying, filling the many ",
               <WikiLink key="edu" href="/knowledge#education">education</WikiLink>,
               " and ",
               <WikiLink key="per" href="/nature#intellect">perspectival</WikiLink>,
@@ -54,13 +54,13 @@ const ACTIVITY: StatTableData = {
           metrics: [
             ["", "Physical resilience depends on hard loading matched by full recovery", false],
             ["Exercise (1 hr)", [
-              "Breaking for exercise at the same hour each day sharpens the work rather than stealing from it — preserving functional ",
+              "Breaking for exercise at the same hour each day sharpens the work rather than stealing from it, preserving functional ",
               <WikiLink key="itg" href="/health#integrity">integrity</WikiLink>,
               " through improved ",
               <WikiLink key="prf" href="/health#capacity">performance</WikiLink>,
             ], true],
             ["Sleep (8 hrs)", [
-              "Getting enough deep sleep at the same time each night makes the other habits possible — consolidating learnings from yesterday while restoring ",
+              "Getting enough deep sleep at the same time each night makes the other habits possible, consolidating learnings from yesterday while restoring ",
               <WikiLink key="bal" href="/health#balance">balance</WikiLink>,
               " for tomorrow",
             ], true],
@@ -70,15 +70,11 @@ const ACTIVITY: StatTableData = {
           category: "Personal (self care)",
           metrics: [
             ["", "Peace of mind depends on keeping my affairs in order and my attention my own", false],
-            ["Maintain (1 hr)", [
-              "Daily hygiene and ad-hoc (body, home, relationship, legal, and financial) maintenance-service management — balancing personal care with ",
-              <WikiLink key="lfs" href="/lifestyle">lifestyle</WikiLink>,
-              " efficiency",
-            ], true],
+            ["Maintain (1 hr)", "I give an hour to hygiene and ad-hoc upkeep (body, home, relationship, legal, and financial), balancing personal care with lifestyle efficiency", true],
             ["Entertain (1 hr)", [
-              "I set aside an hour each evening to escape reality with a good show or indulge its extremes on YouTube — taking on others’ ",
-              <WikiLink key="per2" href="/nature#intellect">perspective</WikiLink>,
-              " to own and expand my own",
+              "I set aside an hour each evening to escape reality with a good show or indulge its extremes on YouTube, taking on others’ ",
+              <WikiLink key="per2" href="/nature#intellect">perspectives</WikiLink>,
+              " to expand my own",
             ], true],
           ],
         },
