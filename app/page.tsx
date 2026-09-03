@@ -682,32 +682,24 @@ export default function AboutPage() {
     <div className="zoned">
       <PageHeading title="About" />
 
-      <p id="introduction" className="page-hook">Hi, I&rsquo;m Lorenzo. I design education people actually finish.</p>
+      <p id="introduction" className="page-hook">Hi, I&rsquo;m Lorenzo. I make personal transformation teachable.</p>
       <p className="page-promise">
-        For the past decade I&rsquo;ve turned best-selling authors&rsquo; expertise into
-        structured learning — 90,000+ students completed a method I codified, 500+
-        coaches were certified to teach it — and my own life is the first test of
-        everything I build.
+        I left school at thirteen and taught myself everything since — learning how to
+        learn became my trade, designing it for others became my work, and my own life
+        became the proof.
       </p>
       <p>
-        My mission is easy to say and hard to do: make personal transformation
-        teachable, then make it reach everyone. I hold my work to one standard —
-        teaching isn&rsquo;t done until behavior changes — and one rule:{" "}
-        <strong>one commitment at a time</strong>. Since 2024, Claude has been my daily
-        production partner, this site included.
+        The proof is public: my <WikiLink href="/nature">psychology</WikiLink> measured
+        — design is my highest value — my <WikiLink href="/health">health</WikiLink>{" "}
+        lab-verified, my days built from{" "}
+        <WikiLink href="/lifestyle">twelve habits</WikiLink> that sum to twenty-four
+        hours. I solve my own problems first, then publish the solutions free.
       </p>
       <p>
-        Everything I claim here is checkable: my{" "}
-        <WikiLink href="/story">story</WikiLink>, my{" "}
-        <WikiLink href="/nature">measured psychology</WikiLink>, my{" "}
-        <WikiLink href="/health">lab-verified health</WikiLink>, my{" "}
-        <WikiLink href="/knowledge">methods</WikiLink> — every page carries its
-        references, so you can verify instead of trust. If you&rsquo;re building
-        technology for human transformation, start anywhere, then write to{" "}
-        <WikiLink href="mailto:lorenzo@lorenzodelano.com">
-          lorenzo@lorenzodelano.com
-        </WikiLink>
-        .
+        My mission: expand consciousness by moving our hours from surviving, to
+        mastering, to serving. The road ran from South Africa through Malaysia to{" "}
+        <WikiLink href="/story">Austin</WikiLink> — and this site is the record, every
+        page referenced.
       </p>
 
       <hr className="zone-rule" />
