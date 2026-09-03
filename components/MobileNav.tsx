@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { NAV, NAV_GROUPS } from "@/content/site";
+import { NAV_GROUPS } from "@/content/site";
 
 /**
  * Mobile primary navigation (< lg): a 44×44 hamburger that opens a left
@@ -20,7 +20,6 @@ export default function MobileNav() {
   const drawerRef = useRef<HTMLDivElement>(null);
 
   const close = useCallback(() => setOpen(false), []);
-  const current = NAV.find((p) => p.href === pathname);
 
   // Portal target only exists after mount (avoids SSR document access).
   useEffect(() => setMounted(true), []);
@@ -163,26 +162,6 @@ export default function MobileNav() {
             </div>
           ))}
 
-          {current && current.sections.length > 1 && (
-            <div className="mt-3 border-t border-rule-soft pt-3">
-              <div className="px-2 pb-1 text-xs font-semibold uppercase tracking-[0.04em] text-muted">
-                On this page
-              </div>
-              <ul className="list-none">
-                {current.sections.map((s) => (
-                  <li key={s.anchor}>
-                    <a
-                      href={`#${s.anchor}`}
-                      onClick={close}
-                      className="flex min-h-11 items-center rounded px-2 text-sm text-link"
-                    >
-                      {s.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
             </nav>
             </div>
           </>,
