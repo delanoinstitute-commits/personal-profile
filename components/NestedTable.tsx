@@ -5,11 +5,11 @@ import Chevron from "./Chevron";
 import MetricList from "./MetricList";
 import type { StatTableData } from "./StatTable";
 
-// A two-level, row-based accordion — no left column. Each band (Personal,
-// Professional) is a centered teal header row that collapses; inside it, each
-// category (Methodologies, Designs …) is a gray header row with its own
-// chevron, over a full-width content row. Bands default collapsed; once a band
-// is open, its categories default open. Used for the Works branch only.
+// A two-level, row-based accordion — no left column. Each band is a colored
+// header row that collapses; inside it, each category is a gray header row
+// with its own chevron, over a full-width content row. Everything defaults
+// closed: pages load compressed to their band titles. Used by the taxonomy
+// branches on every page.
 
 /** Split a label so any parenthetical drops to muted weight. */
 function labelParts(text: string) {
@@ -31,10 +31,10 @@ export function NestedTable({
   groups,
   hint,
 }: StatTableData & { hint?: string }) {
-  // Default: bands open (their sections visible), sections collapsed.
-  const [openBands, setOpenBands] = useState<Set<string>>(
-    () => new Set(groups.map((g) => g.domain)),
-  );
+  // Default: everything closed — the page loads compressed to its band
+  // titles, and the reader explores branch by branch. Categories inside a
+  // band stay collapsed too, so each level opens by choice.
+  const [openBands, setOpenBands] = useState<Set<string>>(() => new Set());
   const [closedCats, setClosedCats] = useState<Set<string>>(
     () => new Set(groups.flatMap((g) => g.rows.map((r) => `${g.domain}:${r.category}`))),
   );

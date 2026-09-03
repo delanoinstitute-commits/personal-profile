@@ -581,7 +581,9 @@ p.stat-hint {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding: 0.5rem 0.65rem;
+  /* Same vertical padding as .nested-cat-toggle so band and category rows
+     sit at matching heights. */
+  padding: 0.4rem 0.65rem;
   font: inherit;
   font-weight: 600;
   text-align: left;
@@ -595,6 +597,7 @@ p.stat-hint {
 .nested-band-toggle {
   font-style: italic;
   font-size: 0.9375rem;
+  line-height: 1.4;
 }
 
 .nested-band-toggle .nested-gloss {
@@ -610,6 +613,13 @@ p.stat-hint {
 .nested-table .nested-cat th {
   background: var(--surface-subtle);
   padding: 0;
+}
+
+/* Band and category toggles share one min-height so their rows render at
+   identical heights regardless of font metrics. */
+.nested-band-toggle,
+.nested-cat-toggle {
+  min-height: 2.25rem;
 }
 
 .nested-cat-toggle {
