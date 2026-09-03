@@ -41,7 +41,7 @@ const SECURITY: StatTableData = {
           metrics: [
             ["", "I cover what my life or liability could cost other people", false],
             ["Umbrella", "$1M+ excess liability, layered above renters and non-owner auto cover", true, "A personal umbrella policy sits on top of the liability limits in the underlying policies — renters, and auto or non-owner auto while carless — and is priced in the low hundreds per year per million. The standard sizing: at least net worth, rounded up to the next million."],
-            ["Life", "Coverage ratio >1.0 of obligations — term only; minimal while no dependants", true, "Term life pays others when I cannot. Sized to obligations left behind (debts, dependants, commitments), not to income; whole-life products are an investment and an insurance doing both jobs badly."],
+            ["Life", "Coverage ratio >1.0 of obligations — term only; minimal while no dependents", true, "Term life pays others when I cannot. Sized to obligations left behind (debts, dependents, commitments), not to income; whole-life products are an investment and an insurance doing both jobs badly."],
           ],
         },
       ],
@@ -54,7 +54,7 @@ const SECURITY: StatTableData = {
         {
           category: "Active (earning capacity)",
           metrics: [
-            ["", "Income bought with my hours — the assets it leverages do not scale", false],
+            ["", "Income bought with my hours: the assets it leverages do not scale", false],
             ["Service", "Hourly rate ($500); leverages time", true, "Time exchanged directly for money. The rate is the single lever: it prices every engagement, whether billed as professional fees, salary, or wage."],
             ["Professional", "Consulting and design engagements", true, undefined, undefined, true],
             ["Salary", "Employment — none held", true, undefined, undefined, true],
@@ -68,8 +68,8 @@ const SECURITY: StatTableData = {
         {
           category: "Passive (ownership performance)",
           metrics: [
-            ["", "Income my assets earn — people, capital, and technology scale where hours cannot", false],
-            ["Partnership", "Percentage share (higher is better); leverages people and technology", true, "Income from association rather than labour or capital: a share of someone else's sales or audience."],
+            ["", "Income my assets earn: people, capital, and technology scale where hours cannot", false],
+            ["Partnership", "Percentage share (higher is better); leverages people and technology", true, "Income from association rather than labor or capital: a share of someone else's sales or audience."],
             ["Royalty", "Intellectual property licensed out", true, undefined, undefined, true],
             ["Sponsorship", "Audience access sold", true, undefined, undefined, true],
             ["Affiliate", "Referral percentages", true, undefined, undefined, true],
