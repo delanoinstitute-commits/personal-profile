@@ -330,24 +330,24 @@ export const WORKS: StatTableData = {
             [
               "Fitness studio",
               [
-                <em key="n">Quantum Physiques</em>,
+                <em key="n">Q. Physiques</em>,
                 " with ",
                 <WikiLink key="brad" href="https://movefreely.co.za/">Brad Openshaw</WikiLink>,
                 ", Pretoria, 3 years, 2011–2013 (age 23–25)",
               ],
               true,
-              "A pop-up CrossFit-style gym run out of a wrestling hall with ~100 clients at its peak. I sold my stake to Brad in January 2014 as my interests shifted toward education; QP lives on as Move Freely.",
+              "Quantum Physiques — a pop-up CrossFit-style gym run out of a wrestling hall with ~100 clients at its peak. I sold my stake to Brad in January 2014 as my interests shifted toward education; QP lives on as Move Freely.",
             ],
             [
               "Retreat business",
               [
-                <em key="n">The Physical Breakthrough Retreat</em>,
+                <em key="n">The PBTR</em>,
                 " with ",
                 <WikiLink key="jelena" href="https://jelenalakic.com/">Jelena Lakic</WikiLink>,
                 ", SA (nationwide), 1 year, 2014 (age 26)",
               ],
               true,
-              "A fitness-education retreat company built on Primal Blueprint principles — we ran our first and only retreat in February 2014. Demand never materialized, and the failure pushed me into a serious marketing student role — which became ARTrepreneurs.",
+              "The Physical Breakthrough Retreat — a fitness-education retreat company built on Primal Blueprint principles; we ran our first and only retreat in February 2014. Demand never materialized, and the failure pushed me into a serious marketing student role, which became ARTrepreneurs.",
             ],
             [
               "Coaching company",
@@ -355,7 +355,7 @@ export const WORKS: StatTableData = {
                 <em key="n">10X Fitness</em>,
                 " with ",
                 <WikiLink key="vishen" href="https://en.wikipedia.org/wiki/Vishen_Lakhiani">Vishen Lakhiani</WikiLink>,
-                ", international (mostly US), 5 years, 2020–2025 (age 32–37)",
+                ", US, 5 years, 2020–2025 (age 32–37)",
               ],
               true,
               "Co-founded with Vishen Lakhiani (25% stake): he supplied the clients and platforms, I ran the show — experiments, workshops, courses, and coaching. Average annual revenue of $175k. I sold my stake in 2025 over diverging visions.",
