@@ -154,7 +154,7 @@ const SPACE: StatTableData = {
         {
           category: "Geographic (natural conditions)",
           metrics: [
-            ["", "The land’s givens — chosen once, then lived with daily", false],
+            ["", "The land’s givens: chosen once, then lived with daily", false],
             ["Climate (4)", "Temperature (18–25°C), humidity (40–60%), sunshine (2,500+ hrs/yr), and seasons (mild winters)", true],
             ["Air (3)", "Quality (AQI ≤50; PM2.5 ≤10 µg/m³), pollen (low counts), and wind (light; ≤20 km/h)", true],
             ["Hazards (6)", "Storms (low tornado and hurricane risk), wildfires (low risk; smoke-free seasons), heat (limited 38°C+ days), pests (low mosquito and tick pressure), radiation (radon ≤100 Bq/m³; 2.7 pCi/L), and grid (reliable; backed up)", true],
@@ -176,9 +176,9 @@ const SPACE: StatTableData = {
         {
           category: "Societal (human conditions)",
           metrics: [
-            ["", "The people of a place — who lives here, and how", false],
+            ["", "The people of a place: who lives here, and how", false],
             ["Safety (3)", "Crime (violent crime ≤350 per 100,000), policing (responsive), and emergency care (Level I trauma center)", true],
-            ["Quality of life (4)", "Healthcare (CMS four-star hospital in metro), walkability (neighborhood Walk Score ≥80), traffic (short average commutes), and community (founder and fitness scenes)", true],
+            ["Livability (4)", "Healthcare (CMS four-star hospital in metro), walkability (neighborhood Walk Score ≥80), traffic (short average commutes), and community (founder and fitness scenes)", true],
             ["Culture (5)", "Mindset (builders; health-conscious), friendliness (warm but direct), language (English-first), diversity (international mix), and cuisine (rich culinary influences; chef scene)", true],
             ["Politics (3)", "State (business-friendly), city (competently run), and stability (predictable policy)", true],
             ["Architecture (4)", "Character (a city that looks like itself), heritage (preserved districts), styles (layered eras), and streetscape (human-scale blocks)", true],
