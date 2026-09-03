@@ -679,8 +679,8 @@ export default function AboutPage() {
         hours. I solve my own problems first, then publish the solutions free.
       </p>
       <p>
-        My mission: expand consciousness by moving our hours from surviving, to
-        mastering, to serving. The road ran from South Africa through Malaysia to{" "}
+        My mission: accelerate the expansion of human consciousness using
+        education technologies. The road ran from South Africa through Malaysia to{" "}
         <WikiLink href="/story">Austin</WikiLink> — and this site is the record, every
         page referenced.
       </p>
