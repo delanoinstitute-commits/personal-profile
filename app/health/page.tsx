@@ -171,21 +171,21 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
             ["Compression strength", "0:15 V-sit (L5)", true, { text: (
               <MovementLevels
                 summary="Anterior-chain trunk compression under active hip flexion: the V-sit ladder."
-                measure="Max Skill Hold"
+                measure="Max Skill Time"
                 male={["1:00 L-tuck", "0:40 low-L or high-tuck", "0:30 L-sit", "0:15 straddle-L", "0:05 V-sit (90°)"]}
               />
             ) }],
             ["Press tensegrity", "0:15 back lever (L5)", true, { text: (
               <MovementLevels
                 summary="Straight-arm pressing tension through the trunk: the back lever ladder."
-                measure="Max Skill Hold"
+                measure="Max Skill Time"
                 male={["1:00 German hang", "0:40 back-lever tuck", "0:30 flat-tuck or half-straddle", "0:20 half-lay or straddle", "0:10 back lever"]}
               />
             ) }],
             ["Pull tensegrity", "0:05 front lever (L5)", true, { text: (
               <MovementLevels
                 summary="Straight-arm pulling tension through the trunk: the front lever ladder."
-                measure="Max Skill Hold"
+                measure="Max Skill Time"
                 male={["1:00 hollow-body hang", "0:40 front-lever tuck", "0:30 flat-tuck or half-straddle", "0:15 half-lay or straddle", "0:05 front lever"]}
               />
             ) }],
@@ -198,7 +198,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
             ["Climbing strength", "20 pull-ups (L4)", true, { text: (
               <MovementLevels
                 summary="Bent-arm (shoulder-extension) pulling strength: the pull-up ladder."
-                measure="Max Reps / 1RM"
+                measure="Max Reps / 1 Rep Max"
                 male={["1 parallel row (0.65× BW)", "1 pull-up (1.0× BW)", "10 PUs or +20 kg (~1.3× BW)", "18 PUs or +40 kg (~1.5× BW)", "24 PUs or +55 kg (~1.7× BW)"]}
                 female={["1 incline row", "1 parallel row (0.65× BW)", "1 pull-up (1.0× BW)", "5 PUs or +10 kg (~1.15× BW)", "10 PUs or +20 kg (~1.35× BW)"]}
               />
@@ -206,7 +206,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
             ["Pushing strength", "25 chest dips (L4)", true, { text: (
               <MovementLevels
                 summary="Bent-arm (shoulder-flexion) pressing strength: the chest-dip ladder."
-                measure="Max Reps / 1RM"
+                measure="Max Reps / 1 Rep Max"
                 male={["1 push-up (0.65× BW)", "1 dip (1.0× BW)", "15 dips or +30 kg (~1.4× BW)", "25 dips or +55 kg (~1.7× BW)", "35 dips or +80 kg (~1.9× BW)"]}
                 female={["1 incline push-up", "1 push-up (0.65× BW)", "1 dip (1.0× BW)", "10 dips or +20 kg (~1.35× BW)", "20 dips or +40 kg (~1.65× BW)"]}
               />
@@ -236,7 +236,7 @@ const FUNCTIONAL_CAPACITY: StatTableData = {
             ["Jumping power", "2.4 m broad jump (L4)", true, { text: (
               <MovementLevels
                 summary="Explosive lower-body power: the standing broad jump ladder."
-                measure="1 Jump Max"
+                measure="1 Rep Max"
                 male={["1.8 m (~1.0× height)", "2.0 m (~1.15× height)", "2.2 m (~1.25× height)", "2.4 m (~1.35× height)", "2.6 m (~1.45× height)"]}
                 female={["1.45 m (~0.9× height)", "1.6 m (~0.95× height)", "1.75 m (~1.05× height)", "1.9 m (~1.15× height)", "2.1 m (~1.25× height)"]}
               />
