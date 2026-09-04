@@ -8,8 +8,9 @@ Companion documents: `DESIGN_SPEC.md` (site typography and layout),
 `KNOWLEDGE_SPEC.md` (taxonomy content structure). This document governs
 identity; those govern implementation.
 
-Status: v0.1 (draft, 2026-09-03). Canvas explorations pending; ink values
-marked *draft* are tuned on canvas before ratification.
+Status: v0.2 (2026-09-04). Symbol ratified: the Ranked Table (§1.1)
+replaces the LD cell; the initials appear in no mark. Ink values marked
+*draft* are still to be ratified after contrast checks.
 
 ---
 
@@ -35,26 +36,37 @@ not corporate); a red seal as a signature mark.
 
 ## 1. Marks
 
-Three interchangeable forms, one system. Any form may stand alone.
+Three interchangeable forms, one system: symbol, wordmark, lockups. Any
+form may stand alone. No initials anywhere in the marks: the wordmark
+names, the symbol means.
 
-### 1.1 The Cell (emblem)
+### 1.1 The Symbol: the Ranked Table (emblem)
 
-A single table cell containing the monogram **LD** — the atom of the
-taxonomy holding the initials of its author.
+A square ruled into nine equal cells, with the first three ranks filling
+the diagonal, top-left to bottom-right, in spectrum order: red, green,
+violet. It encodes three of the six taxonomy elements in one shape:
+*tabled* (the rules), *3×3* (the matrix), *triadic* (three ranked cells).
+The diagonal reads as descent through a hierarchy and as transformation
+over time.
 
-- Geometry: square. Border = 1 unit rule (matches the site's table rule);
-  monogram set in Newsreader, semibold, uppercase, optically centered,
-  cap height ≈ 50% of cell side. No rounding (a cell, not a badge; the
-  current header circle is retired).
-- **Outline cell** (default): ink rule, paper fill, ink monogram.
-- **Solid cell**: ink fill, paper monogram. For dark grounds and favicons
-  at small sizes.
-- **Hued cell**: fill in a rank hue with paper monogram — used ONLY where
-  the cell sits inside a ranked context (e.g., a red cell as the seal;
-  triad cells on a banner). Never a hued cell as the default emblem.
-- Minimum size: 16 px (favicon) — at 16 and 32 px, drop the border and use
-  the solid cell; at ≥ 48 px, the outline cell.
-- Clear space: one cell-side on all sides.
+- Geometry: square. Rule = side ÷ 30 (1 px minimum); inner rules equal
+  the border; cells equal. No rounding, no ornament (a table, not a
+  badge; the current header circle is retired).
+- **Primary**: ink rules, paper cells, triad diagonal. Every size,
+  including the 16 px favicon (4 px cells stay legible).
+- **Monochrome**: ink rules, paper cells, ink diagonal. Wherever color is
+  unavailable or forbidden: embossing, engraving, single-color print.
+- **On ink**: paper rules, ink cells; the diagonal keeps the triad (the
+  hues survive on dark grounds) or goes paper for the monochrome form.
+- **Seal**: rules and diagonal in `red-ink`, paper cells (§1.4).
+- Minimum size: 16 px. Clear space: one grid cell (side ÷ 3) on all
+  sides.
+- The three hues are legitimate here only because they mark rank (rows
+  one to three). They are never reordered, never spread beyond the
+  diagonal, never graded.
+- **Triad row**: the same three ranks flattened into one row of small
+  squares (red, green, violet) beside a URL or running foot. A device,
+  never a substitute for the symbol.
 
 ### 1.2 The Wordmark
 
@@ -68,9 +80,9 @@ way, never larger than the primary wordmark when both appear.
 
 ### 1.3 Lockups
 
-- **Horizontal** (default): Cell at cap-height of the wordmark, gap = half
-  a cell side, wordmark right.
-- **Vertical**: Cell above, wordmark below, centered; for square avatars
+- **Horizontal** (default): symbol at 1.4× the wordmark's cap height,
+  vertically centered, gap = half a symbol side, wordmark right.
+- **Vertical**: symbol above, wordmark below, centered; for square avatars
   and stamps.
 - **Gloss lockup**: wordmark followed by a parenthetical gloss in
   Newsreader italic, regular weight, sentence case:
@@ -83,10 +95,10 @@ way, never larger than the primary wordmark when both appear.
 
 ### 1.4 The Seal (secondary mark)
 
-The solid **red** cell with the LD monogram, used as a stamp: signatures,
-certificate corners, document footers, the 404 page. It is the hued-cell
-variant in `red-ink`, square, and reads as a chop. Optional tertiary
-variant for personal (non-commercial) use: the same red seal carrying the
+The symbol in solid `red-ink` (rules and diagonal red, cells paper), used
+as a stamp: signatures, certificate corners, document footers, the 404
+page. Square, never rotated, and reads as a chop. Optional tertiary
+variant for personal (non-commercial) use: a solid red cell carrying the
 character 龍 or Lorenzo's Chinese name in seal script — the dragon's
 place in the system, earned by the Mandarin distinction, kept off the
 professional surfaces. Never combined with the wordmark in the same
@@ -94,9 +106,11 @@ lockup; the seal signs, the wordmark names.
 
 ### 1.5 Don'ts
 
-No rounded cell. No gradients. No drop shadows. No hue on the wordmark.
-No dragon on the primary emblem. Never more than one seal per surface.
-Never distort, rotate, or outline the monogram separately from its cell.
+No rounded symbol. No gradients. No drop shadows. No rotation. No
+shuffled ranks (the diagonal is always red, green, violet from the top).
+No fills off the diagonal. No hue on the wordmark. No initials in any
+mark. No dragon on the primary emblem. Never more than one seal per
+surface.
 
 ---
 
@@ -224,16 +238,17 @@ marks. Every claim links to its evidence.
 
 | Surface | Form | Spec |
 | --- | --- | --- |
-| Favicon / app icons | Solid cell | 16, 32 (no border) · 180, 512 (outline on paper) · SVG source |
-| Site header | Outline cell + wordmark | Replaces the current LD circle |
-| Social avatars | Solid or outline cell | Square crop; no wordmark |
-| LinkedIn banner | Wordmark + tagline lockup | Paper ground; triad as three thin rank bars |
-| Letterhead | Horizontal lockup top-left; gloss `(Applied Taxonomist)` | Contact line bottom in Inter xs; seal bottom-right on signed pages |
-| Email signature | Text: wordmark line + tagline italic + site link | Optional 32 px solid cell image; no hue |
-| Resume | Existing type system; cell may sit beside the name | Closing line unchanged |
+| Favicon / app icons | Primary symbol | 16, 32, 180, 512 on paper · SVG source |
+| Site header | Primary symbol + wordmark (horizontal lockup) | Replaces the current LD circle |
+| Social avatars | Primary symbol | Square crop, paper ground, clear space one grid cell; no wordmark |
+| LinkedIn banner (1584×396) | Gloss lockup + tagline + triad row with URL | Paper ground; left 420 px kept clear for the photo |
+| YouTube channel art (2560×1440) | Gloss lockup + tagline in the 1546×423 safe area | Surface ground; triad bar along the top edge |
+| Letterhead | Gloss lockup top-left | Contact top-right in Inter xs; seal beside the signature; running foot with triad row |
+| Email signature | Primary symbol 48 px, rule, gloss lockup + tagline + links | Links in site blue only |
+| Resume | Existing type system; symbol may sit beside the name | Closing line unchanged |
 | Cover letters (table) | Title band per §4 | Already conformant |
-| Slides | Title master: ink title band with glossed title; rank bars for sections | Body Inter; data JetBrains Mono |
-| Stamp / seal | Red solid cell, LD (or 龍 personal variant) | Physical: 20–25 mm square |
+| Slides | Title master: ink title band with glossed title, triad bar beneath; symbol + wordmark in the foot | Body Inter; data JetBrains Mono |
+| Stamp / seal | Red symbol (or 龍 personal variant) | Physical: 20–25 mm square |
 | Video titles / thumbnails | Wordmark on paper or ink; single rank hue as accent bar | Never a hued background |
 | Documents / taxonomies (Docs, PDF) | §4 anatomy | Tints for bands, inks for column bars |
 
@@ -241,14 +256,15 @@ marks. Every claim links to its evidence.
 
 ## 7. Deliverables and next steps
 
-1. Canvas explorations (Claude Design): cell construction (border weight,
-   monogram optical center, letterform at 16/32/180/512), lockups, seal,
-   ink ramp tuning against paper and tints.
+1. ~~Canvas explorations~~ Done (v0.2): the Ranked Table ratified as the
+   symbol, replacing the LD cell; construction, forms, size ladder,
+   don'ts, and all application mockups on the brand canvas.
 2. Ratify inks (§2.2) after contrast checks; update site tokens if any
    value changes.
-3. Export: `public/brand/` — `cell-outline.svg`, `cell-solid.svg`,
-   `seal.svg`, `wordmark.svg`, `lockup-horizontal.svg`,
-   `lockup-vertical.svg`, favicons (`app/icon.svg`, `apple-icon.png`).
-4. Wire: site header cell, favicon, LinkedIn banner and avatar,
-   letterhead template (Docs), email signature, slide master.
+3. Export: `public/brand/` — `symbol.svg`, `symbol-mono.svg`,
+   `symbol-on-ink.svg`, `seal.svg`, `wordmark.svg`,
+   `lockup-horizontal.svg`, `lockup-vertical.svg`, favicons
+   (`app/icon.svg`, `apple-icon.png`).
+4. Wire: site header symbol, favicon, LinkedIn banner and avatar, YouTube
+   channel art, letterhead template (Docs), email signature, slide master.
 5. Version this document at each ratification.
