@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/content/site";
 import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
 import Tooltip from "@/components/Tooltip";
@@ -6,7 +6,11 @@ import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import { References, type ReferenceSection } from "@/components/References";
 
-export const metadata: Metadata = { title: "Nature" };
+export const metadata = pageMeta(
+  "Nature",
+  "Lorenzo Delano's mind, measured: intellect, character, and drive, with published psychometrics and what each predicts about how he works.",
+  "/nature",
+);
 
 // The mind in the trilogy: Intellect (cognition), Character (affect), Drive
 // (conation). Six sub-branches; Temperament, Sentiment, and Motivation carry

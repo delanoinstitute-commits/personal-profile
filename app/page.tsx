@@ -1,3 +1,5 @@
+import { SITE } from "@/content/site";
+import type { Metadata } from "next";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
@@ -216,7 +218,7 @@ const LORENZO: StatTableData = {
                 <WikiLink key="yt" href="https://youtube.com/@LorenzoDelano">YouTube</WikiLink>,
                 "; I like my coffee the way I enjoy my Trance, progressive; I recite the periodic table of elements when I get bored; my all-time favorite movie, album, and game: Mortal Kombat; I ",
                 <WikiLink key="rk" href="/story#development">rock back and forth</WikiLink>,
-                " when I work (it’s how I think)",
+                " at my desk all day; the motion is how I think",
               ],
               true,
             ],
@@ -668,6 +670,12 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
     ],
   },
 ];
+
+export const metadata: Metadata = {
+  title: { absolute: `${SITE.name} | ${SITE.role}` },
+  description: SITE.description,
+  alternates: { canonical: "/" },
+};
 
 export default function AboutPage() {
   return (

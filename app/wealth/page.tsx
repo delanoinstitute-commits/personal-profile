@@ -1,11 +1,15 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/content/site";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import { References, type ReferenceSection } from "@/components/References";
 import WikiLink from "@/components/WikiLink";
 
-export const metadata: Metadata = { title: "Wealth" };
+export const metadata = pageMeta(
+  "Wealth",
+  "Lorenzo Delano's finances run as a firm of one: security, efficiency, and growth, debt-free with top-tier credit, every decision on the record.",
+  "/wealth",
+);
 
 // Wealth in three branches, hierarchical as well as independent: Security
 // (insure the downside, then earn), Efficiency (spend and settle like an income

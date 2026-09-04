@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/content/site";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
@@ -6,7 +6,11 @@ import { References, type ReferenceSection } from "@/components/References";
 import MovementLevels from "@/components/MovementLevels";
 import WikiLink from "@/components/WikiLink";
 
-export const metadata: Metadata = { title: "Health" };
+export const metadata = pageMeta(
+  "Health",
+  "Lorenzo Delano's health, lab-verified: body composition, blood chemistry, and performance benchmarks, with the reports behind every number.",
+  "/health",
+);
 
 // Data (pages 1–2 of the health-status source). Each table holds grouped
 // sub-sections; a group is one accent header row (domain | instrument) with

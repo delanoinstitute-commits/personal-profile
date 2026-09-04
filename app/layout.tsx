@@ -5,20 +5,52 @@ import { SITE, NAV } from "@/content/site";
 import SiteHeader from "@/components/SiteHeader";
 import LeftNav from "@/components/LeftNav";
 import Infobox from "@/components/Infobox";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE.name} — personal wiki`,
-    template: `%s — ${SITE.name}`,
+    default: `${SITE.name} | ${SITE.role}`,
+    template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
   metadataBase: new URL(SITE.url),
+  alternates: { canonical: "/" },
   openGraph: {
-    title: `${SITE.name} — personal wiki`,
+    siteName: SITE.name,
+    title: `${SITE.name} | ${SITE.role}`,
     description: SITE.description,
     url: SITE.url,
     type: "profile",
+    locale: "en_US",
+    images: [{ url: SITE.ogImage, width: 1200, height: 630, alt: `${SITE.name}: ${SITE.tagline}` }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE.name} | ${SITE.role}`,
+    description: SITE.description,
+    images: [SITE.ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+  },
+};
+
+// Structured data for the person the whole site describes; one block, on
+// every page, so a search result can show who this is without guessing.
+const PERSON_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: SITE.name,
+  url: SITE.url,
+  jobTitle: SITE.role,
+  description: SITE.tagline,
+  email: `mailto:${SITE.email}`,
+  image: `${SITE.url}/carousel/portrait.jpg`,
+  sameAs: [SITE.linkedin, SITE.youtube],
+  knowsAbout: ["Functional Taxonomy", "Benchmark Apprenticeship", "personal transformation", "learning design"],
 };
 
 export default function RootLayout({
@@ -32,6 +64,10 @@ export default function RootLayout({
       className={`${serif.variable} ${sans.variable} ${mono.variable}`}
     >
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_JSON_LD) }}
+        />
         <a href="#main" className="skip-link">
           Skip to content
         </a>
@@ -133,6 +169,8 @@ export default function RootLayout({
             </ul>
           </nav>
         </noscript>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -1,11 +1,15 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/content/site";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import { References, type ReferenceSection } from "@/components/References";
 import WikiLink from "@/components/WikiLink";
 
-export const metadata: Metadata = { title: "Network" };
+export const metadata = pageMeta(
+  "Network",
+  "Lorenzo Delano's network as a roster: who holds each seat, the standard each is held to, and which seats stand open.",
+  "/network",
+);
 
 // Network in three branches — the three vectors of every human relationship:
 // Nurture (take — the people who give the organism what it needs, when it

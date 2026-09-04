@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/content/site";
 import PageHeading from "@/components/PageHeading";
 import WikiLink from "@/components/WikiLink";
 import { NestedTable } from "@/components/NestedTable";
@@ -10,7 +10,11 @@ import {
   KNOWLEDGE_REFERENCE_SECTIONS,
 } from "@/content/knowledge";
 
-export const metadata: Metadata = { title: "Knowledge" };
+export const metadata = pageMeta(
+  "Knowledge",
+  "What Lorenzo Delano knows and makes: published works, benchmarked skills, and a self-designed education, including Functional Taxonomy and Benchmark Apprenticeship.",
+  "/knowledge",
+);
 
 // The knowledge trilogy (see KNOWLEDGE_SPEC.md): Works (production — making),
 // Skills (practice — doing), Education (theory — knowing) — ordered evidence

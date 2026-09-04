@@ -1,11 +1,15 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/content/site";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import WikiLink from "@/components/WikiLink";
 import { References, type ReferenceSection } from "@/components/References";
 
-export const metadata: Metadata = { title: "Story" };
+export const metadata = pageMeta(
+  "Story",
+  "Where Lorenzo Delano came from and where he is going: inheritance, development, and emergence, from South Africa through Malaysia to the United States.",
+  "/story",
+);
 
 // A life read as a causal chain in three branches, assigned by when a fact
 // became true: Inheritance (true at the instant of birth, no response possible),

@@ -1,11 +1,15 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/content/site";
 import PageHeading from "@/components/PageHeading";
 import { NestedTable } from "@/components/NestedTable";
 import type { StatTableData } from "@/components/StatTable";
 import WikiLink from "@/components/WikiLink";
 import { References, type ReferenceSection } from "@/components/References";
 
-export const metadata: Metadata = { title: "Lifestyle" };
+export const metadata = pageMeta(
+  "Lifestyle",
+  "How Lorenzo Delano lives: twelve habits that sum to twenty-four hours, the routines that run them, and the spaces and tools that make them cheap.",
+  "/lifestyle",
+);
 
 // Life as designed, in three branches: Activity (what I do), Time (when), Space
 // (where). The twelve activity habits are a complete partition of a day — they

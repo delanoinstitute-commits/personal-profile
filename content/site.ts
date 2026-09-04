@@ -14,14 +14,32 @@
 // the personal layer (identity, health self-assessment, purpose, CTA). Switch
 // by section, never mid-paragraph. US spelling; sentence case; Oxford comma.
 
+import type { Metadata } from "next";
+
 export const SITE = {
   name: "Lorenzo Delano",
+  role: "Applied Taxonomist",
   tagline: "Designing the technologies of personal transformation",
   description:
-    "Designing the technologies of personal transformation. The Wikipedia-style record of Lorenzo Delano — applied taxonomist: his mind, health, knowledge, wealth, and network, measured and referenced.",
+    "Lorenzo Delano, applied taxonomist: the Wikipedia-style record of one life, every claim measured and referenced. Mind, health, knowledge, wealth, and network, mapped.",
   url: "https://lorenzodelano.com",
   email: "lorenzo@lorenzodelano.com",
+  linkedin: "https://www.linkedin.com/in/lorenzo-delano-7b6143364/",
+  youtube: "https://youtube.com/@LorenzoDelano",
+  ogImage: "/brand/og-1200x630.png",
 };
+
+// Per-page metadata: the title takes the root template ("Page | Lorenzo
+// Delano"), the description is the page's own claim in ≤160 characters, and
+// the canonical URL keeps search engines on the bare path.
+export function pageMeta(title: string, description: string, path: string): Metadata {
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: { title: `${title} | ${SITE.name}`, description, url: path },
+  };
+}
 
 // kind "refs" renders as the visually subordinate References chip in the
 // SectionNav — the apparatus, distinguished from the three content branches.
