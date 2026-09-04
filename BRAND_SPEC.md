@@ -90,8 +90,8 @@ way, never larger than the primary wordmark when both appear.
 
 - **Horizontal** (default): symbol side = 1.43× the wordmark's font size
   (about twice its cap height), centered on the cap height, gap = half a
-  symbol side, wordmark right. Site header: 26 px symbol beside the 18 px
-  wordmark.
+  symbol side, wordmark right. Site header on mobile: 26 px symbol
+  centered on the wordmark's cap height.
 - **Vertical**: symbol side = 4× the wordmark's font size, centered above
   it, gap = one font size; for square avatars and stamps.
 - **Gloss lockup**: wordmark followed by a parenthetical gloss in
@@ -101,7 +101,10 @@ way, never larger than the primary wordmark when both appear.
   the site. This is the brand's one deliberate rule-bend and its most
   recognizable device.
 - **Tagline lockup**: wordmark with the tagline beneath in Newsreader
-  italic: *Designing the technologies of personal transformation.*
+  italic: *Designing the technologies of personal transformation.* With
+  the symbol, it spans exactly from the wordmark's cap line to the
+  tagline's baseline, so the mark and the two text lines share top and
+  bottom edges (site header from 1024 px: 31 px symbol, 64 px header).
 
 ### 1.4 The Seal (secondary mark)
 

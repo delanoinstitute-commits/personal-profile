@@ -34,7 +34,7 @@ export default function BrandSymbol({
             y={RULE + row * (CELL + RULE)}
             width={CELL}
             height={CELL}
-            fill={row === 0 ? HEADER[col] : "var(--paper)"}
+            fill={row === 0 ? HEADER[col] : "var(--surface-paper)"}
           />
         )),
       )}

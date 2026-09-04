@@ -16,13 +16,17 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-full max-w-[81.5rem] items-center gap-2 px-3 sm:px-4">
         <MobileNav />
 
-        <Link href="/" className="flex items-center gap-2.5 no-underline">
-          <BrandSymbol size={26} className="shrink-0 text-accent" />
-          <span className="leading-tight">
-            <span className="block font-serif text-[var(--fs-wordmark)] font-semibold uppercase tracking-[0.02em] text-text">
+        {/* Tagline lockup: the symbol spans from the wordmark's cap line to the
+            tagline's baseline (BRAND_SPEC §1.3). Mobile drops the tagline, so
+            the symbol drops to the horizontal-lockup size. */}
+        <Link href="/" className="flex items-start gap-3 no-underline">
+          <BrandSymbol size={26} className="shrink-0 self-center text-accent lg:hidden" />
+          <BrandSymbol size={31} className="mt-[5px] hidden shrink-0 text-accent lg:block" />
+          <span className="flex flex-col">
+            <span className="block font-serif text-[var(--fs-wordmark)] font-semibold uppercase leading-[24px] tracking-[0.02em] text-text">
               {SITE.name}
             </span>
-            <span className="hidden text-[0.8125rem] text-muted sm:block">
+            <span className="hidden font-serif text-[0.875rem] italic leading-[18px] text-muted lg:block">
               {SITE.tagline}
             </span>
           </span>

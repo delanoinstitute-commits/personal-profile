@@ -52,7 +52,7 @@
   --fs-wordmark: 1.125rem;
 
   /* Sticky chrome height — drives SectionNav top + scroll padding */
-  --header-h: 48px;
+  --header-h: 56px;
 
   --shadow-overlay: 0 1px 2px rgba(27, 28, 29, 0.04),
     0 8px 24px rgba(27, 28, 29, 0.12);
@@ -60,7 +60,7 @@
 
 @media (min-width: 1024px) {
   :root {
-    --header-h: 52px;
+    --header-h: 64px;
   }
 }
 
