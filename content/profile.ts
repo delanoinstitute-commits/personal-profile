@@ -58,22 +58,21 @@ export type CarouselImage = {
   objectPosition?: string;
 };
 
-// Each page opens the carousel on its own portrait, matched to the page's
-// claim, not just its topic; the carousel stays freely flippable after
-// landing. Re-match a page by changing its index here. Semantic pairing:
-// About = the portrait; Story = the oldest photo; Nature = beside the
-// flow-psychology author; Lifestyle = domestic space at work; Health = the
-// gym; Knowledge = producing published works; Wealth = the business stage;
-// Network = people around a table. Spare: Jordan speaking (3).
+// Eight photos, one per page, in page order; each page opens the carousel on
+// its own and the carousel stays freely flippable after landing. Semantic
+// pairing: About = the portrait; Story = the oldest photo; Nature = coaching
+// a family (psychology in the room); Lifestyle = the gym as a way of life;
+// Health = the body itself; Knowledge = producing published works; Wealth =
+// the business stage; Network = beside a mentor.
 export const PAGE_PORTRAIT: Record<string, number> = {
   "/": 0, // portrait (Joburg 2020)
-  "/story": 8, // training workshop (Barcelona 2017)
-  "/nature": 6, // with Steven Kotler (Estonia 2018)
-  "/lifestyle": 4, // kitchen-scene directing (Washington 2022)
-  "/health": 5, // gym coaching (Italy 2018)
-  "/knowledge": 2, // clapperboard shoot (Colorado 2019)
-  "/wealth": 1, // panel stage (Dubai 2025)
-  "/network": 7, // family coaching (Calgary 2020)
+  "/story": 1, // training workshop (Barcelona 2017)
+  "/nature": 2, // family coaching (Calgary 2020)
+  "/lifestyle": 3, // gym coaching (Italy 2018)
+  "/health": 4, // studio physique (Estonia 2018)
+  "/knowledge": 5, // clapperboard shoot (Colorado 2019)
+  "/wealth": 6, // panel stage (Dubai 2025)
+  "/network": 7, // with John Demartini (Cape Town 2024)
 };
 
 export const CAROUSEL: CarouselImage[] = [
@@ -86,39 +85,21 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "50% 32%",
   },
   {
-    src: "/carousel/promotion.jpg",
-    alt: "Delano gesturing while speaking on a panel stage in Dubai",
-    context: "Promotion",
-    location: "Dubai",
-    year: "2025",
-    photographer: "Mardo Männimägi",
-    objectPosition: "35% 50%",
-  },
-  {
-    src: "/carousel/production.jpg",
-    alt: "Delano directing a MasterClass film shoot, holding a clapperboard",
-    context: "Production",
-    location: "Colorado",
-    year: "2019",
-    objectPosition: "64% 38%",
-  },
-  {
-    src: "/carousel/speaking.jpg",
-    alt: "Delano presenting on a blue-lit stage, headset mic and clicker in hand",
-    context: "Speaking",
-    location: "Jordan",
-    year: "2022",
-    photographer: "Karen Harms",
+    src: "/carousel/training.jpg",
+    alt: "Delano leading a training workshop around a table",
+    context: "Workshop",
+    location: "Barcelona",
+    year: "2017",
+    photographer: "Paulius Staniunas",
     objectPosition: "50% 45%",
   },
   {
-    src: "/carousel/washington.jpg",
-    alt: "Camera-monitor view of Delano directing a kitchen scene, reviewing a laptop with an actor",
-    context: "Production",
-    location: "Washington",
-    year: "2022",
-    photographer: "Bruno Cortes",
-    objectPosition: "48% 42%",
+    src: "/carousel/calgary.jpg",
+    alt: "Delano coaching a family seated around a living-room table",
+    context: "Coaching",
+    location: "Calgary",
+    year: "2020",
+    objectPosition: "50% 40%",
   },
   {
     src: "/carousel/coaching.jpg",
@@ -130,29 +111,38 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "72% 48%",
   },
   {
-    src: "/carousel/kotler.jpg",
-    alt: "Delano crouching with a laptop beside Steven Kotler at a shoot",
-    context: "Production",
+    src: "/carousel/body.jpg",
+    alt: "Studio portrait of Delano, shirtless in jeans, against a violet backdrop",
+    context: "Physique",
     location: "Estonia",
     year: "2018",
-    objectPosition: "0% 50%",
+    objectPosition: "50% 28%",
   },
   {
-    src: "/carousel/calgary.jpg",
-    alt: "Delano coaching a family seated around a living-room table",
-    context: "Coaching",
-    location: "Calgary",
-    year: "2020",
-    objectPosition: "50% 40%",
+    src: "/carousel/production.jpg",
+    alt: "Delano directing a MasterClass film shoot, holding a clapperboard",
+    context: "Production",
+    location: "Colorado",
+    year: "2019",
+    objectPosition: "64% 38%",
   },
   {
-    src: "/carousel/training.jpg",
-    alt: "Delano leading a training workshop around a table",
-    context: "Workshop",
-    location: "Barcelona",
-    year: "2017",
-    photographer: "Paulius Staniunas",
-    objectPosition: "50% 45%",
+    src: "/carousel/promotion.jpg",
+    alt: "Delano gesturing while speaking on a panel stage in Dubai",
+    context: "Promotion",
+    location: "Dubai",
+    year: "2025",
+    photographer: "Mardo Männimägi",
+    objectPosition: "35% 50%",
+  },
+  {
+    src: "/carousel/network.jpg",
+    alt: "Delano standing with Dr. John Demartini and a colleague in a hotel corridor",
+    context: "Network",
+    location: "Cape Town",
+    year: "2024",
+    photographer: "Paul Samuels",
+    objectPosition: "62% 50%",
   },
 ];
 
