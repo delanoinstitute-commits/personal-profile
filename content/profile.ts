@@ -69,7 +69,7 @@ export const PAGE_PORTRAIT: Record<string, number> = {
   "/story": 1, // training workshop (Barcelona 2017)
   "/nature": 2, // family coaching (Calgary 2020)
   "/lifestyle": 3, // gym coaching (Italy 2018)
-  "/health": 4, // studio physique (Estonia 2018)
+  "/health": 4, // studio physique (Joburg 2020, the 10X shoot)
   "/knowledge": 5, // clapperboard shoot (Colorado 2019)
   "/wealth": 6, // panel stage (Dubai 2025)
   "/network": 7, // with John Demartini (Cape Town 2024)
@@ -114,8 +114,8 @@ export const CAROUSEL: CarouselImage[] = [
     src: "/carousel/body.jpg",
     alt: "Studio portrait of Delano, shirtless in jeans, against a violet backdrop",
     context: "Physique",
-    location: "Estonia",
-    year: "2018",
+    location: "Joburg",
+    year: "2020",
     objectPosition: "50% 0%",
   },
   {
