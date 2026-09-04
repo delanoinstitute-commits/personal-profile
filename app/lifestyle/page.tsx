@@ -586,7 +586,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-activity",
         cite: (
           <>
-            <strong>Activity</strong>: World Health Organization (2020). <em>WHO guidelines on physical activity and sedentary behaviour</em>. 150–300 minutes moderate weekly.
+            <strong>Activity</strong>: World Health Organization (2020). <em>WHO guidelines on physical activity and sedentary behavior</em>. 150–300 minutes moderate weekly.
           </>
         ),
         url: "https://www.who.int/publications/i/item/9789240015128",
@@ -982,7 +982,7 @@ const LIFESTYLE_SOCIAL: ReferenceSection[] = [
         id: "s-richardson",
         cite: (
           <>
-            <strong>Radiation (occupational)</strong>: Richardson, D. B., et al. (2015). Risk of cancer from occupational exposure to ionising radiation (INWORKS). <em>BMJ</em>, 351. 309,932 nuclear workers; risk persists at low dose rates.
+            <strong>Radiation (occupational)</strong>: Richardson, D. B., et al. (2015). Risk of cancer from occupational exposure to ionizing radiation (INWORKS). <em>BMJ</em>, 351. 309,932 nuclear workers; risk persists at low dose rates.
           </>
         ),
         url: "https://pubmed.ncbi.nlm.nih.gov/26487649/",
