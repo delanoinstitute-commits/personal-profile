@@ -10,8 +10,8 @@ identity; those govern implementation.
 
 Status: v0.3 (2026-09-04). Symbol ratified: the Ranked Table (§1.1), a
 ruled 3×3 with the three ranks in its header row, replacing the LD cell
-(v0.1) and the diagonal (v0.2); the initials appear in no mark. Ink values
-marked *draft* are still to be ratified after contrast checks.
+(v0.1) and the diagonal (v0.2); the initials appear in no mark. Inks
+ratified (§2.2) with contrast ratios recorded.
 
 ---
 
@@ -148,16 +148,24 @@ surface.
 Every ranked structure colors its levels in this order, first level red.
 Tints are the site's existing band colors (backgrounds, ink text on
 them). Inks are the saturated counterparts for marks, lines, and text on
-paper (*draft — tune on canvas; targets ≥ 4.5:1 on paper*).
+paper. Ratified 2026-09-04 against WCAG contrast: every ink clears AA
+(≥ 4.5:1) on paper, which also clears paper text on the ink (the ratio is
+symmetric), and the neutral ink clears every tint by a wide margin.
 
-| Rank | Hue | Tint (bg) | Ink (fg, draft) |
-| --- | --- | --- | --- |
-| 1 | red | `#ecccc9` | `#ba0000` |
-| 2 | orange | `#f0d9c0` | `#b45309` |
-| 3 | yellow | `#efe3b8` | `#7a5c00` |
-| 4 | green | `#c8e0c4` | `#2e7d32` |
-| 5 | blue | `#c8daee` | `#3366cc` |
-| 6 | violet | `#d9cfe8` | `#5e35b1` |
+| Rank | Hue | Tint (bg) | Ink (fg) | Ink on paper | Neutral ink on tint | Ink on own tint |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | red | `#ecccc9` | `#ba0000` | 6.80 | 11.42 | 4.55 |
+| 2 | orange | `#f0d9c0` | `#b45309` | 5.02 | 12.51 | 3.68 |
+| 3 | yellow | `#efe3b8` | `#7a5c00` | 6.25 | 13.29 | 4.87 |
+| 4 | green | `#c8e0c4` | `#2e7d32` | 5.13 | 12.12 | 3.64 |
+| 5 | blue | `#c8daee` | `#3366cc` | 5.37 | 11.96 | 3.76 |
+| 6 | violet | `#d9cfe8` | `#5e35b1` | 8.02 | 11.41 | 5.36 |
+
+The last column governs one rule: a rank ink on its own tint (orange,
+green, blue fall between 3:1 and 4.5:1) is permitted only for large or
+bold text and for rules and fills, never for body text. Tables never need
+it: keywords in rank hue sit on paper, and tinted bands carry neutral ink.
+Blue stays identical to the site's link color on purpose.
 
 Functional colors that live outside rank: `link #3366cc` (also blue ink),
 `link-visited #6b4ba1`, `focus #0b57d0`, `danger = red-ink`.
@@ -273,8 +281,8 @@ marks. Every claim links to its evidence.
    row ratified as the symbol after four candidates; construction, forms,
    size ladder, don'ts, the record board, and all application mockups on
    the brand canvas.
-2. Ratify inks (§2.2) after contrast checks; update site tokens if any
-   value changes.
+2. ~~Ratify inks~~ Done: all six pass AA on paper unchanged, so no site
+   token moved; ratios in §2.2.
 3. ~~Export~~ Done: `public/brand/` — `symbol.svg`, `symbol-mono.svg`,
    `symbol-on-ink.svg`, `symbol-on-ink-mono.svg`, `seal.svg`,
    `wordmark.svg` (Newsreader 600 at opsz 72, outlined, tracking 0.055em),
