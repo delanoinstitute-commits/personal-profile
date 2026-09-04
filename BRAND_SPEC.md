@@ -88,10 +88,12 @@ way, never larger than the primary wordmark when both appear.
 
 ### 1.3 Lockups
 
-- **Horizontal** (default): symbol at 1.4× the wordmark's cap height,
-  vertically centered, gap = half a symbol side, wordmark right.
-- **Vertical**: symbol above, wordmark below, centered; for square avatars
-  and stamps.
+- **Horizontal** (default): symbol side = 1.43× the wordmark's font size
+  (about twice its cap height), centered on the cap height, gap = half a
+  symbol side, wordmark right. Site header: 26 px symbol beside the 18 px
+  wordmark.
+- **Vertical**: symbol side = 4× the wordmark's font size, centered above
+  it, gap = one font size; for square avatars and stamps.
 - **Gloss lockup**: wordmark followed by a parenthetical gloss in
   Newsreader italic, regular weight, sentence case:
   `LORENZO DELANO (Applied Taxonomist)` · `LORENZO DELANO (Autaxonomy)`.
@@ -270,10 +272,15 @@ marks. Every claim links to its evidence.
    the brand canvas.
 2. Ratify inks (§2.2) after contrast checks; update site tokens if any
    value changes.
-3. Export: `public/brand/` — `symbol.svg`, `symbol-mono.svg`,
-   `symbol-on-ink.svg`, `seal.svg`, `wordmark.svg`,
-   `lockup-horizontal.svg`, `lockup-vertical.svg`, favicons
-   (`app/icon.svg`, `apple-icon.png`).
-4. Wire: site header symbol, favicon, LinkedIn banner and avatar, YouTube
-   channel art, letterhead template (Docs), email signature, slide master.
+3. ~~Export~~ Done: `public/brand/` — `symbol.svg`, `symbol-mono.svg`,
+   `symbol-on-ink.svg`, `symbol-on-ink-mono.svg`, `seal.svg`,
+   `wordmark.svg` (Newsreader 600 at opsz 72, outlined, tracking 0.055em),
+   `lockup-horizontal.svg`, `lockup-vertical.svg`; favicons `app/icon.svg`
+   (16-unit grid so the rule is 1 px at 16 px) and `app/apple-icon.png`
+   (180). The symbol is drawn from one construction wherever it appears:
+   `components/BrandSymbol.tsx` on the site, the export scripts for the
+   files.
+4. Wire: ~~site header symbol, favicon~~ done; LinkedIn banner and avatar,
+   YouTube channel art, letterhead template (Docs), email signature,
+   slide master.
 5. Version this document at each ratification.

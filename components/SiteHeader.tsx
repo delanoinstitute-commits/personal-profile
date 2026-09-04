@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SITE } from "@/content/site";
 import MobileNav from "./MobileNav";
+import BrandSymbol from "./BrandSymbol";
 
 /**
  * Sticky top chrome (z-30, height = --header-h). Hamburger (mobile only) +
@@ -15,10 +16,8 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-full max-w-[81.5rem] items-center gap-2 px-3 sm:px-4">
         <MobileNav />
 
-        <Link href="/" className="flex items-center gap-2 no-underline">
-          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-accent font-serif text-sm font-semibold text-accent">
-            LD
-          </span>
+        <Link href="/" className="flex items-center gap-2.5 no-underline">
+          <BrandSymbol size={26} className="shrink-0 text-accent" />
           <span className="leading-tight">
             <span className="block font-serif text-[var(--fs-wordmark)] font-semibold uppercase tracking-[0.02em] text-text">
               {SITE.name}
