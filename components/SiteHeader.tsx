@@ -21,12 +21,12 @@ export default function SiteHeader() {
             the symbol drops to the horizontal-lockup size. */}
         <Link href="/" className="flex items-start gap-3 no-underline">
           <BrandSymbol size={26} className="shrink-0 self-center text-accent lg:hidden" />
-          <BrandSymbol size={31} className="mt-[5px] hidden shrink-0 text-accent lg:block" />
+          <BrandSymbol size={28} className="mt-[5px] hidden shrink-0 text-accent lg:block" />
           <span className="flex flex-col">
             <span className="block font-serif text-[var(--fs-wordmark)] font-semibold uppercase leading-[24px] tracking-[0.02em] text-text">
               {SITE.name}
             </span>
-            <span className="hidden font-serif text-[0.875rem] italic leading-[18px] text-muted lg:block">
+            <span className="-mt-[3px] hidden font-serif text-[0.875rem] italic leading-[18px] text-muted lg:block">
               {SITE.tagline}
             </span>
           </span>
