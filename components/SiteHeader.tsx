@@ -19,14 +19,20 @@ export default function SiteHeader() {
         {/* Tagline lockup: the symbol spans from the wordmark's cap line to the
             tagline's baseline (BRAND_SPEC §1.3). Mobile drops the tagline, so
             the symbol drops to the horizontal-lockup size. */}
-        <Link href="/" className="flex items-start gap-3 no-underline">
+        {/* The tagline lockup (BRAND_SPEC §1.3) at a 31 px symbol: name N = side ÷
+            1.613, tagline 0.587 N, gap = half a side; with line-height 1 the name's
+            cap line sits 0.02 N below its box top and the tagline's box starts
+            1.065 N below the name's, so symbol top = cap line and symbol bottom =
+            the tagline's lowest descender. Mobile drops the tagline and centres a
+            26 px symbol on the name. */}
+        <Link href="/" className="flex items-start gap-3 no-underline lg:gap-[15.5px]">
           <BrandSymbol size={26} className="shrink-0 self-center text-accent lg:hidden" />
-          <BrandSymbol size={31} className="mt-[5px] hidden shrink-0 text-accent lg:block" />
+          <BrandSymbol size={31} className="mt-[0.4px] hidden shrink-0 text-accent lg:block" />
           <span className="flex flex-col">
-            <span className="block font-serif text-[var(--fs-wordmark)] font-semibold uppercase leading-[24px] tracking-[0.02em] text-text">
+            <span className="block font-serif text-[var(--fs-wordmark)] font-semibold uppercase leading-[24px] tracking-[0.02em] text-text lg:text-[19.2px] lg:leading-none lg:tracking-[0.055em]">
               {SITE.name}
             </span>
-            <span className="hidden font-serif text-[0.875rem] italic leading-[18px] text-muted lg:block">
+            <span className="mt-[1.25px] hidden font-serif text-[11.3px] italic leading-none text-text lg:block">
               {SITE.tagline}
             </span>
           </span>

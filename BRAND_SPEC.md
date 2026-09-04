@@ -100,11 +100,18 @@ way, never larger than the primary wordmark when both appear.
   The gloss names the context of use, exactly as glosses name branches on
   the site. This is the brand's one deliberate rule-bend and its most
   recognizable device.
-- **Tagline lockup**: wordmark with the tagline beneath in Newsreader
-  italic: *Designing the technologies of personal transformation.* With
-  the symbol, it spans exactly from the wordmark's cap line to the
-  tagline's baseline, so the mark and the two text lines share top and
-  bottom edges (site header from 1024 px: 31 px symbol, 64 px header).
+- **Tagline lockup** (the complete logo; `public/brand/lockup-tagline.svg`
+  and `-on-ink.svg`): symbol, wordmark, and the tagline beneath in
+  Newsreader italic, *Designing the technologies of personal
+  transformation*, all in ink, no gloss. Proportions in units of the
+  wordmark size N: tagline 0.587 N; tagline baseline 0.7614 N below the
+  wordmark baseline; symbol side 1.613 N, its top on the wordmark's cap
+  line and its bottom on the tagline's lowest descender; gap between
+  symbol and text = half a side. Set with line-height 1, the cap line is
+  0.02 N below the wordmark's box top and the tagline's box starts 1.065 N
+  below it. Standard on the site header (31 px symbol, so N = 19.2 px),
+  the LinkedIn banner (N = 64), and the YouTube channel art (N = 92 in the
+  1546 × 423 safe area). Ratified 2026-09-04.
 
 ### 1.4 The Seal (secondary mark)
 
