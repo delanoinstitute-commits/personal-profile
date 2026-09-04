@@ -2,8 +2,9 @@
 // Navigation is grouped into three sections: Overview, then Constitution (the
 // inputs — where he came from, who he is, how he lives) and Capital (what those
 // produce — health, knowledge, wealth; the three canonical forms of personal
-// capital). Each group holds one or more pages; each page's children are in-page
-// sections (anchors) rendered as the horizontal SectionNav.
+// capital). Each group holds one or more pages; each page's children are its
+// in-page sections (introduction, three branches, references), rendered as a
+// table of contents under the active page in the left nav.
 //
 // CANONICAL NOMENCLATURE (house style — see DESIGN_SPEC.md §8). One spelling each:
 //   learning-systems designer · 10X · single-set-to-failure · self-mastery ·
@@ -41,8 +42,8 @@ export function pageMeta(title: string, description: string, path: string): Meta
   };
 }
 
-// kind "refs" renders as the visually subordinate References chip in the
-// SectionNav — the apparatus, distinguished from the three content branches.
+// kind "refs" marks the References entry — the apparatus, set apart from the
+// three content branches in the table of contents.
 export type NavSection = { label: string; anchor: string; kind?: "refs" };
 export type NavPage = {
   label: string;
@@ -60,7 +61,9 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/",
         sections: [
           { label: "Introduction", anchor: "introduction" },
-          { label: "Taxonomy", anchor: "lorenzo" },
+          { label: "Lorenzo", anchor: "lorenzo" },
+          { label: "Website", anchor: "website" },
+          { label: "Contact", anchor: "contact" },
           { label: "References", anchor: "references", kind: "refs" },
         ],
       },
@@ -69,7 +72,9 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/story",
         sections: [
           { label: "Introduction", anchor: "introduction" },
-          { label: "Taxonomy", anchor: "inheritance" },
+          { label: "Inheritance", anchor: "inheritance" },
+          { label: "Development", anchor: "development" },
+          { label: "Emergence", anchor: "emergence" },
           { label: "References", anchor: "references", kind: "refs" },
         ],
       },
@@ -78,7 +83,9 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/nature",
         sections: [
           { label: "Introduction", anchor: "introduction" },
-          { label: "Taxonomy", anchor: "intellect" },
+          { label: "Intellect", anchor: "intellect" },
+          { label: "Character", anchor: "character" },
+          { label: "Drive", anchor: "drive" },
           { label: "References", anchor: "references", kind: "refs" },
         ],
       },
@@ -87,7 +94,9 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/lifestyle",
         sections: [
           { label: "Introduction", anchor: "introduction" },
-          { label: "Taxonomy", anchor: "activity" },
+          { label: "Activity", anchor: "activity" },
+          { label: "Time", anchor: "time" },
+          { label: "Space", anchor: "space" },
           { label: "References", anchor: "references", kind: "refs" },
         ],
       },
@@ -101,7 +110,9 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/health",
         sections: [
           { label: "Introduction", anchor: "introduction" },
-          { label: "Taxonomy", anchor: "integrity" },
+          { label: "Integrity", anchor: "integrity" },
+          { label: "Balance", anchor: "balance" },
+          { label: "Capacity", anchor: "capacity" },
           { label: "References", anchor: "references", kind: "refs" },
         ],
       },
@@ -110,7 +121,9 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/knowledge",
         sections: [
           { label: "Introduction", anchor: "introduction" },
-          { label: "Taxonomy", anchor: "works" },
+          { label: "Works", anchor: "works" },
+          { label: "Skills", anchor: "skills" },
+          { label: "Education", anchor: "education" },
           { label: "References", anchor: "references", kind: "refs" },
         ],
       },
@@ -119,7 +132,9 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/wealth",
         sections: [
           { label: "Introduction", anchor: "introduction" },
-          { label: "Taxonomy", anchor: "security" },
+          { label: "Security", anchor: "security" },
+          { label: "Efficiency", anchor: "efficiency" },
+          { label: "Growth", anchor: "growth" },
           { label: "References", anchor: "references", kind: "refs" },
         ],
       },
@@ -128,7 +143,9 @@ export const NAV_GROUPS: NavGroup[] = [
         href: "/network",
         sections: [
           { label: "Introduction", anchor: "introduction" },
-          { label: "Taxonomy", anchor: "nurture" },
+          { label: "Nurture", anchor: "nurture" },
+          { label: "Progress", anchor: "progress" },
+          { label: "Contribution", anchor: "contribution" },
           { label: "References", anchor: "references", kind: "refs" },
         ],
       },
@@ -136,5 +153,5 @@ export const NAV_GROUPS: NavGroup[] = [
   },
 ];
 
-// Flattened list for per-page section lookup (SectionNav) and the no-JS fallback.
+// Flattened list for the sitemap and the no-JS footer fallback.
 export const NAV: NavPage[] = NAV_GROUPS.flatMap((g) => g.pages);

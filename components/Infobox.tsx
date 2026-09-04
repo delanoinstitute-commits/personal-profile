@@ -15,7 +15,9 @@ type InfoboxProps = {
 
 // All groups collapse (native <details>). Identity defaults open (it's the
 // hook); the rest default collapsed.
-const DEFAULT_OPEN = new Set(["Identity"]);
+// Professional opens first: the reader this site is for (an employer, a
+// partner) wants the work before the birth record. Identity stays one click away.
+const DEFAULT_OPEN = new Set(["Professional"]);
 
 /**
  * The infobox — the profile across four lenses (Identity / Professional /

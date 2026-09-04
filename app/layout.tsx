@@ -5,6 +5,7 @@ import { SITE, NAV } from "@/content/site";
 import SiteHeader from "@/components/SiteHeader";
 import LeftNav from "@/components/LeftNav";
 import Infobox from "@/components/Infobox";
+import LastUpdated from "@/components/LastUpdated";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -105,9 +106,12 @@ export default function RootLayout({
             scrapers). LinkedIn and YouTube are the only external profiles. */}
         <footer className="mx-auto max-w-[81.5rem] px-5 py-8 text-xs text-muted sm:px-7">
           <div className="flex flex-col gap-2 border-t border-rule pt-4 sm:flex-row sm:items-center sm:justify-between">
-            <p>
-              © {new Date().getFullYear()} {SITE.name} · {SITE.tagline}
-            </p>
+            <div className="flex flex-col gap-1">
+              <p>
+                © {new Date().getFullYear()} {SITE.name} · {SITE.tagline}
+              </p>
+              <LastUpdated />
+            </div>
             <nav aria-label="Footer">
               <ul className="flex flex-wrap gap-x-4 gap-y-1">
                 <li>

@@ -62,7 +62,8 @@ export default function PortraitCarousel({ priority = false }: { priority?: bool
             src={img.src}
             alt={img.alt}
             fill
-            sizes="(min-width: 1024px) 336px, 100vw"
+            sizes="(min-width: 1024px) 480px, 100vw"
+            quality={82}
             priority={priority && i === pagePhoto}
             style={{ objectPosition: img.objectPosition }}
             className={`object-cover transition-opacity duration-300 ${
