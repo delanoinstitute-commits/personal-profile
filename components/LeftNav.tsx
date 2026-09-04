@@ -5,10 +5,9 @@ import { usePathname } from "next/navigation";
 import { NAV_GROUPS } from "@/content/site";
 
 /**
- * Left sidebar (desktop): the global navigation grouped into Constitution and
- * Capital, with the active page's table of contents (introduction, its three
- * branches, references) indented beneath it. On mobile this list lives in the
- * drawer.
+ * Left sidebar (desktop): the global navigation, grouped into the four sections
+ * (overview / future / present / past). Per-page sections live in the
+ * horizontal SectionNav; on mobile this list lives in the drawer.
  */
 export default function LeftNav() {
   const pathname = usePathname();
@@ -36,23 +35,6 @@ export default function LeftNav() {
                   >
                     {p.label}
                   </Link>
-                  {active && (
-                    <ul
-                      className="mb-1 ml-3 list-none border-l border-rule pl-3 text-[0.8125rem]"
-                      aria-label={`${p.label} contents`}
-                    >
-                      {p.sections.map((s) => (
-                        <li key={s.anchor}>
-                          <a
-                            href={`#${s.anchor}`}
-                            className={`block py-0.5 ${s.kind === "refs" ? "text-muted hover:text-text" : "wikilink"}`}
-                          >
-                            {s.label}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
                 </li>
               );
             })}
