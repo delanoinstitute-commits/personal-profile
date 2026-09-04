@@ -82,6 +82,7 @@ export const CAROUSEL: CarouselImage[] = [
     context: "Portrait",
     location: "Joburg",
     year: "2020",
+    photographer: "Paul Samuels",
     objectPosition: "50% 32%",
   },
   {
@@ -116,6 +117,7 @@ export const CAROUSEL: CarouselImage[] = [
     context: "Physique",
     location: "Joburg",
     year: "2020",
+    photographer: "Paul Samuels",
     objectPosition: "50% 0%",
   },
   {
