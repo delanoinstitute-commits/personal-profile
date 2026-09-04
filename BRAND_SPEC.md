@@ -8,9 +8,10 @@ Companion documents: `DESIGN_SPEC.md` (site typography and layout),
 `KNOWLEDGE_SPEC.md` (taxonomy content structure). This document governs
 identity; those govern implementation.
 
-Status: v0.2 (2026-09-04). Symbol ratified: the Ranked Table (§1.1)
-replaces the LD cell; the initials appear in no mark. Ink values marked
-*draft* are still to be ratified after contrast checks.
+Status: v0.3 (2026-09-04). Symbol ratified: the Ranked Table (§1.1), a
+ruled 3×3 with the three ranks in its header row, replacing the LD cell
+(v0.1) and the diagonal (v0.2); the initials appear in no mark. Ink values
+marked *draft* are still to be ratified after contrast checks.
 
 ---
 
@@ -42,28 +43,35 @@ names, the symbol means.
 
 ### 1.1 The Symbol: the Ranked Table (emblem)
 
-A square ruled into nine equal cells, with the first three ranks filling
-the diagonal, top-left to bottom-right, in spectrum order: red, green,
-violet. It encodes three of the six taxonomy elements in one shape:
-*tabled* (the rules), *3×3* (the matrix), *triadic* (three ranked cells).
-The diagonal reads as descent through a hierarchy and as transformation
-over time.
+A square ruled into nine equal cells, with the three ranks filling the
+header row, left to right, in spectrum order: red, green, violet. It is
+the matrix's own column bar, and it encodes three of the six taxonomy
+elements in one shape: *tabled* (the rules), *3×3* (the matrix),
+*triadic* (three ranked cells). A table with its header: the symbol is
+the artifact, not an abstraction of it.
 
 - Geometry: square. Rule = side ÷ 30 (1 px minimum); inner rules equal
   the border; cells equal. No rounding, no ornament (a table, not a
   badge; the current header circle is retired).
-- **Primary**: ink rules, paper cells, triad diagonal. Every size,
+- **Primary**: ink rules, paper cells, triad header. Every size,
   including the 16 px favicon (4 px cells stay legible).
-- **Monochrome**: ink rules, paper cells, ink diagonal. Wherever color is
-  unavailable or forbidden: embossing, engraving, single-color print.
-- **On ink**: paper rules, ink cells; the diagonal keeps the triad (the
+- **Monochrome**: ink rules, paper cells, ink header: one tone, an ink
+  band over six paper cells. Wherever color is unavailable or forbidden:
+  embossing, engraving, single-color print, stamps.
+- **On ink**: paper rules, ink cells; the header keeps the triad (the
   hues survive on dark grounds) or goes paper for the monochrome form.
-- **Seal**: rules and diagonal in `red-ink`, paper cells (§1.4).
+- **Seal**: rules and header in `red-ink`, paper cells (§1.4).
 - Minimum size: 16 px. Clear space: one grid cell (side ÷ 3) on all
   sides.
-- The three hues are legitimate here only because they mark rank (rows
-  one to three). They are never reordered, never spread beyond the
-  diagonal, never graded.
+- The three hues are legitimate here only because they mark rank
+  (columns one to three, as in every matrix). They are never reordered,
+  never spread below the header, never graded.
+- Retired candidates, for the record (canvas board "Record"): the LD
+  monogram cell (v0.1: initials); the diagonal (v0.2: a pattern the table
+  never shows, dice-like in monochrome); "ld" pixel tiles (the filled bowl
+  erases the d; three tones in monochrome; initials again); nine separated
+  squares (cells without rules; collapses at 16 px; two tones in
+  monochrome).
 - **Triad row**: the same three ranks flattened into one row of small
   squares (red, green, violet) beside a URL or running foot. A device,
   never a substitute for the symbol.
@@ -95,7 +103,7 @@ way, never larger than the primary wordmark when both appear.
 
 ### 1.4 The Seal (secondary mark)
 
-The symbol in solid `red-ink` (rules and diagonal red, cells paper), used
+The symbol in solid `red-ink` (rules and header red, cells paper), used
 as a stamp: signatures, certificate corners, document footers, the 404
 page. Square, never rotated, and reads as a chop. Optional tertiary
 variant for personal (non-commercial) use: a solid red cell carrying the
@@ -107,8 +115,8 @@ lockup; the seal signs, the wordmark names.
 ### 1.5 Don'ts
 
 No rounded symbol. No gradients. No drop shadows. No rotation. No
-shuffled ranks (the diagonal is always red, green, violet from the top).
-No fills off the diagonal. No hue on the wordmark. No initials in any
+shuffled ranks (the header is always red, green, violet from the left).
+No fills below the header. No hue on the wordmark. No initials in any
 mark. No dragon on the primary emblem. Never more than one seal per
 surface.
 
@@ -256,9 +264,10 @@ marks. Every claim links to its evidence.
 
 ## 7. Deliverables and next steps
 
-1. ~~Canvas explorations~~ Done (v0.2): the Ranked Table ratified as the
-   symbol, replacing the LD cell; construction, forms, size ladder,
-   don'ts, and all application mockups on the brand canvas.
+1. ~~Canvas explorations~~ Done (v0.3): the Ranked Table with the header
+   row ratified as the symbol after four candidates; construction, forms,
+   size ladder, don'ts, the record board, and all application mockups on
+   the brand canvas.
 2. Ratify inks (§2.2) after contrast checks; update site tokens if any
    value changes.
 3. Export: `public/brand/` — `symbol.svg`, `symbol-mono.svg`,
