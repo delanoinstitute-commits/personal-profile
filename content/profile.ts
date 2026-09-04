@@ -116,7 +116,7 @@ export const CAROUSEL: CarouselImage[] = [
     context: "Physique",
     location: "Estonia",
     year: "2018",
-    objectPosition: "50% 28%",
+    objectPosition: "50% 0%",
   },
   {
     src: "/carousel/production.jpg",
@@ -142,7 +142,7 @@ export const CAROUSEL: CarouselImage[] = [
     location: "Cape Town",
     year: "2024",
     photographer: "Paul Samuels",
-    objectPosition: "62% 50%",
+    objectPosition: "92% 50%",
   },
 ];
 
