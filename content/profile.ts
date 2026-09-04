@@ -142,7 +142,7 @@ export const CAROUSEL: CarouselImage[] = [
     location: "Cape Town",
     year: "2024",
     photographer: "Paul Samuels",
-    objectPosition: "92% 50%",
+    objectPosition: "78% 50%",
   },
 ];
 
