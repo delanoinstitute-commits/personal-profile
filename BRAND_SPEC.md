@@ -109,7 +109,8 @@ way, never larger than the primary wordmark when both appear.
   line and its bottom on the tagline's lowest descender; gap between
   symbol and text = half a side. Set with line-height 1, the cap line is
   0.02 N below the wordmark's box top and the tagline's box starts 1.065 N
-  below it. Standard on the site header (31 px symbol, so N = 19.2 px),
+  below it. Standard on the site header (35 px symbol in a 68 px header,
+  so N = 21.7 px),
   the LinkedIn banner (N = 64), and the YouTube channel art (N = 92 in the
   1546 × 423 safe area). Ratified 2026-09-04.
 
