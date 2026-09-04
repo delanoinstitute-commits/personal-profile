@@ -13,7 +13,10 @@ export default function SiteHeader() {
       className="sticky top-0 z-30 border-b border-rule bg-paper/95 backdrop-blur"
       style={{ height: "var(--header-h)" }}
     >
-      <div className="mx-auto flex h-full max-w-[81.5rem] items-center gap-2 px-3 sm:px-4">
+      {/* Left padding matches the page grid's rail (outer px-4 + rail px-3) so the
+          symbol sits on the nav's text edge; right padding matches the outer px-4
+          so the Email chip ends on the infobox column's edge. */}
+      <div className="mx-auto flex h-full max-w-[81.5rem] items-center gap-2 px-3 sm:px-4 lg:pl-7 lg:pr-4">
         <MobileNav />
 
         {/* Tagline lockup: the symbol spans from the wordmark's cap line to the
