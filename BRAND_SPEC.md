@@ -104,9 +104,7 @@ way, never larger than the primary wordmark when both appear.
   italic: *Designing the technologies of personal transformation.* With
   the symbol, it spans exactly from the wordmark's cap line to the
   tagline's baseline, so the mark and the two text lines share top and
-  bottom edges. The tagline sits tight under the wordmark: its line box
-  overlaps the wordmark's by 3 px so the two read as one block (site
-  header from 1024 px: 28 px symbol, 64 px header).
+  bottom edges (site header from 1024 px: 31 px symbol, 64 px header).
 
 ### 1.4 The Seal (secondary mark)
 
