@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import Chevron from "./Chevron";
 import MetricList from "./MetricList";
 import type { StatTableData } from "./StatTable";
@@ -52,8 +52,37 @@ export function NestedTable({
       return next;
     });
 
+  // Arrival by hash opens the door: when the URL targets this branch's heading
+  // (the nearest h2 above the table), every band expands and the first
+  // category opens, so a link into a branch lands on its evidence rather than
+  // on a row of closed bands. Plain page loads stay compressed.
+  const rootRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const reveal = () => {
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      if (!id) return;
+      const target = document.getElementById(id);
+      if (!target || target.tagName !== "H2") return;
+      let el: Element | null = rootRef.current;
+      while (el && (el = el.previousElementSibling) && el.tagName !== "H2");
+      if (el !== target) return;
+      setOpenBands(new Set(groups.map((g) => g.domain)));
+      const first = groups[0]?.rows[0];
+      if (first) {
+        setClosedCats((prev) => {
+          const next = new Set(prev);
+          next.delete(`${groups[0].domain}:${first.category}`);
+          return next;
+        });
+      }
+    };
+    reveal();
+    window.addEventListener("hashchange", reveal);
+    return () => window.removeEventListener("hashchange", reveal);
+  }, [groups]);
+
   return (
-    <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+    <div ref={rootRef} className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
       {hint && <p className="stat-hint">{hint}</p>}
       <table className="stat-table nested-table">
         {groups.map((group) => {
