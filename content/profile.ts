@@ -118,7 +118,7 @@ export const CAROUSEL: CarouselImage[] = [
     location: "Jordan",
     year: "2022",
     photographer: "Karen Harms",
-    objectPosition: "62% 30%",
+    objectPosition: "50% 30%",
   },
   {
     src: "/carousel/production.jpg",
