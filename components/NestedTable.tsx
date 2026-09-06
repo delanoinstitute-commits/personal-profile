@@ -61,8 +61,17 @@ export function NestedTable({
   // compressed.
   const rootRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const slugOf = (category: string) =>
-      category.trim().toLowerCase().split(/[\s(]/)[0];
+    // Two forms match a category: its first word ("patrons"), or, when two
+    // categories under one heading share a first word, the whole name
+    // hyphenated including the parenthetical ("global-energy-efficiency").
+    const words = (category: string) =>
+      category
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, " ")
+        .split(/\s+/)
+        .filter(Boolean);
+    const slugOf = (category: string) => words(category)[0] ?? "";
+    const fullSlugOf = (category: string) => words(category).join("-");
     const reveal = () => {
       const raw = decodeURIComponent(window.location.hash.slice(1));
       if (!raw) return;
@@ -75,13 +84,11 @@ export function NestedTable({
       setOpenBands(new Set(groups.map((g) => g.domain)));
       let key: string | undefined;
       if (want) {
-        for (const g of groups) {
-          const row = g.rows.find((r) => slugOf(r.category) === want);
-          if (row) {
-            key = `${g.domain}:${row.category}`;
-            break;
-          }
-        }
+        const all = groups.flatMap((g) => g.rows.map((r) => ({ g, r })));
+        const hit =
+          all.find(({ r }) => fullSlugOf(r.category) === want) ??
+          all.find(({ r }) => slugOf(r.category) === want);
+        if (hit) key = `${hit.g.domain}:${hit.r.category}`;
       }
       if (!key) {
         const first = groups[0]?.rows[0];
