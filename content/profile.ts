@@ -69,7 +69,7 @@ export const PAGE_PORTRAIT: Record<string, number> = {
   "/story": 1, // training workshop (Barcelona 2017)
   "/nature": 2, // family coaching (Calgary 2020)
   "/lifestyle": 3, // gym coaching (Italy 2018)
-  "/health": 4, // studio physique (Joburg 2020, the 10X shoot)
+  "/health": 4, // A-Fest keynote stage (Jordan 2022)
   "/knowledge": 5, // clapperboard shoot (Colorado 2019)
   "/wealth": 6, // panel stage (Dubai 2025)
   "/network": 7, // with John Demartini (Cape Town 2024)
@@ -112,13 +112,13 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "72% 48%",
   },
   {
-    src: "/carousel/body.jpg",
-    alt: "Studio portrait of Delano, shirtless in jeans, against a violet backdrop",
-    context: "Physique",
-    location: "Joburg",
-    year: "2020",
-    photographer: "Paul Samuels",
-    objectPosition: "50% 0%",
+    src: "/carousel/stage.jpg",
+    alt: "Delano speaking on stage against a blue backdrop, headset microphone",
+    context: "Keynote",
+    location: "Jordan",
+    year: "2022",
+    photographer: "Karen Harms",
+    objectPosition: "62% 30%",
   },
   {
     src: "/carousel/production.jpg",
