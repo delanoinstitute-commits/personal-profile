@@ -36,6 +36,13 @@ const nextConfig = {
       { source: "/education", destination: "/knowledge#education", permanent: true },
       { source: "/skills", destination: "/knowledge#skills", permanent: true },
       { source: "/works", destination: "/knowledge#works", permanent: true },
+      // Three early routes were dropped without a forwarding address; Search
+      // Console reported them as 404s (2026-09-06). Experience folded into Skills
+      // and then Knowledge; the inherited profile lives in Story's Inheritance
+      // branch; knowledge-alt was a short-lived layout comparison.
+      { source: "/experience", destination: "/knowledge#works", permanent: true },
+      { source: "/inherited-profile", destination: "/story#inheritance", permanent: true },
+      { source: "/knowledge-alt", destination: "/knowledge", permanent: true },
     ];
   },
 };
