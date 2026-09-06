@@ -248,35 +248,6 @@ const CONTRIBUTION: StatTableData = {
 
 const NETWORK_DATA: ReferenceSection[] = [
   {
-    label: "My public profiles, offered as data to patrons, learners, and peers",
-    items: [
-      {
-        id: "profile-patrons",
-        cite: (
-          <>
-            <strong>Patrons</strong>: <em><WikiLink href="/">Complete Profile</WikiLink> (2026)</em>; the full record of who I am, what I can do, and how I work, offered before any engagement • website (Vercel)
-          </>
-        ),
-      },
-      {
-        id: "profile-learners",
-        cite: (
-          <>
-            <strong>Learners</strong>: <em><WikiLink href="https://www.youtube.com/@LorenzoDelano">Teaching Platform</WikiLink> (2025)</em>; the published lessons, demonstrations, and methods, free to any learner • channel (YouTube)
-          </>
-        ),
-      },
-      {
-        id: "profile-peers",
-        cite: (
-          <>
-            <strong>Peers</strong>: <em><WikiLink href="https://www.linkedin.com/in/lorenzo-delano-7b6143364/">Professional Profile</WikiLink> (2025)</em>; the career record of roles, works, and collaborations, kept current for the professional world • page (LinkedIn)
-          </>
-        ),
-      },
-    ],
-  },
-  {
     label: "My standing providers from nurture and progress, recommended by use",
     items: [
       {
