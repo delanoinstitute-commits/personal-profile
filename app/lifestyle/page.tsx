@@ -464,35 +464,6 @@ const TIME: StatTableData = {
 
 const LIFESTYLE_PERSONAL: ReferenceSection[] = [
   {
-    label: "My lifestyle guidelines derived from codified experience",
-    items: [
-      {
-        id: "p-lifestyle",
-        cite: (
-          <>
-            <strong>Lifestyle</strong>: <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9q6XAQg-BMKvFWNqs_AmXWh">Life Management Design</WikiLink> (2026)</em>; guidelines for designing the perfect day and ideal week • course (YouTube)
-          </>
-        ),
-      },
-      {
-        id: "p-exercise",
-        cite: (
-          <>
-            <strong>Exercise</strong>: <em><WikiLink href="https://youtube.com/playlist?list=PLkxFhm6Fhw9pveFENc_sdY9wRT8JAjDlk">Training Program Design</WikiLink> (2025)</em>; guidelines for designing balanced, integrated exercise programs • course (YouTube)
-          </>
-        ),
-      },
-      {
-        id: "p-education",
-        cite: (
-          <>
-            <strong>Study</strong>: <em><WikiLink href="https://youtu.be/h8FYdFHeDtg">Top-60 YouTube Resources</WikiLink> (2025)</em>; guidelines for continuous self-education • presentation (YouTube)
-          </>
-        ),
-      },
-    ],
-  },
-  {
     label: "My lifestyle data derived from continuous and event-based tracking",
     items: [
       {
