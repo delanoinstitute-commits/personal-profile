@@ -55,26 +55,49 @@ export function NestedTable({
   // Arrival by hash opens the door: when the URL targets this branch's heading
   // (the nearest h2 above the table), every band expands and the first
   // category opens, so a link into a branch lands on its evidence rather than
-  // on a row of closed bands. Plain page loads stay compressed.
+  // on a row of closed bands. A category can be named after a colon —
+  // "#contact:patrons" — to open that category instead of the first; the
+  // match is the category's first word, lowercased. Plain page loads stay
+  // compressed.
   const rootRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+    const slugOf = (category: string) =>
+      category.trim().toLowerCase().split(/[\s(]/)[0];
     const reveal = () => {
-      const id = decodeURIComponent(window.location.hash.slice(1));
-      if (!id) return;
+      const raw = decodeURIComponent(window.location.hash.slice(1));
+      if (!raw) return;
+      const [id, want] = raw.split(":");
       const target = document.getElementById(id);
       if (!target || target.tagName !== "H2") return;
       let el: Element | null = rootRef.current;
       while (el && (el = el.previousElementSibling) && el.tagName !== "H2");
       if (el !== target) return;
       setOpenBands(new Set(groups.map((g) => g.domain)));
-      const first = groups[0]?.rows[0];
-      if (first) {
+      let key: string | undefined;
+      if (want) {
+        for (const g of groups) {
+          const row = g.rows.find((r) => slugOf(r.category) === want);
+          if (row) {
+            key = `${g.domain}:${row.category}`;
+            break;
+          }
+        }
+      }
+      if (!key) {
+        const first = groups[0]?.rows[0];
+        if (first) key = `${groups[0].domain}:${first.category}`;
+      }
+      if (key) {
+        const found = key;
         setClosedCats((prev) => {
           const next = new Set(prev);
-          next.delete(`${groups[0].domain}:${first.category}`);
+          next.delete(found);
           return next;
         });
       }
+      // With a category in the hash there is no element whose id matches the
+      // whole fragment, so the browser will not scroll on its own.
+      if (want) target.scrollIntoView({ block: "start" });
     };
     reveal();
     window.addEventListener("hashchange", reveal);
