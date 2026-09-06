@@ -66,10 +66,10 @@ export type CarouselImage = {
 // the business stage; Network = beside a mentor.
 export const PAGE_PORTRAIT: Record<string, number> = {
   "/": 0, // portrait (Joburg 2020)
-  "/story": 1, // training workshop (Barcelona 2017)
-  "/nature": 2, // family coaching (Calgary 2020)
+  "/story": 1, // with his mother (home video, Krugersdorp 1990)
+  "/nature": 2, // training workshop (Barcelona 2017)
   "/lifestyle": 3, // gym coaching (Italy 2018)
-  "/health": 4, // A-Fest keynote stage (Jordan 2022)
+  "/health": 4, // CPET on the Cosmed cart (SSISA 2022)
   "/knowledge": 5, // clapperboard shoot (Colorado 2019)
   "/wealth": 6, // panel stage (Dubai 2025)
   "/network": 7, // with John Demartini (Cape Town 2024)
@@ -86,6 +86,14 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "50% 32%",
   },
   {
+    src: "/carousel/family.jpg",
+    alt: "Delano as a small boy with his mother, a home-video still",
+    context: "Family",
+    location: "Krugersdorp",
+    year: "1990",
+    objectPosition: "58% 45%",
+  },
+  {
     src: "/carousel/training.jpg",
     alt: "Delano leading a training workshop around a table",
     context: "Workshop",
@@ -93,14 +101,6 @@ export const CAROUSEL: CarouselImage[] = [
     year: "2017",
     photographer: "Paulius Staniunas",
     objectPosition: "50% 45%",
-  },
-  {
-    src: "/carousel/calgary.jpg",
-    alt: "Delano coaching a family seated around a living-room table",
-    context: "Coaching",
-    location: "Calgary",
-    year: "2020",
-    objectPosition: "50% 40%",
   },
   {
     src: "/carousel/coaching.jpg",
@@ -112,13 +112,12 @@ export const CAROUSEL: CarouselImage[] = [
     objectPosition: "72% 48%",
   },
   {
-    src: "/carousel/stage.jpg",
-    alt: "Delano speaking on stage against a blue backdrop, headset microphone",
-    context: "Keynote",
-    location: "Jordan",
+    src: "/carousel/cpet.jpg",
+    alt: "Delano on a cycle ergometer wearing a CPET mask, beside the Cosmed metabolic cart",
+    context: "CPET",
+    location: "SSISA",
     year: "2022",
-    photographer: "Karen Harms",
-    objectPosition: "50% 30%",
+    objectPosition: "42% 45%",
   },
   {
     src: "/carousel/production.jpg",
