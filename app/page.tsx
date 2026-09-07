@@ -366,7 +366,7 @@ const WEBSITE: StatTableData = {
             [
               "Learn",
               [
-                "Want to know more? Read parts of ",
+                "Want to know what I’m like? Read parts of ",
                 <WikiLink key="st2" href="/story">Story</WikiLink>,
                 ", ",
                 <WikiLink key="na2" href="/nature">Nature</WikiLink>,
