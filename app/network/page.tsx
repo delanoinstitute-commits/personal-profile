@@ -647,16 +647,7 @@ export default function NetworkPage() {
         hands.
       </p>
       <p>
-        It reads every relationship in one of three directions:{" "}
-        <WikiLink href="#nurture">nurture</WikiLink> (the people I learn and take
-        from), <WikiLink href="#progress">progress</WikiLink> (the peers I share the
-        road with), and <WikiLink href="#contribution">contribution</WikiLink> (the
-        people who count on me).
-      </p>
-      <p>
-        Roles appear in the order life requires them. People are graded on four
-        A&rsquo;s (available, able, affective, advocating), services on three
-        C&rsquo;s. Open seats are listed as plainly as the filled ones.
+        It reads every relationship in one of three directions: <WikiLink href="#nurture">nurture</WikiLink> (the people I learn and take from), <WikiLink href="#progress">progress</WikiLink> (the peers I share the road with), and <WikiLink href="#contribution">contribution</WikiLink> (the people who count on me). Open seats are listed as plainly as filled.
       </p>
 
       <hr className="zone-rule" />
@@ -664,16 +655,25 @@ export default function NetworkPage() {
       <h2 id="nurture">
         Nurture <span className="heading-paren">(Support)</span>
       </h2>
+      <p>
+        Who a person leans on decides how far they reach. Family is given; professionals are hired. Together they define nurture. Mine: care I call on rather than schedule, and a hired seat per capital: attendants, examiners, tutors, one advisor.
+      </p>
       <NestedTable {...NURTURE} />
 
       <h2 id="progress">
         Progress <span className="heading-paren">(Collaboration)</span>
       </h2>
+      <p>
+        Who a person walks beside sets the pace. Companions are the point; partners are the means. Together they define progress. Mine: the people I share life with, practitioners pushing me past baseline, minds I trade with, builders beside me.
+      </p>
       <NestedTable {...PROGRESS} />
 
       <h2 id="contribution">
         Contribution <span className="heading-paren">(Service)</span>
       </h2>
+      <p>
+        Who counts on a person decides what the work is for. Dependents are chosen; the duty is not. Together they define contribution. Mine: the people my work is finally for, the learners downstream of it, those who turn my output into income.
+      </p>
       <NestedTable {...CONTRIBUTION} />
 
       <hr className="zone-rule" />

@@ -545,27 +545,27 @@ export default function HealthPage() {
         the redacted reports published.
       </p>
       <p>
-        It reads one body at three levels, from rest to all-out effort:{" "}
-        <WikiLink href="#integrity">integrity</WikiLink> (how soundly it&rsquo;s built),{" "}
-        <WikiLink href="#balance">balance</WikiLink> (how calmly it holds and returns
-        to rest), and <WikiLink href="#capacity">capacity</WikiLink> (what it can do
-        flat out).
-      </p>
-      <p>
-        If you read one row per level: a lean, muscular frame at 1.76 m and 74.3 kg,
-        blood work that idles low and calm, and a deep aerobic engine with plenty in
-        reserve. The <WikiLink href="#evidence">references</WikiLink> hold every report.
+        It reads one body at three levels, from rest to all-out effort: <WikiLink href="#integrity">integrity</WikiLink> (how soundly it&rsquo;s built), <WikiLink href="#balance">balance</WikiLink> (how calmly it holds and returns to rest), and <WikiLink href="#capacity">capacity</WikiLink> (what it can do flat out). Every report is published.
       </p>
 
       <hr className="zone-rule" />
 
       <h2 id="integrity">Integrity <span className="heading-paren">(Structure)</span></h2>
+      <p>
+        What a body is built from decides what it can bear. Frame and bone are given; fat and muscle are earned. Together they define integrity. Mine: leaner than 19 in 20 men, more muscle than 4 in 5, sound bone, a narrow waist.
+      </p>
       <NestedTable {...STRUCTURAL_INTEGRITY} />
 
       <h2 id="balance">Balance <span className="heading-paren">(Homeostasis)</span></h2>
+      <p>
+        How a body idles decides how it ages. Blood and a resting heart are the quietest measures and the most predictive. Together they define balance. Mine: low lipids, sugar, and inflammation; clean liver and kidneys; a heart that idles low.
+      </p>
       <NestedTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="capacity">Capacity <span className="heading-paren">(Performance)</span></h2>
+      <p>
+        What a body can do flat out is the test of the rest. Strength is built; the engine is built and inherited. Together they define capacity. Mine: a one-leg squat, a double-bodyweight pull, 60 kg overhead, top-decile oxygen uptake.
+      </p>
       <NestedTable {...FUNCTIONAL_CAPACITY} />
 
       <hr className="zone-rule" />

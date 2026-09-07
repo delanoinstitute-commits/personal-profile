@@ -267,8 +267,7 @@ export default function StoryPage() {
         It reads in three branches: <WikiLink href="#inheritance">inheritance</WikiLink>{" "}
         (what arrived before I could choose), <WikiLink href="#development">development</WikiLink>{" "}
         (what shaped me while I grew), and <WikiLink href="#emergence">emergence</WikiLink>{" "}
-        (what I chose for myself). Each fact sits where its timing puts it; lived years
-        carry records, future ones carry plans.
+        (what I chose for myself). Lived years carry records; future ones carry plans.
       </p>
 
       <hr className="zone-rule" />
@@ -289,7 +288,7 @@ export default function StoryPage() {
       <p>
         Growing up follows a schedule no one keeps. The stages are fixed; their settings are
         not. Together they define development. Mine: attachment across six households,
-        competence on a skateboard, identity abroad after a death, a trade taught to ninety thousand.
+        competence on a skateboard, identity abroad after a death, a trade taught to 90,000.
       </p>
       <NestedTable {...DEVELOPMENT} />
 

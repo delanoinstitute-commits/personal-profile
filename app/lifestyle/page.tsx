@@ -995,27 +995,27 @@ export default function LifestylePage() {
         my own four walls.
       </p>
       <p>
-        It reads in three branches: <WikiLink href="#activity">activity</WikiLink>{" "}
-        (what I do), <WikiLink href="#time">time</WikiLink> (when I do it), and{" "}
-        <WikiLink href="#space">space</WikiLink> (where I do it). This is the current
-        design, not a fixed one — and the goal isn&rsquo;t a full calendar; it&rsquo;s
-        one so well planned it feels empty.
-      </p>
-      <p>
-        The blocks move easily: when the work needs different hours, the design adapts
-        to the job, not the other way around. Space grades the places that host it
-        all, at two scales: the city that fits the life, and the home that runs it.
+        It reads in three branches: <WikiLink href="#activity">activity</WikiLink> (what I do), <WikiLink href="#time">time</WikiLink> (when I do it), and <WikiLink href="#space">space</WikiLink> (where I do it). The design changes with the work; the aim is not a full calendar but one so well planned it feels empty.
       </p>
 
       <hr className="zone-rule" />
 
       <h2 id="activity">Activity <span className="heading-paren">(Habits)</span></h2>
+      <p>
+        A life is what its hours go to. The day is fixed at twenty-four; the split is not. Together they define activity. Mine: twelve habits, creative work first, hard training matched by recovery, shared hours that ask nothing back.
+      </p>
       <NestedTable {...ACTIVITY} />
 
       <h2 id="time">Time <span className="heading-paren">(Routines)</span></h2>
+      <p>
+        When a thing is done decides whether it gets done. Energy keeps a daily shape; a schedule follows it or fights it. Together they define time. Mine: fresh hours for solo work, peak hours for body and people, evenings for loose ends.
+      </p>
       <NestedTable {...TIME} />
 
       <h2 id="space">Space <span className="heading-paren">(Resources)</span></h2>
+      <p>
+        Where a life is lived sets what it costs and allows. The land is chosen once; the home daily. Together they define space. Mine: Austin, graded on land, market, and people; a home in five layers, from the shell to my bag.
+      </p>
       <NestedTable {...SPACE} />
 
       <hr className="zone-rule" />

@@ -33,27 +33,27 @@ export default function KnowledgePage() {
         stands on.
       </p>
       <p>
-        It reads one competence three ways: <WikiLink href="#works">works</WikiLink>{" "}
-        (what I&rsquo;ve made), <WikiLink href="#skills">skills</WikiLink> (what I can
-        do), and <WikiLink href="#education">education</WikiLink> (what I know). A
-        working system, not a trophy case: study becomes practice, and practice
-        becomes shipped work.
-      </p>
-      <p>
-        Trace any entry and you&rsquo;ll find the other two tables inside it — the
-        course behind the skill, the skill behind the work. My classroom ended at
-        thirteen; the curriculum never did, and this page is where it lives.
+        It reads one competence three ways: <WikiLink href="#works">works</WikiLink> (what I&rsquo;ve made), <WikiLink href="#skills">skills</WikiLink> (what I can do), and <WikiLink href="#education">education</WikiLink> (what I know). A working system, not a trophy case: study becomes practice, and practice becomes shipped work.
       </p>
 
       <hr className="zone-rule" />
 
       <h2 id="works">Works <span className="heading-paren">(Production)</span></h2>
+      <p>
+        What a person has made is the one competence that can be checked. Jobs are given; works are authored. Together they define a body of work. Mine: two methodologies, one for learning, one for teaching, and the programs built with them.
+      </p>
       <NestedTable {...WORKS} />
 
       <h2 id="skills">Skills <span className="heading-paren">(Practice)</span></h2>
+      <p>
+        What a person can do outlasts what they have done. Technical skill is trained; interpersonal skill is earned in rooms. Together they define practice. Mine: organizing knowledge, designing systems, producing content, teaching anything.
+      </p>
       <NestedTable {...SKILLS} />
 
       <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
+      <p>
+        What a person knows depends on how they learned it. Schooling is issued; a curriculum is chosen. Together they define an education. Mine: seven grades of school, Mandarin to distinction, enrollment only when a domain demands it.
+      </p>
       <NestedTable {...EDUCATION} />
 
       <hr className="zone-rule" />

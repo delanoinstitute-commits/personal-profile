@@ -689,18 +689,7 @@ export default function AboutPage() {
         became the proof.
       </p>
       <p>
-        The proof is public: my <WikiLink href="/nature">psychology</WikiLink> measured
-        (design is my highest value), my <WikiLink href="/health">health</WikiLink>{" "}
-        lab-verified, my days built from{" "}
-        <WikiLink href="/lifestyle">twelve habits</WikiLink> that sum to twenty-four
-        hours. I solve my own problems first, then publish the solutions free.
-      </p>
-      <p>
-        My mission: accelerate the expansion of human consciousness using the
-        technologies of personal transformation. The road ran from South Africa
-        through Malaysia to{" "}
-        <WikiLink href="/story">the US</WikiLink> — and this site is the record, every
-        page referenced.
+        The proof is public: my <WikiLink href="/nature">psychology</WikiLink> measured, my <WikiLink href="/health">health</WikiLink> lab-verified, my days built from <WikiLink href="/lifestyle">twelve habits</WikiLink> that sum to twenty-four hours. My mission: expand human consciousness through the technologies of personal transformation.
       </p>
 
       <hr className="zone-rule" />
@@ -708,16 +697,25 @@ export default function AboutPage() {
       <h2 id="lorenzo">
         Lorenzo <span className="heading-paren">(Introduction)</span>
       </h2>
+      <p>
+        Who a person is comes before what they offer. A specialization is chosen; principles are tested. Together they define a profile. Mine: one specialization, one mission, principles tested on myself first, three problems that hold my attention.
+      </p>
       <NestedTable {...LORENZO} />
 
       <h2 id="website">
         Website <span className="heading-paren">(Guide)</span>
       </h2>
+      <p>
+        How a record is built decides whether it can be trusted. The map is one; the pages are eight. Together they define the site. Mine: a personal record and a public storefront in one, four constitutional pages, four capital, three parts each.
+      </p>
       <NestedTable {...WEBSITE} />
 
       <h2 id="contact">
         Contact <span className="heading-paren">(Offers)</span>
       </h2>
+      <p>
+        What a person offers should be as plain as what they know. Published work is free; commitments are one at a time. Together they define the offers. Mine: everything published, one patron at a time, a build for whoever brings market or capital.
+      </p>
       <NestedTable {...CONTACT} />
 
       <hr className="zone-rule" />

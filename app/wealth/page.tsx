@@ -750,16 +750,7 @@ export default function WealthPage() {
         account held to a named benchmark.
       </p>
       <p>
-        It reads one balance sheet in three branches that run in order:{" "}
-        <WikiLink href="#security">security</WikiLink> (insure first, then earn),{" "}
-        <WikiLink href="#efficiency">efficiency</WikiLink> (spend and settle cleanly),
-        and <WikiLink href="#growth">growth</WikiLink> (invest what remains, venture
-        only past sufficiency).
-      </p>
-      <p>
-        Unlike the other status pages, this one publishes no readings — balances and
-        holdings stay private by design. What&rsquo;s public is the system itself: how
-        the money moves, and the benchmark each account answers to.
+        It reads one balance sheet in three branches, in order: <WikiLink href="#security">security</WikiLink> (insure first, then earn), <WikiLink href="#efficiency">efficiency</WikiLink> (spend and settle cleanly), and <WikiLink href="#growth">growth</WikiLink> (invest what remains, venture past sufficiency). No balances are published; the system is.
       </p>
 
       <hr className="zone-rule" />
@@ -767,16 +758,25 @@ export default function WealthPage() {
       <h2 id="security">
         Security <span className="heading-paren">(Protection)</span>
       </h2>
+      <p>
+        What a person can lose sets what they can risk. Earning capacity is the first asset; insurance keeps it. Together they define security. Mine: capacity and possessions insured before any upside; hours and assets earning on separate lines.
+      </p>
       <NestedTable {...SECURITY} />
 
       <h2 id="efficiency">
         Efficiency <span className="heading-paren">(Leverage)</span>
       </h2>
+      <p>
+        How money leaves decides how much stays. Burn is a choice; tax is not. Together they define efficiency. Mine: living costs under a third of income, one-off costs capped, credit cheap to use, tax paid in full, free cash with three rules.
+      </p>
       <NestedTable {...EFFICIENCY} />
 
       <h2 id="growth">
         Growth <span className="heading-paren">(Allocation)</span>
       </h2>
+      <p>
+        Where the remainder goes sets the horizon. Markets compound alone; ventures need hands. Together they define growth. Mine: three months of burn in cash, future me funded first, the market bought whole, ownership in businesses mine first.
+      </p>
       <NestedTable {...GROWTH} />
 
       <hr className="zone-rule" />
