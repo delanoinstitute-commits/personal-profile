@@ -326,7 +326,7 @@ const WEBSITE: StatTableData = {
               true,
             ],
             ["Layout (pages)", "Each page is structured the same, four constitutional and four capital", true],
-            ["Introduction", "Each page opens with its subject in one line, then introduces it in my own words", true, undefined, undefined, true],
+            ["Intro", "Each page opens with its subject in one line, then introduces it in my own words", true, undefined, undefined, true],
             ["Taxonomy", "Each page holds three branches of two bands each, in accordions for maximal compression", true, undefined, undefined, true],
             [
               "References",
