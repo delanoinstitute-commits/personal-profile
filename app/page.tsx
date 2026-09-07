@@ -366,13 +366,12 @@ const WEBSITE: StatTableData = {
             [
               "Learn",
               [
-                "Want to get personal? Read parts of ",
+                "Want to know more? Read parts of ",
                 <WikiLink key="st2" href="/story">Story</WikiLink>,
                 ", ",
                 <WikiLink key="na2" href="/nature">Nature</WikiLink>,
                 ", and ",
                 <WikiLink key="li2" href="/lifestyle">Lifestyle</WikiLink>,
-                " until I feel familiar",
               ],
               true,
             ],
