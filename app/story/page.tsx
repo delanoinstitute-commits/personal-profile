@@ -267,12 +267,8 @@ export default function StoryPage() {
         It reads in three branches: <WikiLink href="#inheritance">inheritance</WikiLink>{" "}
         (what arrived before I could choose), <WikiLink href="#development">development</WikiLink>{" "}
         (what shaped me while I grew), and <WikiLink href="#emergence">emergence</WikiLink>{" "}
-        (what I chose for myself). Each fact sits where its timing puts it.
-      </p>
-      <p>
-        Lived years carry records; future ones carry plans, and I never confuse the
-        two. Most of a life belongs to the first two branches — the interesting part
-        is how small the third is, and how much it changes.
+        (what I chose for myself). Each fact sits where its timing puts it; lived years
+        carry records, future ones carry plans.
       </p>
 
       <hr className="zone-rule" />
@@ -280,16 +276,31 @@ export default function StoryPage() {
       <h2 id="inheritance">
         Inheritance <span className="heading-paren">(Identity)</span>
       </h2>
+      <p>
+        What a person is issued sets the terms. Body and birthplace are fixed; what is made
+        of them is not. Together they define an inheritance. Mine: a European body, O negative
+        and lactase-persistent; Afrikaner, born under apartheid&rsquo;s last emergency.
+      </p>
       <NestedTable {...INHERITANCE} />
 
       <h2 id="development">
         Development <span className="heading-paren">(Timeline)</span>
       </h2>
+      <p>
+        Growing up follows a schedule no one keeps. The stages are fixed; their settings are
+        not. Together they define development. Mine: attachment across six households,
+        competence on a skateboard, identity abroad after a death, a trade taught to ninety thousand.
+      </p>
       <NestedTable {...DEVELOPMENT} />
 
       <h2 id="emergence">
         Emergence <span className="heading-paren">(Agency)</span>
       </h2>
+      <p>
+        What a person chooses is the smallest part of a life. Influences arrive unbidden;
+        decisions do not. Together they define emergence. Mine: exemplars from Bruce Lee to
+        Wilber, and twelve blind decisions, school left at fourteen, America entered a refugee.
+      </p>
       <NestedTable {...EMERGENCE} />
 
       <hr className="zone-rule" />
