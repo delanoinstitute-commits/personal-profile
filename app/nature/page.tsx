@@ -358,9 +358,19 @@ export default function IdentityPage() {
       <NestedTable {...INTELLECT} />
 
       <h2 id="character">Character <span className="heading-paren">(Affect)</span></h2>
+      <p>
+        How a person feels shapes what they do. Temperament is largely set; the beliefs
+        beneath it are not. Together they define character. Mine: disciplined, honest, and
+        curious, easy with financial risk, in a world felt as good, safe, and improving.
+      </p>
       <NestedTable {...CHARACTER} />
 
       <h2 id="drive">Drive <span className="heading-paren">(Conation)</span></h2>
+      <p>
+        What a person strives for moves thought and feeling. Stated values shift; values
+        paid in time and money do not. Together they define drive. Mine: autonomy and
+        achievement, spent on design, the body, then teaching; ideas and making, for people.
+      </p>
       <NestedTable {...DRIVE} />
 
       <hr className="zone-rule" />
