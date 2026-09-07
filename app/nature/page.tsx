@@ -335,9 +335,9 @@ export default function IdentityPage() {
 
       <p id="introduction" className="page-hook">I didn&rsquo;t guess my personality. I measured it.</p>
       <p className="page-promise">
-        My full psychological profile: intelligence, personality, worldview, values,
-        and interests — every one scored on gold-standard instruments, every report
-        published.
+        I define a person&rsquo;s nature by the three constituents of the mind: intellect
+        (how you think), character (how you&rsquo;re wired), and drive (what moves you).
+        Your nature predicts your niche: where you fit, and whom you serve best.
       </p>
       <p>
         It reads in three lenses: <WikiLink href="#intellect">intellect</WikiLink> (how
