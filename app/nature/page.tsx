@@ -343,13 +343,8 @@ export default function IdentityPage() {
         It reads in three lenses: <WikiLink href="#intellect">intellect</WikiLink> (how
         I think), <WikiLink href="#character">character</WikiLink> (how I&rsquo;m wired),
         and <WikiLink href="#drive">drive</WikiLink> (what moves me). Each lens ranks
-        its results: the headline score first, the pieces underneath.
-      </p>
-      <p>
-        If you read one row per lens: IQ 112 with a verbal profile shared by 7% of
-        adults, conscientiousness 6.87 of 7, and a value hierarchy that puts design
-        first. Hover any <WikiLink href="#references">reference</WikiLink> for the
-        report behind the number.
+        its results, headline score first and the instruments beneath, so you can stop
+        at any depth and still leave with the measure.
       </p>
 
       <hr className="zone-rule" />
