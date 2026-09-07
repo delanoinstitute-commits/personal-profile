@@ -326,10 +326,10 @@ const WEBSITE: StatTableData = {
               true,
             ],
             ["Layout (pages)", "Each page is structured the same, four constitutional and four capital", true],
-            ["1. Introduction", "Each page opens with its subject in one line, then introduces it in my own words", true],
-            ["2. Taxonomy", "Each page holds three branches of two bands each, in accordions for maximal compression", true, undefined, undefined, true],
+            ["Introduction", "Each page opens with its subject in one line, then introduces it in my own words", true, undefined, undefined, true],
+            ["Taxonomy", "Each page holds three branches of two bands each, in accordions for maximal compression", true, undefined, undefined, true],
             [
-              "3. References",
+              "References",
               [
                 "Each page closes with the ",
                 <WikiLink key="rfs" href="#references">data, guidelines, and studies</WikiLink>,
