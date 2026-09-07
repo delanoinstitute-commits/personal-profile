@@ -290,7 +290,7 @@ const WEBSITE: StatTableData = {
           category: "Structure (how it’s built)",
           metrics: [
             ["", "I drew one map and laid it out across eight identical pages", false],
-            ["Map", "I map what makes a person, demonstrated on me", true],
+            ["Autaxonomy", "A map of what makes a person, demonstrated on my own life", true],
             [
               "Constitution",
               [
@@ -325,7 +325,8 @@ const WEBSITE: StatTableData = {
               undefined,
               true,
             ],
-            ["Layout", "One layout serves all eight; only the content changes", true],
+            ["Layout", "Each page is structured the same, four constitutional and four capital", true],
+            ["Introduction", "Each page opens with its subject in one line, then introduces it in my own words", true],
             ["Taxonomy", "Each page holds three branches of two bands each, in accordions for maximal compression", true, undefined, undefined, true],
             [
               "References",
@@ -365,7 +366,7 @@ const WEBSITE: StatTableData = {
             [
               "Learn",
               [
-                "Curious about me? Read parts of ",
+                "Want to get personal? Read parts of ",
                 <WikiLink key="st2" href="/story">Story</WikiLink>,
                 ", ",
                 <WikiLink key="na2" href="/nature">Nature</WikiLink>,
