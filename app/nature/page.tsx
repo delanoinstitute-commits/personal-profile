@@ -355,6 +355,11 @@ export default function IdentityPage() {
       <hr className="zone-rule" />
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>
+      <p>
+        How a person thinks matters more than what they know. IQ is fixed and highly
+        predictive; mindset is not. Together they define an intellectual profile. Mine: an
+        enlightenment humanist with an IQ of 112, weighted toward verbal and fluid reasoning.
+      </p>
       <NestedTable {...INTELLECT} />
 
       <h2 id="character">Character <span className="heading-paren">(Affect)</span></h2>
