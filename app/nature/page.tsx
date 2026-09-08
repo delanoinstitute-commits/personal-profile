@@ -353,23 +353,23 @@ export default function IdentityPage() {
       <p>
         How a person thinks is a function of intelligence (fixed) and worldview (modifiable),
         the two best predictors of the type and scope of problems they are drawn to. Mine: an
-        Enlightenment humanist, IQ 112, drawn to problems of knowledge organization.
+        Enlightenment humanist, IQ 112, drawn to making knowledge transformative.
       </p>
       <NestedTable {...INTELLECT} />
 
       <h2 id="character">Character <span className="heading-paren">(Affect)</span></h2>
       <p>
-        How a person feels shapes what they do. Temperament is largely set; the beliefs
-        beneath it are not. Together they define character. Mine: disciplined, honest, and
-        curious, easy with financial risk, in a world felt as good, safe, and improving.
+        How a person is wired is a function of personality (fixed) and beliefs (modifiable),
+        the two best predictors of who trusts them and who can live and work with them. Mine:
+        disciplined, honest, and curious; easy with risk; a world felt as good and improving.
       </p>
       <NestedTable {...CHARACTER} />
 
       <h2 id="drive">Drive <span className="heading-paren">(Conation)</span></h2>
       <p>
-        What a person strives for moves thought and feeling. Stated values shift; values
-        paid in time and money do not. Together they define drive. Mine: autonomy and
-        achievement, spent on design, the body, then teaching; ideas and making, for people.
+        What moves a person is a function of values (modifiable) and interests (stable), the
+        best predictors of what they do unasked and how to influence them. Mine: autonomy and
+        achievement; design, the body, then teaching; ideas and making, for people.
       </p>
       <NestedTable {...DRIVE} />
 
