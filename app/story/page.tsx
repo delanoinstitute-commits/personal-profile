@@ -257,17 +257,12 @@ export default function StoryPage() {
         title="Story"
       />
 
-      <p id="introduction" className="page-hook">What made me, and what I made of it.</p>
+      <p id="introduction" className="page-hook">Your story predicts how you&rsquo;ll meet what comes next.</p>
       <p className="page-promise">
-        From my DNA and family tree to every stage of life so far: the whole timeline
-        is here, including the parts that were handed to me and the choices nothing
-        about them predicted.
+        Story refers to the three phases of a life: <strong>inheritance</strong> (what you were given), <strong>development</strong> (what shaped you), and <strong>emergence</strong> (what you chose). Your story predicts your trajectory: what you make of what you were given.
       </p>
       <p>
-        It reads in three branches: <WikiLink href="#inheritance">inheritance</WikiLink>{" "}
-        (what arrived before I could choose), <WikiLink href="#development">development</WikiLink>{" "}
-        (what shaped me while I grew), and <WikiLink href="#emergence">emergence</WikiLink>{" "}
-        (what I chose for myself). Lived years carry records; future ones carry plans.
+        <WikiLink href="#inheritance">Inheritance</WikiLink> is fixed; <WikiLink href="#development">development</WikiLink> is done; only <WikiLink href="#emergence">emergence</WikiLink> is still being written. Each is best measured by record: the genome and the family tree, then a dated timeline. To master your story is to treat the given as material, and to keep choosing.
       </p>
 
       <hr className="zone-rule" />
@@ -276,9 +271,7 @@ export default function StoryPage() {
         Inheritance <span className="heading-paren">(Identity)</span>
       </h2>
       <p>
-        What a person is issued sets the terms. Body and birthplace are fixed; what is made
-        of them is not. Together they define an inheritance. Mine: a European body, O negative
-        and lactase-persistent; Afrikaner, born under apartheid&rsquo;s last emergency.
+        What a person is given is a function of <strong>biology</strong> (fixed) and <strong>circumstance</strong> (fixed at birth), the two best predictors of their starting odds and defaults. Mine: a European body, O negative; Afrikaner, born under apartheid&rsquo;s last emergency.
       </p>
       <NestedTable {...INHERITANCE} />
 
@@ -286,9 +279,7 @@ export default function StoryPage() {
         Development <span className="heading-paren">(Timeline)</span>
       </h2>
       <p>
-        Growing up follows a schedule no one keeps. The stages are fixed; their settings are
-        not. Together they define development. Mine: attachment across six households,
-        competence on a skateboard, identity abroad after a death, a trade taught to 90,000.
+        How a person grew is a function of <strong>stage</strong> (fixed) and <strong>setting</strong> (variable), the two best predictors of what they trust and what they can bear. Mine: six households by age five, a skateboard, a death and China at sixteen, a trade taught to 90,000.
       </p>
       <NestedTable {...DEVELOPMENT} />
 
@@ -296,9 +287,7 @@ export default function StoryPage() {
         Emergence <span className="heading-paren">(Agency)</span>
       </h2>
       <p>
-        What a person chooses is the smallest part of a life. Influences arrive unbidden;
-        decisions do not. Together they define emergence. Mine: exemplars from Bruce Lee to
-        Wilber, and twelve blind decisions, school left at fourteen, America entered a refugee.
+        What a person chooses is a function of <strong>influences</strong> (arriving unbidden) and <strong>decisions</strong> (made blind), the two best predictors of who they become next. Mine: Bruce Lee to Wilber; twelve blind decisions, school left at fourteen, America entered a refugee.
       </p>
       <NestedTable {...EMERGENCE} />
 

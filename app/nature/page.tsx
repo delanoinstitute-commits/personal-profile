@@ -335,9 +335,7 @@ export default function IdentityPage() {
 
       <p id="introduction" className="page-hook">Your nature already knows where you belong.</p>
       <p className="page-promise">
-        I define a person&rsquo;s nature by three constituents of the mind: <strong>intellect</strong>
-        (how you think), <strong>character</strong> (how you&rsquo;re wired), and <strong>drive</strong> (what moves you).
-        Your nature predicts your niche: where you fit, and whom you serve best.
+        Nature refers to the three constituents of the mind: <strong>intellect</strong> (how you think), <strong>character</strong> (how you&rsquo;re wired), and <strong>drive</strong> (what moves you). Your nature predicts your niche: where you fit, and whom you serve best.
       </p>
       <p>
         <WikiLink href="#intellect">Intelligence</WikiLink> and{" "}
@@ -351,9 +349,7 @@ export default function IdentityPage() {
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>
       <p>
-        How a person thinks is a function of <strong>intelligence</strong> (fixed) and <strong>worldview</strong> (modifiable),
-        the two best predictors of the type and scope of problems they are drawn to. Mine: an
-        Enlightenment humanist, IQ 112, drawn to making knowledge transformative.
+        How a person thinks is a function of <strong>intelligence</strong> (fixed) and <strong>worldview</strong> (modifiable), the two best predictors of the type and scope of problems they are drawn to. Mine: an Enlightenment humanist, IQ 112, drawn to making knowledge transformative.
       </p>
       <NestedTable {...INTELLECT} />
 
