@@ -654,7 +654,7 @@ export default function NetworkPage() {
         Nurture <span className="heading-paren">(Support)</span>
       </h2>
       <p>
-        Who a person leans on is a function of <strong>family</strong> (given) and <strong>professionals</strong> (hired), the two best predictors of how far they reach and how fast they recover. Mine: care I call on rather than schedule, and one hired seat per capital, one advisor for all.
+        Who you lean on is a function of <strong>family</strong> (given) and <strong>professionals</strong> (hired), the two best predictors of how far you reach and how fast you recover. Mine: care I call on rather than schedule, and one hired seat per capital, one advisor for all.
       </p>
       <NestedTable {...NURTURE} />
 
@@ -662,7 +662,7 @@ export default function NetworkPage() {
         Progress <span className="heading-paren">(Collaboration)</span>
       </h2>
       <p>
-        Who a person walks beside is a function of <strong>companions</strong> (chosen) and <strong>partners</strong> (aligned), the two best predictors of pace and of who they become. Mine: the people I share life with, practitioners past baseline, minds I trade with, builders beside me.
+        Who you walk beside is a function of <strong>companions</strong> (chosen) and <strong>partners</strong> (aligned), the two best predictors of your pace and who you become. Mine: the people I share life with, practitioners past baseline, minds I trade with, builders beside me.
       </p>
       <NestedTable {...PROGRESS} />
 
@@ -670,7 +670,7 @@ export default function NetworkPage() {
         Contribution <span className="heading-paren">(Service)</span>
       </h2>
       <p>
-        Who counts on a person is a function of <strong>dependents</strong> (personal) and <strong>receivers</strong> (professional), the two best predictors of what the work is for and how it pays. Mine: the people my work is for, the learners downstream, those who turn it into income.
+        Who counts on you is a function of <strong>dependents</strong> (personal) and <strong>receivers</strong> (professional), the two best predictors of what your work is for and how it pays. Mine: the people my work is for, the learners downstream, those who turn it into income.
       </p>
       <NestedTable {...CONTRIBUTION} />
 

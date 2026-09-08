@@ -550,19 +550,19 @@ export default function HealthPage() {
 
       <h2 id="integrity">Integrity <span className="heading-paren">(Structure)</span></h2>
       <p>
-        How a body is built is a function of <strong>frame</strong> (fixed) and <strong>composition</strong> (earned), the two best predictors of injury risk and metabolic health. Mine: leaner than 19 in 20 men, more muscle than 4 in 5, sound bone, a narrow waist.
+        How your body is built is a function of <strong>frame</strong> (fixed) and <strong>composition</strong> (earned), the two best predictors of injury risk and metabolic health. Mine: leaner than 19 in 20 men, more muscle than 4 in 5, sound bone, a narrow waist.
       </p>
       <NestedTable {...STRUCTURAL_INTEGRITY} />
 
       <h2 id="balance">Balance <span className="heading-paren">(Homeostasis)</span></h2>
       <p>
-        How a body rests is a function of <strong>chemistry</strong> (modifiable) and <strong>circulation</strong> (trainable), the two best predictors of how it ages and what it can absorb. Mine: low lipids, sugar, and inflammation; clean liver and kidneys; a heart that idles low.
+        How your body rests is a function of <strong>chemistry</strong> (modifiable) and <strong>circulation</strong> (trainable), the two best predictors of how it ages and what it can absorb. Mine: low lipids, sugar, and inflammation; clean liver and kidneys; a heart that idles low.
       </p>
       <NestedTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="capacity">Capacity <span className="heading-paren">(Performance)</span></h2>
       <p>
-        What a body can do is a function of <strong>strength</strong> (built) and <strong>engine</strong> (built and inherited), the two best predictors of independence late in life. Mine: a one-leg squat, a double-bodyweight pull, 60 kg overhead, top-decile oxygen uptake.
+        What your body can do is a function of <strong>strength</strong> (built) and <strong>engine</strong> (built and inherited), the two best predictors of your independence late in life. Mine: a one-leg squat, a double-bodyweight pull, 60 kg overhead, top-decile oxygen uptake.
       </p>
       <NestedTable {...FUNCTIONAL_CAPACITY} />
 

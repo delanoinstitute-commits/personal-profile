@@ -38,19 +38,19 @@ export default function KnowledgePage() {
 
       <h2 id="works">Works <span className="heading-paren">(Production)</span></h2>
       <p>
-        What a person has made is a function of <strong>employment</strong> (given) and <strong>authorship</strong> (chosen), the two best predictors of what they are trusted to build next. Mine: two methodologies, one for learning, one for teaching, and the programs built with them.
+        What you have made is a function of <strong>employment</strong> (given) and <strong>authorship</strong> (chosen), the two best predictors of what you are trusted to build next. Mine: two methodologies, one for learning, one for teaching, and the programs built with them.
       </p>
       <NestedTable {...WORKS} />
 
       <h2 id="skills">Skills <span className="heading-paren">(Practice)</span></h2>
       <p>
-        What a person can do is a function of <strong>technical</strong> skill (trained) and <strong>interpersonal</strong> skill (earned), the two best predictors of what they deliver alone and through others. Mine: organizing knowledge, designing systems, producing content, teaching anything.
+        What you can do is a function of <strong>technical</strong> skill (trained) and <strong>interpersonal</strong> skill (earned), the two best predictors of what you deliver alone and through others. Mine: organizing knowledge, designing systems, producing content, teaching anything.
       </p>
       <NestedTable {...SKILLS} />
 
       <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
       <p>
-        What a person knows is a function of <strong>schooling</strong> (issued) and <strong>curriculum</strong> (chosen), the two best predictors of how fast they learn the next domain. Mine: seven grades of school, Mandarin to distinction, enrollment only when a domain demands it.
+        What you know is a function of <strong>schooling</strong> (issued) and <strong>curriculum</strong> (chosen), the two best predictors of how fast you learn the next domain. Mine: seven grades of school, Mandarin to distinction, enrollment only when a domain demands it.
       </p>
       <NestedTable {...EDUCATION} />
 

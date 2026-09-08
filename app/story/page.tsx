@@ -271,7 +271,7 @@ export default function StoryPage() {
         Inheritance <span className="heading-paren">(Identity)</span>
       </h2>
       <p>
-        What a person is given is a function of <strong>biology</strong> (fixed) and <strong>circumstance</strong> (fixed at birth), the two best predictors of their starting odds and defaults. Mine: a European body, O negative; Afrikaner, born under apartheid&rsquo;s last emergency.
+        What you were given is a function of <strong>biology</strong> (fixed) and <strong>circumstance</strong> (fixed at birth), the two best predictors of your starting odds and defaults. Mine: a European body, O negative; Afrikaner, born under apartheid&rsquo;s last emergency.
       </p>
       <NestedTable {...INHERITANCE} />
 
@@ -279,7 +279,7 @@ export default function StoryPage() {
         Development <span className="heading-paren">(Timeline)</span>
       </h2>
       <p>
-        How a person grew is a function of <strong>stage</strong> (fixed) and <strong>setting</strong> (variable), the two best predictors of what they trust and what they can bear. Mine: six households by age five, a skateboard, a death and China at sixteen, a trade taught to 90,000.
+        How you grew is a function of <strong>stage</strong> (fixed) and <strong>setting</strong> (variable), the two best predictors of what you trust and what you can bear. Mine: six households by age five, a skateboard, a death and China at sixteen, a trade taught to 90,000.
       </p>
       <NestedTable {...DEVELOPMENT} />
 
@@ -287,7 +287,7 @@ export default function StoryPage() {
         Emergence <span className="heading-paren">(Agency)</span>
       </h2>
       <p>
-        What a person chooses is a function of <strong>influences</strong> (arriving unbidden) and <strong>decisions</strong> (made blind), the two best predictors of who they become next. Mine: Bruce Lee to Wilber; twelve blind decisions, school left at fourteen, America entered a refugee.
+        What you choose is a function of <strong>influences</strong> (arriving unbidden) and <strong>decisions</strong> (made blind), the two best predictors of who you become next. Mine: Bruce Lee to Wilber; twelve blind decisions, school left at fourteen, America entered a refugee.
       </p>
       <NestedTable {...EMERGENCE} />
 

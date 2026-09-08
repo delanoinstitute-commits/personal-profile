@@ -1000,19 +1000,19 @@ export default function LifestylePage() {
 
       <h2 id="activity">Activity <span className="heading-paren">(Habits)</span></h2>
       <p>
-        What a person does is a function of <strong>habits</strong> (chosen) and <strong>needs</strong> (fixed), the two best predictors of which capital grows and which drains. Mine: twelve habits, creative work first, hard training matched by recovery, shared hours that ask nothing back.
+        What you do is a function of <strong>habits</strong> (chosen) and <strong>needs</strong> (fixed), the two best predictors of which capital grows and which drains. Mine: twelve habits, creative work first, hard training matched by recovery, shared hours that ask nothing back.
       </p>
       <NestedTable {...ACTIVITY} />
 
       <h2 id="time">Time <span className="heading-paren">(Routines)</span></h2>
       <p>
-        When a person does things is a function of <strong>energy</strong> (rhythmic) and <strong>schedule</strong> (chosen), the two best predictors of what gets done and what keeps slipping. Mine: fresh hours for solo work, peak hours for body and people, evenings for loose ends.
+        When you do things is a function of <strong>energy</strong> (rhythmic) and <strong>schedule</strong> (chosen), the two best predictors of what gets done and what keeps slipping. Mine: fresh hours for solo work, peak hours for body and people, evenings for loose ends.
       </p>
       <NestedTable {...TIME} />
 
       <h2 id="space">Space <span className="heading-paren">(Resources)</span></h2>
       <p>
-        Where a person lives is a function of <strong>conditions</strong> (given) and <strong>services</strong> (chosen), the two best predictors of what a life costs and allows. Mine: Austin, graded on land, market, and people; a home in five layers, from the shell to my bag.
+        Where you live is a function of <strong>conditions</strong> (given) and <strong>services</strong> (chosen), the two best predictors of what your life costs and allows. Mine: Austin, graded on land, market, and people; a home in five layers, from the shell to my bag.
       </p>
       <NestedTable {...SPACE} />
 

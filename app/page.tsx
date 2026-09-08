@@ -696,7 +696,7 @@ export default function AboutPage() {
         Lorenzo <span className="heading-paren">(Introduction)</span>
       </h2>
       <p>
-        Who a person is is a function of <strong>specialization</strong> (chosen) and <strong>principles</strong> (tested), the two best predictors of what they do with a free hour. Mine: applied taxonomist of personal transformation; attention, essentialism, configuration.
+        Who you are is a function of <strong>specialization</strong> (chosen) and <strong>principles</strong> (tested), the two best predictors of what you do with a free hour. Mine: applied taxonomist of personal transformation; attention, essentialism, configuration.
       </p>
       <NestedTable {...LORENZO} />
 
@@ -704,7 +704,7 @@ export default function AboutPage() {
         Website <span className="heading-paren">(Guide)</span>
       </h2>
       <p>
-        How a record is built is a function of its <strong>map</strong> (one) and its <strong>pages</strong> (eight), the two best predictors of whether a reader can trust it. Mine: a personal record and a public storefront in one, four constitutional pages, four capital, three parts each.
+        How your record is built is a function of its <strong>map</strong> (one) and its <strong>pages</strong> (eight), the two best predictors of whether a reader can trust it. Mine: a personal record and a public storefront in one, four constitutional pages, four capital, three parts each.
       </p>
       <NestedTable {...WEBSITE} />
 
@@ -712,7 +712,7 @@ export default function AboutPage() {
         Contact <span className="heading-paren">(Offers)</span>
       </h2>
       <p>
-        What a person offers is a function of <strong>published work</strong> (free) and <strong>commitments</strong> (one at a time), the two best predictors of how to work with them. Mine: everything published, one patron at a time, a build for whoever brings market or capital.
+        What you offer is a function of <strong>published work</strong> (free) and <strong>commitments</strong> (one at a time), the two best predictors of how to work with you. Mine: everything published, one patron at a time, a build for whoever brings market or capital.
       </p>
       <NestedTable {...CONTACT} />
 
