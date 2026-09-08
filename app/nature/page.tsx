@@ -342,7 +342,7 @@ export default function IdentityPage() {
         <WikiLink href="#character">personality</WikiLink> are fixed; beliefs and{" "}
         <WikiLink href="#drive">values</WikiLink> are not. Each is best measured
         psychometrically, then checked against how you live. To master your nature is to
-        master your emotions, own your strengths, and find your fit.
+        master your emotions, develop your strengths, and find your fit.
       </p>
 
       <hr className="zone-rule" />
