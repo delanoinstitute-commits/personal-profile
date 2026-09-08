@@ -349,22 +349,22 @@ export default function IdentityPage() {
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>
       <p>
-        How a person thinks is a function of <strong>intelligence</strong> (fixed) and <strong>worldview</strong> (modifiable), the two best predictors of the type and scope of problems they are drawn to. Mine: an Enlightenment humanist, IQ 112, drawn to making knowledge transformative.
+        How you think is a function of <strong>intelligence</strong> (fixed) and <strong>worldview</strong> (modifiable), the two best predictors of the type and scope of problems you are drawn to. Mine: an Enlightenment humanist, IQ 112, drawn to making knowledge transformative.
       </p>
       <NestedTable {...INTELLECT} />
 
       <h2 id="character">Character <span className="heading-paren">(Affect)</span></h2>
       <p>
-        How a person is wired is a function of <strong>personality</strong> (fixed) and <strong>beliefs</strong> (modifiable),
-        the two best predictors of who trusts them and who can live and work with them. Mine:
+        How you&rsquo;re wired is a function of <strong>personality</strong> (fixed) and <strong>beliefs</strong> (modifiable),
+        the two best predictors of who trusts you and who can live and work with you. Mine:
         disciplined, honest, and curious; easy with risk; a world felt as good and improving.
       </p>
       <NestedTable {...CHARACTER} />
 
       <h2 id="drive">Drive <span className="heading-paren">(Conation)</span></h2>
       <p>
-        What moves a person is a function of <strong>values</strong> (modifiable) and <strong>interests</strong> (stable), the
-        best predictors of what they do unasked and how to influence them. Mine: autonomy and
+        What moves you is a function of <strong>values</strong> (modifiable) and <strong>interests</strong> (stable), the
+        best predictors of what you do unasked and how to influence you. Mine: autonomy and
         achievement; design, the body, then teaching; ideas and making, for people.
       </p>
       <NestedTable {...DRIVE} />
