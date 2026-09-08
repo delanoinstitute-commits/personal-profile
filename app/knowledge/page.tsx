@@ -28,7 +28,7 @@ export default function KnowledgePage() {
 
       <p id="introduction" className="page-hook">Your knowledge predicts the problems you get to solve.</p>
       <p className="page-promise">
-        Knowledge refers to the three forms of competence: <strong>works</strong> (what you&rsquo;ve made), <strong>skills</strong> (what you can do), and <strong>education</strong> (what you know). Your knowledge predicts your problems: which ones you are trusted with.
+        Knowledge refers to the three forms of competence: <strong>works</strong> (what you&rsquo;ve made), <strong>skills</strong> (what you can do), and <strong>education</strong> (what you know). Your knowledge predicts your reach: how much of the world you can transform.
       </p>
       <p>
         Schooling is issued; skills and works are earned, never finished. Each is best measured by what can be checked: shipped <WikiLink href="#works">work</WikiLink>, demonstrated <WikiLink href="#skills">skill</WikiLink>, a dated <WikiLink href="#education">curriculum</WikiLink>. Mastery is turning study into practice, and practice into shipped work.

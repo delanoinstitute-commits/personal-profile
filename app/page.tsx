@@ -682,12 +682,12 @@ export default function AboutPage() {
     <div className="zoned">
       <PageHeading title="About" />
 
-      <p id="introduction" className="page-hook">What you&rsquo;re made of predicts what you can make.</p>
+      <p id="introduction" className="page-hook">Hi, I&rsquo;m Lorenzo. Welcome to my Autaxonomy.</p>
       <p className="page-promise">
-        Autaxonomy refers to the two halves of a person: <strong>constitution</strong> (story, nature, lifestyle) and <strong>capital</strong> (health, knowledge, wealth, network). Your make-up predicts your potential: what you can become, and what you can build.
+        Autaxonomy refers to the two halves of a person: <strong>constitution</strong> (story, nature, lifestyle) and <strong>capital</strong> (health, knowledge, wealth, network). Knowing both predicts your potential: what you can become, and what you can build.
       </p>
       <p>
-        Hi, I&rsquo;m Lorenzo. Constitution is mostly given; capital is mostly built. Each is measured on its own page, every claim referenced. To master yourself is to know both, then spend your hours where you fit.
+        Constitution is mostly given; capital is mostly built. Each is measured on its own page, every claim referenced. To master yourself is to make your story work for you, play to your nature, and live an examined life by design.
       </p>
 
       <hr className="zone-rule" />

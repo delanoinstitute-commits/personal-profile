@@ -279,7 +279,7 @@ export default function StoryPage() {
         Development <span className="heading-paren">(Timeline)</span>
       </h2>
       <p>
-        How you grew is a function of <strong>stage</strong> (fixed) and <strong>setting</strong> (variable), the two best predictors of what you trust and what you can bear. Mine: six households by age five, a skateboard, a death and China at sixteen, a trade taught to 90,000.
+        How you develop is a function of <strong>stage</strong> (fixed) and <strong>setting</strong> (variable), the two best predictors of what you trust and what you can bear. Mine: six households by age five, a skateboard, a death and China at sixteen, a trade in transformative education.
       </p>
       <NestedTable {...DEVELOPMENT} />
 
