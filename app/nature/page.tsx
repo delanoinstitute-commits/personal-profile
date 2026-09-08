@@ -340,11 +340,11 @@ export default function IdentityPage() {
         Your nature predicts your niche: where you fit, and whom you serve best.
       </p>
       <p>
-        It reads in three lenses: <WikiLink href="#intellect">intellect</WikiLink> (how
-        I think), <WikiLink href="#character">character</WikiLink> (how I&rsquo;m wired),
-        and <WikiLink href="#drive">drive</WikiLink> (what moves me). Each lens ranks
-        its results, headline score first and the instruments beneath, so you can stop
-        at any depth and still leave with the measure.
+        <WikiLink href="#intellect">Intelligence</WikiLink> and{" "}
+        <WikiLink href="#character">personality</WikiLink> are fixed; beliefs and{" "}
+        <WikiLink href="#drive">values</WikiLink> are not. Each is best measured
+        psychometrically, then checked against how you live. To master your nature is to
+        outsource your weaknesses, own your strengths, and pursue your own truth.
       </p>
 
       <hr className="zone-rule" />
