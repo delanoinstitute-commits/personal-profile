@@ -743,14 +743,12 @@ export default function WealthPage() {
         title="Wealth"
       />
 
-      <p id="introduction" className="page-hook">I run my finances like a firm of one.</p>
+      <p id="introduction" className="page-hook">Your money system predicts your freedom, not your income.</p>
       <p className="page-promise">
-        My complete financial architecture: the insurance floor, the income
-        exchanges, the expense cascade, and the investment waterfall — with every
-        account held to a named benchmark.
+        Wealth refers to the three jobs of a balance sheet: <strong>security</strong> (insure, then earn), <strong>efficiency</strong> (spend and settle), and <strong>growth</strong> (invest what remains). Your wealth predicts your freedom: how soon your hours are your own.
       </p>
       <p>
-        It reads one balance sheet in three branches, in order: <WikiLink href="#security">security</WikiLink> (insure first, then earn), <WikiLink href="#efficiency">efficiency</WikiLink> (spend and settle cleanly), and <WikiLink href="#growth">growth</WikiLink> (invest what remains, venture past sufficiency). No balances are published; the system is.
+        Income is negotiable; the order is not: <WikiLink href="#security">protect</WikiLink>, then earn, <WikiLink href="#efficiency">spend</WikiLink>, <WikiLink href="#growth">invest</WikiLink>. Each is best measured against a named benchmark per account, never a balance. To master your wealth is to run yourself as a firm of one, with free cash on rules.
       </p>
 
       <hr className="zone-rule" />
@@ -759,7 +757,7 @@ export default function WealthPage() {
         Security <span className="heading-paren">(Protection)</span>
       </h2>
       <p>
-        What a person can lose sets what they can risk. Earning capacity is the first asset; insurance keeps it. Together they define security. Mine: capacity and possessions insured before any upside; hours and assets earning on separate lines.
+        What a person can risk is a function of <strong>cover</strong> (bought) and <strong>earning capacity</strong> (built), the two best predictors of how long a setback lasts. Mine: capacity and possessions insured before any upside; hours and assets earning on separate lines.
       </p>
       <NestedTable {...SECURITY} />
 
@@ -767,7 +765,7 @@ export default function WealthPage() {
         Efficiency <span className="heading-paren">(Leverage)</span>
       </h2>
       <p>
-        How money leaves decides how much stays. Burn is a choice; tax is not. Together they define efficiency. Mine: living costs under a third of income, one-off costs capped, credit cheap to use, tax paid in full, free cash with three rules.
+        How much a person keeps is a function of <strong>burn</strong> (chosen) and <strong>dues</strong> (owed), the two best predictors of how fast free cash appears. Mine: living costs under a third of income, one-off costs capped, tax paid in full, free cash with three rules.
       </p>
       <NestedTable {...EFFICIENCY} />
 
@@ -775,7 +773,7 @@ export default function WealthPage() {
         Growth <span className="heading-paren">(Allocation)</span>
       </h2>
       <p>
-        Where the remainder goes sets the horizon. Markets compound alone; ventures need hands. Together they define growth. Mine: three months of burn in cash, future me funded first, the market bought whole, ownership in businesses mine first.
+        How far a remainder goes is a function of <strong>investments</strong> (standing) and <strong>ventures</strong> (active), the two best predictors of the horizon one can afford. Mine: three months of burn in cash, future me funded first, the market bought whole, businesses mine first.
       </p>
       <NestedTable {...GROWTH} />
 

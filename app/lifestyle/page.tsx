@@ -988,33 +988,31 @@ export default function LifestylePage() {
     <div className="zoned">
       <PageHeading title="Lifestyle" />
 
-      <p id="introduction" className="page-hook">My lifestyle runs on design, not discipline.</p>
+      <p id="introduction" className="page-hook">Your days predict what your years become.</p>
       <p className="page-promise">
-        My whole lifestyle, mapped: every habit with its daily hours, the schedule
-        that places them, and the spaces that host them, from the city I chose down to
-        my own four walls.
+        Lifestyle refers to the three coordinates of a day: <strong>activity</strong> (what you do), <strong>time</strong> (when you do it), and <strong>space</strong> (where you do it). Your lifestyle predicts your capital: what your hours build, and what they drain.
       </p>
       <p>
-        It reads in three branches: <WikiLink href="#activity">activity</WikiLink> (what I do), <WikiLink href="#time">time</WikiLink> (when I do it), and <WikiLink href="#space">space</WikiLink> (where I do it). The design changes with the work; the aim is not a full calendar but one so well planned it feels empty.
+        <WikiLink href="#activity">Hours</WikiLink> are fixed at twenty-four; how they are spent, <WikiLink href="#time">scheduled</WikiLink>, and <WikiLink href="#space">housed</WikiLink> is not. Each is best measured by a designed day held against the lived one. To master your lifestyle is to build days that run themselves, then keep them.
       </p>
 
       <hr className="zone-rule" />
 
       <h2 id="activity">Activity <span className="heading-paren">(Habits)</span></h2>
       <p>
-        A life is what its hours go to. The day is fixed at twenty-four; the split is not. Together they define activity. Mine: twelve habits, creative work first, hard training matched by recovery, shared hours that ask nothing back.
+        What a person does is a function of <strong>habits</strong> (chosen) and <strong>needs</strong> (fixed), the two best predictors of which capital grows and which drains. Mine: twelve habits, creative work first, hard training matched by recovery, shared hours that ask nothing back.
       </p>
       <NestedTable {...ACTIVITY} />
 
       <h2 id="time">Time <span className="heading-paren">(Routines)</span></h2>
       <p>
-        When a thing is done decides whether it gets done. Energy keeps a daily shape; a schedule follows it or fights it. Together they define time. Mine: fresh hours for solo work, peak hours for body and people, evenings for loose ends.
+        When a person does things is a function of <strong>energy</strong> (rhythmic) and <strong>schedule</strong> (chosen), the two best predictors of what gets done and what keeps slipping. Mine: fresh hours for solo work, peak hours for body and people, evenings for loose ends.
       </p>
       <NestedTable {...TIME} />
 
       <h2 id="space">Space <span className="heading-paren">(Resources)</span></h2>
       <p>
-        Where a life is lived sets what it costs and allows. The land is chosen once; the home daily. Together they define space. Mine: Austin, graded on land, market, and people; a home in five layers, from the shell to my bag.
+        Where a person lives is a function of <strong>conditions</strong> (given) and <strong>services</strong> (chosen), the two best predictors of what a life costs and allows. Mine: Austin, graded on land, market, and people; a home in five layers, from the shell to my bag.
       </p>
       <NestedTable {...SPACE} />
 

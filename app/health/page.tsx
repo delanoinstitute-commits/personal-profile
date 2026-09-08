@@ -538,33 +538,31 @@ export default function HealthPage() {
     <div className="zoned">
       <PageHeading title="Health" />
 
-      <p id="introduction" className="page-hook">My body: built, balanced, and load-tested.</p>
+      <p id="introduction" className="page-hook">Your body predicts how long your best years last.</p>
       <p className="page-promise">
-        My full 2026 health status: body composition, blood chemistry, and
-        performance at full effort — all clinically measured, all benchmarked, with
-        the redacted reports published.
+        Health refers to the three states of a body: <strong>integrity</strong> (how it&rsquo;s built), <strong>balance</strong> (how it rests), and <strong>capacity</strong> (what it can do). Your health predicts your span: how many years you get, and how good they are.
       </p>
       <p>
-        It reads one body at three levels, from rest to all-out effort: <WikiLink href="#integrity">integrity</WikiLink> (how soundly it&rsquo;s built), <WikiLink href="#balance">balance</WikiLink> (how calmly it holds and returns to rest), and <WikiLink href="#capacity">capacity</WikiLink> (what it can do flat out). Every report is published.
+        Frame and bone are largely fixed; fat, muscle, blood, and fitness are not. Each is best measured in a lab: DEXA for <WikiLink href="#integrity">structure</WikiLink>, blood at <WikiLink href="#balance">rest</WikiLink>, CPET at <WikiLink href="#capacity">full effort</WikiLink>. To master your health is to keep every marker in range, with a reserve to spare.
       </p>
 
       <hr className="zone-rule" />
 
       <h2 id="integrity">Integrity <span className="heading-paren">(Structure)</span></h2>
       <p>
-        What a body is built from decides what it can bear. Frame and bone are given; fat and muscle are earned. Together they define integrity. Mine: leaner than 19 in 20 men, more muscle than 4 in 5, sound bone, a narrow waist.
+        How a body is built is a function of <strong>frame</strong> (fixed) and <strong>composition</strong> (earned), the two best predictors of injury risk and metabolic health. Mine: leaner than 19 in 20 men, more muscle than 4 in 5, sound bone, a narrow waist.
       </p>
       <NestedTable {...STRUCTURAL_INTEGRITY} />
 
       <h2 id="balance">Balance <span className="heading-paren">(Homeostasis)</span></h2>
       <p>
-        How a body idles decides how it ages. Blood and a resting heart are the quietest measures and the most predictive. Together they define balance. Mine: low lipids, sugar, and inflammation; clean liver and kidneys; a heart that idles low.
+        How a body rests is a function of <strong>chemistry</strong> (modifiable) and <strong>circulation</strong> (trainable), the two best predictors of how it ages and what it can absorb. Mine: low lipids, sugar, and inflammation; clean liver and kidneys; a heart that idles low.
       </p>
       <NestedTable {...FUNCTIONAL_HOMEOSTASIS} />
 
       <h2 id="capacity">Capacity <span className="heading-paren">(Performance)</span></h2>
       <p>
-        What a body can do flat out is the test of the rest. Strength is built; the engine is built and inherited. Together they define capacity. Mine: a one-leg squat, a double-bodyweight pull, 60 kg overhead, top-decile oxygen uptake.
+        What a body can do is a function of <strong>strength</strong> (built) and <strong>engine</strong> (built and inherited), the two best predictors of independence late in life. Mine: a one-leg squat, a double-bodyweight pull, 60 kg overhead, top-decile oxygen uptake.
       </p>
       <NestedTable {...FUNCTIONAL_CAPACITY} />
 

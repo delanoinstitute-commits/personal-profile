@@ -640,14 +640,12 @@ export default function NetworkPage() {
         title="Network"
       />
 
-      <p id="introduction" className="page-hook">My network is a team. This is the roster.</p>
+      <p id="introduction" className="page-hook">Your network predicts how far your work travels.</p>
       <p className="page-promise">
-        The complete map of my human relationships — who holds each seat, the standard
-        each is held to, and which seats stand open, protected, or filled by my own
-        hands.
+        Network refers to the three directions of a relationship: <strong>nurture</strong> (who you take from), <strong>progress</strong> (who you walk with), and <strong>contribution</strong> (who counts on you). Your network predicts your reach: what you can attempt.
       </p>
       <p>
-        It reads every relationship in one of three directions: <WikiLink href="#nurture">nurture</WikiLink> (the people I learn and take from), <WikiLink href="#progress">progress</WikiLink> (the peers I share the road with), and <WikiLink href="#contribution">contribution</WikiLink> (the people who count on me). Open seats are listed as plainly as filled.
+        Family is given; every other seat is chosen, hired, or earned. Each is best measured by a graded roster: four A&rsquo;s for people, three C&rsquo;s for services, open seats listed. To master your network is to fill each seat to the standard it deserves, and hold it.
       </p>
 
       <hr className="zone-rule" />
@@ -656,7 +654,7 @@ export default function NetworkPage() {
         Nurture <span className="heading-paren">(Support)</span>
       </h2>
       <p>
-        Who a person leans on decides how far they reach. Family is given; professionals are hired. Together they define nurture. Mine: care I call on rather than schedule, and a hired seat per capital: attendants, examiners, tutors, one advisor.
+        Who a person leans on is a function of <strong>family</strong> (given) and <strong>professionals</strong> (hired), the two best predictors of how far they reach and how fast they recover. Mine: care I call on rather than schedule, and one hired seat per capital, one advisor for all.
       </p>
       <NestedTable {...NURTURE} />
 
@@ -664,7 +662,7 @@ export default function NetworkPage() {
         Progress <span className="heading-paren">(Collaboration)</span>
       </h2>
       <p>
-        Who a person walks beside sets the pace. Companions are the point; partners are the means. Together they define progress. Mine: the people I share life with, practitioners pushing me past baseline, minds I trade with, builders beside me.
+        Who a person walks beside is a function of <strong>companions</strong> (chosen) and <strong>partners</strong> (aligned), the two best predictors of pace and of who they become. Mine: the people I share life with, practitioners past baseline, minds I trade with, builders beside me.
       </p>
       <NestedTable {...PROGRESS} />
 
@@ -672,7 +670,7 @@ export default function NetworkPage() {
         Contribution <span className="heading-paren">(Service)</span>
       </h2>
       <p>
-        Who counts on a person decides what the work is for. Dependents are chosen; the duty is not. Together they define contribution. Mine: the people my work is finally for, the learners downstream of it, those who turn my output into income.
+        Who counts on a person is a function of <strong>dependents</strong> (personal) and <strong>receivers</strong> (professional), the two best predictors of what the work is for and how it pays. Mine: the people my work is for, the learners downstream, those who turn it into income.
       </p>
       <NestedTable {...CONTRIBUTION} />
 

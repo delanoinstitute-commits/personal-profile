@@ -682,14 +682,12 @@ export default function AboutPage() {
     <div className="zoned">
       <PageHeading title="About" />
 
-      <p id="introduction" className="page-hook">Hi, I&rsquo;m Lorenzo. I make personal transformation teachable.</p>
+      <p id="introduction" className="page-hook">What you&rsquo;re made of predicts what you can make.</p>
       <p className="page-promise">
-        I left school at thirteen and taught myself everything since: learning how to
-        learn became my trade, designing it for others became my work, and my own life
-        became the proof.
+        Autaxonomy refers to the two halves of a person: <strong>constitution</strong> (story, nature, lifestyle) and <strong>capital</strong> (health, knowledge, wealth, network). Your make-up predicts your potential: what you can become, and what you can build.
       </p>
       <p>
-        The proof is public: my <WikiLink href="/nature">psychology</WikiLink> measured, my <WikiLink href="/health">health</WikiLink> lab-verified, my days built from <WikiLink href="/lifestyle">twelve habits</WikiLink> that sum to twenty-four hours. My mission: expand human consciousness through the technologies of personal transformation.
+        Hi, I&rsquo;m Lorenzo. Constitution is mostly given; capital is mostly built. Each is measured on its own page, every claim referenced. To master yourself is to know both, then spend your hours where you fit.
       </p>
 
       <hr className="zone-rule" />
@@ -698,7 +696,7 @@ export default function AboutPage() {
         Lorenzo <span className="heading-paren">(Introduction)</span>
       </h2>
       <p>
-        Who a person is comes before what they offer. A specialization is chosen; principles are tested. Together they define a profile. Mine: one specialization, one mission, principles tested on myself first, three problems that hold my attention.
+        Who a person is is a function of <strong>specialization</strong> (chosen) and <strong>principles</strong> (tested), the two best predictors of what they do with a free hour. Mine: applied taxonomist of personal transformation; attention, essentialism, configuration.
       </p>
       <NestedTable {...LORENZO} />
 
@@ -706,7 +704,7 @@ export default function AboutPage() {
         Website <span className="heading-paren">(Guide)</span>
       </h2>
       <p>
-        How a record is built decides whether it can be trusted. The map is one; the pages are eight. Together they define the site. Mine: a personal record and a public storefront in one, four constitutional pages, four capital, three parts each.
+        How a record is built is a function of its <strong>map</strong> (one) and its <strong>pages</strong> (eight), the two best predictors of whether a reader can trust it. Mine: a personal record and a public storefront in one, four constitutional pages, four capital, three parts each.
       </p>
       <NestedTable {...WEBSITE} />
 
@@ -714,7 +712,7 @@ export default function AboutPage() {
         Contact <span className="heading-paren">(Offers)</span>
       </h2>
       <p>
-        What a person offers should be as plain as what they know. Published work is free; commitments are one at a time. Together they define the offers. Mine: everything published, one patron at a time, a build for whoever brings market or capital.
+        What a person offers is a function of <strong>published work</strong> (free) and <strong>commitments</strong> (one at a time), the two best predictors of how to work with them. Mine: everything published, one patron at a time, a build for whoever brings market or capital.
       </p>
       <NestedTable {...CONTACT} />
 

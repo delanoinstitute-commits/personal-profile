@@ -26,33 +26,31 @@ export default function KnowledgePage() {
     <div className="zoned">
       <PageHeading title="Knowledge" />
 
-      <p id="introduction" className="page-hook">I don&rsquo;t take degrees, I design them.</p>
+      <p id="introduction" className="page-hook">Your knowledge predicts the problems you get to solve.</p>
       <p className="page-promise">
-        My full inventory of competence: the methods and designs I&rsquo;ve shipped,
-        the skills behind them, and the self-directed curriculum that everything else
-        stands on.
+        Knowledge refers to the three forms of competence: <strong>works</strong> (what you&rsquo;ve made), <strong>skills</strong> (what you can do), and <strong>education</strong> (what you know). Your knowledge predicts your problems: which ones you are trusted with.
       </p>
       <p>
-        It reads one competence three ways: <WikiLink href="#works">works</WikiLink> (what I&rsquo;ve made), <WikiLink href="#skills">skills</WikiLink> (what I can do), and <WikiLink href="#education">education</WikiLink> (what I know). A working system, not a trophy case: study becomes practice, and practice becomes shipped work.
+        Schooling is issued; skills and works are earned, never finished. Each is best measured by what can be checked: shipped <WikiLink href="#works">work</WikiLink>, demonstrated <WikiLink href="#skills">skill</WikiLink>, a dated <WikiLink href="#education">curriculum</WikiLink>. Mastery is turning study into practice, and practice into shipped work.
       </p>
 
       <hr className="zone-rule" />
 
       <h2 id="works">Works <span className="heading-paren">(Production)</span></h2>
       <p>
-        What a person has made is the one competence that can be checked. Jobs are given; works are authored. Together they define a body of work. Mine: two methodologies, one for learning, one for teaching, and the programs built with them.
+        What a person has made is a function of <strong>employment</strong> (given) and <strong>authorship</strong> (chosen), the two best predictors of what they are trusted to build next. Mine: two methodologies, one for learning, one for teaching, and the programs built with them.
       </p>
       <NestedTable {...WORKS} />
 
       <h2 id="skills">Skills <span className="heading-paren">(Practice)</span></h2>
       <p>
-        What a person can do outlasts what they have done. Technical skill is trained; interpersonal skill is earned in rooms. Together they define practice. Mine: organizing knowledge, designing systems, producing content, teaching anything.
+        What a person can do is a function of <strong>technical</strong> skill (trained) and <strong>interpersonal</strong> skill (earned), the two best predictors of what they deliver alone and through others. Mine: organizing knowledge, designing systems, producing content, teaching anything.
       </p>
       <NestedTable {...SKILLS} />
 
       <h2 id="education">Education <span className="heading-paren">(Theory)</span></h2>
       <p>
-        What a person knows depends on how they learned it. Schooling is issued; a curriculum is chosen. Together they define an education. Mine: seven grades of school, Mandarin to distinction, enrollment only when a domain demands it.
+        What a person knows is a function of <strong>schooling</strong> (issued) and <strong>curriculum</strong> (chosen), the two best predictors of how fast they learn the next domain. Mine: seven grades of school, Mandarin to distinction, enrollment only when a domain demands it.
       </p>
       <NestedTable {...EDUCATION} />
 
