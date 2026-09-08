@@ -333,10 +333,10 @@ export default function IdentityPage() {
     <div className="zoned">
       <PageHeading title="Nature" />
 
-      <p id="introduction" className="page-hook">I didn&rsquo;t guess my personality. I measured it.</p>
+      <p id="introduction" className="page-hook">Your nature already knows where you belong.</p>
       <p className="page-promise">
-        I define a person&rsquo;s nature by the three constituents of the mind: intellect
-        (how you think), character (how you&rsquo;re wired), and drive (what moves you).
+        I define a person&rsquo;s nature by three constituents of the mind: <strong>intellect</strong>
+        (how you think), <strong>character</strong> (how you&rsquo;re wired), and <strong>drive</strong> (what moves you).
         Your nature predicts your niche: where you fit, and whom you serve best.
       </p>
       <p>
@@ -351,7 +351,7 @@ export default function IdentityPage() {
 
       <h2 id="intellect">Intellect <span className="heading-paren">(Cognition)</span></h2>
       <p>
-        How a person thinks is a function of intelligence (fixed) and worldview (modifiable),
+        How a person thinks is a function of <strong>intelligence</strong> (fixed) and <strong>worldview</strong> (modifiable),
         the two best predictors of the type and scope of problems they are drawn to. Mine: an
         Enlightenment humanist, IQ 112, drawn to making knowledge transformative.
       </p>
@@ -359,7 +359,7 @@ export default function IdentityPage() {
 
       <h2 id="character">Character <span className="heading-paren">(Affect)</span></h2>
       <p>
-        How a person is wired is a function of personality (fixed) and beliefs (modifiable),
+        How a person is wired is a function of <strong>personality</strong> (fixed) and <strong>beliefs</strong> (modifiable),
         the two best predictors of who trusts them and who can live and work with them. Mine:
         disciplined, honest, and curious; easy with risk; a world felt as good and improving.
       </p>
@@ -367,7 +367,7 @@ export default function IdentityPage() {
 
       <h2 id="drive">Drive <span className="heading-paren">(Conation)</span></h2>
       <p>
-        What moves a person is a function of values (modifiable) and interests (stable), the
+        What moves a person is a function of <strong>values</strong> (modifiable) and <strong>interests</strong> (stable), the
         best predictors of what they do unasked and how to influence them. Mine: autonomy and
         achievement; design, the body, then teaching; ideas and making, for people.
       </p>
