@@ -12,8 +12,8 @@ export const metadata = pageMeta(
 );
 
 // Network in three branches — the three vectors of every human relationship:
-// Nurture (take — the people who give the organism what it needs, when it
-// needs it), Progress (share — the people beside me), Contribution (give — the
+// Care (take — the people who give the organism what it needs, when it
+// needs it), Collaboration (share — the people beside me), Contribution (give — the
 // people who depend on me). Two bands per branch, per the site standard:
 // personal and professional. Categories are named for the page each
 // relationship serves (Story, Lifestyle, Knowledge, Health, Wealth) with the
@@ -32,7 +32,7 @@ export const metadata = pageMeta(
 // consent. Benchmarks marked "Pending" refine band by band.
 
 const NURTURE: StatTableData = {
-  title: "Nurture",
+  title: "Care",
   groups: [
     {
       domain: "Personal Nurturers",
@@ -80,7 +80,7 @@ const NURTURE: StatTableData = {
             ["Physical therapist", "Pending", true, "Clinical anatomy behind the hands: diagnose the injury, rehab it, maintain the tissue. Rehab, prehab, and productive massage in one; you cannot massage yourself.", undefined, true],
             ["Dentist", "Pending", true, "The best dentists diagnose, clean, and operate under one current roof — every additional service is one fewer relationship the network has to carry.", undefined, true],
             ["Doctor (connector)", "Pending", true, "One of the map’s five connectors — the medical world reached through a single relationship.", undefined, true],
-            ["Psychologist (AI)", "Dr. John Demartini; Claude (sounding board)", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is nurture; as development it sits under Progress, with the practitioners. The sounding board supplements, never substitutes.", undefined, true],
+            ["Psychologist (AI)", "Dr. John Demartini; Claude (sounding board)", true, "The best psychologists treat below health and refer beyond it — therapy as treatment is care; as development it sits under Collaboration, with the practitioners. The sounding board supplements, never substitutes.", undefined, true],
             ["Veterinarian", "Pending (waits on pets)", true, "The best veterinarians are available, capable, and gentle.", undefined, true],
             ["Diagnosticians (data)", "The best diagnosticians measure the same way using the latest tech", true],
             ["Optometrist", "Pending", true, "The best optometrists are consistent and current, one prescription to the next.", undefined, true],
@@ -114,7 +114,7 @@ const NURTURE: StatTableData = {
 };
 
 const PROGRESS: StatTableData = {
-  title: "Progress",
+  title: "Collaboration",
   groups: [
     {
       domain: "Personal Partners",
@@ -248,7 +248,7 @@ const CONTRIBUTION: StatTableData = {
 
 const NETWORK_DATA: ReferenceSection[] = [
   {
-    label: "My standing providers from nurture and progress, recommended by use",
+    label: "My standing providers from care and collaboration, recommended by use",
     items: [
       {
         id: "rec-assistant",
@@ -642,7 +642,7 @@ export default function NetworkPage() {
 
       <p id="introduction" className="page-hook">Your network predicts how far your work travels.</p>
       <p className="page-promise">
-        Network refers to the three directions of a relationship: <strong>nurture</strong> (who you take from), <strong>progress</strong> (who you walk with), and <strong>contribution</strong> (who counts on you). Your network predicts your reach: what you can attempt.
+        Network refers to the three directions of a relationship: <strong>care</strong> (who you lean on), <strong>collaboration</strong> (who you walk with), and <strong>contribution</strong> (who counts on you). Your network predicts your reach: what you can attempt.
       </p>
       <p>
         Family is given; every other seat is chosen, hired, or earned. Each is best measured by a graded roster: four A&rsquo;s for people, three C&rsquo;s for services, open seats listed. To master your network is to fill each seat to the standard it deserves, and hold it.
@@ -650,16 +650,16 @@ export default function NetworkPage() {
 
       <hr className="zone-rule" />
 
-      <h2 id="nurture">
-        Nurture <span className="heading-paren">(Support)</span>
+      <h2 id="care">
+        Care <span className="heading-paren">(Support)</span>
       </h2>
       <p>
         Who you lean on is a function of <strong>family</strong> (given) and <strong>professionals</strong> (hired), the two best predictors of how far you reach and how fast you recover. Mine: care I call on rather than schedule, and one hired seat per capital, one advisor for all.
       </p>
       <NestedTable {...NURTURE} />
 
-      <h2 id="progress">
-        Progress <span className="heading-paren">(Collaboration)</span>
+      <h2 id="collaboration">
+        Collaboration <span className="heading-paren">(Exchange)</span>
       </h2>
       <p>
         Who you walk beside is a function of <strong>companions</strong> (chosen) and <strong>partners</strong> (aligned), the two best predictors of your pace and who you become. Mine: the people I share life with, practitioners past baseline, minds I trade with, builders beside me.
