@@ -674,9 +674,9 @@ export default function AboutPage() {
     <div className="zoned">
       <PageHeading title="About" />
 
-      <p id="introduction" className="page-hook">Hi, I&rsquo;m Lorenzo. Welcome to my autaxonomy.</p>
+      <p id="introduction" className="page-hook">Hi, I&rsquo;m Lorenzo. I make knowledge transformative.</p>
       <p className="page-promise">
-        An autaxonomy is a map of the self in two halves: <strong>constitution</strong> (story, nature, lifestyle) and <strong>capital</strong> (health, knowledge, wealth, network). Knowing both predicts your potential: what you can become, and what you can build.
+        Welcome to my autaxonomy, a map of the self in two halves: <strong>constitution</strong> (story, nature, lifestyle) and <strong>capital</strong> (health, knowledge, wealth, network). Both predict your potential: what you can become, and what you can build.
       </p>
       <p>
         Constitution is mostly given; capital is mostly built. Each is measured on its own page, every claim referenced. To master yourself is to make your story work for you, play to your nature, and live an examined life by design.
@@ -704,7 +704,7 @@ export default function AboutPage() {
         Contact <span className="heading-paren">(Offers)</span>
       </h2>
       <p>
-        What you offer is a function of <strong>published work</strong> (free) and <strong>commitments</strong> (one at a time), the two best predictors of how to work with you. Mine: everything published, one patron at a time, a build for whoever brings market or capital.
+        What you offer is a function of <strong>published work</strong> (free) and <strong>commitments</strong> (one at a time), the two best predictors of how well you&rsquo;ll be served. Mine: everything published, one patron at a time, a build for whoever brings market or capital.
       </p>
       <NestedTable {...CONTACT} />
 
