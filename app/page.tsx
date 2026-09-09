@@ -25,7 +25,7 @@ const LORENZO: StatTableData = {
         {
           category: "Profile (what I’m about)",
           metrics: [
-            ["", "I have one specialization, one mission, and a set of principles, all tested on myself first", false],
+            ["", "I have one specialization and one mission, both tested on myself first", false],
             [
               "Specialization",
               "I am an applied taxonomist of personal transformation",
@@ -44,14 +44,6 @@ const LORENZO: StatTableData = {
             ["Personal", "I solve my own problems first, then publish the solutions free for anyone", true, undefined, undefined, true],
             ["Social", "I then help individuals apply the same solutions to their lives, partners, or families", true, undefined, undefined, true],
             ["Organizational", "And then help companies productize the same solutions for their users", true, undefined, undefined, true],
-            [
-              "Principles",
-              "I run my life on three principles, distilled from everything that’s worked",
-              true,
-            ],
-            ["Attention", "The quality of your life is based on the quality of your attention", true, "“How you do anything is how you do everything” — win the moment and you win the past (nothing to regret) and the future (nothing to fear).", undefined, true],
-            ["Essentialism", "Progress depends on knowledge of the necessary and sufficient", true, undefined, undefined, true],
-            ["Configuration", "It’s not about the quantity of resources, but the quality of their configuration", true, undefined, undefined, true],
           ],
         },
         {
@@ -696,7 +688,7 @@ export default function AboutPage() {
         Lorenzo <span className="heading-paren">(Introduction)</span>
       </h2>
       <p>
-        Who you are is a function of <strong>specialization</strong> (chosen) and <strong>principles</strong> (tested), the two best predictors of what you do with a free hour. Mine: applied taxonomist of personal transformation; attention, essentialism, configuration.
+        Who you are is a function of <strong>specialization</strong> (chosen) and <strong>mission</strong> (stable), the two best predictors of what you do with a free hour. Mine: applied taxonomist, obsessed with making knowledge personally transformative, for myself first and then for others.
       </p>
       <NestedTable {...LORENZO} />
 
