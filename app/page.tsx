@@ -210,7 +210,7 @@ const LORENZO: StatTableData = {
                 <WikiLink key="yt" href="https://youtube.com/@LorenzoDelano">YouTube</WikiLink>,
                 "; I like my coffee the way I enjoy my Trance, progressive; I recite the periodic table of elements when I get bored; my all-time favorite movie, album, and game: Mortal Kombat; I tend to ",
                 <WikiLink key="rk" href="/story#development">rock</WikiLink>,
-                " at my desk, it’s how I think; and my idea of fun is a road trip with the music up and the karaoke on, a sci-fi series, and a deep conversation in the sauna with that special someone",
+                " at my desk, it’s how I think; and my idea of fun is a road trip with the music up and the karaoke on, a philosophical sci-fi (The Matrix, Ex Machina), and a deep conversation in the sauna with that special someone",
               ],
               true,
             ],
