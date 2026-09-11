@@ -186,7 +186,7 @@ export const INFOBOX: InfoboxGroup[] = [
         // The single designation — the method he IS (classify by function,
         // test on self, publish). The three trades it feeds (designer,
         // producer, coach) stay legible in the Skills row below.
-        label: "Occupation",
+        label: "Specialization",
         values: [{ text: "Applied taxonomist" }],
       },
       {
