@@ -199,6 +199,7 @@ const SPACE: StatTableData = {
           category: "Residential (private services)",
           metrics: [
             ["", "Five layers by provider: the building\u2019s shell down to my bag", false],
+            ["Building (6)", "Security (access), cleaning (housekeeping; laundry), waste (recycling), concierge (delivery), maintenance (plumbing; HVAC), and amenities (fitness center; sauna; pool)", true],
             ["Infrastructure (6)", "Noise (neighbors; construction; traffic; nightlife), light (exposure; views; streetlights), air (windows; smokers; radon; damp; HVAC), water (pressure; hot supply), power (outlets; electric stovetop; backup), and internet (fiber; cell signal; routers)", true],
             ["Spaces (6)", [
               "Bedroom (closet; blackout curtains), bathroom (shower), kitchen (fridge; storage; bin; washer), dining/office (open area), living/gym (",
@@ -267,7 +268,6 @@ const SPACE: StatTableData = {
               <WikiLink key="acc" href="https://ridge.com/">Ridge</WikiLink>,
               ")",
             ], true],
-            ["Building (6)", "Security (access), cleaning (housekeeping; laundry), waste (recycling), concierge (delivery), maintenance (plumbing; HVAC), and amenities (fitness center; sauna; pool)", true],
           ],
         },
         {
