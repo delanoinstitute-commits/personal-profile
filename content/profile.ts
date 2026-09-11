@@ -187,7 +187,7 @@ export const INFOBOX: InfoboxGroup[] = [
         // test on self, publish). The three trades it feeds (designer,
         // producer, coach) stay legible in the Skills row below.
         label: "Specialization",
-        values: [{ text: "Applied taxonomist" }],
+        values: [{ text: "Applied taxonomy" }],
       },
       {
         // Trade > subject > medium — the industries he serves, in the
