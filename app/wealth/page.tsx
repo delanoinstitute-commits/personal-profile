@@ -743,7 +743,7 @@ export default function WealthPage() {
         title="Wealth"
       />
 
-      <p id="introduction" className="page-hook">Your money system predicts your freedom, not your income.</p>
+      <p id="introduction" className="page-hook">Your money system, not your income, sets you free.</p>
       <p className="page-promise">
         Wealth refers to the three jobs of a balance sheet: <strong>security</strong> (insure, then earn), <strong>efficiency</strong> (spend and settle), and <strong>growth</strong> (invest what remains). Your wealth predicts your freedom: how soon your hours are your own.
       </p>

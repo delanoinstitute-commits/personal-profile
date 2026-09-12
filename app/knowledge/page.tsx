@@ -26,7 +26,7 @@ export default function KnowledgePage() {
     <div className="zoned">
       <PageHeading title="Knowledge" />
 
-      <p id="introduction" className="page-hook">Your knowledge predicts the problems you get to solve.</p>
+      <p id="introduction" className="page-hook">Your knowledge picks the problems you get to solve.</p>
       <p className="page-promise">
         Knowledge refers to the three forms of competence: <strong>works</strong> (what you&rsquo;ve made), <strong>skills</strong> (what you can do), and <strong>education</strong> (what you know). Your knowledge predicts your reach: how much of the world you can transform.
       </p>

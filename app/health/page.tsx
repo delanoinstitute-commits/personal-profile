@@ -538,7 +538,7 @@ export default function HealthPage() {
     <div className="zoned">
       <PageHeading title="Health" />
 
-      <p id="introduction" className="page-hook">Your body predicts how long your best years last.</p>
+      <p id="introduction" className="page-hook">Your body decides how long your best years last.</p>
       <p className="page-promise">
         Health refers to the three states of a body: <strong>integrity</strong> (how it&rsquo;s built), <strong>balance</strong> (how it rests), and <strong>capacity</strong> (what it can do). Your health predicts your span: how many years you get, and how good they are.
       </p>

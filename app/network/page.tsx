@@ -640,7 +640,7 @@ export default function NetworkPage() {
         title="Network"
       />
 
-      <p id="introduction" className="page-hook">Your network predicts how far your work travels.</p>
+      <p id="introduction" className="page-hook">Your network carries your work farther than you can.</p>
       <p className="page-promise">
         Network refers to the three directions of a relationship: <strong>care</strong> (who you lean on), <strong>collaboration</strong> (who you walk with), and <strong>contribution</strong> (who counts on you). Your network predicts your reach: what you can attempt.
       </p>

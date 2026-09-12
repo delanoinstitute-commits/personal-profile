@@ -988,7 +988,7 @@ export default function LifestylePage() {
     <div className="zoned">
       <PageHeading title="Lifestyle" />
 
-      <p id="introduction" className="page-hook">Your days predict what your years become.</p>
+      <p id="introduction" className="page-hook">Your days are what your years are made of.</p>
       <p className="page-promise">
         Lifestyle refers to the three coordinates of a day: <strong>activity</strong> (what you do), <strong>time</strong> (when you do it), and <strong>space</strong> (where you do it). Your lifestyle predicts your capital: what your hours build, and what they drain.
       </p>

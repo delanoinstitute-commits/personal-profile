@@ -257,7 +257,7 @@ export default function StoryPage() {
         title="Story"
       />
 
-      <p id="introduction" className="page-hook">Your story predicts how you&rsquo;ll meet what comes next.</p>
+      <p id="introduction" className="page-hook">Your story is how you meet what comes next.</p>
       <p className="page-promise">
         Story refers to the three phases of a life: <strong>inheritance</strong> (what you were given), <strong>development</strong> (what shaped you), and <strong>emergence</strong> (what you chose). Your story predicts your trajectory: what you make of what you were given.
       </p>
