@@ -679,7 +679,7 @@ export default function AboutPage() {
         Welcome to my autaxonomy, a map of the self in two halves: <strong>constitution</strong> (story, nature, lifestyle) and <strong>capital</strong> (health, knowledge, wealth, network). Both predict your potential: what you can become, and what you can build.
       </p>
       <p>
-        Constitution is mostly given; capital is mostly built. Each is measured on its own page, every claim referenced. To master yourself is to measure both halves honestly, and build on what the numbers say.
+        Constitution is mostly given; capital is mostly built. Each is measured on its own page, every claim referenced. To master yourself is to measure both halves honestly, and build on what the numbers say. This site is where I do exactly that.
       </p>
 
       <hr className="zone-rule" />
