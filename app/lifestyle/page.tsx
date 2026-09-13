@@ -207,7 +207,7 @@ const SPACE: StatTableData = {
               "), and parking (bay)",
             ], true],
             ["Furnishings (6)", "Furniture (bed; desk; chair; lounger; table; storage), electronics (TV; streaming; sound; lighting), appliances (air purifier; water filter; air monitor; vacuum; kettle), fitness (training station; mat), kitchenware (cookware; knives; dinnerware), and textiles (bedding; towels)", true],
-            ["Belongings (6)", "Apparel (clothing; underwear; shoes), toiletries (dental; body; skin; hair; grooming), devices (phone; laptop; radiation detector), documents (identity; legal; finance; health), training kit (calisthenics gear; jump rope; gym bag), and everyday-carry (bag; wallet; keys)", true],
+            ["Belongings (6)", "Apparel (clothing; underwear; shoes), toiletries (dental; body; skin; hair; grooming), devices (phone; laptop), documents (identity; legal; finance; health), training kit (calisthenics gear; jump rope; gym bag), and everyday-carry (bag; wallet; keys)", true],
           ],
         },
         {
@@ -215,9 +215,9 @@ const SPACE: StatTableData = {
           metrics: [
             ["", "The market’s five deliverables, by the kind of provider I use", false],
             ["Provisions (5)", "Grocery (supermarket; natural foods), coffee (roaster; subscription), department (general; pharmacy), online (marketplace), and hardware (local; big-box)", true],
-            ["Facilities (3)", "Clubs (athletic), gyms (24-hour), and studios (by the hour)", true],
-            ["Providers (4)", "Financial (bank; brokerage; insurer), technology (search; AI; social), telecoms (carrier; budget plan), and health (primary care; labs)", true],
-            ["Outings (4)", "Eateries (coffee; healthy fast-casual), markets (farmers), entertainment (cinema), and events (concerts; festivals)", true],
+            ["Facilities (4)", "Clubs (athletic), gyms (24-hour), courts (squash), and studios (by the hour)", true],
+            ["Providers (4)", "Financial (bank; brokerage; insurer), technology (search; AI; email; storage; social), telecoms (carrier; budget plan), and health (primary care; dental; labs)", true],
+            ["Outings (4)", "Eateries (coffee; fast-casual; restaurants), markets (farmers), entertainment (cinema), and events (concerts; festivals)", true],
             ["Travel (3)", "Accommodation (short-term rental; extended stay; last-minute hotel), transport (robotaxi; rideshare; car rental; airline), and connectivity (eSIM)", true],
           ],
         },
