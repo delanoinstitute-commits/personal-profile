@@ -704,7 +704,7 @@ export default function AboutPage() {
         Contact <span className="heading-paren">(Offers)</span>
       </h2>
       <p>
-        What you offer is a function of <strong>published work</strong> (free) and <strong>commitments</strong> (one at a time), the two best predictors of how well you can serve whoever comes next. Mine: everything published, one patron at a time, a build for whoever brings market or capital.
+        What you offer is a function of <strong>published work</strong> (free) and <strong>commitments</strong> (one at a time), the two best predictors of how well you can serve whoever comes next. Mine: all published, one patron at a time, a build for whoever brings market or capital.
       </p>
       <NestedTable {...CONTACT} />
 
