@@ -206,7 +206,7 @@ const SPACE: StatTableData = {
               <WikiLink key="wf" href="https://www.youtube.com/playlist?list=PLkxFhm6Fhw9oypG0tLrOTNtnPtsGMUG2w">wall and floor</WikiLink>,
               "), and parking (bay)",
             ], true],
-            ["Furnishings (6)", "Furniture (bed; desk; chair; lounger), electronics (TV; streaming; sound; lighting), appliances (air purifier; water filter; air monitor), fitness (training station; mat), kitchenware (cookware), and textiles (bedding)", true],
+            ["Furnishings (6)", "Furniture (bed; desk; chair; lounger; table; storage), electronics (TV; streaming; sound; lighting), appliances (air purifier; water filter; air monitor; vacuum; kettle), fitness (training station; mat), kitchenware (cookware; knives; dinnerware), and textiles (bedding; towels)", true],
             ["Belongings (6)", "Apparel (clothing; underwear; shoes), toiletries (dental; body; skin; hair; grooming), devices (phone; laptop; radiation detector), documents (identity; legal; finance; health), training kit (calisthenics gear; jump rope; gym bag), and everyday-carry (bag; wallet; keys)", true],
           ],
         },
