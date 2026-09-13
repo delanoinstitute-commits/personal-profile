@@ -241,7 +241,7 @@ const SPACE: StatTableData = {
               "), and flights (airport authority)",
             ], true],
             ["Institutions (7)", [
-              "Emergency (911; EMS), health (county hospitals), education (school district), police (city department), fire (fire department), libraries (library district), and mail ("
+              "Emergency (911; EMS), health (county hospitals), education (school district), police (city department), fire (fire department), libraries (library district), and mail (",
               <WikiLink key="usp" href="https://www.usps.com/">USPS</WikiLink>,
               ")",
             ], true],
