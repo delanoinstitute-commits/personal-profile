@@ -225,27 +225,27 @@ const SPACE: StatTableData = {
           category: "Public (civic services)",
           metrics: [
             ["", "What only the city provides: paperwork, power, movement, institutions, and the outdoors", false],
-            ["Administration (7)", [
+            ["Administration (8)", [
               "Identification (",
               <WikiLink key="ssa" href="https://www.ssa.gov/">SSA</WikiLink>,
               "), immigration (",
               <WikiLink key="usc" href="https://www.uscis.gov/">USCIS</WikiLink>,
               "), taxation (",
               <WikiLink key="irs" href="https://www.irs.gov/">IRS</WikiLink>,
-              "), driving (DMV), records (county clerk), voting (county elections office), and business (secretary of state)",
+              "), driving (DMV), records (county clerk), courts (county), voting (county elections office), and business (secretary of state)",
             ], true],
             ["Utilities (4)", "Power (city electric utility), water (city water utility), gas (gas company), and waste (sanitation department)", true],
-            ["Transport (3)", [
-              "Local transit (city transit authority), intercity rail (",
+            ["Transport (4)", [
+              "Roads (public works), local transit (city transit authority), intercity rail (",
               <WikiLink key="amt" href="https://www.amtrak.com/">Amtrak</WikiLink>,
               "), and flights (airport authority)",
             ], true],
-            ["Institutions (6)", [
-              "Health (county hospitals), education (school district), police (city department), fire (fire department), libraries (library district), and mail (",
+            ["Institutions (7)", [
+              "Emergency (911; EMS), health (county hospitals), education (school district), police (city department), fire (fire department), libraries (library district), and mail ("
               <WikiLink key="usp" href="https://www.usps.com/">USPS</WikiLink>,
               ")",
             ], true],
-            ["Outdoor (3)", "Parks (national; state; city), trails (hiking; greenways), and waters (pools; lakes; beaches)", true],
+            ["Outdoor (4)", "Parks (national; state; city), trails (hiking; greenways), waters (pools; lakes; beaches), and recreation (community centers; fields)", true],
           ],
         },
       ],
