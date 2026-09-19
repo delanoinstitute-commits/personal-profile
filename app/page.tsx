@@ -594,7 +594,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-design-solo",
         cite: (
           <>
-            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoltLc">Client Report</WikiLink> (2022, Cape Town)</em>; my reports combine maps, status, goals, and the plans to achieve them; skills of analysis and production • video
+            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoItLc">Client Report</WikiLink> (2022, Cape Town)</em>; my reports combine maps, status, goals, and the plans to achieve them; skills of analysis and production • video
           </>
         ),
       },

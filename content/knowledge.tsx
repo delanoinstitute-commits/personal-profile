@@ -522,7 +522,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "client-report",
         cite: (
           <>
-            <strong>Remote coaching</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoltLc">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness, Inc. (Delano, L.); skills of analysis and production • video
+            <strong>Remote coaching</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoItLc">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness, Inc. (Delano, L.); skills of analysis and production • video
           </>
         ),
       },
