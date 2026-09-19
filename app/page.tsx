@@ -594,7 +594,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-design-solo",
         cite: (
           <>
-            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoItLc">Client Report</WikiLink> (2022, Cape Town)</em>; my reports combine maps, status, goals, and the plans to achieve them; skills of analysis and production • video
+            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoItLc">Client Report</WikiLink> (2022, Cape Town)</em>; my reports combine maps, status, goals, and the plans to achieve them; skills of analysis and production • video (YouTube)
           </>
         ),
       },
@@ -639,7 +639,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-production-teams",
         cite: (
           <>
-            <strong>Production</strong>: <em><WikiLink href="https://youtu.be/abiqLEbY83E">Education Products</WikiLink> (since 2017)</em>; I produce them from start to finish, in-house or directly; skills of production and management • video
+            <strong>Production</strong>: <em><WikiLink href="https://youtu.be/abiqLEbY83E">Education Products</WikiLink> (since 2017)</em>; I produce them from start to finish, in-house or directly; skills of production and management • video (YouTube)
           </>
         ),
       },

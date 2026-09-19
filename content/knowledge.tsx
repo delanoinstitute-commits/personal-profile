@@ -506,7 +506,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "superstudents-certification",
         cite: (
           <>
-            <strong>Product pitching</strong>: <em><WikiLink href="https://youtu.be/N0gswy6sB78">SuperStudents Certification</WikiLink> (2021, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, production, and selling • video
+            <strong>Product pitching</strong>: <em><WikiLink href="https://youtu.be/N0gswy6sB78">SuperStudents Certification</WikiLink> (2021, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, production, and selling • video (YouTube)
           </>
         ),
       },
@@ -514,7 +514,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "production-schedule",
         cite: (
           <>
-            <strong>Project management</strong>: <em><WikiLink href="https://youtu.be/abiqLEbY83E">Production Schedule</WikiLink> (2022, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of planning, production, and management • video
+            <strong>Project management</strong>: <em><WikiLink href="https://youtu.be/abiqLEbY83E">Production Schedule</WikiLink> (2022, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of planning, production, and management • video (YouTube)
           </>
         ),
       },
@@ -522,7 +522,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "client-report",
         cite: (
           <>
-            <strong>Remote coaching</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoItLc">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness, Inc. (Delano, L.); skills of analysis and production • video
+            <strong>Remote coaching</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoItLc">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness, Inc. (Delano, L.); skills of analysis and production • video (YouTube)
           </>
         ),
       },
@@ -530,7 +530,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "education-methodology",
         cite: (
           <>
-            <strong>Methodology design</strong>: <em><WikiLink href="https://youtu.be/cw9VtzNlFkk">Education Methodology</WikiLink> (2023, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, architecture, and production • video
+            <strong>Methodology design</strong>: <em><WikiLink href="https://youtu.be/cw9VtzNlFkk">Education Methodology</WikiLink> (2023, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, architecture, and production • video (YouTube)
           </>
         ),
       },
