@@ -594,7 +594,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-design-solo",
         cite: (
           <>
-            <strong>Design</strong>: <em><WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Client Report</WikiLink> (2022, Cape Town)</em>; my reports combine maps, status, goals, and the plans to achieve them; skills of analysis and production • video (Loom)
+            <strong>Design</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoltLc">Client Report</WikiLink> (2022, Cape Town)</em>; my reports combine maps, status, goals, and the plans to achieve them; skills of analysis and production • video
           </>
         ),
       },
@@ -631,7 +631,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-design-teams",
         cite: (
           <>
-            <strong>Architecture</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">education</WikiLink> and <WikiLink href="https://youtu.be/IncVxo4Un9w">software</WikiLink> for teams and educators; skills of architecture and production • videos (YouTube; Loom)
+            <strong>Architecture</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://youtu.be/cw9VtzNlFkk">education</WikiLink> and <WikiLink href="https://youtu.be/IncVxo4Un9w">software</WikiLink> for teams and educators; skills of architecture and production • videos (YouTube; Loom)
           </>
         ),
       },
@@ -639,7 +639,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-production-teams",
         cite: (
           <>
-            <strong>Production</strong>: <em><WikiLink href="https://www.loom.com/share/2ada01c69cfe4b14af5f087d05068261">Education Products</WikiLink> (since 2017)</em>; I produce them from start to finish, in-house or directly; skills of production and management • video (Loom)
+            <strong>Production</strong>: <em><WikiLink href="https://youtu.be/abiqLEbY83E">Education Products</WikiLink> (since 2017)</em>; I produce them from start to finish, in-house or directly; skills of production and management • video
           </>
         ),
       },

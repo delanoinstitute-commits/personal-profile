@@ -506,7 +506,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "superstudents-certification",
         cite: (
           <>
-            <strong>Product pitching</strong>: <em><WikiLink href="https://www.loom.com/share/37749cb5453347e5b4692db21ecf3fbb">SuperStudents Certification</WikiLink> (2021, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, production, and selling • video (Loom)
+            <strong>Product pitching</strong>: <em><WikiLink href="https://youtu.be/N0gswy6sB78">SuperStudents Certification</WikiLink> (2021, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, production, and selling • video
           </>
         ),
       },
@@ -514,7 +514,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "production-schedule",
         cite: (
           <>
-            <strong>Project management</strong>: <em><WikiLink href="https://www.loom.com/share/2ada01c69cfe4b14af5f087d05068261">Production Schedule</WikiLink> (2022, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of planning, production, and management • video (Loom)
+            <strong>Project management</strong>: <em><WikiLink href="https://youtu.be/abiqLEbY83E">Production Schedule</WikiLink> (2022, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of planning, production, and management • video
           </>
         ),
       },
@@ -522,7 +522,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "client-report",
         cite: (
           <>
-            <strong>Remote coaching</strong>: <em><WikiLink href="https://www.loom.com/share/153a66f88ee24a66adf99737afb76997">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness, Inc. (Delano, L.); skills of analysis and production • video (Loom)
+            <strong>Remote coaching</strong>: <em><WikiLink href="https://youtu.be/BKUrYsoltLc">Client Report</WikiLink> (2022, Cape Town)</em>; 10X Fitness, Inc. (Delano, L.); skills of analysis and production • video
           </>
         ),
       },
@@ -530,7 +530,7 @@ export const KNOWLEDGE_REFERENCE_SECTIONS: ReferenceSection[] = [
         id: "education-methodology",
         cite: (
           <>
-            <strong>Methodology design</strong>: <em><WikiLink href="https://www.loom.com/share/40d539b21e0140f6a697f4975f649aaf">Education Methodology</WikiLink> (2023, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, architecture, and production • video (Loom)
+            <strong>Methodology design</strong>: <em><WikiLink href="https://youtu.be/cw9VtzNlFkk">Education Methodology</WikiLink> (2023, Cape Town)</em>; Eudaemonia, Inc. (Delano, L.); skills of classification, architecture, and production • video
           </>
         ),
       },
