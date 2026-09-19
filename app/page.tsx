@@ -631,7 +631,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-design-teams",
         cite: (
           <>
-            <strong>Architecture</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://youtu.be/cw9VtzNlFkk">education</WikiLink> and <WikiLink href="https://youtu.be/IncVxo4Un9w">software</WikiLink> for teams and educators; skills of architecture and production • videos (YouTube; Loom)
+            <strong>Architecture</strong>: <em><WikiLink href="https://youtu.be/lMpH6GBV0-M">Transformative Experiences</WikiLink> (since 2015)</em>; I design <WikiLink href="https://youtu.be/cw9VtzNlFkk">education</WikiLink> and <WikiLink href="https://youtu.be/IncVxo4Un9w">software</WikiLink> for teams and educators; skills of architecture and production • videos (YouTube)
           </>
         ),
       },
