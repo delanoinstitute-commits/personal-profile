@@ -378,7 +378,7 @@ export const WORKS: StatTableData = {
             [
               "Design consulting",
               [
-                <em key="n"><WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">Eudaemonia, Inc.</WikiLink></em>,
+                <em key="n">Eudaemonia, Inc.</em>,
                 ", international (mostly US), since 2018 (age 30)",
               ],
               true,

@@ -602,7 +602,7 @@ const ABOUT_EVIDENCE: ReferenceSection[] = [
         id: "ev-profiling-solo",
         cite: (
           <>
-            <strong>Profiling</strong>: <em>Personal Profiling (2015, New York)</em>; I’ve profiled 20+ professionals via my <WikiLink href="https://artrepreneurs.co.za/">marketing</WikiLink> and <WikiLink href="https://eudaemonia-inc-zaqrpx.mailerpage.io/">education</WikiLink> agencies; skills of profiling and management • pages (Web)
+            <strong>Profiling</strong>: <em>Personal Profiling (2015, New York)</em>; I’ve profiled 20+ professionals via my <WikiLink href="https://artrepreneurs.co.za/">marketing</WikiLink> and education agencies; skills of profiling and management • page (Web)
           </>
         ),
       },
